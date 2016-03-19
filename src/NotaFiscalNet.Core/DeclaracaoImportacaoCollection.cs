@@ -6,7 +6,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa uma Coleção Declarações de Importação do Produto
     /// </summary>
-    public sealed class DeclaracaoImportacaoCollection : BaseCollection<DeclaracaoImportacao>, ISerializavel
+    public sealed class DeclaracaoImportacaoCollection : BaseCollection<DeclaracaoImportacao>, ISerializavel, IModificavel
     {
         internal DeclaracaoImportacaoCollection(Produto produto)
         {
@@ -21,13 +21,13 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se existe alguma instancia da classe modificada na coleção
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {
                 foreach (var item in this)
                 {
-                    if (item.IsDirty)
+                    if (item.Modificado)
                         return true;
                 }
                 return false;
@@ -38,7 +38,7 @@ namespace NotaFiscalNet.Core
         {
             foreach (var declaracao in this)
             {
-                if (declaracao.IsDirty)
+                if (declaracao.Modificado)
                     ((ISerializavel)declaracao).Serializar(writer, nfe);
             }
         }

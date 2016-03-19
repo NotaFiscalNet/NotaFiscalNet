@@ -9,14 +9,14 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa uma Coleção de Armamentos.
     /// </summary>
-    public sealed class FornecimentoDiarioCanaCollection : BaseCollection<FornecimentoDiarioCana>, ISerializavel
+    public sealed class FornecimentoDiarioCanaCollection : BaseCollection<FornecimentoDiarioCana>, ISerializavel,IModificavel
     {
         private const int Capacidade = 31;
 
         /// <summary>
         /// Retorna se existe alguma instancia da classe modificada na coleção
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get { return this.Any(x => x.Modificado); }
         }

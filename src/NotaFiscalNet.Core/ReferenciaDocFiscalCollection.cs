@@ -6,22 +6,19 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa uma lista de referências à Documentos Fiscais.
     /// </summary>
-    
-    
-    
-    public sealed class ReferenciaDocFiscalCollection : BaseCollection<ReferenciaDocFiscal>, ISerializavel
+    public sealed class ReferenciaDocFiscalCollection : BaseCollection<ReferenciaDocFiscal>, ISerializavel, IModificavel
     {
 
      /// <summary>
         /// Retorna se existe alguma instancia da classe modificada na coleção
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {
                 foreach (ReferenciaDocFiscal item in this)
                 {
-                    if (item.IsDirty)
+                    if (item.Modificado)
                         return true;
                 }
                 return false;
@@ -35,7 +32,7 @@ namespace NotaFiscalNet.Core
         {
             foreach (ReferenciaDocFiscal referencia in this)
             {
-                if (referencia.IsDirty)
+                if (referencia.Modificado)
                     ((ISerializavel)referencia).Serializar(writer, nfe);
             }
         }

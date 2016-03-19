@@ -21,8 +21,6 @@ namespace NotaFiscalNet.Core
         private decimal _valorLiquidoFornecimentos;
         private decimal _valorTotalDeducoes;
 
-        public bool IsReadOnly { get; private set; }
-
         /// <summary>
         /// [safra] Retorna ou define o identificador da Safra. Informar AAAA ou AAAA/AAAA.
         /// </summary>

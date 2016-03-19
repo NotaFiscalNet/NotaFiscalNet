@@ -7,10 +7,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa a entidade responsável por fazer o transporte das mercadorias.
     /// </summary>
-    
-    
-    
-    public sealed class Transportador : ISerializavel
+    public sealed class Transportador : ISerializavel, IModificavel
     {
         #region Fields
 
@@ -129,7 +126,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {

@@ -7,7 +7,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa as informações de Compras (Nota de Empenho, Pedido e Contrato) da Nota Fiscal Eletrônica.
     /// </summary>
-    public sealed class Compra : ISerializavel
+    public sealed class Compra : ISerializavel, IModificavel
     {
         void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
@@ -60,7 +60,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a classe foi modificada.
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {

@@ -6,16 +6,16 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa os Dados de Cobrança da Nota Fiscal Eletrônica
     /// </summary>
-    public sealed class CobrancaNFe : ISerializavel
+    public sealed class CobrancaNFe : ISerializavel, IModificavel
     {
         void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("cobr"); // Elemento 'cobr'
 
-            if (Fatura.IsDirty)
+            if (Fatura.Modificado)
                 ((ISerializavel)Fatura).Serializar(writer, nfe);
 
-            if (Duplicatas.IsDirty)
+            if (Duplicatas.Modificado)
                 ((ISerializavel)Duplicatas).Serializar(writer, nfe);
 
             writer.WriteEndElement(); // Elemento 'cobr'
@@ -36,13 +36,13 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada.
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {
                 return
-                    Fatura.IsDirty ||
-                    Duplicatas.IsDirty;
+                    Fatura.Modificado ||
+                    Duplicatas.Modificado;
             }
         }
 

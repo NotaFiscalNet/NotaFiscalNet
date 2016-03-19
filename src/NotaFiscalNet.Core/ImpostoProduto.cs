@@ -8,8 +8,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa os Tributos incidentes no Produto ou Serviço
     /// </summary>
-
-    public sealed class ImpostoProduto : ISerializavel
+    public sealed class ImpostoProduto : ISerializavel, IModificavel
     {
         private Icms _icms;
         private readonly ImpostoICMS _ICMS;
@@ -154,19 +153,19 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {
                 return
-                    ICMS.IsDirty || Icms != null ||
+                    ICMS.Modificado || Icms != null ||
                     IPI.Modificado ||
                     II.Modificado ||
-                    PIS.IsDirty ||
-                    PISST.IsDirty ||
-                    COFINS.IsDirty ||
-                    COFINSST.IsDirty ||
-                    ISSQN.IsDirty;
+                    PIS.Modificado ||
+                    PISST.Modificado ||
+                    COFINS.Modificado ||
+                    COFINSST.Modificado ||
+                    ISSQN.Modificado;
             }
         }
 
@@ -177,7 +176,7 @@ namespace NotaFiscalNet.Core
             if (ValorTotalTributos.HasValue)
                 writer.WriteElementString("vTotTrib", ValorTotalTributos.Value.ToTDec_1302());
 
-            if (Icms != null || ICMS.IsDirty)
+            if (Icms != null || ICMS.Modificado)
             {
                 /// Nova maneira de registrar o imposto ICMS.
                 if (Icms != null)
@@ -189,7 +188,7 @@ namespace NotaFiscalNet.Core
                 else
                 {
                     // TODO: Obsoleto
-                    if (ICMS.IsDirty)
+                    if (ICMS.Modificado)
                         ((ISerializavel)ICMS).Serializar(writer, nfe);
                 }
 
@@ -203,17 +202,17 @@ namespace NotaFiscalNet.Core
                 if (IPI.Modificado)
                     ((ISerializavel)IPI).Serializar(writer, nfe);
 
-                if (ISSQN.IsDirty)
+                if (ISSQN.Modificado)
                     ((ISerializavel)ISSQN).Serializar(writer, nfe);
             }
 
-            if (PIS.IsDirty)
+            if (PIS.Modificado)
                 ((ISerializavel)PIS).Serializar(writer, nfe);
-            if (PISST.IsDirty)
+            if (PISST.Modificado)
                 ((ISerializavel)PISST).Serializar(writer, nfe);
-            if (COFINS.IsDirty)
+            if (COFINS.Modificado)
                 ((ISerializavel)COFINS).Serializar(writer, nfe);
-            if (COFINSST.IsDirty)
+            if (COFINSST.Modificado)
                 ((ISerializavel)COFINSST).Serializar(writer, nfe);
 
             writer.WriteEndElement(); // Elemento 'imposto'
@@ -221,7 +220,7 @@ namespace NotaFiscalNet.Core
 
         private void ValidarConflitoISSQN()
         {
-            if (ISSQN.IsDirty)
+            if (ISSQN.Modificado)
                 throw new ErroValidacaoNFeException(ChaveErroValidacao.ConflitoICMSISSQN);
         }
     }

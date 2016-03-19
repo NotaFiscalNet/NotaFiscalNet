@@ -7,10 +7,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa uma Coleção de Observações do Contribuinte. Informar no máximo 10 observações.
     /// </summary>
-    
-    
-    
-    public sealed class ObservacaoContribuinteCollection : BaseCollection<ObservacaoContribuinte>, ISerializavel
+    public sealed class ObservacaoContribuinteCollection : BaseCollection<ObservacaoContribuinte>, ISerializavel, IModificavel
     {
         /// <summary>
         /// Quantidade Máxima de Elementos
@@ -33,13 +30,13 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se existe alguma instancia da classe modificada na coleção
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {
                 foreach (ObservacaoContribuinte item in this)
                 {
-                    if (item.IsDirty)
+                    if (item.Modificado)
                         return true;
                 }
                 return false;
@@ -52,7 +49,7 @@ namespace NotaFiscalNet.Core
         {
             foreach (ObservacaoContribuinte observacao in this)
             {
-                if (observacao.IsDirty)
+                if (observacao.Modificado)
                     ((ISerializavel)observacao).Serializar(writer, nfe);
             }
         }

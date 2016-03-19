@@ -97,9 +97,9 @@ namespace NotaFiscalNet.Core
                 return
                     !string.IsNullOrEmpty(InformacoesComplementaresContribuinte) ||
                     !string.IsNullOrEmpty(InformacoesComplementaresFisco) ||
-                    ObservacoesContribuinte.IsDirty ||
-                    ObservacoesFisco.IsDirty ||
-                    Processos.IsDirty;
+                    ObservacoesContribuinte.Modificado ||
+                    ObservacoesFisco.Modificado ||
+                    Processos.Modificado;
             }
         }
 
@@ -117,11 +117,11 @@ namespace NotaFiscalNet.Core
                 writer.WriteElementString("infAdFisco", SerializationUtil.ToTString(InformacoesComplementaresFisco, 2000));
             if (!string.IsNullOrEmpty(InformacoesComplementaresContribuinte))
                 writer.WriteElementString("infCpl", SerializationUtil.ToTString(InformacoesComplementaresContribuinte, 5000));
-            if (ObservacoesContribuinte.IsDirty)
+            if (ObservacoesContribuinte.Modificado)
                 ((ISerializavel)ObservacoesContribuinte).Serializar(writer, nfe);
-            if (ObservacoesFisco.IsDirty)
+            if (ObservacoesFisco.Modificado)
                 ((ISerializavel)ObservacoesFisco).Serializar(writer, nfe);
-            if (Processos.IsDirty)
+            if (Processos.Modificado)
                 ((ISerializavel)Processos).Serializar(writer, nfe);
 
             #endregion infAdic

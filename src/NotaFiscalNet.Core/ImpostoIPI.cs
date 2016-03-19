@@ -39,7 +39,7 @@ namespace NotaFiscalNet.Core
 
         private void ValidarConflitoISSQN()
         {
-            if (Imposto.ISSQN.IsDirty)
+            if (Imposto.ISSQN.Modificado)
                 throw new ErroValidacaoNFeException(ChaveErroValidacao.ConflitoIPIISSQN);
         }
 

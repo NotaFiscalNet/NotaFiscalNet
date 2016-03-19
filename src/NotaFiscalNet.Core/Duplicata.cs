@@ -8,7 +8,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa uma Duplicata de Cobrança da Nota Fiscal Eletrônica
     /// </summary>
-    public sealed class Duplicata : ISerializavel
+    public sealed class Duplicata : ISerializavel, IModificavel
     {
         void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
@@ -70,7 +70,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {

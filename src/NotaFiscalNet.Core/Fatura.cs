@@ -7,11 +7,11 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa a Fatura de Cobrança da Nota Fiscal Eletrônica
     /// </summary>
-    public sealed class Fatura : ISerializavel
+    public sealed class Fatura : ISerializavel, IModificavel
     {
         void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
-            if (IsDirty)
+            if (Modificado)
             {
                 writer.WriteStartElement("fat"); // Elemento 'fat'
 
@@ -91,7 +91,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {

@@ -9,7 +9,7 @@ namespace NotaFiscalNet.Core
     /// Representa as informações de detalhamento de um Item de Produto da Nota Fiscal referente a
     /// combustíveis líquidos.
     /// </summary>
-    public sealed class Combustivel : ISerializavel
+    public sealed class Combustivel : ISerializavel, IModificavel
     {
         internal Combustivel(Produto produto)
         {
@@ -139,7 +139,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {

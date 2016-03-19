@@ -1,19 +1,18 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.Dynamic;
+using System.Runtime.InteropServices;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Representa uma lista de strings.
     /// </summary>
-    
-    
-    
-    public sealed class StringCollection : BaseCollection<string>
+    public sealed class StringCollection : BaseCollection<string>, IModificavel
     {
         /// <summary>
         /// Retorna se existe alguma instancia da classe modificada na coleção
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {

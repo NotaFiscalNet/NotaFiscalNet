@@ -11,10 +11,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa um Item de Produto do Detalhe da Nota Fiscal Eletrônica.
     /// </summary>
-    
-    
-    
-    public sealed class Produto : ISerializavel
+    public sealed class Produto : ISerializavel, IModificavel
     {
         #region Fields
 
@@ -513,7 +510,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {
@@ -537,17 +534,17 @@ namespace NotaFiscalNet.Core
                     ValorTotalSeguro != 0m ||
                     ValorDesconto != 0m ||
                     ValorOutrasDespesasAcessorias != 0m ||
-                    DeclaracoesImportacao.IsDirty ||
+                    DeclaracoesImportacao.Modificado ||
                     DetalhamentoExportacao.Count > 0 ||
                     !string.IsNullOrEmpty(PedidoCompra) ||
                     ItemPedidoCompra != 0 ||
                     NumeroFCI.HasValue && NumeroFCI.Value != Guid.Empty ||
-                    DetalhamentoVeiculo.IsDirty ||
-                    DetalhamentoMedicamento.IsDirty ||
-                    DetalhamentoArmamento.IsDirty ||
-                    DetalhamentoCombustivel.IsDirty ||
+                    DetalhamentoVeiculo.Modificado ||
+                    DetalhamentoMedicamento.Modificado ||
+                    DetalhamentoArmamento.Modificado ||
+                    DetalhamentoCombustivel.Modificado ||
                     !String.IsNullOrEmpty(NumeroRECOPI) ||
-                    Imposto.IsDirty ||
+                    Imposto.Modificado ||
                     !string.IsNullOrEmpty(InformacoesAdicionais);
             }
         }

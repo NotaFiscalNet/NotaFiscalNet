@@ -6,22 +6,19 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa a coleção de Volumes de uma Carga.
     /// </summary>
-    
-    
-    
-    public sealed class VolumeCargaCollection : BaseCollection<VolumeCarga>,  ISerializavel
+    public sealed class VolumeCargaCollection : BaseCollection<VolumeCarga>,  ISerializavel, IModificavel
     {
 
         /// <summary>
         /// Retorna se existe alguma instancia da classe modificada na coleção
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {
                 foreach (VolumeCarga item in this)
                 {
-                    if (item.IsDirty)
+                    if (item.Modificado)
                         return true;
                 }
                 return false;
@@ -34,7 +31,7 @@ namespace NotaFiscalNet.Core
         {
             foreach (VolumeCarga volume in this)
             {
-                if (volume.IsDirty)
+                if (volume.Modificado)
                     ((ISerializavel)volume).Serializar(writer, nfe);
             }
         }

@@ -7,8 +7,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa o Imposto Programa de Integração Social ST
     /// </summary>
-
-    public sealed class ImpostoPISST : ISerializavel
+    public sealed class ImpostoPISST : ISerializavel, IModificavel
     {
         private TipoCalculoPIS _tipo = TipoCalculoPIS.PercentualValor;
         private decimal _baseCalculo;
@@ -108,7 +107,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {

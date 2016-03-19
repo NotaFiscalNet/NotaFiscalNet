@@ -7,10 +7,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa uma Coleção de Observações do Fisco. Informar no máximo 10 observações.
     /// </summary>
-    
-    
-    
-    public sealed class ObservacaoFiscoCollection : BaseCollection<ObservacaoFisco>, ISerializavel
+    public sealed class ObservacaoFiscoCollection : BaseCollection<ObservacaoFisco>, ISerializavel, IModificavel
     {
         /// <summary>
         /// Quantidade Máxima de Elementos
@@ -33,13 +30,13 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se existe alguma instancia da classe modificada na coleção
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {
                 foreach (ObservacaoFisco item in this)
                 {
-                    if (item.IsDirty)
+                    if (item.Modificado)
                         return true;
                 }
                 return false;
@@ -52,7 +49,7 @@ namespace NotaFiscalNet.Core
         {
             foreach (ObservacaoFisco observacao in this)
             {
-                if (observacao.IsDirty)
+                if (observacao.Modificado)
                     ((ISerializavel) observacao).Serializar(writer, nfe);
             }
         }

@@ -8,10 +8,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa um Processo Referenciado
     /// </summary>
-    
-    
-    
-    public sealed class Processo : ISerializavel
+    public sealed class Processo : ISerializavel, IModificavel
     {
         #region Fields
 
@@ -51,7 +48,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {

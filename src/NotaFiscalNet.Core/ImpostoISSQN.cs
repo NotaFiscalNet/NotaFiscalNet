@@ -8,8 +8,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa o Imposto Sobre Serviços de Qualquer Natureza do Produto
     /// </summary>
-
-    public sealed class ImpostoISSQN : ISerializavel
+    public sealed class ImpostoISSQN : ISerializavel, IModificavel
     {
         private decimal _baseCalculo;
         private decimal _aliquota;
@@ -33,7 +32,7 @@ namespace NotaFiscalNet.Core
 
         private void ValidarConflitoIcmsIpiII()
         {
-            if (Imposto.ICMS.IsDirty)
+            if (Imposto.ICMS.Modificado)
                 throw new ErroValidacaoNFeException(ChaveErroValidacao.ConflitoISSQNICMS);
             if (Imposto.IPI.Modificado)
                 throw new ErroValidacaoNFeException(ChaveErroValidacao.ConflitoISSQNIPI);
@@ -205,7 +204,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {

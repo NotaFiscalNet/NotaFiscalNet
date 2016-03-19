@@ -9,10 +9,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa as Observações de Uso Livre do Fisco
     /// </summary>
-    
-    
-    
-    public sealed class ObservacaoFisco : ISerializavel
+    public sealed class ObservacaoFisco : ISerializavel, IModificavel
     {
         #region Fields
 
@@ -52,7 +49,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {

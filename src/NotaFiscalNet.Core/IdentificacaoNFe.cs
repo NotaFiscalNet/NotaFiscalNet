@@ -360,7 +360,7 @@ namespace NotaFiscalNet.Core
             }
 
             // Serializa as referência
-            if (ReferenciasDocFiscais.IsDirty)
+            if (ReferenciasDocFiscais.Modificado)
                 ((ISerializavel) ReferenciasDocFiscais).Serializar(writer, nfe);
 
             writer.WriteEndElement(); // fim do elemento 'ide'

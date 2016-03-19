@@ -17,10 +17,7 @@ namespace NotaFiscalNet.Core
     /// Caso o Documento Fiscal seja um Nota Fiscal modelo 1 ou 1A, os outros campos deverão ser preenchidos com
     /// excessão do campo ChaveAcessoNFe.
     /// </remarks>
-    
-    
-    
-    public sealed class ReferenciaDocFiscal :  ISerializavel
+    public sealed class ReferenciaDocFiscal :  ISerializavel, IModificavel
     {
         #region Fields
 
@@ -98,15 +95,15 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {
                 return
-                    ReferenciaNFe.IsDirty ||
-                    ReferenciaNF.IsDirty ||
-                    ReferenciaNFProdutor.IsDirty ||
-                    ReferenciaCTe.IsDirty;
+                    ReferenciaNFe.Modificado ||
+                    ReferenciaNF.Modificado ||
+                    ReferenciaNFProdutor.Modificado ||
+                    ReferenciaCTe.Modificado;
             }
         }
 
@@ -128,7 +125,7 @@ namespace NotaFiscalNet.Core
 
         public void Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
-            if (!IsDirty)
+            if (!Modificado)
                 return;
 
             writer.WriteStartElement("NFref");
@@ -136,19 +133,19 @@ namespace NotaFiscalNet.Core
             switch (TipoReferencia)
             {
                 case TipoReferenciaDocFiscal.NFe:
-                    if (ReferenciaNFe.IsDirty)
+                    if (ReferenciaNFe.Modificado)
                         ((ISerializavel)ReferenciaNFe).Serializar(writer, nfe);
                     break;
                 case TipoReferenciaDocFiscal.NF:
-                    if (ReferenciaNF.IsDirty)
+                    if (ReferenciaNF.Modificado)
                         ((ISerializavel)ReferenciaNF).Serializar(writer, nfe);
                     break;
                 case TipoReferenciaDocFiscal.NFProdutor:
-                    if (ReferenciaNFProdutor.IsDirty)
+                    if (ReferenciaNFProdutor.Modificado)
                         ((ISerializavel)ReferenciaNFProdutor).Serializar(writer, nfe);
                     break;
                 case TipoReferenciaDocFiscal.CTe:
-                    if (ReferenciaCTe.IsDirty)
+                    if (ReferenciaCTe.Modificado)
                         ((ISerializavel)ReferenciaCTe).Serializar(writer, nfe);
                     break;
                 case TipoReferenciaDocFiscal.ECF:

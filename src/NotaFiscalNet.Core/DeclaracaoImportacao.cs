@@ -10,7 +10,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa uma Declaração de Importação do Produto
     /// </summary>
-    public sealed class DeclaracaoImportacao : ISerializavel
+    public sealed class DeclaracaoImportacao : ISerializavel, IModificavel
     {
         private SiglaUF _ufTerceiro;
 
@@ -174,7 +174,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {
@@ -190,7 +190,7 @@ namespace NotaFiscalNet.Core
                     !string.IsNullOrEmpty(CNPJ) ||
                     UFTerceiro != SiglaUF.NaoEspecificado ||
                     !string.IsNullOrEmpty(CodigoExportador) ||
-                    Adicoes.IsDirty;
+                    Adicoes.Modificado;
             }
         }
     }

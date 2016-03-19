@@ -8,7 +8,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa um determinado tio de Armamento utilizado nos Produtos Específicos
     /// </summary>
-    public sealed class Armamento : ISerializavel
+    public sealed class Armamento : ISerializavel, IModificavel
     {
         void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
@@ -80,7 +80,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {

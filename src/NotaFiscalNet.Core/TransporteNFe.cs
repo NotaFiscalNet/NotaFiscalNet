@@ -136,7 +136,7 @@ namespace NotaFiscalNet.Core
 
             writer.WriteElementString("modFrete", SerializationUtil.GetEnumValue<TipoModalidadeFrete>(ModalidadeFrete));
 
-            if (Transportador.IsDirty)
+            if (Transportador.Modificado)
                 ((ISerializavel)Transportador).Serializar(writer, nfe);
 
             if (RetencaoICMS.Modificado)
@@ -151,7 +151,7 @@ namespace NotaFiscalNet.Core
                         ((ISerializavel)VeiculoTransporte).Serializar(writer, nfe);
                         writer.WriteEndElement();
                     }
-                    if (Reboques.IsDirty)
+                    if (Reboques.Modificado)
                         ((ISerializavel)Reboques).Serializar(writer, nfe);
                     break;
                 case TipoMeioTransporte.Ferroviario:
@@ -164,7 +164,7 @@ namespace NotaFiscalNet.Core
                     break;
             }
 
-            if (VolumesCarga.IsDirty)
+            if (VolumesCarga.Modificado)
                 ((ISerializavel)VolumesCarga).Serializar(writer, nfe);
 
             writer.WriteEndElement(); // fim do elemento 'transp'

@@ -7,10 +7,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa uma Coleção de Produtos do Contribuinte e do Fisco. Informar no máximo 10 observações.
     /// </summary>
-    
-    
-    
-    public sealed class ProdutoCollection : BaseCollection<Produto>,  ISerializavel
+    public sealed class ProdutoCollection : BaseCollection<Produto>,  ISerializavel, IModificavel
     {
         protected override void PostAdd(Produto item)
         {
@@ -64,13 +61,13 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se existe alguma instancia da classe modificada na coleção
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {
                 foreach (Produto item in this)
                 {
-                    if (item.IsDirty)
+                    if (item.Modificado)
                         return true;
                 }
                 return false;
@@ -85,7 +82,7 @@ namespace NotaFiscalNet.Core
         {
             foreach (Produto produto in this)
             {
-                if (produto.IsDirty)
+                if (produto.Modificado)
                     ((ISerializavel)produto).Serializar(writer, nfe);
             }
         }

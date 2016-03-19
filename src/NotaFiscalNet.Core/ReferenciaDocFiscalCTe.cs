@@ -9,7 +9,7 @@ namespace NotaFiscalNet.Core
     
     
     
-    public sealed class ReferenciaDocFiscalCTe :  ISerializavel
+    public sealed class ReferenciaDocFiscalCTe :  ISerializavel, IModificavel
     {
         #region Fields
 
@@ -47,7 +47,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {

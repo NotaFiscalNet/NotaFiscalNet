@@ -8,10 +8,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa uma lista de Medicamentos.
     /// </summary>
-    
-    
-    
-    public sealed class MedicamentoCollection : BaseCollection<Medicamento>, ISerializavel
+    public sealed class MedicamentoCollection : BaseCollection<Medicamento>, ISerializavel, IModificavel
     {
         private const int Capacidade = 500;
 
@@ -41,13 +38,13 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se existe alguma instancia da classe modificada na coleção
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {
                 foreach (Medicamento item in this)
                 {
-                    if (item.IsDirty)
+                    if (item.Modificado)
                         return true;
                 }
                 return false;
@@ -61,7 +58,7 @@ namespace NotaFiscalNet.Core
         {
             foreach (Medicamento medicamento in this)
             {
-                if (medicamento.IsDirty)
+                if (medicamento.Modificado)
                     ((ISerializavel)medicamento).Serializar(writer, nfe);
             }
         }

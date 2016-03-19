@@ -6,21 +6,19 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa uma Coleção de Processos Referenciados
     /// </summary>
-    
-    
-    public sealed class ProcessoCollection : BaseCollection<Processo>, ISerializavel
+    public sealed class ProcessoCollection : BaseCollection<Processo>, ISerializavel, IModificavel
     {
 
         /// <summary>
         /// Retorna se existe alguma instancia da classe modificada na coleção
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {
                 foreach (Processo item in this)
                 {
-                    if (item.IsDirty)
+                    if (item.Modificado)
                         return true;
                 }
                 return false;
@@ -33,7 +31,7 @@ namespace NotaFiscalNet.Core
         {
             foreach (Processo processo in this)
             {
-                if (processo.IsDirty)
+                if (processo.Modificado)
                     ((ISerializavel)processo).Serializar(writer, nfe);
             }
         }

@@ -333,7 +333,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         private void RenderCobranca(XmlWriter writer)
         {
-            if (Cobranca.IsDirty)
+            if (Cobranca.Modificado)
                 RenderEntity(Cobranca, writer);
         }
 
@@ -361,7 +361,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         private void RenderCompras(XmlWriter writer)
         {
-            if (Compras.IsDirty)
+            if (Compras.Modificado)
                 RenderEntity(Compras, writer);
         }
 

@@ -9,8 +9,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa o Imposto Sobre Circulação de Mercadorias e Serviços
     /// </summary>
-
-    public sealed class ImpostoICMS : ISerializavel
+    public sealed class ImpostoICMS : ISerializavel, IModificavel
     {
         private OrigemMercadoria _origemMercadoria = OrigemMercadoria.NaoEspecificado;
         private SituacaoTributariaICMS _situacaoTributaria = SituacaoTributariaICMS.NaoEspecificado;
@@ -43,7 +42,7 @@ namespace NotaFiscalNet.Core
 
         private void ValidarConflitoISSQN()
         {
-            if (Imposto.ISSQN.IsDirty)
+            if (Imposto.ISSQN.Modificado)
                 throw new ErroValidacaoNFeException(ChaveErroValidacao.ConflitoICMSISSQN);
         }
 
@@ -536,7 +535,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {

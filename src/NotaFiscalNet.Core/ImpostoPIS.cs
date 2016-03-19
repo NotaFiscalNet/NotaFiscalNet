@@ -8,8 +8,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa o Imposto Programa de Integração Social
     /// </summary>
-
-    public sealed class ImpostoPIS : ISerializavel
+    public sealed class ImpostoPIS : ISerializavel, IModificavel
     {
         private SituacaoTributariaPIS _situacaoTributaria = SituacaoTributariaPIS.NaoEspecificado;
         private decimal _baseCalculo;
@@ -281,7 +280,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {

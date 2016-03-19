@@ -9,8 +9,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa o Imposto Contribuição para o Financiamento da Seguridade Social
     /// </summary>
-
-    public sealed class ImpostoCOFINS : ISerializavel
+    public sealed class ImpostoCOFINS : ISerializavel, IModificavel
     {
         private SituacaoTributariaCOFINS _situacaoTributaria = SituacaoTributariaCOFINS.NaoEspecificado;
         private decimal _baseCalculo;
@@ -282,7 +281,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {

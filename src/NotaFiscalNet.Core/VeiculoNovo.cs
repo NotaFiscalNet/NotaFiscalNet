@@ -8,10 +8,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa o Veículo Novo utilizado nos Produtos Específicos
     /// </summary>
-    
-    
-    
-    public sealed class VeiculoNovo : ISerializavel
+    public sealed class VeiculoNovo : ISerializavel, IModificavel
     {
         #region Fields
 
@@ -422,7 +419,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {

@@ -8,7 +8,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa uma Adição na Declaração de Importação do Produto
     /// </summary>
-    public sealed class DeclaracaoImportacaoAdicao : ISerializavel
+    public sealed class DeclaracaoImportacaoAdicao : ISerializavel, IModificavel
     {
         void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
@@ -67,7 +67,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {

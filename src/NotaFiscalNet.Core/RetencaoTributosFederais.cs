@@ -7,10 +7,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa a Retenção de Tributos Federais da Nota Fiscal Eletrônica
     /// </summary>
-    
-    
-    
-    public sealed class RetencaoTributosFederais : ISerializavel
+    public sealed class RetencaoTributosFederais : ISerializavel, IModificavel
     {
 
         #region Fields
@@ -125,7 +122,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {

@@ -7,10 +7,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa as informações de Volume da Carga.
     /// </summary>
-    
-    
-    
-    public sealed class VolumeCarga : ISerializavel
+    public sealed class VolumeCarga : ISerializavel, IModificavel
     {
         #region Fields
 
@@ -115,7 +112,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {
@@ -126,7 +123,7 @@ namespace NotaFiscalNet.Core
                     !string.IsNullOrEmpty(Numeracao) ||
                     PesoLiquido != 0m ||
                     PesoBruto != 0m ||
-                    Lacres.IsDirty;
+                    Lacres.Modificado;
             }
         }
 
@@ -160,7 +157,7 @@ namespace NotaFiscalNet.Core
                 writer.WriteElementString("pesoL", SerializationUtil.ToTDec_1203(PesoLiquido));
             if (PesoBruto > 0m)
                 writer.WriteElementString("pesoB", SerializationUtil.ToTDec_1203(PesoBruto));
-            if (Lacres.IsDirty)
+            if (Lacres.Modificado)
                 foreach (string lacre in Lacres)
                 {
                     if (!string.IsNullOrEmpty(lacre))

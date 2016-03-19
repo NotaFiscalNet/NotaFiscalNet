@@ -86,9 +86,9 @@ namespace NotaFiscalNet.Core
             writer.WriteStartElement("total");
             
             ((ISerializavel)ICMS).Serializar(writer, nfe);
-            if (ISSQN.IsDirty)
+            if (ISSQN.Modificado)
                 ((ISerializavel)ISSQN).Serializar(writer, nfe);
-            if (RetencaoTributosFederais.IsDirty)
+            if (RetencaoTributosFederais.Modificado)
                 ((ISerializavel)RetencaoTributosFederais).Serializar(writer, nfe);
 
             writer.WriteEndElement(); // fim do elemento 'total' 

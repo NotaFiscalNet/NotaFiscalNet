@@ -7,8 +7,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa o Imposto Contribuição para o Financiamento da Seguridade Social ST
     /// </summary>
-
-    public sealed class ImpostoCOFINSST : ISerializavel
+    public sealed class ImpostoCOFINSST : ISerializavel, IModificavel
     {
         private TipoCalculoCOFINS _tipo = TipoCalculoCOFINS.PercentualValor;
         private decimal _baseCalculo;
@@ -108,7 +107,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {

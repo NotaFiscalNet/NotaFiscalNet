@@ -9,10 +9,7 @@ namespace NotaFiscalNet.Core
     /// </summary>
     /// <remarks>Permite até 5 itens na lista.</remarks>
     /// <exception cref="ApplicationException">Caso tente adicionar mais de 5 itens na lista.</exception>
-    
-    
-    
-    public sealed class ReboqueCollection : BaseCollection<VeiculoTransporte>, ISerializavel
+    public sealed class ReboqueCollection : BaseCollection<VeiculoTransporte>, ISerializavel, IModificavel
     {
         /// <summary>
         /// Quantidade Máxima de Elementos
@@ -33,7 +30,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se existe alguma instancia da classe modificada na coleção
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {

@@ -5,10 +5,6 @@ namespace NotaFiscalNet.Core.Validacao
 {
     internal sealed class CodePath
     {
-        internal CodePath()
-        {
-        }
-
         private Stack<string> _pilha = new Stack<string>();
 
         public string Remove()

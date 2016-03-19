@@ -16,10 +16,6 @@ namespace NotaFiscalNet.Core
         private string _xMun = string.Empty;
         private SiglaUF _UF = SiglaUF.NaoEspecificado;
 
-        public Transportador()
-        {
-        }
-
         /// <summary>
         /// Retorna ou define o Número do CPF (11 caracteres, apenas números) do Transportador.
         /// </summary>

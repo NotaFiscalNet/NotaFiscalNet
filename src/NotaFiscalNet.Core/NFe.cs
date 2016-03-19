@@ -215,13 +215,6 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public AquisicaoCana AquisicoesCana => _cana;
 
-        /// <summary>
-        /// Inicializa uma nova instância da classe NFe
-        /// </summary>
-        public NFe()
-        {
-        }
-
         void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("NFe", Constants.NamespacePortalFiscalNFe);

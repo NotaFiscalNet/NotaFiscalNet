@@ -42,13 +42,6 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public bool Modificado => !string.IsNullOrEmpty(ChaveAcessoNFe);
 
-        /// <summary>
-        /// Inicializa uma nova instância da classe ReferenciaDocFiscalNFe
-        /// </summary>
-        public ReferenciaDocFiscalNFe()
-        {
-        }
-
         public void Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             /// Campos para Nota Fiscal modelo NFe (55)

@@ -17,10 +17,6 @@ namespace NotaFiscalNet.Core
         private ObservacaoFiscoCollection _observacoesFisco = new ObservacaoFiscoCollection();
         private ProcessoCollection _processos = new ProcessoCollection();
 
-        public InformacoesAdicionaisNFe()
-        {
-        }
-
         /// <summary>
         /// [infAdFisco] Retorna ou define Informações Complementares de Interesse do Fisco. Opcional.
         /// </summary>

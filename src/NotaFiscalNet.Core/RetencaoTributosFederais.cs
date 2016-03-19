@@ -16,10 +16,6 @@ namespace NotaFiscalNet.Core
         private decimal _baseCalculoRetencaoPrevidenciaSocial;
         private decimal _valorRetencaoPrevidenciaSocial;
 
-        public RetencaoTributosFederais()
-        {
-        }
-
         /// <summary>
         /// [vRetPIS] Retorna ou define o Valor Total Retido de PIS. Opcional.
         /// </summary>

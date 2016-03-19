@@ -117,13 +117,6 @@ namespace NotaFiscalNet.Core
                                   PesoBruto != 0m ||
                                   Lacres.Modificado;
 
-        /// <summary>
-        /// Inicializa uma nova instância da classe VolumeCarga
-        /// </summary>
-        public VolumeCarga()
-        {
-        }
-
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("vol"); // Elemento 'vol'

@@ -46,13 +46,6 @@ namespace NotaFiscalNet.Core
         public bool Modificado => !string.IsNullOrEmpty(Identificador) ||
                                   OrigemProcesso != OrigemProcesso.NaoEspecificado;
 
-        /// <summary>
-        /// Inicializa uma nova instância da classe Processo
-        /// </summary>
-        public Processo()
-        {
-        }
-
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("procRef"); // Elemento 'procRef'

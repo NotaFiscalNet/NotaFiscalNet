@@ -4,10 +4,6 @@ namespace NotaFiscalNet.Core.Validacao
 {
     internal sealed class ValidationContext : IEnumerable<KeyValuePair<string, ErroValidacao>>
     {
-        internal ValidationContext()
-        {
-        }
-
         private CodePath _path = new CodePath();
         private Dictionary<string, ErroValidacao> _errors = new Dictionary<string, ErroValidacao>();
 

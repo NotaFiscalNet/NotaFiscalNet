@@ -100,13 +100,6 @@ namespace NotaFiscalNet.Core
                                   DataValidade != DateTime.MinValue ||
                                   PrecoMaximoConsumidor != 0m;
 
-        /// <summary>
-        /// Inicializa uma nova instância da classe Medicamento
-        /// </summary>
-        public Medicamento()
-        {
-        }
-
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("med");

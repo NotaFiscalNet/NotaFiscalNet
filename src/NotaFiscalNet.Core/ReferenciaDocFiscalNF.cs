@@ -115,13 +115,6 @@ namespace NotaFiscalNet.Core
                                   SerieNF != 0 ||
                                   NumeroNF != 0;
 
-        /// <summary>
-        /// Inicializa uma nova instância da classe ReferenciaDocFiscalNFe
-        /// </summary>
-        public ReferenciaDocFiscalNF()
-        {
-        }
-
         public void Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("refNF");

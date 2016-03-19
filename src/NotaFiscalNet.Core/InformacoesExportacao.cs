@@ -15,10 +15,6 @@ namespace NotaFiscalNet.Core
         private string _localEmbarque = string.Empty;
         private string _localDespacho = string.Empty;
 
-        public InformacoesExportacao()
-        {
-        }
-
         /// <summary>
         /// [UFEmbarq] Retorna ou define a Sigla da UF de Embarque o de transposição de fronteira.
         /// </summary>

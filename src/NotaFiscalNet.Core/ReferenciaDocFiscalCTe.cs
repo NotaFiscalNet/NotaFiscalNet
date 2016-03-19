@@ -39,13 +39,6 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public bool Modificado => !string.IsNullOrEmpty(ReferenciaCTe);
 
-        /// <summary>
-        /// Inicializa uma nova instância da classe ReferenciaDocFiscalCTe
-        /// </summary>
-        public ReferenciaDocFiscalCTe()
-        {
-        }
-
         public void Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteElementString("refCTe", ReferenciaCTe);

@@ -21,13 +21,6 @@ namespace NotaFiscalNet.Core.Transmissao
         private string _justificativa = string.Empty;
 
         /// <summary>
-        /// Inicializa uma nova instância da classe <see cref="PedidoInutilizacaoNFe"/>.
-        /// </summary>
-        public PedidoInutilizacaoNFe()
-        {
-        }
-
-        /// <summary>
         /// Retorna ou define o xml carregado.
         /// </summary>
         private string Xml { get; set; }

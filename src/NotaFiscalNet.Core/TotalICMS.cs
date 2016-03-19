@@ -27,10 +27,6 @@ namespace NotaFiscalNet.Core
         private decimal _valorTotalNFe;
         private decimal? _valorTotalTributos;
 
-        public TotalICMS()
-        {
-        }
-
         /// <summary>
         /// [vBC] Retorna ou define a Base de Cálculo do ICMS.
         /// </summary>

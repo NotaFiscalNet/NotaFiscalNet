@@ -69,13 +69,6 @@ namespace NotaFiscalNet.Core
                                   UF != SiglaUF.NaoEspecificado ||
                                   !string.IsNullOrEmpty(RNTC);
 
-        /// <summary>
-        /// Inicializa uma nova instância da classe VeiculoTransporte
-        /// </summary>
-        public VeiculoTransporte()
-        {
-        }
-
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteElementString("placa", SerializationUtil.ToToken(Placa.ToUpper(), 8));

@@ -47,13 +47,6 @@ namespace NotaFiscalNet.Core
         public bool Modificado => !string.IsNullOrEmpty(Campo) ||
                                   !string.IsNullOrEmpty(Texto);
 
-        /// <summary>
-        /// Inicializa uma nova instância da classe ObservacaoFisco
-        /// </summary>
-        public ObservacaoFisco()
-        {
-        }
-
         void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("obsFisco"); // Elemento 'obsFisco'

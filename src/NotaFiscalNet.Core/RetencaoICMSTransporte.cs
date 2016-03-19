@@ -17,10 +17,6 @@ namespace NotaFiscalNet.Core
         private int _cfop;
         private int _codigoMunicipioFatorGeradorICMS;
 
-        public RetencaoICMSTransporte()
-        {
-        }
-
         /// <summary>
         /// [vServ] Retorna ou define o Valor do Serviço de Transporte retido.
         /// </summary>

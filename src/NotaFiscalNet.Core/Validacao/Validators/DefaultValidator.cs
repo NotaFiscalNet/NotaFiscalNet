@@ -57,9 +57,5 @@ namespace NotaFiscalNet.Core.Validacao.Validators
 
             //return true;
         }
-
-        public DefaultValidator()
-        {
-        }
     }
 }

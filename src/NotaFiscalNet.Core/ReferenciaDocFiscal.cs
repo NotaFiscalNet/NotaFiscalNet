@@ -78,13 +78,6 @@ namespace NotaFiscalNet.Core
                                   ReferenciaNFProdutor.Modificado ||
                                   ReferenciaCTe.Modificado;
 
-        /// <summary>
-        /// Inicializa uma nova instância da classe ReferenciaDocFiscal
-        /// </summary>
-        public ReferenciaDocFiscal()
-        {
-        }
-
         public void Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             if (!Modificado)

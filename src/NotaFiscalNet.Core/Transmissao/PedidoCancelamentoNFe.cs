@@ -19,13 +19,6 @@ namespace NotaFiscalNet.Core.Transmissao
         private string _justificativa = string.Empty;
 
         /// <summary>
-        /// Inicializa uma nova instância da classe <see cref="PedidoCancelamentoNFe"/>.
-        /// </summary>
-        public PedidoCancelamentoNFe()
-        {
-        }
-
-        /// <summary>
         /// Retorna o valor indicando se a classe está em modo Somente-Leitura.
         /// </summary>
         public bool IsReadOnly { get; private set; }

@@ -7,7 +7,7 @@ namespace NotaFiscalNet.Core
         public static UfIBGE FromSiglaUF(string uf)
         {
             if (String.IsNullOrEmpty(uf))
-                throw new ArgumentNullException("uf");
+                throw new ArgumentNullException(nameof(uf));
 
             uf = uf.ToUpper();
 

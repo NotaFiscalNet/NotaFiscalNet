@@ -12,7 +12,7 @@ namespace NotaFiscalNet.Core.Validacao
             : base(CreateMessage(errors))
         {
             if (errors == null || errors.Length == 0)
-                throw new ArgumentException("Nenhum parâmetro foi informado para o objeto.", "errors");
+                throw new ArgumentException("Nenhum parâmetro foi informado para o objeto.", nameof(errors));
 
             Errors = errors;
         }

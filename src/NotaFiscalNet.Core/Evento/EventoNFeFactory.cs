@@ -14,7 +14,7 @@ namespace NotaFiscalNet.Core.Evento
         public EventoNFe Create(XElement eventoEl)
         {
             if (eventoEl == null)
-                throw new ArgumentNullException("eventoEl");
+                throw new ArgumentNullException(nameof(eventoEl));
 
             var ns = Constants.XNamespacePortalFiscalNFe;
 

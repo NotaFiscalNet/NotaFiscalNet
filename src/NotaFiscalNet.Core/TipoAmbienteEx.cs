@@ -21,14 +21,14 @@ namespace NotaFiscalNet.Core
         public static TipoAmbiente FromCustomValue(string value)
         {
             if (value == null)
-                throw new ArgumentNullException("value");
+                throw new ArgumentNullException(nameof(value));
 
             switch (value.ToUpper())
             {
                 case "P": return TipoAmbiente.Producao;
                 case "H": return TipoAmbiente.Homologacao;
                 default:
-                    throw new ArgumentOutOfRangeException("value", value, "O valor informado não é um ambiente de Documento Fiscal válido.");
+                    throw new ArgumentOutOfRangeException(nameof(value), value, "O valor informado não é um ambiente de Documento Fiscal válido.");
             }
         }
     }

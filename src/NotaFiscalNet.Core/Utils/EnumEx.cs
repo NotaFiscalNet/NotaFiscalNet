@@ -81,7 +81,7 @@ namespace NotaFiscalNet.Core.Utils
                         return (T)field.GetValue(null);
                 }
             }
-            throw new ArgumentException("Not found.", "description");
+            throw new ArgumentException("Not found.", nameof(description));
         }
     }
 }

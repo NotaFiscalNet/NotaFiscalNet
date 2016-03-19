@@ -8,7 +8,7 @@ namespace NotaFiscalNet.Core
 
         public static TipoModalidadeDocumentoFiscal Parse(string value)
         {
-            if (value == null) throw new ArgumentNullException("value");
+            if (value == null) throw new ArgumentNullException(nameof(value));
 
             return (TipoModalidadeDocumentoFiscal)Enum.Parse(Typo, value);
         }

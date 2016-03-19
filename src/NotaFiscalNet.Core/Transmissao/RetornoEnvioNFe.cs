@@ -20,7 +20,7 @@ namespace NotaFiscalNet.Core.Transmissao
         public RetornoEnvioNFe(string xml)
         {
             if (String.IsNullOrEmpty(xml))
-                throw new ArgumentNullException("xml");
+                throw new ArgumentNullException(nameof(xml));
 
             RawXml = xml;
             PreencherResposta(XDocument.Parse(RawXml));
@@ -33,7 +33,7 @@ namespace NotaFiscalNet.Core.Transmissao
         public RetornoEnvioNFe(XmlNode respostaEnvioNFe)
         {
             if (respostaEnvioNFe == null) 
-                throw new ArgumentOutOfRangeException("respostaEnvioNFe");
+                throw new ArgumentOutOfRangeException(nameof(respostaEnvioNFe));
 
             RawXml = respostaEnvioNFe.OuterXml;
             PreencherResposta(XDocument.Parse(RawXml));

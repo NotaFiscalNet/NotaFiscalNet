@@ -7,7 +7,7 @@ namespace NotaFiscalNet.Core.Transmissao
     {
         public ProtocoloNFe(XElement protNFeEl)
         {
-            if (protNFeEl == null) throw new ArgumentNullException("protNFeEl");
+            if (protNFeEl == null) throw new ArgumentNullException(nameof(protNFeEl));
 
             var ns = Constants.XNamespacePortalFiscalNFe;
 

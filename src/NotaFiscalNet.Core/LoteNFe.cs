@@ -25,7 +25,7 @@ namespace NotaFiscalNet.Core
         internal LoteNFe(long idLote)
         {
             if ( idLote < 1L || idLote > 999999999999999L )
-                throw new ArgumentOutOfRangeException("idLote", idLote, "O código identificador do lote está fora da faixa permitida (de 1 até 15 posições).");
+                throw new ArgumentOutOfRangeException(nameof(idLote), idLote, "O código identificador do lote está fora da faixa permitida (de 1 até 15 posições).");
 
             IDLote = idLote;
         }

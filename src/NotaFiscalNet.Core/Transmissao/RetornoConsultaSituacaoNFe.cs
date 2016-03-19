@@ -74,7 +74,7 @@ namespace NotaFiscalNet.Core.Transmissao
 
         public static RetornoConsultaSituacaoNFe ReadFrom(XmlNode retConsSitNFe)
         {
-            if (retConsSitNFe == null) throw new ArgumentNullException("retConsSitNFe");
+            if (retConsSitNFe == null) throw new ArgumentNullException(nameof(retConsSitNFe));
 
             var xml = retConsSitNFe.OuterXml;
             

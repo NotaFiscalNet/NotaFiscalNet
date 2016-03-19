@@ -12,7 +12,7 @@ namespace NotaFiscalNet.Core.Validacao
         [DebuggerStepThrough]
         public NFeValidatorEngine(NFe nfe)
         {
-            if ( nfe == null ) throw new ArgumentNullException("nfe");
+            if ( nfe == null ) throw new ArgumentNullException(nameof(nfe));
             NFe = nfe;
             Context = new ValidationContext();
         }

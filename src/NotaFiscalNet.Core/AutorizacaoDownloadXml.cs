@@ -14,7 +14,7 @@ namespace NotaFiscalNet.Core
         public AutorizacaoDownloadXml(string cpfOuCnpj)
         {
             if (string.IsNullOrEmpty(cpfOuCnpj))
-                throw new ArgumentNullException("cpfOuCnpj");
+                throw new ArgumentNullException(nameof(cpfOuCnpj));
 
             switch (cpfOuCnpj.Length)
             {
@@ -27,7 +27,7 @@ namespace NotaFiscalNet.Core
                     break;
 
                 default:
-                    throw new ArgumentOutOfRangeException("cpfOuCnpj", cpfOuCnpj,
+                    throw new ArgumentOutOfRangeException(nameof(cpfOuCnpj), cpfOuCnpj,
                         "O valor informado não é um CPF ou CNPJ válido.");
             }
         }

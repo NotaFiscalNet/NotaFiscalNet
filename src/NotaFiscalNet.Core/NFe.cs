@@ -1928,7 +1928,7 @@ namespace NotaFiscalNet.Core
         public static NFe Parse(string xml)
         {
             if (String.IsNullOrEmpty(xml))
-                throw new ArgumentNullException("xml");
+                throw new ArgumentNullException(nameof(xml));
 
             var doc = XDocument.Parse(xml);
             return Parse(doc);
@@ -1936,7 +1936,7 @@ namespace NotaFiscalNet.Core
 
         public static NFe Parse(XDocument doc)
         {
-            if (doc == null) throw new ArgumentNullException("doc");
+            if (doc == null) throw new ArgumentNullException(nameof(doc));
 
             var nfe = new NFe();
             nfe.Deserialize(doc);
@@ -1945,7 +1945,7 @@ namespace NotaFiscalNet.Core
 
         public static NFe Parse(XDocument doc, bool ignoreSchemaValidation)
         {
-            if (doc == null) throw new ArgumentNullException("doc");
+            if (doc == null) throw new ArgumentNullException(nameof(doc));
 
             var nfe = new NFe();
             nfe.Deserialize(doc, ignoreSchemaValidation);
@@ -1954,7 +1954,7 @@ namespace NotaFiscalNet.Core
 
         public static NFe Parse(XElement nfeEl)
         {
-            if (nfeEl == null) throw new ArgumentNullException("nfeEl");
+            if (nfeEl == null) throw new ArgumentNullException(nameof(nfeEl));
 
             var nfe = new NFe();
             nfe.Deserialize(nfeEl);

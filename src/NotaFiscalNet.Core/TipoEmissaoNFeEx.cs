@@ -12,7 +12,7 @@ namespace NotaFiscalNet.Core
         public static TipoEmissaoNFe Parse(string value)
         {
             if (value == null)
-                throw new ArgumentNullException("value");
+                throw new ArgumentNullException(nameof(value));
 
             return (TipoEmissaoNFe)Enum.Parse(typeof(TipoEmissaoNFe), value);
         }

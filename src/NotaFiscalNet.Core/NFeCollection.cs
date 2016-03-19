@@ -32,7 +32,7 @@ namespace NotaFiscalNet.Core
         public LoteNFeCollection GerarLotes(long idLoteInicial)
         {
             if ( idLoteInicial < 1L || idLoteInicial > 999999999999999L )
-                throw new ArgumentOutOfRangeException("idLoteInicial", idLoteInicial, "O código identificador do Lote deve estar compreendido entre 1 e 999999999999999.");
+                throw new ArgumentOutOfRangeException(nameof(idLoteInicial), idLoteInicial, "O código identificador do Lote deve estar compreendido entre 1 e 999999999999999.");
 
             long idLote = idLoteInicial;
 

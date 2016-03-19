@@ -151,7 +151,7 @@ namespace NotaFiscalNet.Core.Validacao
         /// <returns></returns>
         public static List<FieldMember> GetValidatableProperties(ValidationContext context, object source, Type typeSource)
         {
-            if ( source == null ) throw new ArgumentNullException("source");
+            if ( source == null ) throw new ArgumentNullException(nameof(source));
 
             PropertyInfo[] properties = typeSource.GetProperties(BindingFlags.GetProperty | BindingFlags.Public | BindingFlags.Instance);
 

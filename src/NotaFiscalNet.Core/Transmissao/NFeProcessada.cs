@@ -17,7 +17,7 @@ namespace NotaFiscalNet.Core.Transmissao
         public NFeProcessada(XDocument procNFeDocument)
         {
             if (procNFeDocument == null)
-                throw new ArgumentNullException("procNFeDocument");
+                throw new ArgumentNullException(nameof(procNFeDocument));
 
             LoadProcNFe(procNFeDocument.Root);
         }

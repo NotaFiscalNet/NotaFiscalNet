@@ -2,7 +2,6 @@
 Este é um projeto gratuito para geração de Notas Fiscais Eletrônicas, desenvolvido em .NET utilizando C#
 
 ### Características
-O projeto possui as seguintes características
 * Revisão de termos dos XSD's, com aplicação de nomes humanizados.
 * Documentação de XML Docs em cada propriedade, obtidas principalmente no manual de integração.
 * Validação em profundidade, gerando informações para o desenvolvedor no formato de exception.

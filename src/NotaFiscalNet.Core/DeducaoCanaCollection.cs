@@ -46,7 +46,7 @@ namespace NotaFiscalNet.Core
         {
             if (Count == Capacidade)
                 throw new ApplicationException(
-                    string.Format("A capacidade máxima deste campo é de {0} dedução/deduções.", Capacidade));
+                    $"A capacidade máxima deste campo é de {Capacidade} dedução/deduções.");
 
             base.PreAdd(e, item);
         }

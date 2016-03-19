@@ -21,8 +21,7 @@ namespace NotaFiscalNet.Core
         protected override void PreAdd(CancelEventArgs e, DetalheExportacao item)
         {
             if (Count == CAPACIDADE)
-                throw new ApplicationException(string.Format("A capacidade máxima deste campo é de {0} item(ns).",
-                    CAPACIDADE));
+                throw new ApplicationException($"A capacidade máxima deste campo é de {CAPACIDADE} item(ns).");
 
             base.PreAdd(e, item);
         }

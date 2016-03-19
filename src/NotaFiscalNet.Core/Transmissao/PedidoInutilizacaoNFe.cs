@@ -318,7 +318,8 @@ namespace NotaFiscalNet.Core.Transmissao
         private void CheckReadOnly(string field)
         {
             if ( IsReadOnly )
-                throw new InvalidOperationException(string.Format("O campo '{0}' não pode ser alterado porque a classe está em modo Somente-Leitura.", field));
+                throw new InvalidOperationException(
+                    $"O campo '{field}' não pode ser alterado porque a classe está em modo Somente-Leitura.");
         }
 
         private void ValidateFields()

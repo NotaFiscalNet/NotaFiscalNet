@@ -53,7 +53,7 @@ namespace NotaFiscalNet.Core
         protected override void PreAdd(System.ComponentModel.CancelEventArgs e, Produto item)
         {
             if (Count == Capacidade)
-                throw new ApplicationException(string.Format("A capacidade máxima deste campo é de {0} produtos.", Capacidade));
+                throw new ApplicationException($"A capacidade máxima deste campo é de {Capacidade} produtos.");
 
             base.PreAdd(e, item);
         }

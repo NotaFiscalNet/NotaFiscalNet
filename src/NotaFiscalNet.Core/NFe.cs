@@ -2020,7 +2020,7 @@ namespace NotaFiscalNet.Core
         /// <remarks>O nome do arquivo será gerado automaticamente com base na chave de acesso. O seguinte formato será utilizado: [CHAVE_ACESSO]-nfe.xml.</remarks>
         public string SalvarXmlNaoAssinado(string caminho)
         {
-            var filename = string.Format("{0}-nfe.xml", ChaveAcesso);
+            var filename = $"{ChaveAcesso}-nfe.xml";
             var path = Path.Combine(caminho, filename);
 
             var utf8 = new UTF8Encoding(false);

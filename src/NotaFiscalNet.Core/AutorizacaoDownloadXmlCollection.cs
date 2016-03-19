@@ -22,7 +22,7 @@ namespace NotaFiscalNet.Core
         {
             if (Count == CAPACIDADE)
                 throw new ApplicationException(
-                    string.Format("A capacidade máxima deste campo é de {0} autorização/autorizações.", CAPACIDADE));
+                    $"A capacidade máxima deste campo é de {CAPACIDADE} autorização/autorizações.");
 
             base.PreAdd(e, item);
         }

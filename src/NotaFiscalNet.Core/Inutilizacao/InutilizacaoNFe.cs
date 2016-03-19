@@ -27,14 +27,8 @@ namespace NotaFiscalNet.Core.Inutilizacao
         {
             get
             {
-                return string.Format("ID{0}{1}{2}{3}{4}{5}{6}",
-                    (int)UF,
-                    Ano.ToString("D2"),
-                    Cnpj,
-                    (int)CodigoModeloDocFiscal,
-                    Serie.ToString("D3"),
-                    NumeracaoInicial.ToString("D9"),
-                    NumeracaoFinal.ToString("D9"));
+                return
+                    $"ID{(int) UF}{Ano.ToString("D2")}{Cnpj}{(int) CodigoModeloDocFiscal}{Serie.ToString("D3")}{NumeracaoInicial.ToString("D9")}{NumeracaoFinal.ToString("D9")}";
             }
         }
 

@@ -34,7 +34,7 @@ namespace NotaFiscalNet.Core
         {
             if (Count == Capacidade)
                 throw new ApplicationException(
-                    string.Format("A capacidade máxima deste campo é de {0} Fornecimentos Diários de Cana.", Capacidade));
+                    $"A capacidade máxima deste campo é de {Capacidade} Fornecimentos Diários de Cana.");
             base.PreAdd(e, item);
         }
     }

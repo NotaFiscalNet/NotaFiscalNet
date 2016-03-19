@@ -22,7 +22,8 @@ namespace NotaFiscalNet.Core
         protected override void PreAdd(System.ComponentModel.CancelEventArgs e, ObservacaoContribuinte item)
         {
             if (Count == capacidade)
-                throw new ApplicationException(string.Format("A capacidade máxima deste campo é de {0} observações.", capacidade.ToString()));
+                throw new ApplicationException(
+                    $"A capacidade máxima deste campo é de {capacidade.ToString()} observações.");
 
             base.PreAdd(e, item);
         }

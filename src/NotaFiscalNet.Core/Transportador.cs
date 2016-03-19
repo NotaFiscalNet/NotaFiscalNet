@@ -124,20 +124,13 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    !string.IsNullOrEmpty(CNPJ) ||
-                    !string.IsNullOrEmpty(CPF) ||
-                    !string.IsNullOrEmpty(Nome) ||
-                    !string.IsNullOrEmpty(InscricaoEstadual) ||
-                    !string.IsNullOrEmpty(EnderecoCompleto) ||
-                    !string.IsNullOrEmpty(Municipio) ||
-                    UF != SiglaUF.NaoEspecificado;
-            }
-        }
+        public bool Modificado => !string.IsNullOrEmpty(CNPJ) ||
+                                  !string.IsNullOrEmpty(CPF) ||
+                                  !string.IsNullOrEmpty(Nome) ||
+                                  !string.IsNullOrEmpty(InscricaoEstadual) ||
+                                  !string.IsNullOrEmpty(EnderecoCompleto) ||
+                                  !string.IsNullOrEmpty(Municipio) ||
+                                  UF != SiglaUF.NaoEspecificado;
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {

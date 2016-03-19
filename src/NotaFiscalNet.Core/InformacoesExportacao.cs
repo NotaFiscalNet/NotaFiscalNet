@@ -67,16 +67,9 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a classe foi modificada.
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    UFSaidaPais != SiglaUF.NaoEspecificado ||
-                    !string.IsNullOrEmpty(LocalEmbarque) ||
-                    !string.IsNullOrEmpty(LocalDespacho);
-            }
-        }
+        public bool Modificado => UFSaidaPais != SiglaUF.NaoEspecificado ||
+                                  !string.IsNullOrEmpty(LocalEmbarque) ||
+                                  !string.IsNullOrEmpty(LocalDespacho);
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {

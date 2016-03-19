@@ -20,20 +20,14 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "W01", FieldName = "ICMSTot")]
         [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido)]
-        public TotalICMS ICMS
-        {
-            get { return _ICMS; }
-        }
+        public TotalICMS ICMS => _ICMS;
 
         /// <summary>
         /// Retorna o Total de ISSQN. Opcional.
         /// </summary>
         [NFeField(ID = "W17", FieldName = "ISSQNtot", Opcional = true)]
         [ValidateField(2, true)]
-        public TotalISSQN ISSQN
-        {
-            get { return _ISSQN; }
-        }
+        public TotalISSQN ISSQN => _ISSQN;
 
         /// <summary>
         /// Retorna as Retenções de Tributos Federais. Opcional.
@@ -51,10 +45,7 @@ namespace NotaFiscalNet.Core
         /// </remarks>
         [NFeField(ID = "W23", FieldName = "retTrib", Opcional = true)]
         [ValidateField(3, true)]
-        public RetencaoTributosFederais RetencaoTributosFederais
-        {
-            get { return _retencaoTributosFederais; }
-        }
+        public RetencaoTributosFederais RetencaoTributosFederais => _retencaoTributosFederais;
 
         /// <summary>
         /// Retorna o valor indicando se a Nota Fiscal Eletrônica está em modo somente-leitura.
@@ -63,10 +54,7 @@ namespace NotaFiscalNet.Core
         /// A Nota Fiscal Eletrônica estará em modo somente-leitura quando for instanciada a partir
         /// de um arquivo assinado digitalmente.
         /// </remarks>
-        public bool IsReadOnly
-        {
-            get { return _isReadOnly; }
-        }
+        public bool IsReadOnly => _isReadOnly;
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {

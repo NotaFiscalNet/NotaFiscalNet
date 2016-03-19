@@ -103,27 +103,17 @@ namespace NotaFiscalNet.Core
         /// A Nota Fiscal Eletrônica estará em modo somente-leitura quando for instanciada a partir
         /// de um arquivo assinado digitalmente.
         /// </remarks>
-        public bool IsReadOnly
-        {
-            get { return _isReadOnly; }
-        }
+        public bool IsReadOnly => _isReadOnly;
 
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    UF != UfIBGE.NaoEspecificado ||
-                    MesAnoEmissao != DateTime.MinValue ||
-                    !string.IsNullOrEmpty(CNPJ) ||
-                    !string.IsNullOrEmpty(CodigoModeloDocFiscal) ||
-                    SerieNF != 0 ||
-                    NumeroNF != 0;
-            }
-        }
+        public bool Modificado => UF != UfIBGE.NaoEspecificado ||
+                                  MesAnoEmissao != DateTime.MinValue ||
+                                  !string.IsNullOrEmpty(CNPJ) ||
+                                  !string.IsNullOrEmpty(CodigoModeloDocFiscal) ||
+                                  SerieNF != 0 ||
+                                  NumeroNF != 0;
 
         /// <summary>
         /// Inicializa uma nova instância da classe ReferenciaDocFiscalNFe

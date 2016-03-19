@@ -35,7 +35,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna a referência para o objeto ImpostoProduto no qual o Imposto se refere.
         /// </summary>
-        internal ImpostoProduto Imposto { get { return _imposto; } }
+        internal ImpostoProduto Imposto => _imposto;
 
         private void ValidarConflitoISSQN()
         {
@@ -376,24 +376,17 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    Aliquota != 0 ||
-                    BaseCalculo != 0 ||
-                    !string.IsNullOrEmpty(ClasseIPICigarroBebida) ||
-                    !string.IsNullOrEmpty(CNPJProdutor) ||
-                    !string.IsNullOrEmpty(CodigoEnquadramentoLegal) ||
-                    !string.IsNullOrEmpty(CodigoSeloControle) ||
-                    Quantidade != 0m ||
-                    QuantidadeSeloControle != 0 ||
-                    SituacaoTributaria != SituacaoTributariaIPI.NaoEspecificado ||
-                    Valor != 0 ||
-                    ValorUnidade != 0;
-            }
-        }
+        public bool Modificado => Aliquota != 0 ||
+                                  BaseCalculo != 0 ||
+                                  !string.IsNullOrEmpty(ClasseIPICigarroBebida) ||
+                                  !string.IsNullOrEmpty(CNPJProdutor) ||
+                                  !string.IsNullOrEmpty(CodigoEnquadramentoLegal) ||
+                                  !string.IsNullOrEmpty(CodigoSeloControle) ||
+                                  Quantidade != 0m ||
+                                  QuantidadeSeloControle != 0 ||
+                                  SituacaoTributaria != SituacaoTributariaIPI.NaoEspecificado ||
+                                  Valor != 0 ||
+                                  ValorUnidade != 0;
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {

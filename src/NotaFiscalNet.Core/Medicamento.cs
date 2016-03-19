@@ -94,18 +94,11 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    !string.IsNullOrEmpty(NumeroLote) ||
-                    QuantidadeProdutoLote != 0m ||
-                    DataFabricacao != DateTime.MinValue ||
-                    DataValidade != DateTime.MinValue ||
-                    PrecoMaximoConsumidor != 0m;
-            }
-        }
+        public bool Modificado => !string.IsNullOrEmpty(NumeroLote) ||
+                                  QuantidadeProdutoLote != 0m ||
+                                  DataFabricacao != DateTime.MinValue ||
+                                  DataValidade != DateTime.MinValue ||
+                                  PrecoMaximoConsumidor != 0m;
 
         /// <summary>
         /// Inicializa uma nova instância da classe Medicamento

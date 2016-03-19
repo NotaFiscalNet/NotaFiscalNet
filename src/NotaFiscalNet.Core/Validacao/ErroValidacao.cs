@@ -27,17 +27,17 @@ namespace NotaFiscalNet.Core.Validacao
         /// <summary>
         /// Retorna o código referente ao erro de validação.
         /// </summary>
-        public string Codigo { get { return _codigo; } }
+        public string Codigo => _codigo;
 
         /// <summary>
         /// Retorna o caminho completo do local onde o erro ocorreu.
         /// </summary>
-        public string Local { get { return _local; } }
+        public string Local => _local;
 
         /// <summary>
         /// Retorna a descrição completa do erro de validação.
         /// </summary>
-        public string Descricao { get { return _descricao; } }
+        public string Descricao => _descricao;
 
         /// <summary>
         /// Retorna um Array de String de duas posições contendo o código e a descrição do Erro de

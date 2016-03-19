@@ -44,15 +44,8 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    !string.IsNullOrEmpty(Campo) ||
-                    !string.IsNullOrEmpty(Texto);
-            }
-        }
+        public bool Modificado => !string.IsNullOrEmpty(Campo) ||
+                                  !string.IsNullOrEmpty(Texto);
 
         /// <summary>
         /// Inicializa uma nova instância da classe ObservacaoFisco

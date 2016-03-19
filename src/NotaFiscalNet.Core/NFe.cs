@@ -40,13 +40,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(FieldName = "versao", DataType = "TVerNFe", ID = "A02")]
         [ValidateField(1, true)]
-        public string Versao
-        {
-            get
-            {
-                return Constants.VersaoLeiaute;
-            }
-        }
+        public string Versao => Constants.VersaoLeiaute;
 
         /// <summary>
         /// [Id] Retorna a Chave de Acesso da Nota Fiscal Eletrônica.
@@ -110,20 +104,14 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(FieldName = "ide", ID = "B01")]
         [ValidateField(4)]
-        public IdentificacaoNFe Identificacao
-        {
-            get { return _ide; }
-        }
+        public IdentificacaoNFe Identificacao => _ide;
 
         /// <summary>
         /// Retorna as informações do Emitente da Nota Fiscal Eletrônica.
         /// </summary>
         [NFeField(FieldName = "emit", ID = "C01")]
         [ValidateField(5, ChaveErroValidacao.CampoNaoPreenchido)]
-        public EmitenteNFe Emitente
-        {
-            get { return _emit; }
-        }
+        public EmitenteNFe Emitente => _emit;
 
         /// <summary>
         /// Retorna as informações do Fisco emitente da Nota Fiscal Eletrônica Avulsa. <br/> Informar
@@ -131,10 +119,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(FieldName = "avulsa", ID = "D01", Opcional = true)]
         [ValidateField(6, true)]
-        public FiscoEmitenteNFe Avulsa
-        {
-            get { return _avulsa; }
-        }
+        public FiscoEmitenteNFe Avulsa => _avulsa;
 
         /// <summary>
         /// Retorna as informações do Destinatário da Nota Fiscal Eletrônica.
@@ -148,10 +133,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(FieldName = "retirada", ID = "F01", Opcional = true)]
         [ValidateField(8, true)]
-        public EnderecoEmpresa EnderecoRetirada
-        {
-            get { return _retirada; }
-        }
+        public EnderecoEmpresa EnderecoRetirada => _retirada;
 
         /// <summary>
         /// Retorna o Endereço de Entrega (endereço de entrega dos produtos) da Nota Fiscal
@@ -159,20 +141,14 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(FieldName = "entrega", ID = "G01", Opcional = true)]
         [ValidateField(9, true)]
-        public EnderecoEmpresa EnderecoEntrega
-        {
-            get { return _entrega; }
-        }
+        public EnderecoEmpresa EnderecoEntrega => _entrega;
 
         /// <summary>
         /// [autXML] Retorna a lista de Autorizações de Download do XML.
         /// </summary>
         [NFeField(FieldName = "autXML", ID = "G50", Opcional = true)]
         [ValidateField(10, true)]
-        public AutorizacaoDownloadXmlCollection AutorizacoesDownloadXml
-        {
-            get { return _autXml; }
-        }
+        public AutorizacaoDownloadXmlCollection AutorizacoesDownloadXml => _autXml;
 
         /// <summary>
         /// Retorna a lista de Itens (Produtos ou Serviços) da Nota Fiscal Eletrônica.
@@ -180,67 +156,46 @@ namespace NotaFiscalNet.Core
         /// <remarks>A lista pode conter até no máximo 990 itens.</remarks>
         [NFeField(FieldName = "det", ID = "H01", MinLength = 1, MaxLength = 990)]
         [ValidateField(11, ChaveErroValidacao.CampoNaoPreenchido, Validator = typeof(RangeCollectionValidator), MinLength = 1, MaxLength = 990)]
-        public ProdutoCollection Itens
-        {
-            get { return _itens; }
-        }
+        public ProdutoCollection Itens => _itens;
 
         /// <summary>
         /// Retorna as Informações de Totalização da Nota Fiscal Eletrônica.
         /// </summary>
         [NFeField(FieldName = "total", ID = "W01")]
         [ValidateField(12, ChaveErroValidacao.CampoNaoPreenchido)]
-        public TotalNFe Totais
-        {
-            get { return _totais; }
-        }
+        public TotalNFe Totais => _totais;
 
         /// <summary>
         /// Retorna as Informações de Transporte da Nota Fiscal Eletrônica.
         /// </summary>
         [NFeField(FieldName = "transp", ID = "X01")]
         [ValidateField(13, ChaveErroValidacao.CampoNaoPreenchido)]
-        public TransporteNFe Transporte
-        {
-            get { return _transporte; }
-        }
+        public TransporteNFe Transporte => _transporte;
 
         /// <summary>
         /// Retorna as Informações de Cobrança da Nota Fiscal Eletrônica. Opcional.
         /// </summary>
         [NFeField(FieldName = "cobr", ID = "Y01", Opcional = true)]
         [ValidateField(14, true)]
-        public CobrancaNFe Cobranca
-        {
-            get { return _cobranca; }
-        }
+        public CobrancaNFe Cobranca => _cobranca;
 
         [NFeField(FieldName = "pag", ID = "YA01", Opcional = true)]
         [ValidateField(15, true)]
-        public PagamentoCollection Pagamentos
-        {
-            get { return _pagamentos; }
-        }
+        public PagamentoCollection Pagamentos => _pagamentos;
 
         /// <summary>
         /// Retorna as Informações Adicionais da Nota Fiscal Eletrônica. Opcional.
         /// </summary>
         [NFeField(FieldName = "infAdic", ID = "Z01", Opcional = true)]
         [ValidateField(16, true)]
-        public InformacoesAdicionaisNFe InformacoesAdicionais
-        {
-            get { return _informacoesAdicionais; }
-        }
+        public InformacoesAdicionaisNFe InformacoesAdicionais => _informacoesAdicionais;
 
         /// <summary>
         /// Retorna as Informações de Exportação da Nota Fiscal Eletrônica. Opcional.
         /// </summary>
         [NFeField(FieldName = "exporta", ID = "ZA01", Opcional = true)]
         [ValidateField(17, true)]
-        public InformacoesExportacao Exportacao
-        {
-            get { return _informacoesExportacao; }
-        }
+        public InformacoesExportacao Exportacao => _informacoesExportacao;
 
         /// <summary>
         /// Retorna as Informações de Compras (Notas de Empenho, Pedido e Contrato) da Nota Fiscal
@@ -248,10 +203,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(FieldName = "compra", ID = "ZA01", Opcional = true)]
         [ValidateField(18, true)]
-        public Compra Compras
-        {
-            get { return _compras; }
-        }
+        public Compra Compras => _compras;
 
         /// <summary>
         /// Retorna ou define o Hash da NFe.
@@ -261,10 +213,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna o valor referente ao registro de aquisições de cana.
         /// </summary>
-        public AquisicaoCana AquisicoesCana
-        {
-            get { return _cana; }
-        }
+        public AquisicaoCana AquisicoesCana => _cana;
 
         /// <summary>
         /// Inicializa uma nova instância da classe NFe

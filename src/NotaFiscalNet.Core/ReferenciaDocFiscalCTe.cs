@@ -32,22 +32,12 @@ namespace NotaFiscalNet.Core
         /// A Nota Fiscal Eletrônica estará em modo somente-leitura quando for instanciada a partir
         /// de um arquivo assinado digitalmente.
         /// </remarks>
-        public bool IsReadOnly
-        {
-            get { return _isReadOnly; }
-        }
+        public bool IsReadOnly => _isReadOnly;
 
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    !string.IsNullOrEmpty(ReferenciaCTe);
-            }
-        }
+        public bool Modificado => !string.IsNullOrEmpty(ReferenciaCTe);
 
         /// <summary>
         /// Inicializa uma nova instância da classe ReferenciaDocFiscalCTe

@@ -121,20 +121,13 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    ValorRetidoPIS != 0m ||
-                    ValorRetidoCOFINS > 0m ||
-                    ValorRetidoCSLL > 0m ||
-                    BaseCalculo > 0m ||
-                    ValorRetidoIRRF > 0m ||
-                    BaseCalculoRetencaoPrevidenciaSocial > 0m ||
-                    ValorRetencaoPrevidenciaSocial > 0m;
-            }
-        }
+        public bool Modificado => ValorRetidoPIS != 0m ||
+                                  ValorRetidoCOFINS > 0m ||
+                                  ValorRetidoCSLL > 0m ||
+                                  BaseCalculo > 0m ||
+                                  ValorRetidoIRRF > 0m ||
+                                  BaseCalculoRetencaoPrevidenciaSocial > 0m ||
+                                  ValorRetencaoPrevidenciaSocial > 0m;
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {

@@ -60,15 +60,8 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a classe foi modificada.
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    !string.IsNullOrEmpty(Contrato) ||
-                    !string.IsNullOrEmpty(NotaEmpenho) ||
-                    !string.IsNullOrEmpty(Pedido);
-            }
-        }
+        public bool Modificado => !string.IsNullOrEmpty(Contrato) ||
+                                  !string.IsNullOrEmpty(NotaEmpenho) ||
+                                  !string.IsNullOrEmpty(Pedido);
     }
 }

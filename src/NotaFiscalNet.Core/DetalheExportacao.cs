@@ -33,10 +33,7 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "I52", FieldName = "exportInd")]
         public ExportacaoIndireta Detalhamento { get; } = new ExportacaoIndireta();
 
-        public bool Modificado
-        {
-            get { return !string.IsNullOrEmpty(NumeroDrawback) && Detalhamento.Modificado; }
-        }
+        public bool Modificado => !string.IsNullOrEmpty(NumeroDrawback) && Detalhamento.Modificado;
 
         void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {

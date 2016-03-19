@@ -47,16 +47,9 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "I55", FieldName = "qExport", DataType = "TDec_1104v")]
         public decimal QuantidadeItemExportado { get; set; }
 
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    !string.IsNullOrEmpty(NumeroRegistro) ||
-                    !string.IsNullOrEmpty(ChaveAcessoNFe) ||
-                    QuantidadeItemExportado != 0;
-            }
-        }
+        public bool Modificado => !string.IsNullOrEmpty(NumeroRegistro) ||
+                                  !string.IsNullOrEmpty(ChaveAcessoNFe) ||
+                                  QuantidadeItemExportado != 0;
 
         void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {

@@ -25,7 +25,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna a referência para o objeto ImpostoProduto no qual o Imposto se refere.
         /// </summary>
-        internal ImpostoProduto Imposto { get { return _imposto; } }
+        internal ImpostoProduto Imposto => _imposto;
 
         private void ValidarConflitoISSQN()
         {
@@ -100,17 +100,10 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    BaseCalculo != 0m ||
-                    ValorDespesasAduaneiras != 0m ||
-                    ValorII != 0m ||
-                    ValorIOF != 0m;
-            }
-        }
+        public bool Modificado => BaseCalculo != 0m ||
+                                  ValorDespesasAduaneiras != 0m ||
+                                  ValorII != 0m ||
+                                  ValorIOF != 0m;
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {

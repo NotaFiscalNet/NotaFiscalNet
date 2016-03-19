@@ -21,10 +21,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna a referência para o Produto no qual a coleção está contida.
         /// </summary>
-        internal Produto Produto
-        {
-            get { return _produto; }
-        }
+        internal Produto Produto => _produto;
 
         protected override void PreAdd(CancelEventArgs e, Medicamento item)
         {

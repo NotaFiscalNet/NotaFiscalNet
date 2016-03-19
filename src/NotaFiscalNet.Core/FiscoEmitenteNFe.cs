@@ -188,23 +188,16 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a classe foi modificada.
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    !string.IsNullOrEmpty(CNPJ) ||
-                    !string.IsNullOrEmpty(OrgaoEmitente) ||
-                    !string.IsNullOrEmpty(MatriculaAgente) ||
-                    !string.IsNullOrEmpty(NomeAgente) ||
-                    !string.IsNullOrEmpty(Telefone) ||
-                    UF != SiglaUF.NaoEspecificado ||
-                    !string.IsNullOrEmpty(NumeroDAR) ||
-                    DataEmissaoDAR != DateTime.MinValue ||
-                    ValorDAR != 0m ||
-                    !string.IsNullOrEmpty(ReparticaoFiscalEmitente) ||
-                    DataPagamentoDAR != DateTime.MinValue;
-            }
-        }
+        public bool Modificado => !string.IsNullOrEmpty(CNPJ) ||
+                                  !string.IsNullOrEmpty(OrgaoEmitente) ||
+                                  !string.IsNullOrEmpty(MatriculaAgente) ||
+                                  !string.IsNullOrEmpty(NomeAgente) ||
+                                  !string.IsNullOrEmpty(Telefone) ||
+                                  UF != SiglaUF.NaoEspecificado ||
+                                  !string.IsNullOrEmpty(NumeroDAR) ||
+                                  DataEmissaoDAR != DateTime.MinValue ||
+                                  ValorDAR != 0m ||
+                                  !string.IsNullOrEmpty(ReparticaoFiscalEmitente) ||
+                                  DataPagamentoDAR != DateTime.MinValue;
     }
 }

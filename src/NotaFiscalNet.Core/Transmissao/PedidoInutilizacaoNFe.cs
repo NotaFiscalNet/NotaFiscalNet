@@ -68,7 +68,7 @@ namespace NotaFiscalNet.Core.Transmissao
         /// <summary>
         /// Retorna o nome interno do serviço.
         /// </summary>
-        public string Servico { get { return "INUTILIZAR"; } }
+        public string Servico => "INUTILIZAR";
 
         /// <summary>
         /// Retorna ou define o código da UF IBGE do emitente.

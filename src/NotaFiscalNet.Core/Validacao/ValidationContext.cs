@@ -11,18 +11,9 @@ namespace NotaFiscalNet.Core.Validacao
         private CodePath _path = new CodePath();
         private Dictionary<string, ErroValidacao> _errors = new Dictionary<string, ErroValidacao>();
 
-        public CodePath Path
-        {
-            get
-            {
-                return _path;
-            }
-        }
+        public CodePath Path => _path;
 
-        public Dictionary<string, ErroValidacao> Errors
-        {
-            get { return _errors; }
-        }
+        public Dictionary<string, ErroValidacao> Errors => _errors;
 
         public void Add(ErroValidacao error)
         {

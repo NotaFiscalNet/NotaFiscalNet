@@ -38,7 +38,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna a referência para o objeto ImpostoProduto no qual o Imposto se refere.
         /// </summary>
-        internal ImpostoProduto Imposto { get { return _imposto; } }
+        internal ImpostoProduto Imposto => _imposto;
 
         private void ValidarConflitoISSQN()
         {
@@ -535,28 +535,21 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    Aliquota != 0m ||
-                    AliquotaST != 0m ||
-                    AliquotaSN != 0m ||
-                    BaseCalculo != 0m ||
-                    BaseCalculoST != 0m ||
-                    ModalidadeBaseCalculo != ModalidadeBaseCalculoIcms.NaoEspecificado ||
-                    ModalidadeBaseCalculoST != ModalidadeBaseCalculoIcmsST.NaoEspecificado ||
-                    OrigemMercadoria != OrigemMercadoria.NaoEspecificado ||
-                    PercentualMargemValorAdicionadoST != 0m ||
-                    PercentualReducaoBaseCalculo != 0m ||
-                    PercentualReducaoBaseCalculoST != 0m ||
-                    SituacaoTributaria != SituacaoTributariaICMS.NaoEspecificado ||
-                    Valor != 0m ||
-                    ValorST != 0m ||
-                    ValorSN != 0m;
-            }
-        }
+        public bool Modificado => Aliquota != 0m ||
+                                  AliquotaST != 0m ||
+                                  AliquotaSN != 0m ||
+                                  BaseCalculo != 0m ||
+                                  BaseCalculoST != 0m ||
+                                  ModalidadeBaseCalculo != ModalidadeBaseCalculoIcms.NaoEspecificado ||
+                                  ModalidadeBaseCalculoST != ModalidadeBaseCalculoIcmsST.NaoEspecificado ||
+                                  OrigemMercadoria != OrigemMercadoria.NaoEspecificado ||
+                                  PercentualMargemValorAdicionadoST != 0m ||
+                                  PercentualReducaoBaseCalculo != 0m ||
+                                  PercentualReducaoBaseCalculoST != 0m ||
+                                  SituacaoTributaria != SituacaoTributariaICMS.NaoEspecificado ||
+                                  Valor != 0m ||
+                                  ValorST != 0m ||
+                                  ValorSN != 0m;
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {

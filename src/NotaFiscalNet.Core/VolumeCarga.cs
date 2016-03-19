@@ -1,4 +1,5 @@
-﻿using NotaFiscalNet.Core.Interfaces;
+﻿using System.Linq;
+using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 
 namespace NotaFiscalNet.Core
@@ -103,28 +104,18 @@ namespace NotaFiscalNet.Core
         /// [lacres] Retorna uma Coleção de Lacres
         /// </summary>
         [NFeField(FieldName = "lacres", ID = "X33", MinLength = 1, MaxLength = 60)]
-        public StringCollection Lacres
-        {
-            get { return _lacres; }
-        }
+        public StringCollection Lacres => _lacres;
 
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    QuantidadeVolumes != 0L ||
-                    !string.IsNullOrEmpty(Especie) ||
-                    !string.IsNullOrEmpty(Marca) ||
-                    !string.IsNullOrEmpty(Numeracao) ||
-                    PesoLiquido != 0m ||
-                    PesoBruto != 0m ||
-                    Lacres.Modificado;
-            }
-        }
+        public bool Modificado => QuantidadeVolumes != 0L ||
+                                  !string.IsNullOrEmpty(Especie) ||
+                                  !string.IsNullOrEmpty(Marca) ||
+                                  !string.IsNullOrEmpty(Numeracao) ||
+                                  PesoLiquido != 0m ||
+                                  PesoBruto != 0m ||
+                                  Lacres.Modificado;
 
         /// <summary>
         /// Inicializa uma nova instância da classe VolumeCarga
@@ -149,14 +140,11 @@ namespace NotaFiscalNet.Core
             if (PesoBruto > 0m)
                 writer.WriteElementString("pesoB", SerializationUtil.ToTDec_1203(PesoBruto));
             if (Lacres.Modificado)
-                foreach (string lacre in Lacres)
+                foreach (var lacre in Lacres.Where(lacre => !string.IsNullOrEmpty(lacre)))
                 {
-                    if (!string.IsNullOrEmpty(lacre))
-                    {
-                        writer.WriteStartElement("lacres"); // Elemento 'lacres'
-                        writer.WriteElementString("nLacre", SerializationUtil.ToToken(lacre, 60));
-                        writer.WriteEndElement(); // Elemento 'lacres'
-                    }
+                    writer.WriteStartElement("lacres"); // Elemento 'lacres'
+                    writer.WriteElementString("nLacre", SerializationUtil.ToToken(lacre, 60));
+                    writer.WriteEndElement(); // Elemento 'lacres'
                 }
             writer.WriteEndElement(); // Elemento 'vol'
         }

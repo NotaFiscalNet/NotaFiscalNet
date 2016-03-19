@@ -14,23 +14,13 @@ namespace NotaFiscalNet.Core.Inutilizacao
         /// [versao]
         /// </summary>
         [NFeField(FieldName = "versao", DataType = "TVerInutNFe")]
-        public string Versao
-        {
-            get { return Constants.VersaoLeiaute; }
-        }
+        public string Versao => Constants.VersaoLeiaute;
 
         /// <summary>
         /// [Id] Retorna o ID da Inutilização.
         /// </summary>
         [NFeField(FieldName = "Id")]
-        public string Id
-        {
-            get
-            {
-                return
-                    $"ID{(int)UF}{Ano.ToString("D2")}{Cnpj}{(int)CodigoModeloDocFiscal}{Serie.ToString("D3")}{NumeracaoInicial.ToString("D9")}{NumeracaoFinal.ToString("D9")}";
-            }
-        }
+        public string Id => $"ID{(int)UF}{Ano.ToString("D2")}{Cnpj}{(int)CodigoModeloDocFiscal}{Serie.ToString("D3")}{NumeracaoInicial.ToString("D9")}{NumeracaoFinal.ToString("D9")}";
 
         /// <summary>
         /// [tpAmb] Retorna ou define o Ambiente do Documento Fiscal.
@@ -42,10 +32,7 @@ namespace NotaFiscalNet.Core.Inutilizacao
         /// [xServ] Retorna a descrição do serviço.
         /// </summary>
         [NFeField(FieldName = "xServ")]
-        public string Servico
-        {
-            get { return "INUTILIZAR"; }
-        }
+        public string Servico => "INUTILIZAR";
 
         /// <summary>
         /// [cUF] Retorna ou define o Código da UF do emitente.

@@ -131,25 +131,18 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    ValorTotalServicos != 0m ||
-                    BaseCalculo > 0m ||
-                    ValorTotalISS > 0m ||
-                    ValorPIS > 0m ||
-                    ValorCOFINS > 0m ||
-                    DataCompetencia != DateTime.MinValue ||
-                    ValorDescontoCondicionado > 0m ||
-                    ValorOutrasRetencoes > 0m ||
-                    ValorDescontoIncondicionado > 0m ||
-                    ValorDescontoCondicionado > 0m ||
-                    ValorIssRetido > 0m ||
-                    CodigoRegimeTributacao != 0;
-            }
-        }
+        public bool Modificado => ValorTotalServicos != 0m ||
+                                  BaseCalculo > 0m ||
+                                  ValorTotalISS > 0m ||
+                                  ValorPIS > 0m ||
+                                  ValorCOFINS > 0m ||
+                                  DataCompetencia != DateTime.MinValue ||
+                                  ValorDescontoCondicionado > 0m ||
+                                  ValorOutrasRetencoes > 0m ||
+                                  ValorDescontoIncondicionado > 0m ||
+                                  ValorDescontoCondicionado > 0m ||
+                                  ValorIssRetido > 0m ||
+                                  CodigoRegimeTributacao != 0;
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {

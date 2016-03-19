@@ -125,17 +125,11 @@ namespace NotaFiscalNet.Core
             set { _valorLiquidoFornecimentos = ValidationUtil.ValidateTDec_1302(value, "ValorLiquidoFornecimentos"); }
         }
 
-        public bool Modificado
-        {
-            get
-            {
-                return !string.IsNullOrEmpty(Safra) || Referencia != DateTime.MinValue ||
-                       FornecimentosDiarios.Count > 0 || QuantidadeTotalMes > 0m
-                       || QuantidadeTotalAnterior > 0m || QuantidadeTotalGeral > 0m || Deducoes.Count > 0 ||
-                       ValorFornecimentos > 0m || ValorTotalDeducoes > 0m
-                       || ValorLiquidoFornecimentos > 0m;
-            }
-        }
+        public bool Modificado => !string.IsNullOrEmpty(Safra) || Referencia != DateTime.MinValue ||
+                                  FornecimentosDiarios.Count > 0 || QuantidadeTotalMes > 0m
+                                  || QuantidadeTotalAnterior > 0m || QuantidadeTotalGeral > 0m || Deducoes.Count > 0 ||
+                                  ValorFornecimentos > 0m || ValorTotalDeducoes > 0m
+                                  || ValorLiquidoFornecimentos > 0m;
 
         public void Serializar(XmlWriter writer, NFe nfe)
         {

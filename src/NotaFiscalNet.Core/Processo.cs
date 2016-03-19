@@ -43,15 +43,8 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    !string.IsNullOrEmpty(Identificador) ||
-                    OrigemProcesso != OrigemProcesso.NaoEspecificado;
-            }
-        }
+        public bool Modificado => !string.IsNullOrEmpty(Identificador) ||
+                                  OrigemProcesso != OrigemProcesso.NaoEspecificado;
 
         /// <summary>
         /// Inicializa uma nova instância da classe Processo

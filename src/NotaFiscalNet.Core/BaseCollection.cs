@@ -31,10 +31,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         /// <param name="index">Índice do item a ser retornado.</param>
         /// <returns>Retorna o item no qual o índice se refere.</returns>
-        public T this[int index]
-        {
-            get { return _items[index]; }
-        }
+        public T this[int index] => _items[index];
 
         public IEnumerator<T> GetEnumerator()
         {
@@ -115,10 +112,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retora a quantidade de Itens na lista.
         /// </summary>
-        public int Count
-        {
-            get { return _items.Count; }
-        }
+        public int Count => _items.Count;
 
         /// <summary>
         /// Retorna o valor indicando se a lista é apenas-leitura ou não.

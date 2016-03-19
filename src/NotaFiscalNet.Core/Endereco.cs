@@ -85,17 +85,10 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        public override bool Modificado
-        {
-            get
-            {
-                return
-                    base.Modificado ||
-                    !string.IsNullOrEmpty(CEP) ||
-                    CodigoPaisBACEN != 0 ||
-                    !string.IsNullOrEmpty(NomePais) ||
-                    !string.IsNullOrEmpty(Telefone);
-            }
-        }
+        public override bool Modificado => base.Modificado ||
+                                           !string.IsNullOrEmpty(CEP) ||
+                                           CodigoPaisBACEN != 0 ||
+                                           !string.IsNullOrEmpty(NomePais) ||
+                                           !string.IsNullOrEmpty(Telefone);
     }
 }

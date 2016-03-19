@@ -67,16 +67,9 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    Numero != 0 ||
-                    NumeroSequencial != 0 ||
-                    !string.IsNullOrEmpty(CodigoFabricante) ||
-                    ValorDescontoItemDI != 0m;
-            }
-        }
+        public bool Modificado => Numero != 0 ||
+                                  NumeroSequencial != 0 ||
+                                  !string.IsNullOrEmpty(CodigoFabricante) ||
+                                  ValorDescontoItemDI != 0m;
     }
 }

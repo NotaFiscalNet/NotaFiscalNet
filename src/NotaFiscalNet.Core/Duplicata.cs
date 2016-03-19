@@ -70,15 +70,8 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    DataVencimento != DateTime.MinValue ||
-                    !string.IsNullOrEmpty(Numero) ||
-                    Valor != 0m;
-            }
-        }
+        public bool Modificado => DataVencimento != DateTime.MinValue ||
+                                  !string.IsNullOrEmpty(Numero) ||
+                                  Valor != 0m;
     }
 }

@@ -36,15 +36,8 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada.
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    Fatura.Modificado ||
-                    Duplicatas.Modificado;
-            }
-        }
+        public bool Modificado => Fatura.Modificado ||
+                                  Duplicatas.Modificado;
 
         /// <summary>
         /// Retorna o valor indicando se a Nota Fiscal Eletrônica está em modo somente-leitura.

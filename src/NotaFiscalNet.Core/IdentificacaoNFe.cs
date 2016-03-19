@@ -214,10 +214,7 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "NFref", ID = "B12a")]
         [ValidateField(13, ChaveErroValidacao.CollectionMinValue, Validator = typeof(RangeCollectionValidator),
             MinLength = 0)]
-        public ReferenciaDocFiscalCollection ReferenciasDocFiscais
-        {
-            get { return _nfRef; }
-        }
+        public ReferenciaDocFiscalCollection ReferenciasDocFiscais => _nfRef;
 
         /// <summary>
         /// [tpImp] Retorna ou define o formato de impressão do DANFE. Valor padrão 'Retrato'.

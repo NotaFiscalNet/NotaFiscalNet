@@ -59,50 +59,35 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(FieldName = "transporta", ID = "X03")]
         [ValidateField(2, true)]
-        public Transportador Transportador
-        {
-            get { return _transporta; }
-        }
+        public Transportador Transportador => _transporta;
 
         /// <summary>
         /// [retTransp] Retorna as informações de Retenção de ICMS do transporte. <strong>Opcional</strong>.
         /// </summary>
         [NFeField(FieldName = "retTransp", ID = "X11")]
         [ValidateField(3, true)]
-        public RetencaoICMSTransporte RetencaoICMS
-        {
-            get { return _retencaoICMS; }
-        }
+        public RetencaoICMSTransporte RetencaoICMS => _retencaoICMS;
 
         /// <summary>
         /// [veicTransp] Retorna as informações do Veículo de Transporte da Carga. <strong>Opcional</strong>.
         /// </summary>
         [NFeField(FieldName = "veicTransp", ID = "X18")]
         [ValidateField(4, true)]
-        public VeiculoTransporte VeiculoTransporte
-        {
-            get { return _veiculoTransporte; }
-        }
+        public VeiculoTransporte VeiculoTransporte => _veiculoTransporte;
 
         /// <summary>
         /// [reboque] Retorna a lista de Reboques. <strong>Opcional</strong>.
         /// </summary>
         [NFeField(FieldName = "reboque", ID = "X22")]
         [ValidateField(5, ChaveErroValidacao.CollectionMinValue, Validator = typeof(RangeCollectionValidator), MaxLength = 5)]
-        public ReboqueCollection Reboques
-        {
-            get { return _reboques; }
-        }
+        public ReboqueCollection Reboques => _reboques;
 
         /// <summary>
         /// [vol] Retorna a lista de Volumes da Carga. <strong>Opcional</strong>.
         /// </summary>
         [NFeField(FieldName = "vol", ID = "X26")]
         [ValidateField(6, true)]
-        public VolumeCargaCollection VolumesCarga
-        {
-            get { return _volumes; }
-        }
+        public VolumeCargaCollection VolumesCarga => _volumes;
 
         /// <summary>
         /// [vagao] Retorna ou define os dados do Vagão.

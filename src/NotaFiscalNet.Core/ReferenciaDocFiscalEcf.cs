@@ -69,24 +69,14 @@ namespace NotaFiscalNet.Core
         /// A Nota Fiscal Eletrônica estará em modo somente-leitura quando for instanciada a partir
         /// de um arquivo assinado digitalmente.
         /// </remarks>
-        public bool IsReadOnly
-        {
-            get { return _isReadOnly; }
-        }
+        public bool IsReadOnly => _isReadOnly;
 
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    !string.IsNullOrEmpty(CodigoModeloDocFiscal) ||
-                    NumeroECF != 0 ||
-                    NumeroCOO != 0;
-            }
-        }
+        public bool Modificado => !string.IsNullOrEmpty(CodigoModeloDocFiscal) ||
+                                  NumeroECF != 0 ||
+                                  NumeroCOO != 0;
 
         public void Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {

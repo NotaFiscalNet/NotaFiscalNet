@@ -26,15 +26,8 @@ namespace NotaFiscalNet.Core
             set { _valor = ValidationUtil.ValidateTDec_1302(value, "Valor"); }
         }
 
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    !string.IsNullOrEmpty(Descricao) ||
-                    Valor != 0;
-            }
-        }
+        public bool Modificado => !string.IsNullOrEmpty(Descricao) ||
+                                  Valor != 0;
 
         public void Serializar(XmlWriter writer, NFe nfe)
         {

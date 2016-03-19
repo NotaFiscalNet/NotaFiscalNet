@@ -139,17 +139,10 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    CodigoProdutoANP != 0 ||
-                    !string.IsNullOrEmpty(CodigoCODIF) ||
-                    QuantidadeCombustivelFaturadaTempAmbiente != 0m ||
-                    CIDE.Modificado ||
-                    UFConsumo != SiglaUF.NaoEspecificado;
-            }
-        }
+        public bool Modificado => CodigoProdutoANP != 0 ||
+                                  !string.IsNullOrEmpty(CodigoCODIF) ||
+                                  QuantidadeCombustivelFaturadaTempAmbiente != 0m ||
+                                  CIDE.Modificado ||
+                                  UFConsumo != SiglaUF.NaoEspecificado;
     }
 }

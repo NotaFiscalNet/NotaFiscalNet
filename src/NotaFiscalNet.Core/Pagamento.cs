@@ -76,12 +76,6 @@ namespace NotaFiscalNet.Core
             writer.WriteEndElement(); // </pag>
         }
 
-        public bool Modificado
-        {
-            get
-            {
-                return (int)TipoPagamento != 0 || ValorPagamento != 0.0m || DetalhesOperacaoCartao != null;
-            }
-        }
+        public bool Modificado => (int)TipoPagamento != 0 || ValorPagamento != 0.0m || DetalhesOperacaoCartao != null;
     }
 }

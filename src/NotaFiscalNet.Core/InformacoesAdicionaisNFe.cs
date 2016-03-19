@@ -54,46 +54,30 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "Z04", FieldName = "obsCont", MinLength = 1, MaxLength = 10, Opcional = true)]
         [ValidateField(3, ChaveErroValidacao.CollectionMinValue, Validator = typeof(RangeCollectionValidator), MaxLength = 10)]
-        public ObservacaoContribuinteCollection ObservacoesContribuinte
-        {
-            get { return _observacoesContribuinte; }
-        }
+        public ObservacaoContribuinteCollection ObservacoesContribuinte => _observacoesContribuinte;
 
         /// <summary>
         /// [obsFisco] Retorna as Informações de uso Livre do Fisco. Opcional.
         /// </summary>
         [NFeField(ID = "Z07", FieldName = "obsFisco", MinLength = 1, MaxLength = 10, Opcional = true)]
         [ValidateField(4, ChaveErroValidacao.CollectionMinValue, Validator = typeof(RangeCollectionValidator), MaxLength = 10)]
-        public ObservacaoFiscoCollection ObservacoesFisco
-        {
-            get { return _observacoesFisco; }
-        }
+        public ObservacaoFiscoCollection ObservacoesFisco => _observacoesFisco;
 
         /// <summary>
         /// [procRef] Retorna os Processos Referenciados. Opcional.
         /// </summary>
         [NFeField(ID = "Z10", FieldName = "procRef", Opcional = true)]
         [ValidateField(5, ChaveErroValidacao.CollectionMinValue, Validator = typeof(RangeCollectionValidator))]
-        public ProcessoCollection Processos
-        {
-            get { return _processos; }
-        }
+        public ProcessoCollection Processos => _processos;
 
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    !string.IsNullOrEmpty(InformacoesComplementaresContribuinte) ||
-                    !string.IsNullOrEmpty(InformacoesComplementaresFisco) ||
-                    ObservacoesContribuinte.Modificado ||
-                    ObservacoesFisco.Modificado ||
-                    Processos.Modificado;
-            }
-        }
+        public bool Modificado => !string.IsNullOrEmpty(InformacoesComplementaresContribuinte) ||
+                                  !string.IsNullOrEmpty(InformacoesComplementaresFisco) ||
+                                  ObservacoesContribuinte.Modificado ||
+                                  ObservacoesFisco.Modificado ||
+                                  Processos.Modificado;
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {

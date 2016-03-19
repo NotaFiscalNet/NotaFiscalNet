@@ -55,12 +55,6 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        public bool Modificado
-        {
-            get
-            {
-                return string.IsNullOrEmpty(CNPJ) && (int)TipoBandeira != 0 && string.IsNullOrEmpty(CodigoAutorizacao);
-            }
-        }
+        public bool Modificado => string.IsNullOrEmpty(CNPJ) && (int)TipoBandeira != 0 && string.IsNullOrEmpty(CodigoAutorizacao);
     }
 }

@@ -10,20 +10,13 @@ namespace NotaFiscalNet.Core
     /// </summary>
     public class EnderecoSimples : IModificavel
     {
-        public virtual bool Modificado
-        {
-            get
-            {
-                return
-                    !string.IsNullOrEmpty(Logradouro) ||
-                    !string.IsNullOrEmpty(Numero) ||
-                    !string.IsNullOrEmpty(Complemento) ||
-                    !string.IsNullOrEmpty(Bairro) ||
-                    CodigoMunicipioIBGE != 0 ||
-                    !string.IsNullOrEmpty(NomeMunicipio) ||
-                    UF != SiglaUF.NaoEspecificado;
-            }
-        }
+        public virtual bool Modificado => !string.IsNullOrEmpty(Logradouro) ||
+                                          !string.IsNullOrEmpty(Numero) ||
+                                          !string.IsNullOrEmpty(Complemento) ||
+                                          !string.IsNullOrEmpty(Bairro) ||
+                                          CodigoMunicipioIBGE != 0 ||
+                                          !string.IsNullOrEmpty(NomeMunicipio) ||
+                                          UF != SiglaUF.NaoEspecificado;
 
         internal void SerializeEnderecoSimples(XmlWriter writer, NFe nfe)
         {

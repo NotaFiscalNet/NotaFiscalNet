@@ -10,7 +10,7 @@ namespace NotaFiscalNet.Core.Evento
         /// <summary>
         /// [tpEvento] Retorna o tipo de evento referente ao Cancelamento de NF-e.
         /// </summary>
-        public override TipoEventoNFe Tipo { get { return TipoEventoNFe.Cancelamento; } }
+        public override TipoEventoNFe Tipo => TipoEventoNFe.Cancelamento;
 
         /// <summary>
         /// [descEvento ]Retorna a descrição para o evento de Cancelamento da NF-e.

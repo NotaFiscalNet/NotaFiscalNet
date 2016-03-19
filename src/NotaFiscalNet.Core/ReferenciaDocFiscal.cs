@@ -44,61 +44,39 @@ namespace NotaFiscalNet.Core
         /// Representa os tipos de dados da referência NF-e.
         /// </summary>
         [ValidateField(2, false)]
-        public ReferenciaDocFiscalNFe ReferenciaNFe
-        {
-            get { return _referenciaNFe; }
-        }
+        public ReferenciaDocFiscalNFe ReferenciaNFe => _referenciaNFe;
 
         /// <summary>
         /// Representa os tipos de dados da referência NF.
         /// </summary>
         [ValidateField(3, false)]
-        public ReferenciaDocFiscalNF ReferenciaNF
-        {
-            get { return _referenciaNF; }
-        }
+        public ReferenciaDocFiscalNF ReferenciaNF => _referenciaNF;
 
         /// <summary>
         /// Representa os tipos de dados da referência NF de Produtor.
         /// </summary>
         [ValidateField(3, false)]
-        public ReferenciaDocFiscalNFProdutor ReferenciaNFProdutor
-        {
-            get { return _referenciaNFP; }
-        }
+        public ReferenciaDocFiscalNFProdutor ReferenciaNFProdutor => _referenciaNFP;
 
         /// <summary>
         /// Representa os tipos de dados da referência CTe.
         /// </summary>
         [ValidateField(4, false)]
-        public ReferenciaDocFiscalCTe ReferenciaCTe
-        {
-            get { return _referenciaCTe; }
-        }
+        public ReferenciaDocFiscalCTe ReferenciaCTe => _referenciaCTe;
 
         /// <summary>
         /// Representa os tipos de dados da referência de ECF.
         /// </summary>
         [ValidateField(4, false)]
-        public ReferenciaDocFiscalEcf ReferenciaECF
-        {
-            get { return _referenciaECF; }
-        }
+        public ReferenciaDocFiscalEcf ReferenciaECF => _referenciaECF;
 
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    ReferenciaNFe.Modificado ||
-                    ReferenciaNF.Modificado ||
-                    ReferenciaNFProdutor.Modificado ||
-                    ReferenciaCTe.Modificado;
-            }
-        }
+        public bool Modificado => ReferenciaNFe.Modificado ||
+                                  ReferenciaNF.Modificado ||
+                                  ReferenciaNFProdutor.Modificado ||
+                                  ReferenciaCTe.Modificado;
 
         /// <summary>
         /// Inicializa uma nova instância da classe ReferenciaDocFiscal

@@ -65,16 +65,9 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    !string.IsNullOrEmpty(Placa) ||
-                    UF != SiglaUF.NaoEspecificado ||
-                    !string.IsNullOrEmpty(RNTC);
-            }
-        }
+        public bool Modificado => !string.IsNullOrEmpty(Placa) ||
+                                  UF != SiglaUF.NaoEspecificado ||
+                                  !string.IsNullOrEmpty(RNTC);
 
         /// <summary>
         /// Inicializa uma nova instância da classe VeiculoTransporte

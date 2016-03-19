@@ -31,9 +31,6 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public ErroValidacao Detalhes { get; }
 
-        public override string Message
-        {
-            get { return Detalhes.Descricao; }
-        }
+        public override string Message => Detalhes.Descricao;
     }
 }

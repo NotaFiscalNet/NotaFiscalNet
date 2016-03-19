@@ -42,10 +42,7 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        public bool Modificado
-        {
-            get { return Dia != 0 && Quantidade > 0; }
-        }
+        public bool Modificado => Dia != 0 && Quantidade > 0;
 
         public void Serializar(XmlWriter writer, NFe nfe)
         {

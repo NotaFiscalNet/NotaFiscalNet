@@ -70,104 +70,73 @@ namespace NotaFiscalNet.Core
         [Obsolete("Usar o campos Icms.")]
         [NFeField(ID = "N01", FieldName = "ICMS")]
         [ValidateField(1, true)]
-        public ImpostoICMS ICMS
-        {
-            get { return _ICMS; }
-        }
+        public ImpostoICMS ICMS => _ICMS;
 
         /// <summary>
         /// Retorna o valor representando as informações de declaração do IPI para o produto. Opcional.
         /// </summary>
         [NFeField(ID = "O01", FieldName = "IPI", Opcional = true)]
         [ValidateField(2, true)]
-        public ImpostoIPI IPI
-        {
-            get { return _ipi; }
-        }
+        public ImpostoIPI IPI => _ipi;
 
         /// <summary>
         /// Retorna o II (Imposto de Importação). Opcional.
         /// </summary>
         [NFeField(ID = "P01", FieldName = "II", Opcional = true)]
         [ValidateField(3, true)]
-        public ImpostoII II
-        {
-            get { return _ii; }
-        }
+        public ImpostoII II => _ii;
 
         /// <summary>
         /// Retorna o ISSQN
         /// </summary>
         [NFeField(ID = "U01", FieldName = "ISSQN")]
         [ValidateField(4, true)]
-        public ImpostoISSQN ISSQN
-        {
-            get { return _issqn; }
-        }
+        public ImpostoISSQN ISSQN => _issqn;
 
         /// <summary>
         /// Retorna as informações do PIS (Programa de Integração Social).
         /// </summary>
         [NFeField(ID = "Q01", FieldName = "PIS")]
         [ValidateField(5, ChaveErroValidacao.CampoNaoPreenchido)]
-        public ImpostoPIS PIS
-        {
-            get { return _pis; }
-        }
+        public ImpostoPIS PIS => _pis;
 
         /// <summary>
         /// Retorna o PIS ST. Opcional.
         /// </summary>
         [NFeField(ID = "R01", FieldName = "PISST", Opcional = true)]
         [ValidateField(6, true)]
-        public ImpostoPISST PISST
-        {
-            get { return _pisst; }
-        }
+        public ImpostoPISST PISST => _pisst;
 
         /// <summary>
         /// Retorna o COFINS
         /// </summary>
         [NFeField(ID = "S01", FieldName = "COFINS")]
         [ValidateField(7, ChaveErroValidacao.CampoNaoPreenchido)]
-        public ImpostoCOFINS COFINS
-        {
-            get { return _cofins; }
-        }
+        public ImpostoCOFINS COFINS => _cofins;
 
         /// <summary>
         /// Retorna o COFINS ST. Opcional.
         /// </summary>
         [NFeField(ID = "T01", FieldName = "COFINSST")]
         [ValidateField(8, true)]
-        public ImpostoCOFINSST COFINSST
-        {
-            get { return _cofinsst; }
-        }
+        public ImpostoCOFINSST COFINSST => _cofinsst;
 
         /// <summary>
         /// Retorna a referência para o objeto Produto no qual o Imposto se refere.
         /// </summary>
-        internal Produto Produto { get { return _produto; } }
+        internal Produto Produto => _produto;
 
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    ICMS.Modificado || Icms != null ||
-                    IPI.Modificado ||
-                    II.Modificado ||
-                    PIS.Modificado ||
-                    PISST.Modificado ||
-                    COFINS.Modificado ||
-                    COFINSST.Modificado ||
-                    ISSQN.Modificado;
-            }
-        }
+        public bool Modificado => ICMS.Modificado || Icms != null ||
+                                  IPI.Modificado ||
+                                  II.Modificado ||
+                                  PIS.Modificado ||
+                                  PISST.Modificado ||
+                                  COFINS.Modificado ||
+                                  COFINSST.Modificado ||
+                                  ISSQN.Modificado;
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {

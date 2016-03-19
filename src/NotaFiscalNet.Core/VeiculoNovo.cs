@@ -396,41 +396,34 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna a referência para o objeto Produto no qual o VeiculoNovo se refere.
         /// </summary>
-        internal Produto Produto { get { return _produto; } }
+        internal Produto Produto => _produto;
 
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    TipoOperacaoVenda != TipoOperacaoVendaVeiculo.NaoEspecificado ||
-                    !string.IsNullOrEmpty(Chassi) ||
-                    !string.IsNullOrEmpty(CodigoCor) ||
-                    !string.IsNullOrEmpty(DescricaoCor) ||
-                    !string.IsNullOrEmpty(PotenciaMotor) ||
-                    !string.IsNullOrEmpty(Cilindradas) ||
-                    !string.IsNullOrEmpty(PesoLiquido) ||
-                    !string.IsNullOrEmpty(PesoBruto) ||
-                    !string.IsNullOrEmpty(NumeroSerie) ||
-                    !string.IsNullOrEmpty(Combustivel) ||
-                    !string.IsNullOrEmpty(NumeroMotor) ||
-                    CapacidadeMaximaTracao != 0 ||
-                    DistanciaEixos != 0 ||
-                    AnoModelo != 0 ||
-                    AnoFabricacao != 0 ||
-                    !char.Equals(TipoPintura, ' ') ||
-                    TipoVeiculo != TipoVeiculoRENAVAM.NaoEspecificado ||
-                    EspecieVeiculo != EspecieVeiculoRENAVAM.NaoEspecificado ||
-                    CondicaoVeiculo != CondicaoVeiculo.NaoEspecificado ||
-                    CodigoMarcaModelo != 0 ||
-                    CorDenatran != TipoCorDenatran.NaoEspecificado ||
-                    LotacaoMaximaPassageirosSentados > 0 ||
-                    TipoRestricao != TipoRestricaoVeiculo.NaoEspecificado;
-            }
-        }
+        public bool Modificado => TipoOperacaoVenda != TipoOperacaoVendaVeiculo.NaoEspecificado ||
+                                  !string.IsNullOrEmpty(Chassi) ||
+                                  !string.IsNullOrEmpty(CodigoCor) ||
+                                  !string.IsNullOrEmpty(DescricaoCor) ||
+                                  !string.IsNullOrEmpty(PotenciaMotor) ||
+                                  !string.IsNullOrEmpty(Cilindradas) ||
+                                  !string.IsNullOrEmpty(PesoLiquido) ||
+                                  !string.IsNullOrEmpty(PesoBruto) ||
+                                  !string.IsNullOrEmpty(NumeroSerie) ||
+                                  !string.IsNullOrEmpty(Combustivel) ||
+                                  !string.IsNullOrEmpty(NumeroMotor) ||
+                                  CapacidadeMaximaTracao != 0 ||
+                                  DistanciaEixos != 0 ||
+                                  AnoModelo != 0 ||
+                                  AnoFabricacao != 0 ||
+                                  !char.Equals(TipoPintura, ' ') ||
+                                  TipoVeiculo != TipoVeiculoRENAVAM.NaoEspecificado ||
+                                  EspecieVeiculo != EspecieVeiculoRENAVAM.NaoEspecificado ||
+                                  CondicaoVeiculo != CondicaoVeiculo.NaoEspecificado ||
+                                  CodigoMarcaModelo != 0 ||
+                                  CorDenatran != TipoCorDenatran.NaoEspecificado ||
+                                  LotacaoMaximaPassageirosSentados > 0 ||
+                                  TipoRestricao != TipoRestricaoVeiculo.NaoEspecificado;
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {

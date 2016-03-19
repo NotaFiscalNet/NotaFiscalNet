@@ -174,24 +174,17 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    !string.IsNullOrEmpty(Numero) ||
-                    DataRegistro != DateTime.MinValue ||
-                    !string.IsNullOrEmpty(LocalDesembaracoAduaneiro) ||
-                    UFDesembaracoAduaneiro != SiglaUF.NaoEspecificado ||
-                    DataDesembaracoAduaneiro != DateTime.MinValue ||
-                    TipoViaTransporte.IsDefined() ||
-                    ValorAFRMM.HasValue ||
-                    TipoIntermedio.IsDefined() ||
-                    !string.IsNullOrEmpty(CNPJ) ||
-                    UFTerceiro != SiglaUF.NaoEspecificado ||
-                    !string.IsNullOrEmpty(CodigoExportador) ||
-                    Adicoes.Modificado;
-            }
-        }
+        public bool Modificado => !string.IsNullOrEmpty(Numero) ||
+                                  DataRegistro != DateTime.MinValue ||
+                                  !string.IsNullOrEmpty(LocalDesembaracoAduaneiro) ||
+                                  UFDesembaracoAduaneiro != SiglaUF.NaoEspecificado ||
+                                  DataDesembaracoAduaneiro != DateTime.MinValue ||
+                                  TipoViaTransporte.IsDefined() ||
+                                  ValorAFRMM.HasValue ||
+                                  TipoIntermedio.IsDefined() ||
+                                  !string.IsNullOrEmpty(CNPJ) ||
+                                  UFTerceiro != SiglaUF.NaoEspecificado ||
+                                  !string.IsNullOrEmpty(CodigoExportador) ||
+                                  Adicoes.Modificado;
     }
 }

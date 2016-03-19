@@ -353,16 +353,13 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(FieldName = "DI", ID = "I18", Opcional = true)]
         [ValidateField(20, true)]
-        public DeclaracaoImportacaoCollection DeclaracoesImportacao
-        {
-            get { return _declaracaoImportacao; }
-        }
+        public DeclaracaoImportacaoCollection DeclaracoesImportacao => _declaracaoImportacao;
 
         /// <summary>
         /// [detExport] Retorna a lista com o detalhamento da Exportação.
         /// </summary>
         [NFeField(FieldName = "detExport", ID = "I50", Opcional = true)]
-        public DetalheExportacaoCollection DetalhamentoExportacao { get { return _detalhamentoExportacao; } }
+        public DetalheExportacaoCollection DetalhamentoExportacao => _detalhamentoExportacao;
 
         /// <summary>
         /// [xPed] Retorna ou define o Pedido de Compra, informação de interesse do emissor para
@@ -428,10 +425,7 @@ namespace NotaFiscalNet.Core
         /// <remarks>Informar apenas se o campo TipoProdutoEspecifico for igual a 'VeiculoNovo'.</remarks>
         [NFeField(FieldName = "veicProd", ID = "J01", Opcional = true)]
         [ValidateField(21, Validator = typeof(ProdutoEspecificoValidator))]
-        public VeiculoNovo DetalhamentoVeiculo
-        {
-            get { return _detalhamentoVeiculo; }
-        }
+        public VeiculoNovo DetalhamentoVeiculo => _detalhamentoVeiculo;
 
         /// <summary>
         /// [med] Retorna ou define a lista de detalhamentos de Medicamentos.
@@ -440,10 +434,7 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "med", ID = "K01")]
         [ValidateField(22, Validator = typeof(ProdutoEspecificoValidator))]
         //[ValidateField(22, true)]
-        public MedicamentoCollection DetalhamentoMedicamento
-        {
-            get { return _detalhamentoMedicamentos; }
-        }
+        public MedicamentoCollection DetalhamentoMedicamento => _detalhamentoMedicamentos;
 
         /// <summary>
         /// [arma] Retorna ou define a lista de detalhamentos de Armamentos. Informar apenas se o
@@ -451,10 +442,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(FieldName = "arma", ID = "L01")]
         [ValidateField(23, Validator = typeof(ProdutoEspecificoValidator))]
-        public ArmamentoCollection DetalhamentoArmamento
-        {
-            get { return _detalhamentoArmamentos; }
-        }
+        public ArmamentoCollection DetalhamentoArmamento => _detalhamentoArmamentos;
 
         /// <summary>
         /// [comb] Retorna o detalhamento das informações de Combustível.
@@ -462,10 +450,7 @@ namespace NotaFiscalNet.Core
         /// <remarks>Informar apenas se o campo TipoProdutoEspecifico for igual a 'Combustivel'.</remarks>
         [NFeField(FieldName = "comb", ID = "L101")]
         [ValidateField(24, Validator = typeof(ProdutoEspecificoValidator))]
-        public Combustivel DetalhamentoCombustivel
-        {
-            get { return _detalhamentoCombustivel; }
-        }
+        public Combustivel DetalhamentoCombustivel => _detalhamentoCombustivel;
 
         /// <summary>
         /// [nRECOPI] Retorna ou define o Número do RECOPI (Registro e Controle das Operações com o
@@ -503,10 +488,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "M01", FieldName = "imposto")]
         [ValidateField(26, ChaveErroValidacao.CampoNaoPreenchido)]
-        public ImpostoProduto Imposto
-        {
-            get { return _imposto; }
-        }
+        public ImpostoProduto Imposto => _imposto;
 
         /// <summary>
         /// [impostoDevol] Retorna ou define as informações do Imposto Devolvido.
@@ -517,44 +499,37 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    !string.IsNullOrEmpty(Codigo) ||
-                    !string.IsNullOrEmpty(CodigoGTIN) ||
-                    !string.IsNullOrEmpty(Descricao) ||
-                    !string.IsNullOrEmpty(CodigoNCM) ||
-                    !string.IsNullOrEmpty(CodigoNVE) ||
-                    !string.IsNullOrEmpty(CodigoExTIPI) ||
-                    CFOP != 0 ||
-                    !string.IsNullOrEmpty(Unidade) ||
-                    Quantidade != 0m ||
-                    ValorUnitario != 0m ||
-                    ValorTotalBruto != 0m ||
-                    !string.IsNullOrEmpty(CodigoGTINTributario) ||
-                    !string.IsNullOrEmpty(UnidadeTributavel) ||
-                    QuantidadeTributavel != 0m ||
-                    ValorUnitarioTributavel != 0m ||
-                    ValorTotalFrete != 0m ||
-                    ValorTotalSeguro != 0m ||
-                    ValorDesconto != 0m ||
-                    ValorOutrasDespesasAcessorias != 0m ||
-                    DeclaracoesImportacao.Modificado ||
-                    DetalhamentoExportacao.Count > 0 ||
-                    !string.IsNullOrEmpty(PedidoCompra) ||
-                    ItemPedidoCompra != 0 ||
-                    NumeroFCI.HasValue && NumeroFCI.Value != Guid.Empty ||
-                    DetalhamentoVeiculo.Modificado ||
-                    DetalhamentoMedicamento.Modificado ||
-                    DetalhamentoArmamento.Modificado ||
-                    DetalhamentoCombustivel.Modificado ||
-                    !String.IsNullOrEmpty(NumeroRECOPI) ||
-                    Imposto.Modificado ||
-                    !string.IsNullOrEmpty(InformacoesAdicionais);
-            }
-        }
+        public bool Modificado => !string.IsNullOrEmpty(Codigo) ||
+                                  !string.IsNullOrEmpty(CodigoGTIN) ||
+                                  !string.IsNullOrEmpty(Descricao) ||
+                                  !string.IsNullOrEmpty(CodigoNCM) ||
+                                  !string.IsNullOrEmpty(CodigoNVE) ||
+                                  !string.IsNullOrEmpty(CodigoExTIPI) ||
+                                  CFOP != 0 ||
+                                  !string.IsNullOrEmpty(Unidade) ||
+                                  Quantidade != 0m ||
+                                  ValorUnitario != 0m ||
+                                  ValorTotalBruto != 0m ||
+                                  !string.IsNullOrEmpty(CodigoGTINTributario) ||
+                                  !string.IsNullOrEmpty(UnidadeTributavel) ||
+                                  QuantidadeTributavel != 0m ||
+                                  ValorUnitarioTributavel != 0m ||
+                                  ValorTotalFrete != 0m ||
+                                  ValorTotalSeguro != 0m ||
+                                  ValorDesconto != 0m ||
+                                  ValorOutrasDespesasAcessorias != 0m ||
+                                  DeclaracoesImportacao.Modificado ||
+                                  DetalhamentoExportacao.Count > 0 ||
+                                  !string.IsNullOrEmpty(PedidoCompra) ||
+                                  ItemPedidoCompra != 0 ||
+                                  NumeroFCI.HasValue && NumeroFCI.Value != Guid.Empty ||
+                                  DetalhamentoVeiculo.Modificado ||
+                                  DetalhamentoMedicamento.Modificado ||
+                                  DetalhamentoArmamento.Modificado ||
+                                  DetalhamentoCombustivel.Modificado ||
+                                  !String.IsNullOrEmpty(NumeroRECOPI) ||
+                                  Imposto.Modificado ||
+                                  !string.IsNullOrEmpty(InformacoesAdicionais);
 
         /// <summary>
         /// Inicializa uma nova instância da classe Produto.

@@ -80,16 +80,9 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    TipoArma != TipoArmamento.NaoEspecificado ||
-                    !string.IsNullOrEmpty(NumeroCano) ||
-                    !string.IsNullOrEmpty(NumeroSerie) ||
-                    !string.IsNullOrEmpty(Descricao);
-            }
-        }
+        public bool Modificado => TipoArma != TipoArmamento.NaoEspecificado ||
+                                  !string.IsNullOrEmpty(NumeroCano) ||
+                                  !string.IsNullOrEmpty(NumeroSerie) ||
+                                  !string.IsNullOrEmpty(Descricao);
     }
 }

@@ -59,21 +59,14 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a classe foi modificada.
         /// </summary>
-        public override bool Modificado
-        {
-            get
-            {
-                return
-                    !string.IsNullOrEmpty(CNPJ) ||
-                    !string.IsNullOrEmpty(CPF) ||
-                    !string.IsNullOrEmpty(Logradouro) ||
-                    !string.IsNullOrEmpty(Numero) ||
-                    !string.IsNullOrEmpty(Complemento) ||
-                    !string.IsNullOrEmpty(Bairro) ||
-                    CodigoMunicipioIBGE != 0 ||
-                    !string.IsNullOrEmpty(NomeMunicipio) ||
-                    UF != SiglaUF.NaoEspecificado;
-            }
-        }
+        public override bool Modificado => !string.IsNullOrEmpty(CNPJ) ||
+                                           !string.IsNullOrEmpty(CPF) ||
+                                           !string.IsNullOrEmpty(Logradouro) ||
+                                           !string.IsNullOrEmpty(Numero) ||
+                                           !string.IsNullOrEmpty(Complemento) ||
+                                           !string.IsNullOrEmpty(Bairro) ||
+                                           CodigoMunicipioIBGE != 0 ||
+                                           !string.IsNullOrEmpty(NomeMunicipio) ||
+                                           UF != SiglaUF.NaoEspecificado;
     }
 }

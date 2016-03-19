@@ -76,15 +76,8 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                return
-                    BaseCalculo != 0m ||
-                    Aliquota != 0m ||
-                    Valor != 0m;
-            }
-        }
+        public bool Modificado => BaseCalculo != 0m ||
+                                  Aliquota != 0m ||
+                                  Valor != 0m;
     }
 }

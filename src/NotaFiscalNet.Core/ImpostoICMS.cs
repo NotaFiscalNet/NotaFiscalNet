@@ -1,8 +1,8 @@
-﻿using NotaFiscalNet.Core.Utils;
+﻿using NotaFiscalNet.Core.Interfaces;
+using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 using NotaFiscalNet.Core.Validacao.Validators;
 using System;
-using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {

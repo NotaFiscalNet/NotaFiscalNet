@@ -1,5 +1,4 @@
-﻿using System.Runtime.InteropServices;
-using NotaFiscalNet.Core.Interfaces;
+﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 
@@ -8,13 +7,9 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa o Total de ICMS da Nota Fiscal Eletrônica.
     /// </summary>
-    
-    
-    
-    public sealed class TotalICMS :  ISerializavel
-    {
-        #region Fields
 
+    public sealed class TotalICMS : ISerializavel
+    {
         private decimal _baseCalculo;
         private decimal _valorTotalICMS;
         private decimal _valorTotalICMSDesonerado;
@@ -36,10 +31,6 @@ namespace NotaFiscalNet.Core
         {
         }
 
-        #endregion Fields
-
-        #region Properties
-
         /// <summary>
         /// [vBC] Retorna ou define a Base de Cálculo do ICMS.
         /// </summary>
@@ -48,9 +39,10 @@ namespace NotaFiscalNet.Core
         public decimal BaseCalculo
         {
             get { return _baseCalculo; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "BaseCalculo");
-                _baseCalculo = value; 
+                _baseCalculo = value;
             }
         }
 
@@ -62,9 +54,10 @@ namespace NotaFiscalNet.Core
         public decimal ValorTotalICMS
         {
             get { return _valorTotalICMS; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalICMS");
-                _valorTotalICMS = value; 
+                _valorTotalICMS = value;
             }
         }
 
@@ -91,9 +84,10 @@ namespace NotaFiscalNet.Core
         public decimal BaseCalculoST
         {
             get { return _baseCalculoST; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "BaseCalculoST");
-                _baseCalculoST = value; 
+                _baseCalculoST = value;
             }
         }
 
@@ -105,9 +99,10 @@ namespace NotaFiscalNet.Core
         public decimal ValorTotalICMSST
         {
             get { return _valorTotalICMSST; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalICMSST");
-                _valorTotalICMSST = value; 
+                _valorTotalICMSST = value;
             }
         }
 
@@ -119,9 +114,10 @@ namespace NotaFiscalNet.Core
         public decimal ValorTotalProdutos
         {
             get { return _valorTotalProdutos; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalProdutos");
-                _valorTotalProdutos = value; 
+                _valorTotalProdutos = value;
             }
         }
 
@@ -133,9 +129,10 @@ namespace NotaFiscalNet.Core
         public decimal ValorTotalFrete
         {
             get { return _valorTotalFrete; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalFrete");
-                _valorTotalFrete = value; 
+                _valorTotalFrete = value;
             }
         }
 
@@ -147,9 +144,10 @@ namespace NotaFiscalNet.Core
         public decimal ValorTotalSeguro
         {
             get { return _valorTotalSeguro; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalSeguro");
-                _valorTotalSeguro = value; 
+                _valorTotalSeguro = value;
             }
         }
 
@@ -161,9 +159,10 @@ namespace NotaFiscalNet.Core
         public decimal ValorTotalDesconto
         {
             get { return _valorTotalDesconto; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalDesconto");
-                _valorTotalDesconto = value; 
+                _valorTotalDesconto = value;
             }
         }
 
@@ -175,9 +174,10 @@ namespace NotaFiscalNet.Core
         public decimal ValorTotalII
         {
             get { return _valorTotalII; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalII");
-                _valorTotalII = value; 
+                _valorTotalII = value;
             }
         }
 
@@ -189,9 +189,10 @@ namespace NotaFiscalNet.Core
         public decimal ValorTotalIPI
         {
             get { return _valorTotalIPI; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalIPI");
-                _valorTotalIPI = value; 
+                _valorTotalIPI = value;
             }
         }
 
@@ -203,9 +204,10 @@ namespace NotaFiscalNet.Core
         public decimal ValorTotalPIS
         {
             get { return _valorTotalPIS; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalPIS");
-                _valorTotalPIS = value; 
+                _valorTotalPIS = value;
             }
         }
 
@@ -217,9 +219,10 @@ namespace NotaFiscalNet.Core
         public decimal ValorTotalCOFINS
         {
             get { return _valorTotalCOFINS; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalCOFINS");
-                _valorTotalCOFINS = value; 
+                _valorTotalCOFINS = value;
             }
         }
 
@@ -231,9 +234,10 @@ namespace NotaFiscalNet.Core
         public decimal ValorOutrasDespesas
         {
             get { return _valorOutrasDespesas; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "ValorOutrasDespesas");
-                _valorOutrasDespesas = value; 
+                _valorOutrasDespesas = value;
             }
         }
 
@@ -245,9 +249,10 @@ namespace NotaFiscalNet.Core
         public decimal ValorTotalNFe
         {
             get { return _valorTotalNFe; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalNFe");
-                _valorTotalNFe = value; 
+                _valorTotalNFe = value;
             }
         }
 
@@ -266,10 +271,6 @@ namespace NotaFiscalNet.Core
                     : (decimal?)null;
             }
         }
-
-        #endregion Properties
-
-        #region ISerializavel Members
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
@@ -293,7 +294,5 @@ namespace NotaFiscalNet.Core
                 writer.WriteElementString("vTotTrib", SerializationUtil.ToTDec_1302(ValorTotalTributos.Value));
             writer.WriteEndElement(); // fim do elemento 'ICMSTot'        }
         }
-
-        #endregion
     }
 }

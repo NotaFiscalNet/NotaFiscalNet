@@ -29,7 +29,5 @@ namespace NotaFiscalNet.Core.Validacao
 
             return text.ToString();
         }
-
-        
     }
 }

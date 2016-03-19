@@ -1,6 +1,5 @@
-﻿using System;
-using System.Runtime.InteropServices;
-using NotaFiscalNet.Core.Interfaces;
+﻿using NotaFiscalNet.Core.Interfaces;
+using System;
 
 namespace NotaFiscalNet.Core
 {
@@ -43,19 +42,13 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        #region ISerializavel Members
-
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             foreach (ObservacaoFisco observacao in this)
             {
                 if (observacao.Modificado)
-                    ((ISerializavel) observacao).Serializar(writer, nfe);
+                    ((ISerializavel)observacao).Serializar(writer, nfe);
             }
         }
-
-        #endregion
-
-     
     }
 }

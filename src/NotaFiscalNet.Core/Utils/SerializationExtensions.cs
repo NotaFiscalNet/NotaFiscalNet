@@ -1,9 +1,9 @@
-﻿using System;
+﻿using NotaFiscalNet.Core.Interfaces;
+using System;
 using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Xml;
-using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core.Utils
 {
@@ -14,7 +14,7 @@ namespace NotaFiscalNet.Core.Utils
     {
         public static void Serialize(this ISerializavel source, XmlWriter writer, NFe nfe)
         {
-            if (source == null) 
+            if (source == null)
                 throw new InvalidOperationException("Não foi possível serializar o objeto pois o mesmo encontra-se nulo.");
             source.Serializar(writer, nfe);
         }
@@ -24,7 +24,6 @@ namespace NotaFiscalNet.Core.Utils
             if (source == null) return;
             source.Serializar(writer, nfe);
         }
-
 
         /// <summary>
         /// Remove os acentos do texto.
@@ -38,8 +37,8 @@ namespace NotaFiscalNet.Core.Utils
             foreach (var t in value)
             {
                 var c = t;
-                #region Switch
-                switch ( c )
+
+                switch (c)
                 {
                     case 'á': c = 'a'; break;
                     case 'é': c = 'e'; break;
@@ -90,7 +89,7 @@ namespace NotaFiscalNet.Core.Utils
                     case 'Ñ': c = 'N'; break;
                     case 'Ç': c = 'C'; break;
                 }
-                #endregion Switch
+
                 text.Append(c);
             }
             return text.ToString();
@@ -118,7 +117,8 @@ namespace NotaFiscalNet.Core.Utils
         }
 
         /// <summary>
-        /// Realiza o tratamento de "Tokenização" da string retornando apenas uma quantidade especificada de caracteres.
+        /// Realiza o tratamento de "Tokenização" da string retornando apenas uma quantidade
+        /// especificada de caracteres.
         /// </summary>
         /// <param name="value">Valor a ser tratado.</param>
         /// <param name="maxCharacters">Número máximo de caracteres a serem retornados.</param>
@@ -208,8 +208,8 @@ namespace NotaFiscalNet.Core.Utils
 
         public static string ToTDec_1302Opc(this decimal? value)
         {
-            return !value.HasValue 
-                ? null 
+            return !value.HasValue
+                ? null
                 : value.Value.ToString("f2", CultureInfo.InvariantCulture);
         }
 
@@ -294,7 +294,6 @@ namespace NotaFiscalNet.Core.Utils
         }
 
         /// <summary>
-        /// 
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
@@ -395,7 +394,5 @@ namespace NotaFiscalNet.Core.Utils
         {
             return value.ToString("yyyy-MM-ddTHH:mm:sszzz");
         }
-
-        
     }
 }

@@ -1,32 +1,31 @@
-﻿using System.Runtime.InteropServices;
-
-namespace NotaFiscalNet.Core
+﻿namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Representa o formato de impressão da DANFE.
     /// </summary>
-    
-    
+
     public enum TipoFormatoImpressaoDANFE
     {
         /// <summary>
         /// 0 - Sem geração de DANFE.
         /// </summary>
         SemGeracaoDANFE = 0,
+
         /// <summary>
         /// 1 - DANFE Normal (Impressão no formato Retrato).
         /// </summary>
         Retrato = 1,
+
         /// <summary>
         /// 2 - DANFE Normal (Impressão no formato Paisagem).
         /// </summary>
         Paisagem = 2,
-        
+
         /// <summary>
         /// 3 - DANFE Simplificado.
         /// </summary>
         Simplificado = 3,
-        
+
         /// <summary>
         /// 4 - DANFE NFC-e.
         /// </summary>

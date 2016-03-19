@@ -1,12 +1,8 @@
-using System.Runtime.InteropServices;
 using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 
 namespace NotaFiscalNet.Core
 {
-    
-    
-    
     public class IpiDevolvido : ISerializavel
     {
         private decimal _valorIpiDevolvido;
@@ -14,7 +10,6 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// [vIPIDevol] Retorna ou define o valor do IPI devolvido.
         /// </summary>
-        /// 
         [NFeField(FieldName = "vIPIDevol", DataType = "TDec_1302", ID = "U61")]
         public decimal ValorIpiDevolvido
         {

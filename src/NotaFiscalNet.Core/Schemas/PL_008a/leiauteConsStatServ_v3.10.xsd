@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--  PL_006f versao com correcoes no xServ para tornar a literal STATUS obrigatoria 21/05/2010 -->
 <xs:schema xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns="http://www.portalfiscal.inf.br/nfe" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.portalfiscal.inf.br/nfe" elementFormDefault="qualified" attributeFormDefault="unqualified">
-	<xs:include schemaLocation="tiposBasico_v3.10.xsd"/>
+	<xs:include schemaLocation="tiposBasico_v3.10.xsd" />
 	<xs:complexType name="TConsStatServ">
 		<xs:annotation>
 			<xs:documentation>Tipo Pedido de Consulta do Status do Serviço</xs:documentation>
@@ -25,12 +25,12 @@
 				</xs:annotation>
 				<xs:simpleType>
 					<xs:restriction base="TServ">
-						<xs:enumeration value="STATUS"/>
+						<xs:enumeration value="STATUS" />
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
 		</xs:sequence>
-		<xs:attribute name="versao" type="TVerConsStatServ" use="required"/>
+		<xs:attribute name="versao" type="TVerConsStatServ" use="required" />
 	</xs:complexType>
 	<xs:complexType name="TRetConsStatServ">
 		<xs:annotation>
@@ -85,14 +85,14 @@
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
-		<xs:attribute name="versao" type="TVerConsStatServ" use="required"/>
+		<xs:attribute name="versao" type="TVerConsStatServ" use="required" />
 	</xs:complexType>
 	<xs:simpleType name="TVerConsStatServ">
 		<xs:annotation>
 			<xs:documentation>Tipo versão do leiuate da Consulta Status do Serviço 3.10</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:token">
-			<xs:pattern value="3\.10"/>
+			<xs:pattern value="3\.10" />
 		</xs:restriction>
 	</xs:simpleType>
 </xs:schema>

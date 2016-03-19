@@ -1,19 +1,16 @@
-﻿using System.Runtime.InteropServices;
-
-namespace NotaFiscalNet.Core
+﻿namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Identificador de Local de Destino da Opeeração.
     /// </summary>
-    
-    
+
     public enum TipoIdentificadorLocalDestinoOperacao
     {
         /// <summary>
         /// 1 - Operação Interna.
         /// </summary>
         Interna = 1,
-        
+
         /// <summary>
         /// 2 - Operação Interestadual.
         /// </summary>

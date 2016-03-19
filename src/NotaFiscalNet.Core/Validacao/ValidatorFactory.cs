@@ -1,7 +1,7 @@
-﻿using System;
+﻿using NotaFiscalNet.Core.Validacao.Validators;
+using System;
 using System.Collections.Generic;
 using System.Reflection;
-using NotaFiscalNet.Core.Validacao.Validators;
 
 namespace NotaFiscalNet.Core.Validacao
 {
@@ -18,11 +18,11 @@ namespace NotaFiscalNet.Core.Validacao
 
         public static BaseValidator Create(Type ruleType)
         {
-            if ( ReusableRules.ContainsKey(ruleType.FullName) )
+            if (ReusableRules.ContainsKey(ruleType.FullName))
                 return ReusableRules[ruleType.FullName];
 
             BaseValidator rule = (BaseValidator)Assembly.GetAssembly(ruleType).CreateInstance(ruleType.FullName);
-            if ( rule.IsReusable )
+            if (rule.IsReusable)
                 ReusableRules.Add(ruleType.FullName, rule);
             return rule;
         }

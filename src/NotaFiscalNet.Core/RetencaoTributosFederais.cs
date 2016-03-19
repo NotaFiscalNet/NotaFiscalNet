@@ -1,5 +1,4 @@
-﻿using System.Runtime.InteropServices;
-using NotaFiscalNet.Core.Interfaces;
+﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 
 namespace NotaFiscalNet.Core
@@ -9,9 +8,6 @@ namespace NotaFiscalNet.Core
     /// </summary>
     public sealed class RetencaoTributosFederais : ISerializavel, IModificavel
     {
-
-        #region Fields
-
         private decimal _valorRetidoPIS;
         private decimal _valorRetidoCOFINS;
         private decimal _valorRetidoCSLL;
@@ -24,10 +20,6 @@ namespace NotaFiscalNet.Core
         {
         }
 
-        #endregion Fields
-
-        #region Properties
-
         /// <summary>
         /// [vRetPIS] Retorna ou define o Valor Total Retido de PIS. Opcional.
         /// </summary>
@@ -35,9 +27,10 @@ namespace NotaFiscalNet.Core
         public decimal ValorRetidoPIS
         {
             get { return _valorRetidoPIS; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "ValorRetidoPIS");
-                _valorRetidoPIS = value; 
+                _valorRetidoPIS = value;
             }
         }
 
@@ -48,9 +41,10 @@ namespace NotaFiscalNet.Core
         public decimal ValorRetidoCOFINS
         {
             get { return _valorRetidoCOFINS; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "ValorRetidoCOFINS");
-                _valorRetidoCOFINS = value; 
+                _valorRetidoCOFINS = value;
             }
         }
 
@@ -61,9 +55,10 @@ namespace NotaFiscalNet.Core
         public decimal ValorRetidoCSLL
         {
             get { return _valorRetidoCSLL; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "ValorRetidoCSLL");
-                _valorRetidoCSLL = value; 
+                _valorRetidoCSLL = value;
             }
         }
 
@@ -74,9 +69,10 @@ namespace NotaFiscalNet.Core
         public decimal BaseCalculo
         {
             get { return _baseCalculo; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "BaseCalculo");
-                _baseCalculo = value; 
+                _baseCalculo = value;
             }
         }
 
@@ -87,9 +83,10 @@ namespace NotaFiscalNet.Core
         public decimal ValorRetidoIRRF
         {
             get { return _valorRetidoIRRF; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "ValorRetidoIRRF");
-                _valorRetidoIRRF = value; 
+                _valorRetidoIRRF = value;
             }
         }
 
@@ -100,9 +97,10 @@ namespace NotaFiscalNet.Core
         public decimal BaseCalculoRetencaoPrevidenciaSocial
         {
             get { return _baseCalculoRetencaoPrevidenciaSocial; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "BaseCalculoRetencaoPrevidenciaSocial");
-                _baseCalculoRetencaoPrevidenciaSocial = value; 
+                _baseCalculoRetencaoPrevidenciaSocial = value;
             }
         }
 
@@ -113,9 +111,10 @@ namespace NotaFiscalNet.Core
         public decimal ValorRetencaoPrevidenciaSocial
         {
             get { return _valorRetencaoPrevidenciaSocial; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "ValorRetencaoPrevidenciaSocial");
-                _valorRetencaoPrevidenciaSocial = value; 
+                _valorRetencaoPrevidenciaSocial = value;
             }
         }
 
@@ -136,11 +135,6 @@ namespace NotaFiscalNet.Core
                     ValorRetencaoPrevidenciaSocial > 0m;
             }
         }
-
-        #endregion Properties
-
-
-        #region ISerializavel Members
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
@@ -169,7 +163,5 @@ namespace NotaFiscalNet.Core
 
             writer.WriteEndElement(); // fim do elemento 'retTrib'
         }
-
-        #endregion
     }
 }

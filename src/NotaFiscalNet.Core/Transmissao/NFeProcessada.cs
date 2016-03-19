@@ -29,7 +29,7 @@ namespace NotaFiscalNet.Core.Transmissao
 
             var nfeEl = nfeProcEl.Element(ns + "NFe");
             var protNFeEl = nfeProcEl.Element(ns + "protNFe");
-            
+
             NFe = NFe.Parse(nfeEl);
             Protocolo = new ProtocoloNFe(protNFeEl);
         }

@@ -1,14 +1,11 @@
 ﻿using System.Collections.Generic;
-using System.Runtime.InteropServices;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Representa uma lista de Lotes de Notas Fiscais Eletrônicas.
     /// </summary>
-    
-    
-    
+
     public sealed class LoteNFeCollection : BaseCollection<LoteNFe>
     {
         /// <summary>
@@ -27,6 +24,5 @@ namespace NotaFiscalNet.Core
             : base(collection)
         {
         }
-        
     }
 }

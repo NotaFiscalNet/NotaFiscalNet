@@ -1,5 +1,4 @@
-﻿using System.Runtime.InteropServices;
-using NotaFiscalNet.Core.Interfaces;
+﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 
@@ -11,26 +10,20 @@ namespace NotaFiscalNet.Core
     /// <remarks>
     /// Caso o Documento Fiscal seja uma Nota Fiscal Eletrônica, os seguintes campos deverão ser preenchidos:
     /// <list type="bullet">
-    ///     <item>CodigoModeloDocFiscal = 55</item>
-    ///     <item>ChaveAcessoNFe</item>
+    /// <item>CodigoModeloDocFiscal = 55</item>
+    /// <item>ChaveAcessoNFe</item>
     /// </list>
-    /// Caso o Documento Fiscal seja um Nota Fiscal modelo 1 ou 1A, os outros campos deverão ser preenchidos com
-    /// excessão do campo ChaveAcessoNFe.
+    /// Caso o Documento Fiscal seja um Nota Fiscal modelo 1 ou 1A, os outros campos deverão ser
+    /// preenchidos com excessão do campo ChaveAcessoNFe.
     /// </remarks>
-    public sealed class ReferenciaDocFiscal :  ISerializavel, IModificavel
+    public sealed class ReferenciaDocFiscal : ISerializavel, IModificavel
     {
-        #region Fields
-
         private TipoReferenciaDocFiscal _tipoReferencia = TipoReferenciaDocFiscal.NFe;
         private readonly ReferenciaDocFiscalNFe _referenciaNFe = new ReferenciaDocFiscalNFe();
         private readonly ReferenciaDocFiscalNF _referenciaNF = new ReferenciaDocFiscalNF();
         private readonly ReferenciaDocFiscalNFProdutor _referenciaNFP = new ReferenciaDocFiscalNFProdutor();
         private readonly ReferenciaDocFiscalCTe _referenciaCTe = new ReferenciaDocFiscalCTe();
         private readonly ReferenciaDocFiscalEcf _referenciaECF = new ReferenciaDocFiscalEcf();
-
-        #endregion Fields
-
-        #region Properties
 
         /// <summary>
         /// Indica o tipo da referência utilizada. Padrão NF-e.
@@ -39,11 +32,11 @@ namespace NotaFiscalNet.Core
         public TipoReferenciaDocFiscal TipoReferencia
         {
             get { return _tipoReferencia; }
-            set 
+            set
             {
                 ValidationUtil.ValidateEnum(value, "TipoReferencia");
-                
-                _tipoReferencia = value; 
+
+                _tipoReferencia = value;
             }
         }
 
@@ -107,21 +100,12 @@ namespace NotaFiscalNet.Core
             }
         }
 
-
-        #endregion Properties
-
-        #region Constructor
-
         /// <summary>
         /// Inicializa uma nova instância da classe ReferenciaDocFiscal
         /// </summary>
         public ReferenciaDocFiscal()
         {
         }
-
-        #endregion Constructor
-
-        #region ISerializavel Members
 
         public void Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
@@ -136,26 +120,27 @@ namespace NotaFiscalNet.Core
                     if (ReferenciaNFe.Modificado)
                         ((ISerializavel)ReferenciaNFe).Serializar(writer, nfe);
                     break;
+
                 case TipoReferenciaDocFiscal.NF:
                     if (ReferenciaNF.Modificado)
                         ((ISerializavel)ReferenciaNF).Serializar(writer, nfe);
                     break;
+
                 case TipoReferenciaDocFiscal.NFProdutor:
                     if (ReferenciaNFProdutor.Modificado)
                         ((ISerializavel)ReferenciaNFProdutor).Serializar(writer, nfe);
                     break;
+
                 case TipoReferenciaDocFiscal.CTe:
                     if (ReferenciaCTe.Modificado)
                         ((ISerializavel)ReferenciaCTe).Serializar(writer, nfe);
                     break;
+
                 case TipoReferenciaDocFiscal.ECF:
                     break;
             }
 
             writer.WriteEndElement(); // fecha NFref
-
         }
-
-        #endregion
     }
 }

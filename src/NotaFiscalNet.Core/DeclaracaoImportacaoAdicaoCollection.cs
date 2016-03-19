@@ -1,5 +1,5 @@
-﻿using System.Xml;
-using NotaFiscalNet.Core.Interfaces;
+﻿using NotaFiscalNet.Core.Interfaces;
+using System.Xml;
 
 namespace NotaFiscalNet.Core
 {

@@ -4,7 +4,7 @@ using System.Xml.Linq;
 
 namespace NotaFiscalNet.Core.Utils
 {
-    static class NFeXmlReaderExtensions
+    internal static class NFeXmlReaderExtensions
     {
         private static readonly XNamespace ns = Constants.NamespacePortalFiscalNFe;
 
@@ -38,7 +38,6 @@ namespace NotaFiscalNet.Core.Utils
             return true;
         }
 
-
         public static int NFElementAsInt32(this XElement source, string name)
         {
             return int.Parse(source.Element(ns + name).Value);
@@ -47,7 +46,7 @@ namespace NotaFiscalNet.Core.Utils
         public static bool NFElementAsInt32(this XElement source, string name, Action<int> setter)
         {
             var el = source.Element(ns + name);
-            if (el == null) 
+            if (el == null)
                 return false;
 
             var value = int.Parse(el.Value);
@@ -102,8 +101,6 @@ namespace NotaFiscalNet.Core.Utils
             return true;
         }
 
-
-
         public static DateTime NFElementAsDateTime(this XElement source, string name)
         {
             return DateTime.Parse(source.Element(ns + name).Value);
@@ -147,6 +144,5 @@ namespace NotaFiscalNet.Core.Utils
             setter(enumValue);
             return true;
         }
-
     }
 }

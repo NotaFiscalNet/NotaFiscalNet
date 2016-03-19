@@ -24,7 +24,7 @@ namespace NotaFiscalNet.Core.Utils
                 {
                     if (value.HasFlag(enumValue))
                     {
-                        // Quando trabalhando com flags, se há valor 0 na lista do enum, ele sempre 
+                        // Quando trabalhando com flags, se há valor 0 na lista do enum, ele sempre
                         // dá que foi definido (bit mask).
                         if (Convert.ToUInt64(enumValue) == 0)
                             continue; // ignora o item da lista com valor igual a zero.

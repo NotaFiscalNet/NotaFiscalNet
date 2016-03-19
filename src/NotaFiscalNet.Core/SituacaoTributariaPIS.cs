@@ -1,12 +1,9 @@
-﻿using System.Runtime.InteropServices;
-
-namespace NotaFiscalNet.Core
+﻿namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Lista dos Códigos de Situação Tributária (CST) do PIS.
     /// </summary>
-    
-    
+
     public enum SituacaoTributariaPIS
     {
         /// <summary>
@@ -15,7 +12,8 @@ namespace NotaFiscalNet.Core
         NaoEspecificado = -1,
 
         /// <summary>
-        /// CST 01 - Operação Tributável - Base de Cálculo igual ao Valor da Operação com Alíquota Normal (Cumulativo / Não Cumulativo).
+        /// CST 01 - Operação Tributável - Base de Cálculo igual ao Valor da Operação com Alíquota
+        /// Normal (Cumulativo / Não Cumulativo).
         /// </summary>
         Cst01 = 1,
 
@@ -25,7 +23,8 @@ namespace NotaFiscalNet.Core
         Cst02 = 2,
 
         /// <summary>
-        /// CST 03 - Operação Tributável - Base de Cálculo igual a Quantidade Vendida x Alíquota por Unidade de Produto.
+        /// CST 03 - Operação Tributável - Base de Cálculo igual a Quantidade Vendida x Alíquota por
+        /// Unidade de Produto.
         /// </summary>
         Cst03 = 3,
 
@@ -53,6 +52,7 @@ namespace NotaFiscalNet.Core
         /// CST 08 - Operação Sem Incidência da Contribuição.
         /// </summary>
         Cst08 = 8,
+
         /// <summary>
         /// CST 09 - Operação com Suspensão da Contribuição.
         /// </summary>
@@ -64,12 +64,14 @@ namespace NotaFiscalNet.Core
         Cst49 = 49,
 
         /// <summary>
-        /// CST 50 - Operação com Direito a Crédito - Vinculada Exclusivamente a Receita Tributada no Mercado Interno.
+        /// CST 50 - Operação com Direito a Crédito - Vinculada Exclusivamente a Receita Tributada no
+        /// Mercado Interno.
         /// </summary>
         Cst50 = 50,
 
         /// <summary>
-        /// CST 51 - Operação com Direito a Crédito – Vinculada Exclusivamente a Receita Não Tributada no Mercado Interno.
+        /// CST 51 - Operação com Direito a Crédito – Vinculada Exclusivamente a Receita Não
+        /// Tributada no Mercado Interno.
         /// </summary>
         Cst51 = 51,
 
@@ -77,34 +79,40 @@ namespace NotaFiscalNet.Core
         /// CST 52 - Operação com Direito a Crédito - Vinculada Exclusivamente a Receita de Exportação.
         /// </summary>
         Cst52 = 52,
-        
+
         /// <summary>
-        /// CST 53 - Operação com Direito a Crédito - Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno.
+        /// CST 53 - Operação com Direito a Crédito - Vinculada a Receitas Tributadas e
+        /// Não-Tributadas no Mercado Interno.
         /// </summary>
         Cst53 = 53,
 
         /// <summary>
-        /// CST 54 - Operação com Direito a Crédito - Vinculada a Receitas Tributadas no Mercado Interno e de Exportação.
+        /// CST 54 - Operação com Direito a Crédito - Vinculada a Receitas Tributadas no Mercado
+        /// Interno e de Exportação.
         /// </summary>
         Cst54 = 54,
 
         /// <summary>
-        /// CST 55 - Operação com Direito a Crédito - Vinculada a Receitas Não-Tributadas no Mercado Interno e de Exportação.
+        /// CST 55 - Operação com Direito a Crédito - Vinculada a Receitas Não-Tributadas no Mercado
+        /// Interno e de Exportação.
         /// </summary>
         Cst55 = 55,
 
         /// <summary>
-        /// CST 56 - Operação com Direito a Crédito - Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno, e de Exportação.
+        /// CST 56 - Operação com Direito a Crédito - Vinculada a Receitas Tributadas e
+        /// Não-Tributadas no Mercado Interno, e de Exportação.
         /// </summary>
         Cst56 = 56,
 
         /// <summary>
-        /// CST 60 - Crédito Presumido - Operação de Aquisição Vinculada Exclusivamente a Receita Tributada no Mercado Interno.
+        /// CST 60 - Crédito Presumido - Operação de Aquisição Vinculada Exclusivamente a Receita
+        /// Tributada no Mercado Interno.
         /// </summary>
         Cst60 = 60,
 
         /// <summary>
-        /// CST 61 - Crédito Presumido - Operação de Aquisição Vinculada Exclusivamente a Receita Não-Tributada no Mercado Interno.
+        /// CST 61 - Crédito Presumido - Operação de Aquisição Vinculada Exclusivamente a Receita
+        /// Não-Tributada no Mercado Interno.
         /// </summary>
         Cst61 = 61,
 
@@ -114,22 +122,26 @@ namespace NotaFiscalNet.Core
         Cst62 = 62,
 
         /// <summary>
-        /// CST 63 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno.
+        /// CST 63 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas e
+        /// Não-Tributadas no Mercado Interno.
         /// </summary>
         Cst63 = 63,
 
         /// <summary>
-        /// CST 64 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas no Mercado Interno e de Exportação.
+        /// CST 64 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas no
+        /// Mercado Interno e de Exportação.
         /// </summary>
         Cst64 = 64,
 
         /// <summary>
-        /// CST 65 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Não-Tributadas no Mercado Interno e de Exportação.
+        /// CST 65 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Não-Tributadas no
+        /// Mercado Interno e de Exportação.
         /// </summary>
         Cst65 = 65,
 
         /// <summary>
-        /// CST 66 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno, e de Exportação.
+        /// CST 66 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas e
+        /// Não-Tributadas no Mercado Interno, e de Exportação.
         /// </summary>
         Cst66 = 66,
 

@@ -1,5 +1,4 @@
-﻿using System.Runtime.InteropServices;
-using NotaFiscalNet.Core.Interfaces;
+﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 
@@ -8,15 +7,11 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Informações de Pagamento. Obrigatório apena para (NFC-e) NT 2012/004.
     /// </summary>
-    
-    
-    
-    public class Pagamento :  ISerializavel, IModificavel
+
+    public class Pagamento : ISerializavel, IModificavel
     {
         private TipoPagamento _tipoPagamento;
         private decimal _valorPagamento;
-
-        #region Properties
 
         /// <summary>
         /// Retorna ou define a forma de pagamento.
@@ -39,7 +34,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna ou define o valor do pagamento.
         /// </summary>
-        [NFeField(ID="YA30", FieldName = "vPag", DataType = "TDec_1302")]
+        [NFeField(ID = "YA30", FieldName = "vPag", DataType = "TDec_1302")]
         [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal ValorPagamento
         {
@@ -57,10 +52,8 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna ou define os detalhes referente a operação com cartão de crédito/débito.
         /// </summary>
-        [NFeField(ID="YA04", FieldName = "card"), ValidateField(3, true)]
+        [NFeField(ID = "YA04", FieldName = "card"), ValidateField(3, true)]
         public DetalhesOperacaoCartao DetalhesOperacaoCartao { get; set; }
-
-        #endregion Properties
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
@@ -87,7 +80,7 @@ namespace NotaFiscalNet.Core
         {
             get
             {
-                return (int) TipoPagamento != 0 || ValorPagamento != 0.0m || DetalhesOperacaoCartao != null;
+                return (int)TipoPagamento != 0 || ValorPagamento != 0.0m || DetalhesOperacaoCartao != null;
             }
         }
     }

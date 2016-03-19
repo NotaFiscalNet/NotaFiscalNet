@@ -1,5 +1,4 @@
-﻿using System.Runtime.InteropServices;
-using NotaFiscalNet.Core.Interfaces;
+﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 
 namespace NotaFiscalNet.Core
@@ -9,8 +8,6 @@ namespace NotaFiscalNet.Core
     /// </summary>
     public sealed class Transportador : ISerializavel, IModificavel
     {
-        #region Fields
-
         private string _cpf = string.Empty;
         private string _cnpj = string.Empty;
         private string _xNome = string.Empty;
@@ -22,10 +19,6 @@ namespace NotaFiscalNet.Core
         public Transportador()
         {
         }
-
-        #endregion Fields
-
-        #region Properties
 
         /// <summary>
         /// Retorna ou define o Número do CPF (11 caracteres, apenas números) do Transportador.
@@ -60,13 +53,15 @@ namespace NotaFiscalNet.Core
         }
 
         /// <summary>
-        /// Retorna ou define o Nome (se informado CPF) ou a Razão Social (se informado CNPJ) do Transportador. Opcional.
+        /// Retorna ou define o Nome (se informado CPF) ou a Razão Social (se informado CNPJ) do
+        /// Transportador. Opcional.
         /// </summary>
         [NFeField(FieldName = "xNome", DataType = "TString", ID = "X06", MinLength = 2, MaxLength = 60, Pattern = @"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}")]
         public string Nome
         {
             get { return _xNome; }
-            set {
+            set
+            {
                 _xNome = ValidationUtil.TruncateString(value, 60);
             }
         }
@@ -93,7 +88,8 @@ namespace NotaFiscalNet.Core
         public string EnderecoCompleto
         {
             get { return _xEnder; }
-            set {
+            set
+            {
                 _xEnder = ValidationUtil.TruncateString(value, 60);
             }
         }
@@ -105,7 +101,8 @@ namespace NotaFiscalNet.Core
         public string Municipio
         {
             get { return _xMun; }
-            set {
+            set
+            {
                 _xMun = ValidationUtil.TruncateString(value, 60);
             }
         }
@@ -117,9 +114,10 @@ namespace NotaFiscalNet.Core
         public SiglaUF UF
         {
             get { return _UF; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateEnum<SiglaUF>(value, "UF");
-                _UF = value; 
+                _UF = value;
             }
         }
 
@@ -140,11 +138,6 @@ namespace NotaFiscalNet.Core
                     UF != SiglaUF.NaoEspecificado;
             }
         }
-
-
-        #endregion Properties
-
-        #region ISerializavel Members
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
@@ -172,7 +165,5 @@ namespace NotaFiscalNet.Core
 
             writer.WriteEndElement(); // fim do elemento 'transporta'
         }
-
-        #endregion
     }
 }

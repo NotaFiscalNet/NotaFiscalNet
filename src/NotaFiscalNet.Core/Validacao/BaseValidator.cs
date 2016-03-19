@@ -4,7 +4,7 @@
     {
         public virtual bool IsReusable
         {
-            get 
+            get
             {
                 return true;
             }

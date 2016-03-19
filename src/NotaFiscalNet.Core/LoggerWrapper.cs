@@ -1,7 +1,7 @@
+using log4net;
 using System;
 using System.Diagnostics;
 using System.Reflection;
-using log4net;
 
 namespace NotaFiscalNet.Core
 {
@@ -10,8 +10,6 @@ namespace NotaFiscalNet.Core
     /// </summary>
     public sealed class LoggerWrapper
     {
-        #region Constants and Fields
-
         /// <summary>
         /// Determines whether the DEBUG Mode is enabled.
         /// </summary>
@@ -42,10 +40,6 @@ namespace NotaFiscalNet.Core
         /// </summary>
         private readonly ILog log;
 
-        #endregion
-
-        #region Constructors and Destructors
-
         /// <summary>
         /// Initializes a new instance of the Logger class.
         /// </summary>
@@ -57,9 +51,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Initializes a new instance of the Logger class.
         /// </summary>
-        /// <param name="type">
-        /// The type of logger.
-        /// </param>
+        /// <param name="type">The type of logger.</param>
         public LoggerWrapper(Type type)
         {
             log = LogManager.GetLogger(type);
@@ -71,16 +63,10 @@ namespace NotaFiscalNet.Core
             isWarnEnabled = log.IsWarnEnabled;
         }
 
-        #endregion
-
-        #region Public Methods
-
         /// <summary>
         /// Logs the debug message.
         /// </summary>
-        /// <param name="message">
-        /// The message.
-        /// </param>
+        /// <param name="message">The message.</param>
         public void Debug(string message)
         {
             if (isDebugEnabled)
@@ -93,12 +79,8 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Logs the debug message and the exception.
         /// </summary>
-        /// <param name="message">
-        /// The message.
-        /// </param>
-        /// <param name="exception">
-        /// The exception.
-        /// </param>
+        /// <param name="message">The message.</param>
+        /// <param name="exception">The exception.</param>
         public void Debug(string message, Exception exception)
         {
             if (isDebugEnabled)
@@ -111,9 +93,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Logs the error message.
         /// </summary>
-        /// <param name="errorMessage">
-        /// The error message.
-        /// </param>
+        /// <param name="errorMessage">The error message.</param>
         public void Error(string errorMessage)
         {
             if (isErrorEnabled)
@@ -126,12 +106,8 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Logs the error message and the exception.
         /// </summary>
-        /// <param name="errorMessage">
-        /// The error message.
-        /// </param>
-        /// <param name="exception">
-        /// The exception.
-        /// </param>
+        /// <param name="errorMessage">The error message.</param>
+        /// <param name="exception">The exception.</param>
         public void Error(string errorMessage, Exception exception)
         {
             if (isErrorEnabled)
@@ -144,9 +120,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Logs the fatal error message.
         /// </summary>
-        /// <param name="message">
-        /// The message.
-        /// </param>
+        /// <param name="message">The message.</param>
         public void Fatal(string message)
         {
             if (isFatalEnabled)
@@ -159,12 +133,8 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Logs the fatal error message and the exception.
         /// </summary>
-        /// <param name="message">
-        /// The message.
-        /// </param>
-        /// <param name="exception">
-        /// The exception.
-        /// </param>
+        /// <param name="message">The message.</param>
+        /// <param name="exception">The exception.</param>
         public void Fatal(string message, Exception exception)
         {
             if (isFatalEnabled)
@@ -177,9 +147,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Logs the info message.
         /// </summary>
-        /// <param name="message">
-        /// The message.
-        /// </param>
+        /// <param name="message">The message.</param>
         public void Info(string message)
         {
             if (isInfoEnabled)
@@ -192,12 +160,8 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Logs the info message and the exception.
         /// </summary>
-        /// <param name="message">
-        /// The message.
-        /// </param>
-        /// <param name="exception">
-        /// The exception.
-        /// </param>
+        /// <param name="message">The message.</param>
+        /// <param name="exception">The exception.</param>
         public void Info(string message, Exception exception)
         {
             if (isInfoEnabled)
@@ -210,9 +174,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Logs the warning message.
         /// </summary>
-        /// <param name="message">
-        /// The message.
-        /// </param>
+        /// <param name="message">The message.</param>
         public void Warn(string message)
         {
             if (isWarnEnabled)
@@ -225,12 +187,8 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Logs the warning message and the exception.
         /// </summary>
-        /// <param name="message">
-        /// The message.
-        /// </param>
-        /// <param name="exception">
-        /// The exception.
-        /// </param>
+        /// <param name="message">The message.</param>
+        /// <param name="exception">The exception.</param>
         public void Warn(string message, Exception exception)
         {
             if (isWarnEnabled)
@@ -239,7 +197,5 @@ namespace NotaFiscalNet.Core
                 log.Warn(methodBase.Name + " : " + message, exception);
             }
         }
-
-        #endregion
     }
 }

@@ -1,5 +1,5 @@
-﻿using System.Xml.Linq;
-using NotaFiscalNet.Core.Evento;
+﻿using NotaFiscalNet.Core.Evento;
+using System.Xml.Linq;
 
 namespace NotaFiscalNet.Core.Transmissao
 {
@@ -8,7 +8,6 @@ namespace NotaFiscalNet.Core.Transmissao
     /// </summary>
     public class ProtocoloEventoNFe
     {
-
         public string Versao { get; private set; }
 
         public EventoNFe Evento { get; private set; }

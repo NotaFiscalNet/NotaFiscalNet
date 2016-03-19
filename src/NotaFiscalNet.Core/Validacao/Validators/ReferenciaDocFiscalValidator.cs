@@ -60,9 +60,6 @@ namespace NotaFiscalNet.Core.Validacao.Validators
                         if ((int)value == 0)
                             context.Add(ErroValidacao.Create(ChaveErroValidacao.CampoNaoPreenchido, context.Path.ToString(), field.Property.Name));
             }
-
-            
         }
-
     }
 }

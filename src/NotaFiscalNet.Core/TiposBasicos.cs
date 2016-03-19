@@ -31,10 +31,12 @@
         public const string TDec_1203Opc = "TDec_1203Opc";
         public const string TDec_1204 = "TDec_1204";
         public const string TDec_1204Opc = "TDec_1204Opc";
+
         /// <summary>
         /// Tipo Decimal com 15 dígitos, sendo 13 de corpo e 2 decimais.
         /// </summary>
         public const string TDec_1302 = "TDec_1302";
+
         public const string TDec_1302Opc = "TDec_1302Opc";
         public const string TIe = "TIe";
         public const string TIeDest = "TIeDest";

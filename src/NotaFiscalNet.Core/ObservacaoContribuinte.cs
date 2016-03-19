@@ -1,24 +1,17 @@
-﻿using System.Runtime.InteropServices;
-using System.Xml;
-using NotaFiscalNet.Core.Interfaces;
+﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
+using System.Xml;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Representa as Observações de Uso Livre do Contribuinte
     /// </summary>
-    public sealed class ObservacaoContribuinte :  ISerializavel, IModificavel
+    public sealed class ObservacaoContribuinte : ISerializavel, IModificavel
     {
-        #region Fields
-
         private string _campo = string.Empty;
         private string _texto = string.Empty;
-
-        #endregion Fields
-
-        #region Properties
 
         /// <summary>
         /// Retorna ou define o Nome do Campo Livre
@@ -28,9 +21,10 @@ namespace NotaFiscalNet.Core
         public string Campo
         {
             get { return _campo; }
-            set {
+            set
+            {
                 _campo = ValidationUtil.TruncateString(value, 20);
-           }
+            }
         }
 
         /// <summary>
@@ -41,7 +35,8 @@ namespace NotaFiscalNet.Core
         public string Texto
         {
             get { return _texto; }
-            set {
+            set
+            {
                 _texto = ValidationUtil.TruncateString(value, 60);
             }
         }
@@ -59,20 +54,12 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        #endregion Properties
-
-        #region Constructor
-
         /// <summary>
         /// Inicializa uma nova instância da classe ObservacaoContribuinte
         /// </summary>
         public ObservacaoContribuinte()
         {
         }
-
-        #endregion Constructor
-
-        #region ISerializavel Members
 
         void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
@@ -81,7 +68,5 @@ namespace NotaFiscalNet.Core
             writer.WriteElementString("xTexto", SerializationUtil.ToToken(Texto, 60));
             writer.WriteEndElement(); // Elemento 'obsCont'
         }
-
-        #endregion
     }
 }

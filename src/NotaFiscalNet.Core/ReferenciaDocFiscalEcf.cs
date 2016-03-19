@@ -1,31 +1,22 @@
-using System;
-using System.Runtime.InteropServices;
 using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Validacao;
 using NotaFiscalNet.Core.Validacao.Validators;
+using System;
 
 namespace NotaFiscalNet.Core
 {
-    
-    
-    
     public sealed class ReferenciaDocFiscalEcf : ISerializavel, IModificavel
     {
-        #region Fields
-
         private string _codigoModeloDocFiscal = string.Empty;
         private int _numeroECF;
         private int _numeroCOO;
 
         private bool _isReadOnly = false;
 
-        #endregion Fields
-
-        #region Properties
-
         /// <summary>
-        /// [mod] Retorna o Código do Modelo do Documento Fiscal Referênciado. Se o Documento Fiscal referenciado por uma Nota Fiscal Eletrônica, o valor deverá ser '55'. 
-        /// Caso contrário, se o Documento Fiscal for uma Nota Fiscal modelo 1 ou 1A, deverá ser informado '01'.
+        /// [mod] Retorna o Código do Modelo do Documento Fiscal Referênciado. Se o Documento Fiscal
+        /// referenciado por uma Nota Fiscal Eletrônica, o valor deverá ser '55'. Caso contrário, se
+        /// o Documento Fiscal for uma Nota Fiscal modelo 1 ou 1A, deverá ser informado '01'.
         /// </summary>
         [NFeField(FieldName = "mod", DataType = "token", ID = "B20k")]
         [ValidateField(5, Validator = typeof(ReferenciaDocFiscalValidator))]
@@ -41,6 +32,7 @@ namespace NotaFiscalNet.Core
                     case "2D":
                         _codigoModeloDocFiscal = value;
                         break;
+
                     default:
                         throw new ArgumentException("O código do modelo de Documento Fiscal informado é inválido.");
                 }
@@ -48,7 +40,8 @@ namespace NotaFiscalNet.Core
         }
 
         /// <summary>
-        /// [nECF] Retorna ou define o número de ordem seqüencial do ECF que emitiu o Cupom Fiscal vinculado à NF-e.
+        /// [nECF] Retorna ou define o número de ordem seqüencial do ECF que emitiu o Cupom Fiscal
+        /// vinculado à NF-e.
         /// </summary>
         [NFeField(FieldName = "nECF", ID = "B20l", Pattern = @"[0-9]{1,3}")]
         [ValidateField(6, Validator = typeof(ReferenciaDocFiscalValidator))]
@@ -73,7 +66,8 @@ namespace NotaFiscalNet.Core
         /// Retorna o valor indicando se a Nota Fiscal Eletrônica está em modo somente-leitura.
         /// </summary>
         /// <remarks>
-        /// A Nota Fiscal Eletrônica estará em modo somente-leitura quando for instanciada a partir de um arquivo assinado digitalmente.
+        /// A Nota Fiscal Eletrônica estará em modo somente-leitura quando for instanciada a partir
+        /// de um arquivo assinado digitalmente.
         /// </remarks>
         public bool IsReadOnly
         {
@@ -94,14 +88,6 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        #endregion Properties
-
-        #region Constructor
-
-        #endregion Constructor
-
-        #region ISerializavel Members
-
         public void Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("refECF");
@@ -115,8 +101,5 @@ namespace NotaFiscalNet.Core
         {
             throw new NotImplementedException();
         }
-
-        #endregion
-
     }
 }

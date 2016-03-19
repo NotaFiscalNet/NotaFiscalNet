@@ -1,13 +1,12 @@
-﻿using System;
-using System.Runtime.InteropServices;
-using NotaFiscalNet.Core.Interfaces;
+﻿using NotaFiscalNet.Core.Interfaces;
+using System;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Representa uma Coleção de Produtos do Contribuinte e do Fisco. Informar no máximo 10 observações.
     /// </summary>
-    public sealed class ProdutoCollection : BaseCollection<Produto>,  ISerializavel, IModificavel
+    public sealed class ProdutoCollection : BaseCollection<Produto>, ISerializavel, IModificavel
     {
         protected override void PostAdd(Produto item)
         {
@@ -22,7 +21,7 @@ namespace NotaFiscalNet.Core
         {
             /// Quando remover um ítem da coleção, todos os itens serão re-organizados.
             int count = 0;
-            foreach ( Produto p in this )
+            foreach (Produto p in this)
             {
                 count++;
                 p.NumeroItem = count;
@@ -32,9 +31,9 @@ namespace NotaFiscalNet.Core
         private int GetMaxNumeroItem()
         {
             int max = 0;
-            foreach ( Produto p in this )
+            foreach (Produto p in this)
             {
-                if ( p.NumeroItem > max )
+                if (p.NumeroItem > max)
                     max = p.NumeroItem;
             }
             return max;
@@ -74,10 +73,6 @@ namespace NotaFiscalNet.Core
             }
         }
 
-  
-
-        #region ISerializavel Members
-
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             foreach (Produto produto in this)
@@ -86,7 +81,5 @@ namespace NotaFiscalNet.Core
                     ((ISerializavel)produto).Serializar(writer, nfe);
             }
         }
-
-        #endregion
     }
 }

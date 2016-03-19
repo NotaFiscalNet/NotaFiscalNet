@@ -1,7 +1,7 @@
-﻿using NotaFiscalNet.Core.Utils;
+﻿using NotaFiscalNet.Core.Interfaces;
+using NotaFiscalNet.Core.Utils;
 using System;
 using System.Xml;
-using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
@@ -111,9 +111,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// [motDesICMS] Retorna ou define o Motivo da desoneração do ICMS.
         /// </summary>
-        /// <remarks>
-        /// Valores aceitos: 6-Utilitários Motocicleta AÁrea Livre, 7-SUFRAMA e 9-Outros.
-        /// </remarks>
+        /// <remarks>Valores aceitos: 6-Utilitários Motocicleta AÁrea Livre, 7-SUFRAMA e 9-Outros.</remarks>
         [NFeField(FieldName = "motDesICMS", DataType = "xs:string")]
         public MotivoDesoneracaoCondicionalICMS? MotivoDesoneracaoIcms
         {

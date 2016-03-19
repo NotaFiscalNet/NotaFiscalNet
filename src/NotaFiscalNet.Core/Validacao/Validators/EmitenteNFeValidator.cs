@@ -14,7 +14,6 @@
             if (field.Property.Name == "CNAEFiscal")
                 if (string.IsNullOrEmpty(value.ToString()) && !string.IsNullOrEmpty(emitente.InscricaoMunicipal))
                     context.Add(ErroValidacao.Create(ChaveErroValidacao.CampoNaoPreenchido, context.Path.ToString(), field.Property.Name));
-
         }
     }
 }

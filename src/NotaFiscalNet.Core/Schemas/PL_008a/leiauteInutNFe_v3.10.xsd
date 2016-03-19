@@ -2,8 +2,8 @@
 <!--  PL_006f versao com correcoes no xServ para tornar a literal INUTILIZAR obrigatoria 21/05/2010 -->
 <!--  PL_006c versao com correcoes 24/12/2009 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portalfiscal.inf.br/nfe" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" targetNamespace="http://www.portalfiscal.inf.br/nfe" elementFormDefault="qualified" attributeFormDefault="unqualified">
-	<xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema_v1.01.xsd"/>
-	<xs:include schemaLocation="tiposBasico_v3.10.xsd"/>
+	<xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema_v1.01.xsd" />
+	<xs:include schemaLocation="tiposBasico_v3.10.xsd" />
 	<xs:complexType name="TInutNFe">
 		<xs:annotation>
 			<xs:documentation>Tipo Pedido de Inutilização de Numeração da Nota Fiscal Eletrônica</xs:documentation>
@@ -28,7 +28,7 @@
 							</xs:annotation>
 							<xs:simpleType>
 								<xs:restriction base="TServ">
-									<xs:enumeration value="INUTILIZAR"/>
+									<xs:enumeration value="INUTILIZAR" />
 								</xs:restriction>
 							</xs:simpleType>
 						</xs:element>
@@ -76,15 +76,15 @@
 					<xs:attribute name="Id" use="required">
 						<xs:simpleType>
 							<xs:restriction base="xs:ID">
-								<xs:pattern value="ID[0-9]{41}"/>
+								<xs:pattern value="ID[0-9]{41}" />
 							</xs:restriction>
 						</xs:simpleType>
 					</xs:attribute>
 				</xs:complexType>
 			</xs:element>
-			<xs:element ref="ds:Signature"/>
+			<xs:element ref="ds:Signature" />
 		</xs:sequence>
-		<xs:attribute name="versao" type="TVerInutNFe" use="required"/>
+		<xs:attribute name="versao" type="TVerInutNFe" use="required" />
 	</xs:complexType>
 	<xs:complexType name="TRetInutNFe">
 		<xs:annotation>
@@ -165,29 +165,29 @@
 							</xs:annotation>
 						</xs:element>
 					</xs:sequence>
-					<xs:attribute name="Id" type="xs:ID" use="optional"/>
+					<xs:attribute name="Id" type="xs:ID" use="optional" />
 				</xs:complexType>
 			</xs:element>
-			<xs:element ref="ds:Signature" minOccurs="0"/>
+			<xs:element ref="ds:Signature" minOccurs="0" />
 		</xs:sequence>
-		<xs:attribute name="versao" type="TVerInutNFe" use="required"/>
+		<xs:attribute name="versao" type="TVerInutNFe" use="required" />
 	</xs:complexType>
 	<xs:complexType name="TProcInutNFe">
 		<xs:annotation>
 			<xs:documentation>Tipo Pedido de inutilzação de númeração de  NF-e processado</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="inutNFe" type="TInutNFe"/>
-			<xs:element name="retInutNFe" type="TRetInutNFe"/>
+			<xs:element name="inutNFe" type="TInutNFe" />
+			<xs:element name="retInutNFe" type="TRetInutNFe" />
 		</xs:sequence>
-		<xs:attribute name="versao" type="TVerInutNFe" use="required"/>
+		<xs:attribute name="versao" type="TVerInutNFe" use="required" />
 	</xs:complexType>
 	<xs:simpleType name="TVerInutNFe">
 		<xs:annotation>
 			<xs:documentation>Tipo Versão do leiaute de Inutilização 3.10</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:token">
-			<xs:pattern value="3\.10"/>
+			<xs:pattern value="3\.10" />
 		</xs:restriction>
 	</xs:simpleType>
 </xs:schema>

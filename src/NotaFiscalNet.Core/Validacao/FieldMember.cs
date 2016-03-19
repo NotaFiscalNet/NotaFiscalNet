@@ -1,16 +1,16 @@
-﻿using System;
+﻿using NotaFiscalNet.Core.Interfaces;
+using NotaFiscalNet.Core.Validacao.Validators;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
-using NotaFiscalNet.Core.Interfaces;
-using NotaFiscalNet.Core.Validacao.Validators;
 
 namespace NotaFiscalNet.Core.Validacao
 {
     internal class FieldMember
     {
-        static readonly Type IDirtyableType = typeof(IModificavel);
-        static readonly Type IEnumerableType = typeof(IEnumerable);
+        private static readonly Type IDirtyableType = typeof(IModificavel);
+        private static readonly Type IEnumerableType = typeof(IEnumerable);
 
         public FieldMember(ValidationContext context, object source, PropertyInfo property, ValidateFieldAttribute attribute)
         {
@@ -50,10 +50,10 @@ namespace NotaFiscalNet.Core.Validacao
             Type typeValue = Property.PropertyType;
 
             // Obtém o validador do campo atual
-            if ( Attribute.Validator == null )
+            if (Attribute.Validator == null)
             {
                 DefaultValidatorAttribute[] defaultValidators = (DefaultValidatorAttribute[])typeValue.GetCustomAttributes(typeof(DefaultValidatorAttribute), true);
-                if ( defaultValidators != null && defaultValidators.Length > 0 )
+                if (defaultValidators != null && defaultValidators.Length > 0)
                     validator = ValidatorFactory.Create(defaultValidators[0].ValidatorType); // decorado na classe
                 else
                     validator = ValidatorFactory.DefaultValidator; // padrão
@@ -66,14 +66,14 @@ namespace NotaFiscalNet.Core.Validacao
 
             /// Realiza a validação baseada na regra de validação do campo atual
             validator.Validate(Context, this);
-            
-            /// Se o valor do campo for um tipo diferente de primitivo (string, int, double, etc), então,
-            /// realiza a validação de todos os campos do objeto filho.
-            if (Type.GetTypeCode(typeValue) == TypeCode.Object && 
+
+            /// Se o valor do campo for um tipo diferente de primitivo (string, int, double, etc),
+            /// então, realiza a validação de todos os campos do objeto filho.
+            if (Type.GetTypeCode(typeValue) == TypeCode.Object &&
                 (validator.GetType() == typeof(DefaultValidator) ||
                  validator.GetType() == typeof(RangeCollectionValidator)))
             {
-                foreach ( FieldMember field in GetValidatableProperties(Context, value, typeValue) )
+                foreach (FieldMember field in GetValidatableProperties(Context, value, typeValue))
                 {
                     if (field.Attribute.Ignore)
                         continue;
@@ -151,7 +151,7 @@ namespace NotaFiscalNet.Core.Validacao
         /// <returns></returns>
         public static List<FieldMember> GetValidatableProperties(ValidationContext context, object source, Type typeSource)
         {
-            if ( source == null ) throw new ArgumentNullException(nameof(source));
+            if (source == null) throw new ArgumentNullException(nameof(source));
 
             PropertyInfo[] properties = typeSource.GetProperties(BindingFlags.GetProperty | BindingFlags.Public | BindingFlags.Instance);
 
@@ -160,12 +160,11 @@ namespace NotaFiscalNet.Core.Validacao
 
             List<FieldMember> validProperties = new List<FieldMember>();
 
-            /// Seleciona todas as propriedades que estejam decoradas com o atributo
-            /// ValidateFieldAttribute.
-            foreach ( PropertyInfo property in properties )
+            /// Seleciona todas as propriedades que estejam decoradas com o atributo ValidateFieldAttribute.
+            foreach (PropertyInfo property in properties)
             {
                 ValidateFieldAttribute[] attributes = (ValidateFieldAttribute[])property.GetCustomAttributes(attributeType, true);
-                if ( attributes != null && attributes.Length > 0 )
+                if (attributes != null && attributes.Length > 0)
                 {
                     FieldMember field = new FieldMember(context, source, property, attributes[0]);
                     validProperties.Add(field);

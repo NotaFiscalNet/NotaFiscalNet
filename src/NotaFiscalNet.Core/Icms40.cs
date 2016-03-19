@@ -1,8 +1,8 @@
-﻿using NotaFiscalNet.Core.Utils;
+﻿using NotaFiscalNet.Core.Interfaces;
+using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 using System;
 using System.Xml;
-using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
@@ -39,9 +39,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna ou define o Código de Situação Tributária do ICMS.
         /// </summary>
-        /// <remarks>
-        /// Valores aceitos: 40 - Isenta 41 - Não tributada 50 - Suspensão 51 - Diferimento
-        /// </remarks>
+        /// <remarks>Valores aceitos: 40 - Isenta 41 - Não tributada 50 - Suspensão 51 - Diferimento</remarks>
         [NFeField(FieldName = "CST")]
         public override SituacaoTributariaICMS CST
         {

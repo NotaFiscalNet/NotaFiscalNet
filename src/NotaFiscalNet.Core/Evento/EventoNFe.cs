@@ -40,7 +40,7 @@ namespace NotaFiscalNet.Core.Evento
                 if (_id != null)
                     return _id;
 
-                return _id = $"ID{(int) Tipo}{ChaveAcessoNFe}{NumeroSequencial.ToString("00")}";
+                return _id = $"ID{(int)Tipo}{ChaveAcessoNFe}{NumeroSequencial.ToString("00")}";
             }
             set
             {

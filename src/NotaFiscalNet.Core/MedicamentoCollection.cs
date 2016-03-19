@@ -1,7 +1,6 @@
-﻿using System;
+﻿using NotaFiscalNet.Core.Interfaces;
+using System;
 using System.ComponentModel;
-using System.Runtime.InteropServices;
-using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
@@ -51,9 +50,6 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        
-        #region ISerializavel Members
-
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             foreach (Medicamento medicamento in this)
@@ -62,7 +58,5 @@ namespace NotaFiscalNet.Core
                     ((ISerializavel)medicamento).Serializar(writer, nfe);
             }
         }
-
-        #endregion
     }
 }

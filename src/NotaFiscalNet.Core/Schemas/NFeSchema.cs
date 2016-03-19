@@ -5,7 +5,6 @@
         //public static readonly IPacoteLiberacaoNFe Current =  new PL007a();
         public static readonly IPacoteLiberacaoNFe Current = new PL008a();
 
-
         //public Stream TipoBasicos = GetXmlSchemaFromAssembly("MaxNFe.Schemas.PL_006g.tiposBasico_v1.03.xsd");
         //public Stream Xmldsig = GetXmlSchemaFromAssembly("MaxNFe.Schemas.PL_006g.xmldsig-core-schema_v1.01.xsd");
 

@@ -22,7 +22,6 @@ namespace NotaFiscalNet.Core.Validacao.Validators
                     if (string.IsNullOrEmpty(justificativa))
                         context.Add(ErroValidacao.Create(field.Attribute.ErrorKey, context.Path.ToString(), field.Property.Name));
                 }
-                
             }
         }
     }

@@ -1,6 +1,6 @@
-﻿using System;
+﻿using NotaFiscalNet.Core.Interfaces;
+using System;
 using System.Collections;
-using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core.Validacao.Validators
 {

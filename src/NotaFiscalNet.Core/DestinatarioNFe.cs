@@ -1,9 +1,9 @@
-﻿using NotaFiscalNet.Core.Utils;
+﻿using NotaFiscalNet.Core.Interfaces;
+using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 using System;
 using System.Text.RegularExpressions;
 using System.Xml;
-using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Runtime.InteropServices;
 using System.Text;
 using System.Xml;
 using System.Xml.XPath;
@@ -10,22 +9,19 @@ namespace NotaFiscalNet.Core.Transmissao
     /// <summary>
     /// Representa o Retorno do Pedido de Cancelamento de Nota Fiscal Eletrônica.
     /// </summary>
-    
-    
-    
+
     public sealed class RetornoPedidoCancelamentoNFe
     {
-        #region Constructors
-
         /// <summary>
-        /// Inicializa uma instância da classe com base no xml retornado como resposta do pedido de cancelamento de NF-e.
+        /// Inicializa uma instância da classe com base no xml retornado como resposta do pedido de
+        /// cancelamento de NF-e.
         /// </summary>
         /// <param name="xml">Xml retornado pelo WebService.</param>
         public RetornoPedidoCancelamentoNFe(string xml)
         {
             this.RetornoXml = xml;
 
-            using ( StringReader reader = new StringReader(xml) )
+            using (StringReader reader = new StringReader(xml))
             {
                 XPathDocument xpathDoc = new XPathDocument(reader);
                 XPathNavigator navigator = xpathDoc.CreateNavigator();
@@ -61,24 +57,20 @@ namespace NotaFiscalNet.Core.Transmissao
 
                 // chNFe
                 node = infCancNode.SelectSingleNode("nfe:chNFe", ns);
-                if ( node != null )
+                if (node != null)
                     this.ChaveAcessoNFe = node.Value;
 
                 // dhRecbto
                 node = infCancNode.SelectSingleNode("nfe:dhRecbto", ns);
-                if ( node != null )
+                if (node != null)
                     this.RecebidoEm = node.ValueAsDateTime;
 
                 // nProt
                 node = infCancNode.SelectSingleNode("nfe:nProt", ns);
-                if ( node != null )
+                if (node != null)
                     this.NumeroProtocoloStatusNFe = node.Value;
             }
         }
-
-        #endregion Constructors
-
-        #region Properties
 
         /// <summary>
         /// Retorna o xml devolvido pelo WebService da Sefaz de envio.
@@ -89,42 +81,46 @@ namespace NotaFiscalNet.Core.Transmissao
         /// Retorna o valor indicando o tipo de ambiente que o retorno se refere.
         /// </summary>
         public TipoAmbiente Ambiente { get; private set; }
+
         /// <summary>
         /// Retorna a versão do leiaute de retorno do recibo.
         /// </summary>
         public string VersaoLeiaute { get; private set; }
+
         /// <summary>
         /// Retorna a versão da aplicação que processa o lote.
         /// </summary>
         public string VersaoAplicacao { get; private set; }
+
         /// <summary>
         /// Retorna o código do status de envio do lote.
         /// </summary>
         public string Status { get; private set; }
+
         /// <summary>
         /// Retorna a descrição referente ao código do status de envio do lote.
         /// </summary>
         public string Motivo { get; private set; }
+
         /// <summary>
         /// Retorna a código da UF IBGE onde o lote foi entregue.
         /// </summary>
         public UfIBGE UFIBGE { get; private set; }
+
         /// <summary>
         /// Retorna a Chave de Acesso da Nota Fiscal Eletrônica.
         /// </summary>
         public string ChaveAcessoNFe { get; private set; }
+
         /// <summary>
         /// Retorna a Data e Hora de recibimento do lote pela Sefaz.
         /// </summary>
         public DateTime RecebidoEm { get; private set; }
+
         /// <summary>
         /// Retorna o Número do Protocolo de Status da NF-e.
         /// </summary>
         public string NumeroProtocoloStatusNFe { get; private set; }
-
-        #endregion Properties
-
-        #region Methods
 
         /// <summary>
         /// Salva o retorno do pedido de Cancelamento de Notas Fiscais Eletrônicas em um arquivo xml.
@@ -136,8 +132,8 @@ namespace NotaFiscalNet.Core.Transmissao
         {
             string path = Path.Combine(caminho, this.NumeroProtocoloStatusNFe + "-can.xml");
 
-            using ( StringReader sr = new StringReader(this.RetornoXml) )
-            using ( XmlReader reader = XmlReader.Create(sr) )
+            using (StringReader sr = new StringReader(this.RetornoXml))
+            using (XmlReader reader = XmlReader.Create(sr))
             {
                 reader.MoveToContent();
                 string outerXml = reader.ReadOuterXml(); // pega o elemento raiz, desconsidera a declaração, se houver.
@@ -145,13 +141,11 @@ namespace NotaFiscalNet.Core.Transmissao
                 XmlWriterSettings settings = new XmlWriterSettings();
                 settings.Encoding = Encoding.UTF8;
 
-                using ( XmlWriter writer = XmlWriter.Create(path, settings) )
+                using (XmlWriter writer = XmlWriter.Create(path, settings))
                     writer.WriteRaw(outerXml);
             }
 
             return path;
         }
-
-        #endregion Methods
     }
 }

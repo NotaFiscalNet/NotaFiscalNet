@@ -1,5 +1,4 @@
-﻿using System.Runtime.InteropServices;
-using NotaFiscalNet.Core.Interfaces;
+﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 
 namespace NotaFiscalNet.Core
@@ -9,8 +8,6 @@ namespace NotaFiscalNet.Core
     /// </summary>
     public sealed class VolumeCarga : ISerializavel, IModificavel
     {
-        #region Fields
-
         private long _quantidadeVolumesTransportados;
         private string _especie = string.Empty;
         private string _marca = string.Empty;
@@ -19,12 +16,9 @@ namespace NotaFiscalNet.Core
         private decimal _pesoBruto;
         private StringCollection _lacres = new StringCollection();
 
-        #endregion Fields
-
-        #region Properties
-
         /// <summary>
-        /// [qVol] Retorna ou define a Quantidade de Volumes transportados (valor máximo 999999999999999). Opcional.
+        /// [qVol] Retorna ou define a Quantidade de Volumes transportados (valor máximo
+        /// 999999999999999). Opcional.
         /// </summary>
         [NFeField(FieldName = "qVol", DataType = "token", ID = "X27", Pattern = @"[0-9]{1,15}")]
         public long QuantidadeVolumes
@@ -44,8 +38,9 @@ namespace NotaFiscalNet.Core
         public string Especie
         {
             get { return _especie; }
-            set {
-                _especie = ValidationUtil.TruncateString(value, 60); 
+            set
+            {
+                _especie = ValidationUtil.TruncateString(value, 60);
             }
         }
 
@@ -56,7 +51,8 @@ namespace NotaFiscalNet.Core
         public string Marca
         {
             get { return _marca; }
-            set {
+            set
+            {
                 _marca = ValidationUtil.TruncateString(value, 60);
             }
         }
@@ -68,7 +64,8 @@ namespace NotaFiscalNet.Core
         public string Numeracao
         {
             get { return _numeracao; }
-            set {
+            set
+            {
                 _numeracao = ValidationUtil.TruncateString(value, 60);
             }
         }
@@ -80,10 +77,11 @@ namespace NotaFiscalNet.Core
         public decimal PesoLiquido
         {
             get { return _pesoLiquido; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1203(value, "PesoLiquido");
 
-                _pesoLiquido = value; 
+                _pesoLiquido = value;
             }
         }
 
@@ -94,7 +92,8 @@ namespace NotaFiscalNet.Core
         public decimal PesoBruto
         {
             get { return _pesoBruto; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1203(value, "PesoBruto");
                 _pesoBruto = value;
             }
@@ -127,20 +126,12 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        #endregion Properties
-
-        #region Constructor
-
         /// <summary>
         /// Inicializa uma nova instância da classe VolumeCarga
         /// </summary>
         public VolumeCarga()
         {
         }
-
-        #endregion Constructor
-
-        #region ISerializavel Members
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
@@ -169,7 +160,5 @@ namespace NotaFiscalNet.Core
                 }
             writer.WriteEndElement(); // Elemento 'vol'
         }
-
-        #endregion
     }
 }

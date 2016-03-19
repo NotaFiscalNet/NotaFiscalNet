@@ -2,9 +2,7 @@
 
 namespace NotaFiscalNet.Core.Validacao
 {
-    
-
-    [AttributeUsage(AttributeTargets.Property, AllowMultiple=false)]
+    [AttributeUsage(AttributeTargets.Property, AllowMultiple = false)]
     internal sealed class ValidateFieldAttribute : Attribute
     {
         public ValidateFieldAttribute(int sequence)
@@ -47,7 +45,8 @@ namespace NotaFiscalNet.Core.Validacao
         public ChaveErroValidacao ErrorKey { get; set; }
 
         /// <summary>
-        /// Retorna ou define o valor indicando se o campo deve ou não ser ignorado (não verificado) o campo.
+        /// Retorna ou define o valor indicando se o campo deve ou não ser ignorado (não verificado)
+        /// o campo.
         /// </summary>
         public bool Ignore { get; set; }
 

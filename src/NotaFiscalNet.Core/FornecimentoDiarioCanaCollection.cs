@@ -1,15 +1,15 @@
-﻿using System;
+﻿using NotaFiscalNet.Core.Interfaces;
+using System;
 using System.ComponentModel;
 using System.Linq;
 using System.Xml;
-using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Representa uma Coleção de Armamentos.
     /// </summary>
-    public sealed class FornecimentoDiarioCanaCollection : BaseCollection<FornecimentoDiarioCana>, ISerializavel,IModificavel
+    public sealed class FornecimentoDiarioCanaCollection : BaseCollection<FornecimentoDiarioCana>, ISerializavel, IModificavel
     {
         private const int Capacidade = 31;
 

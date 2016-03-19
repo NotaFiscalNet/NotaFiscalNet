@@ -1,10 +1,9 @@
-﻿using System;
-using System.Runtime.InteropServices;
-using System.Xml;
-using NotaFiscalNet.Core.Interfaces;
+﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 using NotaFiscalNet.Core.Validacao.Validators;
+using System;
+using System.Xml;
 
 namespace NotaFiscalNet.Core
 {
@@ -13,8 +12,6 @@ namespace NotaFiscalNet.Core
     /// </summary>
     public sealed class Produto : ISerializavel, IModificavel
     {
-        #region Fields
-
         private string _informacoesAdicionais = string.Empty;
         private readonly ImpostoProduto _imposto;
         private string _codigo = string.Empty;
@@ -49,45 +46,46 @@ namespace NotaFiscalNet.Core
         private string _numeroRecopi;
         private Guid? _numeroFci;
 
-        #endregion Fields
-
-        #region Properties
-
         /// <summary>
-        /// [nItem] Retorna o número do item gerado automaticamente. Este número é sequencial, e vai de 1 até 990.
+        /// [nItem] Retorna o número do item gerado automaticamente. Este número é sequencial, e vai
+        /// de 1 até 990.
         /// </summary>
-        /// <remarks>Caso um item seja removido da coleção ProdutoCollection, todos os itens na coleção serão re-enumerados.</remarks>
+        /// <remarks>
+        /// Caso um item seja removido da coleção ProdutoCollection, todos os itens na coleção serão re-enumerados.
+        /// </remarks>
         [NFeField(ID = "H02", FieldName = "nItem", DataType = "token", Pattern = "[1-9]{1}[0-9]{0,1}|[1-8]{1}[0-9]{2}|[9]{1}[0-8]{1}[0-9]{1}|[9]{1}[9]{1}[0]{1}", NodeType = XmlNodeType.Attribute), ValidateField(1, true)]
         public int NumeroItem { get; internal set; }
 
         /// <summary>
-        /// [cProd] Retorna ou define o Código do Produto ou Serviço. Preencher com CFOP caso se trate de 
-        /// itens não relacionados com mercadorias/produto e que o contribuinte não possua codificação própria. 
-        /// Neste caso, o formato do código deverá ser 'CFOP9999'.
+        /// [cProd] Retorna ou define o Código do Produto ou Serviço. Preencher com CFOP caso se
+        /// trate de itens não relacionados com mercadorias/produto e que o contribuinte não possua
+        /// codificação própria. Neste caso, o formato do código deverá ser 'CFOP9999'.
         /// </summary>
         [NFeField(FieldName = "cProd", DataType = "token", ID = "I02", MinLength = 1, MaxLength = 60)]
         [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Codigo
         {
             get { return _codigo; }
-            set 
+            set
             {
-                _codigo = ValidationUtil.TruncateString(value, 60) ?? string.Empty; 
+                _codigo = ValidationUtil.TruncateString(value, 60) ?? string.Empty;
             }
         }
 
         /// <summary>
-        /// [cEAN] Retorna ou define o Código GTIN (Global Trade Item Number) do produto. Preencher com o código GTIN-8, GTIN-12, GTIN-13 ou GTIN-14 (antigos códigos EAN, UPC e DUN-14), não informar se o produto não possuir este código.
+        /// [cEAN] Retorna ou define o Código GTIN (Global Trade Item Number) do produto. Preencher
+        /// com o código GTIN-8, GTIN-12, GTIN-13 ou GTIN-14 (antigos códigos EAN, UPC e DUN-14), não
+        /// informar se o produto não possuir este código.
         /// </summary>
         [NFeField(FieldName = "cEAN", DataType = "token", ID = "I03", Pattern = @"[0-9]{0}|[0-9]{8}|[0-9]{12,14}")]
         [ValidateField(3, true)]
         public string CodigoGTIN
         {
             get { return _codigoGTIN; }
-            set 
+            set
             {
                 ValidationUtil.ValidateGTIN(value, "CodigoGTIN");
-                _codigoGTIN = value ?? string.Empty; 
+                _codigoGTIN = value ?? string.Empty;
             }
         }
 
@@ -99,17 +97,19 @@ namespace NotaFiscalNet.Core
         public string Descricao
         {
             get { return _descricao; }
-            set 
+            set
             {
-                _descricao = ValidationUtil.TruncateString(value, 120) ?? string.Empty; 
+                _descricao = ValidationUtil.TruncateString(value, 120) ?? string.Empty;
             }
         }
 
         /// <summary>
-        /// [NCM] Retorna ou define o Código NCM (Nomenclatura Comun do Mercosul). Tamanho (8 caracteres numéricos). Ver tabela de Capítulos da NCM. 
-        /// Será permitida a informação do gênero (posição do capítulo do NCM) quando a operação não for de comércio exterior (importação/exportação) 
-        /// ou o produto não seja tributado pelo IPI. Em caso de item de serviço ou item que não tenham produto 
-        /// (Ex. transferência de crédito, crédito do ativo imobilizado, etc.), informar o código 00 (zeros) (v2.0)
+        /// [NCM] Retorna ou define o Código NCM (Nomenclatura Comun do Mercosul). Tamanho (8
+        /// caracteres numéricos). Ver tabela de Capítulos da NCM. Será permitida a informação do
+        /// gênero (posição do capítulo do NCM) quando a operação não for de comércio exterior
+        /// (importação/exportação) ou o produto não seja tributado pelo IPI. Em caso de item de
+        /// serviço ou item que não tenham produto (Ex. transferência de crédito, crédito do ativo
+        /// imobilizado, etc.), informar o código 00 (zeros) (v2.0)
         /// </summary>
         [NFeField(FieldName = "NCM", DataType = "token", ID = "I05", Pattern = @"[0-9]{8}")]
         [ValidateField(5, ChaveErroValidacao.CampoNaoPreenchido)]
@@ -119,7 +119,7 @@ namespace NotaFiscalNet.Core
             set
             {
                 ValidationUtil.ValidateNCM(value, "CodigoNCM");
-                _codigoNCM = value; 
+                _codigoNCM = value;
             }
         }
 
@@ -138,8 +138,9 @@ namespace NotaFiscalNet.Core
         }
 
         /// <summary>
-        /// [EXTIPI] Retorna ou define o Código Ex (desdobramento de classificação) da TIPI (Tabela de Incidência do imposto sobre Produtos Industrializados). <br/>
-        /// Em caso de Serviço, o valor não deverá ser informado. Formato 00 ou 000.
+        /// [EXTIPI] Retorna ou define o Código Ex (desdobramento de classificação) da TIPI (Tabela
+        /// de Incidência do imposto sobre Produtos Industrializados). <br/> Em caso de Serviço, o
+        /// valor não deverá ser informado. Formato 00 ou 000.
         /// </summary>
         [NFeField(FieldName = "EXTIPI", DataType = "token", ID = "I08", Pattern = @"[0-9]{2,3}", Opcional = true)]
         [ValidateField(6, true)]
@@ -174,28 +175,30 @@ namespace NotaFiscalNet.Core
         public string Unidade
         {
             get { return _unidadeComercial; }
-            set 
+            set
             {
-                _unidadeComercial = ValidationUtil.TruncateString(value, 6) ?? string.Empty; 
+                _unidadeComercial = ValidationUtil.TruncateString(value, 6) ?? string.Empty;
             }
         }
 
         /// <summary>
-        /// [qCom] Retorna ou define a Quantidade (referente ao número de itens deste item de produto ou serviço sendo vendido). Permite até 4 casas decimais, e 11 inteiros.
+        /// [qCom] Retorna ou define a Quantidade (referente ao número de itens deste item de produto
+        /// ou serviço sendo vendido). Permite até 4 casas decimais, e 11 inteiros.
         /// </summary>
         [NFeField(FieldName = "qCom", DataType = "TDec_1504", ID = "I10", Pattern = @"0|0\.[0-9]{1,4}|[1-9]{1}[0-9]{0,14}|[1-9]{1}[0-9]{0,14}(\.[0-9]{1,4})?")]
         [ValidateField(10, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal Quantidade
         {
             get { return _quantidade; }
-            set 
+            set
             {
                 _quantidade = ValidationUtil.ValidateTDec_1104v(value, "Quantidade");
             }
         }
 
         /// <summary>
-        /// [vUnCom] Retorna ou define o Valor Unitário do produto (ou serviço). Informar até 10 casas decimais (se maior, será arredondado para cima).
+        /// [vUnCom] Retorna ou define o Valor Unitário do produto (ou serviço). Informar até 10
+        /// casas decimais (se maior, será arredondado para cima).
         /// </summary>
         [NFeField(FieldName = "vUnCom", DataType = "TDec_1110", ID = "I10a", Pattern = @"0|0\.[0-9]{1,10}|[1-9]{1}[0-9]{0,10}|[1-9]{1}[0-9]{0,10}(\.[0-9]{1,10})?")]
         [ValidateField(11, ChaveErroValidacao.CampoNaoPreenchido)]
@@ -223,15 +226,17 @@ namespace NotaFiscalNet.Core
         }
 
         /// <summary>
-        /// [cEANTrib] Retorna ou define o Código GTIN (Global Trade Item Number) da unidade tributável do produto. 
-        /// Preencher com o código GTIN-8, GTIN-12, GTIN-13 ou GTIN-14 (antigos códigos EAN, UPC e DUN-14) da unidade tributável do produto. Não informar caso de o produto não possua este código.
+        /// [cEANTrib] Retorna ou define o Código GTIN (Global Trade Item Number) da unidade
+        /// tributável do produto. Preencher com o código GTIN-8, GTIN-12, GTIN-13 ou GTIN-14
+        /// (antigos códigos EAN, UPC e DUN-14) da unidade tributável do produto. Não informar caso
+        /// de o produto não possua este código.
         /// </summary>
         [NFeField(FieldName = "cEANTrib", DataType = "token", ID = "I12", Pattern = @"[0-9]{0}|[0-9]{8}|[0-9]{12,14}")]
         [ValidateField(13, true)]
         public string CodigoGTINTributario
         {
             get { return _codigoGTINTributario; }
-            set 
+            set
             {
                 _codigoGTINTributario = ValidationUtil.ValidateGTIN(value, "CodigoGTINTributario") ?? string.Empty;
             }
@@ -245,9 +250,9 @@ namespace NotaFiscalNet.Core
         public string UnidadeTributavel
         {
             get { return _unidadeTributavel; }
-            set 
+            set
             {
-                _unidadeTributavel = ValidationUtil.TruncateString(value, 6) ?? string.Empty; 
+                _unidadeTributavel = ValidationUtil.TruncateString(value, 6) ?? string.Empty;
             }
         }
 
@@ -259,7 +264,7 @@ namespace NotaFiscalNet.Core
         public decimal QuantidadeTributavel
         {
             get { return _quantidadeTributavel; }
-            set 
+            set
             {
                 _quantidadeTributavel = ValidationUtil.ValidateTDec_1104v(value, "QuantidadeTributavel");
             }
@@ -273,7 +278,7 @@ namespace NotaFiscalNet.Core
         public decimal ValorUnitarioTributavel
         {
             get { return _valorUnitarioTributavel; }
-            set 
+            set
             {
                 _valorUnitarioTributavel = ValidationUtil.ValidateTDec_1110(value, "ValorUnitarioTributavel");
             }
@@ -287,7 +292,7 @@ namespace NotaFiscalNet.Core
         public decimal ValorTotalFrete
         {
             get { return _valorTotalFrete; }
-            set 
+            set
             {
                 _valorTotalFrete = ValidationUtil.ValidateTDec_1302Opc(value, "ValorTotalFrete");
             }
@@ -301,7 +306,7 @@ namespace NotaFiscalNet.Core
         public decimal ValorTotalSeguro
         {
             get { return _valorTotalSeguro; }
-            set 
+            set
             {
                 _valorTotalSeguro = ValidationUtil.ValidateTDec_1302Opc(value, "ValorTotalSeguro");
             }
@@ -315,7 +320,7 @@ namespace NotaFiscalNet.Core
         public decimal ValorDesconto
         {
             get { return _valorDesconto; }
-            set 
+            set
             {
                 _valorDesconto = ValidationUtil.ValidateTDec_1302Opc(value, "ValorDesconto");
             }
@@ -336,14 +341,12 @@ namespace NotaFiscalNet.Core
         }
 
         /// <summary>
-        /// [indTot] Retorna ou define se o item ou produto compoe o valor total da NFe.
-        /// Este campo deverá ser preenchido com:
-        /// False – o valor do item (vProd) não compõe o valor total da NF-e (vProd)
-        /// True  – o valor do item (vProd) compõe o valor total da NF-e (vProd)
+        /// [indTot] Retorna ou define se o item ou produto compoe o valor total da NFe. Este campo
+        /// deverá ser preenchido com: False – o valor do item (vProd) não compõe o valor total da
+        /// NF-e (vProd) True – o valor do item (vProd) compõe o valor total da NF-e (vProd)
         /// </summary>
         [NFeField(FieldName = "indTot"), ValidateField(20, true)]
         public bool ItemCompoeValorTotalNFe { get; set; }
-
 
         /// <summary>
         /// [DI] Retorna a lista de Declarações de Importação do Produto. Opcional.
@@ -362,7 +365,8 @@ namespace NotaFiscalNet.Core
         public DetalheExportacaoCollection DetalhamentoExportacao { get { return _detalhamentoExportacao; } }
 
         /// <summary>
-        /// [xPed] Retorna ou define o Pedido de Compra, informação de interesse do emissor para controle do B2B
+        /// [xPed] Retorna ou define o Pedido de Compra, informação de interesse do emissor para
+        /// controle do B2B
         /// </summary>
         [NFeField(FieldName = "xPed", DataType = "token", MinLength = 1, MaxLength = 15)]
         [ValidateField(21, true)]
@@ -406,12 +410,13 @@ namespace NotaFiscalNet.Core
         }
 
         /// <summary>
-        /// Retorna ou define o Tipo de Produto Específico (que indica se haverá detalhamento do produto ou não).
+        /// Retorna ou define o Tipo de Produto Específico (que indica se haverá detalhamento do
+        /// produto ou não).
         /// </summary>
         public TipoProdutoEspecifico TipoProdutoEspecifico
         {
             get { return _tipoProdutoEspecifico; }
-            set 
+            set
             {
                 _tipoProdutoEspecifico = ValidationUtil.ValidateEnum<TipoProdutoEspecifico>(value, "TipoProdutoEspecifico");
             }
@@ -422,7 +427,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         /// <remarks>Informar apenas se o campo TipoProdutoEspecifico for igual a 'VeiculoNovo'.</remarks>
         [NFeField(FieldName = "veicProd", ID = "J01", Opcional = true)]
-        [ValidateField(21, Validator=typeof(ProdutoEspecificoValidator))]
+        [ValidateField(21, Validator = typeof(ProdutoEspecificoValidator))]
         public VeiculoNovo DetalhamentoVeiculo
         {
             get { return _detalhamentoVeiculo; }
@@ -441,8 +446,8 @@ namespace NotaFiscalNet.Core
         }
 
         /// <summary>
-        /// [arma] Retorna ou define a lista de detalhamentos de Armamentos.
-        /// Informar apenas se o campo TipoProdutoEspecifico for igual a 'Armamento'.
+        /// [arma] Retorna ou define a lista de detalhamentos de Armamentos. Informar apenas se o
+        /// campo TipoProdutoEspecifico for igual a 'Armamento'.
         /// </summary>
         [NFeField(FieldName = "arma", ID = "L01")]
         [ValidateField(23, Validator = typeof(ProdutoEspecificoValidator))]
@@ -463,7 +468,8 @@ namespace NotaFiscalNet.Core
         }
 
         /// <summary>
-        /// [nRECOPI] Retorna ou define o Número do RECOPI (Registro e Controle das Operações com o Papel Imune Nacional).
+        /// [nRECOPI] Retorna ou define o Número do RECOPI (Registro e Controle das Operações com o
+        /// Papel Imune Nacional).
         /// </summary>
         [NFeField(FieldName = "nRECOPI", Pattern = @"[0-9]{20}", Opcional = true)]
         public string NumeroRECOPI
@@ -478,7 +484,8 @@ namespace NotaFiscalNet.Core
         }
 
         /// <summary>
-        /// [infAdProd] Retorna ou define as Informações Adicionais do Produto (norma referenciada, informações complementares). Opcional.
+        /// [infAdProd] Retorna ou define as Informações Adicionais do Produto (norma referenciada,
+        /// informações complementares). Opcional.
         /// </summary>
         [NFeField(ID = "V01", FieldName = "infAdProd", DataType = "TString", MinLength = 1, MaxLength = 500, Pattern = "[1-9]{1}[0-9]{0,1}|[1-8]{1}[0-9]{2}|[9]{1}[0-8]{1}[0-9]{1}|[9]{1}[9]{1}[0]{1}", Opcional = true)]
         [ValidateField(25, true)]
@@ -549,10 +556,6 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        #endregion Properties
-
-        #region Constructor
-
         /// <summary>
         /// Inicializa uma nova instância da classe Produto.
         /// </summary>
@@ -579,26 +582,18 @@ namespace NotaFiscalNet.Core
             _detalhamentoCombustivel = new Combustivel(this);
         }
 
-        #endregion Constructor
-
-        #region ISerializavel Members
-
         void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
-            #region Elemento 'det'
-
             writer.WriteStartElement("det");
             writer.WriteAttributeString("nItem", NumeroItem.ToString());
-
-            #region Elemento 'prod'
 
             /// início do elemento 'prod'
             writer.WriteStartElement("prod");
 
             writer.WriteElementString("cProd", Codigo.ToToken(60));
-            writer.WriteElementString("cEAN",  CodigoGTIN.ToToken(14));
+            writer.WriteElementString("cEAN", CodigoGTIN.ToToken(14));
             writer.WriteElementString("xProd", Descricao.ToToken(120));
-            writer.WriteElementString("NCM",   CodigoNCM.ToToken(8));
+            writer.WriteElementString("NCM", CodigoNCM.ToToken(8));
 
             if (!String.IsNullOrEmpty(CodigoNVE))
                 writer.WriteElementString("NVE", CodigoNVE);
@@ -638,7 +633,7 @@ namespace NotaFiscalNet.Core
 
             if (IsStrValid(PedidoCompra))
                 writer.WriteElementString("xPed", PedidoCompra.ToToken(15));
-            
+
             if (ItemPedidoCompra > 0)
                 writer.WriteElementString("nItemPed", ItemPedidoCompra.ToToken());
 
@@ -650,15 +645,19 @@ namespace NotaFiscalNet.Core
                 case TipoProdutoEspecifico.VeiculoNovo:
                     Render(DetalhamentoVeiculo, writer, nfe);
                     break;
+
                 case TipoProdutoEspecifico.Medicamento:
                     Render(DetalhamentoMedicamento, writer, nfe);
                     break;
+
                 case TipoProdutoEspecifico.Armamento:
                     Render(DetalhamentoArmamento, writer, nfe);
                     break;
+
                 case TipoProdutoEspecifico.Combustivel:
                     Render(DetalhamentoCombustivel, writer, nfe);
                     break;
+
                 case TipoProdutoEspecifico.PapelImune:
                     writer.WriteElementString("nRECOPI", NumeroRECOPI);
                     break;
@@ -666,39 +665,15 @@ namespace NotaFiscalNet.Core
 
             writer.WriteEndElement(); // fim do elemento 'prod'
 
-            #endregion Elemento 'prod'
-
-            #region Elemento 'imposto'
-
             ((ISerializavel)Imposto).Serializar(writer, nfe);
-
-            #endregion Elemento 'imposto'
-
-            #region Elemento 'impostoDevol'
 
             ImpostoDevolvido.SerializeIfNotNull(writer, nfe);
 
-            #endregion Elemento 'impostoDevol'
-
-            #region Elemento 'infAdProd'
-
             if (!string.IsNullOrEmpty(InformacoesAdicionais))
                 writer.WriteElementString("infAdProd", SerializationUtil.ToTString(InformacoesAdicionais, 500));
-            
-            #endregion Elemento 'infAdProd'
 
             writer.WriteEndElement(); // fim do elemento 'det'
-
-            #endregion Elemento 'det'
         }
-
-        #endregion
-
-        #region Methods
-
-        #region Validation Methods
-
-        #endregion Validation Methods
 
         private bool IsStrValid(string value)
         {
@@ -709,7 +684,5 @@ namespace NotaFiscalNet.Core
         {
             entity.Serializar(writer, nfe);
         }
-
-        #endregion Methods
     }
 }

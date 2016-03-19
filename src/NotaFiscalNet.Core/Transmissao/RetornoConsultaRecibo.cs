@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Runtime.InteropServices;
 using System.Xml;
 using System.Xml.XPath;
 
@@ -9,18 +8,14 @@ namespace NotaFiscalNet.Core.Transmissao
     /// <summary>
     /// Representa o Retorno da Consulta de Recibo de Entrega de Lote de Notas Fiscais Eletrônicas.
     /// </summary>
-    
-    
-    
-    public sealed class RetornoConsultaRecibo 
-    {
-        #region Constructors
 
+    public sealed class RetornoConsultaRecibo
+    {
         public RetornoConsultaRecibo(string xmlRetornoConsultaRecibo)
         {
             this.Xml = xmlRetornoConsultaRecibo;
 
-            using ( StringReader reader = new StringReader(xmlRetornoConsultaRecibo) )
+            using (StringReader reader = new StringReader(xmlRetornoConsultaRecibo))
             {
                 XPathDocument xdoc = new XPathDocument(reader);
                 XPathNavigator navigator = xdoc.CreateNavigator();
@@ -55,9 +50,9 @@ namespace NotaFiscalNet.Core.Transmissao
 
                 // protNFe
                 XPathNodeIterator protNFeIterator = rootNode.Select("nfe:protNFe", ns);
-                if ( protNFeIterator != null )
+                if (protNFeIterator != null)
                 {
-                    foreach ( XPathNavigator nav in protNFeIterator )
+                    foreach (XPathNavigator nav in protNFeIterator)
                     {
                         ProtocoloStatusProcessamento protocolo = new ProtocoloStatusProcessamento(nav, ns);
                         this.Protocolos.Add(protocolo);
@@ -65,10 +60,6 @@ namespace NotaFiscalNet.Core.Transmissao
                 }
             }
         }
-
-        #endregion Constructors
-
-        #region Properties
 
         /// <summary>
         /// Retorna ou define o xml no qual a instância representa.
@@ -79,38 +70,41 @@ namespace NotaFiscalNet.Core.Transmissao
         /// Retorna o valor indicando o tipo de ambiente que o retorno se refere.
         /// </summary>
         public TipoAmbiente Ambiente { get; private set; }
+
         /// <summary>
         /// Retorna a versão do leiaute de retorno do recibo.
         /// </summary>
         public string VersaoLeiaute { get; private set; }
+
         /// <summary>
         /// Retorna a versão da aplicação que processa o lote.
         /// </summary>
         public string VersaoAplicacao { get; private set; }
+
         /// <summary>
         /// Retorna o código do status de envio do lote.
         /// </summary>
         public string Status { get; private set; }
+
         /// <summary>
         /// Retorna a descrição referente ao código do status de envio do lote.
         /// </summary>
         public string Motivo { get; private set; }
+
         /// <summary>
         /// Retorna a código da UF IBGE onde o lote foi entregue.
         /// </summary>
         public UfIBGE UFIBGE { get; private set; }
+
         /// <summary>
         /// Retorna o número do recibo consultado.
         /// </summary>
         public long NumeroRecibo { get; private set; }
+
         /// <summary>
         /// Retorna a lista de Protocolos referente as Notas Fiscais Eletrônicas contidas no lote.
         /// </summary>
         public ProtocoloStatusProcessamentoCollection Protocolos { get; private set; }
-
-        #endregion Properties
-
-        #region Methods
 
         /// <summary>
         /// Salva o recibo de entrega do Lote de Notas Fiscais Eletrônicas em um arquivo xml.
@@ -124,7 +118,5 @@ namespace NotaFiscalNet.Core.Transmissao
             // TODO: Terminar
             throw new NotImplementedException();
         }
-
-        #endregion Methods
     }
 }

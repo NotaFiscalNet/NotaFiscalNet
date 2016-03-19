@@ -10,7 +10,6 @@
         /// </summary>
         public string NumeroRecibo { get; set; }
 
-
         /// <summary>
         /// Retorna ou define o tempo médio (em segundos) de resposta do serviço (nos últimos 5 minutos).
         /// </summary>

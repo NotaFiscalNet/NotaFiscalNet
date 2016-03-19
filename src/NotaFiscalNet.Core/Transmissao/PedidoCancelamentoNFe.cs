@@ -1,31 +1,22 @@
-﻿using System;
-using System.Runtime.InteropServices;
+﻿using NotaFiscalNet.Core.Utils;
+using System;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Xml;
 using System.Xml.XPath;
-using NotaFiscalNet.Core.Utils;
 
 namespace NotaFiscalNet.Core.Transmissao
 {
     /// <summary>
     /// Representa o Pedido de Cancelamento de NF-e.
     /// </summary>
-    
-    
-    
+
     public sealed class PedidoCancelamentoNFe
     {
-        #region Instance Variables
-        
         private TipoAmbiente _ambiente = TipoAmbiente.Producao;
         private string _chaveAcesso = string.Empty;
         private string _numeroProtocoloStatusNFe = string.Empty;
         private string _justificativa = string.Empty;
-
-        #endregion Instance Variables
-
-        #region Constructors
 
         /// <summary>
         /// Inicializa uma nova instância da classe <see cref="PedidoCancelamentoNFe"/>.
@@ -33,10 +24,6 @@ namespace NotaFiscalNet.Core.Transmissao
         public PedidoCancelamentoNFe()
         {
         }
-
-        #endregion Constructors
-
-        #region Properties
 
         /// <summary>
         /// Retorna o valor indicando se a classe está em modo Somente-Leitura.
@@ -51,18 +38,22 @@ namespace NotaFiscalNet.Core.Transmissao
         /// <summary>
         /// Retorna ou define o valor da Chave de Acesso da NF-e (44 posições).
         /// </summary>
-        /// <exception cref="System.ArgumentNullException">Ocorre caso o valor informado seja null.</exception>
-        /// <exception cref="System.ArgumentException">Ocorre caso o valor informado para a Chave de Acesso não seja válido.</exception>
+        /// <exception cref="System.ArgumentNullException">
+        /// Ocorre caso o valor informado seja null.
+        /// </exception>
+        /// <exception cref="System.ArgumentException">
+        /// Ocorre caso o valor informado para a Chave de Acesso não seja válido.
+        /// </exception>
         public string ChaveAcesso
         {
             get { return _chaveAcesso; }
             set
             {
                 CheckReadOnly();
-                if ( value == null )
+                if (value == null)
                     throw new ArgumentNullException("ChaveAcesso", "O campo ChaveAcesso não pode conter null.");
 
-                if ( !Regex.IsMatch(value, @"^[0-9]{44}$") )
+                if (!Regex.IsMatch(value, @"^[0-9]{44}$"))
                     throw new ArgumentException("A Chave de Acesso informada não é válida. Verifique o valor informado.");
 
                 _chaveAcesso = value;
@@ -85,19 +76,25 @@ namespace NotaFiscalNet.Core.Transmissao
         /// <summary>
         /// Retorna ou define o Número do Protocolo de Status da NF-e (15 posições).
         /// </summary>
-        /// <remarks>O número do protocolo de status é retornado no processamento do lote de NF-e.</remarks>
-        /// <exception cref="System.ArgumentNullException">Ocorre caso o valor informado seja null.</exception>
-        /// <exception cref="System.ArgumentException">Ocorre caso o valor informado para o Número do Protocolo de Status da NF-e não seja válido.</exception>
+        /// <remarks>
+        /// O número do protocolo de status é retornado no processamento do lote de NF-e.
+        /// </remarks>
+        /// <exception cref="System.ArgumentNullException">
+        /// Ocorre caso o valor informado seja null.
+        /// </exception>
+        /// <exception cref="System.ArgumentException">
+        /// Ocorre caso o valor informado para o Número do Protocolo de Status da NF-e não seja válido.
+        /// </exception>
         public string NumeroProtocoloStatusNFe
         {
             get { return _numeroProtocoloStatusNFe; }
             set
             {
                 CheckReadOnly();
-                if ( value == null )
+                if (value == null)
                     throw new ArgumentNullException("NumeroProtocoloStatusNFe", "O campo 'NumeroProtocoloStatusNFe' não pode conter null.");
 
-                if ( !Regex.IsMatch(value, @"^[0-9]{15}$") )
+                if (!Regex.IsMatch(value, @"^[0-9]{15}$"))
                     throw new ArgumentException("O Número do Protocolo de Status da NF-e informada não é válido. Verifique o valor informado.");
 
                 _numeroProtocoloStatusNFe = value;
@@ -108,36 +105,39 @@ namespace NotaFiscalNet.Core.Transmissao
         /// Retorna ou define a justificativa para o cancelamento da NF-e.
         /// </summary>
         /// <remarks>A justificativa deve conter no mínimo 15 e no máximo 255 caracteres.</remarks>
-        /// <exception cref="System.ArgumentNullException">Ocorre caso o valor informado seja null.</exception>
-        /// <exception cref="System.ArgumentOutOfRangeException">Ocorre caso o valor informado esteja fora da faixa permitida de caracteres.</exception>
+        /// <exception cref="System.ArgumentNullException">
+        /// Ocorre caso o valor informado seja null.
+        /// </exception>
+        /// <exception cref="System.ArgumentOutOfRangeException">
+        /// Ocorre caso o valor informado esteja fora da faixa permitida de caracteres.
+        /// </exception>
         public string Justificativa
         {
             get { return _justificativa; }
             set
             {
                 CheckReadOnly();
-                if ( value == null )
+                if (value == null)
                     throw new ArgumentNullException("Justificativa", "O campo Justificativa não pode ser null.");
 
-                if ( value.Length < 15 || value.Length > 255 )
+                if (value.Length < 15 || value.Length > 255)
                     throw new ArgumentOutOfRangeException("Justificativa", value, "A Justificativa deve conter no mínimo 15 e no máximo 255 caracteres.");
 
                 _justificativa = value;
             }
         }
 
-        #endregion Properties
-
-        #region Methods
-
         /// <summary>
         /// Carrega a classe com base em um arquivo xml de pedido de cancelamento.
         /// </summary>
-        /// <remarks>Após a classe ter sido carregada com base em um arquivo xml, não será permitido alterar nenhum campo da classe.</remarks>
+        /// <remarks>
+        /// Após a classe ter sido carregada com base em um arquivo xml, não será permitido alterar
+        /// nenhum campo da classe.
+        /// </remarks>
         /// <param name="caminho">Caminho do arquivo contendo o pedido de cancelemento.</param>
         public void CarregarXml(string caminho)
         {
-            using ( XmlReader reader = XmlReader.Create(caminho) )
+            using (XmlReader reader = XmlReader.Create(caminho))
             {
                 reader.MoveToContent();
 
@@ -188,24 +188,20 @@ namespace NotaFiscalNet.Core.Transmissao
             settings.OmitXmlDeclaration = !includeXmlDeclaration;
 
             StringBuilder buffer = new StringBuilder();
-            using ( XmlWriter writer = XmlWriter.Create(buffer, settings) )
+            using (XmlWriter writer = XmlWriter.Create(buffer, settings))
             {
                 writer.WriteStartElement("cancNFe", Constants.NamespacePortalFiscalNFe);
                 writer.WriteAttributeString("versao", Constants.VersaoLeiauteCancelamento);
 
-                #region Elemento 'infCanc'
-
                 writer.WriteStartElement("infCanc");
                 writer.WriteAttributeString("Id", "ID" + this.ChaveAcesso);
-                writer.WriteElementString("tpAmb", ( (int)this.Ambiente ).ToString());
+                writer.WriteElementString("tpAmb", ((int)this.Ambiente).ToString());
                 writer.WriteElementString("xServ", "CANCELAR");
                 writer.WriteElementString("chNFe", this.ChaveAcesso);
                 writer.WriteElementString("nProt", this.NumeroProtocoloStatusNFe);
                 writer.WriteElementString("xJust", SerializationUtil.ToToken(this.Justificativa, 255));
 
                 writer.WriteEndElement(); // fim do elemento 'infCanc'
-
-                #endregion Elemento 'infCanc'
 
                 writer.WriteEndElement(); // fim do elemento 'cancNFe'
             }
@@ -215,10 +211,8 @@ namespace NotaFiscalNet.Core.Transmissao
 
         private void CheckReadOnly()
         {
-            if ( this.IsReadOnly )
+            if (this.IsReadOnly)
                 throw new InvalidOperationException("Não é permite realizar alterações no pedido de cancelamento porque a classe foi carregada com base em um arquivo xml assinado digitalmente.");
         }
-
-        #endregion Methods
     }
 }

@@ -9,7 +9,7 @@ namespace NotaFiscalNet.Core.Validacao
         {
         }
 
-        Stack<string> _pilha = new Stack<string>();
+        private Stack<string> _pilha = new Stack<string>();
 
         public string Remove()
         {

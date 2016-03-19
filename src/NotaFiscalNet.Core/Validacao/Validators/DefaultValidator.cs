@@ -15,11 +15,11 @@ namespace NotaFiscalNet.Core.Validacao.Validators
                 case TypeCode.DBNull:
                 case TypeCode.Empty:
                     throw new NotSupportedException();
-                
+
                 case TypeCode.Boolean:
                 case TypeCode.Object:
                     break;
-                
+
                 case TypeCode.String:
                     defaultValue = field.Attribute.DefaultValue ?? Convert.ChangeType(string.Empty, type);
                     if (Equals(value, defaultValue))

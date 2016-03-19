@@ -11,8 +11,10 @@ namespace NotaFiscalNet.Core
             {
                 case TipoAmbiente.Producao:
                     return "P";
+
                 case TipoAmbiente.Homologacao:
                     return "H";
+
                 default:
                     throw new InvalidEnumArgumentException("Valor inválido para o enum (" + (int)source + ").");
             }

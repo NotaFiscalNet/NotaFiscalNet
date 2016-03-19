@@ -1,6 +1,4 @@
-﻿using System.Dynamic;
-using System.Runtime.InteropServices;
-using NotaFiscalNet.Core.Interfaces;
+﻿using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {

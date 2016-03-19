@@ -28,7 +28,7 @@ namespace NotaFiscalNet.Core.Inutilizacao
             get
             {
                 return
-                    $"ID{(int) UF}{Ano.ToString("D2")}{Cnpj}{(int) CodigoModeloDocFiscal}{Serie.ToString("D3")}{NumeracaoInicial.ToString("D9")}{NumeracaoFinal.ToString("D9")}";
+                    $"ID{(int)UF}{Ano.ToString("D2")}{Cnpj}{(int)CodigoModeloDocFiscal}{Serie.ToString("D3")}{NumeracaoInicial.ToString("D9")}{NumeracaoFinal.ToString("D9")}";
             }
         }
 

@@ -26,7 +26,7 @@ namespace NotaFiscalNet.Core.Utils
             int resto = (ponderacao % 11);
 
             int dv = 0;
-            if ( resto > 1 )
+            if (resto > 1)
                 dv = 11 - resto;
 
             return dv;

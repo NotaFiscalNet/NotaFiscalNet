@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections;
+﻿using NotaFiscalNet.Core.Interfaces;
+using System;
 using System.ComponentModel;
-using System.Runtime.InteropServices;
-using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
-    
-    
-    
-    public sealed class PagamentoCollection : BaseCollection<Pagamento>,  ISerializavel
+    public sealed class PagamentoCollection : BaseCollection<Pagamento>, ISerializavel
     {
         private const int Capacidade = 100;
 
@@ -20,8 +15,6 @@ namespace NotaFiscalNet.Core
 
             base.PreAdd(e, item);
         }
-
-        #region ISerializavel implementation
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
@@ -34,9 +27,5 @@ namespace NotaFiscalNet.Core
                 obj.Serializar(writer, nfe);
             }
         }
-
-        #endregion
-
-      
     }
 }

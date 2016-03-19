@@ -1,6 +1,6 @@
-﻿using System;
+﻿using NotaFiscalNet.Core.Validacao;
+using System;
 using System.ComponentModel;
-using NotaFiscalNet.Core.Validacao;
 
 namespace NotaFiscalNet.Core.Utils
 {

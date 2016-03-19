@@ -18,11 +18,11 @@ namespace NotaFiscalNet.Core.Utils
         public static string RemoverAcentos(string texto)
         {
             var text = new StringBuilder();
-            for ( int i = 0; i < texto.Length; i++ )
+            for (int i = 0; i < texto.Length; i++)
             {
                 char c = texto[i];
-                #region Switch
-                switch ( c )
+
+                switch (c)
                 {
                     case 'á': c = 'a'; break;
                     case 'é': c = 'e'; break;
@@ -73,7 +73,7 @@ namespace NotaFiscalNet.Core.Utils
                     case 'Ñ': c = 'N'; break;
                     case 'Ç': c = 'C'; break;
                 }
-                #endregion Switch
+
                 text.Append(c);
             }
             return text.ToString();
@@ -99,14 +99,14 @@ namespace NotaFiscalNet.Core.Utils
         }
 
         /// <summary>
-        /// Realiza o tratamento de "Tokenização" da string retornando apenas uma quantidade especificada de caracteres.
+        /// Realiza o tratamento de "Tokenização" da string retornando apenas uma quantidade
+        /// especificada de caracteres.
         /// </summary>
         /// <param name="value">Valor a ser tratado.</param>
         /// <param name="maxCharacters">Número máximo de caracteres a serem retornados.</param>
         /// <returns></returns>
         public static string ToToken(string value, int maxCharacters)
         {
-
             string handledValue = RemoverAcentos(ToToken(value));
             handledValue = CodificarCaracteresInvalidos(handledValue);
             return handledValue.Substring(0, (handledValue.Length > maxCharacters) ? maxCharacters : handledValue.Length);
@@ -185,6 +185,7 @@ namespace NotaFiscalNet.Core.Utils
         {
             return value.ToString("f4", CultureInfo.InvariantCulture);
         }
+
         public static string ToTDec_1104(decimal value)
         {
             return value.ToString("f4", CultureInfo.InvariantCulture);
@@ -241,7 +242,6 @@ namespace NotaFiscalNet.Core.Utils
         }
 
         /// <summary>
-        /// 
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
@@ -324,7 +324,5 @@ namespace NotaFiscalNet.Core.Utils
         {
             return value.ToString("yyyy-MM-ddTHH:mm:ss");
         }
-
-        
     }
 }

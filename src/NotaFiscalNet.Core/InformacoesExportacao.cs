@@ -1,21 +1,16 @@
-﻿using System;
-using System.Runtime.InteropServices;
-using NotaFiscalNet.Core.Interfaces;
+﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
+using System;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Representam as informações de Exportação da Nota Fiscal Eletrônica.
     /// </summary>
-    
-    
-    
+
     public sealed class InformacoesExportacao : ISerializavel, IModificavel
     {
-        #region Fields
-
         private SiglaUF _ufSaidaPais = SiglaUF.NaoEspecificado;
         private string _localEmbarque = string.Empty;
         private string _localDespacho = string.Empty;
@@ -23,10 +18,6 @@ namespace NotaFiscalNet.Core
         public InformacoesExportacao()
         {
         }
-
-        #endregion Fields
-        
-        #region Properties
 
         /// <summary>
         /// [UFEmbarq] Retorna ou define a Sigla da UF de Embarque o de transposição de fronteira.
@@ -53,7 +44,8 @@ namespace NotaFiscalNet.Core
         public string LocalEmbarque
         {
             get { return _localEmbarque; }
-            set {
+            set
+            {
                 _localEmbarque = ValidationUtil.TruncateString(value, 60);
             }
         }
@@ -83,19 +75,12 @@ namespace NotaFiscalNet.Core
                     UFSaidaPais != SiglaUF.NaoEspecificado ||
                     !string.IsNullOrEmpty(LocalEmbarque) ||
                     !string.IsNullOrEmpty(LocalDespacho);
-
             }
         }
-
-        #endregion Properties
-
-        #region ISerializavel Members
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("exporta"); // Elemento 'exporta'
-
-            #region exporta
 
             writer.WriteElementString("UFSaidaPais", UFSaidaPais.ToString());
             writer.WriteElementString("xLocExporta", SerializationUtil.ToToken(LocalEmbarque, 60));
@@ -103,11 +88,7 @@ namespace NotaFiscalNet.Core
             if (!String.IsNullOrEmpty(LocalDespacho))
                 writer.WriteElementString("xLocDespacho", SerializationUtil.ToToken(LocalDespacho, 60));
 
-            #endregion exporta
-
             writer.WriteEndElement(); // Elemento 'exporta'
         }
-
-        #endregion
     }
 }

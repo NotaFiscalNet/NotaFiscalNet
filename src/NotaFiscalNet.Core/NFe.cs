@@ -1,29 +1,24 @@
-﻿using System;
+﻿using NotaFiscalNet.Core.Interfaces;
+using NotaFiscalNet.Core.Utils;
+using NotaFiscalNet.Core.Validacao;
+using NotaFiscalNet.Core.Validacao.Validators;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices;
 using System.Text;
 using System.Xml;
 using System.Xml.Linq;
-using NotaFiscalNet.Core.Interfaces;
-using NotaFiscalNet.Core.Utils;
-using NotaFiscalNet.Core.Validacao;
-using NotaFiscalNet.Core.Validacao.Validators;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Representa uma Nota Fiscal Eletrônica.
     /// </summary>
-     
-    
-    
+
     public sealed class NFe : ISerializavel
     {
-        #region Fields
-
         private readonly IdentificacaoNFe _ide = new IdentificacaoNFe();
         private readonly EmitenteNFe _emit = new EmitenteNFe();
         private readonly FiscoEmitenteNFe _avulsa = new FiscoEmitenteNFe();
@@ -39,10 +34,6 @@ namespace NotaFiscalNet.Core
         private readonly Compra _compras = new Compra();
         private readonly AquisicaoCana _cana = new AquisicaoCana();
         private readonly AutorizacaoDownloadXmlCollection _autXml = new AutorizacaoDownloadXmlCollection();
-
-        #endregion Fields
-
-        #region Properties
 
         /// <summary>
         /// [versao] Retorna ou define a Versão do Leiaute NF-e. Ex. 2.0.4, 2.0.3, etc.
@@ -85,7 +76,7 @@ namespace NotaFiscalNet.Core
                 ufEmitente = ((int)Identificacao.UFEnvio).ToString("00"); // 2 digitos
                 aammEmissaoNFe = Identificacao.DataEmissao.ToString("yyMM"); // 4 digitos
                 cnpjEmitente = Emitente.CNPJ.PadLeft(14, '0'); // 14 digitos
-                mod = ((int)Identificacao.CodigoModeloDocFiscal).ToString("00"); // 2 digitos 
+                mod = ((int)Identificacao.CodigoModeloDocFiscal).ToString("00"); // 2 digitos
                 serie = Identificacao.Serie.ToString("000"); // 3 digitos no formato (0|[1-9]{1}[0-9]{0,2}")
                 nNF = Identificacao.NumeroNF.ToString("000000000"); // 9 digitos
                 tpEmis = ((int)Identificacao.TipoEmissao).ToString("0");
@@ -109,7 +100,7 @@ namespace NotaFiscalNet.Core
             get
             {
                 string chaveAcesso = ChaveAcesso;
-                char dv = chaveAcesso[chaveAcesso.Length -1]; // o último caracterer será o Dígito verificador.
+                char dv = chaveAcesso[chaveAcesso.Length - 1]; // o último caracterer será o Dígito verificador.
                 return int.Parse(dv.ToString());
             }
         }
@@ -135,8 +126,8 @@ namespace NotaFiscalNet.Core
         }
 
         /// <summary>
-        /// Retorna as informações do Fisco emitente da Nota Fiscal Eletrônica Avulsa. <br/>
-        /// Informar apenas no caso de emissão de Nota Fiscal Eletrônica Avulsa, pelo Fisco Emitente.
+        /// Retorna as informações do Fisco emitente da Nota Fiscal Eletrônica Avulsa. <br/> Informar
+        /// apenas no caso de emissão de Nota Fiscal Eletrônica Avulsa, pelo Fisco Emitente.
         /// </summary>
         [NFeField(FieldName = "avulsa", ID = "D01", Opcional = true)]
         [ValidateField(6, true)]
@@ -152,8 +143,8 @@ namespace NotaFiscalNet.Core
         public DestinatarioNFe Destinatario { get; set; }
 
         /// <summary>
-        /// Retorna o Endereço de Retirada (endereço de retirada dos produtos) da Nota Fiscal Eletrônica.
-        /// Informar apenas quando for diferente do Endereço do Remetente. Opcional.
+        /// Retorna o Endereço de Retirada (endereço de retirada dos produtos) da Nota Fiscal
+        /// Eletrônica. Informar apenas quando for diferente do Endereço do Remetente. Opcional.
         /// </summary>
         [NFeField(FieldName = "retirada", ID = "F01", Opcional = true)]
         [ValidateField(8, true)]
@@ -163,8 +154,8 @@ namespace NotaFiscalNet.Core
         }
 
         /// <summary>
-        /// Retorna o Endereço de Entrega (endereço de entrega dos produtos) da Nota Fiscal Eletrônica.
-        /// Informar apenas quando for diferente do Endereço do Destinatário. Opcional.
+        /// Retorna o Endereço de Entrega (endereço de entrega dos produtos) da Nota Fiscal
+        /// Eletrônica. Informar apenas quando for diferente do Endereço do Destinatário. Opcional.
         /// </summary>
         [NFeField(FieldName = "entrega", ID = "G01", Opcional = true)]
         [ValidateField(9, true)]
@@ -187,8 +178,8 @@ namespace NotaFiscalNet.Core
         /// Retorna a lista de Itens (Produtos ou Serviços) da Nota Fiscal Eletrônica.
         /// </summary>
         /// <remarks>A lista pode conter até no máximo 990 itens.</remarks>
-        [NFeField(FieldName = "det", ID = "H01", MinLength=1, MaxLength=990)]
-        [ValidateField(11, ChaveErroValidacao.CampoNaoPreenchido, Validator=typeof(RangeCollectionValidator), MinLength=1, MaxLength=990)]
+        [NFeField(FieldName = "det", ID = "H01", MinLength = 1, MaxLength = 990)]
+        [ValidateField(11, ChaveErroValidacao.CampoNaoPreenchido, Validator = typeof(RangeCollectionValidator), MinLength = 1, MaxLength = 990)]
         public ProdutoCollection Itens
         {
             get { return _itens; }
@@ -252,7 +243,8 @@ namespace NotaFiscalNet.Core
         }
 
         /// <summary>
-        /// Retorna as Informações de Compras (Notas de Empenho, Pedido e Contrato) da Nota Fiscal Eletrônica. Opcional.
+        /// Retorna as Informações de Compras (Notas de Empenho, Pedido e Contrato) da Nota Fiscal
+        /// Eletrônica. Opcional.
         /// </summary>
         [NFeField(FieldName = "compra", ID = "ZA01", Opcional = true)]
         [ValidateField(18, true)]
@@ -274,20 +266,12 @@ namespace NotaFiscalNet.Core
             get { return _cana; }
         }
 
-        #endregion Properties
-
-        #region Constructor
-
         /// <summary>
-        /// Inicializa uma nova instância da classe NFe 
+        /// Inicializa uma nova instância da classe NFe
         /// </summary>
         public NFe()
         {
-        } 
-
-        #endregion Constructor
-
-        #region IXmlSerializable Members
+        }
 
         void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
@@ -300,7 +284,7 @@ namespace NotaFiscalNet.Core
             RenderEntity(Identificacao, writer); // ide
             RenderEntity(Emitente, writer); // emit
             RenderAvulsa(writer); // avulsa
-            
+
             RenderEntity(Destinatario, writer); // dest
             RenderEnderecoRetirada(writer); // retirada
             RenderEnderecoEntrega(writer); // entrega
@@ -389,7 +373,7 @@ namespace NotaFiscalNet.Core
         /// <param name="writer"></param>
         private void RenderEnderecoRetirada(XmlWriter writer)
         {
-            if (!EnderecoRetirada.Modificado) 
+            if (!EnderecoRetirada.Modificado)
                 return;
 
             writer.WriteStartElement("retirada");
@@ -403,12 +387,13 @@ namespace NotaFiscalNet.Core
         /// <param name="writer"></param>
         private void RenderEnderecoEntrega(XmlWriter writer)
         {
-            if (!EnderecoEntrega.Modificado) 
+            if (!EnderecoEntrega.Modificado)
                 return;
             writer.WriteStartElement("entrega");
             RenderEntity(EnderecoEntrega, writer);
             writer.WriteEndElement(); // fim do elemento 'entrega'
         }
+
         private void RenderAutorizacoesDownloadXml(XmlWriter writer)
         {
             if (AutorizacoesDownloadXml.Count == 0)
@@ -417,7 +402,6 @@ namespace NotaFiscalNet.Core
             foreach (var autXml in AutorizacoesDownloadXml)
                 RenderEntity(autXml, writer);
         }
-        
 
         private void RenderEntity(ISerializavel entity, XmlWriter writer)
         {
@@ -428,7 +412,6 @@ namespace NotaFiscalNet.Core
 
         private void Deserialize(XDocument doc, bool ignoreSchemaValidation = false)
         {
-
             Deserialize(doc.Root);
         }
 
@@ -505,7 +488,7 @@ namespace NotaFiscalNet.Core
         {
             var ns = Constants.XNamespacePortalFiscalNFe;
             var cana = AquisicoesCana;
-            
+
             canaEl.NFElementAsString("safra", value => cana.Safra = value);
             canaEl.NFElementAsString("ref", value => cana.Referencia = DateTime.ParseExact(value, "MM/yyyy", CultureInfo.CurrentCulture));
 
@@ -663,7 +646,6 @@ namespace NotaFiscalNet.Core
 
             // vol
             ParseTranspVol(transpEl.Elements(ns + "vol"));
-
         }
 
         private void ParseTranspVol(IEnumerable<XElement> volEls)
@@ -693,7 +675,7 @@ namespace NotaFiscalNet.Core
                 reboqueEl.NFElementAsString("placa", value => veicTransp.Placa = value);
                 reboqueEl.NFElementAsEnum<SiglaUF>("UF", value => veicTransp.UF = value);
                 reboqueEl.NFElementAsString("RNTC", value => veicTransp.RNTC = value);
-                
+
                 Transporte.Reboques.Add(veicTransp);
             }
         }
@@ -815,7 +797,7 @@ namespace NotaFiscalNet.Core
             {
                 var produto = new Produto();
                 produto.NumeroItem = int.Parse(detEl.Attribute("nItem").Value);
-                
+
                 // prod
                 ParseDetProduto(detEl, produto);
 
@@ -930,7 +912,6 @@ namespace NotaFiscalNet.Core
             if (cofinsNtEl != null)
                 cofinsNtEl.NFElementAsEnum<SituacaoTributariaCOFINS>("CST", value => cofins.SituacaoTributaria = value);
 
-
             // COFINSOutr
             var cofinsOutrEl = cofinsEl.Element(ns + "COFINSOutr");
             if (cofinsOutrEl != null)
@@ -983,7 +964,7 @@ namespace NotaFiscalNet.Core
             if (pisAliqEl != null)
             {
                 pis.TipoCalculo = TipoCalculoPIS.PercentualValor;
-                
+
                 pisAliqEl.NFElementAsEnum<SituacaoTributariaPIS>("CST", value => pis.SituacaoTributaria = value);
                 pisAliqEl.NFElementAsDecimal("vBC", value => pis.BaseCalculo = value);
                 pisAliqEl.NFElementAsDecimal("pPIS", value => pis.Aliquota = value);
@@ -1007,7 +988,6 @@ namespace NotaFiscalNet.Core
             if (pisNtEl != null)
                 pisNtEl.NFElementAsEnum<SituacaoTributariaPIS>("CST", value => pis.SituacaoTributaria = value);
 
-
             // PISOutr
             var pisOutrEl = pisEl.Element(ns + "PISOutr");
             if (pisOutrEl != null)
@@ -1024,9 +1004,9 @@ namespace NotaFiscalNet.Core
                 {
                     pis.TipoCalculo = TipoCalculoPIS.ValorQuantidade;
                     pisOutrEl.NFElementAsDecimal("qBCProd", value => pis.BaseCalculo = value);
-                    pisOutrEl.NFElementAsDecimal("vAliqProd", value => pis.Aliquota = value);    
+                    pisOutrEl.NFElementAsDecimal("vAliqProd", value => pis.Aliquota = value);
                 }
-                
+
                 pisOutrEl.NFElementAsDecimal("vPIS", value => pis.Valor = value);
             }
         }
@@ -1090,51 +1070,67 @@ namespace NotaFiscalNet.Core
                 case "ICMS00":
                     ParseDetImpostoIcms00(el, produto);
                     break;
+
                 case "ICMS10":
                     ParseDetImpostoIcms10(el, produto);
                     break;
+
                 case "ICMS20":
                     ParseDetImpostoIcms20(el, produto);
                     break;
+
                 case "ICMS30":
                     ParseDetImpostoIcms30(el, produto);
                     break;
+
                 case "ICMS40":
                     ParseDetImpostoIcms40(el, produto);
                     break;
+
                 case "ICMS51":
                     ParseDetImpostoIcms51(el, produto);
                     break;
+
                 case "ICMS60":
                     ParseDetImpostoIcms60(el, produto);
                     break;
+
                 case "ICMS70":
                     ParseDetImpostoIcms70(el, produto);
                     break;
+
                 case "ICMS90":
                     ParseDetImpostoIcms90(el, produto);
                     break;
+
                 case "ICMSPart":
                     ParseDetImpostoIcmsPartilha(el, produto);
                     break;
+
                 case "ICMSST":
                     ParseDetImpostoIcmsST(el, produto);
                     break;
+
                 case "ICMSSN101":
                     ParseDetImpostoIcmsSN101(el, produto);
                     break;
+
                 case "ICMSSN102":
                     ParseDetImpostoIcmsSN102(el, produto);
                     break;
+
                 case "ICMSSN201":
                     ParseDetImpostoIcmsSN201(el, produto);
                     break;
+
                 case "ICMSSN202":
                     ParseDetImpostoIcmsSN202(el, produto);
                     break;
+
                 case "ICMSSN500":
                     ParseDetImpostoIcmsSN500(el, produto);
                     break;
+
                 case "ICMSSN900":
                     ParseDetImpostoIcmsSN900(el, produto);
                     break;
@@ -1255,9 +1251,8 @@ namespace NotaFiscalNet.Core
 
         private void ParseDetImpostoIcmsPartilha(XElement icmsPartEl, Produto produto)
         {
-            
             var origem = icmsPartEl.NFElementAsEnum<OrigemMercadoria>("orig");
-            var cst    = icmsPartEl.NFElementAsEnum<SituacaoTributariaICMS>("CST");
+            var cst = icmsPartEl.NFElementAsEnum<SituacaoTributariaICMS>("CST");
 
             var icms = new IcmsPartilha(origem, cst);
 
@@ -1273,7 +1268,7 @@ namespace NotaFiscalNet.Core
             icmsPartEl.NFElementAsDecimal("vBCST", value => icms.ValorBaseCalculoST = value);
             icmsPartEl.NFElementAsDecimal("pICMSST", value => icms.AliquotaST = value);
             icmsPartEl.NFElementAsDecimal("vICMSST", value => icms.ValorST = value);
-            
+
             icmsPartEl.NFElementAsDecimal("pBCOp", value => icms.PercentualBaseCalculoOperacaoPropria = value);
             icmsPartEl.NFElementAsEnum<SiglaUF>("UFST", value => icms.UFST = value);
 
@@ -1284,7 +1279,7 @@ namespace NotaFiscalNet.Core
         {
             var icms = new Icms90();
             icms90El.NFElementAsEnum<OrigemMercadoria>("orig", value => icms.Origem = value);
-            
+
             icms90El.NFElementAsEnum<ModalidadeBaseCalculoIcms>("modBC", value => icms.ModalidadeBaseCalculo = value);
             icms90El.NFElementAsDecimal("vBC", value => icms.ValorBaseCalculo = value);
             icms90El.NFElementAsDecimal("pRedBC", value => icms.PercentualReducaoBaseCalculo = value);
@@ -1365,7 +1360,7 @@ namespace NotaFiscalNet.Core
         private void ParseDetImpostoIcms40(XElement icms40El, Produto produto)
         {
             var orig = icms40El.NFElementAsEnum<OrigemMercadoria>("orig");
-            var cst  = icms40El.NFElementAsEnum<SituacaoTributariaICMS>("CST");
+            var cst = icms40El.NFElementAsEnum<SituacaoTributariaICMS>("CST");
 
             decimal? vICMSDeson = null;
             MotivoDesoneracaoCondicionalICMS? motDesICMS = null;
@@ -1408,7 +1403,7 @@ namespace NotaFiscalNet.Core
             icms20El.NFElementAsDecimal("pICMS", value => icms.Aliquota = value);
             icms20El.NFElementAsDecimal("vICMS", value => icms.Valor = value);
             icms20El.NFElementAsDecimal("vICMSDeson", value => icms.ValorIcmsDesoneracao = value);
-            icms20El.NFElementAsEnum<MotivoDesoneracaoCondicionalICMS>("motDesICMS", value => icms.MotivoDesoneracaoIcms= value);
+            icms20El.NFElementAsEnum<MotivoDesoneracaoCondicionalICMS>("motDesICMS", value => icms.MotivoDesoneracaoIcms = value);
 
             produto.Imposto.Icms = icms;
         }
@@ -1436,7 +1431,7 @@ namespace NotaFiscalNet.Core
             icms10El.NFElementAsEnum<ModalidadeBaseCalculoIcmsST>("modBCST", value => icms.ModalidadeBaseCalculoST = value);
             icms10El.NFElementAsDecimal("pMVAST", value => icms.PercentualMargemValorAdicionadoST = value);
             icms10El.NFElementAsDecimal("pRedBCST", value => icms.PercentualReducaoBaseCalculoST = value);
-            icms10El.NFElementAsDecimal("vBCST", value => icms.ValorBaseCalculoST= value);
+            icms10El.NFElementAsDecimal("vBCST", value => icms.ValorBaseCalculoST = value);
             icms10El.NFElementAsDecimal("pICMSST", value => icms.AliquotaST = value);
             icms10El.NFElementAsDecimal("vICMSST", value => icms.ValorST = value);
 
@@ -1463,8 +1458,6 @@ namespace NotaFiscalNet.Core
             issqnEl.NFElementAsInt32("cPais", value => produto.Imposto.ISSQN.CodigoPaisServicoPrestado = value);
             issqnEl.NFElementAsString("nProcesso", value => produto.Imposto.ISSQN.NumeroProcessoSuspensao = value);
             issqnEl.NFElementAsString("indIncentivo", value => produto.Imposto.ISSQN.PossuiIncentivoFiscal = (value == "1"));
-
-
         }
 
         private void ParseDetProduto(XElement detEl, Produto produto)
@@ -1669,7 +1662,7 @@ namespace NotaFiscalNet.Core
         private void ParseIdentificacao(XElement ideEl)
         {
             var ns = Constants.XNamespacePortalFiscalNFe;
-            
+
             var ide = Identificacao;
 
             ide.UFEnvio = ideEl.NFElementAsEnum<UfIBGE>("cUF");
@@ -1844,7 +1837,6 @@ namespace NotaFiscalNet.Core
             if (cnpjEl != null)
             {
                 cnpjCpfIdEstrangeiro = cnpjEl.Value;
-                
             }
             else
             {
@@ -1891,10 +1883,6 @@ namespace NotaFiscalNet.Core
             throw new NotImplementedException("Parse do elemento 'retirada' não implementado.");
         }
 
-        #endregion
-
-        #region Global Validation
-
         /// <summary>
         /// Realiza a validação da Nota Fiscal Eletrônica preenchida.
         /// </summary>
@@ -1918,12 +1906,6 @@ namespace NotaFiscalNet.Core
 
             return resultadoValidacao;
         }
-
-        #endregion Global Validation
-
-        #region Methods
-
-        #region Static
 
         public static NFe Parse(string xml)
         {
@@ -1961,8 +1943,6 @@ namespace NotaFiscalNet.Core
             return nfe;
         }
 
-        #endregion
-
         /// <summary>
         /// Gera o xml (não assinado) de acordo com o preenchimento da Nota Fiscal Eletrônica.
         /// </summary>
@@ -1974,8 +1954,8 @@ namespace NotaFiscalNet.Core
 
             string xml;
 
-            using ( var sw = new StringWriter() )
-            using ( var writer = XmlWriter.Create(sw, settings) )
+            using (var sw = new StringWriter())
+            using (var writer = XmlWriter.Create(sw, settings))
             {
                 ((ISerializavel)this).Serializar(writer, this);
                 writer.Flush();
@@ -1986,7 +1966,8 @@ namespace NotaFiscalNet.Core
         }
 
         /// <summary>
-        /// Gera o xml (não assinado) de acordo com o preenchimento da Nota Fiscal Eletrônica, sem validação dos dados.
+        /// Gera o xml (não assinado) de acordo com o preenchimento da Nota Fiscal Eletrônica, sem
+        /// validação dos dados.
         /// </summary>
         /// <returns>String xml contendo a Nota Fiscal Eletrônica não assinada.</returns>
         /// <exception cref="System.Exception">Causado caso a NF-e não seja válida.</exception>
@@ -2011,13 +1992,15 @@ namespace NotaFiscalNet.Core
             return xml;
         }
 
-        
         /// <summary>
         /// Salva o xml gerado referente a Nota Fiscal Eletrônica sem assinatura digital.
         /// </summary>
         /// <param name="caminho">Caminho onde o arquivo contendo a NF-e será gravado.</param>
         /// <returns>Retorna o nome do arquivo xml contendo a Nota Fiscal Eletrônica assinada.</returns>
-        /// <remarks>O nome do arquivo será gerado automaticamente com base na chave de acesso. O seguinte formato será utilizado: [CHAVE_ACESSO]-nfe.xml.</remarks>
+        /// <remarks>
+        /// O nome do arquivo será gerado automaticamente com base na chave de acesso. O seguinte
+        /// formato será utilizado: [CHAVE_ACESSO]-nfe.xml.
+        /// </remarks>
         public string SalvarXmlNaoAssinado(string caminho)
         {
             var filename = $"{ChaveAcesso}-nfe.xml";
@@ -2027,7 +2010,7 @@ namespace NotaFiscalNet.Core
 
             var settings = new XmlWriterSettings { Encoding = utf8 };
 
-            using ( var writer = XmlWriter.Create(path, settings) )
+            using (var writer = XmlWriter.Create(path, settings))
             {
                 writer.WriteStartDocument();
                 writer.WriteRaw(GerarXmlNaoAssinado());
@@ -2036,7 +2019,5 @@ namespace NotaFiscalNet.Core
 
             return path;
         }
-
-        #endregion Methods
     }
 }

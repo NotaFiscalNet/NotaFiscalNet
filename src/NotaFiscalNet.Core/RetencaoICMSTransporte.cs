@@ -1,5 +1,4 @@
-﻿using System.Runtime.InteropServices;
-using NotaFiscalNet.Core.Interfaces;
+﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 
@@ -8,13 +7,9 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa as informações de Retenção de ICMS do Transporte.
     /// </summary>
-    
-    
-    
+
     public sealed class RetencaoICMSTransporte : ISerializavel, IModificavel
     {
-        #region Fields
-
         private decimal _valorServico;
         private decimal _BaseCalculoRetencao;
         private decimal _aliquotaRetencao;
@@ -26,10 +21,6 @@ namespace NotaFiscalNet.Core
         {
         }
 
-        #endregion Fields
-
-        #region Properties
-
         /// <summary>
         /// [vServ] Retorna ou define o Valor do Serviço de Transporte retido.
         /// </summary>
@@ -38,10 +29,11 @@ namespace NotaFiscalNet.Core
         public decimal ValorServico
         {
             get { return _valorServico; }
-            set {
-                ValidationUtil.ValidateTDec_1302(value, "ValorServico"); 
-                
-                _valorServico = value; 
+            set
+            {
+                ValidationUtil.ValidateTDec_1302(value, "ValorServico");
+
+                _valorServico = value;
             }
         }
 
@@ -53,10 +45,11 @@ namespace NotaFiscalNet.Core
         public decimal BaseCalculoRetencao
         {
             get { return _BaseCalculoRetencao; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "BaseCalculoRetencao");
-                
-                _BaseCalculoRetencao = value; 
+
+                _BaseCalculoRetencao = value;
             }
         }
 
@@ -68,10 +61,11 @@ namespace NotaFiscalNet.Core
         public decimal AliquotaRetencao
         {
             get { return _aliquotaRetencao; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_0302(value, "AliquotaRetencao");
-                
-                _aliquotaRetencao = value; 
+
+                _aliquotaRetencao = value;
             }
         }
 
@@ -83,10 +77,11 @@ namespace NotaFiscalNet.Core
         public decimal ValorICMSRetido
         {
             get { return _valorICMSRetido; }
-            set {
-                ValidationUtil.ValidateTDec_1302(value, "ValorICMSRetido"); 
-                
-                _valorICMSRetido = value; 
+            set
+            {
+                ValidationUtil.ValidateTDec_1302(value, "ValorICMSRetido");
+
+                _valorICMSRetido = value;
             }
         }
 
@@ -98,25 +93,28 @@ namespace NotaFiscalNet.Core
         public int CFOP
         {
             get { return _cfop; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTCfop(value, "CFOP");
-                
-                _cfop = value; 
+
+                _cfop = value;
             }
         }
 
         /// <summary>
-        /// Retorna ou define o Código do Município de Ocorrência do Fator Gerador do ICMS do transporte. Utilizar os códigos de municípios do IBGE.
+        /// Retorna ou define o Código do Município de Ocorrência do Fator Gerador do ICMS do
+        /// transporte. Utilizar os códigos de municípios do IBGE.
         /// </summary>
         [NFeField(FieldName = "cMunFG", DataType = "TCodMunIBGE", ID = "X17", Pattern = @"[0-9]{7}")]
         [ValidateField(6, ChaveErroValidacao.CampoNaoPreenchido)]
         public int CodigoMunicipioFatorGerador
         {
             get { return _codigoMunicipioFatorGeradorICMS; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTCodMunIBGE(value, "CodigoMunicipioFatorGerador");
-                
-                _codigoMunicipioFatorGeradorICMS = value; 
+
+                _codigoMunicipioFatorGeradorICMS = value;
             }
         }
 
@@ -137,10 +135,6 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        #endregion Properties
-
-        #region ISerializavel Members
-
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("retTransp"); // Elemento 'retTransp'
@@ -154,7 +148,5 @@ namespace NotaFiscalNet.Core
 
             writer.WriteEndElement(); // Elemento 'retTransp'
         }
-
-        #endregion
     }
 }

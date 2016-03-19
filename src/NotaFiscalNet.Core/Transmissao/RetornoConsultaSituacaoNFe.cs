@@ -1,7 +1,7 @@
-﻿using System;
+﻿using NotaFiscalNet.Core.Utils;
+using System;
 using System.Xml;
 using System.Xml.Linq;
-using NotaFiscalNet.Core.Utils;
 
 namespace NotaFiscalNet.Core.Transmissao
 {
@@ -28,7 +28,6 @@ namespace NotaFiscalNet.Core.Transmissao
         public RetornoCancelamentoNFe ProtocoloCancelamentoNFe { get; private set; }
 
         public ProtocoloEventoNFe ProtocoloEventoNFe { get; private set; }
-
 
         private RetornoConsultaSituacaoNFe(string xmlRetConsSitNFe)
         {
@@ -77,7 +76,7 @@ namespace NotaFiscalNet.Core.Transmissao
             if (retConsSitNFe == null) throw new ArgumentNullException(nameof(retConsSitNFe));
 
             var xml = retConsSitNFe.OuterXml;
-            
+
             return Parse(xml);
         }
     }

@@ -1,7 +1,7 @@
-﻿using System;
+﻿using NotaFiscalNet.Core.Validacao;
+using System;
 using System.Linq;
 using System.Text.RegularExpressions;
-using NotaFiscalNet.Core.Validacao;
 
 namespace NotaFiscalNet.Core.Utils
 {
@@ -32,9 +32,8 @@ namespace NotaFiscalNet.Core.Utils
         //    double menor = 0D;
         //    if (permiteNegativo)
         //        menor -= maior;
-            
-        //    if (value <= menor)
-        //        throw new ArgumentOutOfRangeException("O valor informado é menor que o permitido.");
+
+        // if (value <= menor) throw new ArgumentOutOfRangeException("O valor informado é menor que o permitido.");
 
         //    if (value >= maior)
         //        throw new ArgumentOutOfRangeException("O valor informado é maior que o permitido.");
@@ -50,34 +49,28 @@ namespace NotaFiscalNet.Core.Utils
             return Regex.IsMatch(value.ToString(), pattern);
         }
 
-        #region Validações de Enum
-
         public static TEnum ValidateEnum<TEnum>(TEnum value, string paramName)
         {
-            if ( typeof(TEnum).BaseType != typeof(Enum) )
+            if (typeof(TEnum).BaseType != typeof(Enum))
                 throw new ArgumentException("TEnum deve ser um tipo enumerador.");
 
-            if ( !Enum.IsDefined(typeof(TEnum), value) )
+            if (!Enum.IsDefined(typeof(TEnum), value))
                 throw new ErroValidacaoNFeException(ErroValidacao.Create(ChaveErroValidacao.GenericArgumentException, paramName));
             return value;
         }
-        
+
         public static TEnum ValidateEnumOptional<TEnum>(TEnum value, TEnum notSetValue, string paramName)
         {
-            if ( typeof(TEnum).BaseType != typeof(Enum) )
+            if (typeof(TEnum).BaseType != typeof(Enum))
                 throw new ArgumentException("TEnum deve ser um tipo enumerador.");
 
-            if ( !Enum.IsDefined(typeof(TEnum), value) )
+            if (!Enum.IsDefined(typeof(TEnum), value))
                 throw new ErroValidacaoNFeException(ErroValidacao.Create(ChaveErroValidacao.GenericArgumentException, paramName));
 
-            if ( Equals(value, notSetValue) )
+            if (Equals(value, notSetValue))
                 throw new ErroValidacaoNFeException(ErroValidacao.Create(ChaveErroValidacao.EnumNaoEspecificado, paramName));
             return value;
         }
-
-        #endregion Validações de Enum
-
-        #region Validações de Int
 
         public static int ValidateInt9(int value, string paramName)
         {
@@ -93,10 +86,6 @@ namespace NotaFiscalNet.Core.Utils
         {
             return ValidateRange(value, 0L, 999999999999999L, paramName);
         }
-
-        #endregion Validações de Int
-
-        #region Validações de TDec
 
         public static double ValidateTDec_0803(double value, string paramName)
         {
@@ -251,7 +240,7 @@ namespace NotaFiscalNet.Core.Utils
         {
             return ValidateRange(value, 0.0, 99999999999.9999, paramName);
         }
-        
+
         public static decimal ValidateTDec_1104(decimal value, string paramName)
         {
             return ValidateRange(value, 0.0m, 99999999999.9999m, paramName);
@@ -307,10 +296,6 @@ namespace NotaFiscalNet.Core.Utils
             return value;
         }
 
-        #endregion Validações de TDec
-
-        #region Validações de String
-
         public static string TruncateString(string value, int tamMax)
         {
             if (value == null) return string.Empty;
@@ -328,10 +313,6 @@ namespace NotaFiscalNet.Core.Utils
 
             return value.ToTString(maxLength);
         }
-
-        #endregion Validações de String
-
-        #region Validações Não-Categorizadas
 
         //public static void CheckReadOnly(ISomenteLeitura entity)
         //{
@@ -447,14 +428,13 @@ namespace NotaFiscalNet.Core.Utils
             return value;
         }
 
-
         public static string ValidateTIeDest(string value, string paramName)
         {
             if (!Regex.IsMatch(value, "ISENTO|[0-9]{0,14})"))
                 throw new ErroValidacaoNFeException(ErroValidacao.Create(ChaveErroValidacao.InscricaoEstadualDestinatario, paramName));
             return value;
         }
-        
+
         public static void ValidateIncricaoEstadual(string value, string paramName)
         {
             return;
@@ -483,7 +463,6 @@ namespace NotaFiscalNet.Core.Utils
 
         public static string ValidatePlaca(string value, string paramName)
         {
-
             //[A-Z0-9]+
             if (!ValidateRegex(value, "[A-Z0-9]+"))
                 throw new ArgumentException(MsgUtil.GetString(ChaveErroValidacao.PlacaInvalida), paramName);
@@ -498,7 +477,7 @@ namespace NotaFiscalNet.Core.Utils
         public static string ValidateTCListServ(string value, string paramName)
         {
             // Códigos da Lista de Serviços LC 116/2003
-            
+
             if (!CodigosListaServicos.Contains(value, StringComparer.OrdinalIgnoreCase))
                 throw new ApplicationException("O valor informado não é um código de serviço válido segundo a LC 116/2003.");
             return value;
@@ -513,9 +492,6 @@ namespace NotaFiscalNet.Core.Utils
             return value;
         }
 
-        #endregion Validações Não-Categorizadas
-
-        #region Validações Privadas
         public static double ValidateRange(double value, double min, double max, string paramName)
         {
             if (value < min || value > max)
@@ -543,11 +519,5 @@ namespace NotaFiscalNet.Core.Utils
                 throw new ArgumentOutOfRangeException(paramName, value, MsgUtil.GetString(ChaveErroValidacao.ValueOutOfRange, min, max));
             return value;
         }
-
-        #endregion Validações Privadas
-
-
-
-        
     }
 }

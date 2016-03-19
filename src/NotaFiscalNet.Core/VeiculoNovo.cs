@@ -1,5 +1,4 @@
-﻿using System.Runtime.InteropServices;
-using NotaFiscalNet.Core.Interfaces;
+﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 
@@ -10,8 +9,6 @@ namespace NotaFiscalNet.Core
     /// </summary>
     public sealed class VeiculoNovo : ISerializavel, IModificavel
     {
-        #region Fields
-
         private TipoOperacaoVendaVeiculo _tipoOperacaoVenda = TipoOperacaoVendaVeiculo.NaoEspecificado;
         private string _chassi = string.Empty;
         private string _codigoCor = string.Empty;
@@ -37,8 +34,6 @@ namespace NotaFiscalNet.Core
 
         private readonly Produto _produto;
 
-        #endregion Fields
-
         /// <summary>
         /// Inicializa uma nova instância da classe <see cref="VeiculoNovo"/>.
         /// </summary>
@@ -54,8 +49,6 @@ namespace NotaFiscalNet.Core
             TipoPintura = string.Empty;
             _produto = produto;
         }
-
-        #region Properties
 
         /// <summary>
         /// [tpOp] Retorna ou define o Tipo da Operação de Venda.
@@ -128,7 +121,8 @@ namespace NotaFiscalNet.Core
         }
 
         /// <summary>
-        /// [cilin] Retorna ou define a Capacidade voluntária do motor expressa em centímetros cúbicos (CC).
+        /// [cilin] Retorna ou define a Capacidade voluntária do motor expressa em centímetros
+        /// cúbicos (CC).
         /// </summary>
         /// <remarks>De 1 até 4 caracteres.</remarks>
         [NFeField(ID = "J07", FieldName = "cilin", DataType = "token", MinLength = 1, MaxLength = 4)]
@@ -196,25 +190,12 @@ namespace NotaFiscalNet.Core
         }
 
         /// <summary>
-        /// [tpComb] Retorna ou define o Tipo do Combustível do Veículo.
-        /// 01  ALCOOL                                          
-        /// 02  GASOLINA                                        
-        /// 03  DIESEL                                          
-        /// 04  GASOGENIO                                       
-        /// 05  GAS METANO                                      
-        /// 06  ELETRICO/FONTE INTERNA                          
-        /// 07  ELETRICO/FONTE EXTERNA                          
-        /// 08  GASOL/GAS NATURAL COMBUSTIVEL                   
-        /// 09  ALCOOL/GAS NATURAL COMBUSTIVEL                  
-        /// 10  DIESEL/GAS NATURAL COMBUSTIVEL                  
-        /// 11  VIDE/CAMPO/OBSERVACAO                           
-        /// 12  ALCOOL/GAS NATURAL VEICULAR                     
-        /// 13  GASOLINA/GAS NATURAL VEICULAR                   
-        /// 14  DIESEL/GAS NATURAL VEICULAR                     
-        /// 15  GAS NATURAL VEICULAR                            
-        /// 16  ALCOOL/GASOLINA                                 
-        /// 17  GASOLINA/ALCOOL/GAS NATURAL     
-        /// 18  GASOLINA/ELETRICO
+        /// [tpComb] Retorna ou define o Tipo do Combustível do Veículo. 01 ALCOOL 02 GASOLINA 03
+        /// DIESEL 04 GASOGENIO 05 GAS METANO 06 ELETRICO/FONTE INTERNA 07 ELETRICO/FONTE EXTERNA 08
+        /// GASOL/GAS NATURAL COMBUSTIVEL 09 ALCOOL/GAS NATURAL COMBUSTIVEL 10 DIESEL/GAS NATURAL
+        /// COMBUSTIVEL 11 VIDE/CAMPO/OBSERVACAO 12 ALCOOL/GAS NATURAL VEICULAR 13 GASOLINA/GAS
+        /// NATURAL VEICULAR 14 DIESEL/GAS NATURAL VEICULAR 15 GAS NATURAL VEICULAR 16
+        /// ALCOOL/GASOLINA 17 GASOLINA/ALCOOL/GAS NATURAL 18 GASOLINA/ELETRICO
         /// </summary>
         /// <remarks>De 1 até 2 caracteres.</remarks>
         [NFeField(ID = "J11", FieldName = "tpComb", DataType = "token", MinLength = 1, MaxLength = 2)]
@@ -384,7 +365,8 @@ namespace NotaFiscalNet.Core
         }
 
         /// <summary>
-        /// [lota] Retorna ou define a Quantidade máxima permitida de passageiros sentados, inclusive o motorista.
+        /// [lota] Retorna ou define a Quantidade máxima permitida de passageiros sentados, inclusive
+        /// o motorista.
         /// </summary>
         [NFeField(ID = "J25", FieldName = "lota")]
         [ValidateField(22, ChaveErroValidacao.CampoNaoPreenchido)]
@@ -450,10 +432,6 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        #endregion Properties
-
-        #region ISerializavel Members
-
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("veicProd");
@@ -485,7 +463,5 @@ namespace NotaFiscalNet.Core
 
             writer.WriteEndElement(); // fim do elemento 'veicProd'
         }
-
-        #endregion
     }
 }

@@ -1,12 +1,9 @@
-﻿using System.Runtime.InteropServices;
-
-namespace NotaFiscalNet.Core
+﻿namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Indicador de presença do comprador no estabelecimento comercial no momento da operação.
     /// </summary>
-    
-    
+
     public enum TipoIndicadorPresencaComprador
     {
         /// <summary>

@@ -6,7 +6,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Atributo auxiliar no processo de conversão de tipos da NF-e.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field, AllowMultiple=true)]
+    [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field, AllowMultiple = true)]
     internal class NFeFieldAttribute : Attribute
     {
         private string _fieldName = string.Empty;
@@ -28,7 +28,7 @@ namespace NotaFiscalNet.Core
             _dataType = dataType;
             _id = id;
         }
-        
+
         /// <summary>
         /// Retorna ou define o Nome do campo contido no leiaute xml da Nota Fiscal Eletrônica.
         /// </summary>
@@ -50,7 +50,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna ou define o tipo de dado da NF-e.
         /// </summary>
-        public string DataType 
+        public string DataType
         {
             get { return _dataType; }
             set { _dataType = value; }
@@ -59,12 +59,12 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna ou define o tamanho mínimo de caracteres de um campo.
         /// </summary>
-        public int MinLength 
+        public int MinLength
         {
             get { return _minLength; }
             set
             {
-                if ( value >= 0 )
+                if (value >= 0)
                     _minLength = value;
                 else
                     _minLength = 0;
@@ -79,7 +79,7 @@ namespace NotaFiscalNet.Core
             get { return _maxLength; }
             set
             {
-                if ( value >= 0 )
+                if (value >= 0)
                     _maxLength = value;
                 else
                     _maxLength = 0;
@@ -103,9 +103,6 @@ namespace NotaFiscalNet.Core
             get { return _opcional; }
             set { _opcional = value; }
         }
-
-
-        
 
         /// <summary>
         /// Retorna ou define o tipo de nó xml do campo.

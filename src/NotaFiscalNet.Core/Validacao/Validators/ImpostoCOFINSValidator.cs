@@ -33,6 +33,6 @@
             //        imposto.SituacaoTributaria == SituacaoTributariaCOFINS.ComSubstituicaoContribuicao))
             //        if ((double)value == 0D)
             //            context.Add(ErroValidacao.Create(ChaveErroValidacao.CampoNaoPreenchido, context.Path.ToString(), field.Property.Name));
-         }
+        }
     }
 }

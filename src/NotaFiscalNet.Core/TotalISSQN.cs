@@ -1,38 +1,32 @@
-﻿using System;
-using System.Runtime.InteropServices;
-using NotaFiscalNet.Core.Interfaces;
+﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
+using System;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Representa o Total de ISSQN da Nota Fiscal Eletrônica.
     /// </summary>
-    public sealed class TotalISSQN :  ISerializavel, IModificavel
+    public sealed class TotalISSQN : ISerializavel, IModificavel
     {
-
-        #region Fields
-
         private decimal _valorTotalServicos;
         private decimal _baseCalculo;
         private decimal _valorTotalISS;
         private decimal _valorPIS;
         private decimal _valorCOFINS;
 
-        #endregion Fields
-
-        #region Properties
-
         /// <summary>
-        /// [vServ] Retorna ou define o Valor Total dos Serviços sob não-incidência ou não tributados pelo ICMS. Opcional.
+        /// [vServ] Retorna ou define o Valor Total dos Serviços sob não-incidência ou não tributados
+        /// pelo ICMS. Opcional.
         /// </summary>
         [NFeField(ID = "W18", FieldName = "vServ", DataType = "TDec_1302Opc", Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional = true)]
         public decimal ValorTotalServicos
         {
             get { return _valorTotalServicos; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalServicos");
-                _valorTotalServicos = value; 
+                _valorTotalServicos = value;
             }
         }
 
@@ -43,9 +37,10 @@ namespace NotaFiscalNet.Core
         public decimal BaseCalculo
         {
             get { return _baseCalculo; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "BaseCalculo");
-                _baseCalculo = value; 
+                _baseCalculo = value;
             }
         }
 
@@ -56,9 +51,10 @@ namespace NotaFiscalNet.Core
         public decimal ValorTotalISS
         {
             get { return _valorTotalISS; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalISS");
-                _valorTotalISS = value; 
+                _valorTotalISS = value;
             }
         }
 
@@ -69,9 +65,10 @@ namespace NotaFiscalNet.Core
         public decimal ValorPIS
         {
             get { return _valorPIS; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "ValorPIS");
-                _valorPIS = value; 
+                _valorPIS = value;
             }
         }
 
@@ -82,9 +79,10 @@ namespace NotaFiscalNet.Core
         public decimal ValorCOFINS
         {
             get { return _valorCOFINS; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "ValorCOFINS");
-                _valorCOFINS = value; 
+                _valorCOFINS = value;
             }
         }
 
@@ -152,11 +150,6 @@ namespace NotaFiscalNet.Core
                     CodigoRegimeTributacao != 0;
             }
         }
-        
-
-        #endregion Properties
-
-        #region ISerializavel Members
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
@@ -199,10 +192,5 @@ namespace NotaFiscalNet.Core
 
             writer.WriteEndElement(); // fim do elemento 'ISSQNtot'
         }
-
-        #endregion
-
-
-
     }
 }

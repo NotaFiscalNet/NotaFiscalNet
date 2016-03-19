@@ -1,5 +1,4 @@
-﻿using System.Runtime.InteropServices;
-using NotaFiscalNet.Core.Interfaces;
+﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 
@@ -8,21 +7,13 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa o Veículo utilizado no Transporte
     /// </summary>
-    
-    
-    
-    public sealed class VeiculoTransporte :  ISerializavel, IModificavel
-    {
-        #region Fields
 
+    public sealed class VeiculoTransporte : ISerializavel, IModificavel
+    {
         private string _placa = string.Empty;
         private SiglaUF _UF = SiglaUF.NaoEspecificado;
         private string _RNTC = string.Empty;
 
-        #endregion Fields
-
-        #region Properties
-      
         /// <summary>
         /// [placa] Retorna ou define a Placa do Veículo
         /// </summary>
@@ -32,7 +23,8 @@ namespace NotaFiscalNet.Core
         public string Placa
         {
             get { return _placa; }
-            set {
+            set
+            {
                 ValidationUtil.ValidatePlaca(value, "Placa");
                 _placa = ValidationUtil.TruncateString(value, 8);
             }
@@ -43,14 +35,15 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "X20", FieldName = "UF", DataType = "TUf")]
         [NFeField(ID = "X24", FieldName = "UF", DataType = "TUf")]
-        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido, DefaultValue=SiglaUF.NaoEspecificado)]
+        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido, DefaultValue = SiglaUF.NaoEspecificado)]
         public SiglaUF UF
         {
             get { return _UF; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateEnum<SiglaUF>(value, "UF");
 
-                _UF = value; 
+                _UF = value;
             }
         }
 
@@ -63,7 +56,8 @@ namespace NotaFiscalNet.Core
         public string RNTC
         {
             get { return _RNTC; }
-            set {
+            set
+            {
                 _RNTC = ValidationUtil.TruncateString(value, 20);
             }
         }
@@ -82,21 +76,12 @@ namespace NotaFiscalNet.Core
             }
         }
 
-
-        #endregion Properties   
-
-        #region Constructor
-
         /// <summary>
         /// Inicializa uma nova instância da classe VeiculoTransporte
         /// </summary>
         public VeiculoTransporte()
         {
         }
-
-        #endregion Constructor
-  
-        #region ISerializavel Members
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
@@ -105,7 +90,5 @@ namespace NotaFiscalNet.Core
             if (!string.IsNullOrEmpty(RNTC))
                 writer.WriteElementString("RNTC", SerializationUtil.ToToken(RNTC, 20));
         }
-
-        #endregion
     }
 }

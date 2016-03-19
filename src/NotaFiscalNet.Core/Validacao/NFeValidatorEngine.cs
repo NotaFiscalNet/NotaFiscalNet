@@ -1,18 +1,18 @@
-﻿using System;
+﻿using NotaFiscalNet.Core.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core.Validacao
 {
     internal class NFeValidatorEngine
     {
-        static readonly Type IDirtyableType = typeof(IModificavel);
+        private static readonly Type IDirtyableType = typeof(IModificavel);
 
         [DebuggerStepThrough]
         public NFeValidatorEngine(NFe nfe)
         {
-            if ( nfe == null ) throw new ArgumentNullException(nameof(nfe));
+            if (nfe == null) throw new ArgumentNullException(nameof(nfe));
             NFe = nfe;
             Context = new ValidationContext();
         }

@@ -1,5 +1,4 @@
-﻿using System.Runtime.InteropServices;
-using NotaFiscalNet.Core.Interfaces;
+﻿using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
@@ -8,8 +7,7 @@ namespace NotaFiscalNet.Core
     /// </summary>
     public sealed class ReferenciaDocFiscalCollection : BaseCollection<ReferenciaDocFiscal>, ISerializavel, IModificavel
     {
-
-     /// <summary>
+        /// <summary>
         /// Retorna se existe alguma instancia da classe modificada na coleção
         /// </summary>
         public bool Modificado
@@ -25,9 +23,6 @@ namespace NotaFiscalNet.Core
             }
         }
 
-
-        #region ISerializavel Members
-
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             foreach (ReferenciaDocFiscal referencia in this)
@@ -36,7 +31,5 @@ namespace NotaFiscalNet.Core
                     ((ISerializavel)referencia).Serializar(writer, nfe);
             }
         }
-
-        #endregion
     }
 }

@@ -1,7 +1,7 @@
-using System;
-using System.Xml.Linq;
 using NotaFiscalNet.Core.Evento;
 using NotaFiscalNet.Core.Utils;
+using System;
+using System.Xml.Linq;
 
 namespace NotaFiscalNet.Core.Transmissao
 {
@@ -15,7 +15,6 @@ namespace NotaFiscalNet.Core.Transmissao
             Versao = retEventoEl.Attribute("versao").Value;
 
             var infEventoEl = retEventoEl.Element(Constants.XNamespacePortalFiscalNFe + "infEvento");
-
 
             var idAtt = infEventoEl.Attribute("Id");
             if (idAtt != null)
@@ -32,7 +31,7 @@ namespace NotaFiscalNet.Core.Transmissao
 
             infEventoEl.NFElementAsString("CNPJDest", value => CpfCnpjDestinatario = value);
             infEventoEl.NFElementAsString("CPFDest", value => CpfCnpjDestinatario = value);
-            
+
             infEventoEl.NFElementAsString("emailDest", value => EmailDestinatario = value);
             infEventoEl.NFElementAsDateTime("dhRegEvento", value => DataRegistro = value);
             infEventoEl.NFElementAsString("nProt", value => NumeroProtocolo = value);
@@ -61,7 +60,9 @@ namespace NotaFiscalNet.Core.Transmissao
         /// <summary>
         /// [cOrgao] Retorna ou define o Orgão de Recepção do Evento.
         /// </summary>
-        /// <remarks>Utilizar a tabela do IBGE extendida. Utilizar 91 para identificar Ambiente Nacional.</remarks>
+        /// <remarks>
+        /// Utilizar a tabela do IBGE extendida. Utilizar 91 para identificar Ambiente Nacional.
+        /// </remarks>
         public OrgaoIBGE Orgao { get; private set; }
 
         /// <summary>
@@ -90,7 +91,7 @@ namespace NotaFiscalNet.Core.Transmissao
         public string Descricao { get; private set; }
 
         /// <summary>
-        /// [nSeqEvento] Retorna ou define o número sequencial do evento para o mesmo tipo de evento. 
+        /// [nSeqEvento] Retorna ou define o número sequencial do evento para o mesmo tipo de evento.
         /// </summary>
         public int? NumeroSequencial { get; private set; }
 
@@ -110,7 +111,7 @@ namespace NotaFiscalNet.Core.Transmissao
         public DateTime DataRegistro { get; private set; }
 
         /// <summary>
-        /// [nProt] Retorna ou define o Número do Protocolo de registro do evento. 
+        /// [nProt] Retorna ou define o Número do Protocolo de registro do evento.
         /// </summary>
         public string NumeroProtocolo { get; private set; }
     }

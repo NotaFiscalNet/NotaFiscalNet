@@ -1,20 +1,14 @@
-﻿using System;
-using System.Runtime.InteropServices;
+﻿using NotaFiscalNet.Core.Utils;
+using System;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Xml;
 using System.Xml.XPath;
-using NotaFiscalNet.Core.Utils;
 
 namespace NotaFiscalNet.Core.Transmissao
 {
-    
-    
-    
     public sealed class PedidoInutilizacaoNFe
     {
-        #region Fields
-
         private string _id = null;
         private TipoAmbiente _ambiente = TipoAmbiente.Producao;
         private UfIBGE _ufIBGE = UfIBGE.NaoEspecificado;
@@ -26,10 +20,6 @@ namespace NotaFiscalNet.Core.Transmissao
         private int _numeracaoFinalNFe = 0;
         private string _justificativa = string.Empty;
 
-        #endregion Fields
-
-        #region Constructors
-
         /// <summary>
         /// Inicializa uma nova instância da classe <see cref="PedidoInutilizacaoNFe"/>.
         /// </summary>
@@ -37,22 +27,19 @@ namespace NotaFiscalNet.Core.Transmissao
         {
         }
 
-        #endregion Constructors
-
-        #region Properties
-
         /// <summary>
         /// Retorna ou define o xml carregado.
         /// </summary>
         private string Xml { get; set; }
+
         /// <summary>
         /// Retorna a chave identificadora usada na assinatura digital xml.
         /// </summary>
         public string Id
         {
-            get 
+            get
             {
-                if ( IsReadOnly )
+                if (IsReadOnly)
                     return _id; // pega do campo _id pq foi carregado de um arquivo xml.
 
                 ValidateFields();
@@ -68,7 +55,7 @@ namespace NotaFiscalNet.Core.Transmissao
         /// <summary>
         /// Retorna ou define o valor indicando o tipo de ambiente para onde será enviado o pedido.
         /// </summary>
-        public TipoAmbiente Ambiente 
+        public TipoAmbiente Ambiente
         {
             get { return _ambiente; }
             set
@@ -77,89 +64,97 @@ namespace NotaFiscalNet.Core.Transmissao
                 _ambiente = value;
             }
         }
+
         /// <summary>
         /// Retorna o nome interno do serviço.
         /// </summary>
         public string Servico { get { return "INUTILIZAR"; } }
+
         /// <summary>
         /// Retorna ou define o código da UF IBGE do emitente.
         /// </summary>
-        public UfIBGE UFIBGE 
+        public UfIBGE UFIBGE
         {
             get { return _ufIBGE; }
             set
             {
                 CheckReadOnly("UFIBGE");
 
-                if ( !Enum.IsDefined(typeof(UfIBGE), value) )
+                if (!Enum.IsDefined(typeof(UfIBGE), value))
                     throw new ArgumentException("O valor informado não é válido. Informe uma UF válida.");
 
-                if ( value == UfIBGE.NaoEspecificado )
+                if (value == UfIBGE.NaoEspecificado)
                     throw new ArgumentException("O valor informado não é válido. Informe uma UF válida.");
 
                 _ufIBGE = value;
             }
         }
+
         /// <summary>
         /// Retorna ou define o ano de inutilização da numeração. Informar apenas o ano com 2 dígitos.
         /// </summary>
-        public int Ano 
+        public int Ano
         {
             get { return _ano; }
             set
             {
                 CheckReadOnly("Ano");
-                if ( value < 0 || value > 99 )
+                if (value < 0 || value > 99)
                     throw new ArgumentOutOfRangeException("Ano", value, "Valor deve estar entre 0 e 99.");
                 _ano = value;
             }
         }
+
         /// <summary>
         /// Retorna ou define o número do CNPJ do emitente. Informar apenas números.
         /// </summary>
-        public string CNPJ 
+        public string CNPJ
         {
             get { return _cnpj; }
             set
             {
                 CheckReadOnly("CNPJ");
-                if ( !Regex.IsMatch(value, "^[0-9]{14}$") )
+                if (!Regex.IsMatch(value, "^[0-9]{14}$"))
                     throw new ArgumentException("O CNPJ do emitente informado não é válido. O CNPJ deve conter 14 números, incluindo zeros não significativos.");
                 _cnpj = value;
             }
         }
+
         /// <summary>
         /// Retorna o Modelo do Documento Fiscal que será inutilizado. Retorna sempre 55 (NF-e).
         /// </summary>
         public string ModeloDocumentoFiscal { get { return _mod; } private set { _mod = value; } }
+
         /// <summary>
         /// Retorna ou define a Série da NF-e.
         /// </summary>
-        public int Serie 
+        public int Serie
         {
             get { return _serie; }
             set
             {
                 CheckReadOnly("Serie");
-                if ( value < 0 || value > 999 )
+                if (value < 0 || value > 999)
                     throw new ArgumentOutOfRangeException("Serie", value, "A Série deve estar entre 0 e 999.");
                 _serie = value;
             }
         }
+
         /// <summary>
         /// Retorna ou define a Numeração Inicial da NF-e.
         /// </summary>
-        public int NumeracaoInicialNF 
+        public int NumeracaoInicialNF
         {
             get { return _numeracaoInicialNFe; }
             set
             {
                 CheckReadOnly("NumeracaoInicialNF");
-                if ( value < 1 || value > 999999999 )
+                if (value < 1 || value > 999999999)
                     throw new ArgumentOutOfRangeException("NumeracaoInicialNF", value, "A Numeração Inicial da NF deve estar entre 1 e 999999999.");
                 _numeracaoInicialNFe = value;
             }
         }
+
         /// <summary>
         /// Retorna ou define a Numeração Final da NF-e.
         /// </summary>
@@ -169,49 +164,53 @@ namespace NotaFiscalNet.Core.Transmissao
             set
             {
                 CheckReadOnly("NumeracaoFinalNF");
-                if ( value < 1 || value > 999999999 )
+                if (value < 1 || value > 999999999)
                     throw new ArgumentOutOfRangeException("NumeracaoFinalNF", value, "A Numeração Final da NF deve estar entre 1 e 999999999.");
 
                 _numeracaoFinalNFe = value;
             }
         }
+
         /// <summary>
         /// Retorna ou define a Justificativa para a inutilização.
         /// </summary>
-        public string Justificativa 
+        public string Justificativa
         {
             get { return _justificativa; }
             set
             {
                 CheckReadOnly("Justificativa");
 
-                if ( value == null )
+                if (value == null)
                     throw new ArgumentNullException("O campo Justificativa não pode ser null.");
 
-                if ( value.Length < 15 || value.Length > 255 )
+                if (value.Length < 15 || value.Length > 255)
                     throw new ArgumentOutOfRangeException("Justificativa", value, "O Texto da justificativa deve conter no mínimo 15 e no máximo 255 caracteres.");
 
                 _justificativa = value;
             }
         }
+
         /// <summary>
         /// Retorna o valor indicando se a classe está ou não em modo Somente-Leitura.
         /// </summary>
-        /// <remarks>A classe entra em modo Somente-Leitura quando ela é carregada com base em um arquivo xml assinado digitalmente.</remarks>
+        /// <remarks>
+        /// A classe entra em modo Somente-Leitura quando ela é carregada com base em um arquivo xml
+        /// assinado digitalmente.
+        /// </remarks>
         public bool IsReadOnly { get; private set; }
-
-        #endregion Properties
-
-        #region Methods
 
         /// <summary>
         /// Carrega a classe com base em um arquivo xml de pedido de inutilização.
         /// </summary>
-        /// <remarks>Após a classe ter sido carregada com base em um arquivo xml, não será permitido alterar nenhum campo da classe.</remarks>
+        /// <remarks>
+        /// Após a classe ter sido carregada com base em um arquivo xml, não será permitido alterar
+        /// nenhum campo da classe.
+        /// </remarks>
         /// <param name="caminho">Caminho do arquivo contendo o pedido de inutilização.</param>
         public void CarregarXml(string caminho)
         {
-            using ( XmlReader reader = XmlReader.Create(caminho) )
+            using (XmlReader reader = XmlReader.Create(caminho))
             {
                 reader.MoveToContent();
 
@@ -258,7 +257,9 @@ namespace NotaFiscalNet.Core.Transmissao
         /// <summary>
         /// Gera o xml de pedido de inutilização.
         /// </summary>
-        /// <param name="incluirDeclaracaoXml">Valor indicando se deve ou não incluir no topo do xml a declaração xml padrão.</param>
+        /// <param name="incluirDeclaracaoXml">
+        /// Valor indicando se deve ou não incluir no topo do xml a declaração xml padrão.
+        /// </param>
         /// <returns>Retorna uma string xml contendo o pedido de inutilização.</returns>
         public string GerarXmlNaoAssinado(bool incluirDeclaracaoXml)
         {
@@ -312,34 +313,33 @@ namespace NotaFiscalNet.Core.Transmissao
         }
 
         /// <summary>
-        /// Checa se é permitido realizar alterações na classe. Se não for, lança uma exception informando que não é permitido.
+        /// Checa se é permitido realizar alterações na classe. Se não for, lança uma exception
+        /// informando que não é permitido.
         /// </summary>
         /// <param name="field">Nome do campo que está sendo alterado.</param>
         private void CheckReadOnly(string field)
         {
-            if ( IsReadOnly )
+            if (IsReadOnly)
                 throw new InvalidOperationException(
                     $"O campo '{field}' não pode ser alterado porque a classe está em modo Somente-Leitura.");
         }
 
         private void ValidateFields()
         {
-            if ( this.UFIBGE == UfIBGE.NaoEspecificado )
+            if (this.UFIBGE == UfIBGE.NaoEspecificado)
                 throw new ApplicationException("O campo UFIBGE não foi informado.");
 
-            if ( this.CNPJ == string.Empty )
+            if (this.CNPJ == string.Empty)
                 throw new ApplicationException("O campo CNPJ não foi informado.");
 
-            if ( this.NumeracaoInicialNF == 0 )
+            if (this.NumeracaoInicialNF == 0)
                 throw new ApplicationException("O campo NumeracaoInicialNF não foi informado.");
 
-            if ( this.NumeracaoFinalNF == 0 )
+            if (this.NumeracaoFinalNF == 0)
                 throw new ApplicationException("O campo NumeracaoFinalNF não foi informado.");
 
-            if ( this.Justificativa == string.Empty )
+            if (this.Justificativa == string.Empty)
                 throw new ApplicationException("O campo Justificativa não foi informado.");
         }
-
-        #endregion Methods
     }
 }

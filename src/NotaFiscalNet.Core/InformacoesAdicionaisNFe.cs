@@ -1,5 +1,4 @@
-﻿using System.Runtime.InteropServices;
-using NotaFiscalNet.Core.Interfaces;
+﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 using NotaFiscalNet.Core.Validacao.Validators;
@@ -9,13 +8,9 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa o Destinatário da Nota Fiscal Eletrônica.
     /// </summary>
-    
-    
-    
+
     public sealed class InformacoesAdicionaisNFe : ISerializavel, IModificavel
     {
-        #region Fields
-
         private string _informacoesComplementaresFisco = string.Empty;
         private string _informacoesComplementaresContribuinte = string.Empty;
         private ObservacaoContribuinteCollection _observacoesContribuinte = new ObservacaoContribuinteCollection();
@@ -25,10 +20,6 @@ namespace NotaFiscalNet.Core
         public InformacoesAdicionaisNFe()
         {
         }
-
-        #endregion Fields
-
-        #region Properties
 
         /// <summary>
         /// [infAdFisco] Retorna ou define Informações Complementares de Interesse do Fisco. Opcional.
@@ -52,8 +43,9 @@ namespace NotaFiscalNet.Core
         public string InformacoesComplementaresContribuinte
         {
             get { return _informacoesComplementaresContribuinte; }
-            set {
-                _informacoesComplementaresContribuinte = ValidationUtil.TruncateString(value, 5000); 
+            set
+            {
+                _informacoesComplementaresContribuinte = ValidationUtil.TruncateString(value, 5000);
             }
         }
 
@@ -92,8 +84,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public bool Modificado
         {
-            get 
-            { 
+            get
+            {
                 return
                     !string.IsNullOrEmpty(InformacoesComplementaresContribuinte) ||
                     !string.IsNullOrEmpty(InformacoesComplementaresFisco) ||
@@ -103,15 +95,9 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        #endregion Properties
-
-        #region ISerializavel Members
-
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("infAdic"); // Elemento 'infAdic'
-
-            #region infAdic
 
             if (!string.IsNullOrEmpty(InformacoesComplementaresFisco))
                 writer.WriteElementString("infAdFisco", SerializationUtil.ToTString(InformacoesComplementaresFisco, 2000));
@@ -124,11 +110,7 @@ namespace NotaFiscalNet.Core
             if (Processos.Modificado)
                 ((ISerializavel)Processos).Serializar(writer, nfe);
 
-            #endregion infAdic
-
             writer.WriteEndElement(); // Elemento 'infAdic'
         }
-
-        #endregion
     }
 }

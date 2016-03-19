@@ -9,7 +9,6 @@ namespace NotaFiscalNet.Core.Transmissao
     /// </summary>
     public class RetornoEnvioNFe
     {
-
         /// <summary>
         /// Inicializa em branco a resposta.
         /// </summary>
@@ -32,7 +31,7 @@ namespace NotaFiscalNet.Core.Transmissao
         /// <param name="respostaEnvioNFe"></param>
         public RetornoEnvioNFe(XmlNode respostaEnvioNFe)
         {
-            if (respostaEnvioNFe == null) 
+            if (respostaEnvioNFe == null)
                 throw new ArgumentOutOfRangeException(nameof(respostaEnvioNFe));
 
             RawXml = respostaEnvioNFe.OuterXml;
@@ -72,7 +71,8 @@ namespace NotaFiscalNet.Core.Transmissao
             var infRecEl = retEnviNFeEl.Element(ns + "infRec");
             if (infRecEl != null)
             {
-                InformacoesReciboLote = new ReciboLoteNFe {
+                InformacoesReciboLote = new ReciboLoteNFe
+                {
                     NumeroRecibo = infRecEl.Element(ns + "nRec").Value,
                     TempoMedio = int.Parse(infRecEl.Element(ns + "tMed").Value)
                 };

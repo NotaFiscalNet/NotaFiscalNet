@@ -1,12 +1,9 @@
-﻿using System.Runtime.InteropServices;
-
-namespace NotaFiscalNet.Core
+﻿namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Especifica o Tipo da Cor Segundo as regras de pré-cadastro do DENATRAN.
     /// </summary>
-    
-    
+
     public enum TipoCorDenatran
     {
         NaoEspecificado = -1,

@@ -1,6 +1,6 @@
+using NotaFiscalNet.Core.Utils;
 using System;
 using System.Xml.Linq;
-using NotaFiscalNet.Core.Utils;
 
 namespace NotaFiscalNet.Core.Transmissao
 {
@@ -30,7 +30,6 @@ namespace NotaFiscalNet.Core.Transmissao
         public string NumeroProtocolo { get; private set; }
 
         /// <summary>
-        /// 
         /// </summary>
         /// <param name="retCancNFe">Representa o tipo complexo 'TRetCancNFe'.</param>
         internal RetornoCancelamentoNFe(XElement retCancNFeEl)

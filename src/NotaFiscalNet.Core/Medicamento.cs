@@ -1,37 +1,32 @@
-﻿using System;
-using System.Runtime.InteropServices;
-using NotaFiscalNet.Core.Interfaces;
+﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
+using System;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
-    /// Representa um determinado tipo de Medicamento. Utilizado na NF-e como detalhamento nos casos de venda de medicamentos.
+    /// Representa um determinado tipo de Medicamento. Utilizado na NF-e como detalhamento nos casos
+    /// de venda de medicamentos.
     /// </summary>
     public sealed class Medicamento : ISerializavel, IModificavel
     {
-        #region Fields
-
         private string _numeroLote = string.Empty;
         private decimal _quantidadeProdLote;
         private DateTime _dataFabricacao;
         private DateTime _dataValidade;
         private decimal _precoMaximoConsumidor;
 
-        #endregion Fields
-
-        #region Properties
-
         /// <summary>
         /// Retorna ou define o Número do Lote do Medicamento. Até 20 caracteres.
         /// </summary>
-        [NFeField(FieldName = "nLote", DataType = "token", ID = "K02", MinLength=1, MaxLength=20)]
+        [NFeField(FieldName = "nLote", DataType = "token", ID = "K02", MinLength = 1, MaxLength = 20)]
         [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public string NumeroLote
         {
             get { return _numeroLote; }
-            set {
+            set
+            {
                 _numeroLote = ValidationUtil.TruncateString(value, 20);
             }
         }
@@ -44,23 +39,25 @@ namespace NotaFiscalNet.Core
         public decimal QuantidadeProdutoLote
         {
             get { return _quantidadeProdLote; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_0803(value, "QuantidadeProdutoLote");
-                _quantidadeProdLote = value; 
+                _quantidadeProdLote = value;
             }
         }
 
         /// <summary>
         /// Retorna ou define a Data de Fabricação do produto.
         /// </summary>
-        [NFeField(FieldName = "dFab", DataType = "TData", ID = "K04", Pattern=@"\d{4}-\d{2}-\d{2}")]
+        [NFeField(FieldName = "dFab", DataType = "TData", ID = "K04", Pattern = @"\d{4}-\d{2}-\d{2}")]
         [ValidateField(3, ChaveErroValidacao.CampoNaoPreenchido)]
         public DateTime DataFabricacao
         {
             get { return _dataFabricacao; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTData(value, "DataFabricacao");
-                _dataFabricacao = value; 
+                _dataFabricacao = value;
             }
         }
 
@@ -72,23 +69,25 @@ namespace NotaFiscalNet.Core
         public DateTime DataValidade
         {
             get { return _dataValidade; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTData(value, "DataValidade");
-                _dataValidade = value; 
+                _dataValidade = value;
             }
         }
 
         /// <summary>
         /// Retorna ou define o Preço Máximo do Medicamento para o consumidor.
         /// </summary>
-        [NFeField(FieldName = "vPMC", DataType = "TDec_1302", ID = "K06", Pattern=@"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
+        [NFeField(FieldName = "vPMC", DataType = "TDec_1302", ID = "K06", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
         [ValidateField(5, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal PrecoMaximoConsumidor
         {
             get { return _precoMaximoConsumidor; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateTDec_1302(value, "PrecoMaximoConsumidor");
-                _precoMaximoConsumidor = value; 
+                _precoMaximoConsumidor = value;
             }
         }
 
@@ -108,20 +107,12 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        #endregion Properties
-
-        #region Constructor
-
         /// <summary>
         /// Inicializa uma nova instância da classe Medicamento
         /// </summary>
         public Medicamento()
         {
         }
-
-        #endregion Constructor
-
-        #region ISerializavel Members
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
@@ -135,7 +126,5 @@ namespace NotaFiscalNet.Core
 
             writer.WriteEndElement();
         }
-
-        #endregion
     }
 }

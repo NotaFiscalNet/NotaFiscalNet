@@ -1,5 +1,4 @@
-﻿using System.Runtime.InteropServices;
-using NotaFiscalNet.Core.Interfaces;
+﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 using NotaFiscalNet.Core.Validacao.Validators;
@@ -9,13 +8,9 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representa as informações de Transporte da Nota Fiscal Eletrônica.
     /// </summary>
-    
-    
-    
+
     public sealed class TransporteNFe : ISerializavel
     {
-        #region Fields
-
         private TipoModalidadeFrete _modFrete = TipoModalidadeFrete.Destinatario;
         private Transportador _transporta = new Transportador();
         private RetencaoICMSTransporte _retencaoICMS = new RetencaoICMSTransporte();
@@ -30,12 +25,8 @@ namespace NotaFiscalNet.Core
             Balsa = string.Empty;
         }
 
-        #endregion Fields
-
-        #region Properties
-
         /// <summary>
-        ///  Retorna ou define o tipo do meio utilizado no transporte
+        /// Retorna ou define o tipo do meio utilizado no transporte
         /// </summary>
         [ValidateField(0, false)]
         public TipoMeioTransporte MeioTransporte
@@ -56,9 +47,10 @@ namespace NotaFiscalNet.Core
         public TipoModalidadeFrete ModalidadeFrete
         {
             get { return _modFrete; }
-            set {
+            set
+            {
                 ValidationUtil.ValidateEnum(value, "ModalidadeFrete");
-                _modFrete = value; 
+                _modFrete = value;
             }
         }
 
@@ -101,7 +93,7 @@ namespace NotaFiscalNet.Core
         {
             get { return _reboques; }
         }
-        
+
         /// <summary>
         /// [vol] Retorna a lista de Volumes da Carga. <strong>Opcional</strong>.
         /// </summary>
@@ -124,14 +116,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "balsa", DataType = "TString", Pattern = "[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}", MinLength = 1, MaxLength = 20, Opcional = true), ValidateField(8, true)]
         public string Balsa { get; set; }
 
-        #endregion Properties
-
-        #region ISerializavel Members
-
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
-            #region transp
-
             writer.WriteStartElement("transp");
 
             writer.WriteElementString("modFrete", SerializationUtil.GetEnumValue<TipoModalidadeFrete>(ModalidadeFrete));
@@ -154,10 +140,12 @@ namespace NotaFiscalNet.Core
                     if (Reboques.Modificado)
                         ((ISerializavel)Reboques).Serializar(writer, nfe);
                     break;
+
                 case TipoMeioTransporte.Ferroviario:
                     if (!string.IsNullOrEmpty(Vagao))
-                        writer.WriteElementString("vagao", Vagao); 
+                        writer.WriteElementString("vagao", Vagao);
                     break;
+
                 case TipoMeioTransporte.Pluvial:
                     if (!string.IsNullOrEmpty(Balsa))
                         writer.WriteElementString("balsa", Balsa);
@@ -168,10 +156,6 @@ namespace NotaFiscalNet.Core
                 ((ISerializavel)VolumesCarga).Serializar(writer, nfe);
 
             writer.WriteEndElement(); // fim do elemento 'transp'
-
-            #endregion transp
         }
-
-        #endregion
     }
 }

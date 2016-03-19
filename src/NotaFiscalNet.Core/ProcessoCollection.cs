@@ -1,5 +1,4 @@
-﻿using System.Runtime.InteropServices;
-using NotaFiscalNet.Core.Interfaces;
+﻿using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
@@ -8,7 +7,6 @@ namespace NotaFiscalNet.Core
     /// </summary>
     public sealed class ProcessoCollection : BaseCollection<Processo>, ISerializavel, IModificavel
     {
-
         /// <summary>
         /// Retorna se existe alguma instancia da classe modificada na coleção
         /// </summary>
@@ -25,8 +23,6 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        #region ISerializavel Members
-
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             foreach (Processo processo in this)
@@ -35,8 +31,5 @@ namespace NotaFiscalNet.Core
                     ((ISerializavel)processo).Serializar(writer, nfe);
             }
         }
-
-        #endregion
-        
     }
 }

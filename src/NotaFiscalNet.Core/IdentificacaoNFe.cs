@@ -1,8 +1,8 @@
-﻿using NotaFiscalNet.Core.Utils;
+﻿using NotaFiscalNet.Core.Interfaces;
+using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 using NotaFiscalNet.Core.Validacao.Validators;
 using System;
-using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
@@ -212,7 +212,7 @@ namespace NotaFiscalNet.Core
         /// Mercadorias, Substituição de NF cancelada, Complementação de NF, etc).
         /// </remarks>
         [NFeField(FieldName = "NFref", ID = "B12a")]
-        [ValidateField(13, ChaveErroValidacao.CollectionMinValue, Validator = typeof (RangeCollectionValidator),
+        [ValidateField(13, ChaveErroValidacao.CollectionMinValue, Validator = typeof(RangeCollectionValidator),
             MinLength = 0)]
         public ReferenciaDocFiscalCollection ReferenciasDocFiscais
         {
@@ -312,7 +312,7 @@ namespace NotaFiscalNet.Core
             Pattern =
                 @"(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))T(20|21|22|23|[0-1]\d):[0-5]\d:[0-5]\d"
             ),
-         ValidateField(22, ChaveErroValidacao.CampoNaoPreenchido, Validator = typeof (EntradaContingenciaValidator))]
+         ValidateField(22, ChaveErroValidacao.CampoNaoPreenchido, Validator = typeof(EntradaContingenciaValidator))]
         public DateTime DataHoraEntradaContingencia { get; set; }
 
         /// <summary>
@@ -320,7 +320,7 @@ namespace NotaFiscalNet.Core
         /// de emissão for diferente de normal.
         /// </summary>
         [NFeField(FieldName = "xJust", ID = "B29"),
-         ValidateField(23, ChaveErroValidacao.CampoNaoPreenchido, Validator = typeof (EntradaContingenciaValidator))]
+         ValidateField(23, ChaveErroValidacao.CampoNaoPreenchido, Validator = typeof(EntradaContingenciaValidator))]
         public string JustificativaEntradaContingencia { get; set; }
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
@@ -361,7 +361,7 @@ namespace NotaFiscalNet.Core
 
             // Serializa as referência
             if (ReferenciasDocFiscais.Modificado)
-                ((ISerializavel) ReferenciasDocFiscais).Serializar(writer, nfe);
+                ((ISerializavel)ReferenciasDocFiscais).Serializar(writer, nfe);
 
             writer.WriteEndElement(); // fim do elemento 'ide'
         }

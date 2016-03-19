@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--  PL_006f versao com correcoes no xServ para tornar a literal INUTILIZAR obrigatoria 21/05/2010 -->
 <!--  PL_006c versao com correcoes 24/12/2009 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portalfiscal.inf.br/nfe" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" targetNamespace="http://www.portalfiscal.inf.br/nfe" elementFormDefault="qualified" attributeFormDefault="unqualified">
@@ -42,9 +42,9 @@
 								<xs:documentation>Ano de inutilização da numeração</xs:documentation>
 							</xs:annotation>
 						</xs:element>
-						<xs:element name="CNPJ" type="TCnpj">
+						<xs:element name="Cnpj" type="TCnpj">
 							<xs:annotation>
-								<xs:documentation>CNPJ do emitente</xs:documentation>
+								<xs:documentation>Cnpj do emitente</xs:documentation>
 							</xs:annotation>
 						</xs:element>
 						<xs:element name="mod" type="TMod">
@@ -128,9 +128,9 @@
 								<xs:documentation>Ano de inutilização da numeração</xs:documentation>
 							</xs:annotation>
 						</xs:element>
-						<xs:element name="CNPJ" type="TCnpj" minOccurs="0">
+						<xs:element name="Cnpj" type="TCnpj" minOccurs="0">
 							<xs:annotation>
-								<xs:documentation>CNPJ do emitente</xs:documentation>
+								<xs:documentation>Cnpj do emitente</xs:documentation>
 							</xs:annotation>
 						</xs:element>
 						<xs:element name="mod" type="TMod" minOccurs="0">

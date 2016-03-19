@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- PL_008  - 30/07/2013- NT 2013/005 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:nfe="http://www.portalfiscal.inf.br/nfe" targetNamespace="http://www.portalfiscal.inf.br/nfe" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:simpleType name="TCodUfIBGE">
@@ -87,7 +87,7 @@
 	</xs:simpleType>
 	<xs:simpleType name="TCnpj">
 		<xs:annotation>
-			<xs:documentation>Tipo Número do CNPJ</xs:documentation>
+			<xs:documentation>Tipo Número do Cnpj</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:whiteSpace value="preserve" />
@@ -97,7 +97,7 @@
 	</xs:simpleType>
 	<xs:simpleType name="TCnpjVar">
 		<xs:annotation>
-			<xs:documentation>Tipo Número do CNPJ tmanho varíavel (3-14)</xs:documentation>
+			<xs:documentation>Tipo Número do Cnpj tmanho varíavel (3-14)</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:whiteSpace value="preserve" />
@@ -107,7 +107,7 @@
 	</xs:simpleType>
 	<xs:simpleType name="TCnpjOpc">
 		<xs:annotation>
-			<xs:documentation>Tipo Número do CNPJ Opcional</xs:documentation>
+			<xs:documentation>Tipo Número do Cnpj Opcional</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:whiteSpace value="preserve" />
@@ -117,7 +117,7 @@
 	</xs:simpleType>
 	<xs:simpleType name="TCpf">
 		<xs:annotation>
-			<xs:documentation>Tipo Número do CPF</xs:documentation>
+			<xs:documentation>Tipo Número do Cpf</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:whiteSpace value="preserve" />
@@ -127,7 +127,7 @@
 	</xs:simpleType>
 	<xs:simpleType name="TCpfVar">
 		<xs:annotation>
-			<xs:documentation>Tipo Número do CPF de tamanho variável (3-11)</xs:documentation>
+			<xs:documentation>Tipo Número do Cpf de tamanho variável (3-11)</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:whiteSpace value="preserve" />

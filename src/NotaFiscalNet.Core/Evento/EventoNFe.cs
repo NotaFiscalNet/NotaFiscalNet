@@ -64,7 +64,7 @@ namespace NotaFiscalNet.Core.Evento
         public TipoAmbiente Ambiente { get; set; }
 
         /// <summary>
-        /// [CNPJ,CPF] Retorna ou define o Cpf ou Cnpj do Autor do Evento.
+        /// [Cnpj,Cpf] Retorna ou define o Cpf ou Cnpj do Autor do Evento.
         /// </summary>
         public string CpfCnpjAutor
         {
@@ -72,7 +72,7 @@ namespace NotaFiscalNet.Core.Evento
             set
             {
                 if (!Regex.IsMatch(value, "^([0-9]{11}|[0-9]{14})$"))
-                    throw new ApplicationException("O CPF ou CNPJ do Autor não é inválido.");
+                    throw new ApplicationException("O Cpf ou Cnpj do Autor não é inválido.");
 
                 _cpfCnpj = value;
             }
@@ -135,7 +135,7 @@ namespace NotaFiscalNet.Core.Evento
 
             writer.WriteElementString("cOrgao", Orgao.GetEnumValue());
             writer.WriteElementString("tpAmb", Ambiente.GetEnumValue());
-            writer.WriteElementString(CpfCnpjAutor.Length == 14 ? "CNPJ" : "CPF", CpfCnpjAutor);
+            writer.WriteElementString(CpfCnpjAutor.Length == 14 ? "Cnpj" : "Cpf", CpfCnpjAutor);
             writer.WriteElementString("chNFe", ChaveAcessoNFe);
             writer.WriteElementString("dhEvento", Data.ToTDateTimeUtc());
             writer.WriteElementString("tpEvento", Tipo.GetEnumValue());

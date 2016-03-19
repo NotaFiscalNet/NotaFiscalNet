@@ -28,36 +28,36 @@ namespace NotaFiscalNet.Core
 
                 default:
                     throw new ArgumentOutOfRangeException(nameof(cpfOuCnpj), cpfOuCnpj,
-                        "O valor informado não é um CPF ou CNPJ válido.");
+                        "O valor informado não é um Cpf ou Cnpj válido.");
             }
         }
 
         /// <summary>
-        /// [CNPJ] Retorna o CNPJ autorizado a realizar o download do Xml.
+        /// [Cnpj] Retorna o Cnpj autorizado a realizar o download do Xml.
         /// </summary>
-        [NFeField(FieldName = "CNPJ", DataType = "TCnpj", ID = "G51")]
+        [NFeField(FieldName = "Cnpj", DataType = "TCnpj", ID = "G51")]
         [ValidateField(1, ChaveErroValidacao.CNPJInvalido)]
         public string CNPJ
         {
             get { return _cnpj; }
             private set
             {
-                _cnpj = ValidationUtil.ValidateCPF(value, "CNPJ");
+                _cnpj = ValidationUtil.ValidateCPF(value, "Cnpj");
                 ;
             }
         }
 
         /// <summary>
-        /// [CPF] Retorna o CPF autorizado a realizar o download do Xml.
+        /// [Cpf] Retorna o Cpf autorizado a realizar o download do Xml.
         /// </summary>
-        [NFeField(FieldName = "CPF", DataType = "TCpf", ID = "G52")]
+        [NFeField(FieldName = "Cpf", DataType = "TCpf", ID = "G52")]
         [ValidateField(1, ChaveErroValidacao.CPFInvalido)]
         public string CPF
         {
             get { return _cpf; }
             private set
             {
-                _cpf = ValidationUtil.ValidateCPF(value, "CPF");
+                _cpf = ValidationUtil.ValidateCPF(value, "Cpf");
                 ;
             }
         }
@@ -70,9 +70,9 @@ namespace NotaFiscalNet.Core
             writer.WriteStartElement("autXML");
 
             if (!string.IsNullOrEmpty(CNPJ))
-                writer.WriteElementString("CNPJ", CNPJ);
+                writer.WriteElementString("Cnpj", CNPJ);
             else
-                writer.WriteElementString("CPF", CPF);
+                writer.WriteElementString("Cpf", CPF);
 
             writer.WriteEndElement();
         }

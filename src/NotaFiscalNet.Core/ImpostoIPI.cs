@@ -133,7 +133,7 @@ namespace NotaFiscalNet.Core
         }
 
         /// <summary>
-        /// [CNPJProd] Retorna ou define o CNPJ do Produtor da Mercadoria, quando diferente do
+        /// [CNPJProd] Retorna ou define o Cnpj do Produtor da Mercadoria, quando diferente do
         /// emitente. <br/> Somente para os casos de exportação direta ou indireta. Opcional.
         /// </summary>
         [NFeField(FieldName = "CNPJProd", DataType = "TCnpj", ID = "O03", Opcional = true, Pattern = @"[0-9]{14}")]

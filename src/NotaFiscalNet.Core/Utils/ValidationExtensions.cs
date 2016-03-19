@@ -256,7 +256,7 @@ namespace NotaFiscalNet.Core.Utils
 
         public static string ValidateCNPJ(this string value, string paramName, bool opcional)
         {
-            // TODO: Implementar Verificação de CNPJ (módulo 11)
+            // TODO: Implementar Verificação de Cnpj (módulo 11)
             if (!opcional && string.IsNullOrEmpty(value))
                 throw new ArgumentException(MsgUtil.GetString(ChaveErroValidacao.CNPJInvalido), paramName);
             value = GetOnlyNumbers(value);
@@ -279,7 +279,7 @@ namespace NotaFiscalNet.Core.Utils
 
         public static string ValidateCPF(this string value, string paramName, bool opcional)
         {
-            // TODO: Implementar Verificação de CPF (módulo 11)
+            // TODO: Implementar Verificação de Cpf (módulo 11)
             if (!opcional && string.IsNullOrEmpty(value))
                 throw new ArgumentException(MsgUtil.GetString(ChaveErroValidacao.CPFInvalido), paramName);
             value = GetOnlyNumbers(value);

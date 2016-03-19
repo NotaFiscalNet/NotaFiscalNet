@@ -90,6 +90,7 @@
     <Compile Include="Fatura.cs" />
     <Compile Include="FiscoEmitenteNFe.cs" />
     <Compile Include="Interfaces\IDesoneracaoIcms.cs" />
+    <Compile Include="Interfaces\IReferenciaDocumentoFiscal.cs" />
     <Compile Include="Schemas\PacoteLiberacaoPL_008h2.cs" />
     <Compile Include="TipoFormatoImpressaoDANFE.cs" />
     <Compile Include="FornecimentoDiarioCana.cs" />
@@ -145,7 +146,6 @@
     <Compile Include="LoteNFeException.cs" />
     <Compile Include="Medicamento.cs" />
     <Compile Include="MedicamentoCollection.cs" />
-    <Compile Include="Mensagens.cs" />
     <Compile Include="ModalidadeBaseCalculoIcms.cs" />
     <Compile Include="ModalidadeBaseCalculoIcmsST.cs" />
     <Compile Include="MotivoDesoneracaoCondicionalICMS.cs" />
@@ -169,13 +169,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuantidadeMaximaLoteNFeException.cs" />
     <Compile Include="ReboqueCollection.cs" />
-    <Compile Include="ReferenciaDocFiscal.cs" />
-    <Compile Include="ReferenciaDocFiscalCollection.cs" />
-    <Compile Include="ReferenciaDocFiscalCTe.cs" />
-    <Compile Include="ReferenciaDocFiscalEcf.cs" />
-    <Compile Include="ReferenciaDocFiscalNF.cs" />
-    <Compile Include="ReferenciaDocFiscalNFe.cs" />
-    <Compile Include="ReferenciaDocFiscalNFProdutor.cs" />
+    <Compile Include="ReferenciaDocumentoFiscalCollection.cs" />
+    <Compile Include="ReferenciaDocumentoFiscalCte.cs" />
+    <Compile Include="ReferenciaDocumentoFiscalEcf.cs" />
+    <Compile Include="ReferenciaDocumentoFiscalNotaFiscal.cs" />
+    <Compile Include="ReferenciaDocumentoFiscalNfe.cs" />
+    <Compile Include="ReferenciaDocumentoFiscalNotaFiscalProdutor.cs" />
     <Compile Include="RetencaoICMSTransporte.cs" />
     <Compile Include="RetencaoTributosFederais.cs" />
     <Compile Include="Schemas\IPacoteLiberacaoNFe.cs" />
@@ -212,7 +211,6 @@
     <Compile Include="TipoPagamento.cs" />
     <Compile Include="TipoProcessoEmissaoNFe.cs" />
     <Compile Include="TipoProdutoEspecifico.cs" />
-    <Compile Include="TipoReferenciaDocFiscal.cs" />
     <Compile Include="TipoRestricaoVeiculo.cs" />
     <Compile Include="TiposBasicos.cs" />
     <Compile Include="TipoVeiculoRENAVAM.cs" />
@@ -477,6 +475,9 @@
     <None Include="Schemas\PL_008h2\xmldsig-core-schema_v1.01.xsd">
       <SubType>Designer</SubType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extensions\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

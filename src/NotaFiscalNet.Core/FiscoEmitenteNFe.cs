@@ -15,7 +15,7 @@ namespace NotaFiscalNet.Core
         {
             writer.WriteStartElement("avulsa");
 
-            writer.WriteElementString("CNPJ", SerializationUtil.ToCNPJ(CNPJ));
+            writer.WriteElementString("Cnpj", SerializationUtil.ToCNPJ(CNPJ));
             writer.WriteElementString("xOrgao", SerializationUtil.ToToken(OrgaoEmitente, 60));
             writer.WriteElementString("matr", SerializationUtil.ToToken(MatriculaAgente, 60));
             writer.WriteElementString("xAgente", SerializationUtil.ToToken(NomeAgente, 60));
@@ -45,14 +45,14 @@ namespace NotaFiscalNet.Core
         private DateTime _dataPagamentoDAR;
 
         /// <summary>
-        /// Retorna ou define o CNPJ do Órgão Emitente
+        /// Retorna ou define o Cnpj do Órgão Emitente
         /// </summary>
-        [NFeField(ID = "D02", FieldName = "CNPJ", DataType = "TCnpj", Pattern = "[0-9]{14}")]
+        [NFeField(ID = "D02", FieldName = "Cnpj", DataType = "TCnpj", Pattern = "[0-9]{14}")]
         [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public string CNPJ
         {
             get { return _CNPJ; }
-            set { _CNPJ = ValidationUtil.ValidateCNPJ(value, "CNPJ", true); }
+            set { _CNPJ = ValidationUtil.ValidateCNPJ(value, "Cnpj", true); }
         }
 
         /// <summary>

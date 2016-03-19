@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2008 (http://www.altova.com) by softwares@procergs.rs.gov.br (PROCERGS) -->
 <!-- PL_008g  alterações de esquema decorrentes da - NT2015.002  - 15/07/2015 -->
 <!-- PL_008h  alterações de esquema decorrentes da - NT2015.003 - 17/09/2015 -->
@@ -275,7 +275,7 @@ para tpEmis diferente de 1</xs:documentation>
 											<xs:choice>
 												<xs:element name="refNFe" type="TChNFe">
 													<xs:annotation>
-														<xs:documentation>Chave de acesso das NF-e referenciadas. Chave de acesso compostas por Código da UF (tabela do IBGE) + AAMM da emissão + CNPJ do Emitente + modelo, série e número da NF-e Referenciada + Código Numérico + DV.</xs:documentation>
+														<xs:documentation>Chave de acesso das NF-e referenciadas. Chave de acesso compostas por Código da UF (tabela do IBGE) + AAMM da emissão + Cnpj do Emitente + modelo, série e número da NF-e Referenciada + Código Numérico + DV.</xs:documentation>
 													</xs:annotation>
 												</xs:element>
 												<xs:element name="refNF">
@@ -300,9 +300,9 @@ para tpEmis diferente de 1</xs:documentation>
 																	</xs:restriction>
 																</xs:simpleType>
 															</xs:element>
-															<xs:element name="CNPJ" type="TCnpj">
+															<xs:element name="Cnpj" type="TCnpj">
 																<xs:annotation>
-																	<xs:documentation>CNPJ do emitente do documento fiscal referenciado</xs:documentation>
+																	<xs:documentation>Cnpj do emitente do documento fiscal referenciado</xs:documentation>
 																</xs:annotation>
 															</xs:element>
 															<xs:element name="mod">
@@ -352,14 +352,14 @@ para tpEmis diferente de 1</xs:documentation>
 																</xs:simpleType>
 															</xs:element>
 															<xs:choice>
-																<xs:element name="CNPJ" type="TCnpj">
+																<xs:element name="Cnpj" type="TCnpj">
 																	<xs:annotation>
-																		<xs:documentation>CNPJ do emitente da NF de produtor</xs:documentation>
+																		<xs:documentation>Cnpj do emitente da NF de produtor</xs:documentation>
 																	</xs:annotation>
 																</xs:element>
-																<xs:element name="CPF" type="TCpf">
+																<xs:element name="Cpf" type="TCpf">
 																	<xs:annotation>
-																		<xs:documentation>CPF do emitente da NF de produtor</xs:documentation>
+																		<xs:documentation>Cpf do emitente da NF de produtor</xs:documentation>
 																	</xs:annotation>
 																</xs:element>
 															</xs:choice>
@@ -456,14 +456,14 @@ Preencher com "2B", quando se tratar de Cupom Fiscal emitido por máquina regist
 							<xs:complexType>
 								<xs:sequence>
 									<xs:choice>
-										<xs:element name="CNPJ" type="TCnpj">
+										<xs:element name="Cnpj" type="TCnpj">
 											<xs:annotation>
-												<xs:documentation>Número do CNPJ do emitente</xs:documentation>
+												<xs:documentation>Número do Cnpj do emitente</xs:documentation>
 											</xs:annotation>
 										</xs:element>
-										<xs:element name="CPF" type="TCpf">
+										<xs:element name="Cpf" type="TCpf">
 											<xs:annotation>
-												<xs:documentation>Número do CPF do emitente</xs:documentation>
+												<xs:documentation>Número do Cpf do emitente</xs:documentation>
 											</xs:annotation>
 										</xs:element>
 									</xs:choice>
@@ -558,9 +558,9 @@ Este campo será obrigatoriamente preenchido com:
 							</xs:annotation>
 							<xs:complexType>
 								<xs:sequence>
-									<xs:element name="CNPJ" type="TCnpj">
+									<xs:element name="Cnpj" type="TCnpj">
 										<xs:annotation>
-											<xs:documentation>CNPJ do Órgão emissor</xs:documentation>
+											<xs:documentation>Cnpj do Órgão emissor</xs:documentation>
 										</xs:annotation>
 									</xs:element>
 									<xs:element name="xOrgao">
@@ -659,14 +659,14 @@ Este campo será obrigatoriamente preenchido com:
 							<xs:complexType>
 								<xs:sequence>
 									<xs:choice>
-										<xs:element name="CNPJ" type="TCnpj">
+										<xs:element name="Cnpj" type="TCnpj">
 											<xs:annotation>
-												<xs:documentation>Número do CNPJ</xs:documentation>
+												<xs:documentation>Número do Cnpj</xs:documentation>
 											</xs:annotation>
 										</xs:element>
-										<xs:element name="CPF" type="TCpf">
+										<xs:element name="Cpf" type="TCpf">
 											<xs:annotation>
-												<xs:documentation>Número do CPF</xs:documentation>
+												<xs:documentation>Número do Cpf</xs:documentation>
 											</xs:annotation>
 										</xs:element>
 										<xs:element name="idEstrangeiro">
@@ -772,14 +772,14 @@ de recepção da NF-e indicada pelo destinatário</xs:documentation>
 							</xs:annotation>
 							<xs:complexType>
 								<xs:choice>
-									<xs:element name="CNPJ" type="TCnpj">
+									<xs:element name="Cnpj" type="TCnpj">
 										<xs:annotation>
-											<xs:documentation>CNPJ Autorizado</xs:documentation>
+											<xs:documentation>Cnpj Autorizado</xs:documentation>
 										</xs:annotation>
 									</xs:element>
-									<xs:element name="CPF" type="TCpf">
+									<xs:element name="Cpf" type="TCpf">
 										<xs:annotation>
-											<xs:documentation>CPF Autorizado</xs:documentation>
+											<xs:documentation>Cpf Autorizado</xs:documentation>
 										</xs:annotation>
 									</xs:element>
 								</xs:choice>
@@ -1060,9 +1060,9 @@ Formato ”CFOP9999”.</xs:documentation>
 																	</xs:restriction>
 																</xs:simpleType>
 															</xs:element>
-															<xs:element name="CNPJ" type="TCnpj" minOccurs="0">
+															<xs:element name="Cnpj" type="TCnpj" minOccurs="0">
 																<xs:annotation>
-																	<xs:documentation>CNPJ do adquirente ou do encomendante</xs:documentation>
+																	<xs:documentation>Cnpj do adquirente ou do encomendante</xs:documentation>
 																</xs:annotation>
 															</xs:element>
 															<xs:element name="UFTerceiro" type="TUfEmi" minOccurs="0">
@@ -4271,14 +4271,14 @@ Substituição Tributaria;</xs:documentation>
 										<xs:complexType>
 											<xs:sequence>
 												<xs:choice minOccurs="0">
-													<xs:element name="CNPJ" type="TCnpj">
+													<xs:element name="Cnpj" type="TCnpj">
 														<xs:annotation>
-															<xs:documentation>CNPJ do transportador</xs:documentation>
+															<xs:documentation>Cnpj do transportador</xs:documentation>
 														</xs:annotation>
 													</xs:element>
-													<xs:element name="CPF" type="TCpf">
+													<xs:element name="Cpf" type="TCpf">
 														<xs:annotation>
-															<xs:documentation>CPF do transportador</xs:documentation>
+															<xs:documentation>Cpf do transportador</xs:documentation>
 														</xs:annotation>
 													</xs:element>
 												</xs:choice>
@@ -4612,9 +4612,9 @@ Substituição Tributaria;</xs:documentation>
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:element>
-												<xs:element name="CNPJ" type="TCnpj" minOccurs="0">
+												<xs:element name="Cnpj" type="TCnpj" minOccurs="0">
 													<xs:annotation>
-														<xs:documentation>CNPJ da credenciadora de cartão de crédito/débito</xs:documentation>
+														<xs:documentation>Cnpj da credenciadora de cartão de crédito/débito</xs:documentation>
 													</xs:annotation>
 												</xs:element>
 												<xs:element name="tBand" minOccurs="0">
@@ -5040,7 +5040,7 @@ concessório</xs:documentation>
 						</xs:element>
 						<xs:element name="chNFe" type="TChNFe">
 							<xs:annotation>
-								<xs:documentation>Chaves de acesso da NF-e, compostas por: UF do emitente, AAMM da emissão da NFe, CNPJ do emitente, modelo, série e número da NF-e e código numérico+DV.</xs:documentation>
+								<xs:documentation>Chaves de acesso da NF-e, compostas por: UF do emitente, AAMM da emissão da NFe, Cnpj do emitente, modelo, série e número da NF-e e código numérico+DV.</xs:documentation>
 							</xs:annotation>
 						</xs:element>
 						<xs:element name="dhRecbto" type="TDateTimeUTC">
@@ -5501,14 +5501,14 @@ alterado para tamanho variavel 1-4. (NT2011/004)</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
 			<xs:choice>
-				<xs:element name="CNPJ" type="TCnpjOpc">
+				<xs:element name="Cnpj" type="TCnpjOpc">
 					<xs:annotation>
-						<xs:documentation>CNPJ</xs:documentation>
+						<xs:documentation>Cnpj</xs:documentation>
 					</xs:annotation>
 				</xs:element>
-				<xs:element name="CPF" type="TCpf">
+				<xs:element name="Cpf" type="TCpf">
 					<xs:annotation>
-						<xs:documentation>CPF (v2.0)</xs:documentation>
+						<xs:documentation>Cpf (v2.0)</xs:documentation>
 					</xs:annotation>
 				</xs:element>
 			</xs:choice>
@@ -6460,9 +6460,9 @@ alterado para tamanho variavel 1-4. (NT2011/004)</xs:documentation>
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-			<xs:element name="CNPJProd" type="TCnpj" minOccurs="0">
+			<xs:element name="CnpjProd" type="TCnpj" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>CNPJ do produtor da mercadoria, quando diferente do emitente. Somente para os casos de exportação direta ou indireta.</xs:documentation>
+					<xs:documentation>Cnpj do produtor da mercadoria, quando diferente do emitente. Somente para os casos de exportação direta ou indireta.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="cSelo" minOccurs="0">

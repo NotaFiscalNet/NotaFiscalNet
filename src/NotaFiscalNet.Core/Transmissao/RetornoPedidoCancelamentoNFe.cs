@@ -125,7 +125,7 @@ namespace NotaFiscalNet.Core.Transmissao
         /// <summary>
         /// Salva o retorno do pedido de Cancelamento de Notas Fiscais Eletrônicas em um arquivo xml.
         /// </summary>
-        /// <remarks>O arquivo terá o seguinte nome: [Ano+CNPJ+ModeloDocumentoFiscal+Serie+NumeracaoInicialNF+NumeracaoFinalNF]-inu.xml.</remarks>
+        /// <remarks>O arquivo terá o seguinte nome: [Ano+Cnpj+ModeloDocumentoFiscal+Serie+NumeracaoInicialNF+NumeracaoFinalNF]-inu.xml.</remarks>
         /// <param name="caminho">Caminho onde o arquivo será salvo.</param>
         /// <returns>Retorna o caminho completo do arquivo xml gravado.</returns>
         public string SalvarXml(string caminho)

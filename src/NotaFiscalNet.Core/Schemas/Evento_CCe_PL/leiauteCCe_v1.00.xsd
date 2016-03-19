@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--  08-06-2011 - correcao do pattern do nSeq para aceitar 1-20  -->
 <!--  13-05-2011 - correcao do pattern da data para aceitar -4:00 -->
 <!--  03-03-2011 - correcao do pattern da data -->
@@ -34,14 +34,14 @@
 							<xs:annotation>
 								<xs:documentation>Identificação do  autor do evento</xs:documentation>
 							</xs:annotation>
-							<xs:element name="CNPJ" type="TCnpjOpc">
+							<xs:element name="Cnpj" type="TCnpjOpc">
 								<xs:annotation>
-									<xs:documentation>CNPJ</xs:documentation>
+									<xs:documentation>Cnpj</xs:documentation>
 								</xs:annotation>
 							</xs:element>
-							<xs:element name="CPF" type="TCpf">
+							<xs:element name="Cpf" type="TCpf">
 								<xs:annotation>
-									<xs:documentation>CPF</xs:documentation>
+									<xs:documentation>Cpf</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 						</xs:choice>
@@ -238,14 +238,14 @@
 							<xs:annotation>
 								<xs:documentation>Identificação do  destinatário da NF-e</xs:documentation>
 							</xs:annotation>
-							<xs:element name="CNPJDest" type="TCnpjOpc">
+							<xs:element name="CnpjDest" type="TCnpjOpc">
 								<xs:annotation>
-									<xs:documentation>CNPJ Destinatário</xs:documentation>
+									<xs:documentation>Cnpj Destinatário</xs:documentation>
 								</xs:annotation>
 							</xs:element>
-							<xs:element name="CPFDest" type="TCpf">
+							<xs:element name="CpfDest" type="TCpf">
 								<xs:annotation>
-									<xs:documentation>CPF Destiantário</xs:documentation>
+									<xs:documentation>Cpf Destiantário</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 						</xs:choice>

@@ -19,10 +19,10 @@ namespace NotaFiscalNet.Core.Validacao
         [Description("EV0004|O valor informado é inválido.\r\nInforme um valor maior ou igual a '{0}' e menor ou igual a '{1}'")]
         ValueOutOfRange,
 
-        [Description("EV0005|O valor informado para o CNPJ não é válido.")]
+        [Description("EV0005|O valor informado para o Cnpj não é válido.")]
         CNPJInvalido,
 
-        [Description("EV0006|O valor informado para o CPF não é válido.")]
+        [Description("EV0006|O valor informado para o Cpf não é válido.")]
         CPFInvalido,
 
         [Description("EV0007|O valor informado para o CNAE Fiscal não é válido.")]
@@ -88,7 +88,7 @@ namespace NotaFiscalNet.Core.Validacao
         [Description("EV0028|A quantidade de itens é inválida.\r\nInforme menos de '{0}' itens nesta coleção.")]
         CollectionMaxValue,
 
-        [Description("EV0029|O campo CPF ou o campo CNPJ não foi informado.")]
+        [Description("EV0029|O campo Cpf ou o campo Cnpj não foi informado.")]
         CPFouCNPJObrigatorio,
 
         [Description("EV0030|O código RENAVAM informado não é válido.")]

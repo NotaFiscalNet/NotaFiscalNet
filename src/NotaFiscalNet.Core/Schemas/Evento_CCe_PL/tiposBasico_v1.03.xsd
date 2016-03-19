@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- PL_006h - 13/05/11 - correções da NT 2011/004  // v2.0-->
 <!-- PL_006f - 29/05/10 - correcao do tipo TDec_1504 para limitar a quantidade de decimais para 4  // v2.0-->
 <!-- PL_006f - 09/05/10 - eliminação da possibilidade informar a Inscrição produtor rural na IEDest  // v2.0-->
@@ -89,7 +89,7 @@
 	</xs:simpleType>
 	<xs:simpleType name="TCnpj">
 		<xs:annotation>
-			<xs:documentation>Tipo Número do CNPJ</xs:documentation>
+			<xs:documentation>Tipo Número do Cnpj</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:whiteSpace value="preserve"/>
@@ -98,7 +98,7 @@
 	</xs:simpleType>
 	<xs:simpleType name="TCnpjVar">
 		<xs:annotation>
-			<xs:documentation>Tipo Número do CNPJ tmanho varíavel (3-14)</xs:documentation>
+			<xs:documentation>Tipo Número do Cnpj tmanho varíavel (3-14)</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:whiteSpace value="preserve"/>
@@ -107,7 +107,7 @@
 	</xs:simpleType>
 	<xs:simpleType name="TCnpjOpc">
 		<xs:annotation>
-			<xs:documentation>Tipo Número do CNPJ Opcional</xs:documentation>
+			<xs:documentation>Tipo Número do Cnpj Opcional</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:whiteSpace value="preserve"/>
@@ -117,7 +117,7 @@
 	</xs:simpleType>
 	<xs:simpleType name="TCpf">
 		<xs:annotation>
-			<xs:documentation>Tipo Número do CPF</xs:documentation>
+			<xs:documentation>Tipo Número do Cpf</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:whiteSpace value="preserve"/>
@@ -126,7 +126,7 @@
 	</xs:simpleType>
 	<xs:simpleType name="TCpfVar">
 		<xs:annotation>
-			<xs:documentation>Tipo Número do CPF de tamanho variável (3-11)</xs:documentation>
+			<xs:documentation>Tipo Número do Cpf de tamanho variável (3-11)</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:whiteSpace value="preserve"/>

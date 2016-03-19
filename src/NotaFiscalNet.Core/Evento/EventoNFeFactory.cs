@@ -55,8 +55,8 @@ namespace NotaFiscalNet.Core.Evento
             evento.Id = infEventoEl.Attribute("Id").Value;
             infEventoEl.NFElementAsEnum<OrgaoIBGE>("cOrgao", value => evento.Orgao = value);
             infEventoEl.NFElementAsEnum<TipoAmbiente>("tpAmb", value => evento.Ambiente = value);
-            infEventoEl.NFElementAsString("CNPJ", value => evento.CpfCnpjAutor = value);
-            infEventoEl.NFElementAsString("CPF", value => evento.CpfCnpjAutor = value);
+            infEventoEl.NFElementAsString("Cnpj", value => evento.CpfCnpjAutor = value);
+            infEventoEl.NFElementAsString("Cpf", value => evento.CpfCnpjAutor = value);
             infEventoEl.NFElementAsString("chNFe", value => evento.ChaveAcessoNFe = value);
             infEventoEl.NFElementAsDateTime("dhEvento", value => evento.Data = value);
             // tpEvento não é necessário por estar fixo na classe

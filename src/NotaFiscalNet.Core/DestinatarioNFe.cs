@@ -22,7 +22,7 @@ namespace NotaFiscalNet.Core
             else if (Regex.IsMatch(cnpjOuCpfOuIdEstrangeiro, "[!-ÿ]{0}|[!-ÿ]{5,14}"))
                 _idEstrangeiro = cnpjOuCpfOuIdEstrangeiro;
             else
-                throw new ApplicationException("O valor informado não é válido como CPF/CNPJ/ID ESTRANGEIRO.");
+                throw new ApplicationException("O valor informado não é válido como Cpf/Cnpj/ID ESTRANGEIRO.");
         }
 
         private string _cnpj;
@@ -35,10 +35,10 @@ namespace NotaFiscalNet.Core
         private string _email;
 
         /// <summary>
-        /// [CNPJ] Retorna ou define o CNPJ do Destinatário da Nota Fiscal
+        /// [Cnpj] Retorna ou define o Cnpj do Destinatário da Nota Fiscal
         /// </summary>
-        /// <remarks>O CNPJ e o CPF do Destinatário são mutuamente exclusivos.</remarks>
-        [NFeField(ID = "E02", FieldName = "CNPJ", DataType = "TCnpjOpc", Pattern = "[0-9]{0}|[0-9]{14}", Opcional = true
+        /// <remarks>O Cnpj e o Cpf do Destinatário são mutuamente exclusivos.</remarks>
+        [NFeField(ID = "E02", FieldName = "Cnpj", DataType = "TCnpjOpc", Pattern = "[0-9]{0}|[0-9]{14}", Opcional = true
             )]
         [ValidateField(10, true)]
         public string CNPJ
@@ -51,7 +51,7 @@ namespace NotaFiscalNet.Core
                 if (cnpj == 0)
                     return;
 
-                ValidationUtil.ValidateCNPJ(value, "CNPJ", true);
+                ValidationUtil.ValidateCNPJ(value, "Cnpj", true);
 
                 _cnpj = value;
                 _cpf = string.Empty;
@@ -59,17 +59,17 @@ namespace NotaFiscalNet.Core
         }
 
         /// <summary>
-        /// [CPF] Retorna ou define o CPF do Destinatário da Nota Fiscal
+        /// [Cpf] Retorna ou define o Cpf do Destinatário da Nota Fiscal
         /// </summary>
-        /// <remarks>O CNPJ e o CPF do Destinatário são mutuamente exclusivos.</remarks>
-        [NFeField(ID = "E03", FieldName = "CPF", DataType = "TCpf", Pattern = "[0-9]{11}", Opcional = true)]
+        /// <remarks>O Cnpj e o Cpf do Destinatário são mutuamente exclusivos.</remarks>
+        [NFeField(ID = "E03", FieldName = "Cpf", DataType = "TCpf", Pattern = "[0-9]{11}", Opcional = true)]
         [ValidateField(20, true)]
         public string CPF
         {
             get { return _cpf; }
             set
             {
-                ValidationUtil.ValidateCPF(value, "CPF", true);
+                ValidationUtil.ValidateCPF(value, "Cpf", true);
 
                 _cpf = value;
                 _cnpj = string.Empty;
@@ -222,18 +222,18 @@ namespace NotaFiscalNet.Core
         }
 
         /// <summary>
-        /// Serializa o Choice de CPF ou CNPJ
+        /// Serializa o Choice de Cpf ou Cnpj
         /// </summary>
         private void SerializeDocumentoDestinario(XmlWriter writer, NFe nfe)
         {
             if (!string.IsNullOrEmpty(CNPJ))
-                writer.WriteElementString("CNPJ", SerializationUtil.ToCNPJ(CNPJ));
+                writer.WriteElementString("Cnpj", SerializationUtil.ToCNPJ(CNPJ));
             else if (!string.IsNullOrEmpty(CPF))
-                writer.WriteElementString("CPF", SerializationUtil.ToCPF(CPF));
+                writer.WriteElementString("Cpf", SerializationUtil.ToCPF(CPF));
             else if (!string.IsNullOrEmpty(IdEstrangeiro))
                 writer.WriteElementString("idEstrangeiro", IdEstrangeiro);
             else
-                throw new InvalidOperationException("Nenhum dos campos (CNPJ, CPF, ID Estrangeiro) foram preenchidos.");
+                throw new InvalidOperationException("Nenhum dos campos (Cnpj, Cpf, ID Estrangeiro) foram preenchidos.");
         }
     }
 }

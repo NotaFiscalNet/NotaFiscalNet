@@ -62,9 +62,9 @@ namespace NotaFiscalNet.Core.Inutilizacao
         public int? Ano { get; private set; }
 
         /// <summary>
-        /// [CNPJ] Retorna o CNPJ do emitente.
+        /// [Cnpj] Retorna o Cnpj do emitente.
         /// </summary>
-        [NFeField(FieldName = "CNPJ", DataType = "TCnpj")]
+        [NFeField(FieldName = "Cnpj", DataType = "TCnpj")]
         public string Cnpj { get; private set; }
 
         /// <summary>
@@ -133,7 +133,7 @@ namespace NotaFiscalNet.Core.Inutilizacao
             infInutEl.NFElementAsEnum<UfIBGE>("cUF", value => ret.UF = value);
 
             infInutEl.NFElementAsInt32("ano", value => ret.Ano = value);
-            infInutEl.NFElementAsString("CNPJ", value => ret.Cnpj = value);
+            infInutEl.NFElementAsString("Cnpj", value => ret.Cnpj = value);
             infInutEl.NFElementAsEnum<TipoModalidadeDocumentoFiscal>("mod", value => ret.CodigoModeloDocFiscal = value);
             infInutEl.NFElementAsInt32("serie", value => ret.Serie = value);
 

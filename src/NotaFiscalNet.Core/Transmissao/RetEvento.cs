@@ -96,7 +96,7 @@ namespace NotaFiscalNet.Core.Transmissao
         public int? NumeroSequencial { get; private set; }
 
         /// <summary>
-        /// [CNPJ,CPF] Retorna ou define o Cpf ou Cnpj do Destinatário do Evento.
+        /// [Cnpj,Cpf] Retorna ou define o Cpf ou Cnpj do Destinatário do Evento.
         /// </summary>
         public string CpfCnpjDestinatario { get; private set; }
 

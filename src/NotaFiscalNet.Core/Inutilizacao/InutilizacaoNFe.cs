@@ -60,9 +60,9 @@ namespace NotaFiscalNet.Core.Inutilizacao
         }
 
         /// <summary>
-        /// [CNPJ] Retorna ou define o ano de inutilização da numeração.
+        /// [Cnpj] Retorna ou define o ano de inutilização da numeração.
         /// </summary>
-        [NFeField(FieldName = "CNPJ", DataType = "TCnpj")]
+        [NFeField(FieldName = "Cnpj", DataType = "TCnpj")]
         public string Cnpj { get; set; }
 
         /// <summary>
@@ -106,7 +106,7 @@ namespace NotaFiscalNet.Core.Inutilizacao
             writer.WriteElementString("xServ", Servico);
             writer.WriteElementString("cUF", UF.GetEnumValue());
             writer.WriteElementString("ano", Ano.ToString("D2"));
-            writer.WriteElementString("CNPJ", Cnpj);
+            writer.WriteElementString("Cnpj", Cnpj);
             writer.WriteElementString("mod", CodigoModeloDocFiscal.GetEnumValue());
             writer.WriteElementString("serie", Serie.ToString());
             writer.WriteElementString("nNFIni", NumeracaoInicial.ToString());

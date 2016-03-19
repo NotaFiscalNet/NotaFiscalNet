@@ -17,15 +17,15 @@ namespace NotaFiscalNet.Core
         private SiglaUF _UF = SiglaUF.NaoEspecificado;
 
         /// <summary>
-        /// Retorna ou define o Número do CPF (11 caracteres, apenas números) do Transportador.
+        /// Retorna ou define o Número do Cpf (11 caracteres, apenas números) do Transportador.
         /// </summary>
-        [NFeField(FieldName = "CPF", DataType = "TCpf", ID = "X05")]
+        [NFeField(FieldName = "Cpf", DataType = "TCpf", ID = "X05")]
         public string CPF
         {
             get { return _cpf; }
             set
             {
-                ValidationUtil.ValidateCPF(value, "CPF", true);
+                ValidationUtil.ValidateCPF(value, "Cpf", true);
 
                 _cpf = value;
                 _cnpj = null;
@@ -33,15 +33,15 @@ namespace NotaFiscalNet.Core
         }
 
         /// <summary>
-        /// Retorna ou define o número do CNPJ (14 caracteres, apenas números) do Transportador.
+        /// Retorna ou define o número do Cnpj (14 caracteres, apenas números) do Transportador.
         /// </summary>
-        [NFeField(FieldName = "CNPJ", DataType = "TCnpj", ID = "X04")]
+        [NFeField(FieldName = "Cnpj", DataType = "TCnpj", ID = "X04")]
         public string CNPJ
         {
             get { return _cnpj; }
             set
             {
-                ValidationUtil.ValidateCNPJ(value, "CNPJ", true);
+                ValidationUtil.ValidateCNPJ(value, "Cnpj", true);
 
                 _cnpj = value;
                 _cpf = string.Empty;
@@ -49,7 +49,7 @@ namespace NotaFiscalNet.Core
         }
 
         /// <summary>
-        /// Retorna ou define o Nome (se informado CPF) ou a Razão Social (se informado CNPJ) do
+        /// Retorna ou define o Nome (se informado Cpf) ou a Razão Social (se informado Cnpj) do
         /// Transportador. Opcional.
         /// </summary>
         [NFeField(FieldName = "xNome", DataType = "TString", ID = "X06", MinLength = 2, MaxLength = 60, Pattern = @"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}")]
@@ -133,9 +133,9 @@ namespace NotaFiscalNet.Core
             writer.WriteStartElement("transporta");
 
             if (!string.IsNullOrEmpty(CNPJ))
-                writer.WriteElementString("CNPJ", SerializationUtil.ToCNPJ(CNPJ));
+                writer.WriteElementString("Cnpj", SerializationUtil.ToCNPJ(CNPJ));
             else if (!string.IsNullOrEmpty(CPF))
-                writer.WriteElementString("CPF", SerializationUtil.ToCPF(CPF));
+                writer.WriteElementString("Cpf", SerializationUtil.ToCPF(CPF));
 
             if (!string.IsNullOrEmpty(Nome))
                 writer.WriteElementString("xNome", SerializationUtil.ToTString(Nome, 60));

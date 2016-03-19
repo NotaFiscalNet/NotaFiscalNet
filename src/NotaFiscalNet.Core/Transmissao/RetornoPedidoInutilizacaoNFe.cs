@@ -55,8 +55,8 @@ namespace NotaFiscalNet.Core.Transmissao
                 if (node != null)
                     this.Ano = node.ValueAsInt;
 
-                // CNPJ
-                node = infInutNode.SelectSingleNode("nfe:CNPJ", ns);
+                // Cnpj
+                node = infInutNode.SelectSingleNode("nfe:Cnpj", ns);
                 if (node != null)
                     this.CNPJ = node.Value;
 
@@ -133,7 +133,7 @@ namespace NotaFiscalNet.Core.Transmissao
         public int Ano { get; private set; }
 
         /// <summary>
-        /// Retorna o número do CNPJ do emitente.
+        /// Retorna o número do Cnpj do emitente.
         /// </summary>
         public string CNPJ { get; private set; }
 

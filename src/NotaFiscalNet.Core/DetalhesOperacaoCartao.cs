@@ -11,16 +11,16 @@ namespace NotaFiscalNet.Core
         private TipoBandeiraCartao _tipoBandeiraCartao;
 
         /// <summary>
-        /// Retorna ou define o CNPJ da credenciadora de cartão de crédito/débito.
+        /// Retorna ou define o Cnpj da credenciadora de cartão de crédito/débito.
         /// </summary>
-        [NFeField(ID = "YA05", FieldName = "CNPJ")]
+        [NFeField(ID = "YA05", FieldName = "Cnpj")]
         [ValidateField(1, ChaveErroValidacao.CNPJInvalido)]
         public string CNPJ
         {
             get { return _cnpj; }
             set
             {
-                ValidationUtil.ValidateCNPJ(value, "CNPJ");
+                ValidationUtil.ValidateCNPJ(value, "Cnpj");
                 _cnpj = value;
             }
         }

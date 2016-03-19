@@ -23,33 +23,33 @@ namespace NotaFiscalNet.Core
         private CodigoRegimeTributario _codigoRegimeTributario = CodigoRegimeTributario.NaoInformado;
 
         /// <summary>
-        /// [CNPJ] Retorna ou define o CNPJ do Emitente da Nota Fiscal (informar apenas números).
+        /// [Cnpj] Retorna ou define o Cnpj do Emitente da Nota Fiscal (informar apenas números).
         /// </summary>
-        /// <remarks>O CNPJ e o CPF do Emitente são mutuamente exclusivos.</remarks>
-        [NFeField(ID = "C02", FieldName = "CNPJ", DataType = "TCnpj", Pattern = "[0-9]{14}", Opcional = true)]
+        /// <remarks>O Cnpj e o Cpf do Emitente são mutuamente exclusivos.</remarks>
+        [NFeField(ID = "C02", FieldName = "Cnpj", DataType = "TCnpj", Pattern = "[0-9]{14}", Opcional = true)]
         [ValidateField(1, Validator = typeof(CNPJouCPFValidator))]
         public string CNPJ
         {
             get { return _CNPJ; }
             set
             {
-                _CNPJ = ValidationUtil.ValidateCNPJ(value, "CNPJ", true);
+                _CNPJ = ValidationUtil.ValidateCNPJ(value, "Cnpj", true);
                 _CPF = string.Empty;
             }
         }
 
         /// <summary>
-        /// [CPF] Retorna ou define o CPF do Emitente da Nota Fiscal (informar apenas números).
+        /// [Cpf] Retorna ou define o Cpf do Emitente da Nota Fiscal (informar apenas números).
         /// </summary>
-        /// <remarks>O CNPJ e o CPF do Emitente são mutuamente exclusivos.</remarks>
-        [NFeField(ID = "C02a", FieldName = "CPF", DataType = "TCpf", Pattern = "[0-9]{11}", Opcional = true)]
+        /// <remarks>O Cnpj e o Cpf do Emitente são mutuamente exclusivos.</remarks>
+        [NFeField(ID = "C02a", FieldName = "Cpf", DataType = "TCpf", Pattern = "[0-9]{11}", Opcional = true)]
         [ValidateField(2, true)]
         public string CPF
         {
             get { return _CPF; }
             set
             {
-                _CPF = ValidationUtil.ValidateCPF(value, "CPF", true);
+                _CPF = ValidationUtil.ValidateCPF(value, "Cpf", true);
                 _CNPJ = string.Empty;
             }
         }
@@ -196,14 +196,14 @@ namespace NotaFiscalNet.Core
         }
 
         /// <summary>
-        /// Serializa o Choice de CPF ou CNPJ
+        /// Serializa o Choice de Cpf ou Cnpj
         /// </summary>
         private void SerializeDocumentoEmitente(XmlWriter writer, NFe nfe)
         {
             if (!string.IsNullOrEmpty(CNPJ))
-                writer.WriteElementString("CNPJ", SerializationUtil.ToCNPJ(CNPJ));
+                writer.WriteElementString("Cnpj", SerializationUtil.ToCNPJ(CNPJ));
             else if (!string.IsNullOrEmpty(CPF))
-                writer.WriteElementString("CPF", SerializationUtil.ToCPF(CPF));
+                writer.WriteElementString("Cpf", SerializationUtil.ToCPF(CPF));
         }
     }
 }

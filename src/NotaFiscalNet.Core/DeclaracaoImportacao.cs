@@ -45,7 +45,7 @@ namespace NotaFiscalNet.Core
             writer.WriteStartElement("tpIntermedio", TipoIntermedio.GetEnumValue());
 
             if (!string.IsNullOrEmpty(CNPJ))
-                writer.WriteStartElement("CNPJ", CNPJ);
+                writer.WriteStartElement("Cnpj", CNPJ);
 
             if (UFTerceiro.IsDefined())
                 writer.WriteStartElement("UFTerceiro", UFTerceiro.GetEnumValue());
@@ -114,13 +114,13 @@ namespace NotaFiscalNet.Core
         public TipoIntermedioImportacao TipoIntermedio { get; set; }
 
         /// <summary>
-        /// [CNPJ] Retorna ou define o CNPJ do adquirinte ou do encomendante.
+        /// [Cnpj] Retorna ou define o Cnpj do adquirinte ou do encomendante.
         /// </summary>
         /// <remarks>
         /// Informação obrigatória no caso de importação por conta e ordem ou por encomenda. Informar
         /// os zeros não significativos.
         /// </remarks>
-        [NFeField(ID = "I23d", FieldName = "CNPJ", DataType = "TCnpj"),
+        [NFeField(ID = "I23d", FieldName = "Cnpj", DataType = "TCnpj"),
          ValidateField(9, ChaveErroValidacao.CampoNaoPreenchido)]
         public string CNPJ { get; set; }
 

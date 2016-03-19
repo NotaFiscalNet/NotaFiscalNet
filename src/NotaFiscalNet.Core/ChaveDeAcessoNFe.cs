@@ -20,7 +20,7 @@ namespace NotaFiscalNet.Core
         public DateTime AnoMes { get; private set; }
 
         /// <summary>
-        /// Retorna o CNPJ do Emitente.
+        /// Retorna o Cnpj do Emitente.
         /// </summary>
         public string Cnpj { get; private set; }
 

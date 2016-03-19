@@ -1648,54 +1648,55 @@ namespace NotaFiscalNet.Core
 
             foreach (var nfRefEl in nfRefEls)
             {
-                var nfRef = new ReferenciaDocFiscal();
-                Identificacao.ReferenciasDocFiscais.Add(nfRef);
-
                 var refEl = nfRefEl.Element(ns + "refNFe");
                 if (refEl != null)
                 {
-                    nfRef.TipoReferencia = TipoReferenciaDocFiscal.NFe;
-                    nfRef.ReferenciaNFe.ChaveAcessoNFe = refEl.Value;
-
+                    Identificacao.ReferenciasDocumentoFiscais.Add(new ReferenciaDocumentoFiscalNfe()
+                    {
+                        ChaveAcessoNFe = refEl.Value
+                    });
                     continue;
                 }
 
                 refEl = nfRefEl.Element(ns + "refNF");
                 if (refEl != null)
                 {
-                    nfRef.TipoReferencia = TipoReferenciaDocFiscal.NF;
+                    var nfRef = new ReferenciaDocumentoFiscalNotaFiscal();
+                    refEl.NFElementAsEnum<UfIBGE>("cUF", value => nfRef.UnidadeFederativa = value);
+                    refEl.NFElementAsString("AAMM", value => nfRef.MesAnoEmissao = DateTime.ParseExact(value, "yyMM", CultureInfo.InvariantCulture));
+                    refEl.NFElementAsString("CNPJ", value => nfRef.CNPJ = value);
+                    refEl.NFElementAsString("mod", value => nfRef.CodigoModeloDocumentoFiscal = value);
+                    refEl.NFElementAsInt32("serie", value => nfRef.SerieNf = value);
+                    refEl.NFElementAsInt32("nNF", value => nfRef.NumeroNf = value);
 
-                    refEl.NFElementAsEnum<UfIBGE>("cUF", value => nfRef.ReferenciaNF.UF = value);
-                    refEl.NFElementAsString("AAMM", value => nfRef.ReferenciaNF.MesAnoEmissao = DateTime.ParseExact(value, "yyMM", CultureInfo.InvariantCulture));
-                    refEl.NFElementAsString("CNPJ", value => nfRef.ReferenciaNF.CNPJ = value);
-                    refEl.NFElementAsString("mod", value => nfRef.ReferenciaNF.CodigoModeloDocFiscal = value);
-                    refEl.NFElementAsInt32("serie", value => nfRef.ReferenciaNF.SerieNF = value);
-                    refEl.NFElementAsInt32("nNF", value => nfRef.ReferenciaNF.NumeroNF = value);
-
+                    Identificacao.ReferenciasDocumentoFiscais.Add(nfRef);
                     continue;
                 }
 
                 refEl = nfRefEl.Element(ns + "refNFP");
                 if (refEl != null)
                 {
-                    nfRef.TipoReferencia = TipoReferenciaDocFiscal.NFProdutor;
-                    refEl.NFElementAsEnum<UfIBGE>("cUF", value => nfRef.ReferenciaNFProdutor.UF = value);
-                    refEl.NFElementAsString("AAMM", value => nfRef.ReferenciaNFProdutor.MesAnoEmissao = DateTime.ParseExact(value, "yyMM", CultureInfo.InvariantCulture));
-                    refEl.NFElementAsString("CNPJ", value => nfRef.ReferenciaNFProdutor.CNPJ = value);
-                    refEl.NFElementAsString("CPF", value => nfRef.ReferenciaNFProdutor.CNPJ = value);
-                    refEl.NFElementAsString("IE", value => nfRef.ReferenciaNFProdutor.CNPJ = value);
-                    refEl.NFElementAsString("mod", value => nfRef.ReferenciaNFProdutor.CodigoModeloDocFiscal = value);
-                    refEl.NFElementAsInt32("serie", value => nfRef.ReferenciaNFProdutor.SerieNF = value);
-                    refEl.NFElementAsInt32("nNF", value => nfRef.ReferenciaNFProdutor.NumeroNF = value);
+                    var nfRef = new ReferenciaDocumentoFiscalNotaFiscalProdutor();
+                    refEl.NFElementAsEnum<UfIBGE>("cUF", value => nfRef.UnidadeFederativa = value);
+                    refEl.NFElementAsString("AAMM", value => nfRef.MesAnoEmissao = DateTime.ParseExact(value, "yyMM", CultureInfo.InvariantCulture));
+                    refEl.NFElementAsString("CNPJ", value => nfRef.CNPJ = value);
+                    refEl.NFElementAsString("CPF", value => nfRef.CPF = value);
+                    refEl.NFElementAsString("IE", value => nfRef.InscricaoEstadual = value);
+                    refEl.NFElementAsString("mod", value => nfRef.CodigoModeloDocumentoFiscal = value);
+                    refEl.NFElementAsInt32("serie", value => nfRef.SerieNf = value);
+                    refEl.NFElementAsInt32("nNF", value => nfRef.NumeroNf = value);
 
+                    Identificacao.ReferenciasDocumentoFiscais.Add(nfRef);
                     continue;
                 }
 
                 refEl = nfRefEl.Element(ns + "refCTe");
                 if (refEl != null)
                 {
-                    nfRef.TipoReferencia = TipoReferenciaDocFiscal.CTe;
-                    nfRef.ReferenciaCTe.ReferenciaCTe = refEl.Value;
+                    Identificacao.ReferenciasDocumentoFiscais.Add(new ReferenciaDocumentoFiscalCte()
+                    {
+                        ReferenciaCte = refEl.Value
+                    });
 
                     continue;
                 }
@@ -1703,10 +1704,11 @@ namespace NotaFiscalNet.Core
                 refEl = nfRefEl.Element(ns + "refECF");
                 if (refEl != null)
                 {
-                    nfRef.TipoReferencia = TipoReferenciaDocFiscal.ECF;
-                    refEl.NFElementAsString("mod", value => nfRef.ReferenciaECF.CodigoModeloDocFiscal = value);
-                    refEl.NFElementAsInt32("nECF", value => nfRef.ReferenciaECF.NumeroECF = value);
-                    refEl.NFElementAsInt32("nCOO", value => nfRef.ReferenciaECF.NumeroCOO = value);
+                    var nfRef = new ReferenciaDocumentoFiscalEcf();
+                    refEl.NFElementAsString("mod", value => nfRef.CodigoModeloDocumentoFiscal = value);
+                    refEl.NFElementAsInt32("nECF", value => nfRef.NumeroEcf = value);
+                    refEl.NFElementAsInt32("nCOO", value => nfRef.NumeroContadorOrdemOperacao = value);
+                    Identificacao.ReferenciasDocumentoFiscais.Add(nfRef);
 
                     continue;
                 }

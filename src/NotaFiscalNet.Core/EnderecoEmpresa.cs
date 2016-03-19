@@ -14,9 +14,9 @@ namespace NotaFiscalNet.Core
         void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             if (!string.IsNullOrEmpty(CNPJ))
-                writer.WriteElementString("CNPJ", SerializationUtil.ToCNPJ(CNPJ));
+                writer.WriteElementString("Cnpj", SerializationUtil.ToCNPJ(CNPJ));
             else if (!string.IsNullOrEmpty(CPF))
-                writer.WriteElementString("CPF", SerializationUtil.ToCPF(CPF));
+                writer.WriteElementString("Cpf", SerializationUtil.ToCPF(CPF));
 
             SerializeEnderecoSimples(writer, nfe);
         }
@@ -25,10 +25,10 @@ namespace NotaFiscalNet.Core
         private string _CPF = string.Empty;
 
         /// <summary>
-        /// Retorna ou define o CNPJ da Empresa.
+        /// Retorna ou define o Cnpj da Empresa.
         /// </summary>
-        [NFeField(ID = "G02", FieldName = "CNPJ", DataType = "TCnpjOpc", Pattern = "[0-9]{0}|[0-9]{14}")]
-        [NFeField(ID = "F02", FieldName = "CNPJ", DataType = "TCnpjOpc", Pattern = "[0-9]{0}|[0-9]{14}")]
+        [NFeField(ID = "G02", FieldName = "Cnpj", DataType = "TCnpjOpc", Pattern = "[0-9]{0}|[0-9]{14}")]
+        [NFeField(ID = "F02", FieldName = "Cnpj", DataType = "TCnpjOpc", Pattern = "[0-9]{0}|[0-9]{14}")]
         [ValidateField(0, Validator = typeof(CNPJouCPFValidator))]
         public string CNPJ
         {
@@ -36,15 +36,15 @@ namespace NotaFiscalNet.Core
             set
             {
                 _CPF = string.Empty;
-                _CNPJ = ValidationUtil.ValidateCNPJ(value, "CNPJ", true);
+                _CNPJ = ValidationUtil.ValidateCNPJ(value, "Cnpj", true);
             }
         }
 
         /// <summary>
-        /// Retorna ou define o CPF da Empresa.
+        /// Retorna ou define o Cpf da Empresa.
         /// </summary>
-        [NFeField(ID = "G03", FieldName = "CPF", DataType = "TCpf", Pattern = "[0-9]{11}", Opcional = true)]
-        [NFeField(ID = "F03", FieldName = "CPF", DataType = "TCpf", Pattern = "[0-9]{11}", Opcional = true)]
+        [NFeField(ID = "G03", FieldName = "Cpf", DataType = "TCpf", Pattern = "[0-9]{11}", Opcional = true)]
+        [NFeField(ID = "F03", FieldName = "Cpf", DataType = "TCpf", Pattern = "[0-9]{11}", Opcional = true)]
         [ValidateField(1, true)]
         public string CPF
         {
@@ -52,7 +52,7 @@ namespace NotaFiscalNet.Core
             set
             {
                 _CNPJ = string.Empty;
-                _CPF = ValidationUtil.ValidateCPF(value, "CPF", true);
+                _CPF = ValidationUtil.ValidateCPF(value, "Cpf", true);
             }
         }
 

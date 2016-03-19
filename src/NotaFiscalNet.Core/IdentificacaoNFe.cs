@@ -30,7 +30,7 @@ namespace NotaFiscalNet.Core
         private TipoFinalidade _finalidade = TipoFinalidade.Normal;
         private TipoProcessoEmissaoNFe _processoEmissao = TipoProcessoEmissaoNFe.AplicativoContribuinte;
         private string _versaoAplicativoEmissao = string.Empty;
-        private ReferenciaDocFiscalCollection _nfRef = new ReferenciaDocFiscalCollection();
+        private ReferenciaDocumentoFiscalCollection _nfRef = new ReferenciaDocumentoFiscalCollection();
 
         public IdentificacaoNFe()
         {
@@ -94,7 +94,7 @@ namespace NotaFiscalNet.Core
             get { return _codigoModeloDocFiscal; }
             set
             {
-                ValidationUtil.ValidateEnum(value, "CodigoModeloDocFiscal");
+                ValidationUtil.ValidateEnum(value, "CodigoModeloDocumentoFiscal");
                 _codigoModeloDocFiscal = value;
             }
         }
@@ -125,7 +125,7 @@ namespace NotaFiscalNet.Core
             get { return _numeroNF; }
             set
             {
-                ValidationUtil.ValidateTNF(value, "NumeroNF");
+                ValidationUtil.ValidateTNF(value, "NumeroNf");
                 _numeroNF = value;
             }
         }
@@ -214,7 +214,7 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "NFref", ID = "B12a")]
         [ValidateField(13, ChaveErroValidacao.CollectionMinValue, Validator = typeof(RangeCollectionValidator),
             MinLength = 0)]
-        public ReferenciaDocFiscalCollection ReferenciasDocFiscais => _nfRef;
+        public ReferenciaDocumentoFiscalCollection ReferenciasDocumentoFiscais => _nfRef;
 
         /// <summary>
         /// [tpImp] Retorna ou define o formato de impressão do DANFE. Valor padrão 'Retrato'.
@@ -357,8 +357,8 @@ namespace NotaFiscalNet.Core
             }
 
             // Serializa as referência
-            if (ReferenciasDocFiscais.Modificado)
-                ((ISerializavel)ReferenciasDocFiscais).Serializar(writer, nfe);
+            if (ReferenciasDocumentoFiscais.Modificado)
+                ((ISerializavel)ReferenciasDocumentoFiscais).Serializar(writer, nfe);
 
             writer.WriteEndElement(); // fim do elemento 'ide'
         }

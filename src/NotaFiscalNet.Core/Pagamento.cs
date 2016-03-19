@@ -66,7 +66,7 @@ namespace NotaFiscalNet.Core
             {
                 writer.WriteStartElement("card"); // <card>
 
-                writer.WriteElementString("CNPJ", SerializationUtil.ToCNPJ(DetalhesOperacaoCartao.CNPJ));
+                writer.WriteElementString("Cnpj", SerializationUtil.ToCNPJ(DetalhesOperacaoCartao.CNPJ));
                 writer.WriteElementString("tBand", SerializationUtil.ToString2((int)DetalhesOperacaoCartao.TipoBandeira));
                 writer.WriteElementString("cAut", SerializationUtil.ToTString(DetalhesOperacaoCartao.CodigoAutorizacao, 20));
 

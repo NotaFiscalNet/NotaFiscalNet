@@ -99,16 +99,16 @@ namespace NotaFiscalNet.Core.Transmissao
         }
 
         /// <summary>
-        /// Retorna ou define o número do CNPJ do emitente. Informar apenas números.
+        /// Retorna ou define o número do Cnpj do emitente. Informar apenas números.
         /// </summary>
         public string CNPJ
         {
             get { return _cnpj; }
             set
             {
-                CheckReadOnly("CNPJ");
+                CheckReadOnly("Cnpj");
                 if (!Regex.IsMatch(value, "^[0-9]{14}$"))
-                    throw new ArgumentException("O CNPJ do emitente informado não é válido. O CNPJ deve conter 14 números, incluindo zeros não significativos.");
+                    throw new ArgumentException("O Cnpj do emitente informado não é válido. O Cnpj deve conter 14 números, incluindo zeros não significativos.");
                 _cnpj = value;
             }
         }
@@ -229,8 +229,8 @@ namespace NotaFiscalNet.Core.Transmissao
                 this.UFIBGE = (UfIBGE)infInutNode.SelectSingleNode("nfe:cUF", ns).ValueAsInt;
                 // ano
                 this.Ano = infInutNode.SelectSingleNode("nfe:ano", ns).ValueAsInt;
-                // CNPJ
-                this.CNPJ = infInutNode.SelectSingleNode("nfe:CNPJ", ns).Value;
+                // Cnpj
+                this.CNPJ = infInutNode.SelectSingleNode("nfe:Cnpj", ns).Value;
                 // mod
                 this.ModeloDocumentoFiscal = infInutNode.SelectSingleNode("nfe:mod", ns).Value;
                 // serie
@@ -277,7 +277,7 @@ namespace NotaFiscalNet.Core.Transmissao
                 writer.WriteElementString("xServ", this.Servico);
                 writer.WriteElementString("cUF", ((int)this.UFIBGE).ToString());
                 writer.WriteElementString("ano", this.Ano.ToString("00"));
-                writer.WriteElementString("CNPJ", this.CNPJ);
+                writer.WriteElementString("Cnpj", this.CNPJ);
                 writer.WriteElementString("mod", this.ModeloDocumentoFiscal);
                 writer.WriteElementString("serie", this.Serie.ToString());
                 writer.WriteElementString("nNFIni", this.NumeracaoInicialNF.ToString());
@@ -301,7 +301,7 @@ namespace NotaFiscalNet.Core.Transmissao
 
         private string MountId()
         {
-            // "ID" + cUF + CNPJ + mod + serie + nNFIni + nNFFin
+            // "ID" + cUF + Cnpj + mod + serie + nNFIni + nNFFin
             return string.Concat("ID", ((int)this.UFIBGE).ToString(), this.Ano.ToString("00"), this.CNPJ, this.ModeloDocumentoFiscal, this.Serie.ToString("000"), this.NumeracaoInicialNF.ToString("000000000"), this.NumeracaoFinalNF.ToString("000000000"));
         }
 
@@ -323,7 +323,7 @@ namespace NotaFiscalNet.Core.Transmissao
                 throw new ApplicationException("O campo UFIBGE não foi informado.");
 
             if (this.CNPJ == string.Empty)
-                throw new ApplicationException("O campo CNPJ não foi informado.");
+                throw new ApplicationException("O campo Cnpj não foi informado.");
 
             if (this.NumeracaoInicialNF == 0)
                 throw new ApplicationException("O campo NumeracaoInicialNF não foi informado.");

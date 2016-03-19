@@ -90,6 +90,7 @@
     <Compile Include="Fatura.cs" />
     <Compile Include="FiscoEmitenteNFe.cs" />
     <Compile Include="Interfaces\IDesoneracaoIcms.cs" />
+    <Compile Include="Schemas\PacoteLiberacaoPL_008h2.cs" />
     <Compile Include="TipoFormatoImpressaoDANFE.cs" />
     <Compile Include="FornecimentoDiarioCana.cs" />
     <Compile Include="FornecimentoDiarioCanaCollection.cs" />
@@ -178,8 +179,8 @@
     <Compile Include="RetencaoICMSTransporte.cs" />
     <Compile Include="RetencaoTributosFederais.cs" />
     <Compile Include="Schemas\IPacoteLiberacaoNFe.cs" />
-    <Compile Include="Schemas\PL008a.cs" />
-    <Compile Include="Schemas\NFeSchema.cs" />
+    <Compile Include="Schemas\PacoteLiberacaoPL_008a.cs" />
+    <Compile Include="Schemas\Schema.cs" />
     <Compile Include="SiglaUF.cs" />
     <Compile Include="SituacaoTributariaCOFINS.cs" />
     <Compile Include="SituacaoTributariaICMS.cs" />
@@ -314,6 +315,30 @@
     <None Include="Schemas\Evento_Canc_PL\xmldsig-core-schema_v1.01.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Schemas\Evento_CCe_PL\CCe_v1.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\Evento_CCe_PL\e110110_v1.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\Evento_CCe_PL\envCCe_v1.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\Evento_CCe_PL\leiauteCCe_v1.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\Evento_CCe_PL\procCCeNFe_v1.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\Evento_CCe_PL\retEnvCCe_v1.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\Evento_CCe_PL\tiposBasico_v1.03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\Evento_CCe_PL\xmldsig-core-schema_v1.01.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Schemas\PL_008a\consReciNFe_v3.10.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -381,6 +406,75 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Schemas\PL_008a\xmldsig-core-schema_v1.01.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\PL_008h2\consReciNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\PL_008h2\consSitNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\PL_008h2\consStatServ_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\PL_008h2\enviNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\PL_008h2\inutNFe_NoSig_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\PL_008h2\inutNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\PL_008h2\leiauteConsSitNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\PL_008h2\leiauteConsStatServ_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\PL_008h2\leiauteInutNFe_NoSig_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\PL_008h2\leiauteInutNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\PL_008h2\leiauteNFe_NoSig_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\PL_008h2\leiauteNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\PL_008h2\nfe_NoSig_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\PL_008h2\nfe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\PL_008h2\procInutNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\PL_008h2\procNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\PL_008h2\retConsReciNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\PL_008h2\retConsSitNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\PL_008h2\retConsStatServ_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\PL_008h2\retEnviNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\PL_008h2\retInutNFe_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\PL_008h2\tiposBasico_v3.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\PL_008h2\xmldsig-core-schema_v1.01.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

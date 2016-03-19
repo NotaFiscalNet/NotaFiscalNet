@@ -7,15 +7,15 @@ namespace NotaFiscalNet.Core.Tests.Comum
     public class Serializador
     {
         private readonly ISerializavel _serializavel;
-        private readonly NFe _nfe;
+        private readonly INFe _nfe;
 
-        public Serializador(ISerializavel serializavel, NFe nfe)
+        public Serializador(ISerializavel serializavel, INFe nfe)
         {
             _serializavel = serializavel;
             _nfe = nfe;
         }
 
-        public string Executar()
+        public string Serializar()
         {
             var resultado = new StringBuilder();
             using (var writer = XmlWriter.Create(resultado, new XmlWriterSettings() { OmitXmlDeclaration = true }))

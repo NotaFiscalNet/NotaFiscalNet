@@ -89,6 +89,7 @@
     <Compile Include="ExportacaoIndireta.cs" />
     <Compile Include="Fatura.cs" />
     <Compile Include="FiscoEmitenteNFe.cs" />
+    <Compile Include="INFe.cs" />
     <Compile Include="Interfaces\IDesoneracaoIcms.cs" />
     <Compile Include="Interfaces\IReferenciaDocumentoFiscal.cs" />
     <Compile Include="Schemas\PacoteLiberacaoPL_008h2.cs" />
@@ -116,7 +117,7 @@
     <Compile Include="IcmsST.cs" />
     <Compile Include="IcmsTributacaoNormal.cs" />
     <Compile Include="Interfaces\IPossuiDocumentoIdentificador.cs" />
-    <Compile Include="IdentificacaoNFe.cs" />
+    <Compile Include="IdentificacaoDocumentoFiscal.cs" />
     <Compile Include="Interfaces\IModificavel.cs" />
     <Compile Include="ImpostoCOFINS.cs" />
     <Compile Include="ImpostoCOFINSST.cs" />

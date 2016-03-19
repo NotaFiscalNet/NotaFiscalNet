@@ -131,7 +131,7 @@ namespace NotaFiscalNet.Core
                                   ValorFornecimentos > 0m || ValorTotalDeducoes > 0m
                                   || ValorLiquidoFornecimentos > 0m;
 
-        public void Serializar(XmlWriter writer, NFe nfe)
+        public void Serializar(XmlWriter writer, INFe nfe)
         {
             if (!Modificado) return;
 

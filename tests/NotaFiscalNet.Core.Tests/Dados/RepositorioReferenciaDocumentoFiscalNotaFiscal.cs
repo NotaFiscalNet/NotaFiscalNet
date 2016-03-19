@@ -3,13 +3,17 @@ using System.Collections.Generic;
 
 namespace NotaFiscalNet.Core.Tests.Dados
 {
-    public class RepositorioReferenciaDocumentoFiscalNotaFiscal
+    public class RepositorioReferenciaDocumentoFiscalNotaFiscal :
+        Repositorio<ReferenciaDocumentoFiscalNotaFiscal>
     {
-        public Dictionary<string, ReferenciaDocumentoFiscalNotaFiscal> Referencias { get; } = new Dictionary<string, ReferenciaDocumentoFiscalNotaFiscal>()
+        public override List<ReferenciaDocumentoFiscalNotaFiscal> CriarElementos()
         {
-            {"Referencia1", CriarReferencia1() },
-            {"Referencia2", CriarReferencia2() }
-        };
+            return new List<ReferenciaDocumentoFiscalNotaFiscal>()
+            {
+                CriarReferencia1(),
+                CriarReferencia2()
+            };
+        }
 
         private static ReferenciaDocumentoFiscalNotaFiscal CriarReferencia1()
         {

@@ -47,7 +47,7 @@ namespace NotaFiscalNet.Core
         public bool Modificado => !string.IsNullOrEmpty(Campo) ||
                                   !string.IsNullOrEmpty(Texto);
 
-        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
+        public void Serializar(XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("obsFisco"); // Elemento 'obsFisco'
             writer.WriteAttributeString("xCampo", SerializationUtil.ToToken(Campo, 20));

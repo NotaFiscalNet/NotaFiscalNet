@@ -26,10 +26,10 @@ namespace NotaFiscalNet.Core.Tests
         }
 
         [Theory]
-        [InlineData("2B", 1, 2, "<refECF><mod>2B</mod><nECF>1</nECF><nCOO>2</nCOO></refECF>")]
-        [InlineData("2C", 332327, 2, "<refECF><mod>2C</mod><nECF>332327</nECF><nCOO>2</nCOO></refECF>")]
-        [InlineData("2D", 4, 49304, "<refECF><mod>2D</mod><nECF>4</nECF><nCOO>49304</nCOO></refECF>")]
-        public void DeveSerializarUmaReferenciaFiscalEcf(string modelo, int ecf, int coo, string xml)
+        [InlineData("2B", 1, 2, "ReferenciaDocumentoFiscalEcf1.xml")]
+        [InlineData("2C", 332327, 2, "ReferenciaDocumentoFiscalEcf2.xml")]
+        [InlineData("2D", 4, 49304, "ReferenciaDocumentoFiscalEcf3.xml")]
+        public void DeveSerializarUmaReferenciaFiscalEcf(string modelo, int ecf, int coo, string arquivoXml)
         {
             var referencia = new ReferenciaDocumentoFiscalEcf()
             {
@@ -38,7 +38,8 @@ namespace NotaFiscalNet.Core.Tests
                 NumeroContadorOrdemOperacao = coo
             };
 
-            var resultado = new Serializador(referencia, null).Executar();
+            var resultado = new Serializador(referencia, null).Serializar();
+            var xml = new CarregadorXml(arquivoXml).Carregar();
             Assert.Equal(xml, resultado);
         }
 

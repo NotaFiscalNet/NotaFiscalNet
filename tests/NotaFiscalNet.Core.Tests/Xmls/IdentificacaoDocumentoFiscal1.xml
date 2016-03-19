@@ -1,0 +1,26 @@
+﻿<ide>
+  <cUF>13</cUF>
+  <cNF>10000001</cNF>
+  <natOp>Compra e venda</natOp>
+  <indPag>1</indPag>
+  <mod>55</mod>
+  <serie>2</serie>
+  <nNF>12345</nNF>
+  <dhEmi>2016-01-02T00:00:00-02:00</dhEmi>
+  <dhSaiEnt>2016-01-02T00:00:00-02:00</dhSaiEnt>
+  <tpNF>1</tpNF>
+  <idDest>3</idDest>
+  <cMunFG>1234567</cMunFG>
+  <tpImp>2</tpImp>
+  <tpEmis>1</tpEmis>
+  <cDV>1</cDV>
+  <tpAmb>2</tpAmb>
+  <finNFe>2</finNFe>
+  <indFinal>1</indFinal>
+  <indPres>9</indPres>
+  <procEmi>3</procEmi>
+  <verProc>2.0</verProc>
+  <NFref>
+    <refNFe>42100484684182000157550010000000020108042108</refNFe>
+  </NFref>
+</ide>

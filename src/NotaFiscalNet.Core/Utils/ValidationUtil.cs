@@ -348,9 +348,7 @@ namespace NotaFiscalNet.Core.Utils
 
         public static int ValidateTCodMunIBGE(int value, string paramName)
         {
-            //throw new NotImplementedException();
-            // TODO: Fazer
-            return value;
+            return ValidateRange(value, 1000000, 9999999, paramName);
         }
 
         public static string ValidateCNPJ(string value, string paramName)

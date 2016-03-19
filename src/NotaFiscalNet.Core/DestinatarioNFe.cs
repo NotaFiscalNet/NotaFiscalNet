@@ -182,7 +182,7 @@ namespace NotaFiscalNet.Core
             set { _email = ValidationUtil.TruncateString(value, 60); }
         }
 
-        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
+        public void Serializar(XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("dest"); // Elemento 'dest'
 
@@ -212,7 +212,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Serializa o Endereço do Destinatário
         /// </summary>
-        private void SerializeEnderecoDestinatario(XmlWriter writer, NFe nfe)
+        private void SerializeEnderecoDestinatario(XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("enderDest"); // Elemento 'enderDest'
 
@@ -224,7 +224,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Serializa o Choice de Cpf ou Cnpj
         /// </summary>
-        private void SerializeDocumentoDestinario(XmlWriter writer, NFe nfe)
+        private void SerializeDocumentoDestinario(XmlWriter writer, INFe nfe)
         {
             if (!string.IsNullOrEmpty(CNPJ))
                 writer.WriteElementString("Cnpj", SerializationUtil.ToCNPJ(CNPJ));

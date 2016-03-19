@@ -17,7 +17,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public bool Modificado => !string.IsNullOrWhiteSpace(ReferenciaCte);
 
-        public void Serializar(System.Xml.XmlWriter writer, NFe nfe)
+        public void Serializar(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteElementString("refCTe", ReferenciaCte);
         }

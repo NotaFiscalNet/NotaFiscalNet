@@ -25,6 +25,6 @@
         /// <summary>
         /// 3 - Emissão de NF-e pelo contribuinte com aplicativo fornecido pelo Fisco.
         /// </summary>
-        AplicativoFisco = 3,
+        AplicativoFisco = 3
     }
 }

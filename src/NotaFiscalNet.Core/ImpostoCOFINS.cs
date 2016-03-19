@@ -286,7 +286,7 @@ namespace NotaFiscalNet.Core
                                   SituacaoTributaria != SituacaoTributariaCOFINS.NaoEspecificado ||
                                   Valor != 0.0m;
 
-        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("COFINS"); // Elemento 'COFINS'
 
@@ -343,7 +343,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Serializa Elemento 'COFINSAliq'
         /// </summary>
-        private void SerializeCOFINSAliq(System.Xml.XmlWriter writer, NFe nfe)
+        private void SerializeCOFINSAliq(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("COFINSAliq"); // Elemento 'COFINSAliq'
             writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaCOFINS>(SituacaoTributaria))));
@@ -356,7 +356,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Serializa Elemento 'COFINSQtde'
         /// </summary>
-        private void SerializeCOFINSQtde(System.Xml.XmlWriter writer, NFe nfe)
+        private void SerializeCOFINSQtde(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("COFINSQtde"); // Elemento 'COFINSQtde'
             writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
@@ -369,7 +369,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Serializa Elemento 'COFINSNT'
         /// </summary>
-        private void SerializeCOFINSNT(System.Xml.XmlWriter writer, NFe nfe)
+        private void SerializeCOFINSNT(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("COFINSNT"); // Elemento 'COFINSNT'
             writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
@@ -379,7 +379,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Serializa Elemento 'COFINSOutr'
         /// </summary>
-        private void SerializeCOFINSOutr(System.Xml.XmlWriter writer, NFe nfe)
+        private void SerializeCOFINSOutr(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("COFINSOutr"); // Elemento 'COFINSOutr'
             writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));

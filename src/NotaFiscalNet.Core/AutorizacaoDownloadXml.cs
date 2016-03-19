@@ -62,7 +62,7 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
+        public void Serializar(XmlWriter writer, INFe nfe)
         {
             if (string.IsNullOrEmpty(CNPJ) && string.IsNullOrEmpty(CPF))
                 throw new ApplicationException("");

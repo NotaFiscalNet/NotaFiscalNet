@@ -11,7 +11,7 @@ namespace NotaFiscalNet.Core
     /// </summary>
     public sealed class EnderecoEmpresa : EnderecoSimples, ISerializavel, IPossuiDocumentoIdentificador
     {
-        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
+        public void Serializar(XmlWriter writer, INFe nfe)
         {
             if (!string.IsNullOrEmpty(CNPJ))
                 writer.WriteElementString("Cnpj", SerializationUtil.ToCNPJ(CNPJ));

@@ -221,7 +221,7 @@ namespace NotaFiscalNet.Core
                                   !String.IsNullOrEmpty(NumeroProcessoSuspensao) ||
                                   PossuiIncentivoFiscal;
 
-        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ISSQN"); // Elemento 'ISSQN'
             writer.WriteElementString("vBC", BaseCalculo.ToTDec_1302());

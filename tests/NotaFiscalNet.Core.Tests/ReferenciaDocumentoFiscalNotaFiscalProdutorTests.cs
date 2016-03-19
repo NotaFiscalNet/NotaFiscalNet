@@ -32,12 +32,13 @@ namespace NotaFiscalNet.Core.Tests
         }
 
         [Theory]
-        [InlineData("Referencia1", "<refNFP><cUF>12</cUF><AAMM>2010</AAMM><CNPJ>010010010000101</CNPJ><IE>20</IE><mod>01</mod><serie>0</serie><nNF>1</nNF></refNFP>")]
-        [InlineData("Referencia2", "<refNFP><cUF>51</cUF><AAMM>1605</AAMM><CPF>00100100101</CPF><IE>10</IE><mod>04</mod><serie>10</serie><nNF>10</nNF></refNFP>")]
-        public void DeveSerializarUmaReferenciaDocumentoFiscalNotaFiscalProdutor(string chaveReferencia, string xml)
+        [InlineData("1", "ReferenciaDocumentoFiscalNotaFiscalProdutor1.xml")]
+        [InlineData("2", "ReferenciaDocumentoFiscalNotaFiscalProdutor2.xml")]
+        public void DeveSerializarUmaReferenciaDocumentoFiscalNotaFiscalProdutor(string chaveReferencia, string arquivoXml)
         {
             var referencia = _repositorio.Referencias[chaveReferencia];
-            var resultado = new Serializador(referencia, null).Executar();
+            var resultado = new Serializador(referencia, null).Serializar();
+            var xml = new CarregadorXml(arquivoXml).Carregar();
             Assert.Equal(xml, resultado);
         }
 

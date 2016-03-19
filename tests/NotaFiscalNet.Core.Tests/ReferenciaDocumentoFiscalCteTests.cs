@@ -1,4 +1,5 @@
-﻿using NotaFiscalNet.Core.Tests.Comum;
+﻿using System.Xml;
+using NotaFiscalNet.Core.Tests.Comum;
 using Xunit;
 
 namespace NotaFiscalNet.Core.Tests
@@ -23,17 +24,18 @@ namespace NotaFiscalNet.Core.Tests
         }
 
         [Theory]
-        [InlineData(123, "<refCTe>123</refCTe>")]
-        [InlineData(456, "<refCTe>456</refCTe>")]
-        [InlineData(789, "<refCTe>789</refCTe>")]
-        public void DeveSerializarUmaReferenciaFiscalEcf(string cte, string xml)
+        [InlineData(123, "ReferenciaDocumentoFiscalCte1.xml")]
+        [InlineData(789, "ReferenciaDocumentoFiscalCte2.xml")]
+        public void DeveSerializarUmaReferenciaFiscalEcf(string cte, string arquivoXml)
         {
             var referencia = new ReferenciaDocumentoFiscalCte()
             {
                 ReferenciaCte = cte
             };
 
-            var resultado = new Serializador(referencia, null).Executar();
+            var resultado = new Serializador(referencia, null).Serializar();
+            var xml = new CarregadorXml(arquivoXml).Carregar();
+
             Assert.Equal(xml, resultado);
         }
     }

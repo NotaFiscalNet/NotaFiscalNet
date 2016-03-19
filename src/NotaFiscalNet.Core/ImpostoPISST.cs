@@ -111,7 +111,7 @@ namespace NotaFiscalNet.Core
                                   BaseCalculo != 0m ||
                                   Valor != 0m;
 
-        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("PISST"); // Elemento 'PISST'
             switch (TipoCalculo)

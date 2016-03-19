@@ -18,7 +18,7 @@ namespace NotaFiscalNet.Core
                                           !string.IsNullOrEmpty(NomeMunicipio) ||
                                           UF != SiglaUF.NaoEspecificado;
 
-        internal void SerializeEnderecoSimples(XmlWriter writer, NFe nfe)
+        internal void SerializeEnderecoSimples(XmlWriter writer, INFe nfe)
         {
             writer.WriteElementString("xLgr", Logradouro.ToToken(60));
             writer.WriteElementString("nro", Numero.ToToken(60));

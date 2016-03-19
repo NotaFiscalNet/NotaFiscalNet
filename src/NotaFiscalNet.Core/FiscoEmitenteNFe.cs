@@ -11,7 +11,7 @@ namespace NotaFiscalNet.Core
     /// </summary>
     public sealed class FiscoEmitenteNFe : ISerializavel, IModificavel
     {
-        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
+        public void Serializar(XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("avulsa");
 

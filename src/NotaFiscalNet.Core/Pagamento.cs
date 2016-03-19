@@ -55,7 +55,7 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "YA04", FieldName = "card"), ValidateField(3, true)]
         public DetalhesOperacaoCartao DetalhesOperacaoCartao { get; set; }
 
-        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("pag"); // <pag>
 

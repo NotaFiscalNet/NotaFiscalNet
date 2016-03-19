@@ -551,7 +551,7 @@ namespace NotaFiscalNet.Core
                                   ValorST != 0m ||
                                   ValorSN != 0m;
 
-        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMS"); // Elemento 'ICMS'
 
@@ -627,7 +627,7 @@ namespace NotaFiscalNet.Core
             writer.WriteEndElement(); // Elemento 'ICMS'
         }
 
-        private void SerializeICMSSN900(System.Xml.XmlWriter writer, NFe nfe)
+        private void SerializeICMSSN900(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMSSN900"); // Elemento 'ICMSSN900'
             writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));
@@ -660,7 +660,7 @@ namespace NotaFiscalNet.Core
             writer.WriteEndElement();
         }
 
-        private void SerializeICMSSN500(System.Xml.XmlWriter writer, NFe nfe)
+        private void SerializeICMSSN500(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMSSN500"); // Elemento 'ICMSSN500'
             writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));
@@ -670,7 +670,7 @@ namespace NotaFiscalNet.Core
             writer.WriteEndElement();
         }
 
-        private void SerializeICMSSN202(System.Xml.XmlWriter writer, NFe nfe)
+        private void SerializeICMSSN202(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMSSN202"); // Elemento 'ICMSSN202'
             writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));
@@ -686,7 +686,7 @@ namespace NotaFiscalNet.Core
             writer.WriteEndElement();
         }
 
-        private void SerializeICMSSN201(System.Xml.XmlWriter writer, NFe nfe)
+        private void SerializeICMSSN201(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMSSN201"); // Elemento 'ICMSSN201'
             writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));
@@ -704,7 +704,7 @@ namespace NotaFiscalNet.Core
             writer.WriteEndElement();
         }
 
-        private void SerializeICMSSN102(System.Xml.XmlWriter writer, NFe nfe)
+        private void SerializeICMSSN102(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMSSN102"); // Elemento 'ICMSSN102'
             writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));
@@ -715,7 +715,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Serializa o ICMS Simples Nacional 101
         /// </summary>
-        private void SerializeICMSSN101(System.Xml.XmlWriter writer, NFe nfe)
+        private void SerializeICMSSN101(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMSSN101"); // Elemento 'ICMSSN101'
             writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));
@@ -728,7 +728,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Serializa o ICMS 00
         /// </summary>
-        private void SerializeICMS00(System.Xml.XmlWriter writer, NFe nfe)
+        private void SerializeICMS00(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMS00"); // Elemento 'ICMS00'
             writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));
@@ -743,7 +743,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Serializa o ICMS 10
         /// </summary>
-        private void SerializeICMS10(System.Xml.XmlWriter writer, NFe nfe)
+        private void SerializeICMS10(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMS10"); // Elemento 'ICMS10'
             writer.WriteElementString("orig", SerializationUtil.GetEnumValue(OrigemMercadoria));
@@ -766,7 +766,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Serializa o ICMS 20
         /// </summary>
-        private void SerializeICMS20(System.Xml.XmlWriter writer, NFe nfe)
+        private void SerializeICMS20(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMS20"); // Elemento 'ICMS20'
             writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));
@@ -782,7 +782,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Serializa o ICMS 30
         /// </summary>
-        private void SerializeICMS30(System.Xml.XmlWriter writer, NFe nfe)
+        private void SerializeICMS30(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMS30"); // Elemento 'ICMS30'
             writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));
@@ -801,7 +801,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Serializa o ICMS 40, 41 e 50
         /// </summary>
-        private void SerializeICMS40(System.Xml.XmlWriter writer, NFe nfe)
+        private void SerializeICMS40(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMS40"); // Elemento 'ICMS40'
             writer.WriteElementString("orig", SerializationUtil.GetEnumValue(OrigemMercadoria));
@@ -818,7 +818,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Serializa o ICMS 51
         /// </summary>
-        private void SerializeICMS51(System.Xml.XmlWriter writer, NFe nfe)
+        private void SerializeICMS51(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMS51"); // Elemento 'ICMS51'
             writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));
@@ -839,7 +839,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Serializa o ICMS 60
         /// </summary>
-        private void SerializeICMS60(System.Xml.XmlWriter writer, NFe nfe)
+        private void SerializeICMS60(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMS60"); // Elemento 'ICMS60'
             writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));
@@ -852,7 +852,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Serializa o ICMS 70
         /// </summary>
-        private void SerializeICMS70(System.Xml.XmlWriter writer, NFe nfe)
+        private void SerializeICMS70(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMS70"); // Elemento 'ICMS70'
             writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));
@@ -876,7 +876,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Serializa o ICMS 90
         /// </summary>
-        private void SerializeICMS90(System.Xml.XmlWriter writer, NFe nfe)
+        private void SerializeICMS90(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMS90"); // Elemento 'ICMS90'
             writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));

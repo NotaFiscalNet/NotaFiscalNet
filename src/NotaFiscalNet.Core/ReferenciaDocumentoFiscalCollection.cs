@@ -18,7 +18,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public bool Modificado => this.Any(item => item.Modificado);
 
-        public void Serializar(XmlWriter writer, NFe nfe)
+        public void Serializar(XmlWriter writer, INFe nfe)
         {
             if (!Modificado)
                 return;

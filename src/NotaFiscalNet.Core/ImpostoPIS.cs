@@ -285,7 +285,7 @@ namespace NotaFiscalNet.Core
                                   SituacaoTributaria != SituacaoTributariaPIS.NaoEspecificado ||
                                   Valor != 0m;
 
-        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("PIS"); // Elemento 'PIS'
             switch (SituacaoTributaria)
@@ -341,7 +341,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Serializa Elemento 'PISAliq'
         /// </summary>
-        private void SerializePISAliq(System.Xml.XmlWriter writer, NFe nfe)
+        private void SerializePISAliq(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("PISAliq"); // Elemento 'PISAliq'
             writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaPIS>(SituacaoTributaria))));
@@ -354,7 +354,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Serializa Elemento 'PISQtde'
         /// </summary>
-        private void SerializePISQtde(System.Xml.XmlWriter writer, NFe nfe)
+        private void SerializePISQtde(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("PISQtde"); // Elemento 'PISQtde'
             writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaPIS>(SituacaoTributaria))));
@@ -367,7 +367,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Serializa Elemento 'PISNT'
         /// </summary>
-        private void SerializePISNT(System.Xml.XmlWriter writer, NFe nfe)
+        private void SerializePISNT(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("PISNT"); // Elemento 'PISNT'
             writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaPIS>(SituacaoTributaria))));
@@ -377,7 +377,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Serializa Elemento 'PISOutr'
         /// </summary>
-        private void SerializePISOutr(System.Xml.XmlWriter writer, NFe nfe)
+        private void SerializePISOutr(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("PISOutr"); // Elemento 'PISOutr'
             writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaPIS>(SituacaoTributaria))));

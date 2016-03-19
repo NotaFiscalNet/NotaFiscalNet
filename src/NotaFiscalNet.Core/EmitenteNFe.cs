@@ -158,7 +158,7 @@ namespace NotaFiscalNet.Core
             set { _codigoRegimeTributario = ValidationUtil.ValidateEnum(value, "CodigoRegimeTributario"); }
         }
 
-        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
+        public void Serializar(XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("emit"); // Elemento 'emit'
 
@@ -186,7 +186,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Serializa o Endereço do Emitente
         /// </summary>
-        private void SerializeEnderecoEmitente(XmlWriter writer, NFe nfe)
+        private void SerializeEnderecoEmitente(XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("enderEmit"); // Elemento 'enderEmit'
 
@@ -198,7 +198,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Serializa o Choice de Cpf ou Cnpj
         /// </summary>
-        private void SerializeDocumentoEmitente(XmlWriter writer, NFe nfe)
+        private void SerializeDocumentoEmitente(XmlWriter writer, INFe nfe)
         {
             if (!string.IsNullOrEmpty(CNPJ))
                 writer.WriteElementString("Cnpj", SerializationUtil.ToCNPJ(CNPJ));

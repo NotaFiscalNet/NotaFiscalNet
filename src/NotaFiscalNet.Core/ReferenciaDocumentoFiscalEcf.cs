@@ -46,7 +46,7 @@ namespace NotaFiscalNet.Core
                                   NumeroEcf != 0 ||
                                   NumeroContadorOrdemOperacao != 0;
 
-        public void Serializar(System.Xml.XmlWriter writer, NFe nfe)
+        public void Serializar(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("refECF");
             writer.WriteElementString("mod", CodigoModeloDocumentoFiscal);

@@ -63,7 +63,7 @@ namespace NotaFiscalNet.Core
             set { _valorSTUFDestino = ValidationUtil.ValidateTDec_1302(value, "ValorSTUFDestino"); }
         }
 
-        protected override void SerializeInternal(XmlWriter writer, NFe nfe)
+        protected override void SerializeInternal(XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMSST");
 

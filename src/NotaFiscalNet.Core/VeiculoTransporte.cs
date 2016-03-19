@@ -69,7 +69,7 @@ namespace NotaFiscalNet.Core
                                   UF != SiglaUF.NaoEspecificado ||
                                   !string.IsNullOrEmpty(RNTC);
 
-        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteElementString("placa", SerializationUtil.ToToken(Placa.ToUpper(), 8));
             writer.WriteElementString("UF", UF.ToString());

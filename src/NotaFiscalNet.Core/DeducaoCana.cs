@@ -29,7 +29,7 @@ namespace NotaFiscalNet.Core
         public bool Modificado => !string.IsNullOrEmpty(Descricao) ||
                                   Valor != 0;
 
-        public void Serializar(XmlWriter writer, NFe nfe)
+        public void Serializar(XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("deduc");
 

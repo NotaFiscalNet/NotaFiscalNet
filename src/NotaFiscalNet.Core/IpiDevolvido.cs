@@ -20,7 +20,7 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("IPI");
             writer.WriteStartElement("vIPIDevol", ValorIpiDevolvido.ToTDec_1302());

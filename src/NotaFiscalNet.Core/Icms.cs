@@ -29,11 +29,11 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public virtual SituacaoTributariaICMS CST { get; protected set; }
 
-        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
+        public void Serializar(XmlWriter writer, INFe nfe)
         {
             SerializeInternal(writer, nfe);
         }
 
-        protected abstract void SerializeInternal(XmlWriter writer, NFe nfe);
+        protected abstract void SerializeInternal(XmlWriter writer, INFe nfe);
     }
 }

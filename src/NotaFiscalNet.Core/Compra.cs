@@ -9,7 +9,7 @@ namespace NotaFiscalNet.Core
     /// </summary>
     public sealed class Compra : ISerializavel, IModificavel
     {
-        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
+        public void Serializar(XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("compra"); // Elemento 'compra'
 

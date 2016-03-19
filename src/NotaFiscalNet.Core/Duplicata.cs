@@ -10,7 +10,7 @@ namespace NotaFiscalNet.Core
     /// </summary>
     public sealed class Duplicata : ISerializavel, IModificavel
     {
-        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
+        public void Serializar(XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("dup"); // Elemento 'dup'
             if (!string.IsNullOrEmpty(Numero))

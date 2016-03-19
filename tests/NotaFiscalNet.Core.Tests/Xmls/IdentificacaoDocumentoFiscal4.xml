@@ -1,0 +1,25 @@
+﻿<ide>
+  <cUF>33</cUF>
+  <cNF>10000004</cNF>
+  <natOp>Venda a prazo</natOp>
+  <indPag>0</indPag>
+  <mod>65</mod>
+  <serie>3</serie>
+  <nNF>67889</nNF>
+  <dhEmi>2016-01-02T00:00:00-02:00</dhEmi>
+  <dhSaiEnt>2016-10-03T00:00:00-03:00</dhSaiEnt>
+  <tpNF>0</tpNF>
+  <idDest>2</idDest>
+  <cMunFG>9999999</cMunFG>
+  <tpImp>2</tpImp>
+  <tpEmis>5</tpEmis>
+  <cDV>1</cDV>
+  <tpAmb>1</tpAmb>
+  <finNFe>4</finNFe>
+  <indFinal>0</indFinal>
+  <indPres>2</indPres>
+  <procEmi>1</procEmi>
+  <verProc>3.0</verProc>
+  <dhCont>0001-01-01T00:00:00-02:00</dhCont>
+  <xJust />
+</ide>

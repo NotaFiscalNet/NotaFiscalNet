@@ -16,7 +16,7 @@ namespace NotaFiscalNet.Core
             Produto = produto;
         }
 
-        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
+        public void Serializar(XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("comb");
 

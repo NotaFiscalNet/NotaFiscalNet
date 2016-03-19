@@ -46,7 +46,7 @@ namespace NotaFiscalNet.Core
         public bool Modificado => !string.IsNullOrEmpty(Identificador) ||
                                   OrigemProcesso != OrigemProcesso.NaoEspecificado;
 
-        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("procRef"); // Elemento 'procRef'
             writer.WriteElementString("nProc", SerializationUtil.ToToken(Identificador, 60));

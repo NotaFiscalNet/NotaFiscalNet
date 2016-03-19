@@ -12,7 +12,7 @@ namespace NotaFiscalNet.Core
     /// <remarks>Equivalente ao tipo TEndereco no xml.</remarks>
     public sealed class Endereco : EnderecoSimples, ISerializavel
     {
-        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
+        public void Serializar(XmlWriter writer, INFe nfe)
         {
             SerializeEnderecoSimples(writer, nfe);
 

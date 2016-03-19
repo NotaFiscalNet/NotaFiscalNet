@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Moq, Version=4.2.1510.2205, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\..\src\packages\Moq.4.2.1510.2205\lib\net40\Moq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -59,9 +63,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comum\CarregadorXml.cs" />
     <Compile Include="Comum\Serializador.cs" />
+    <Compile Include="Dados\Repositorio.cs" />
+    <Compile Include="Dados\RepositorioIdentificacaoDocumentoFiscal.cs" />
     <Compile Include="Dados\RepositorioReferenciaDocumentoFiscalNotaFiscal.cs" />
     <Compile Include="Dados\RepositorioReferenciaDocumentoFiscalNotaFiscalProdutor.cs" />
+    <Compile Include="IdentificacaoDocumentoFiscalTests.cs" />
     <Compile Include="ReferenciaDocumentoFiscalCollectionTests.cs" />
     <Compile Include="ReferenciaDocumentoFiscalNfeTests.cs" />
     <Compile Include="ReferenciaDocumentoFiscalCteTests.cs" />
@@ -81,6 +89,50 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Xmls\IdentificacaoDocumentoFiscal4.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xmls\IdentificacaoDocumentoFiscal5.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xmls\IdentificacaoDocumentoFiscal3.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xmls\IdentificacaoDocumentoFiscal2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xmls\IdentificacaoDocumentoFiscal1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xmls\ReferenciaDocumentoFiscalCollection1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xmls\ReferenciaDocumentoFiscalCte2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xmls\ReferenciaDocumentoFiscalCte1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xmls\ReferenciaDocumentoFiscalEcf2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xmls\ReferenciaDocumentoFiscalEcf3.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xmls\ReferenciaDocumentoFiscalEcf1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xmls\ReferenciaDocumentoFiscalNfe1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xmls\ReferenciaDocumentoFiscalNotaFiscalProdutor2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xmls\ReferenciaDocumentoFiscalNotaFiscalProdutor1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

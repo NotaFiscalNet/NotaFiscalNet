@@ -268,7 +268,7 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMSTot");
             writer.WriteElementString("vBC", SerializationUtil.ToTDec_1302(BaseCalculo));

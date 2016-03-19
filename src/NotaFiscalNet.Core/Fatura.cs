@@ -9,7 +9,7 @@ namespace NotaFiscalNet.Core
     /// </summary>
     public sealed class Fatura : ISerializavel, IModificavel
     {
-        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
+        public void Serializar(XmlWriter writer, INFe nfe)
         {
             if (Modificado)
             {

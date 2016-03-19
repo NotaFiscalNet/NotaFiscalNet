@@ -9,11 +9,11 @@
         /// <summary>
         /// Nota Fiscal Eletrônica (NF-e).
         /// </summary>
-        NFe = 55,
+        Nfe = 55,
 
         /// <summary>
         /// Nota Fiscal de Consumidor Eletrônica (NFC-e).
         /// </summary>
-        NFCe = 65
+        Nfce = 65
     }
 }

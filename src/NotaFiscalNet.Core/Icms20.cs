@@ -112,7 +112,7 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        protected override void SerializeInternal(XmlWriter writer, NFe nfe)
+        protected override void SerializeInternal(XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMS20");
 

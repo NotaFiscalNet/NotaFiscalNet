@@ -9,7 +9,7 @@ namespace NotaFiscalNet.Core
     {
         private const int CAPACIDADE = 10;
 
-        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
+        public void Serializar(XmlWriter writer, INFe nfe)
         {
             foreach (var autorizacao in this)
             {

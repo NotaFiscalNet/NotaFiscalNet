@@ -37,9 +37,8 @@ namespace NotaFiscalNet.Core.Tests
                     ChaveAcessoNFe = "42100484684182000157550010000000020108042108"
                 }
             };
-            var xml = "<NFref><refNFe>42100484684182000157550010000000020108042108</refNFe></NFref>";
-
-            var resultado = new Serializador(colecao, null).Executar();
+            var resultado = new Serializador(colecao, null).Serializar();
+            var xml = new CarregadorXml("ReferenciaDocumentoFiscalCollection1.xml").Carregar();
             Assert.Equal(xml, resultado);
         }
 
@@ -49,7 +48,7 @@ namespace NotaFiscalNet.Core.Tests
             var colecao = new ReferenciaDocumentoFiscalCollection();
             var xml = string.Empty;
 
-            var resultado = new Serializador(colecao, null).Executar();
+            var resultado = new Serializador(colecao, null).Serializar();
             Assert.Equal(xml, resultado);
         }
 
@@ -59,7 +58,7 @@ namespace NotaFiscalNet.Core.Tests
             var colecao = new ReferenciaDocumentoFiscalCollection() { new ReferenciaDocumentoFiscalNfe() };
             var xml = string.Empty;
 
-            var resultado = new Serializador(colecao, null).Executar();
+            var resultado = new Serializador(colecao, null).Serializar();
             Assert.Equal(xml, resultado);
         }
 

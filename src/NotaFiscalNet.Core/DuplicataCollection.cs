@@ -24,7 +24,7 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
+        public void Serializar(XmlWriter writer, INFe nfe)
         {
             foreach (var duplicata in this)
             {

@@ -23,7 +23,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public bool Modificado => !string.IsNullOrEmpty(ChaveAcessoNFe);
 
-        public void Serializar(System.Xml.XmlWriter writer, NFe nfe)
+        public void Serializar(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteElementString("refNFe", ChaveAcessoNFe);
         }

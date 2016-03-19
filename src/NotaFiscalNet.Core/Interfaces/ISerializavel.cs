@@ -4,7 +4,7 @@ namespace NotaFiscalNet.Core.Interfaces
 {
     public interface ISerializavel
     {
-        void Serializar(XmlWriter writer, NFe nfe);
+        void Serializar(XmlWriter writer, INFe nfe);
 
         //void Deserialize(XmlReader reader);
     }

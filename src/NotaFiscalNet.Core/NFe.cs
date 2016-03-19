@@ -17,9 +17,9 @@ namespace NotaFiscalNet.Core
     /// Representa uma Nota Fiscal Eletrônica.
     /// </summary>
 
-    public sealed class NFe : ISerializavel
+    public sealed class NFe : ISerializavel, INFe
     {
-        private readonly IdentificacaoNFe _ide = new IdentificacaoNFe();
+        private readonly IdentificacaoDocumentoFiscal _ide = new IdentificacaoDocumentoFiscal();
         private readonly EmitenteNFe _emit = new EmitenteNFe();
         private readonly FiscoEmitenteNFe _avulsa = new FiscoEmitenteNFe();
         private readonly EnderecoEmpresa _retirada = new EnderecoEmpresa();
@@ -67,14 +67,14 @@ namespace NotaFiscalNet.Core
                 if (Emitente.Endereco == null)
                     throw new InvalidOperationException("As informações de Endereço do Emitente da Nota Fiscal Eletrônica não foram informadas.");
 
-                ufEmitente = ((int)Identificacao.UFEnvio).ToString("00"); // 2 digitos
+                ufEmitente = ((int)Identificacao.UnidadeFederativaEmitente).ToString("00"); // 2 digitos
                 aammEmissaoNFe = Identificacao.DataEmissao.ToString("yyMM"); // 4 digitos
                 cnpjEmitente = Emitente.CNPJ.PadLeft(14, '0'); // 14 digitos
-                mod = ((int)Identificacao.CodigoModeloDocFiscal).ToString("00"); // 2 digitos
+                mod = ((int)Identificacao.ModalidadeDocumentoFiscal).ToString("00"); // 2 digitos
                 serie = Identificacao.Serie.ToString("000"); // 3 digitos no formato (0|[1-9]{1}[0-9]{0,2}")
-                nNF = Identificacao.NumeroNF.ToString("000000000"); // 9 digitos
+                nNF = Identificacao.NumeroDocumentoFiscal.ToString("000000000"); // 9 digitos
                 tpEmis = ((int)Identificacao.TipoEmissao).ToString("0");
-                cNF = Identificacao.CodigoNF.ToString("00000000"); // 8 digitos
+                cNF = Identificacao.CodigoNumerico.ToString("00000000"); // 8 digitos
 
                 // monta a chave de acesso da Nota Fiscal Eletrônica.
                 string chave = string.Concat(ufEmitente, aammEmissaoNFe, cnpjEmitente, mod, serie, nNF, tpEmis, cNF);
@@ -89,7 +89,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(FieldName = "cDV", DataType = "token", ID = "B23", Pattern = "[0-9]{1}")]
         [ValidateField(3, true)]
-        public int ChaveAcessoDV
+        public int DigitoVerificadorChaveAcesso
         {
             get
             {
@@ -104,7 +104,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(FieldName = "ide", ID = "B01")]
         [ValidateField(4)]
-        public IdentificacaoNFe Identificacao => _ide;
+        public IdentificacaoDocumentoFiscal Identificacao => _ide;
 
         /// <summary>
         /// Retorna as informações do Emitente da Nota Fiscal Eletrônica.
@@ -215,7 +215,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public AquisicaoCana AquisicoesCana => _cana;
 
-        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
+        public void Serializar(XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("NFe", Constants.NamespacePortalFiscalNFe);
 
@@ -269,7 +269,7 @@ namespace NotaFiscalNet.Core
         /// <param name="writer"></param>
         private void RenderPagamentos(XmlWriter writer)
         {
-            if (Identificacao.CodigoModeloDocFiscal == TipoModalidadeDocumentoFiscal.NFCe && Pagamentos.Count > 0)
+            if (Identificacao.ModalidadeDocumentoFiscal == TipoModalidadeDocumentoFiscal.Nfce && Pagamentos.Count > 0)
                 RenderEntity(Pagamentos, writer);
         }
 
@@ -1607,13 +1607,13 @@ namespace NotaFiscalNet.Core
 
             var ide = Identificacao;
 
-            ide.UFEnvio = ideEl.NFElementAsEnum<UfIBGE>("cUF");
-            ide.CodigoNF = ideEl.NFElementAsInt32("cNF");
+            ide.UnidadeFederativaEmitente = ideEl.NFElementAsEnum<UfIBGE>("cUF");
+            ide.CodigoNumerico = ideEl.NFElementAsInt32("cNF");
             ide.NaturezaOperacao = ideEl.NFElementAsString("natOp");
             ide.FormaPagamento = ideEl.NFElementAsEnum<IndicadorFormaPagamento>("indPag");
-            ide.CodigoModeloDocFiscal = ideEl.NFElementAsEnum<TipoModalidadeDocumentoFiscal>("mod");
+            ide.ModalidadeDocumentoFiscal = ideEl.NFElementAsEnum<TipoModalidadeDocumentoFiscal>("mod");
             ide.Serie = ideEl.NFElementAsInt32("serie");
-            ide.NumeroNF = ideEl.NFElementAsInt32("nNF");
+            ide.NumeroDocumentoFiscal = ideEl.NFElementAsInt32("nNF");
             ide.DataEmissao = ideEl.NFElementAsDateTime("dhEmi");
 
             var dhSaiEntEl = ideEl.Element(ns + "dhSaiEnt");
@@ -1623,7 +1623,7 @@ namespace NotaFiscalNet.Core
             ide.TipoNotaFiscal = ideEl.NFElementAsEnum<TipoNotaFiscal>("tpNF");
             ide.IdentificadorLocalDestinoOperacao = ideEl.NFElementAsEnum<TipoIdentificadorLocalDestinoOperacao>("idDest");
             ide.CodigoMunicipioFatoGerador = ideEl.NFElementAsInt32("cMunFG");
-            ide.TipoImpressao = ideEl.NFElementAsEnum<TipoFormatoImpressaoDANFE>("tpImp");
+            ide.TipoImpressao = ideEl.NFElementAsEnum<TipoFormatoImpressaoDanfe>("tpImp");
             ide.TipoEmissao = ideEl.NFElementAsEnum<TipoEmissaoNFe>("tpEmis");
             ide.Ambiente = ideEl.NFElementAsEnum<TipoAmbiente>("tpAmb");
             ide.Finalidade = ideEl.NFElementAsEnum<TipoFinalidade>("finNFe");

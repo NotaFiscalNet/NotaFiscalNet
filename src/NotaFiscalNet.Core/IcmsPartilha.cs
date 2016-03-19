@@ -216,7 +216,7 @@ namespace NotaFiscalNet.Core
             set { _ufSTDevido = ValidationUtil.ValidateEnumOptional(value, SiglaUF.NaoEspecificado, "UFST"); }
         }
 
-        protected override void SerializeInternal(XmlWriter writer, NFe nfe)
+        protected override void SerializeInternal(XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMSPart");
 

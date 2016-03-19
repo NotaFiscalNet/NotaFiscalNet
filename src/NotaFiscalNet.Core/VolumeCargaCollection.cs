@@ -14,7 +14,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public bool Modificado => this.Any(item => item.Modificado);
 
-        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
+        public void Serializar(XmlWriter writer, INFe nfe)
         {
             foreach (var volume in this.Where(volume => volume.Modificado))
             {

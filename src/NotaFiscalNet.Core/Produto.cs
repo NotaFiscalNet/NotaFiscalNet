@@ -557,7 +557,7 @@ namespace NotaFiscalNet.Core
             _detalhamentoCombustivel = new Combustivel(this);
         }
 
-        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
+        public void Serializar(XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("det");
             writer.WriteAttributeString("nItem", NumeroItem.ToString());
@@ -655,7 +655,7 @@ namespace NotaFiscalNet.Core
             return !string.IsNullOrEmpty(value) && value.Length > 0;
         }
 
-        private void Render(ISerializavel entity, XmlWriter writer, NFe nfe)
+        private void Render(ISerializavel entity, XmlWriter writer, INFe nfe)
         {
             entity.Serializar(writer, nfe);
         }

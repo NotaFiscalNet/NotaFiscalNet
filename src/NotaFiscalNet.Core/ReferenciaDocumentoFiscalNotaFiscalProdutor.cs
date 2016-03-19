@@ -96,7 +96,7 @@ namespace NotaFiscalNet.Core
                                   SerieNf != 0 ||
                                   NumeroNf != 0;
 
-        public void Serializar(System.Xml.XmlWriter writer, NFe nfe)
+        public void Serializar(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("refNFP");
             writer.WriteElementString("cUF", SerializationUtil.GetEnumValue<UfIBGE>(UnidadeFederativa));

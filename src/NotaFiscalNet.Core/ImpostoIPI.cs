@@ -388,7 +388,7 @@ namespace NotaFiscalNet.Core
                                   Valor != 0 ||
                                   ValorUnidade != 0;
 
-        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("IPI"); // Elemento 'IPI'
 
@@ -431,7 +431,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Serializa o Elemento IPITrib
         /// </summary>
-        private void SerializeIPITrib(System.Xml.XmlWriter writer, NFe nfe)
+        private void SerializeIPITrib(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("IPITrib"); // Elemento 'IPITrib'
             writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaIPI>(SituacaoTributaria))));
@@ -454,7 +454,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Serializa o Elemento IPINT
         /// </summary>
-        private void SerializeIPINT(System.Xml.XmlWriter writer, NFe nfe)
+        private void SerializeIPINT(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("IPINT"); // Elemento 'IPINT'
             writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaIPI>(SituacaoTributaria))));

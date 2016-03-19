@@ -67,7 +67,7 @@ namespace NotaFiscalNet.Core
                                   !string.IsNullOrEmpty(LocalEmbarque) ||
                                   !string.IsNullOrEmpty(LocalDespacho);
 
-        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("exporta"); // Elemento 'exporta'
 

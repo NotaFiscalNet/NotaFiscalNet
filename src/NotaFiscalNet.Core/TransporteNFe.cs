@@ -101,7 +101,7 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "balsa", DataType = "TString", Pattern = "[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}", MinLength = 1, MaxLength = 20, Opcional = true), ValidateField(8, true)]
         public string Balsa { get; set; }
 
-        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("transp");
 

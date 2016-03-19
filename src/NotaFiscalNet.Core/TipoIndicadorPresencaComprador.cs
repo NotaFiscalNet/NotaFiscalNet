@@ -29,7 +29,7 @@
         /// <summary>
         /// 4 - NFC-e em operação com entrega em domicílio.
         /// </summary>
-        NFCeEntregaEmDomicilio = 4,
+        NfceEntregaEmDomicilio = 4,
 
         /// <summary>
         /// 9 - Não presencial, outros.

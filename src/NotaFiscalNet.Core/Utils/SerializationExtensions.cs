@@ -12,17 +12,16 @@ namespace NotaFiscalNet.Core.Utils
     /// </summary>
     public static class SerializationExtensions
     {
-        public static void Serialize(this ISerializavel source, XmlWriter writer, NFe nfe)
+        public static void Serialize(this ISerializavel source, XmlWriter writer, INFe nfe)
         {
             if (source == null)
                 throw new InvalidOperationException("Não foi possível serializar o objeto pois o mesmo encontra-se nulo.");
             source.Serializar(writer, nfe);
         }
 
-        public static void SerializeIfNotNull(this ISerializavel source, XmlWriter writer, NFe nfe)
+        public static void SerializeIfNotNull(this ISerializavel source, XmlWriter writer, INFe nfe)
         {
-            if (source == null) return;
-            source.Serializar(writer, nfe);
+            source?.Serializar(writer, nfe);
         }
 
         /// <summary>

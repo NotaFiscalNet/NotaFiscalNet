@@ -425,7 +425,7 @@ namespace NotaFiscalNet.Core
                                   LotacaoMaximaPassageirosSentados > 0 ||
                                   TipoRestricao != TipoRestricaoVeiculo.NaoEspecificado;
 
-        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("veicProd");
 

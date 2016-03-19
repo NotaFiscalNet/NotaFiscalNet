@@ -51,7 +51,7 @@ namespace NotaFiscalNet.Core
                                   !string.IsNullOrEmpty(ChaveAcessoNFe) ||
                                   QuantidadeItemExportado != 0;
 
-        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
+        public void Serializar(XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("exportInd");
 

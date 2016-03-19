@@ -100,7 +100,7 @@ namespace NotaFiscalNet.Core
                                   DataValidade != DateTime.MinValue ||
                                   PrecoMaximoConsumidor != 0m;
 
-        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("med");
 

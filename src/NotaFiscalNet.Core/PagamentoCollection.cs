@@ -16,7 +16,7 @@ namespace NotaFiscalNet.Core
             base.PreAdd(e, item);
         }
 
-        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, INFe nfe)
         {
             foreach (var pagamento in this)
             {

@@ -1,15 +1,15 @@
 ﻿namespace NotaFiscalNet.Core
 {
+    
     /// <summary>
     /// Representa o formato de impressão da DANFE.
     /// </summary>
-
-    public enum TipoFormatoImpressaoDANFE
+    public enum TipoFormatoImpressaoDanfe
     {
         /// <summary>
         /// 0 - Sem geração de DANFE.
         /// </summary>
-        SemGeracaoDANFE = 0,
+        SemImpressao = 0,
 
         /// <summary>
         /// 1 - DANFE Normal (Impressão no formato Retrato).
@@ -29,11 +29,11 @@
         /// <summary>
         /// 4 - DANFE NFC-e.
         /// </summary>
-        NFCe = 4,
+        Nfce = 4,
 
         /// <summary>
-        /// 5 - DANFE NFC-e em mensagem.
+        /// 5 - DANFE NFC-e em mensagem eletronica.
         /// </summary>
-        NFCeMensagem = 5
+        NfceMensagemEletronica = 5
     }
 }

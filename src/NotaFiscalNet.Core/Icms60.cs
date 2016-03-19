@@ -37,7 +37,7 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "vICMSSTRet", DataType = "TDec_1302")]
         public decimal? ValorSTRetido { get; }
 
-        protected override void SerializeInternal(XmlWriter writer, NFe nfe)
+        protected override void SerializeInternal(XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMS60");
 

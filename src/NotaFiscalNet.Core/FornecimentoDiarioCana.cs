@@ -44,7 +44,7 @@ namespace NotaFiscalNet.Core
 
         public bool Modificado => Dia != 0 && Quantidade > 0;
 
-        public void Serializar(XmlWriter writer, NFe nfe)
+        public void Serializar(XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("forDia"); // <forDia>
             writer.WriteAttributeString("dia", Dia.ToString());

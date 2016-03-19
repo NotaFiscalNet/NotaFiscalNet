@@ -1,9 +1,10 @@
-﻿using NotaFiscalNet.Core.Utils;
+﻿using NotaFiscalNet.Core.Interfaces;
+using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 
 namespace NotaFiscalNet.Core
 {
-    public class DetalhesOperacaoCartao : IDirtyable
+    public class DetalhesOperacaoCartao : IModificavel
     {
         private string _cnpj;
         private string _codigoAutorizacao;
@@ -54,7 +55,7 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {

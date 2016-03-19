@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 using NotaFiscalNet.Core.Validacao.Validators;
@@ -11,7 +12,7 @@ namespace NotaFiscalNet.Core
     
     
     
-    public sealed class InformacoesAdicionaisNFe : INFeSerializable, IDirtyable
+    public sealed class InformacoesAdicionaisNFe : ISerializavel, IModificavel
     {
         #region Fields
 
@@ -89,7 +90,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get 
             { 
@@ -104,9 +105,9 @@ namespace NotaFiscalNet.Core
 
         #endregion Properties
 
-        #region INFeSerializable Members
+        #region ISerializavel Members
 
-        void INFeSerializable.Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("infAdic"); // Elemento 'infAdic'
 
@@ -117,11 +118,11 @@ namespace NotaFiscalNet.Core
             if (!string.IsNullOrEmpty(InformacoesComplementaresContribuinte))
                 writer.WriteElementString("infCpl", SerializationUtil.ToTString(InformacoesComplementaresContribuinte, 5000));
             if (ObservacoesContribuinte.IsDirty)
-                ((INFeSerializable)ObservacoesContribuinte).Serialize(writer, nfe);
+                ((ISerializavel)ObservacoesContribuinte).Serializar(writer, nfe);
             if (ObservacoesFisco.IsDirty)
-                ((INFeSerializable)ObservacoesFisco).Serialize(writer, nfe);
+                ((ISerializavel)ObservacoesFisco).Serializar(writer, nfe);
             if (Processos.IsDirty)
-                ((INFeSerializable)Processos).Serialize(writer, nfe);
+                ((ISerializavel)Processos).Serializar(writer, nfe);
 
             #endregion infAdic
 

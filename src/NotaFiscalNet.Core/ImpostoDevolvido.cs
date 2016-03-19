@@ -1,8 +1,9 @@
-﻿using NotaFiscalNet.Core.Utils;
+﻿using NotaFiscalNet.Core.Interfaces;
+using NotaFiscalNet.Core.Utils;
 
 namespace NotaFiscalNet.Core
 {
-    public class ImpostoDevolvido : INFeSerializable
+    public class ImpostoDevolvido : ISerializavel
     {
         /// <summary>
         /// [pDevol] Retorna ou define o Percentual da mercadoria devolvida.
@@ -21,12 +22,12 @@ namespace NotaFiscalNet.Core
             IPI = new IpiDevolvido();
         }
 
-        void INFeSerializable.Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("impostoDevol");
 
             writer.WriteElementString("pDevol", PercentualMercadoriaDevolvida.ToTDec_0302());
-            ((INFeSerializable)IPI).Serialize(writer, nfe);
+            ((ISerializavel)IPI).Serializar(writer, nfe);
 
             writer.WriteEndElement();
         }

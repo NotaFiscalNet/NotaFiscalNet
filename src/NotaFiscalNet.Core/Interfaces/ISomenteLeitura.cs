@@ -1,14 +1,10 @@
-﻿using System.Runtime.InteropServices;
-
-namespace NotaFiscalNet.Core
+﻿namespace NotaFiscalNet.Core.Interfaces
 {
     /// <summary>
     /// Interface que define a estrutura de um tipo que pode conter a situação de Apenas-Leitura.
     /// </summary>
-    
-    
-    public interface IReadOnly
+    public interface ISomenteLeitura
     {
-        bool IsReadOnly { get; }
+        bool SomenteLeitura { get; }
     }
 }

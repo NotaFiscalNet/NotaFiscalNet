@@ -1,4 +1,4 @@
-﻿namespace NotaFiscalNet.Core
+﻿namespace NotaFiscalNet.Core.Interfaces
 {
     public interface IDesoneracaoIcms
     {

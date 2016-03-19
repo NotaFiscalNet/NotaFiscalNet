@@ -1,6 +1,7 @@
 ﻿using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 using System;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
@@ -8,7 +9,7 @@ namespace NotaFiscalNet.Core
     /// Representa os Tributos incidentes no Produto ou Serviço
     /// </summary>
 
-    public sealed class ImpostoProduto : INFeSerializable
+    public sealed class ImpostoProduto : ISerializavel
     {
         private Icms _icms;
         private readonly ImpostoICMS _ICMS;
@@ -159,8 +160,8 @@ namespace NotaFiscalNet.Core
             {
                 return
                     ICMS.IsDirty || Icms != null ||
-                    IPI.IsDirty ||
-                    II.IsDirty ||
+                    IPI.Modificado ||
+                    II.Modificado ||
                     PIS.IsDirty ||
                     PISST.IsDirty ||
                     COFINS.IsDirty ||
@@ -169,7 +170,7 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        void INFeSerializable.Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("imposto"); // Elemento 'imposto'
 
@@ -182,38 +183,38 @@ namespace NotaFiscalNet.Core
                 if (Icms != null)
                 {
                     writer.WriteStartElement("ICMS");
-                    ((INFeSerializable)Icms).Serialize(writer, nfe);
+                    ((ISerializavel)Icms).Serializar(writer, nfe);
                     writer.WriteEndElement();
                 }
                 else
                 {
                     // TODO: Obsoleto
                     if (ICMS.IsDirty)
-                        ((INFeSerializable)ICMS).Serialize(writer, nfe);
+                        ((ISerializavel)ICMS).Serializar(writer, nfe);
                 }
 
-                if (IPI.IsDirty)
-                    ((INFeSerializable)IPI).Serialize(writer, nfe);
-                if (II.IsDirty)
-                    ((INFeSerializable)II).Serialize(writer, nfe);
+                if (IPI.Modificado)
+                    ((ISerializavel)IPI).Serializar(writer, nfe);
+                if (II.Modificado)
+                    ((ISerializavel)II).Serializar(writer, nfe);
             }
             else
             {
-                if (IPI.IsDirty)
-                    ((INFeSerializable)IPI).Serialize(writer, nfe);
+                if (IPI.Modificado)
+                    ((ISerializavel)IPI).Serializar(writer, nfe);
 
                 if (ISSQN.IsDirty)
-                    ((INFeSerializable)ISSQN).Serialize(writer, nfe);
+                    ((ISerializavel)ISSQN).Serializar(writer, nfe);
             }
 
             if (PIS.IsDirty)
-                ((INFeSerializable)PIS).Serialize(writer, nfe);
+                ((ISerializavel)PIS).Serializar(writer, nfe);
             if (PISST.IsDirty)
-                ((INFeSerializable)PISST).Serialize(writer, nfe);
+                ((ISerializavel)PISST).Serializar(writer, nfe);
             if (COFINS.IsDirty)
-                ((INFeSerializable)COFINS).Serialize(writer, nfe);
+                ((ISerializavel)COFINS).Serializar(writer, nfe);
             if (COFINSST.IsDirty)
-                ((INFeSerializable)COFINSST).Serialize(writer, nfe);
+                ((ISerializavel)COFINSST).Serializar(writer, nfe);
 
             writer.WriteEndElement(); // Elemento 'imposto'
         }

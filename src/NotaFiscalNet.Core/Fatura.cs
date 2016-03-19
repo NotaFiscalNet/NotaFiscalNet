@@ -1,14 +1,15 @@
 ﻿using NotaFiscalNet.Core.Utils;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Representa a Fatura de Cobrança da Nota Fiscal Eletrônica
     /// </summary>
-    public sealed class Fatura : INFeSerializable
+    public sealed class Fatura : ISerializavel
     {
-        void INFeSerializable.Serialize(XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             if (IsDirty)
             {

@@ -2,6 +2,7 @@
 using NotaFiscalNet.Core.Validacao;
 using System;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
@@ -9,9 +10,9 @@ namespace NotaFiscalNet.Core
     /// Representa o Endereço do Emitente e do Destinatário da Nota Fiscal Eletrônica.
     /// </summary>
     /// <remarks>Equivalente ao tipo TEndereco no xml.</remarks>
-    public sealed class Endereco : EnderecoSimples, INFeSerializable
+    public sealed class Endereco : EnderecoSimples, ISerializavel
     {
-        void INFeSerializable.Serialize(XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             SerializeEnderecoSimples(writer, nfe);
 
@@ -84,12 +85,12 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        public override bool IsDirty
+        public override bool Modificado
         {
             get
             {
                 return
-                    base.IsDirty ||
+                    base.Modificado ||
                     !string.IsNullOrEmpty(CEP) ||
                     CodigoPaisBACEN != 0 ||
                     !string.IsNullOrEmpty(NomePais) ||

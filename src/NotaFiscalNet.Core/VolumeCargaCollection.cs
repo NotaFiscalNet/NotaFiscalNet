@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
@@ -8,7 +9,7 @@ namespace NotaFiscalNet.Core
     
     
     
-    public sealed class VolumeCargaCollection : BaseCollection<VolumeCarga>,  INFeSerializable
+    public sealed class VolumeCargaCollection : BaseCollection<VolumeCarga>,  ISerializavel
     {
 
         /// <summary>
@@ -27,14 +28,14 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        #region INFeSerializable Members
+        #region ISerializavel Members
 
-        void INFeSerializable.Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             foreach (VolumeCarga volume in this)
             {
                 if (volume.IsDirty)
-                    ((INFeSerializable)volume).Serialize(writer, nfe);
+                    ((ISerializavel)volume).Serializar(writer, nfe);
             }
         }
 

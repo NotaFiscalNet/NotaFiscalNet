@@ -3,13 +3,14 @@ using NotaFiscalNet.Core.Validacao;
 using System;
 using System.Text.RegularExpressions;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Representa o Destinatário da Nota Fiscal Eletrônica.
     /// </summary>
-    public sealed class DestinatarioNFe : INFeSerializable, ICPFouCNPJ
+    public sealed class DestinatarioNFe : ISerializavel, IPossuiDocumentoIdentificador
     {
         public DestinatarioNFe(string cnpjOuCpfOuIdEstrangeiro)
         {
@@ -181,7 +182,7 @@ namespace NotaFiscalNet.Core
             set { _email = ValidationUtil.TruncateString(value, 60); }
         }
 
-        void INFeSerializable.Serialize(XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("dest"); // Elemento 'dest'
 
@@ -189,7 +190,7 @@ namespace NotaFiscalNet.Core
 
             writer.WriteElementString("xNome", Nome.ToToken(60));
 
-            if (Endereco.IsDirty)
+            if (Endereco.Modificado)
                 SerializeEnderecoDestinatario(writer, nfe);
 
             writer.WriteElementString("indIEDest", IndicadorIEDestinatario.GetEnumValue());
@@ -215,7 +216,7 @@ namespace NotaFiscalNet.Core
         {
             writer.WriteStartElement("enderDest"); // Elemento 'enderDest'
 
-            ((INFeSerializable)Endereco).Serialize(writer, nfe);
+            ((ISerializavel)Endereco).Serializar(writer, nfe);
 
             writer.WriteEndElement(); // Elemento 'enderDest'
         }

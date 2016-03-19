@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 
@@ -19,7 +20,7 @@ namespace NotaFiscalNet.Core
     
     
     
-    public sealed class ReferenciaDocFiscal :  INFeSerializable
+    public sealed class ReferenciaDocFiscal :  ISerializavel
     {
         #region Fields
 
@@ -123,9 +124,9 @@ namespace NotaFiscalNet.Core
 
         #endregion Constructor
 
-        #region INFeSerializable Members
+        #region ISerializavel Members
 
-        public void Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        public void Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             if (!IsDirty)
                 return;
@@ -136,19 +137,19 @@ namespace NotaFiscalNet.Core
             {
                 case TipoReferenciaDocFiscal.NFe:
                     if (ReferenciaNFe.IsDirty)
-                        ((INFeSerializable)ReferenciaNFe).Serialize(writer, nfe);
+                        ((ISerializavel)ReferenciaNFe).Serializar(writer, nfe);
                     break;
                 case TipoReferenciaDocFiscal.NF:
                     if (ReferenciaNF.IsDirty)
-                        ((INFeSerializable)ReferenciaNF).Serialize(writer, nfe);
+                        ((ISerializavel)ReferenciaNF).Serializar(writer, nfe);
                     break;
                 case TipoReferenciaDocFiscal.NFProdutor:
                     if (ReferenciaNFProdutor.IsDirty)
-                        ((INFeSerializable)ReferenciaNFProdutor).Serialize(writer, nfe);
+                        ((ISerializavel)ReferenciaNFProdutor).Serializar(writer, nfe);
                     break;
                 case TipoReferenciaDocFiscal.CTe:
                     if (ReferenciaCTe.IsDirty)
-                        ((INFeSerializable)ReferenciaCTe).Serialize(writer, nfe);
+                        ((ISerializavel)ReferenciaCTe).Serializar(writer, nfe);
                     break;
                 case TipoReferenciaDocFiscal.ECF:
                     break;

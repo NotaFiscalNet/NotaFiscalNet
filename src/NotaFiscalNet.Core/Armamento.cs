@@ -1,15 +1,16 @@
 ﻿using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Representa um determinado tio de Armamento utilizado nos Produtos Específicos
     /// </summary>
-    public sealed class Armamento : INFeSerializable
+    public sealed class Armamento : ISerializavel
     {
-        void INFeSerializable.Serialize(XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("arma");
 

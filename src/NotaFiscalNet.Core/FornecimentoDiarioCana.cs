@@ -1,13 +1,14 @@
 ﻿using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Representa o fornecimento diário de cana.
     /// </summary>
-    public class FornecimentoDiarioCana : INFeSerializable, IDirtyable
+    public class FornecimentoDiarioCana : ISerializavel, IModificavel
     {
         private int _dia;
         private decimal _quantidade;
@@ -41,12 +42,12 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        public bool IsDirty
+        public bool Modificado
         {
             get { return Dia != 0 && Quantidade > 0; }
         }
 
-        public void Serialize(XmlWriter writer, NFe nfe)
+        public void Serializar(XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("forDia"); // <forDia>
             writer.WriteAttributeString("dia", Dia.ToString());

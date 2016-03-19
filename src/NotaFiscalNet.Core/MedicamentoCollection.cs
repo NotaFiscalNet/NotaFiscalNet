@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
@@ -10,7 +11,7 @@ namespace NotaFiscalNet.Core
     
     
     
-    public sealed class MedicamentoCollection : BaseCollection<Medicamento>, INFeSerializable
+    public sealed class MedicamentoCollection : BaseCollection<Medicamento>, ISerializavel
     {
         private const int Capacidade = 500;
 
@@ -54,14 +55,14 @@ namespace NotaFiscalNet.Core
         }
 
         
-        #region INFeSerializable Members
+        #region ISerializavel Members
 
-        void INFeSerializable.Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             foreach (Medicamento medicamento in this)
             {
                 if (medicamento.IsDirty)
-                    ((INFeSerializable)medicamento).Serialize(writer, nfe);
+                    ((ISerializavel)medicamento).Serializar(writer, nfe);
             }
         }
 

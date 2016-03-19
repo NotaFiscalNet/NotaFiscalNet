@@ -3,13 +3,14 @@ using NotaFiscalNet.Core.Validacao;
 using NotaFiscalNet.Core.Validacao.Validators;
 using System;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Representa uma Declaração de Importação do Produto
     /// </summary>
-    public sealed class DeclaracaoImportacao : INFeSerializable
+    public sealed class DeclaracaoImportacao : ISerializavel
     {
         private SiglaUF _ufTerceiro;
 
@@ -27,7 +28,7 @@ namespace NotaFiscalNet.Core
             Adicoes = new DeclaracaoImportacaoAdicaoCollection();
         }
 
-        void INFeSerializable.Serialize(XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("DI");
 
@@ -52,7 +53,7 @@ namespace NotaFiscalNet.Core
             writer.WriteStartElement("cExportador", SerializationUtil.ToToken(CodigoExportador, 60));
 
             /// renderiza os elementos 'adi'
-            ((INFeSerializable)Adicoes).Serialize(writer, nfe);
+            ((ISerializavel)Adicoes).Serializar(writer, nfe);
 
             writer.WriteEndElement(); // fim do elemento 'DI'
         }

@@ -3,13 +3,14 @@ using NotaFiscalNet.Core.Validacao;
 using NotaFiscalNet.Core.Validacao.Validators;
 using System;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Informações de registro aquisições de cana.
     /// </summary>
-    public sealed class AquisicaoCana : INFeSerializable, IDirtyable
+    public sealed class AquisicaoCana : ISerializavel, IModificavel
     {
         private decimal _quantidadeTotalAnterior;
         private decimal _quantidadeTotalGeral;
@@ -126,7 +127,7 @@ namespace NotaFiscalNet.Core
             set { _valorLiquidoFornecimentos = ValidationUtil.ValidateTDec_1302(value, "ValorLiquidoFornecimentos"); }
         }
 
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {
@@ -138,9 +139,9 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        public void Serialize(XmlWriter writer, NFe nfe)
+        public void Serializar(XmlWriter writer, NFe nfe)
         {
-            if (!IsDirty) return;
+            if (!Modificado) return;
 
             writer.WriteStartElement("cana"); // <cana>
 

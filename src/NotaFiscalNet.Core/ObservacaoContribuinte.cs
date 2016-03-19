@@ -1,5 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 
@@ -11,7 +12,7 @@ namespace NotaFiscalNet.Core
     
     
     
-    public sealed class ObservacaoContribuinte :  INFeSerializable
+    public sealed class ObservacaoContribuinte :  ISerializavel
     {
         #region Fields
 
@@ -74,9 +75,9 @@ namespace NotaFiscalNet.Core
 
         #endregion Constructor
 
-        #region INFeSerializable Members
+        #region ISerializavel Members
 
-        void INFeSerializable.Serialize(XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("obsCont"); // Elemento 'obsCont'
             writer.WriteAttributeString("xCampo", SerializationUtil.ToToken(Campo, 20));

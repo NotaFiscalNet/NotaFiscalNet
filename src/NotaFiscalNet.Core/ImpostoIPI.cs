@@ -1,6 +1,7 @@
 ﻿using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 using System;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
@@ -9,7 +10,7 @@ namespace NotaFiscalNet.Core
     /// determinado produto na Nota Fiscal Eletrônica.
     /// </summary>
 
-    public sealed class ImpostoIPI : INFeSerializable, IDirtyable
+    public sealed class ImpostoIPI : ISerializavel, IModificavel
     {
         private SituacaoTributariaIPI _situacaoTributaria = SituacaoTributariaIPI.NaoEspecificado;
         private string _classeEnquadramentoIpiCigarrosBebidas = string.Empty;
@@ -375,7 +376,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {
@@ -394,7 +395,7 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        void INFeSerializable.Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("IPI"); // Elemento 'IPI'
 

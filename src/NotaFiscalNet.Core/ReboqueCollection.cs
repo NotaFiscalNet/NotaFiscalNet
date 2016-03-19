@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
@@ -11,7 +12,7 @@ namespace NotaFiscalNet.Core
     
     
     
-    public sealed class ReboqueCollection : BaseCollection<VeiculoTransporte>, INFeSerializable
+    public sealed class ReboqueCollection : BaseCollection<VeiculoTransporte>, ISerializavel
     {
         /// <summary>
         /// Quantidade Máxima de Elementos
@@ -38,23 +39,23 @@ namespace NotaFiscalNet.Core
             {
                 foreach (VeiculoTransporte item in this)
                 {
-                    if (item.IsDirty)
+                    if (item.Modificado)
                         return true;
                 }
                 return false;
             }
         }
 
-        #region INFeSerializable Members
+        #region ISerializavel Members
 
-        void INFeSerializable.Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             foreach (VeiculoTransporte reboque in this)
             {
-                if (reboque.IsDirty)
+                if (reboque.Modificado)
                 {
                     writer.WriteStartElement("reboque"); // Elemento 'reboque'
-                    ((INFeSerializable)reboque).Serialize(writer, nfe);
+                    ((ISerializavel)reboque).Serializar(writer, nfe);
                     writer.WriteEndElement(); // Elemento 'reboque'
                 }
             }

@@ -2,6 +2,7 @@
 using NotaFiscalNet.Core.Validacao;
 using NotaFiscalNet.Core.Validacao.Validators;
 using System;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
@@ -9,7 +10,7 @@ namespace NotaFiscalNet.Core
     /// Representa o Imposto Contribuição para o Financiamento da Seguridade Social
     /// </summary>
 
-    public sealed class ImpostoCOFINS : INFeSerializable
+    public sealed class ImpostoCOFINS : ISerializavel
     {
         private SituacaoTributariaCOFINS _situacaoTributaria = SituacaoTributariaCOFINS.NaoEspecificado;
         private decimal _baseCalculo;
@@ -293,7 +294,7 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        void INFeSerializable.Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("COFINS"); // Elemento 'COFINS'
 

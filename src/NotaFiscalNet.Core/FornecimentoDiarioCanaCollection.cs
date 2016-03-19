@@ -2,13 +2,14 @@
 using System.ComponentModel;
 using System.Linq;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Representa uma Coleção de Armamentos.
     /// </summary>
-    public sealed class FornecimentoDiarioCanaCollection : BaseCollection<FornecimentoDiarioCana>, INFeSerializable
+    public sealed class FornecimentoDiarioCanaCollection : BaseCollection<FornecimentoDiarioCana>, ISerializavel
     {
         private const int Capacidade = 31;
 
@@ -17,15 +18,15 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public bool IsDirty
         {
-            get { return this.Any(x => x.IsDirty); }
+            get { return this.Any(x => x.Modificado); }
         }
 
-        void INFeSerializable.Serialize(XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             foreach (var item in this)
             {
-                if (item.IsDirty)
-                    ((INFeSerializable)item).Serialize(writer, nfe);
+                if (item.Modificado)
+                    ((ISerializavel)item).Serializar(writer, nfe);
             }
         }
 

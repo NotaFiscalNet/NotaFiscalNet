@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 
@@ -10,7 +11,7 @@ namespace NotaFiscalNet.Core
     
     
     
-    public sealed class TotalICMS :  INFeSerializable
+    public sealed class TotalICMS :  ISerializavel
     {
         #region Fields
 
@@ -268,9 +269,9 @@ namespace NotaFiscalNet.Core
 
         #endregion Properties
 
-        #region INFeSerializable Members
+        #region ISerializavel Members
 
-        void INFeSerializable.Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("ICMSTot");
             writer.WriteElementString("vBC", SerializationUtil.ToTDec_1302(BaseCalculo));

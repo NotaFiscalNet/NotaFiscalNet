@@ -2,13 +2,14 @@
 using System.Collections;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
     
     
     
-    public sealed class PagamentoCollection : BaseCollection<Pagamento>,  INFeSerializable
+    public sealed class PagamentoCollection : BaseCollection<Pagamento>,  ISerializavel
     {
         private const int Capacidade = 100;
 
@@ -20,17 +21,17 @@ namespace NotaFiscalNet.Core
             base.PreAdd(e, item);
         }
 
-        #region INFeSerializable implementation
+        #region ISerializavel implementation
 
-        void INFeSerializable.Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             foreach (var pagamento in this)
             {
-                if (!pagamento.IsDirty)
+                if (!pagamento.Modificado)
                     continue;
 
-                INFeSerializable obj = pagamento;
-                obj.Serialize(writer, nfe);
+                ISerializavel obj = pagamento;
+                obj.Serializar(writer, nfe);
             }
         }
 

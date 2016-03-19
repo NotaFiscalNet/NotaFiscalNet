@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 
@@ -11,7 +12,7 @@ namespace NotaFiscalNet.Core
     
     
     
-    public sealed class InformacoesExportacao : INFeSerializable, IDirtyable
+    public sealed class InformacoesExportacao : ISerializavel, IModificavel
     {
         #region Fields
 
@@ -74,7 +75,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a classe foi modificada.
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {
@@ -88,9 +89,9 @@ namespace NotaFiscalNet.Core
 
         #endregion Properties
 
-        #region INFeSerializable Members
+        #region ISerializavel Members
 
-        void INFeSerializable.Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("exporta"); // Elemento 'exporta'
 

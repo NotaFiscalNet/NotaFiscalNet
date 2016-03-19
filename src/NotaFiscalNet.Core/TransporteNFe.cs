@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 using NotaFiscalNet.Core.Validacao.Validators;
@@ -11,7 +12,7 @@ namespace NotaFiscalNet.Core
     
     
     
-    public sealed class TransporteNFe : INFeSerializable
+    public sealed class TransporteNFe : ISerializavel
     {
         #region Fields
 
@@ -125,9 +126,9 @@ namespace NotaFiscalNet.Core
 
         #endregion Properties
 
-        #region INFeSerializable Members
+        #region ISerializavel Members
 
-        void INFeSerializable.Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             #region transp
 
@@ -136,22 +137,22 @@ namespace NotaFiscalNet.Core
             writer.WriteElementString("modFrete", SerializationUtil.GetEnumValue<TipoModalidadeFrete>(ModalidadeFrete));
 
             if (Transportador.IsDirty)
-                ((INFeSerializable)Transportador).Serialize(writer, nfe);
+                ((ISerializavel)Transportador).Serializar(writer, nfe);
 
-            if (RetencaoICMS.IsDirty)
-                ((INFeSerializable)RetencaoICMS).Serialize(writer, nfe);
+            if (RetencaoICMS.Modificado)
+                ((ISerializavel)RetencaoICMS).Serializar(writer, nfe);
 
             switch (MeioTransporte)
             {
                 case TipoMeioTransporte.Rodoviario:
-                    if (VeiculoTransporte.IsDirty)
+                    if (VeiculoTransporte.Modificado)
                     {
                         writer.WriteStartElement("veicTransp");
-                        ((INFeSerializable)VeiculoTransporte).Serialize(writer, nfe);
+                        ((ISerializavel)VeiculoTransporte).Serializar(writer, nfe);
                         writer.WriteEndElement();
                     }
                     if (Reboques.IsDirty)
-                        ((INFeSerializable)Reboques).Serialize(writer, nfe);
+                        ((ISerializavel)Reboques).Serializar(writer, nfe);
                     break;
                 case TipoMeioTransporte.Ferroviario:
                     if (!string.IsNullOrEmpty(Vagao))
@@ -164,7 +165,7 @@ namespace NotaFiscalNet.Core
             }
 
             if (VolumesCarga.IsDirty)
-                ((INFeSerializable)VolumesCarga).Serialize(writer, nfe);
+                ((ISerializavel)VolumesCarga).Serializar(writer, nfe);
 
             writer.WriteEndElement(); // fim do elemento 'transp'
 

@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core.Validacao
 {
     internal class NFeValidatorEngine
     {
-        static readonly Type IDirtyableType = typeof(IDirtyable);
+        static readonly Type IDirtyableType = typeof(IModificavel);
 
         [DebuggerStepThrough]
         public NFeValidatorEngine(NFe nfe)
@@ -47,7 +48,7 @@ namespace NotaFiscalNet.Core.Validacao
 
                 Type typeOfValue = field.Property.PropertyType;
                 bool implementsIDirtyable = IDirtyableType.IsAssignableFrom(typeOfValue);
-                if (!implementsIDirtyable || (implementsIDirtyable && value != null && ((IDirtyable)value).IsDirty))
+                if (!implementsIDirtyable || (implementsIDirtyable && value != null && ((IModificavel)value).Modificado))
                     field.Validate();
             }
 

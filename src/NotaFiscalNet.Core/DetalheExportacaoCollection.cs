@@ -1,19 +1,20 @@
 using System;
 using System.ComponentModel;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
-    public sealed class DetalheExportacaoCollection : BaseCollection<DetalheExportacao>, INFeSerializable
+    public sealed class DetalheExportacaoCollection : BaseCollection<DetalheExportacao>, ISerializavel
     {
         private const int CAPACIDADE = 500;
 
-        void INFeSerializable.Serialize(XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             foreach (var item in this)
             {
-                INFeSerializable obj = item;
-                obj.Serialize(writer, nfe);
+                ISerializavel obj = item;
+                obj.Serializar(writer, nfe);
             }
         }
 

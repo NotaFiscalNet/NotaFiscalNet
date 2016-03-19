@@ -1,12 +1,13 @@
 ﻿using NotaFiscalNet.Core.Utils;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Classe base para implementação do detalhamento do ICMS.
     /// </summary>
-    public abstract class Icms : INFeSerializable
+    public abstract class Icms : ISerializavel
     {
         private OrigemMercadoria _origem;
 
@@ -28,7 +29,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public virtual SituacaoTributariaICMS CST { get; protected set; }
 
-        void INFeSerializable.Serialize(XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             SerializeInternal(writer, nfe);
         }

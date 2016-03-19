@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core.Validacao.Validators
 {
@@ -19,7 +20,7 @@ namespace NotaFiscalNet.Core.Validacao.Validators
                 {
                     if (!fieldInternal.Attribute.Ignore)
                         fieldInternal.Validate();
-                    else if (fieldInternal.GetValue() != null && fieldInternal.GetValue().GetType().GetInterface("IDirtyable") != null && ((IDirtyable)fieldInternal.GetValue()).IsDirty)
+                    else if (fieldInternal.GetValue() != null && fieldInternal.GetValue().GetType().GetInterface("IModificavel") != null && ((IModificavel)fieldInternal.GetValue()).Modificado)
                         fieldInternal.Validate();
                 }
             }

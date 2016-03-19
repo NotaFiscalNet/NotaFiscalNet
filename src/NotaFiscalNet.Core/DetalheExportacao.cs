@@ -1,13 +1,14 @@
 ﻿using NotaFiscalNet.Core.Utils;
 using System;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// [detExport] Detalhes da Exportação.
     /// </summary>
-    public class DetalheExportacao : INFeSerializable, IDirtyable
+    public class DetalheExportacao : ISerializavel, IModificavel
     {
         private string _numeroDrawback;
 
@@ -32,14 +33,14 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "I52", FieldName = "exportInd")]
         public ExportacaoIndireta Detalhamento { get; } = new ExportacaoIndireta();
 
-        public bool IsDirty
+        public bool Modificado
         {
-            get { return !string.IsNullOrEmpty(NumeroDrawback) && Detalhamento.IsDirty; }
+            get { return !string.IsNullOrEmpty(NumeroDrawback) && Detalhamento.Modificado; }
         }
 
-        void INFeSerializable.Serialize(XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
-            if (!IsDirty)
+            if (!Modificado)
                 return;
 
             writer.WriteStartElement("detExport");
@@ -47,8 +48,8 @@ namespace NotaFiscalNet.Core
             if (!string.IsNullOrEmpty(NumeroDrawback))
                 writer.WriteElementString("nDraw", NumeroDrawback);
 
-            if (Detalhamento.IsDirty)
-                ((INFeSerializable)Detalhamento).Serialize(writer, nfe);
+            if (Detalhamento.Modificado)
+                ((ISerializavel)Detalhamento).Serializar(writer, nfe);
 
             writer.WriteEndElement();
         }

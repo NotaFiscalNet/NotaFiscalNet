@@ -333,9 +333,9 @@ namespace NotaFiscalNet.Core.Utils
 
         #region Validações Não-Categorizadas
 
-        //public static void CheckReadOnly(IReadOnly entity)
+        //public static void CheckReadOnly(ISomenteLeitura entity)
         //{
-        //    if (entity.IsReadOnly)
+        //    if (entity.SomenteLeitura)
         //        throw new NFeReadOnlyException();
         //}
 

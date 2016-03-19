@@ -2,10 +2,11 @@
 using NotaFiscalNet.Core.Validacao;
 using System;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
-    public class AutorizacaoDownloadXml : INFeSerializable
+    public class AutorizacaoDownloadXml : ISerializavel
     {
         private string _cnpj;
         private string _cpf;
@@ -61,7 +62,7 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        void INFeSerializable.Serialize(XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             if (string.IsNullOrEmpty(CNPJ) && string.IsNullOrEmpty(CPF))
                 throw new ApplicationException("");

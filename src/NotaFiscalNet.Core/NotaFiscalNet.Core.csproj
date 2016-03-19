@@ -89,7 +89,7 @@
     <Compile Include="ExportacaoIndireta.cs" />
     <Compile Include="Fatura.cs" />
     <Compile Include="FiscoEmitenteNFe.cs" />
-    <Compile Include="IDesoneracaoIcms.cs" />
+    <Compile Include="Interfaces\IDesoneracaoIcms.cs" />
     <Compile Include="TipoFormatoImpressaoDANFE.cs" />
     <Compile Include="FornecimentoDiarioCana.cs" />
     <Compile Include="FornecimentoDiarioCanaCollection.cs" />
@@ -113,9 +113,9 @@
     <Compile Include="IcmsSN900.cs" />
     <Compile Include="IcmsST.cs" />
     <Compile Include="IcmsTributacaoNormal.cs" />
-    <Compile Include="ICPFouCNPJ.cs" />
+    <Compile Include="Interfaces\IPossuiDocumentoIdentificador.cs" />
     <Compile Include="IdentificacaoNFe.cs" />
-    <Compile Include="IDirtyable.cs" />
+    <Compile Include="Interfaces\IModificavel.cs" />
     <Compile Include="ImpostoCOFINS.cs" />
     <Compile Include="ImpostoCOFINSST.cs" />
     <Compile Include="ImpostoDevolvido.cs" />
@@ -129,14 +129,14 @@
     <Compile Include="IndicadorExigibilidadeIss.cs" />
     <Compile Include="IndicadorFormaPagamento.cs" />
     <Compile Include="IndicadorIEDestinatario.cs" />
-    <Compile Include="INFeSerializable.cs" />
+    <Compile Include="Interfaces\ISerializavel.cs" />
     <Compile Include="InformacoesAdicionaisNFe.cs" />
     <Compile Include="InformacoesExportacao.cs" />
     <Compile Include="Inutilizacao\InutilizacaoNFe.cs" />
     <Compile Include="Inutilizacao\ProcXmlInutilizacaoHelper.cs" />
     <Compile Include="Inutilizacao\RetornoEnvioInutilizacaoNFe.cs" />
     <Compile Include="IpiDevolvido.cs" />
-    <Compile Include="IReadOnly.cs" />
+    <Compile Include="Interfaces\ISomenteLeitura.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="LoggerWrapper.cs" />
     <Compile Include="LoteNFe.cs" />

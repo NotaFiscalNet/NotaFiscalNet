@@ -1,11 +1,10 @@
-﻿namespace NotaFiscalNet.Core
+﻿namespace NotaFiscalNet.Core.Interfaces
 {
     /// <summary>
     /// Interface que define a estrutura de um tipo que pode conter a propriedade Dirty.
     /// </summary>
-
-    public interface IDirtyable
+    public interface IModificavel
     {
-        bool IsDirty { get; }
+        bool Modificado { get; }
     }
 }

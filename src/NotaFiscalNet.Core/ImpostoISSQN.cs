@@ -1,6 +1,7 @@
 ﻿using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 using System;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
@@ -8,7 +9,7 @@ namespace NotaFiscalNet.Core
     /// Representa o Imposto Sobre Serviços de Qualquer Natureza do Produto
     /// </summary>
 
-    public sealed class ImpostoISSQN : INFeSerializable
+    public sealed class ImpostoISSQN : ISerializavel
     {
         private decimal _baseCalculo;
         private decimal _aliquota;
@@ -34,9 +35,9 @@ namespace NotaFiscalNet.Core
         {
             if (Imposto.ICMS.IsDirty)
                 throw new ErroValidacaoNFeException(ChaveErroValidacao.ConflitoISSQNICMS);
-            if (Imposto.IPI.IsDirty)
+            if (Imposto.IPI.Modificado)
                 throw new ErroValidacaoNFeException(ChaveErroValidacao.ConflitoISSQNIPI);
-            if (Imposto.II.IsDirty)
+            if (Imposto.II.Modificado)
                 throw new ErroValidacaoNFeException(ChaveErroValidacao.ConflitoISSQNII);
         }
 
@@ -228,7 +229,7 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        void INFeSerializable.Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("ISSQN"); // Elemento 'ISSQN'
             writer.WriteElementString("vBC", BaseCalculo.ToTDec_1302());

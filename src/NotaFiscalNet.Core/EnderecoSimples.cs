@@ -1,15 +1,16 @@
 ﻿using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Representa o Endereço Simples do Emitente, Destinatário, Retirada e Entrega da Nota Fiscal Eletrônica.
     /// </summary>
-    public class EnderecoSimples : IDirtyable
+    public class EnderecoSimples : IModificavel
     {
-        public virtual bool IsDirty
+        public virtual bool Modificado
         {
             get
             {

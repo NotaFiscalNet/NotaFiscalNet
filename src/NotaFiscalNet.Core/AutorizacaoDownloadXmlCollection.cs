@@ -1,19 +1,20 @@
 using System;
 using System.ComponentModel;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
-    public sealed class AutorizacaoDownloadXmlCollection : BaseCollection<AutorizacaoDownloadXml>, INFeSerializable
+    public sealed class AutorizacaoDownloadXmlCollection : BaseCollection<AutorizacaoDownloadXml>, ISerializavel
     {
         private const int CAPACIDADE = 10;
 
-        void INFeSerializable.Serialize(XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             foreach (var autorizacao in this)
             {
-                INFeSerializable obj = autorizacao;
-                obj.Serialize(writer, nfe);
+                ISerializavel obj = autorizacao;
+                obj.Serializar(writer, nfe);
             }
         }
 

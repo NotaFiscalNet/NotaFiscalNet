@@ -1,10 +1,12 @@
-﻿namespace NotaFiscalNet.Core.Validacao.Validators
+﻿using NotaFiscalNet.Core.Interfaces;
+
+namespace NotaFiscalNet.Core.Validacao.Validators
 {
     internal class CNPJouCPFValidator : BaseValidator
     {
         public override void Validate(ValidationContext context, FieldMember field)
         {
-            ICPFouCNPJ cpfoucnpj = (ICPFouCNPJ)field.Source;
+            IPossuiDocumentoIdentificador cpfoucnpj = (IPossuiDocumentoIdentificador)field.Source;
             object value = field.GetValue();
 
             if (field.Property.Name == "CNPJ")

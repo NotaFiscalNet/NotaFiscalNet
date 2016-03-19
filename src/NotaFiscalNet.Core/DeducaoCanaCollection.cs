@@ -1,13 +1,14 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Representa uma Coleção de Produtos do Contribuinte e do Fisco. Informar no máximo 10 observações.
     /// </summary>
-    public sealed class DeducaoCanaCollection : BaseCollection<DeducaoCana>, INFeSerializable
+    public sealed class DeducaoCanaCollection : BaseCollection<DeducaoCana>, ISerializavel
     {
         private const int Capacidade = 10;
 
@@ -20,19 +21,19 @@ namespace NotaFiscalNet.Core
             {
                 foreach (var item in this)
                 {
-                    if (item.IsDirty)
+                    if (item.Modificado)
                         return true;
                 }
                 return false;
             }
         }
 
-        void INFeSerializable.Serialize(XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             foreach (var item in this)
             {
-                if (item.IsDirty)
-                    item.Serialize(writer, nfe);
+                if (item.Modificado)
+                    item.Serializar(writer, nfe);
             }
         }
 

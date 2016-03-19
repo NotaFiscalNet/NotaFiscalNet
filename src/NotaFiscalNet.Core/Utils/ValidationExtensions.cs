@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text.RegularExpressions;
+using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Validacao;
 
 namespace NotaFiscalNet.Core.Utils
@@ -223,9 +224,9 @@ namespace NotaFiscalNet.Core.Utils
 
         #region Validações Não-Categorizadas
 
-        public static void CheckReadOnly(this IReadOnly entity)
+        public static void CheckReadOnly(this ISomenteLeitura entity)
         {
-            if (entity.IsReadOnly)
+            if (entity.SomenteLeitura)
                 throw new NFeReadOnlyException();
         }
 

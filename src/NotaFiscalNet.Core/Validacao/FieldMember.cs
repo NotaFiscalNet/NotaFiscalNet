@@ -2,13 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
+using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Validacao.Validators;
 
 namespace NotaFiscalNet.Core.Validacao
 {
     internal class FieldMember
     {
-        static readonly Type IDirtyableType = typeof(IDirtyable);
+        static readonly Type IDirtyableType = typeof(IModificavel);
         static readonly Type IEnumerableType = typeof(IEnumerable);
 
         public FieldMember(ValidationContext context, object source, PropertyInfo property, ValidateFieldAttribute attribute)
@@ -92,7 +93,7 @@ namespace NotaFiscalNet.Core.Validacao
 
                     Type typeOfValue = field.Property.PropertyType;
                     bool implementsIDirtyable = IDirtyableType.IsAssignableFrom(typeOfValue);
-                    if (!implementsIDirtyable || (implementsIDirtyable && value != null && ((IDirtyable)value).IsDirty))
+                    if (!implementsIDirtyable || (implementsIDirtyable && value != null && ((IModificavel)value).Modificado))
                         field.Validate();
                 }
 

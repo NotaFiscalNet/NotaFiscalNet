@@ -1,13 +1,14 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Representa uma Coleção de Armamentos.
     /// </summary>
-    public sealed class ArmamentoCollection : BaseCollection<Armamento>, INFeSerializable
+    public sealed class ArmamentoCollection : BaseCollection<Armamento>, ISerializavel
     {
         private const int Capacidade = 500;
 
@@ -37,12 +38,12 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        void INFeSerializable.Serialize(XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             foreach (var arma in this)
             {
                 if (arma.IsDirty)
-                    ((INFeSerializable)arma).Serialize(writer, nfe);
+                    ((ISerializavel)arma).Serializar(writer, nfe);
             }
         }
 

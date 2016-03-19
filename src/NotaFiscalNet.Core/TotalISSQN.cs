@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 
 namespace NotaFiscalNet.Core
@@ -10,7 +11,7 @@ namespace NotaFiscalNet.Core
     
     
     
-    public sealed class TotalISSQN :  INFeSerializable
+    public sealed class TotalISSQN :  ISerializavel
     {
 
         #region Fields
@@ -158,9 +159,9 @@ namespace NotaFiscalNet.Core
 
         #endregion Properties
 
-        #region INFeSerializable Members
+        #region ISerializavel Members
 
-        void INFeSerializable.Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("ISSQNtot");
 

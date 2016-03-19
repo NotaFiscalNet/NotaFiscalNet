@@ -2,13 +2,14 @@
 using NotaFiscalNet.Core.Validacao;
 using NotaFiscalNet.Core.Validacao.Validators;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Representa o Emitente da Nota Fiscal Eletrônica.
     /// </summary>
-    public sealed class EmitenteNFe : INFeSerializable, ICPFouCNPJ
+    public sealed class EmitenteNFe : ISerializavel, IPossuiDocumentoIdentificador
     {
         private string _CNPJ = string.Empty;
         private string _CPF = string.Empty;
@@ -157,7 +158,7 @@ namespace NotaFiscalNet.Core
             set { _codigoRegimeTributario = ValidationUtil.ValidateEnum(value, "CodigoRegimeTributario"); }
         }
 
-        void INFeSerializable.Serialize(XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("emit"); // Elemento 'emit'
 
@@ -189,7 +190,7 @@ namespace NotaFiscalNet.Core
         {
             writer.WriteStartElement("enderEmit"); // Elemento 'enderEmit'
 
-            ((INFeSerializable)Endereco).Serialize(writer, nfe);
+            ((ISerializavel)Endereco).Serializar(writer, nfe);
 
             writer.WriteEndElement(); // Elemento 'enderEmit'
         }

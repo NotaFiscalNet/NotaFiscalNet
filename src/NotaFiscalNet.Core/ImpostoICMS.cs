@@ -2,6 +2,7 @@
 using NotaFiscalNet.Core.Validacao;
 using NotaFiscalNet.Core.Validacao.Validators;
 using System;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
@@ -9,7 +10,7 @@ namespace NotaFiscalNet.Core
     /// Representa o Imposto Sobre Circulação de Mercadorias e Serviços
     /// </summary>
 
-    public sealed class ImpostoICMS : INFeSerializable
+    public sealed class ImpostoICMS : ISerializavel
     {
         private OrigemMercadoria _origemMercadoria = OrigemMercadoria.NaoEspecificado;
         private SituacaoTributariaICMS _situacaoTributaria = SituacaoTributariaICMS.NaoEspecificado;
@@ -558,7 +559,7 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        void INFeSerializable.Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("ICMS"); // Elemento 'ICMS'
 

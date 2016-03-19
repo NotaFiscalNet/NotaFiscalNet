@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
@@ -7,7 +8,7 @@ namespace NotaFiscalNet.Core
     /// </summary>
     
     
-    public sealed class ProcessoCollection : BaseCollection<Processo>, INFeSerializable
+    public sealed class ProcessoCollection : BaseCollection<Processo>, ISerializavel
     {
 
         /// <summary>
@@ -26,14 +27,14 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        #region INFeSerializable Members
+        #region ISerializavel Members
 
-        void INFeSerializable.Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             foreach (Processo processo in this)
             {
                 if (processo.IsDirty)
-                    ((INFeSerializable)processo).Serialize(writer, nfe);
+                    ((ISerializavel)processo).Serializar(writer, nfe);
             }
         }
 

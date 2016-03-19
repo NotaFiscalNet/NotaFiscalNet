@@ -1,10 +1,11 @@
 ﻿using NotaFiscalNet.Core.Utils;
 using System;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
-    public class ExportacaoIndireta : INFeSerializable, IDirtyable
+    public class ExportacaoIndireta : ISerializavel, IModificavel
     {
         private string _chaveAcessoNFe;
         private string _numeroRegistro;
@@ -46,7 +47,7 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "I55", FieldName = "qExport", DataType = "TDec_1104v")]
         public decimal QuantidadeItemExportado { get; set; }
 
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {
@@ -57,7 +58,7 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        void INFeSerializable.Serialize(XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("exportInd");
 

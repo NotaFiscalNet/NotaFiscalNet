@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 
@@ -10,7 +11,7 @@ namespace NotaFiscalNet.Core
     
     
     
-    public class Pagamento :  INFeSerializable, IDirtyable
+    public class Pagamento :  ISerializavel, IModificavel
     {
         private TipoPagamento _tipoPagamento;
         private decimal _valorPagamento;
@@ -61,7 +62,7 @@ namespace NotaFiscalNet.Core
 
         #endregion Properties
 
-        void INFeSerializable.Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("pag"); // <pag>
 
@@ -82,7 +83,7 @@ namespace NotaFiscalNet.Core
             writer.WriteEndElement(); // </pag>
         }
 
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {

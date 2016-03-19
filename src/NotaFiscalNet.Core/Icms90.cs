@@ -1,6 +1,7 @@
 ﻿using NotaFiscalNet.Core.Utils;
 using System;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {

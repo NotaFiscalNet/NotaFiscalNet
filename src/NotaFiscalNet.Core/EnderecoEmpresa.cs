@@ -2,15 +2,16 @@
 using NotaFiscalNet.Core.Validacao;
 using NotaFiscalNet.Core.Validacao.Validators;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Representa o Endereço de uma Empresa para Retirada e Entrega
     /// </summary>
-    public sealed class EnderecoEmpresa : EnderecoSimples, INFeSerializable, ICPFouCNPJ
+    public sealed class EnderecoEmpresa : EnderecoSimples, ISerializavel, IPossuiDocumentoIdentificador
     {
-        void INFeSerializable.Serialize(XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             if (!string.IsNullOrEmpty(CNPJ))
                 writer.WriteElementString("CNPJ", SerializationUtil.ToCNPJ(CNPJ));
@@ -58,7 +59,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a classe foi modificada.
         /// </summary>
-        public override bool IsDirty
+        public override bool Modificado
         {
             get
             {

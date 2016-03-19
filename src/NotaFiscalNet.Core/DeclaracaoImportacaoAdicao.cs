@@ -1,15 +1,16 @@
 ﻿using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Representa uma Adição na Declaração de Importação do Produto
     /// </summary>
-    public sealed class DeclaracaoImportacaoAdicao : INFeSerializable
+    public sealed class DeclaracaoImportacaoAdicao : ISerializavel
     {
-        void INFeSerializable.Serialize(XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("adi");
 

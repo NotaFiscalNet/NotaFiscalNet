@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 
@@ -10,7 +11,7 @@ namespace NotaFiscalNet.Core
     
     
     
-    public sealed class Processo : INFeSerializable
+    public sealed class Processo : ISerializavel
     {
         #region Fields
 
@@ -73,9 +74,9 @@ namespace NotaFiscalNet.Core
 
         #endregion Constructor
 
-        #region INFeSerializable Members
+        #region ISerializavel Members
 
-        void INFeSerializable.Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("procRef"); // Elemento 'procRef'
             writer.WriteElementString("nProc", SerializationUtil.ToToken(Identificador, 60));

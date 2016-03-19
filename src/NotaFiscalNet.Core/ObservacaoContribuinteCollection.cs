@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
@@ -9,7 +10,7 @@ namespace NotaFiscalNet.Core
     
     
     
-    public sealed class ObservacaoContribuinteCollection : BaseCollection<ObservacaoContribuinte>, INFeSerializable
+    public sealed class ObservacaoContribuinteCollection : BaseCollection<ObservacaoContribuinte>, ISerializavel
     {
         /// <summary>
         /// Quantidade Máxima de Elementos
@@ -45,14 +46,14 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        #region INFeSerializable Members
+        #region ISerializavel Members
 
-        void INFeSerializable.Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             foreach (ObservacaoContribuinte observacao in this)
             {
                 if (observacao.IsDirty)
-                    ((INFeSerializable)observacao).Serialize(writer, nfe);
+                    ((ISerializavel)observacao).Serializar(writer, nfe);
             }
         }
 

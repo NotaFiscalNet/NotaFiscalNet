@@ -1,21 +1,22 @@
 ﻿using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Representa os Dados de Cobrança da Nota Fiscal Eletrônica
     /// </summary>
-    public sealed class CobrancaNFe : INFeSerializable
+    public sealed class CobrancaNFe : ISerializavel
     {
-        void INFeSerializable.Serialize(XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("cobr"); // Elemento 'cobr'
 
             if (Fatura.IsDirty)
-                ((INFeSerializable)Fatura).Serialize(writer, nfe);
+                ((ISerializavel)Fatura).Serializar(writer, nfe);
 
             if (Duplicatas.IsDirty)
-                ((INFeSerializable)Duplicatas).Serialize(writer, nfe);
+                ((ISerializavel)Duplicatas).Serializar(writer, nfe);
 
             writer.WriteEndElement(); // Elemento 'cobr'
         }

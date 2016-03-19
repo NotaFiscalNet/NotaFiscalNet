@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 using NotaFiscalNet.Core.Validacao.Validators;
@@ -13,7 +14,7 @@ namespace NotaFiscalNet.Core
     
     
     
-    public sealed class Produto : INFeSerializable
+    public sealed class Produto : ISerializavel
     {
         #region Fields
 
@@ -583,9 +584,9 @@ namespace NotaFiscalNet.Core
 
         #endregion Constructor
 
-        #region INFeSerializable Members
+        #region ISerializavel Members
 
-        void INFeSerializable.Serialize(XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             #region Elemento 'det'
 
@@ -633,10 +634,10 @@ namespace NotaFiscalNet.Core
             writer.WriteElementString("indTot", ItemCompoeValorTotalNFe ? "1" : "0");
 
             // Escreve o elemento 'DI' caso tenha sido preenchido.
-            ((INFeSerializable)DeclaracoesImportacao).Serialize(writer, nfe);
+            ((ISerializavel)DeclaracoesImportacao).Serializar(writer, nfe);
 
             // Escreve o elemento 'detExport', caso haja um na coleção
-            ((INFeSerializable)DetalhamentoExportacao).Serialize(writer, nfe);
+            ((ISerializavel)DetalhamentoExportacao).Serializar(writer, nfe);
 
             if (IsStrValid(PedidoCompra))
                 writer.WriteElementString("xPed", PedidoCompra.ToToken(15));
@@ -672,7 +673,7 @@ namespace NotaFiscalNet.Core
 
             #region Elemento 'imposto'
 
-            ((INFeSerializable)Imposto).Serialize(writer, nfe);
+            ((ISerializavel)Imposto).Serializar(writer, nfe);
 
             #endregion Elemento 'imposto'
 
@@ -707,9 +708,9 @@ namespace NotaFiscalNet.Core
             return !string.IsNullOrEmpty(value) && value.Length > 0;
         }
 
-        private void Render(INFeSerializable entity, XmlWriter writer, NFe nfe)
+        private void Render(ISerializavel entity, XmlWriter writer, NFe nfe)
         {
-            entity.Serialize(writer, nfe);
+            entity.Serializar(writer, nfe);
         }
 
         #endregion Methods

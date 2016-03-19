@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
@@ -9,7 +10,7 @@ namespace NotaFiscalNet.Core
     
     
     
-    public sealed class ProdutoCollection : BaseCollection<Produto>,  INFeSerializable
+    public sealed class ProdutoCollection : BaseCollection<Produto>,  ISerializavel
     {
         protected override void PostAdd(Produto item)
         {
@@ -78,14 +79,14 @@ namespace NotaFiscalNet.Core
 
   
 
-        #region INFeSerializable Members
+        #region ISerializavel Members
 
-        void INFeSerializable.Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             foreach (Produto produto in this)
             {
                 if (produto.IsDirty)
-                    ((INFeSerializable)produto).Serialize(writer, nfe);
+                    ((ISerializavel)produto).Serializar(writer, nfe);
             }
         }
 

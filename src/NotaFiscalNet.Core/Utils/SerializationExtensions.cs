@@ -3,6 +3,7 @@ using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core.Utils
 {
@@ -11,17 +12,17 @@ namespace NotaFiscalNet.Core.Utils
     /// </summary>
     public static class SerializationExtensions
     {
-        public static void Serialize(this INFeSerializable source, XmlWriter writer, NFe nfe)
+        public static void Serialize(this ISerializavel source, XmlWriter writer, NFe nfe)
         {
             if (source == null) 
                 throw new InvalidOperationException("Não foi possível serializar o objeto pois o mesmo encontra-se nulo.");
-            source.Serialize(writer, nfe);
+            source.Serializar(writer, nfe);
         }
 
-        public static void SerializeIfNotNull(this INFeSerializable source, XmlWriter writer, NFe nfe)
+        public static void SerializeIfNotNull(this ISerializavel source, XmlWriter writer, NFe nfe)
         {
             if (source == null) return;
-            source.Serialize(writer, nfe);
+            source.Serializar(writer, nfe);
         }
 
 

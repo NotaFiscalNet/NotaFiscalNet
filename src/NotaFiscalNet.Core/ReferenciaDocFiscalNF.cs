@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 using NotaFiscalNet.Core.Validacao.Validators;
@@ -9,7 +10,7 @@ namespace NotaFiscalNet.Core
     
     
     
-    public sealed class ReferenciaDocFiscalNF : INFeSerializable
+    public sealed class ReferenciaDocFiscalNF : ISerializavel
     {
         #region Fields
 
@@ -141,9 +142,9 @@ namespace NotaFiscalNet.Core
 
         #endregion Constructor
 
-        #region INFeSerializable Members
+        #region ISerializavel Members
 
-        public void Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        public void Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("refNF");
             writer.WriteElementString("cUF", SerializationUtil.GetEnumValue<UfIBGE>(UF));

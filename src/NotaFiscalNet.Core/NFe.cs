@@ -7,6 +7,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Xml;
 using System.Xml.Linq;
+using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 using NotaFiscalNet.Core.Validacao.Validators;
@@ -19,7 +20,7 @@ namespace NotaFiscalNet.Core
      
     
     
-    public sealed class NFe : INFeSerializable
+    public sealed class NFe : ISerializavel
     {
         #region Fields
 
@@ -288,7 +289,7 @@ namespace NotaFiscalNet.Core
 
         #region IXmlSerializable Members
 
-        void INFeSerializable.Serialize(XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("NFe", Constants.NamespacePortalFiscalNFe);
 
@@ -323,7 +324,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         private void RenderInformacoesAdicionais(XmlWriter writer)
         {
-            if (InformacoesAdicionais.IsDirty)
+            if (InformacoesAdicionais.Modificado)
                 RenderEntity(InformacoesAdicionais, writer);
         }
 
@@ -351,7 +352,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         private void RenderExportacao(XmlWriter writer)
         {
-            if (Exportacao.IsDirty)
+            if (Exportacao.Modificado)
                 RenderEntity(Exportacao, writer);
         }
 
@@ -369,7 +370,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         private void RenderCana(XmlWriter writer)
         {
-            if (AquisicoesCana.IsDirty)
+            if (AquisicoesCana.Modificado)
                 RenderEntity(AquisicoesCana, writer);
         }
 
@@ -378,7 +379,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         private void RenderAvulsa(XmlWriter writer)
         {
-            if (Avulsa.IsDirty)
+            if (Avulsa.Modificado)
                 RenderEntity(Avulsa, writer);
         }
 
@@ -388,7 +389,7 @@ namespace NotaFiscalNet.Core
         /// <param name="writer"></param>
         private void RenderEnderecoRetirada(XmlWriter writer)
         {
-            if (!EnderecoRetirada.IsDirty) 
+            if (!EnderecoRetirada.Modificado) 
                 return;
 
             writer.WriteStartElement("retirada");
@@ -402,7 +403,7 @@ namespace NotaFiscalNet.Core
         /// <param name="writer"></param>
         private void RenderEnderecoEntrega(XmlWriter writer)
         {
-            if (!EnderecoEntrega.IsDirty) 
+            if (!EnderecoEntrega.Modificado) 
                 return;
             writer.WriteStartElement("entrega");
             RenderEntity(EnderecoEntrega, writer);
@@ -418,11 +419,11 @@ namespace NotaFiscalNet.Core
         }
         
 
-        private void RenderEntity(INFeSerializable entity, XmlWriter writer)
+        private void RenderEntity(ISerializavel entity, XmlWriter writer)
         {
             if (entity == null) return;
 
-            entity.Serialize(writer, this);
+            entity.Serializar(writer, this);
         }
 
         private void Deserialize(XDocument doc, bool ignoreSchemaValidation = false)
@@ -1976,7 +1977,7 @@ namespace NotaFiscalNet.Core
             using ( var sw = new StringWriter() )
             using ( var writer = XmlWriter.Create(sw, settings) )
             {
-                ((INFeSerializable)this).Serialize(writer, this);
+                ((ISerializavel)this).Serializar(writer, this);
                 writer.Flush();
                 xml = sw.ToString();
             }
@@ -2000,7 +2001,7 @@ namespace NotaFiscalNet.Core
             using (var sw = new StringWriter())
             using (var writer = XmlWriter.Create(sw, settings))
             {
-                ((INFeSerializable)this).Serialize(writer, this);
+                ((ISerializavel)this).Serializar(writer, this);
                 writer.Flush();
                 xml = sw.ToString();
             }

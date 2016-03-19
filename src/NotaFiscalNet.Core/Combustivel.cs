@@ -1,6 +1,7 @@
 ﻿using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
@@ -8,14 +9,14 @@ namespace NotaFiscalNet.Core
     /// Representa as informações de detalhamento de um Item de Produto da Nota Fiscal referente a
     /// combustíveis líquidos.
     /// </summary>
-    public sealed class Combustivel : INFeSerializable
+    public sealed class Combustivel : ISerializavel
     {
         internal Combustivel(Produto produto)
         {
             Produto = produto;
         }
 
-        void INFeSerializable.Serialize(XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("comb");
 
@@ -31,7 +32,7 @@ namespace NotaFiscalNet.Core
             writer.WriteElementString("UFCons", UFConsumo.ToString());
 
             if (CIDE != null)
-                ((INFeSerializable)CIDE).Serialize(writer, nfe);
+                ((ISerializavel)CIDE).Serializar(writer, nfe);
 
             writer.WriteEndElement(); // fim do elemento 'comb'
         }
@@ -146,7 +147,7 @@ namespace NotaFiscalNet.Core
                     CodigoProdutoANP != 0 ||
                     !string.IsNullOrEmpty(CodigoCODIF) ||
                     QuantidadeCombustivelFaturadaTempAmbiente != 0m ||
-                    CIDE.IsDirty ||
+                    CIDE.Modificado ||
                     UFConsumo != SiglaUF.NaoEspecificado;
             }
         }

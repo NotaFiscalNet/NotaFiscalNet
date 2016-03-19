@@ -1,10 +1,11 @@
 ﻿using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
-    public sealed class DeducaoCana : INFeSerializable, IDirtyable
+    public sealed class DeducaoCana : ISerializavel, IModificavel
     {
         private string _descricao;
         private decimal _valor;
@@ -25,7 +26,7 @@ namespace NotaFiscalNet.Core
             set { _valor = ValidationUtil.ValidateTDec_1302(value, "Valor"); }
         }
 
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {
@@ -35,7 +36,7 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        public void Serialize(XmlWriter writer, NFe nfe)
+        public void Serializar(XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("deduc");
 

@@ -2,15 +2,16 @@
 using NotaFiscalNet.Core.Validacao;
 using System;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
     /// <summary>
     /// Representa as informações do Fisco do Emitente da Nota Fiscal Eletrônica.
     /// </summary>
-    public sealed class FiscoEmitenteNFe : INFeSerializable, IDirtyable
+    public sealed class FiscoEmitenteNFe : ISerializavel, IModificavel
     {
-        void INFeSerializable.Serialize(XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("avulsa");
 
@@ -187,7 +188,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a classe foi modificada.
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {

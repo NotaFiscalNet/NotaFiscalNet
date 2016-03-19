@@ -1,4 +1,5 @@
 using System.Runtime.InteropServices;
+using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 
 namespace NotaFiscalNet.Core
@@ -6,7 +7,7 @@ namespace NotaFiscalNet.Core
     
     
     
-    public class IpiDevolvido : INFeSerializable
+    public class IpiDevolvido : ISerializavel
     {
         private decimal _valorIpiDevolvido;
 
@@ -24,7 +25,7 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        void INFeSerializable.Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("IPI");
             writer.WriteStartElement("vIPIDevol", ValorIpiDevolvido.ToTDec_1302());

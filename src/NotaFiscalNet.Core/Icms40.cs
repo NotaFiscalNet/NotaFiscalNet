@@ -2,6 +2,7 @@
 using NotaFiscalNet.Core.Validacao;
 using System;
 using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {

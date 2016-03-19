@@ -2,6 +2,7 @@
 using NotaFiscalNet.Core.Validacao;
 using NotaFiscalNet.Core.Validacao.Validators;
 using System;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
@@ -9,7 +10,7 @@ namespace NotaFiscalNet.Core
     /// Responsável por armazenar as informações de Indentificação de uma Nota Fiscal Eletrônica.
     /// </summary>
 
-    public sealed class IdentificacaoNFe : INFeSerializable
+    public sealed class IdentificacaoNFe : ISerializavel
     {
         private UfIBGE _ufEnvio = UfIBGE.NaoEspecificado;
         private int _codigoNF = new Random().Next(10000000, 99999999);
@@ -322,7 +323,7 @@ namespace NotaFiscalNet.Core
          ValidateField(23, ChaveErroValidacao.CampoNaoPreenchido, Validator = typeof (EntradaContingenciaValidator))]
         public string JustificativaEntradaContingencia { get; set; }
 
-        void INFeSerializable.Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("ide"); // Elemento 'ide'
 
@@ -360,7 +361,7 @@ namespace NotaFiscalNet.Core
 
             // Serializa as referência
             if (ReferenciasDocFiscais.IsDirty)
-                ((INFeSerializable) ReferenciasDocFiscais).Serialize(writer, nfe);
+                ((ISerializavel) ReferenciasDocFiscais).Serializar(writer, nfe);
 
             writer.WriteEndElement(); // fim do elemento 'ide'
         }

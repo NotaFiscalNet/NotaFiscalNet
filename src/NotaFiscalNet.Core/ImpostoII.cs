@@ -1,4 +1,5 @@
-﻿using NotaFiscalNet.Core.Utils;
+﻿using NotaFiscalNet.Core.Interfaces;
+using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 
 namespace NotaFiscalNet.Core
@@ -7,7 +8,7 @@ namespace NotaFiscalNet.Core
     /// Representa o Imposto de Importação do Produto
     /// </summary>
 
-    public sealed class ImpostoII : INFeSerializable, IDirtyable
+    public sealed class ImpostoII : ISerializavel, IModificavel
     {
         private decimal _baseCalculo;
         private decimal _valorDespesasAduaneiras;
@@ -99,7 +100,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
-        public bool IsDirty
+        public bool Modificado
         {
             get
             {
@@ -111,7 +112,7 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        void INFeSerializable.Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("II"); // Elemento 'II'
             writer.WriteElementString("vBC", SerializationUtil.ToTDec_1302(BaseCalculo));

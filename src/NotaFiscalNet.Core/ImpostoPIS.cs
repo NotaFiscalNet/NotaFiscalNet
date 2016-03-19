@@ -1,6 +1,7 @@
 ﻿using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
 using System;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
@@ -8,7 +9,7 @@ namespace NotaFiscalNet.Core
     /// Representa o Imposto Programa de Integração Social
     /// </summary>
 
-    public sealed class ImpostoPIS : INFeSerializable
+    public sealed class ImpostoPIS : ISerializavel
     {
         private SituacaoTributariaPIS _situacaoTributaria = SituacaoTributariaPIS.NaoEspecificado;
         private decimal _baseCalculo;
@@ -292,7 +293,7 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        void INFeSerializable.Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             writer.WriteStartElement("PIS"); // Elemento 'PIS'
             switch (SituacaoTributaria)

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Validacao;
 using NotaFiscalNet.Core.Validacao.Validators;
 
@@ -8,7 +9,7 @@ namespace NotaFiscalNet.Core
     
     
     
-    public sealed class ReferenciaDocFiscalNFe : INFeSerializable
+    public sealed class ReferenciaDocFiscalNFe : ISerializavel
     {
         #region Fields
 
@@ -69,9 +70,9 @@ namespace NotaFiscalNet.Core
 
         #endregion Constructor
 
-        #region INFeSerializable Members
+        #region ISerializavel Members
 
-        public void Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        public void Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             /// Campos para Nota Fiscal modelo NFe (55)
             writer.WriteElementString("refNFe", ChaveAcessoNFe);

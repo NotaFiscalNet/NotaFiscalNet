@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Validacao;
 
 namespace NotaFiscalNet.Core
@@ -9,7 +10,7 @@ namespace NotaFiscalNet.Core
     
     
     
-    public sealed class TotalNFe :  INFeSerializable
+    public sealed class TotalNFe :  ISerializavel
     {
         #region Fields
 
@@ -76,19 +77,19 @@ namespace NotaFiscalNet.Core
 
         #endregion Properties
 
-        #region INFeSerializable Members
+        #region ISerializavel Members
 
-        void INFeSerializable.Serialize(System.Xml.XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(System.Xml.XmlWriter writer, NFe nfe)
         {
             #region total
 
             writer.WriteStartElement("total");
             
-            ((INFeSerializable)ICMS).Serialize(writer, nfe);
+            ((ISerializavel)ICMS).Serializar(writer, nfe);
             if (ISSQN.IsDirty)
-                ((INFeSerializable)ISSQN).Serialize(writer, nfe);
+                ((ISerializavel)ISSQN).Serializar(writer, nfe);
             if (RetencaoTributosFederais.IsDirty)
-                ((INFeSerializable)RetencaoTributosFederais).Serialize(writer, nfe);
+                ((ISerializavel)RetencaoTributosFederais).Serializar(writer, nfe);
 
             writer.WriteEndElement(); // fim do elemento 'total' 
 

@@ -1,4 +1,5 @@
 ﻿using System.Xml;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
@@ -6,7 +7,7 @@ namespace NotaFiscalNet.Core
     /// Representa uma Coleção de Adições na Declaração de Importação do Produto
     /// </summary>
     public sealed class DeclaracaoImportacaoAdicaoCollection : BaseCollection<DeclaracaoImportacaoAdicao>,
-        INFeSerializable
+        ISerializavel
     {
         /// <summary>
         /// Retorna se existe alguma instancia da classe modificada na coleção
@@ -24,12 +25,12 @@ namespace NotaFiscalNet.Core
             }
         }
 
-        void INFeSerializable.Serialize(XmlWriter writer, NFe nfe)
+        void ISerializavel.Serializar(XmlWriter writer, NFe nfe)
         {
             foreach (var declaracao in this)
             {
                 if (declaracao.IsDirty)
-                    ((INFeSerializable)declaracao).Serialize(writer, nfe);
+                    ((ISerializavel)declaracao).Serializar(writer, nfe);
             }
         }
     }

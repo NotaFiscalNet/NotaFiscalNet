@@ -26,30 +26,5 @@ namespace NotaFiscalNet.Core
 
             base.PreAdd(e, item);
         }
-
-        private void Add(AutorizacaoDownloadXml item)
-        {
-            Add(item);
-        }
-
-        private void Clear()
-        {
-            Clear();
-        }
-
-        private bool Contains(AutorizacaoDownloadXml item)
-        {
-            return Contains(item);
-        }
-
-        private void Remove(AutorizacaoDownloadXml item)
-        {
-            Remove(item);
-        }
-
-        private int Count
-        {
-            get { return Count; }
-        }
     }
 }

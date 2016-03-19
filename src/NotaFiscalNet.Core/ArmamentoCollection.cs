@@ -54,30 +54,5 @@ namespace NotaFiscalNet.Core
 
             base.PreAdd(e, item);
         }
-
-        private void Add(Armamento item)
-        {
-            Add(item);
-        }
-
-        private void Clear()
-        {
-            Clear();
-        }
-
-        private bool Contains(Armamento item)
-        {
-            return Contains(item);
-        }
-
-        private void Remove(Armamento item)
-        {
-            Remove(item);
-        }
-
-        private int Count
-        {
-            get { return Count; }
-        }
     }
 }

@@ -9,7 +9,7 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Responsável por armazenar as informações de Indentificação de um Documento Fiscal.
     /// </summary>
-    public sealed class IdentificacaoDocumentoFiscal : ISerializavel
+    public class IdentificacaoDocumentoFiscal : ISerializavel
     {
         private UfIBGE _unidadeFederativaEmitente = UfIBGE.NaoEspecificado;
         private int _codigoNumerico = new Random().Next(10000000, 99999999);
@@ -37,7 +37,7 @@ namespace NotaFiscalNet.Core
         /// [cUF] Retorna ou define o código Unidade Federativa (IBGE) do Emitente do Documento Fiscal.
         /// </summary>
         [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido, DefaultValue = UfIBGE.NaoEspecificado)]
-        public UfIBGE UnidadeFederativaEmitente
+        public virtual UfIBGE UnidadeFederativaEmitente
         {
             get { return _unidadeFederativaEmitente; }
             set { _unidadeFederativaEmitente = ValidationUtil.ValidateEnum(value, "UnidadeFederativaEmitente"); }
@@ -313,11 +313,11 @@ namespace NotaFiscalNet.Core
             writer.WriteElementString("mod", ModalidadeDocumentoFiscal.GetEnumValue());
             writer.WriteElementString("serie", Serie.ToString());
             writer.WriteElementString("nNF", NumeroDocumentoFiscal.ToString());
-            writer.WriteElementString("dhEmi", DataEmissao.ToTDateTimeUtc());
+            writer.WriteElementString("dhEmi", DataEmissao.ToTDateTimeUtc(nfe));
 
             if (DataEntradaSaida.HasValue)
             {
-                writer.WriteElementString("dhSaiEnt", DataEntradaSaida.Value.ToTDateTimeUtc());
+                writer.WriteElementString("dhSaiEnt", DataEntradaSaida.Value.ToTDateTimeUtc(nfe));
             }
             writer.WriteElementString("tpNF", TipoNotaFiscal.GetEnumValue());
             writer.WriteElementString("idDest", IdentificadorLocalDestinoOperacao.GetEnumValue());
@@ -334,7 +334,7 @@ namespace NotaFiscalNet.Core
 
             if (TipoEmissao != TipoEmissaoNFe.Normal)
             {
-                writer.WriteElementString("dhCont", DataHoraEntradaContingencia.ToTDateTimeUtc());
+                writer.WriteElementString("dhCont", DataHoraEntradaContingencia.ToTDateTimeUtc(nfe));
                 writer.WriteElementString("xJust", JustificativaEntradaContingencia);
             }
 

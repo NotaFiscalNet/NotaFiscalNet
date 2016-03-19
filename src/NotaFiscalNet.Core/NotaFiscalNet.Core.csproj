@@ -245,6 +245,7 @@
     <Compile Include="Utils\CalculoUtil.cs" />
     <Compile Include="Utils\DecimalExtensions.cs" />
     <Compile Include="Utils\EnumEx.cs" />
+    <Compile Include="Utils\CalculadorFusoHorario.cs" />
     <Compile Include="Utils\MsgUtil.cs" />
     <Compile Include="Utils\NFeXmlReaderExtensions.cs" />
     <Compile Include="Utils\SerializationExtensions.cs" />

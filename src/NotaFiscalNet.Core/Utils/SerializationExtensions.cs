@@ -388,6 +388,19 @@ namespace NotaFiscalNet.Core.Utils
         /// Converte para o formato de data e hora com especificador de fuso-horário.
         /// </summary>
         /// <param name="value"></param>
+        /// <param name="nfe"></param>
+        /// <returns></returns>
+        public static string ToTDateTimeUtc(this DateTime value, INFe nfe)
+        {
+            var calculadorFusoHorario = new CalculadorFusoHorario(nfe);
+            return new DateTimeOffset(value, calculadorFusoHorario.ObtemFusoHorarioOffset(value))
+                .ToString("yyyy-MM-ddTHH:mm:sszzzz");
+        }
+
+        /// <summary>
+        /// Converte para o formato de data e hora com especificador de fuso-horário.
+        /// </summary>
+        /// <param name="value"></param>
         /// <returns></returns>
         public static string ToTDateTimeUtc(this DateTime value)
         {

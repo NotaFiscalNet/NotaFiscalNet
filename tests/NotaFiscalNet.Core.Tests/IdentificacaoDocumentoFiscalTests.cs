@@ -245,6 +245,7 @@ namespace NotaFiscalNet.Core.Tests
             var referencia = _repositorio.Referencias[chaveReferencia];
             var nfe = new Mock<INFe>();
             nfe.Setup(n => n.DigitoVerificadorChaveAcesso).Returns(1);
+            nfe.Setup(n => n.Identificacao.UnidadeFederativaEmitente).Returns(referencia.UnidadeFederativaEmitente);
 
             var resultado = new Serializador(referencia, nfe.Object).Serializar();
             

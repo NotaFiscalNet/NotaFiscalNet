@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotaFiscalNet.Core", "NotaFiscalNet.Core\NotaFiscalNet.Core.csproj", "{C2D58736-9EE1-419E-A6D9-38294C88AFE9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{97D1D094-3B8F-4DBD-9D86-C21D71F2AE02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotaFiscalNet.Core.Tests", "..\tests\NotaFiscalNet.Core.Tests\NotaFiscalNet.Core.Tests.csproj", "{5389336E-D2F0-4913-857B-A211D3A0EC21}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9E7A585B-01AA-4147-B91C-07130FFF6879}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotaFiscalNet.Core", "src\NotaFiscalNet.Core\NotaFiscalNet.Core.csproj", "{C2D58736-9EE1-419E-A6D9-38294C88AFE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotaFiscalNet.Core.Tests", "tests\NotaFiscalNet.Core.Tests\NotaFiscalNet.Core.Tests.csproj", "{5389336E-D2F0-4913-857B-A211D3A0EC21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +28,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C2D58736-9EE1-419E-A6D9-38294C88AFE9} = {97D1D094-3B8F-4DBD-9D86-C21D71F2AE02}
+		{5389336E-D2F0-4913-857B-A211D3A0EC21} = {9E7A585B-01AA-4147-B91C-07130FFF6879}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,20 @@
+version: 1.0.0.{build}
+
+skip_tags: true
+
+configuration: Release
+
+clone_depth: 3
+
+before_build:
+- cmd: nuget restore
+
+build:
+  verbosity: minimal
+
+after_build:
+- cmd: 7z a NotaFiscalNet.zip %APPVEYOR_BUILD_FOLDER%\src\NotaFiscalNet.Core\bin\%CONFIGURATION%\NotaFiscalNet*.dll
+
+artifacts:
+- path: NotaFiscalNet.zip
+  name: NotaFiscalNet

@@ -1,4 +1,5 @@
-### Nota Fiscal Net  ![Build Status](https://ci.appveyor.com/api/projects/status/rbbqi20g8msknnf1/branch/develop) 
+### Nota Fiscal Net  [![Build status](https://ci.appveyor.com/api/projects/status/o371q2hef2154tnh/branch/develop?svg=true)](https://ci.appveyor.com/project/NotaFiscalNet/notafiscalnet/branch/develop)
+
 Este é um projeto gratuito para geração de Notas Fiscais Eletrônicas, desenvolvido em .NET utilizando C#
 
 ### Características

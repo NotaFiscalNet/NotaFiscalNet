@@ -1,5 +1,6 @@
 ﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
+using NotaFiscalNet.Core.Validacao;
 using System.Xml;
 
 namespace NotaFiscalNet.Core
@@ -9,38 +10,24 @@ namespace NotaFiscalNet.Core
     /// </summary>
     public sealed class Compra : ISerializavel, IModificavel
     {
-        public void Serializar(XmlWriter writer, INFe nfe)
-        {
-            writer.WriteStartElement("compra"); // Elemento 'compra'
-
-            if (!string.IsNullOrEmpty(NotaEmpenho))
-                writer.WriteElementString("xNEmp", SerializationUtil.ToToken(NotaEmpenho, 17));
-            if (!string.IsNullOrEmpty(Pedido))
-                writer.WriteElementString("xPed", SerializationUtil.ToToken(Pedido, 60));
-            if (!string.IsNullOrEmpty(Contrato))
-                writer.WriteElementString("xCont", SerializationUtil.ToToken(Contrato, 60));
-
-            writer.WriteEndElement();
-        }
-
-        private string _notaEmpenho = string.Empty;
-        private string _pedido = string.Empty;
-        private string _contrato = string.Empty;
+        private string _contrato;
+        private string _notaEmpenho;
+        private string _pedido;
 
         /// <summary>
         /// [xNEmp] Retorna ou define a Identificação da Nota de Empenho, quando se tratar de compras públicas.
         /// </summary>
-        [NFeField(ID = "ZB02", FieldName = "xNEmp", DataType = "token", MinLength = 1, MaxLength = 17)]
+        [ValidateField(1, true)]
         public string NotaEmpenho
         {
             get { return _notaEmpenho; }
-            set { _notaEmpenho = ValidationUtil.TruncateString(value, 17); }
+            set { _notaEmpenho = ValidationUtil.TruncateString(value, 22); }
         }
 
         /// <summary>
         /// [xPed] Retorna ou define o Pedido de Compra
         /// </summary>
-        [NFeField(ID = "ZB03", FieldName = "xPed", DataType = "token", MinLength = 1, MaxLength = 60)]
+        [ValidateField(2, true)]
         public string Pedido
         {
             get { return _pedido; }
@@ -50,7 +37,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// [xCont] Retorna ou define Contrato de Compra
         /// </summary>
-        [NFeField(ID = "ZB04", FieldName = "xCont", DataType = "token", MinLength = 1, MaxLength = 60)]
+        [ValidateField(3, true)]
         public string Contrato
         {
             get { return _contrato; }
@@ -63,5 +50,19 @@ namespace NotaFiscalNet.Core
         public bool Modificado => !string.IsNullOrEmpty(Contrato) ||
                                   !string.IsNullOrEmpty(NotaEmpenho) ||
                                   !string.IsNullOrEmpty(Pedido);
+
+        public void Serializar(XmlWriter writer, INFe nfe)
+        {
+            writer.WriteStartElement("compra");
+
+            if (!string.IsNullOrEmpty(NotaEmpenho))
+                writer.WriteElementString("xNEmp", SerializationUtil.ToToken(NotaEmpenho, 17));
+            if (!string.IsNullOrEmpty(Pedido))
+                writer.WriteElementString("xPed", SerializationUtil.ToToken(Pedido, 60));
+            if (!string.IsNullOrEmpty(Contrato))
+                writer.WriteElementString("xCont", SerializationUtil.ToToken(Contrato, 60));
+
+            writer.WriteEndElement();
+        }
     }
 }

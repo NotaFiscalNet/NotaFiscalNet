@@ -8,34 +8,28 @@ namespace NotaFiscalNet.Core
     /// <summary>
     /// Representam as informações de Exportação da Nota Fiscal Eletrônica.
     /// </summary>
-
     public sealed class InformacoesExportacao : ISerializavel, IModificavel
     {
-        private SiglaUF _ufSaidaPais = SiglaUF.NaoEspecificado;
-        private string _localEmbarque = string.Empty;
-        private string _localDespacho = string.Empty;
+        private UfIBGE _unidadeFederativa = UfIBGE.NaoEspecificado;
+        private string _localEmbarque;
+        private string _localDespacho;
 
         /// <summary>
-        /// [UFEmbarq] Retorna ou define a Sigla da UF de Embarque o de transposição de fronteira.
+        /// [UFSaidaPais] Retorna ou define a Sigla da UF de Embarque ou de transposição de fronteira.
         /// </summary>
-        [NFeField(ID = "ZA02", FieldName = "UFSaidaPais", DataType = "TUfEmi")]
         [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido, DefaultValue = UfIBGE.NaoEspecificado)]
-        public SiglaUF UFSaidaPais
+        public UfIBGE UnidadeFederativa
         {
-            get { return _ufSaidaPais; }
+            get { return _unidadeFederativa; }
             set
             {
-                if (value == SiglaUF.EX)
-                    throw new InvalidOperationException("EX não é um valor válido para o campo.");
-
-                _ufSaidaPais = ValidationUtil.ValidateEnum(value, "UFEmbarque");
+                _unidadeFederativa = ValidationUtil.ValidateEnum(value, "UnidadeFederativa");
             }
         }
 
         /// <summary>
         /// [xLocExporta] Retorna ou define a Descrição do Local de Embarque ou de transposição de fronteira.
         /// </summary>
-        [NFeField(ID = "ZA03", FieldName = "xLocExporta", DataType = "TString", MinLength = 1, MaxLength = 60, Pattern = @"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}")]
         [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public string LocalEmbarque
         {
@@ -49,8 +43,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// [xLocDespacho] Retorna ou define a Descrição do Local de Despacho.
         /// </summary>
-        [NFeField(ID = "ZA04", FieldName = "xLocDespacho", DataType = "TString", MinLength = 1, MaxLength = 60, Pattern = @"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}", Opcional = true)]
-        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido)]
+        [ValidateField(2, true)]
         public string LocalDespacho
         {
             get { return _localDespacho; }
@@ -63,21 +56,20 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se a classe foi modificada.
         /// </summary>
-        public bool Modificado => UFSaidaPais != SiglaUF.NaoEspecificado ||
+        public bool Modificado => UnidadeFederativa != UfIBGE.NaoEspecificado ||
                                   !string.IsNullOrEmpty(LocalEmbarque) ||
                                   !string.IsNullOrEmpty(LocalDespacho);
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, INFe nfe)
         {
-            writer.WriteStartElement("exporta"); // Elemento 'exporta'
+            writer.WriteStartElement("exporta");
 
-            writer.WriteElementString("UFSaidaPais", UFSaidaPais.ToString());
+            writer.WriteElementString("UFSaidaPais", UnidadeFederativa.ToString());
             writer.WriteElementString("xLocExporta", SerializationUtil.ToToken(LocalEmbarque, 60));
-
-            if (!String.IsNullOrEmpty(LocalDespacho))
+            if (!string.IsNullOrEmpty(LocalDespacho))
                 writer.WriteElementString("xLocDespacho", SerializationUtil.ToToken(LocalDespacho, 60));
 
-            writer.WriteEndElement(); // Elemento 'exporta'
+            writer.WriteEndElement();
         }
     }
 }

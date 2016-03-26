@@ -470,7 +470,7 @@ namespace NotaFiscalNet.Core
 
         private void ParseExporta(XElement exportaEl)
         {
-            exportaEl.NFElementAsEnum<SiglaUF>("UFSaidaPais", value => Exportacao.UFSaidaPais = value);
+            exportaEl.NFElementAsEnum<UfIBGE>("UFSaidaPais", value => Exportacao.UnidadeFederativa = value);
             exportaEl.NFElementAsString("xLocExporta", value => Exportacao.LocalEmbarque = value);
             exportaEl.NFElementAsString("xLocDespacho", value => Exportacao.LocalDespacho = value);
         }

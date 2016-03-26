@@ -66,10 +66,12 @@
     <Compile Include="Comum\CarregadorXml.cs" />
     <Compile Include="Comum\Serializador.cs" />
     <Compile Include="Dados\Repositorio.cs" />
+    <Compile Include="Dados\RepositorioInformacoesExportacao.cs" />
     <Compile Include="Dados\RepositorioIdentificacaoDocumentoFiscal.cs" />
     <Compile Include="Dados\RepositorioReferenciaDocumentoFiscalNotaFiscal.cs" />
     <Compile Include="Dados\RepositorioReferenciaDocumentoFiscalNotaFiscalProdutor.cs" />
     <Compile Include="CompraTests.cs" />
+    <Compile Include="InformacoesExportacaoTests.cs" />
     <Compile Include="IdentificacaoDocumentoFiscalTests.cs" />
     <Compile Include="ReferenciaDocumentoFiscalCollectionTests.cs" />
     <Compile Include="ReferenciaDocumentoFiscalNfeTests.cs" />
@@ -92,7 +94,13 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Xmls\InformacoesExportacao1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Xmls\Compra1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xmls\InformacoesExportacao2.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Xmls\Compra2.xml">

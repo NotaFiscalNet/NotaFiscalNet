@@ -30,7 +30,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "L106", FieldName = "qBCProd", DataType = "TDec_1204",
             Pattern = @"0|0\.[0-9]{4}|[1-9]{1}[0-9]{0,11}(\.[0-9]{4})?")]
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal BaseCalculo
         {
             get { return _baseCalculo; }
@@ -46,7 +46,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "L107", FieldName = "vAliqProd", DataType = "TDec_1104",
             Pattern = @"0|0\.[0-9]{4}|[1-9]{1}[0-9]{0,10}(\.[0-9]{4})?")]
-        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal Aliquota
         {
             get { return _aliquota; }
@@ -62,7 +62,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "L108", FieldName = "vCIDE", DataType = "TDec_1302",
             Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(3, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal Valor
         {
             get { return _valor; }

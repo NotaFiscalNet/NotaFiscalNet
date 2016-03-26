@@ -44,7 +44,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "T02", FieldName = "vBC", DataType = "TDec_1302Opc", Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
         [NFeField(ID = "T04", FieldName = "qBCProd", DataType = "TDec_1204Opc", Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?")]
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal BaseCalculo
         {
             get { return _baseCalculo; }
@@ -69,7 +69,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "T03", FieldName = "pCOFINS", DataType = "TDec_0302Opc", Pattern = @"0\.[1-9]{1}[0-9]{3}|0\.[0-9]{3}[1-9]{1}|0\.[0-9]{2}[1-9]{1}[0-9]{1}|0\.[0-9]{1}[1-9]{1}[0-9]{2}|[1-9]{1}[0-9]{0,11}(\.[0-9]{4})?")]
         [NFeField(ID = "T05", FieldName = "vAliqProd", DataType = "TDec_1104Opc", Pattern = @"0\.[1-9]{1}[0-9]{3}|0\.[0-9]{3}[1-9]{1}|0\.[0-9]{2}[1-9]{1}[0-9]{1}|0\.[0-9]{1}[1-9]{1}[0-9]{2}|[1-9]{1}[0-9]{0,10}(\.[0-9]{4})?")]
-        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal Aliquota
         {
             get { return _aliquota; }
@@ -93,7 +93,7 @@ namespace NotaFiscalNet.Core
         /// [vCOFINS] Retorna ou define o Valor do COFINS ST.
         /// </summary>
         [NFeField(ID = "T06", FieldName = "vCOFINS", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(3, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal Valor
         {
             get { return _valor; }

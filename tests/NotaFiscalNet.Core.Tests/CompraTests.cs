@@ -1,4 +1,5 @@
 ﻿using NotaFiscalNet.Core.Tests.Comum;
+using NotaFiscalNet.Core.Validacao;
 using Xunit;
 
 namespace NotaFiscalNet.Core.Tests
@@ -41,5 +42,6 @@ namespace NotaFiscalNet.Core.Tests
 
             Assert.Equal(xml, resultado);
         }
+
     }
 }

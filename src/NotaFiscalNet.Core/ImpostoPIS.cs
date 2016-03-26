@@ -33,7 +33,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define a Situação Tributária.
         /// </summary>
         [NFeField(ID = "Q06", FieldName = "CST", DataType = "token")]
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido, DefaultValue = SituacaoTributariaPIS.NaoEspecificado)]
+        [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = SituacaoTributariaPIS.NaoEspecificado)]
         public SituacaoTributariaPIS SituacaoTributaria
         {
             get { return _situacaoTributaria; }
@@ -116,7 +116,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "Q07", FieldName = "vBC", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
         [NFeField(ID = "Q10", FieldName = "qBCProd", DataType = "TDec_1204", Pattern = @"0|0\.[0-9]{4}|[1-9]{1}[0-9]{0,11}(\.[0-9]{4})?")]
-        //[ValidateField(2, Validator=typeof(ImpostoPISValidator))]
+        //[ValidateField(2, Validador=typeof(ImpostoPISValidator))]
         public decimal BaseCalculo
         {
             get { return _baseCalculo; }
@@ -184,7 +184,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "Q08", FieldName = "pPIS", DataType = "TDec_0302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?")]
         [NFeField(ID = "Q11", FieldName = "vAliqProd", DataType = "TDec_1104", Pattern = @"0|0\.[0-9]{4}|[1-9]{1}[0-9]{0,10}(\.[0-9]{4})?")]
-        //[ValidateField(3, Validator = typeof(ImpostoPISValidator))]
+        //[ValidateField(3)]
         public decimal Aliquota
         {
             get { return _aliquota; }
@@ -228,7 +228,7 @@ namespace NotaFiscalNet.Core
         /// [vPIS] Retorna ou define o Valor do PIS
         /// </summary>
         [NFeField(ID = "Q09", FieldName = "vPIS", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        //[ValidateField(4, Validator = typeof(ImpostoPISValidator))]
+        //[ValidateField(4)]
         public decimal Valor
         {
             get { return _valor; }

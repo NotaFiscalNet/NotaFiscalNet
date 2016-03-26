@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FluentValidation, Version=6.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FluentValidation.6.2.1.0\lib\Net45\FluentValidation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Moq, Version=4.2.1510.2205, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Moq.4.2.1510.2205\lib\net40\Moq.dll</HintPath>
       <Private>True</Private>
@@ -75,13 +79,18 @@
     <Compile Include="AvulsaTests.cs" />
     <Compile Include="InformacoesExportacaoTests.cs" />
     <Compile Include="IdentificacaoDocumentoFiscalTests.cs" />
-    <Compile Include="ReferenciaDocumentoFiscalCollectionTests.cs" />
     <Compile Include="ReferenciaDocumentoFiscalNfeTests.cs" />
     <Compile Include="ReferenciaDocumentoFiscalCteTests.cs" />
     <Compile Include="ReferenciaDocumentoFiscalNotaFiscalTests.cs" />
     <Compile Include="ReferenciaDocumentoFiscalNotaFiscalProdutorTests.cs" />
     <Compile Include="ReferenciaDocumentoFiscalEcfTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validacao\CompraValidadorTests.cs" />
+    <Compile Include="Validacao\ReferenciaDocumentoFiscalCteValidadorTests.cs" />
+    <Compile Include="Validacao\ReferenciaDocumentoFiscalEcfValidadorTests.cs" />
+    <Compile Include="Validacao\ReferenciaDocumentoFiscalNotaFiscalProdutorValidadorTests.cs" />
+    <Compile Include="Validacao\ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs" />
+    <Compile Include="Validacao\ReferenciaDocumentoFiscalNfeValidadorTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

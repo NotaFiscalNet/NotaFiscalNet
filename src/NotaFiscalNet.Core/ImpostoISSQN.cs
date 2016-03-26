@@ -44,7 +44,7 @@ namespace NotaFiscalNet.Core
         /// [vBC] Retorna ou define a Base de Cálculo do ISSQN
         /// </summary>
         [NFeField(ID = "U02", FieldName = "vBC", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal BaseCalculo
         {
             get { return _baseCalculo; }
@@ -60,7 +60,7 @@ namespace NotaFiscalNet.Core
         /// [vAliq] Retorna ou define a Alíquota do ISSQN
         /// </summary>
         [NFeField(ID = "U03", FieldName = "vAliq", DataType = "TDec_0302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?")]
-        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal Aliquota
         {
             get { return _aliquota; }
@@ -76,7 +76,7 @@ namespace NotaFiscalNet.Core
         /// [vISSQN] Retorna ou define o valor do ISSQN
         /// </summary>
         [NFeField(ID = "U04", FieldName = "vISSQN", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(3, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal ValorISSQN
         {
             get { return _valor; }
@@ -93,7 +93,7 @@ namespace NotaFiscalNet.Core
         /// do IBGE.
         /// </summary>
         [NFeField(ID = "U05", FieldName = "cMunFG", DataType = "TCodMunIBGE", Pattern = "[0-9]{7}")]
-        [ValidateField(4, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido)]
         public int CodigoMunicipioFatoGeradorIBGE
         {
             get { return _codigoMunicipioFatoGeradorIBGE; }
@@ -109,7 +109,7 @@ namespace NotaFiscalNet.Core
         /// [cListServ] Retorna ou define o Código do Serviço baseado na Lei Complementar 116/2003
         /// </summary>
         [NFeField(ID = "U06", FieldName = "cListServ", DataType = "TCListServ")]
-        [ValidateField(5, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
         public string CodigoServico
         {
             get { return _codigoServico; }

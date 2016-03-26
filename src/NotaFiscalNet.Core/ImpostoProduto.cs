@@ -69,56 +69,56 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [Obsolete("Usar o campos Icms.")]
         [NFeField(ID = "N01", FieldName = "ICMS")]
-        [ValidateField(1, true)]
+        [CampoValidavel(1, Opcional = true)]
         public ImpostoICMS ICMS => _ICMS;
 
         /// <summary>
         /// Retorna o valor representando as informações de declaração do IPI para o produto. Opcional.
         /// </summary>
         [NFeField(ID = "O01", FieldName = "IPI", Opcional = true)]
-        [ValidateField(2, true)]
+        [CampoValidavel(2, Opcional = true)]
         public ImpostoIPI IPI => _ipi;
 
         /// <summary>
         /// Retorna o II (Imposto de Importação). Opcional.
         /// </summary>
         [NFeField(ID = "P01", FieldName = "II", Opcional = true)]
-        [ValidateField(3, true)]
+        [CampoValidavel(3, Opcional = true)]
         public ImpostoII II => _ii;
 
         /// <summary>
         /// Retorna o ISSQN
         /// </summary>
         [NFeField(ID = "U01", FieldName = "ISSQN")]
-        [ValidateField(4, true)]
+        [CampoValidavel(4, Opcional = true)]
         public ImpostoISSQN ISSQN => _issqn;
 
         /// <summary>
         /// Retorna as informações do PIS (Programa de Integração Social).
         /// </summary>
         [NFeField(ID = "Q01", FieldName = "PIS")]
-        [ValidateField(5, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
         public ImpostoPIS PIS => _pis;
 
         /// <summary>
         /// Retorna o PIS ST. Opcional.
         /// </summary>
         [NFeField(ID = "R01", FieldName = "PISST", Opcional = true)]
-        [ValidateField(6, true)]
+        [CampoValidavel(6, Opcional = true)]
         public ImpostoPISST PISST => _pisst;
 
         /// <summary>
         /// Retorna o COFINS
         /// </summary>
         [NFeField(ID = "S01", FieldName = "COFINS")]
-        [ValidateField(7, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(7, ChaveErroValidacao.CampoNaoPreenchido)]
         public ImpostoCOFINS COFINS => _cofins;
 
         /// <summary>
         /// Retorna o COFINS ST. Opcional.
         /// </summary>
         [NFeField(ID = "T01", FieldName = "COFINSST")]
-        [ValidateField(8, true)]
+        [CampoValidavel(8, Opcional = true)]
         public ImpostoCOFINSST COFINSST => _cofinsst;
 
         /// <summary>

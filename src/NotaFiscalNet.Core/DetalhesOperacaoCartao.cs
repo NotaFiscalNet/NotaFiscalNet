@@ -14,7 +14,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define o Cnpj da credenciadora de cartão de crédito/débito.
         /// </summary>
         [NFeField(ID = "YA05", FieldName = "Cnpj")]
-        [ValidateField(1, ChaveErroValidacao.CNPJInvalido)]
+        [CampoValidavel(1, ChaveErroValidacao.CNPJInvalido)]
         public string CNPJ
         {
             get { return _cnpj; }
@@ -29,7 +29,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define a Bandeira da operadora de cartão de crédito/débito.
         /// </summary>
         [NFeField(ID = "YA06", FieldName = "tBand")]
-        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public TipoBandeiraCartao TipoBandeira
         {
             get { return _tipoBandeiraCartao; }
@@ -44,7 +44,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define o número de autorização da operação de cartão de crédito/débito.
         /// </summary>
         [NFeField(ID = "YA07", FieldName = "cAut")]
-        [ValidateField(3, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)]
         public string CodigoAutorizacao
         {
             get { return _codigoAutorizacao; }

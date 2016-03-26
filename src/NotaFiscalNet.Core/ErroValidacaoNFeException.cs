@@ -14,7 +14,7 @@ namespace NotaFiscalNet.Core
         /// <param name="chave"></param>
         internal ErroValidacaoNFeException(ChaveErroValidacao chave)
         {
-            Detalhes = ErroValidacao.Create(chave);
+            Detalhes = new ErroValidacao(string.Empty, chave.ToString());
         }
 
         /// <summary>

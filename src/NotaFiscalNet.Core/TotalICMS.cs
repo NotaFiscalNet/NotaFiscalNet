@@ -31,7 +31,7 @@ namespace NotaFiscalNet.Core
         /// [vBC] Retorna ou define a Base de Cálculo do ICMS.
         /// </summary>
         [NFeField(ID = "W03", FieldName = "vBC", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(1, true)]
+        [CampoValidavel(1, Opcional = true)]
         public decimal BaseCalculo
         {
             get { return _baseCalculo; }
@@ -46,7 +46,7 @@ namespace NotaFiscalNet.Core
         /// [vICMS] Retorna ou define o Valor Total do ICMS.
         /// </summary>
         [NFeField(ID = "W04", FieldName = "vICMS", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(2, true)]
+        [CampoValidavel(2, Opcional = true)]
         public decimal ValorTotalICMS
         {
             get { return _valorTotalICMS; }
@@ -61,7 +61,7 @@ namespace NotaFiscalNet.Core
         /// [vICMSDeson] Retorna ou define o Valor Total do ICMS desonerado
         /// </summary>
         [NFeField(ID = "W04", FieldName = "vICMS", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(2, true)]
+        [CampoValidavel(2, Opcional = true)]
         public decimal ValorTotalICMSDesonerado
         {
             get { return _valorTotalICMSDesonerado; }
@@ -76,7 +76,7 @@ namespace NotaFiscalNet.Core
         /// [vBCST] Retorna ou define a Base de Cálculo do ICMS do Substituto Tributário.
         /// </summary>
         [NFeField(ID = "W05", FieldName = "vBCST", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(3, true)]
+        [CampoValidavel(3, Opcional = true)]
         public decimal BaseCalculoST
         {
             get { return _baseCalculoST; }
@@ -91,7 +91,7 @@ namespace NotaFiscalNet.Core
         /// [vST] Retorna ou define o Valor Total do ICMS do Substituto Tributário.
         /// </summary>
         [NFeField(ID = "W06", FieldName = "vST", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(4, true)]
+        [CampoValidavel(4, Opcional = true)]
         public decimal ValorTotalICMSST
         {
             get { return _valorTotalICMSST; }
@@ -106,7 +106,7 @@ namespace NotaFiscalNet.Core
         /// [vProd] Retorna ou define o Valor Total dos Produtos e Serviços.
         /// </summary>
         [NFeField(ID = "W07", FieldName = "vProd", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(5, true)]
+        [CampoValidavel(5, Opcional = true)]
         public decimal ValorTotalProdutos
         {
             get { return _valorTotalProdutos; }
@@ -121,7 +121,7 @@ namespace NotaFiscalNet.Core
         /// [vFrete] Retorna ou define o Valor Total do Frete.
         /// </summary>
         [NFeField(ID = "W08", FieldName = "vFrete", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(6, true)]
+        [CampoValidavel(6, Opcional = true)]
         public decimal ValorTotalFrete
         {
             get { return _valorTotalFrete; }
@@ -136,7 +136,7 @@ namespace NotaFiscalNet.Core
         /// [vSeg] Retorna ou define o Valor Total do Seguro.
         /// </summary>
         [NFeField(ID = "W09", FieldName = "vSeg", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(7, true)]
+        [CampoValidavel(7, Opcional = true)]
         public decimal ValorTotalSeguro
         {
             get { return _valorTotalSeguro; }
@@ -151,7 +151,7 @@ namespace NotaFiscalNet.Core
         /// [vDesc] Retorna ou define o Valor Total do Desconto.
         /// </summary>
         [NFeField(ID = "W10", FieldName = "vDesc", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(8, true)]
+        [CampoValidavel(8, Opcional = true)]
         public decimal ValorTotalDesconto
         {
             get { return _valorTotalDesconto; }
@@ -166,7 +166,7 @@ namespace NotaFiscalNet.Core
         /// [vII] Retorna ou define o Valor Total do II.
         /// </summary>
         [NFeField(ID = "W11", FieldName = "vII", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(9, true)]
+        [CampoValidavel(9, Opcional = true)]
         public decimal ValorTotalII
         {
             get { return _valorTotalII; }
@@ -181,7 +181,7 @@ namespace NotaFiscalNet.Core
         /// [vIPI] Retorna ou define o Valor Total do IPI.
         /// </summary>
         [NFeField(ID = "W12", FieldName = "vIPI", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(10, true)]
+        [CampoValidavel(10, Opcional = true)]
         public decimal ValorTotalIPI
         {
             get { return _valorTotalIPI; }
@@ -196,7 +196,7 @@ namespace NotaFiscalNet.Core
         /// [vPIS] Retorna ou define o Valor Total do PIS.
         /// </summary>
         [NFeField(ID = "W13", FieldName = "vPIS", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(11, true)]
+        [CampoValidavel(11, Opcional = true)]
         public decimal ValorTotalPIS
         {
             get { return _valorTotalPIS; }
@@ -211,7 +211,7 @@ namespace NotaFiscalNet.Core
         /// [vCOFINS] Retorna ou define o Valor Total do COFINS.
         /// </summary>
         [NFeField(ID = "W14", FieldName = "vCOFINS", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(12, true)]
+        [CampoValidavel(12, Opcional = true)]
         public decimal ValorTotalCOFINS
         {
             get { return _valorTotalCOFINS; }
@@ -226,7 +226,7 @@ namespace NotaFiscalNet.Core
         /// [vOutro] Retorna ou define o Valor de Outras Despesas Acessórias.
         /// </summary>
         [NFeField(ID = "W15", FieldName = "vOutro", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(13, true)]
+        [CampoValidavel(13, Opcional = true)]
         public decimal ValorOutrasDespesas
         {
             get { return _valorOutrasDespesas; }
@@ -241,7 +241,7 @@ namespace NotaFiscalNet.Core
         /// [vNF] Retorna ou define o Valor Total da Nota Fiscal Eletrônica.
         /// </summary>
         [NFeField(ID = "W16", FieldName = "vNF", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(14, true)]
+        [CampoValidavel(14, Opcional = true)]
         public decimal ValorTotalNFe
         {
             get { return _valorTotalNFe; }
@@ -256,7 +256,7 @@ namespace NotaFiscalNet.Core
         /// [vTotTrib] Retorna ou define o Valor Total da Nota Fiscal Eletrônica.
         /// </summary>
         [NFeField(FieldName = "vTotTrib", DataType = TiposBasicos.TDec_1302)]
-        [ValidateField(15, true)]
+        [CampoValidavel(15, Opcional = true)]
         public decimal? ValorTotalTributos
         {
             get { return _valorTotalTributos; }

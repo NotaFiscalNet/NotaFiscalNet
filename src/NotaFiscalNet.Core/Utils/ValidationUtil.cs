@@ -15,9 +15,9 @@ namespace NotaFiscalNet.Core.Utils
         ///// </summary>
         ///// <param name="value">Valor a ser validado</param>
         ///// <param name="casasInteiro">Número de casas na parte Inteira</param>
-        //public static void Validate(double value, int casasInteiro)
+        //public static void Validar(double value, int casasInteiro)
         //{
-        //    Validate(value, casasInteiro, false);
+        //    Validar(value, casasInteiro, false);
         //}
 
         ///// <summary>
@@ -26,7 +26,7 @@ namespace NotaFiscalNet.Core.Utils
         ///// <param name="value">Valor a ser validado</param>
         ///// <param name="casasInteiro">Número de casas na parte Inteira</param>
         ///// <param name="permiteNegativo">Permite ou não valores negativos</param>
-        //public static void Validate(double value, int casasInteiro, bool permiteNegativo)
+        //public static void Validar(double value, int casasInteiro, bool permiteNegativo)
         //{
         //    double maior = double.Parse("1" + string.Empty.PadLeft(casasInteiro, '0'));
         //    double menor = 0D;

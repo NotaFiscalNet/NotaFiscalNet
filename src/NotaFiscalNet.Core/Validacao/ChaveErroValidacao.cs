@@ -3,9 +3,12 @@
 namespace NotaFiscalNet.Core.Validacao
 {
     /// <summary>
+    /// DEPRECATED - REMOVER
+    /// </summary>
+    /// <summary>
     /// Enumerador para os tipos de erros de validação.
     /// </summary>
-    internal enum ChaveErroValidacao
+    public enum ChaveErroValidacao
     {
         [Description("EV0001|O valor 'NaoEspecificado' é inválido pois o campo {0} é obrigatório.")]
         EnumNaoEspecificado,
@@ -16,7 +19,8 @@ namespace NotaFiscalNet.Core.Validacao
         [Description("EV0003|A Nota Fiscal Eletrônica não pode ser modificada por estar em modo somente-leitura.")]
         ReadOnlyClass,
 
-        [Description("EV0004|O valor informado é inválido.\r\nInforme um valor maior ou igual a '{0}' e menor ou igual a '{1}'")]
+        [Description(
+            "EV0004|O valor informado é inválido.\r\nInforme um valor maior ou igual a '{0}' e menor ou igual a '{1}'")]
         ValueOutOfRange,
 
         [Description("EV0005|O valor informado para o Cnpj não é válido.")]
@@ -40,13 +44,17 @@ namespace NotaFiscalNet.Core.Validacao
         [Description("EV0011|O código GTIN (Global Trade Item Number, antigo código EAN) informado não é válido.")]
         GTINInvalido,
 
-        [Description("EV0012|O Tipo da Alíquota e da Base de Cálculo não pode ser modificada para Situação Tributária informada ({0}).")]
+        [Description(
+            "EV0012|O Tipo da Alíquota e da Base de Cálculo não pode ser modificada para Situação Tributária informada ({0})."
+            )]
         NotCanChangeTipoCalculo,
 
         [Description("EV0013|A Base de Cálculo não pode ser modificada para Situação Tributária informada ({0}).")]
         NotCanChangeBaseCalculo,
 
-        [Description("EV0014|O Código EX da Tabela de Incidências do IPI não é válido. O valor deve ser numérico, de 2 a 3 caracteres.")]
+        [Description(
+            "EV0014|O Código EX da Tabela de Incidências do IPI não é válido. O valor deve ser numérico, de 2 a 3 caracteres."
+            )]
         CodigoExTipiInvalido,
 
         [Description("EV0015|A Aliquota não pode ser modificada para Situação Tributária informada ({0}).")]
@@ -55,13 +63,18 @@ namespace NotaFiscalNet.Core.Validacao
         [Description("EV0016|O Valor não pode ser modificado para Situação Tributária informada ({0}).")]
         NotCanChangeValor,
 
-        [Description("EV0017|A Modalidade de Base de Cálculo não pode ser modificada para Situação Tributária informada ({0}).")]
+        [Description(
+            "EV0017|A Modalidade de Base de Cálculo não pode ser modificada para Situação Tributária informada ({0}).")]
         NotCanChangeModalidadeBaseCalculo,
 
-        [Description("EV0018|O Percentual de Redução de Base de Cálculo não pode ser modificado para Situação Tributária informada ({0}).")]
+        [Description(
+            "EV0018|O Percentual de Redução de Base de Cálculo não pode ser modificado para Situação Tributária informada ({0})."
+            )]
         NotCanChangePercentualReducaoBaseCalculo,
 
-        [Description("EV0019|O Percentual de Margem de Valor Adicionado não pode ser modificado para Situação Tributária informada ({0}).")]
+        [Description(
+            "EV0019|O Percentual de Margem de Valor Adicionado não pode ser modificado para Situação Tributária informada ({0})."
+            )]
         NotCanChangePercentualMargemValorAdicionado,
 
         [Description("EV0020|A Base de Cálculo não pode ser modificada para o Tipo de Cálculo informado ({0}).")]
@@ -97,22 +110,34 @@ namespace NotaFiscalNet.Core.Validacao
         [Description("EV0031|O código NCM (Nomeclatura Comum do Mercosul) informado não é válido.")]
         NCMInvalido,
 
-        [Description("EV0032|Não é possivel preencher o tipo de imposto ICMS pois já existem informações sobre o imposto ISSQN. Apenas um dos dois pode ser usado.")]
+        [Description(
+            "EV0032|Não é possivel preencher o tipo de imposto ICMS pois já existem informações sobre o imposto ISSQN. Apenas um dos dois pode ser usado."
+            )]
         ConflitoICMSISSQN,
 
-        [Description("EV0033|Não é possivel preencher o tipo de imposto IPI pois já existem informações sobre o imposto ISSQN. Apenas um dos dois pode ser usado.")]
+        [Description(
+            "EV0033|Não é possivel preencher o tipo de imposto IPI pois já existem informações sobre o imposto ISSQN. Apenas um dos dois pode ser usado."
+            )]
         ConflitoIPIISSQN,
 
-        [Description("EV0034|Não é possivel preencher o tipo de imposto II pois já existem informações sobre o imposto ISSQN. Apenas um dos dois pode ser usado.")]
+        [Description(
+            "EV0034|Não é possivel preencher o tipo de imposto II pois já existem informações sobre o imposto ISSQN. Apenas um dos dois pode ser usado."
+            )]
         ConflitoIIISSQN,
 
-        [Description("EV0035|Não é possivel preencher o tipo de imposto ISSQN pois já existem informações sobre o imposto ICMS. Apenas um dos dois pode ser usado.")]
+        [Description(
+            "EV0035|Não é possivel preencher o tipo de imposto ISSQN pois já existem informações sobre o imposto ICMS. Apenas um dos dois pode ser usado."
+            )]
         ConflitoISSQNICMS,
 
-        [Description("EV0036|Não é possivel preencher o tipo de imposto ISSQN pois já existem informações sobre o imposto IPI. Apenas um dos dois pode ser usado.")]
+        [Description(
+            "EV0036|Não é possivel preencher o tipo de imposto ISSQN pois já existem informações sobre o imposto IPI. Apenas um dos dois pode ser usado."
+            )]
         ConflitoISSQNIPI,
 
-        [Description("EV0037|Não é possivel preencher o tipo de imposto ISSQN pois já existem informações sobre o imposto II. Apenas um dos dois pode ser usado.")]
+        [Description(
+            "EV0037|Não é possivel preencher o tipo de imposto ISSQN pois já existem informações sobre o imposto II. Apenas um dos dois pode ser usado."
+            )]
         ConflitoISSQNII,
 
         [Description("EV0038|O valor informado para Inscrição Estadual do Destinatário é inválido.")]

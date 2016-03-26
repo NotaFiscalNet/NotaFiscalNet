@@ -41,7 +41,7 @@ namespace NotaFiscalNet.Core.Tests.Dados
                 UnidadeFederativaEmitente = UfIBGE.AM,
                 TipoProcessoEmissao = TipoProcessoEmissaoNFe.AplicativoFisco,
                 TipoImpressao = TipoFormatoImpressaoDanfe.Paisagem,
-                NumeroDocumentoFiscal = 12345,
+                Numero = 12345,
                 IndicadorPresencaComprador = TipoIndicadorPresencaComprador.Outros,
             };
             identificacao.ReferenciasDocumentoFiscais.Add(new ReferenciaDocumentoFiscalNfe()
@@ -73,7 +73,7 @@ namespace NotaFiscalNet.Core.Tests.Dados
                 UnidadeFederativaEmitente = UfIBGE.MT,
                 TipoProcessoEmissao = TipoProcessoEmissaoNFe.AplicativoContribuinte,
                 TipoImpressao = TipoFormatoImpressaoDanfe.NfceMensagemEletronica,
-                NumeroDocumentoFiscal = 67889,
+                Numero = 67889,
                 IndicadorPresencaComprador = TipoIndicadorPresencaComprador.NfceEntregaEmDomicilio,
             };
             return identificacao;
@@ -101,7 +101,7 @@ namespace NotaFiscalNet.Core.Tests.Dados
                 UnidadeFederativaEmitente = UfIBGE.SP,
                 TipoProcessoEmissao = TipoProcessoEmissaoNFe.AvulsaContribuinteSiteFisco,
                 TipoImpressao = TipoFormatoImpressaoDanfe.SemImpressao,
-                NumeroDocumentoFiscal = 67889,
+                Numero = 67889,
                 IndicadorPresencaComprador = TipoIndicadorPresencaComprador.TeleAtendimento,
             };
             return identificacao;
@@ -129,7 +129,7 @@ namespace NotaFiscalNet.Core.Tests.Dados
                 UnidadeFederativaEmitente = UfIBGE.RJ,
                 TipoProcessoEmissao = TipoProcessoEmissaoNFe.AvulsaFisco,
                 TipoImpressao = TipoFormatoImpressaoDanfe.Paisagem,
-                NumeroDocumentoFiscal = 67889,
+                Numero = 67889,
                 IndicadorPresencaComprador = TipoIndicadorPresencaComprador.Internet,
             };
             return identificacao;
@@ -157,7 +157,7 @@ namespace NotaFiscalNet.Core.Tests.Dados
                 UnidadeFederativaEmitente = UfIBGE.RJ,
                 TipoProcessoEmissao = TipoProcessoEmissaoNFe.AvulsaFisco,
                 TipoImpressao = TipoFormatoImpressaoDanfe.Nfce,
-                NumeroDocumentoFiscal = 67889,
+                Numero = 67889,
                 IndicadorPresencaComprador = TipoIndicadorPresencaComprador.Outros,
             };
             return identificacao;

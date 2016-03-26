@@ -88,7 +88,7 @@
     <Compile Include="Evento\TipoEventoNFe.cs" />
     <Compile Include="ExportacaoIndireta.cs" />
     <Compile Include="Fatura.cs" />
-    <Compile Include="FiscoEmitenteNFe.cs" />
+    <Compile Include="Avulsa.cs" />
     <Compile Include="INFe.cs" />
     <Compile Include="Interfaces\IDesoneracaoIcms.cs" />
     <Compile Include="Interfaces\IReferenciaDocumentoFiscal.cs" />

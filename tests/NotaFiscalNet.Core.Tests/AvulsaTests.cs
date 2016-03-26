@@ -4,15 +4,15 @@ using Xunit;
 
 namespace NotaFiscalNet.Core.Tests
 {
-    public class InformacoesExportacaoTests
+    public class AvulsaTests
     {
-        private readonly RepositorioInformacoesExportacao _repositorio = 
-            new RepositorioInformacoesExportacao();
+        private readonly RepositorioAvulsa _repositorio = new RepositorioAvulsa();
 
         [Theory]
-        [InlineData("1", "InformacoesExportacao1.xml")]
-        [InlineData("2", "InformacoesExportacao2.xml")]
-        public void DeveSerializarUmaInformacaoExportacao(string chaveReferencia, string arquivoXml)
+        [InlineData("1", "Avulsa1.xml")]
+        [InlineData("2", "Avulsa2.xml")]
+        [InlineData("3", "Avulsa3.xml")]
+        public void DeveSerializarUmaAvulsa(string chaveReferencia, string arquivoXml)
         {
             var referencia = _repositorio.Referencias[chaveReferencia];
             var resultado = new Serializador(referencia, null).Serializar();

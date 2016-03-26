@@ -367,14 +367,14 @@ namespace NotaFiscalNet.Core.Utils
             if (!opcional && string.IsNullOrEmpty(value))
                 throw new ArgumentException(MsgUtil.GetString(ChaveErroValidacao.CNPJInvalido), paramName);
             value = GetOnlyNumbers(value);
-            if (!ValidateRegex(value, "[0-9]{14}"))
+            if (!ValidateRegex(value, "^[0-9]{14}$"))
                 throw new ArgumentException(MsgUtil.GetString(ChaveErroValidacao.CNPJInvalido), paramName);
             return value;
         }
 
         public static string ValidateTelefone(string value, string paramName)
         {
-            if (!ValidateRegex(value, "[0-9]{1,10}"))
+            if (!ValidateRegex(value, "^[0-9]{6,14}$"))
                 throw new ArgumentException(MsgUtil.GetString(ChaveErroValidacao.TelefoneInvalido), paramName);
             return value;
         }

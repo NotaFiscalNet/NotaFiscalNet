@@ -21,7 +21,7 @@ namespace NotaFiscalNet.Core
     {
         private readonly IdentificacaoDocumentoFiscal _ide = new IdentificacaoDocumentoFiscal();
         private readonly EmitenteNFe _emit = new EmitenteNFe();
-        private readonly FiscoEmitenteNFe _avulsa = new FiscoEmitenteNFe();
+        private readonly Avulsa _avulsa = new Avulsa();
         private readonly EnderecoEmpresa _retirada = new EnderecoEmpresa();
         private readonly EnderecoEmpresa _entrega = new EnderecoEmpresa();
         private readonly ProdutoCollection _itens = new ProdutoCollection();
@@ -119,7 +119,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(FieldName = "avulsa", ID = "D01", Opcional = true)]
         [ValidateField(6, true)]
-        public FiscoEmitenteNFe Avulsa => _avulsa;
+        public Avulsa Avulsa => _avulsa;
 
         /// <summary>
         /// Retorna as informações do Destinatário da Nota Fiscal Eletrônica.

@@ -1,0 +1,13 @@
+﻿<avulsa>
+  <Cnpj>01001001000101</Cnpj>
+  <xOrgao>Orgao Avulsa 1</xOrgao>
+  <matr>Matricula Agente 1</matr>
+  <xAgente>Agente 1</xAgente>
+  <fone>01930010001</fone>
+  <UF>SP</UF>
+  <nDAR>1540</nDAR>
+  <dEmi>2015-10-30</dEmi>
+  <vDAR>1234567890123.45</vDAR>
+  <repEmi>Reparticao Emitente 1</repEmi>
+  <dPag>2015-10-31</dPag>
+</avulsa>

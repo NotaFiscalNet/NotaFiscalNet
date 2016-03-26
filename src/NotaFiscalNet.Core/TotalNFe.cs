@@ -19,14 +19,14 @@ namespace NotaFiscalNet.Core
         /// Retorna o Total de ICMS
         /// </summary>
         [NFeField(ID = "W01", FieldName = "ICMSTot")]
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public TotalICMS ICMS => _ICMS;
 
         /// <summary>
         /// Retorna o Total de ISSQN. Opcional.
         /// </summary>
         [NFeField(ID = "W17", FieldName = "ISSQNtot", Opcional = true)]
-        [ValidateField(2, true)]
+        [CampoValidavel(2, Opcional = true)]
         public TotalISSQN ISSQN => _ISSQN;
 
         /// <summary>
@@ -44,7 +44,7 @@ namespace NotaFiscalNet.Core
         ///    Fonte Lei nº 10.833 de 29.12.2003, arts. 30, 31, 32, 35 e 36
         /// </remarks>
         [NFeField(ID = "W23", FieldName = "retTrib", Opcional = true)]
-        [ValidateField(3, true)]
+        [CampoValidavel(3, Opcional = true)]
         public RetencaoTributosFederais RetencaoTributosFederais => _retencaoTributosFederais;
 
         /// <summary>

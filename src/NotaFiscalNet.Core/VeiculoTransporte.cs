@@ -19,7 +19,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "X19", FieldName = "placa", DataType = "token", MinLength = 1, MaxLength = 8, Pattern = "[A-Z0-9]+")]
         [NFeField(ID = "X23", FieldName = "placa", DataType = "token", MinLength = 1, MaxLength = 8, Pattern = "[A-Z0-9]+")]
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Placa
         {
             get { return _placa; }
@@ -35,7 +35,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "X20", FieldName = "UF", DataType = "TUf")]
         [NFeField(ID = "X24", FieldName = "UF", DataType = "TUf")]
-        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido, DefaultValue = SiglaUF.NaoEspecificado)]
+        [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = SiglaUF.NaoEspecificado)]
         public SiglaUF UF
         {
             get { return _UF; }
@@ -52,7 +52,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "X21", FieldName = "RNTC", DataType = "token", MinLength = 1, MaxLength = 20, Opcional = true)]
         [NFeField(ID = "X25", FieldName = "RNTC", DataType = "token", MinLength = 1, MaxLength = 20, Opcional = true)]
-        [ValidateField(3, true)]
+        [CampoValidavel(3, Opcional = true)]
         public string RNTC
         {
             get { return _RNTC; }

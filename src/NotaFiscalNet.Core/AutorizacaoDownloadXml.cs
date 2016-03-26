@@ -36,7 +36,7 @@ namespace NotaFiscalNet.Core
         /// [Cnpj] Retorna o Cnpj autorizado a realizar o download do Xml.
         /// </summary>
         [NFeField(FieldName = "Cnpj", DataType = "TCnpj", ID = "G51")]
-        [ValidateField(1, ChaveErroValidacao.CNPJInvalido)]
+        [CampoValidavel(1, ChaveErroValidacao.CNPJInvalido)]
         public string CNPJ
         {
             get { return _cnpj; }
@@ -51,7 +51,7 @@ namespace NotaFiscalNet.Core
         /// [Cpf] Retorna o Cpf autorizado a realizar o download do Xml.
         /// </summary>
         [NFeField(FieldName = "Cpf", DataType = "TCpf", ID = "G52")]
-        [ValidateField(1, ChaveErroValidacao.CPFInvalido)]
+        [CampoValidavel(1, ChaveErroValidacao.CPFInvalido)]
         public string CPF
         {
             get { return _cpf; }

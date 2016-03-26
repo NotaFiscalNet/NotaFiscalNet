@@ -5,39 +5,39 @@ namespace NotaFiscalNet.Core.Validacao
     /// <summary>
     /// Representa um erro de validação da Nota Fiscal Eletrônica.
     /// </summary>
-
-    public sealed class ErroValidacao
+    public class ErroValidacao
     {
-        private string _codigo = string.Empty;
-        private string _descricao = string.Empty;
-        private string _local = string.Empty;
-
-        private ErroValidacao(string codigo, string descricao)
+        public ErroValidacao(string propriedade, string descricao)
         {
-            _codigo = codigo ?? string.Empty;
-            _descricao = descricao ?? string.Empty;
+            Propriedade = propriedade;
+            Descricao = descricao;
         }
 
-        private ErroValidacao(string codigo, string descricao, string local)
-            : this(codigo, descricao)
+        public ErroValidacao(string propriedade, string descricao, object valorInformado)
+            : this(propriedade, descricao)
         {
-            _local = local ?? string.Empty;
+            ValorInformado = valorInformado;
         }
 
         /// <summary>
-        /// Retorna o código referente ao erro de validação.
+        /// Retorna o valor informado que gerou o erro de validação.
         /// </summary>
-        public string Codigo => _codigo;
-
-        /// <summary>
-        /// Retorna o caminho completo do local onde o erro ocorreu.
-        /// </summary>
-        public string Local => _local;
+        public object ValorInformado { get; }
 
         /// <summary>
         /// Retorna a descrição completa do erro de validação.
         /// </summary>
-        public string Descricao => _descricao;
+        public string Descricao { get; }
+
+        /// <summary>
+        /// Retorna o caminho completo do local onde o erro ocorreu.
+        /// </summary>
+        public string Propriedade { get; }
+
+        public override string ToString()
+        {
+            return Descricao;
+        }
 
         /// <summary>
         /// Retorna um Array de String de duas posições contendo o código e a descrição do Erro de
@@ -47,22 +47,22 @@ namespace NotaFiscalNet.Core.Validacao
         /// <returns></returns>
         internal static ErroValidacao Create(ChaveErroValidacao chave)
         {
-            string text = MsgUtil.GetString(chave);
-            int indexOfPipe = text.IndexOf('|');
+            var text = MsgUtil.GetString(chave);
+            var indexOfPipe = text.IndexOf('|');
 
-            string codigo = text.Substring(0, indexOfPipe);
-            string descricao = text.Substring(indexOfPipe + 1);
+            var codigo = text.Substring(0, indexOfPipe);
+            var descricao = text.Substring(indexOfPipe + 1);
 
             return Create(codigo, descricao, string.Empty);
         }
 
         internal static ErroValidacao Create(ChaveErroValidacao chave, params object[] args)
         {
-            string text = MsgUtil.GetString(chave, args);
-            int indexOfPipe = text.IndexOf('|');
+            var text = MsgUtil.GetString(chave, args);
+            var indexOfPipe = text.IndexOf('|');
 
-            string codigo = text.Substring(0, indexOfPipe);
-            string descricao = text.Substring(indexOfPipe + 1);
+            var codigo = text.Substring(0, indexOfPipe);
+            var descricao = text.Substring(indexOfPipe + 1);
             descricao = string.Format(descricao, args);
 
             return Create(codigo, descricao, string.Empty);
@@ -70,22 +70,22 @@ namespace NotaFiscalNet.Core.Validacao
 
         internal static ErroValidacao Create(ChaveErroValidacao chave, string local)
         {
-            string text = MsgUtil.GetString(chave);
-            int indexOfPipe = text.IndexOf('|');
+            var text = MsgUtil.GetString(chave);
+            var indexOfPipe = text.IndexOf('|');
 
-            string codigo = text.Substring(0, indexOfPipe);
-            string descricao = text.Substring(indexOfPipe + 1);
+            var codigo = text.Substring(0, indexOfPipe);
+            var descricao = text.Substring(indexOfPipe + 1);
 
             return Create(codigo, descricao, local);
         }
 
         internal static ErroValidacao Create(ChaveErroValidacao chave, string local, params object[] args)
         {
-            string text = MsgUtil.GetString(chave, args);
-            int indexOfPipe = text.IndexOf('|');
+            var text = MsgUtil.GetString(chave, args);
+            var indexOfPipe = text.IndexOf('|');
 
-            string codigo = text.Substring(0, indexOfPipe);
-            string descricao = text.Substring(indexOfPipe + 1);
+            var codigo = text.Substring(0, indexOfPipe);
+            var descricao = text.Substring(indexOfPipe + 1);
 
             return Create(codigo, descricao, local);
         }

@@ -19,7 +19,7 @@ namespace NotaFiscalNet.Core
         /// [UFEmbarq] Retorna ou define a Sigla da UF de Embarque o de transposição de fronteira.
         /// </summary>
         [NFeField(ID = "ZA02", FieldName = "UFSaidaPais", DataType = "TUfEmi")]
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido, DefaultValue = UfIBGE.NaoEspecificado)]
+        [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = SiglaUF.NaoEspecificado)]
         public SiglaUF UFSaidaPais
         {
             get { return _ufSaidaPais; }
@@ -36,7 +36,7 @@ namespace NotaFiscalNet.Core
         /// [xLocExporta] Retorna ou define a Descrição do Local de Embarque ou de transposição de fronteira.
         /// </summary>
         [NFeField(ID = "ZA03", FieldName = "xLocExporta", DataType = "TString", MinLength = 1, MaxLength = 60, Pattern = @"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}")]
-        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public string LocalEmbarque
         {
             get { return _localEmbarque; }
@@ -50,7 +50,7 @@ namespace NotaFiscalNet.Core
         /// [xLocDespacho] Retorna ou define a Descrição do Local de Despacho.
         /// </summary>
         [NFeField(ID = "ZA04", FieldName = "xLocDespacho", DataType = "TString", MinLength = 1, MaxLength = 60, Pattern = @"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}", Opcional = true)]
-        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(2)]
         public string LocalDespacho
         {
             get { return _localDespacho; }

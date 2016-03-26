@@ -17,7 +17,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define a forma de pagamento.
         /// </summary>
         [NFeField(ID = "YA02", FieldName = "tPag")]
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public TipoPagamento TipoPagamento
         {
             get
@@ -35,7 +35,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define o valor do pagamento.
         /// </summary>
         [NFeField(ID = "YA30", FieldName = "vPag", DataType = "TDec_1302")]
-        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal ValorPagamento
         {
             get
@@ -52,7 +52,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna ou define os detalhes referente a operação com cartão de crédito/débito.
         /// </summary>
-        [NFeField(ID = "YA04", FieldName = "card"), ValidateField(3, true)]
+        [NFeField(ID = "YA04", FieldName = "card"), CampoValidavel(3, Opcional = true)]
         public DetalhesOperacaoCartao DetalhesOperacaoCartao { get; set; }
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, INFe nfe)

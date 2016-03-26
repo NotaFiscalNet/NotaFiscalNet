@@ -51,7 +51,7 @@ namespace NotaFiscalNet.Core
         /// tratar de produtos não regulados pela ANP - Agência Nacional do Petróleo
         /// </summary>
         [NFeField(FieldName = "cProdANP", DataType = "token", ID = "L102", Pattern = @"[0-9]{9}")]
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public int CodigoProdutoANP
         {
             get { return _codigoProdutoANP; }
@@ -63,7 +63,7 @@ namespace NotaFiscalNet.Core
         /// (CodigoProdutoANP = 210203001).
         /// </summary>
         [NFeField(FieldName = "pMixGN", DataType = "TDec_0204v", ID = "L102a", Opcional = true)]
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal? PercentualMixGN
         {
             get { return _percentualMixGn; }
@@ -76,7 +76,7 @@ namespace NotaFiscalNet.Core
         /// utilizar o CODIF. Apenas números (máximo 21 caracteres).
         /// </summary>
         [NFeField(FieldName = "CODIF", DataType = "token", ID = "L103", Pattern = @"[0-9]{0,21}", Opcional = true)]
-        [ValidateField(2, true)]
+        [CampoValidavel(2, Opcional = true)]
         public string CodigoCODIF
         {
             get { return _codif; }
@@ -95,7 +95,7 @@ namespace NotaFiscalNet.Core
             Pattern =
                 @"0\.[1-9]{1}[0-9]{3}|0\.[0-9]{3}[1-9]{1}|0\.[0-9]{2}[1-9]{1}[0-9]{1}|0\.[0-9]{1}[1-9]{1}[0-9]{2}|[1-9]{1}[0-9]{0,11}(\.[0-9]{4})?"
             )]
-        [ValidateField(3, true)]
+        [CampoValidavel(3, Opcional = true)]
         public decimal QuantidadeCombustivelFaturadaTempAmbiente
         {
             get { return _quantidadeCombustivelTempAmbiente; }
@@ -113,7 +113,7 @@ namespace NotaFiscalNet.Core
         /// [UFCons] Retorna ou define a Sigla da UF de Destino
         /// </summary>
         [NFeField(ID = "L120", FieldName = "UFCons", DataType = "TUf")]
-        [ValidateField(3, ChaveErroValidacao.CampoNaoPreenchido, DefaultValue = SiglaUF.NaoEspecificado)]
+        [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = SiglaUF.NaoEspecificado)]
         public SiglaUF UFConsumo
         {
             get { return _UFConsumo; }
@@ -128,7 +128,7 @@ namespace NotaFiscalNet.Core
         /// [CIDE] Retorna as informações de CIDE do combustível. Opcional.
         /// </summary>
         [NFeField(FieldName = "CIDE", ID = "L105", Opcional = true)]
-        [ValidateField(4, true)]
+        [CampoValidavel(4, Opcional = true)]
         public CideCombustivel CIDE { get; } = new CideCombustivel();
 
         /// <summary>

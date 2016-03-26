@@ -20,11 +20,11 @@ namespace NotaFiscalNet.Core.Tests.Dados
             return new ReferenciaDocumentoFiscalNotaFiscal()
             {
                 UnidadeFederativa = UfIBGE.AC,
-                CNPJ = "010010010000101",
-                CodigoModeloDocumentoFiscal = "01",
+                Cnpj = "010010010000101",
+                CodigoModelo = "01",
                 MesAnoEmissao = new DateTime(2020, 10, 4),
-                NumeroNf = 1,
-                SerieNf = 0
+                Numero = 1,
+                Serie = 0
             };
         }
 
@@ -33,11 +33,11 @@ namespace NotaFiscalNet.Core.Tests.Dados
             return new ReferenciaDocumentoFiscalNotaFiscal()
             {
                 UnidadeFederativa = UfIBGE.MT,
-                CNPJ = "020020020000202",
-                CodigoModeloDocumentoFiscal = "01",
+                Cnpj = "020020020000202",
+                CodigoModelo = "01",
                 MesAnoEmissao = new DateTime(2016, 5, 1),
-                NumeroNf = 10,
-                SerieNf = 10
+                Numero = 10,
+                Serie = 10
             };
         }
     }

@@ -1,7 +1,7 @@
 ﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
-using NotaFiscalNet.Core.Validacao.Validators;
+
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -39,14 +39,14 @@ namespace NotaFiscalNet.Core
         /// [versao] Retorna ou define a Versão do Leiaute NF-e. Ex. 2.0.4, 2.0.3, etc.
         /// </summary>
         [NFeField(FieldName = "versao", DataType = "TVerNFe", ID = "A02")]
-        [ValidateField(1, true)]
+        [CampoValidavel(1, Opcional = true)]
         public string Versao => Constants.VersaoLeiaute;
 
         /// <summary>
         /// [Id] Retorna a Chave de Acesso da Nota Fiscal Eletrônica.
         /// </summary>
         [NFeField(FieldName = "Id", DataType = "ID", ID = "A03")]
-        [ValidateField(2, true)]
+        [CampoValidavel(2, Opcional = true)]
         public string ChaveAcesso
         {
             get
@@ -72,7 +72,7 @@ namespace NotaFiscalNet.Core
                 cnpjEmitente = Emitente.CNPJ.PadLeft(14, '0'); // 14 digitos
                 mod = ((int)Identificacao.ModalidadeDocumentoFiscal).ToString("00"); // 2 digitos
                 serie = Identificacao.Serie.ToString("000"); // 3 digitos no formato (0|[1-9]{1}[0-9]{0,2}")
-                nNF = Identificacao.NumeroDocumentoFiscal.ToString("000000000"); // 9 digitos
+                nNF = Identificacao.Numero.ToString("000000000"); // 9 digitos
                 tpEmis = ((int)Identificacao.TipoEmissao).ToString("0");
                 cNF = Identificacao.CodigoNumerico.ToString("00000000"); // 8 digitos
 
@@ -88,7 +88,7 @@ namespace NotaFiscalNet.Core
         /// [cDV] Retorna o Digito Verificador da Chave de Acesso da Nota Fiscal Eletrônica.
         /// </summary>
         [NFeField(FieldName = "cDV", DataType = "token", ID = "B23", Pattern = "[0-9]{1}")]
-        [ValidateField(3, true)]
+        [CampoValidavel(3, Opcional = true)]
         public int DigitoVerificadorChaveAcesso
         {
             get
@@ -103,14 +103,14 @@ namespace NotaFiscalNet.Core
         /// Retorna a referência para o objeto contendo os dados de Identificação da Nota Fiscal Eletrônica.
         /// </summary>
         [NFeField(FieldName = "ide", ID = "B01")]
-        [ValidateField(4)]
+        [CampoValidavel(4)]
         public IdentificacaoDocumentoFiscal Identificacao => _ide;
 
         /// <summary>
         /// Retorna as informações do Emitente da Nota Fiscal Eletrônica.
         /// </summary>
         [NFeField(FieldName = "emit", ID = "C01")]
-        [ValidateField(5, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
         public EmitenteNFe Emitente => _emit;
 
         /// <summary>
@@ -118,13 +118,13 @@ namespace NotaFiscalNet.Core
         /// apenas no caso de emissão de Nota Fiscal Eletrônica Avulsa, pelo Fisco Emitente.
         /// </summary>
         [NFeField(FieldName = "avulsa", ID = "D01", Opcional = true)]
-        [ValidateField(6, true)]
+        [CampoValidavel(6, Opcional = true)]
         public FiscoEmitenteNFe Avulsa => _avulsa;
 
         /// <summary>
         /// Retorna as informações do Destinatário da Nota Fiscal Eletrônica.
         /// </summary>
-        [NFeField(FieldName = "dest", ID = "E01"), ValidateField(7, ChaveErroValidacao.CampoNaoPreenchido)]
+        [NFeField(FieldName = "dest", ID = "E01"), CampoValidavel(7, ChaveErroValidacao.CampoNaoPreenchido)]
         public DestinatarioNFe Destinatario { get; set; }
 
         /// <summary>
@@ -132,7 +132,7 @@ namespace NotaFiscalNet.Core
         /// Eletrônica. Informar apenas quando for diferente do Endereço do Remetente. Opcional.
         /// </summary>
         [NFeField(FieldName = "retirada", ID = "F01", Opcional = true)]
-        [ValidateField(8, true)]
+        [CampoValidavel(8, Opcional = true)]
         public EnderecoEmpresa EnderecoRetirada => _retirada;
 
         /// <summary>
@@ -140,14 +140,14 @@ namespace NotaFiscalNet.Core
         /// Eletrônica. Informar apenas quando for diferente do Endereço do Destinatário. Opcional.
         /// </summary>
         [NFeField(FieldName = "entrega", ID = "G01", Opcional = true)]
-        [ValidateField(9, true)]
+        [CampoValidavel(9, Opcional = true)]
         public EnderecoEmpresa EnderecoEntrega => _entrega;
 
         /// <summary>
         /// [autXML] Retorna a lista de Autorizações de Download do XML.
         /// </summary>
         [NFeField(FieldName = "autXML", ID = "G50", Opcional = true)]
-        [ValidateField(10, true)]
+        [CampoValidavel(10, Opcional = true)]
         public AutorizacaoDownloadXmlCollection AutorizacoesDownloadXml => _autXml;
 
         /// <summary>
@@ -155,46 +155,46 @@ namespace NotaFiscalNet.Core
         /// </summary>
         /// <remarks>A lista pode conter até no máximo 990 itens.</remarks>
         [NFeField(FieldName = "det", ID = "H01", MinLength = 1, MaxLength = 990)]
-        [ValidateField(11, ChaveErroValidacao.CampoNaoPreenchido, Validator = typeof(RangeCollectionValidator), MinLength = 1, MaxLength = 990)]
+        [CampoValidavel(11, ChaveErroValidacao.CampoNaoPreenchido)]
         public ProdutoCollection Itens => _itens;
 
         /// <summary>
         /// Retorna as Informações de Totalização da Nota Fiscal Eletrônica.
         /// </summary>
         [NFeField(FieldName = "total", ID = "W01")]
-        [ValidateField(12, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(12, ChaveErroValidacao.CampoNaoPreenchido)]
         public TotalNFe Totais => _totais;
 
         /// <summary>
         /// Retorna as Informações de Transporte da Nota Fiscal Eletrônica.
         /// </summary>
         [NFeField(FieldName = "transp", ID = "X01")]
-        [ValidateField(13, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(13, ChaveErroValidacao.CampoNaoPreenchido)]
         public TransporteNFe Transporte => _transporte;
 
         /// <summary>
         /// Retorna as Informações de Cobrança da Nota Fiscal Eletrônica. Opcional.
         /// </summary>
         [NFeField(FieldName = "cobr", ID = "Y01", Opcional = true)]
-        [ValidateField(14, true)]
+        [CampoValidavel(14, Opcional = true)]
         public CobrancaNFe Cobranca => _cobranca;
 
         [NFeField(FieldName = "pag", ID = "YA01", Opcional = true)]
-        [ValidateField(15, true)]
+        [CampoValidavel(15, Opcional = true)]
         public PagamentoCollection Pagamentos => _pagamentos;
 
         /// <summary>
         /// Retorna as Informações Adicionais da Nota Fiscal Eletrônica. Opcional.
         /// </summary>
         [NFeField(FieldName = "infAdic", ID = "Z01", Opcional = true)]
-        [ValidateField(16, true)]
+        [CampoValidavel(16, Opcional = true)]
         public InformacoesAdicionaisNFe InformacoesAdicionais => _informacoesAdicionais;
 
         /// <summary>
         /// Retorna as Informações de Exportação da Nota Fiscal Eletrônica. Opcional.
         /// </summary>
         [NFeField(FieldName = "exporta", ID = "ZA01", Opcional = true)]
-        [ValidateField(17, true)]
+        [CampoValidavel(17, Opcional = true)]
         public InformacoesExportacao Exportacao => _informacoesExportacao;
 
         /// <summary>
@@ -202,7 +202,7 @@ namespace NotaFiscalNet.Core
         /// Eletrônica. Opcional.
         /// </summary>
         [NFeField(FieldName = "compra", ID = "ZA01", Opcional = true)]
-        [ValidateField(18, true)]
+        [CampoValidavel(18, Opcional = true)]
         public Compra Compras => _compras;
 
         /// <summary>
@@ -1613,7 +1613,7 @@ namespace NotaFiscalNet.Core
             ide.FormaPagamento = ideEl.NFElementAsEnum<IndicadorFormaPagamento>("indPag");
             ide.ModalidadeDocumentoFiscal = ideEl.NFElementAsEnum<TipoModalidadeDocumentoFiscal>("mod");
             ide.Serie = ideEl.NFElementAsInt32("serie");
-            ide.NumeroDocumentoFiscal = ideEl.NFElementAsInt32("nNF");
+            ide.Numero = ideEl.NFElementAsInt32("nNF");
             ide.DataEmissao = ideEl.NFElementAsDateTime("dhEmi");
 
             var dhSaiEntEl = ideEl.Element(ns + "dhSaiEnt");
@@ -1664,10 +1664,10 @@ namespace NotaFiscalNet.Core
                     var nfRef = new ReferenciaDocumentoFiscalNotaFiscal();
                     refEl.NFElementAsEnum<UfIBGE>("cUF", value => nfRef.UnidadeFederativa = value);
                     refEl.NFElementAsString("AAMM", value => nfRef.MesAnoEmissao = DateTime.ParseExact(value, "yyMM", CultureInfo.InvariantCulture));
-                    refEl.NFElementAsString("CNPJ", value => nfRef.CNPJ = value);
-                    refEl.NFElementAsString("mod", value => nfRef.CodigoModeloDocumentoFiscal = value);
-                    refEl.NFElementAsInt32("serie", value => nfRef.SerieNf = value);
-                    refEl.NFElementAsInt32("nNF", value => nfRef.NumeroNf = value);
+                    refEl.NFElementAsString("CNPJ", value => nfRef.Cnpj = value);
+                    refEl.NFElementAsString("mod", value => nfRef.CodigoModelo = value);
+                    refEl.NFElementAsInt32("serie", value => nfRef.Serie = value);
+                    refEl.NFElementAsInt32("nNF", value => nfRef.Numero = value);
 
                     Identificacao.ReferenciasDocumentoFiscais.Add(nfRef);
                     continue;
@@ -1682,9 +1682,9 @@ namespace NotaFiscalNet.Core
                     refEl.NFElementAsString("CNPJ", value => nfRef.CNPJ = value);
                     refEl.NFElementAsString("CPF", value => nfRef.CPF = value);
                     refEl.NFElementAsString("IE", value => nfRef.InscricaoEstadual = value);
-                    refEl.NFElementAsString("mod", value => nfRef.CodigoModeloDocumentoFiscal = value);
-                    refEl.NFElementAsInt32("serie", value => nfRef.SerieNf = value);
-                    refEl.NFElementAsInt32("nNF", value => nfRef.NumeroNf = value);
+                    refEl.NFElementAsString("mod", value => nfRef.CodigoModelo = value);
+                    refEl.NFElementAsInt32("serie", value => nfRef.Serie = value);
+                    refEl.NFElementAsInt32("nNF", value => nfRef.Numero = value);
 
                     Identificacao.ReferenciasDocumentoFiscais.Add(nfRef);
                     continue;
@@ -1705,7 +1705,7 @@ namespace NotaFiscalNet.Core
                 if (refEl != null)
                 {
                     var nfRef = new ReferenciaDocumentoFiscalEcf();
-                    refEl.NFElementAsString("mod", value => nfRef.CodigoModeloDocumentoFiscal = value);
+                    refEl.NFElementAsString("mod", value => nfRef.CodigoModelo = value);
                     refEl.NFElementAsInt32("nECF", value => nfRef.NumeroEcf = value);
                     refEl.NFElementAsInt32("nCOO", value => nfRef.NumeroContadorOrdemOperacao = value);
                     Identificacao.ReferenciasDocumentoFiscais.Add(nfRef);
@@ -1833,22 +1833,8 @@ namespace NotaFiscalNet.Core
         /// <exception cref="System.Exception"></exception>
         public ResultadoValidacao Validar()
         {
-            /// TODO: Descomentar aqui
-            //LicenseValidator licenseValidator = new LicenseValidator();
-            //licenseValidator.ValidateNFe(this);
-
-            StringBuilder sb = new StringBuilder();
-            NFeValidatorEngine engine = new NFeValidatorEngine(this);
-            bool valido = engine.ValidateNFe();
-
-            ResultadoValidacao resultadoValidacao;
-
-            if (valido)
-                resultadoValidacao = new ResultadoValidacao();
-            else
-                resultadoValidacao = new ResultadoValidacao(engine.Context.Errors);
-
-            return resultadoValidacao;
+            var engine = new MotorValidacao();
+            return engine.Validar(this);
         }
 
         public static NFe Parse(string xml)

@@ -48,7 +48,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define o Cnpj do Órgão Emitente
         /// </summary>
         [NFeField(ID = "D02", FieldName = "Cnpj", DataType = "TCnpj", Pattern = "[0-9]{14}")]
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public string CNPJ
         {
             get { return _CNPJ; }
@@ -59,7 +59,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define o nome do Órgão Emitente
         /// </summary>
         [NFeField(ID = "D03", FieldName = "xOrgao", DataType = "token", MinLength = 1, MaxLength = 60)]
-        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public string OrgaoEmitente
         {
             get { return _orgaoEmitente; }
@@ -70,7 +70,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define a Matrícula do Agente
         /// </summary>
         [NFeField(ID = "D04", FieldName = "matr", DataType = "token", MinLength = 1, MaxLength = 60)]
-        [ValidateField(3, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)]
         public string MatriculaAgente
         {
             get { return _matriculaAgente; }
@@ -81,7 +81,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define o nome do Agente.
         /// </summary>
         [NFeField(ID = "D05", FieldName = "xAgente", DataType = "token", MinLength = 1, MaxLength = 60)]
-        [ValidateField(4, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido)]
         public string NomeAgente
         {
             get { return _nomeAgente; }
@@ -92,7 +92,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define o Telefone. Preencher com o DDD + número do telefone.
         /// </summary>
         [NFeField(ID = "D06", FieldName = "fone", DataType = "token", Pattern = "[0-9]{1,10}")]
-        [ValidateField(5, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Telefone
         {
             get { return _telefone; }
@@ -107,7 +107,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define a Sigla da UF. Informar 'EX' para operações com o Exterior.
         /// </summary>
         [NFeField(ID = "D07", FieldName = "UF", DataType = "TUf")]
-        [ValidateField(6, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(6, ChaveErroValidacao.CampoNaoPreenchido)]
         public SiglaUF UF
         {
             get { return _UF; }
@@ -118,7 +118,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define o número do Documento de Arrecadação da Receita.
         /// </summary>
         [NFeField(ID = "D08", FieldName = "nDAR", DataType = "token", MinLength = 1, MaxLength = 60)]
-        [ValidateField(7, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(7, ChaveErroValidacao.CampoNaoPreenchido)]
         public string NumeroDAR
         {
             get { return _numeroDAR; }
@@ -130,7 +130,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         /// <remarks>Formato AAAA-MM-DD</remarks>
         [NFeField(ID = "D09", FieldName = "dEmi", DataType = "TData", Pattern = @"\d{4}-\d{2}-\d{2}")]
-        [ValidateField(8, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(8, ChaveErroValidacao.CampoNaoPreenchido)]
         public DateTime DataEmissaoDAR
         {
             get { return _dataEmissaoDAR; }
@@ -147,7 +147,7 @@ namespace NotaFiscalNet.Core
         /// <remarks>Formato com 15 caracteres, sendo 13 no corpo e 2 decimais</remarks>
         [NFeField(ID = "D10", FieldName = "vDAR", DataType = "TDec_1302",
             Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(9, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(9, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal ValorDAR
         {
             get { return _valorDAR; }
@@ -162,7 +162,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define a Repartição Fiscal Emitente.
         /// </summary>
         [NFeField(ID = "D11", FieldName = "repEmi", DataType = "token", MinLength = 1, MaxLength = 60)]
-        [ValidateField(10, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(10, ChaveErroValidacao.CampoNaoPreenchido)]
         public string ReparticaoFiscalEmitente
         {
             get { return _reparticaoFiscalEmitente; }
@@ -174,7 +174,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         /// <remarks>Formato AAAA-MM-DD</remarks>
         [NFeField(ID = "D12", FieldName = "dPag", DataType = "TData", Pattern = @"\d{4}-\d{2}-\d{2}")]
-        [ValidateField(11, true)]
+        [CampoValidavel(11, Opcional = true)]
         public DateTime DataPagamentoDAR
         {
             get { return _dataPagamentoDAR; }

@@ -49,7 +49,7 @@ namespace NotaFiscalNet.Core
             MinLength = 1, MaxLength = 60)]
         [NFeField(ID = "G03", FieldName = "xLgr", DataType = "TString", Pattern = "[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}",
             MinLength = 1, MaxLength = 60)]
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Logradouro
         {
             get { return _logradouro; }
@@ -67,7 +67,7 @@ namespace NotaFiscalNet.Core
             MinLength = 1, MaxLength = 60)]
         [NFeField(ID = "G04", FieldName = "nro", DataType = "TString", Pattern = "[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}",
             MinLength = 1, MaxLength = 60)]
-        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Numero
         {
             get { return _numero; }
@@ -85,7 +85,7 @@ namespace NotaFiscalNet.Core
             MinLength = 1, MaxLength = 60, Opcional = true)]
         [NFeField(ID = "G05", FieldName = "xCpl", DataType = "TString", Pattern = "[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}",
             MinLength = 1, MaxLength = 60, Opcional = true)]
-        [ValidateField(3, true)]
+        [CampoValidavel(3, Opcional = true)]
         public string Complemento
         {
             get { return _complemento; }
@@ -103,7 +103,7 @@ namespace NotaFiscalNet.Core
             Pattern = "[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}", MinLength = 1, MaxLength = 60)]
         [NFeField(ID = "G06", FieldName = "xBairro", DataType = "TString",
             Pattern = "[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}", MinLength = 1, MaxLength = 60)]
-        [ValidateField(4, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Bairro
         {
             get { return _bairro; }
@@ -118,7 +118,7 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "E10", FieldName = "cMun", DataType = "TCodMunIBGE", Pattern = "[0-9]{7}")]
         [NFeField(ID = "F07", FieldName = "cMun", DataType = "TCodMunIBGE", Pattern = "[0-9]{7}")]
         [NFeField(ID = "G07", FieldName = "cMun", DataType = "TCodMunIBGE", Pattern = "[0-9]{7}")]
-        [ValidateField(5, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
         public int CodigoMunicipioIBGE
         {
             get { return _codigoMunicipioIBGE; }
@@ -136,7 +136,7 @@ namespace NotaFiscalNet.Core
             MinLength = 2, MaxLength = 60)]
         [NFeField(ID = "G08", FieldName = "xMun", DataType = "TString", Pattern = "[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}",
             MinLength = 2, MaxLength = 60)]
-        [ValidateField(6, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(6, ChaveErroValidacao.CampoNaoPreenchido)]
         public string NomeMunicipio
         {
             get { return _nomeMunicipio; }
@@ -150,7 +150,7 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "E12", FieldName = "UF", DataType = "TUf")]
         [NFeField(ID = "F09", FieldName = "UF", DataType = "TUf")]
         [NFeField(ID = "G09", FieldName = "UF", DataType = "TUf")]
-        [ValidateField(7, ChaveErroValidacao.CampoNaoPreenchido, DefaultValue = UfIBGE.NaoEspecificado)]
+        [CampoValidavel(7, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = UfIBGE.NaoEspecificado)]
         public SiglaUF UF
         {
             get { return _UF; }

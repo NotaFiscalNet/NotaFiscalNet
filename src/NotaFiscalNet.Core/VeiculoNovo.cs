@@ -54,7 +54,7 @@ namespace NotaFiscalNet.Core
         /// [tpOp] Retorna ou define o Tipo da Operação de Venda.
         /// </summary>
         [NFeField(ID = "J02", FieldName = "tpOp", DataType = "token")]
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido, DefaultValue = TipoOperacaoVendaVeiculo.NaoEspecificado)]
+        [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = TipoOperacaoVendaVeiculo.NaoEspecificado)]
         public TipoOperacaoVendaVeiculo TipoOperacaoVenda
         {
             get { return _tipoOperacaoVenda; }
@@ -68,7 +68,7 @@ namespace NotaFiscalNet.Core
         /// [chassi] Retorna ou define o Código de Chassi do Veículo.
         /// </summary>
         [NFeField(ID = "J03", FieldName = "chassi", DataType = "token", MinLength = 17, MaxLength = 17)]
-        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Chassi
         {
             get { return _chassi; }
@@ -82,7 +82,7 @@ namespace NotaFiscalNet.Core
         /// [cCor] Retorna ou define o Código da Cor do Veículo, específico de cada montadora.
         /// </summary>
         [NFeField(ID = "J04", FieldName = "cCor", DataType = "token", MinLength = 1, MaxLength = 4)]
-        [ValidateField(3, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)]
         public string CodigoCor
         {
             get { return _codigoCor; }
@@ -96,7 +96,7 @@ namespace NotaFiscalNet.Core
         /// [xCor] Retorna ou define a Descrição da Cor do Veículo, específico de cada montadora.
         /// </summary>
         [NFeField(ID = "J05", FieldName = "xCor", DataType = "token", MinLength = 1, MaxLength = 40)]
-        [ValidateField(4, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido)]
         public string DescricaoCor
         {
             get { return _descricaoCor; }
@@ -110,7 +110,7 @@ namespace NotaFiscalNet.Core
         /// [pot] Retorna ou define a Potencia do Motor em cavalo vapor (CV)
         /// </summary>
         [NFeField(ID = "J06", FieldName = "pot", DataType = "token", MinLength = 1, MaxLength = 4)]
-        [ValidateField(5, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
         public string PotenciaMotor
         {
             get { return _potencia; }
@@ -126,7 +126,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         /// <remarks>De 1 até 4 caracteres.</remarks>
         [NFeField(ID = "J07", FieldName = "cilin", DataType = "token", MinLength = 1, MaxLength = 4)]
-        [ValidateField(6, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(6, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Cilindradas
         {
             get
@@ -144,7 +144,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         /// <remarks>De 1 até 9 caracteres</remarks>
         [NFeField(ID = "J08", FieldName = "pesoL", DataType = "token", MinLength = 1, MaxLength = 9)]
-        [ValidateField(7, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(7, ChaveErroValidacao.CampoNaoPreenchido)]
         public string PesoLiquido
         {
             get
@@ -162,7 +162,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         /// <remarks>De 1 até 9 caracteres</remarks>
         [NFeField(ID = "J09", FieldName = "pesoB", DataType = "token", MinLength = 1, MaxLength = 9)]
-        [ValidateField(8, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(8, ChaveErroValidacao.CampoNaoPreenchido)]
         public string PesoBruto
         {
             get
@@ -179,7 +179,7 @@ namespace NotaFiscalNet.Core
         /// [nSerie] Retorna ou define o Número de Série do Veículo.
         /// </summary>
         [NFeField(ID = "J10", FieldName = "nSerie", DataType = "token", MinLength = 1, MaxLength = 9)]
-        [ValidateField(9, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(9, ChaveErroValidacao.CampoNaoPreenchido)]
         public string NumeroSerie
         {
             get { return _serie; }
@@ -199,7 +199,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         /// <remarks>De 1 até 2 caracteres.</remarks>
         [NFeField(ID = "J11", FieldName = "tpComb", DataType = "token", MinLength = 1, MaxLength = 2)]
-        [ValidateField(10, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(10, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Combustivel
         {
             get { return _combustivel; }
@@ -214,7 +214,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         /// <remarks>De 1 até 21 caracteres.</remarks>
         [NFeField(ID = "J12", FieldName = "nMotor", DataType = "token", MinLength = 1, MaxLength = 21)]
-        [ValidateField(11, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(11, ChaveErroValidacao.CampoNaoPreenchido)]
         public string NumeroMotor
         {
             get { return _numeroMotor; }
@@ -228,7 +228,7 @@ namespace NotaFiscalNet.Core
         /// [CMT] Retorna ou define a capacidade máxima de tração do Veículo, em toneladas, 4 casas decimais
         /// </summary>
         [NFeField(FieldName = "CMT")]
-        [ValidateField(12, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(12, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal CapacidadeMaximaTracao
         {
             get { return _capacidadeMaximaTracao; }
@@ -242,7 +242,7 @@ namespace NotaFiscalNet.Core
         /// [dist] Retorna ou define a Distância entre os Eixos
         /// </summary>
         [NFeField(ID = "J14", FieldName = "dist", DataType = "token")]
-        [ValidateField(13, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(13, ChaveErroValidacao.CampoNaoPreenchido)]
         public int DistanciaEixos
         {
             get { return _distanciaEntreEixo; }
@@ -257,7 +257,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         /// <remarks>O valor deve compreender de 0 até 9999.</remarks>
         [NFeField(ID = "J16", FieldName = "anoMod", DataType = "token", MinLength = 1, MaxLength = 4, Pattern = "[0-9]{4}")]
-        [ValidateField(15, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(15, ChaveErroValidacao.CampoNaoPreenchido)]
         public int AnoModelo
         {
             get { return _anoModelo; }
@@ -272,7 +272,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         /// <remarks>O valor deve compreender de 0 até 9999.</remarks>
         [NFeField(ID = "J17", FieldName = "anoFab", DataType = "token", MinLength = 1, MaxLength = 4, Pattern = "[0-9]{4}")]
-        [ValidateField(16, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(16, ChaveErroValidacao.CampoNaoPreenchido)]
         public int AnoFabricacao
         {
             get { return _anoFabricacao; }
@@ -285,14 +285,14 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// [tpPint] Retorna ou define o Tipo de Pintura.
         /// </summary>
-        [NFeField(ID = "J18", FieldName = "tpPint", DataType = "token", MinLength = 1, MaxLength = 1), ValidateField(17, ChaveErroValidacao.CampoNaoPreenchido)]
+        [NFeField(ID = "J18", FieldName = "tpPint", DataType = "token", MinLength = 1, MaxLength = 1), CampoValidavel(17, ChaveErroValidacao.CampoNaoPreenchido)]
         public string TipoPintura { get; set; }
 
         /// <summary>
         /// [tpVeic] Retorna ou define Tipo do Veículo de acordo com a tabela do RENAVAM.
         /// </summary>
         [NFeField(ID = "J19", FieldName = "tpVeic", DataType = "token", Pattern = "[0-9]{1,2}")]
-        [ValidateField(18, ChaveErroValidacao.CampoNaoPreenchido, DefaultValue = TipoVeiculoRENAVAM.NaoEspecificado)]
+        [CampoValidavel(18, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = TipoVeiculoRENAVAM.NaoEspecificado)]
         public TipoVeiculoRENAVAM TipoVeiculo
         {
             get { return _tipoVeiculo; }
@@ -306,7 +306,7 @@ namespace NotaFiscalNet.Core
         /// [espVeic] Retorna ou define a Espécie do Veículo de acordo com a tabela do RENAVAM.
         /// </summary>
         [NFeField(ID = "J20", FieldName = "espVeic", DataType = "token", Pattern = "[0-9]{1}")]
-        [ValidateField(19, ChaveErroValidacao.CampoNaoPreenchido, DefaultValue = EspecieVeiculoRENAVAM.NaoEspecificado)]
+        [CampoValidavel(19, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = EspecieVeiculoRENAVAM.NaoEspecificado)]
         public EspecieVeiculoRENAVAM EspecieVeiculo
         {
             get { return _especieVeiculo; }
@@ -319,14 +319,14 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// [VIN] Retorna ou define se o chassi foi remarcado.
         /// </summary>
-        [NFeField(ID = "J21", FieldName = "VIN"), ValidateField(20, ChaveErroValidacao.CampoNaoPreenchido)]
+        [NFeField(ID = "J21", FieldName = "VIN"), CampoValidavel(20, ChaveErroValidacao.CampoNaoPreenchido)]
         public bool ChassiRemarcado { get; set; }
 
         /// <summary>
         /// [condVeic] Retorna ou define a Condição do Veículo
         /// </summary>
         [NFeField(ID = "J22", FieldName = "condVeic", DataType = "token")]
-        [ValidateField(21, ChaveErroValidacao.CampoNaoPreenchido, DefaultValue = CondicaoVeiculo.NaoEspecificado)]
+        [CampoValidavel(21, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = CondicaoVeiculo.NaoEspecificado)]
         public CondicaoVeiculo CondicaoVeiculo
         {
             get { return _condicaoVeiculo; }
@@ -340,7 +340,7 @@ namespace NotaFiscalNet.Core
         /// [cMod] Retorna ou define o Código Marca Modelo de acordo com a tabela do RENAVAM
         /// </summary>
         [NFeField(ID = "J23", FieldName = "cMod", DataType = "token", Pattern = "[0-9]{1,6}")]
-        [ValidateField(22, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(22, ChaveErroValidacao.CampoNaoPreenchido)]
         public int CodigoMarcaModelo
         {
             get { return _codigoMarcaModelo; }
@@ -354,7 +354,7 @@ namespace NotaFiscalNet.Core
         /// [cCorDENATRAN] Retorna ou define o Código da Cor Segundo as regras de pré-cadastro do DENATRAN.
         /// </summary>
         [NFeField(ID = "J24", FieldName = "cCorDENATRAN")]
-        [ValidateField(22, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(22, ChaveErroValidacao.CampoNaoPreenchido)]
         public TipoCorDenatran CorDenatran
         {
             get { return _corDenatran; }
@@ -369,7 +369,7 @@ namespace NotaFiscalNet.Core
         /// o motorista.
         /// </summary>
         [NFeField(ID = "J25", FieldName = "lota")]
-        [ValidateField(22, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(22, ChaveErroValidacao.CampoNaoPreenchido)]
         public int LotacaoMaximaPassageirosSentados
         {
             get { return _lotacaoMaximaPassageirosSentados; }
@@ -383,7 +383,7 @@ namespace NotaFiscalNet.Core
         /// [tpRest] Retorna ou define o Tipo de Restrição do Veículo.
         /// </summary>
         [NFeField(ID = "J26", FieldName = "tpRest")]
-        [ValidateField(22, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(22, ChaveErroValidacao.CampoNaoPreenchido)]
         public TipoRestricaoVeiculo TipoRestricao
         {
             get { return _tipoRestricao; }

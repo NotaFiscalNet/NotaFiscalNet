@@ -26,7 +26,6 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// [Cnpj] Retorna ou define o Cnpj do Órgão Emitente
         /// </summary>
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Cnpj
         {
             get { return _cnpj; }
@@ -36,7 +35,6 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// [xOrgao] Retorna ou define o nome do Órgão Emitente
         /// </summary>
-        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public string OrgaoEmitente
         {
             get { return _orgaoEmitente; }
@@ -46,7 +44,6 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// [matr] Retorna ou define a Matrícula do Agente
         /// </summary>
-        [ValidateField(3, ChaveErroValidacao.CampoNaoPreenchido)]
         public string MatriculaAgente
         {
             get { return _matriculaAgente; }
@@ -56,7 +53,6 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// [xAgente] Retorna ou define o nome do Agente.
         /// </summary>
-        [ValidateField(4, ChaveErroValidacao.CampoNaoPreenchido)]
         public string NomeAgente
         {
             get { return _nomeAgente; }
@@ -66,7 +62,6 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// [fone] Retorna ou define o Telefone. Preencher com o DDD + número do telefone.
         /// </summary>
-        [ValidateField(5, true)]
         public string Telefone
         {
             get { return _telefone; }
@@ -80,7 +75,6 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// [UF] Retorna ou define a Sigla da Unidade Federativa
         /// </summary>
-        [ValidateField(6, ChaveErroValidacao.CampoNaoPreenchido)]
         public UfIBGE UnidadeFederativa
         {
             get { return _unidadeFederativa; }
@@ -90,7 +84,6 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// [nDAR] Retorna ou define o número do Documento de Arrecadação da Receita.
         /// </summary>
-        [ValidateField(7, true)]
         public string NumeroDocumento
         {
             get { return _numeroDocumento; }
@@ -101,7 +94,6 @@ namespace NotaFiscalNet.Core
         /// [dEmi] Retorna ou define a Data de emissão do Documento de Arrecadação da Receita.
         /// </summary>
         /// <remarks>Formato AAAA-MM-DD</remarks>
-        [ValidateField(8, true)]
         public DateTime? DataEmissao
         {
             get { return _dataEmissao; }
@@ -118,7 +110,6 @@ namespace NotaFiscalNet.Core
         /// [vDAR] Retorna ou define o valor total constante no Documento de Arrecadação da Receita
         /// </summary>
         /// <remarks>Formato com 15 caracteres, sendo 13 no corpo e 2 decimais</remarks>
-        [ValidateField(9, true)]
         public decimal? Valor
         {
             get { return _valor; }
@@ -132,7 +123,6 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// [repEmi] Retorna ou define a Repartição Fiscal Emitente.
         /// </summary>
-        [ValidateField(10, ChaveErroValidacao.CampoNaoPreenchido)]
         public string ReparticaoFiscalEmitente
         {
             get { return _reparticaoFiscalEmitente; }
@@ -143,7 +133,6 @@ namespace NotaFiscalNet.Core
         /// [dPag] Retorna ou define a Data de pagamento do Documento de Arrecadação da Receita. Opcional.
         /// </summary>
         /// <remarks>Formato AAAA-MM-DD</remarks>
-        [ValidateField(11, true)]
         public DateTime? DataPagamento
         {
             get { return _dataPagamento; }

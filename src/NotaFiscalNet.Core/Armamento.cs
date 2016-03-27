@@ -31,7 +31,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define o Tipo da Arma.
         /// </summary>
         [NFeField(ID = "L02", FieldName = "tpArma", DataType = "token")]
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido, DefaultValue = TipoArmamento.NaoEspecificado)]
+        [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = TipoArmamento.NaoEspecificado)]
         public TipoArmamento TipoArma
         {
             get { return _tipoArma; }
@@ -46,7 +46,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define o Número de Série da Arma de Fogo
         /// </summary>
         [NFeField(ID = "L03", FieldName = "nSerie")]
-        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public string NumeroSerie
         {
             get { return _numeroSerie; }
@@ -57,7 +57,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define o Número do Cano da Arma de Fogo
         /// </summary>
         [NFeField(ID = "L04", FieldName = "nCano")]
-        [ValidateField(3, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)]
         public string NumeroCano
         {
             get { return _numeroCano; }
@@ -70,7 +70,7 @@ namespace NotaFiscalNet.Core
         /// perfeita identificação.
         /// </summary>
         [NFeField(ID = "L05", FieldName = "descr", DataType = "token", MinLength = 1, MaxLength = 256)]
-        [ValidateField(4, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Descricao
         {
             get { return _descricao; }

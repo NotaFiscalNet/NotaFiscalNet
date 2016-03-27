@@ -1,7 +1,7 @@
 ﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
-using NotaFiscalNet.Core.Validacao.Validators;
+
 using System;
 
 namespace NotaFiscalNet.Core
@@ -34,7 +34,7 @@ namespace NotaFiscalNet.Core
         /// [CST] Retorna ou define a Situação Tributária.
         /// </summary>
         [NFeField(ID = "S06", FieldName = "CST", DataType = "token")]
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido, DefaultValue = SituacaoTributariaCOFINS.NaoEspecificado)]
+        [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = SituacaoTributariaCOFINS.NaoEspecificado)]
         public SituacaoTributariaCOFINS SituacaoTributaria
         {
             get { return _situacaoTributaria; }
@@ -117,7 +117,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "S07", FieldName = "vBC", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
         [NFeField(ID = "S09", FieldName = "qBCProd", DataType = "TDec_1204", Pattern = @"0|0\.[0-9]{4}|[1-9]{1}[0-9]{0,11}(\.[0-9]{4})?")]
-        [ValidateField(2, Validator = typeof(ImpostoCOFINSValidator))]
+        [CampoValidavel(2)]
         public decimal BaseCalculo
         {
             get { return _baseCalculo; }
@@ -185,7 +185,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "S08", FieldName = "pCOFINS", DataType = "TDec_0302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?")]
         [NFeField(ID = "S10", FieldName = "vAliqProd", DataType = "TDec_1104", Pattern = @"0|0\.[0-9]{4}|[1-9]{1}[0-9]{0,10}(\.[0-9]{4})?")]
-        [ValidateField(3, Validator = typeof(ImpostoCOFINSValidator))]
+        [CampoValidavel(3)]
         public decimal Aliquota
         {
             get { return _aliquota; }
@@ -252,7 +252,7 @@ namespace NotaFiscalNet.Core
         /// [vCOFINS] Retorna ou define o Valor do COFINS
         /// </summary>
         [NFeField(ID = "S11", FieldName = "vCOFINS", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(4, Validator = typeof(ImpostoCOFINSValidator))]
+        [CampoValidavel(4)]
         public decimal Valor
         {
             get { return _valor; }

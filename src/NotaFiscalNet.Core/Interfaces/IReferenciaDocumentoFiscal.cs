@@ -3,7 +3,7 @@
     /// <summary>
     /// Representa uma Referencia de Documento Fiscal
     /// </summary>
-    public interface IReferenciaDocumentoFiscal : IModificavel
+    public interface IReferenciaDocumentoFiscal
     {
     }
 }

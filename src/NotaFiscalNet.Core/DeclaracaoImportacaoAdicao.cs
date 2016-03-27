@@ -28,14 +28,14 @@ namespace NotaFiscalNet.Core
         /// [nAdicao] Retorna ou define o Número da Adição
         /// </summary>
         [NFeField(ID = "I26", FieldName = "nAdicao", DataType = "token", Pattern = "[1-9]{1}[0-9]{0,2}")]
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public int Numero { get; set; }
 
         /// <summary>
         /// [nSeqAdic] Retorna ou define o Número Sequencial do Item dentro da Adição
         /// </summary>
         [NFeField(ID = "I27", FieldName = "nSeqAdic", DataType = "token", Pattern = "[1-9]{1}[0-9]{0,2}")]
-        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public int NumeroSequencial { get; set; }
 
         /// <summary>
@@ -43,7 +43,7 @@ namespace NotaFiscalNet.Core
         /// internos de informação do emitente da NF-e
         /// </summary>
         [NFeField(ID = "I28", FieldName = "cFabricante", DataType = "token", MinLength = 1, MaxLength = 60)]
-        [ValidateField(3, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)]
         public string CodigoFabricante { get; set; } = string.Empty;
 
         /// <summary>
@@ -52,7 +52,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "I29", FieldName = "vDescDI", DataType = "TDec_1302Opc",
             Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional = true)]
-        [ValidateField(4, true)]
+        [CampoValidavel(4, Opcional = true)]
         public decimal ValorDescontoItemDI { get; set; }
 
         /// <summary>

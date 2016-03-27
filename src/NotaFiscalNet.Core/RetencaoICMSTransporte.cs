@@ -21,7 +21,7 @@ namespace NotaFiscalNet.Core
         /// [vServ] Retorna ou define o Valor do Serviço de Transporte retido.
         /// </summary>
         [NFeField(FieldName = "vServ", DataType = "TDec_1302", ID = "X12", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal ValorServico
         {
             get { return _valorServico; }
@@ -37,7 +37,7 @@ namespace NotaFiscalNet.Core
         /// [vBCRet] Retorna ou define o Valor da Base de Cálculo de Retenção do ICMS.
         /// </summary>
         [NFeField(FieldName = "vBCRet", DataType = "TDec_1302", ID = "X13", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal BaseCalculoRetencao
         {
             get { return _BaseCalculoRetencao; }
@@ -53,7 +53,7 @@ namespace NotaFiscalNet.Core
         /// [pICMSRet] Retorna ou define a Alíquota de Retenção do ICMS.
         /// </summary>
         [NFeField(FieldName = "pICMSRet", DataType = "TDec_0302", ID = "X14", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?")]
-        [ValidateField(3, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal AliquotaRetencao
         {
             get { return _aliquotaRetencao; }
@@ -69,7 +69,7 @@ namespace NotaFiscalNet.Core
         /// [vICMSRet] Retorna ou define o Valor do ICMS retido.
         /// </summary>
         [NFeField(FieldName = "vICMSRet", DataType = "TDec_1302", ID = "X15", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(4, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal ValorICMSRetido
         {
             get { return _valorICMSRetido; }
@@ -85,7 +85,7 @@ namespace NotaFiscalNet.Core
         /// [CFOP] Retorna ou define o CFOP (Código Fiscal de Operações e Prestações).
         /// </summary>
         [NFeField(FieldName = "CFOP", DataType = "TCfop", ID = "X16", Pattern = @"[123567][0-9]([0-9][1-9]|[1-9][0-9])")]
-        [ValidateField(5, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
         public int CFOP
         {
             get { return _cfop; }
@@ -102,7 +102,7 @@ namespace NotaFiscalNet.Core
         /// transporte. Utilizar os códigos de municípios do IBGE.
         /// </summary>
         [NFeField(FieldName = "cMunFG", DataType = "TCodMunIBGE", ID = "X17", Pattern = @"[0-9]{7}")]
-        [ValidateField(6, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(6, ChaveErroValidacao.CampoNaoPreenchido)]
         public int CodigoMunicipioFatorGerador
         {
             get { return _codigoMunicipioFatorGeradorICMS; }

@@ -12,8 +12,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Inicializa uma nova instância da classe <see cref="NFeReadOnlyException"/>.
         /// </summary>
-        internal NFeReadOnlyException()
-            : base((ErroValidacao)ErroValidacao.Create(ChaveErroValidacao.ReadOnlyClass))
+        internal NFeReadOnlyException():base(ChaveErroValidacao.ReadOnlyClass)
         {
         }
     }

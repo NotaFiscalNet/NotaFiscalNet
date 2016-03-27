@@ -1,7 +1,7 @@
 ﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
-using NotaFiscalNet.Core.Validacao.Validators;
+
 using System;
 
 namespace NotaFiscalNet.Core
@@ -50,7 +50,7 @@ namespace NotaFiscalNet.Core
         /// [orig] Retorna ou define a Origem da Mercadoria. <br/> Obrigatório para todos os tipos de ICMS
         /// </summary>
         [NFeField(ID = "N11", FieldName = "orig", DataType = "Torig")]
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido, DefaultValue = OrigemMercadoria.NaoEspecificado)]
+        [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = OrigemMercadoria.NaoEspecificado)]
         public OrigemMercadoria OrigemMercadoria
         {
             get { return _origemMercadoria; }
@@ -66,7 +66,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define o Tipo da Tributação do ICMS. <br/> Obrigatório para todos os tipos de ICMS
         /// </summary>
         [NFeField(ID = "N12", FieldName = "CST")]
-        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido, DefaultValue = SituacaoTributariaICMS.NaoEspecificado)]
+        [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = SituacaoTributariaICMS.NaoEspecificado)]
         public SituacaoTributariaICMS SituacaoTributaria
         {
             get { return _situacaoTributaria; }
@@ -83,7 +83,7 @@ namespace NotaFiscalNet.Core
         /// 10, 20, 70, 90 <br/> Opcional nos ICMS: 51
         /// </summary>
         [NFeField(ID = "N13", FieldName = "modBC")]
-        [ValidateField(3, Validator = typeof(ImpostoICMSValidator))]
+        [CampoValidavel(3)]
         public ModalidadeBaseCalculoIcms ModalidadeBaseCalculo
         {
             get { return _modalidadeBaseCalculo; }
@@ -311,7 +311,7 @@ namespace NotaFiscalNet.Core
         /// da desoneração.
         /// </summary>
         [NFeField(FieldName = "motDesICMS")]
-        [ValidateField(5, Validator = typeof(ImpostoICMSValidator))]
+        [CampoValidavel(5)]
         public MotivoDesoneracaoCondicionalICMS MotivoDesoneracaoCondicional
         {
             get { return _motivoDesoneracaoCondicional; }

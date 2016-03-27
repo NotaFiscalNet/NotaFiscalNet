@@ -1,7 +1,7 @@
 ﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
-using NotaFiscalNet.Core.Validacao.Validators;
+
 using System.Xml;
 
 namespace NotaFiscalNet.Core
@@ -27,7 +27,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         /// <remarks>O Cnpj e o Cpf do Emitente são mutuamente exclusivos.</remarks>
         [NFeField(ID = "C02", FieldName = "Cnpj", DataType = "TCnpj", Pattern = "[0-9]{14}", Opcional = true)]
-        [ValidateField(1, Validator = typeof(CNPJouCPFValidator))]
+        [CampoValidavel(1)]
         public string CNPJ
         {
             get { return _CNPJ; }
@@ -43,7 +43,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         /// <remarks>O Cnpj e o Cpf do Emitente são mutuamente exclusivos.</remarks>
         [NFeField(ID = "C02a", FieldName = "Cpf", DataType = "TCpf", Pattern = "[0-9]{11}", Opcional = true)]
-        [ValidateField(2, true)]
+        [CampoValidavel(2, Opcional = true)]
         public string CPF
         {
             get { return _CPF; }
@@ -59,7 +59,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "C03", FieldName = "xNome", DataType = "TString", Pattern = "[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}",
             MinLength = 1, MaxLength = 60)]
-        [ValidateField(3, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Nome
         {
             get { return _nome; }
@@ -71,7 +71,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "C04", FieldName = "xFant", DataType = "TString", Pattern = "[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}",
             MinLength = 1, MaxLength = 60)]
-        [ValidateField(4, true)]
+        [CampoValidavel(4, Opcional = true)]
         public string NomeFantasia
         {
             get { return _nomeFantasia; }
@@ -82,14 +82,14 @@ namespace NotaFiscalNet.Core
         /// [enderEmit] Retorna o Endereço do Emitente da Nota Fiscal
         /// </summary>
         [NFeField(ID = "C05", FieldName = "enderEmit", DataType = "TEndEmi")]
-        [ValidateField(5, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
         public Endereco Endereco { get; } = new Endereco();
 
         /// <summary>
         /// [IE] Retorna ou define a Inscrição Estadual
         /// </summary>
         [NFeField(ID = "C17", FieldName = "IE", DataType = "TIe", MinLength = 0, MaxLength = 14)]
-        [ValidateField(6, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(6, ChaveErroValidacao.CampoNaoPreenchido)]
         public string InscricaoEstadual
         {
             get { return _inscricaoEstadual; }
@@ -105,7 +105,7 @@ namespace NotaFiscalNet.Core
         /// apenas quando houver a retenção do ICMS Substituto Tributário para a UF de destino.
         /// </summary>
         [NFeField(ID = "C18", FieldName = "IEST", DataType = "TIeST", MinLength = 2, MaxLength = 14, Opcional = true)]
-        [ValidateField(7, true)]
+        [CampoValidavel(7, Opcional = true)]
         public string InscricaoEstadualSubstitutoTributario
         {
             get { return _inscricaoEstadualSubstitutoTributario; }
@@ -122,7 +122,7 @@ namespace NotaFiscalNet.Core
         /// sujeitos ao ICMS.
         /// </summary>
         [NFeField(ID = "C19", FieldName = "IM", DataType = "TString", MinLength = 1, MaxLength = 15, Opcional = true)]
-        [ValidateField(8, Validator = typeof(EmitenteNFeValidator))]
+        [CampoValidavel(8)]
         public string InscricaoMunicipal
         {
             get { return _inscricaoMunicipal; }
@@ -134,7 +134,7 @@ namespace NotaFiscalNet.Core
         /// for informada.
         /// </summary>
         [NFeField(ID = "C20", FieldName = "CNAE", DataType = "string", Pattern = "[0-9]{7}", Opcional = true)]
-        [ValidateField(9, Validator = typeof(EmitenteNFeValidator))]
+        [CampoValidavel(9)]
         public string CNAEFiscal
         {
             get { return _CNAEFiscal; }
@@ -151,7 +151,7 @@ namespace NotaFiscalNet.Core
         /// receita bruta; 3 – Regime Normal.
         /// </summary>
         [NFeField(ID = "C21", FieldName = "CRT", DataType = "string")]
-        [ValidateField(10, ChaveErroValidacao.CampoNaoPreenchido, DefaultValue = CodigoRegimeTributario.NaoInformado)]
+        [CampoValidavel(10, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = CodigoRegimeTributario.NaoInformado)]
         public CodigoRegimeTributario CodigoRegimeTributario
         {
             get { return _codigoRegimeTributario; }

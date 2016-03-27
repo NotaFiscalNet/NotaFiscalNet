@@ -1,7 +1,7 @@
 ﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
-using NotaFiscalNet.Core.Validacao.Validators;
+
 using System.Xml;
 
 namespace NotaFiscalNet.Core
@@ -29,7 +29,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "G02", FieldName = "Cnpj", DataType = "TCnpjOpc", Pattern = "[0-9]{0}|[0-9]{14}")]
         [NFeField(ID = "F02", FieldName = "Cnpj", DataType = "TCnpjOpc", Pattern = "[0-9]{0}|[0-9]{14}")]
-        [ValidateField(0, Validator = typeof(CNPJouCPFValidator))]
+        [CampoValidavel(0)]
         public string CNPJ
         {
             get { return _CNPJ; }
@@ -45,7 +45,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "G03", FieldName = "Cpf", DataType = "TCpf", Pattern = "[0-9]{11}", Opcional = true)]
         [NFeField(ID = "F03", FieldName = "Cpf", DataType = "TCpf", Pattern = "[0-9]{11}", Opcional = true)]
-        [ValidateField(1, true)]
+        [CampoValidavel(1, Opcional = true)]
         public string CPF
         {
             get { return _CPF; }

@@ -1,7 +1,7 @@
 ﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
-using NotaFiscalNet.Core.Validacao.Validators;
+
 using System;
 using System.Xml;
 
@@ -53,7 +53,8 @@ namespace NotaFiscalNet.Core
         /// <remarks>
         /// Caso um item seja removido da coleção ProdutoCollection, todos os itens na coleção serão re-enumerados.
         /// </remarks>
-        [NFeField(ID = "H02", FieldName = "nItem", DataType = "token", Pattern = "[1-9]{1}[0-9]{0,1}|[1-8]{1}[0-9]{2}|[9]{1}[0-8]{1}[0-9]{1}|[9]{1}[9]{1}[0]{1}", NodeType = XmlNodeType.Attribute), ValidateField(1, true)]
+        [NFeField(ID = "H02", FieldName = "nItem", DataType = "token", Pattern = "[1-9]{1}[0-9]{0,1}|[1-8]{1}[0-9]{2}|[9]{1}[0-8]{1}[0-9]{1}|[9]{1}[9]{1}[0]{1}", NodeType = XmlNodeType.Attribute)]
+        [CampoValidavel(1, Opcional = true)]
         public int NumeroItem { get; internal set; }
 
         /// <summary>
@@ -62,7 +63,7 @@ namespace NotaFiscalNet.Core
         /// codificação própria. Neste caso, o formato do código deverá ser 'CFOP9999'.
         /// </summary>
         [NFeField(FieldName = "cProd", DataType = "token", ID = "I02", MinLength = 1, MaxLength = 60)]
-        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Codigo
         {
             get { return _codigo; }
@@ -78,7 +79,7 @@ namespace NotaFiscalNet.Core
         /// informar se o produto não possuir este código.
         /// </summary>
         [NFeField(FieldName = "cEAN", DataType = "token", ID = "I03", Pattern = @"[0-9]{0}|[0-9]{8}|[0-9]{12,14}")]
-        [ValidateField(3, true)]
+        [CampoValidavel(3, Opcional = true)]
         public string CodigoGTIN
         {
             get { return _codigoGTIN; }
@@ -93,7 +94,7 @@ namespace NotaFiscalNet.Core
         /// [xProd] Retorna ou define a Descrição do Produto (ou serviço).
         /// </summary>
         [NFeField(FieldName = "xProd", DataType = "token", ID = "I04", MinLength = 1, MaxLength = 120)]
-        [ValidateField(4, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Descricao
         {
             get { return _descricao; }
@@ -112,7 +113,7 @@ namespace NotaFiscalNet.Core
         /// imobilizado, etc.), informar o código 00 (zeros) (v2.0)
         /// </summary>
         [NFeField(FieldName = "NCM", DataType = "token", ID = "I05", Pattern = @"[0-9]{8}")]
-        [ValidateField(5, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
         public string CodigoNCM
         {
             get { return _codigoNCM; }
@@ -127,7 +128,7 @@ namespace NotaFiscalNet.Core
         /// [NVE] Retorna ou define o Código NVE (Nomenclatura de Valor Aduaneiro e Estatística).
         /// </summary>
         [NFeField(FieldName = "NVE", ID = "105a", Pattern = @"[A-Z]{2}[0-9]{4}")]
-        [ValidateField(5, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
         public string CodigoNVE
         {
             get { return _codigoNVE; }
@@ -143,7 +144,7 @@ namespace NotaFiscalNet.Core
         /// valor não deverá ser informado. Formato 00 ou 000.
         /// </summary>
         [NFeField(FieldName = "EXTIPI", DataType = "token", ID = "I08", Pattern = @"[0-9]{2,3}", Opcional = true)]
-        [ValidateField(6, true)]
+        [CampoValidavel(6, Opcional = true)]
         public string CodigoExTIPI
         {
             get { return _CodigoEXTIPI; }
@@ -157,7 +158,7 @@ namespace NotaFiscalNet.Core
         /// [CFOP] Retorna ou define o CFOP (Código Fiscal de Operações e Prestações).
         /// </summary>
         [NFeField(FieldName = "CFOP", DataType = "TCfop", ID = "I08", Pattern = @"[123567][0-9]([0-9][1-9]|[1-9][0-9])")]
-        [ValidateField(8, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(8, ChaveErroValidacao.CampoNaoPreenchido)]
         public int CFOP
         {
             get { return _cfop; }
@@ -171,7 +172,7 @@ namespace NotaFiscalNet.Core
         /// [uCom] Retorna ou define a Unidade (ex. PCT, CX, UND, KG, CM, etc) de comercialização do produto.
         /// </summary>
         [NFeField(FieldName = "uCom", DataType = "token", ID = "I09", MinLength = 1, MaxLength = 6)]
-        [ValidateField(9, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(9, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Unidade
         {
             get { return _unidadeComercial; }
@@ -186,7 +187,7 @@ namespace NotaFiscalNet.Core
         /// ou serviço sendo vendido). Permite até 4 casas decimais, e 11 inteiros.
         /// </summary>
         [NFeField(FieldName = "qCom", DataType = "TDec_1504", ID = "I10", Pattern = @"0|0\.[0-9]{1,4}|[1-9]{1}[0-9]{0,14}|[1-9]{1}[0-9]{0,14}(\.[0-9]{1,4})?")]
-        [ValidateField(10, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(10, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal Quantidade
         {
             get { return _quantidade; }
@@ -201,7 +202,7 @@ namespace NotaFiscalNet.Core
         /// casas decimais (se maior, será arredondado para cima).
         /// </summary>
         [NFeField(FieldName = "vUnCom", DataType = "TDec_1110", ID = "I10a", Pattern = @"0|0\.[0-9]{1,10}|[1-9]{1}[0-9]{0,10}|[1-9]{1}[0-9]{0,10}(\.[0-9]{1,10})?")]
-        [ValidateField(11, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(11, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal ValorUnitario
         {
             get { return _valorUnitario; }
@@ -215,7 +216,7 @@ namespace NotaFiscalNet.Core
         /// [vProd] Retorna ou define o Valor Total Bruto dos Produtos ou Serviços.
         /// </summary>
         [NFeField(FieldName = "vProd", DataType = "TDec_1302", ID = "I11", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(12, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(12, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal ValorTotalBruto
         {
             get { return _valorTotalBruto; }
@@ -232,7 +233,7 @@ namespace NotaFiscalNet.Core
         /// de o produto não possua este código.
         /// </summary>
         [NFeField(FieldName = "cEANTrib", DataType = "token", ID = "I12", Pattern = @"[0-9]{0}|[0-9]{8}|[0-9]{12,14}")]
-        [ValidateField(13, true)]
+        [CampoValidavel(13, Opcional = true)]
         public string CodigoGTINTributario
         {
             get { return _codigoGTINTributario; }
@@ -246,7 +247,7 @@ namespace NotaFiscalNet.Core
         /// [uTrib] Retorna ou define a Unidade Tributável do produto. De 1 a 6 caracteres.
         /// </summary>
         [NFeField(FieldName = "uTrib", DataType = "token", ID = "I13", MinLength = 1, MaxLength = 6)]
-        [ValidateField(14, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(14, ChaveErroValidacao.CampoNaoPreenchido)]
         public string UnidadeTributavel
         {
             get { return _unidadeTributavel; }
@@ -260,7 +261,7 @@ namespace NotaFiscalNet.Core
         /// [qTrib] Retorna ou define a Quantidade Tributável.
         /// </summary>
         [NFeField(FieldName = "qTrib", DataType = "TDec_1504", ID = "I14", Pattern = @"0|0\.[0-9]{1,4}|[1-9]{1}[0-9]{0,14}|[1-9]{1}[0-9]{0,14}(\.[0-9]{1,4})?")]
-        [ValidateField(15, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(15, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal QuantidadeTributavel
         {
             get { return _quantidadeTributavel; }
@@ -274,7 +275,7 @@ namespace NotaFiscalNet.Core
         /// [vUnTrib] Retorna ou define o Valor Unitário de Tributação.
         /// </summary>
         [NFeField(FieldName = "vUnTrib", DataType = "TDec_1110", ID = "I14a", Pattern = @"0|0\.[0-9]{1,10}|[1-9]{1}[0-9]{0,10}|[1-9]{1}[0-9]{0,10}(\.[0-9]{1,10})?")]
-        [ValidateField(16, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(16, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal ValorUnitarioTributavel
         {
             get { return _valorUnitarioTributavel; }
@@ -288,7 +289,7 @@ namespace NotaFiscalNet.Core
         /// [vFrete] Retorna ou define o Valor Total do Frete. Opcional.
         /// </summary>
         [NFeField(FieldName = "vFrete", DataType = "TDec_1302Opc", ID = "I15", Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional = true)]
-        [ValidateField(17, true)]
+        [CampoValidavel(17, Opcional = true)]
         public decimal ValorTotalFrete
         {
             get { return _valorTotalFrete; }
@@ -302,7 +303,7 @@ namespace NotaFiscalNet.Core
         /// [vSeg] Retorna ou define o Valor Total do Seguro. Opcional.
         /// </summary>
         [NFeField(FieldName = "vSeg", DataType = "TDec_1302Opc", ID = "I16", Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(18, true)]
+        [CampoValidavel(18, Opcional = true)]
         public decimal ValorTotalSeguro
         {
             get { return _valorTotalSeguro; }
@@ -316,7 +317,7 @@ namespace NotaFiscalNet.Core
         /// [vDesc] Retorna ou define o Valor do Desconto do produto.
         /// </summary>
         [NFeField(FieldName = "vDesc", DataType = "TDec_1302Opc", ID = "I17", Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(19, true)]
+        [CampoValidavel(19, Opcional = true)]
         public decimal ValorDesconto
         {
             get { return _valorDesconto; }
@@ -330,7 +331,7 @@ namespace NotaFiscalNet.Core
         /// [vOutro] Retorna ou define outras despesas acessórias.
         /// </summary>
         [NFeField(FieldName = "vOutro", DataType = "TDec_1302Opc", ID = "I17", Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(20, true)]
+        [CampoValidavel(20, Opcional = true)]
         public decimal ValorOutrasDespesasAcessorias
         {
             get { return _valorOutrasDespesasAcessorias; }
@@ -345,14 +346,14 @@ namespace NotaFiscalNet.Core
         /// deverá ser preenchido com: False – o valor do item (vProd) não compõe o valor total da
         /// NF-e (vProd) True – o valor do item (vProd) compõe o valor total da NF-e (vProd)
         /// </summary>
-        [NFeField(FieldName = "indTot"), ValidateField(20, true)]
+        [NFeField(FieldName = "indTot"), CampoValidavel(20, Opcional = true)]
         public bool ItemCompoeValorTotalNFe { get; set; }
 
         /// <summary>
         /// [DI] Retorna a lista de Declarações de Importação do Produto. Opcional.
         /// </summary>
         [NFeField(FieldName = "DI", ID = "I18", Opcional = true)]
-        [ValidateField(20, true)]
+        [CampoValidavel(20, Opcional = true)]
         public DeclaracaoImportacaoCollection DeclaracoesImportacao => _declaracaoImportacao;
 
         /// <summary>
@@ -366,7 +367,7 @@ namespace NotaFiscalNet.Core
         /// controle do B2B
         /// </summary>
         [NFeField(FieldName = "xPed", DataType = "token", MinLength = 1, MaxLength = 15)]
-        [ValidateField(21, true)]
+        [CampoValidavel(21, Opcional = true)]
         public string PedidoCompra
         {
             get { return _pedidoCompra; }
@@ -380,7 +381,7 @@ namespace NotaFiscalNet.Core
         /// [nItemPed] Retorna ou define o número do item do pedido de compra
         /// </summary>
         [NFeField(FieldName = "nItemPed", Pattern = @"[0-9]{1,6}", Opcional = true)]
-        [ValidateField(5, true)]
+        [CampoValidavel(5, Opcional = true)]
         public int ItemPedidoCompra
         {
             get { return _itemPedidoCompra; }
@@ -424,7 +425,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         /// <remarks>Informar apenas se o campo TipoProdutoEspecifico for igual a 'VeiculoNovo'.</remarks>
         [NFeField(FieldName = "veicProd", ID = "J01", Opcional = true)]
-        [ValidateField(21, Validator = typeof(ProdutoEspecificoValidator))]
+        [CampoValidavel(21)]
         public VeiculoNovo DetalhamentoVeiculo => _detalhamentoVeiculo;
 
         /// <summary>
@@ -432,8 +433,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         /// <remarks>Informar apenas se o campo TipoProdutoEspecifico for igual a 'Medicamento'.</remarks>
         [NFeField(FieldName = "med", ID = "K01")]
-        [ValidateField(22, Validator = typeof(ProdutoEspecificoValidator))]
-        //[ValidateField(22, true)]
+        [CampoValidavel(22)]
+        //[ValidateField(22, Opcional = true)]
         public MedicamentoCollection DetalhamentoMedicamento => _detalhamentoMedicamentos;
 
         /// <summary>
@@ -441,7 +442,7 @@ namespace NotaFiscalNet.Core
         /// campo TipoProdutoEspecifico for igual a 'Armamento'.
         /// </summary>
         [NFeField(FieldName = "arma", ID = "L01")]
-        [ValidateField(23, Validator = typeof(ProdutoEspecificoValidator))]
+        [CampoValidavel(23)]
         public ArmamentoCollection DetalhamentoArmamento => _detalhamentoArmamentos;
 
         /// <summary>
@@ -449,7 +450,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         /// <remarks>Informar apenas se o campo TipoProdutoEspecifico for igual a 'Combustivel'.</remarks>
         [NFeField(FieldName = "comb", ID = "L101")]
-        [ValidateField(24, Validator = typeof(ProdutoEspecificoValidator))]
+        [CampoValidavel(24)]
         public Combustivel DetalhamentoCombustivel => _detalhamentoCombustivel;
 
         /// <summary>
@@ -473,7 +474,7 @@ namespace NotaFiscalNet.Core
         /// informações complementares). Opcional.
         /// </summary>
         [NFeField(ID = "V01", FieldName = "infAdProd", DataType = "TString", MinLength = 1, MaxLength = 500, Pattern = "[1-9]{1}[0-9]{0,1}|[1-8]{1}[0-9]{2}|[9]{1}[0-8]{1}[0-9]{1}|[9]{1}[9]{1}[0]{1}", Opcional = true)]
-        [ValidateField(25, true)]
+        [CampoValidavel(25, Opcional = true)]
         public string InformacoesAdicionais
         {
             get { return _informacoesAdicionais; }
@@ -487,13 +488,13 @@ namespace NotaFiscalNet.Core
         /// [imposto] Retorna ou define os Impostos do Produto
         /// </summary>
         [NFeField(ID = "M01", FieldName = "imposto")]
-        [ValidateField(26, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(26, ChaveErroValidacao.CampoNaoPreenchido)]
         public ImpostoProduto Imposto => _imposto;
 
         /// <summary>
         /// [impostoDevol] Retorna ou define as informações do Imposto Devolvido.
         /// </summary>
-        [NFeField(ID = "U50", FieldName = "impostoDevol"), ValidateField(26, ChaveErroValidacao.CampoNaoPreenchido)]
+        [NFeField(ID = "U50", FieldName = "impostoDevol"), CampoValidavel(26, ChaveErroValidacao.CampoNaoPreenchido)]
         public ImpostoDevolvido ImpostoDevolvido { get; set; }
 
         /// <summary>

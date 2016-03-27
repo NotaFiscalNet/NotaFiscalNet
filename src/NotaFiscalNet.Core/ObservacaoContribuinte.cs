@@ -17,7 +17,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define o Nome do Campo Livre
         /// </summary>
         [NFeField(ID = "Z05", FieldName = "xCampo", DataType = "token", MinLength = 1, MaxLength = 20, NodeType = XmlNodeType.Attribute)]
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Campo
         {
             get { return _campo; }
@@ -31,7 +31,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define o Texto do Campo Livre
         /// </summary>
         [NFeField(ID = "Z06", FieldName = "xTexto", DataType = "token", MinLength = 1, MaxLength = 60)]
-        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Texto
         {
             get { return _texto; }

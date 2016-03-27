@@ -21,7 +21,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define o Número do Lote do Medicamento. Até 20 caracteres.
         /// </summary>
         [NFeField(FieldName = "nLote", DataType = "token", ID = "K02", MinLength = 1, MaxLength = 20)]
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public string NumeroLote
         {
             get { return _numeroLote; }
@@ -35,7 +35,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define a Quantidade de Produtos no Lote do Medicamento.
         /// </summary>
         [NFeField(FieldName = "qLote", DataType = "TDec_0803", ID = "K03", Pattern = @"0|0\.[0-9]{3}|[1-9]{1}[0-9]{0,7}(\.[0-9]{3})?")]
-        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal QuantidadeProdutoLote
         {
             get { return _quantidadeProdLote; }
@@ -50,7 +50,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define a Data de Fabricação do produto.
         /// </summary>
         [NFeField(FieldName = "dFab", DataType = "TData", ID = "K04", Pattern = @"\d{4}-\d{2}-\d{2}")]
-        [ValidateField(3, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)]
         public DateTime DataFabricacao
         {
             get { return _dataFabricacao; }
@@ -65,7 +65,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define a Data de Validade do Produto.
         /// </summary>
         [NFeField(FieldName = "dVal", DataType = "TData", ID = "K05", Pattern = @"\d{4}-\d{2}-\d{2}")]
-        [ValidateField(4, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido)]
         public DateTime DataValidade
         {
             get { return _dataValidade; }
@@ -80,7 +80,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define o Preço Máximo do Medicamento para o consumidor.
         /// </summary>
         [NFeField(FieldName = "vPMC", DataType = "TDec_1302", ID = "K06", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
-        [ValidateField(5, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal PrecoMaximoConsumidor
         {
             get { return _precoMaximoConsumidor; }

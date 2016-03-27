@@ -1,7 +1,7 @@
 ﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
-using NotaFiscalNet.Core.Validacao.Validators;
+
 using System;
 using System.Xml;
 
@@ -62,7 +62,7 @@ namespace NotaFiscalNet.Core
         /// [nDI] Retorna ou define o Número da Declaração de Importação DI/DSI/DA
         /// </summary>
         [NFeField(ID = "I19", FieldName = "nDI", DataType = "token", MinLength = 1, MaxLength = 10),
-         ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido)]
+         CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Numero { get; set; }
 
         /// <summary>
@@ -70,21 +70,21 @@ namespace NotaFiscalNet.Core
         /// </summary>
         /// <remarks>Formato AAAA-MM-DD</remarks>
         [NFeField(ID = "I20", FieldName = "dDI", DataType = "TData", Pattern = @"\d{4}-\d{2}-\d{2}"),
-         ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido)]
+         CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public DateTime DataRegistro { get; set; }
 
         /// <summary>
         /// [xLocDesemb] Retorna ou define o Local de Desembaraço Aduaneiro.
         /// </summary>
         [NFeField(ID = "I21", FieldName = "xLocDesemb", DataType = "token", MinLength = 1, MaxLength = 60),
-         ValidateField(3, ChaveErroValidacao.CampoNaoPreenchido)]
+         CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)]
         public string LocalDesembaracoAduaneiro { get; set; }
 
         /// <summary>
         /// [UFDesemb] Retorna ou define a Sigla da UF do Local de Desembaraço Aduaneiro.
         /// </summary>
         [NFeField(ID = "I22", FieldName = "UFDesemb"),
-         ValidateField(4, ChaveErroValidacao.CampoNaoPreenchido, DefaultValue = SiglaUF.NaoEspecificado)]
+         CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = SiglaUF.NaoEspecificado)]
         public SiglaUF UFDesembaracoAduaneiro { get; set; }
 
         /// <summary>
@@ -92,25 +92,25 @@ namespace NotaFiscalNet.Core
         /// </summary>
         /// <remarks>Formato AAAA-MM-DD</remarks>
         [NFeField(ID = "I23", FieldName = "dDesemb", DataType = "TData"),
-         ValidateField(5, ChaveErroValidacao.CampoNaoPreenchido)]
+         CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
         public DateTime DataDesembaracoAduaneiro { get; set; }
 
         /// <summary>
         /// [tpViaTransp] Retorna ou define o Tipo da Via Internacional declarada na Declaração de Importação.
         /// </summary>
-        [NFeField(ID = "I23a", FieldName = "tpViaTransp"), ValidateField(6, ChaveErroValidacao.CampoNaoPreenchido)]
+        [NFeField(ID = "I23a", FieldName = "tpViaTransp"), CampoValidavel(6, ChaveErroValidacao.CampoNaoPreenchido)]
         public TipoViaTransporteInternacional TipoViaTransporte { get; set; }
 
         /// <summary>
         /// [vAFRMM] Retorna ou define o Valor Adicional ao Frete para Renovação da Marinha Mercante.
         /// </summary>
-        [NFeField(ID = "I23b", FieldName = "vAFRMM"), ValidateField(7, ChaveErroValidacao.CampoNaoPreenchido)]
+        [NFeField(ID = "I23b", FieldName = "vAFRMM"), CampoValidavel(7, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal? ValorAFRMM { get; set; }
 
         /// <summary>
         /// [tpIntermedio] Retorna ou define a Forma de importação quanto a intermediação.
         /// </summary>
-        [NFeField(ID = "I23c", FieldName = "tpIntermedio"), ValidateField(8, ChaveErroValidacao.CampoNaoPreenchido)]
+        [NFeField(ID = "I23c", FieldName = "tpIntermedio"), CampoValidavel(8, ChaveErroValidacao.CampoNaoPreenchido)]
         public TipoIntermedioImportacao TipoIntermedio { get; set; }
 
         /// <summary>
@@ -121,14 +121,14 @@ namespace NotaFiscalNet.Core
         /// os zeros não significativos.
         /// </remarks>
         [NFeField(ID = "I23d", FieldName = "Cnpj", DataType = "TCnpj"),
-         ValidateField(9, ChaveErroValidacao.CampoNaoPreenchido)]
+         CampoValidavel(9, ChaveErroValidacao.CampoNaoPreenchido)]
         public string CNPJ { get; set; }
 
         /// <summary>
         /// [UFTerceiro] Retorna ou define a sigla UF do adquirinte ou do encomendante.
         /// </summary>
         [NFeField(ID = "I23e", FieldName = "UFTerceiro", DataType = "TUfEmi"),
-         ValidateField(10, ChaveErroValidacao.CampoNaoPreenchido)]
+         CampoValidavel(10, ChaveErroValidacao.CampoNaoPreenchido)]
         public SiglaUF UFTerceiro
         {
             get { return _ufTerceiro; }
@@ -145,15 +145,14 @@ namespace NotaFiscalNet.Core
         /// informação do emitente da NFe
         /// </summary>
         [NFeField(ID = "I24", FieldName = "cExportador", DataType = "token"),
-         ValidateField(11, ChaveErroValidacao.CampoNaoPreenchido)]
+         CampoValidavel(11, ChaveErroValidacao.CampoNaoPreenchido)]
         public string CodigoExportador { get; set; }
 
         /// <summary>
         /// [adi] Retorna as Adições na Declaração de Importação
         /// </summary>
         [NFeField(ID = "I25", FieldName = "adi")]
-        [ValidateField(12, ChaveErroValidacao.CampoNaoPreenchido, Validator = typeof(RangeCollectionValidator),
-            MinLength = 1)]
+        [CampoValidavel(12, ChaveErroValidacao.CampoNaoPreenchido, TamanhoMinimo = 1)]
         public DeclaracaoImportacaoAdicaoCollection Adicoes { get; }
 
         /// <summary>

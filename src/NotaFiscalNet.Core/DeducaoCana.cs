@@ -11,7 +11,7 @@ namespace NotaFiscalNet.Core
         private decimal _valor;
 
         [NFeField(ID = "ZC11", FieldName = "xDed", DataType = "TString")]
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Descricao
         {
             get { return _descricao; }
@@ -19,7 +19,7 @@ namespace NotaFiscalNet.Core
         }
 
         [NFeField(ID = "ZC12", FieldName = "vDed", DataType = "TDec_1302")]
-        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal Valor
         {
             get { return _valor; }

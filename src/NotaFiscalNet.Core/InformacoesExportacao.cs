@@ -17,7 +17,6 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// [UFSaidaPais] Retorna ou define a Sigla da UF de Embarque ou de transposição de fronteira.
         /// </summary>
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido, DefaultValue = UfIBGE.NaoEspecificado)]
         public UfIBGE UnidadeFederativa
         {
             get { return _unidadeFederativa; }
@@ -30,7 +29,6 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// [xLocExporta] Retorna ou define a Descrição do Local de Embarque ou de transposição de fronteira.
         /// </summary>
-        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public string LocalEmbarque
         {
             get { return _localEmbarque; }
@@ -43,7 +41,6 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// [xLocDespacho] Retorna ou define a Descrição do Local de Despacho.
         /// </summary>
-        [ValidateField(2, true)]
         public string LocalDespacho
         {
             get { return _localDespacho; }

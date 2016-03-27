@@ -30,12 +30,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FluentValidation, Version=6.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FluentValidation.6.2.1.0\lib\Net45\FluentValidation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -170,7 +175,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuantidadeMaximaLoteNFeException.cs" />
     <Compile Include="ReboqueCollection.cs" />
-    <Compile Include="ReferenciaDocumentoFiscalCollection.cs" />
     <Compile Include="ReferenciaDocumentoFiscalCte.cs" />
     <Compile Include="ReferenciaDocumentoFiscalEcf.cs" />
     <Compile Include="ReferenciaDocumentoFiscalNotaFiscal.cs" />
@@ -253,28 +257,27 @@
     <Compile Include="Utils\StringEx.cs" />
     <Compile Include="Utils\ValidationExtensions.cs" />
     <Compile Include="Utils\ValidationUtil.cs" />
-    <Compile Include="Validacao\BaseValidator.cs" />
     <Compile Include="Validacao\ChaveErroValidacao.cs" />
-    <Compile Include="Validacao\CodePath.cs" />
-    <Compile Include="Validacao\DefaultValidatorAttribute.cs" />
     <Compile Include="Validacao\ErroValidacao.cs" />
-    <Compile Include="Validacao\FieldMember.cs" />
-    <Compile Include="Validacao\NFeValidatorEngine.cs" />
+    <Compile Include="Validacao\FluentCustom\ChaveDeAcessoValidator.cs" />
+    <Compile Include="Validacao\FluentCustom\CollectionExactLengthValidator.cs" />
+    <Compile Include="Validacao\FluentCustom\FluentValidationCustomExtensions.cs" />
+    <Compile Include="Validacao\FluentCustom\InValidator.cs" />
+    <Compile Include="Validacao\FluentCustom\Mensagens.cs" />
+    <Compile Include="Validacao\MotorValidacao.cs" />
+    <Compile Include="Validacao\CampoValidavelAttribute.cs" />
     <Compile Include="Validacao\ResultadoValidacao.cs" />
-    <Compile Include="Validacao\ValidateFieldAttribute.cs" />
-    <Compile Include="Validacao\ValidationCondiction.cs" />
-    <Compile Include="Validacao\ValidationContext.cs" />
-    <Compile Include="Validacao\ValidatorFactory.cs" />
-    <Compile Include="Validacao\Validators\CNPJouCPFValidator.cs" />
-    <Compile Include="Validacao\Validators\DefaultValidator.cs" />
-    <Compile Include="Validacao\Validators\EmitenteNFeValidator.cs" />
-    <Compile Include="Validacao\Validators\EntradaContingenciaValidator.cs" />
-    <Compile Include="Validacao\Validators\ImpostoCOFINSValidator.cs" />
-    <Compile Include="Validacao\Validators\ImpostoICMSValidator.cs" />
-    <Compile Include="Validacao\Validators\ProdutoEspecificoValidator.cs" />
-    <Compile Include="Validacao\Validators\RangeCollectionValidator.cs" />
-    <Compile Include="Validacao\Validators\ReferenciaDocFiscalValidator.cs" />
-    <Compile Include="Validacao\XmlInvalidoException.cs" />
+    <Compile Include="Validacao\FluentCustom\CollectionLengthValidator.cs" />
+    <Compile Include="Validacao\Validadores\IdentificacaoDocumentoFiscalValidador.cs" />
+    <Compile Include="Validacao\Validadores\CompraValidador.cs" />
+    <Compile Include="Validacao\Validadores\NfeValidador.cs" />
+    <Compile Include="Validacao\Validadores\ReferenciaDocumentoFiscalCteValidador.cs" />
+    <Compile Include="Validacao\Validadores\ReferenciaDocumentoFiscalEcfValidador.cs" />
+    <Compile Include="Validacao\Validadores\ReferenciaDocumentoFiscalNfeValidador.cs" />
+    <Compile Include="Validacao\Validadores\ReferenciaDocumentoFiscalNotaFiscalProdutorValidador.cs" />
+    <Compile Include="Validacao\Validadores\ReferenciaDocumentoFiscalNotaFiscalValidador.cs" />
+    <Compile Include="Validacao\FluentCustom\CnpjValidator.cs" />
+    <Compile Include="Validacao\FluentCustom\ValidadorPolimorfico.cs" />
     <Compile Include="VeiculoNovo.cs" />
     <Compile Include="VeiculoTransporte.cs" />
     <Compile Include="VolumeCarga.cs" />

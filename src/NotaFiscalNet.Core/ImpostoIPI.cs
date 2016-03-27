@@ -72,7 +72,7 @@ namespace NotaFiscalNet.Core
         /// </list>
         /// </remarks>
         [NFeField(FieldName = "CST", DataType = "token", ID = "O09")]
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido, DefaultValue = SituacaoTributariaIPI.NaoEspecificado)]
+        [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = SituacaoTributariaIPI.NaoEspecificado)]
         public SituacaoTributariaIPI SituacaoTributaria
         {
             get { return _situacaoTributaria; }
@@ -121,7 +121,7 @@ namespace NotaFiscalNet.Core
         /// Receita Federal.
         /// </remarks>
         [NFeField(FieldName = "clEnq", DataType = "token", ID = "O02", MinLength = 1, MaxLength = 5, Opcional = true)]
-        [ValidateField(2, true)]
+        [CampoValidavel(2, Opcional = true)]
         public string ClasseIPICigarroBebida
         {
             get { return _classeEnquadramentoIpiCigarrosBebidas; }
@@ -137,7 +137,7 @@ namespace NotaFiscalNet.Core
         /// emitente. <br/> Somente para os casos de exportação direta ou indireta. Opcional.
         /// </summary>
         [NFeField(FieldName = "CNPJProd", DataType = "TCnpj", ID = "O03", Opcional = true, Pattern = @"[0-9]{14}")]
-        [ValidateField(3, true)]
+        [CampoValidavel(3, Opcional = true)]
         public string CNPJProdutor
         {
             get { return _cnpjProdutor; }
@@ -158,7 +158,7 @@ namespace NotaFiscalNet.Core
         /// codificação prevista nos Atos Normativos editados pela Receita Federal.
         /// </remarks>
         [NFeField(FieldName = "cSelo", DataType = "token", ID = "O04", MinLength = 1, MaxLength = 60, Opcional = true)]
-        [ValidateField(4, true)]
+        [CampoValidavel(4, Opcional = true)]
         public string CodigoSeloControle
         {
             get { return _codigoSeloControle; }
@@ -173,7 +173,7 @@ namespace NotaFiscalNet.Core
         /// [qSelo] Retorna ou define a Quantidade de Selo de Controle do IPI. Opcional.
         /// </summary>
         [NFeField(FieldName = "qSelo", DataType = "token", ID = "O05", Pattern = @"[0-9]{1,12}", Opcional = true)]
-        [ValidateField(5, true)]
+        [CampoValidavel(5, Opcional = true)]
         public int QuantidadeSeloControle
         {
             get { return _quantidadeSeloControleIPI; }
@@ -189,7 +189,7 @@ namespace NotaFiscalNet.Core
         /// [cEnq] Retorna ou define o Código de Enquadramento Legal do IPI (tabela criada pela RFB).
         /// </summary>
         [NFeField(FieldName = "cEnq", DataType = "token", ID = "O06", MinLength = 1, MaxLength = 3)]
-        [ValidateField(6, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(6, ChaveErroValidacao.CampoNaoPreenchido)]
         public string CodigoEnquadramentoLegal
         {
             get { return _codigoEnquadramentoLegalIPI; }
@@ -264,7 +264,7 @@ namespace NotaFiscalNet.Core
         /// [vBC] Retorna ou define o Valor da Base de Cálculo do IPI.
         /// </summary>
         [NFeField(FieldName = "vBC", DataType = "TDec_1302", ID = "O10", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional = true)]
-        //[ValidateField(7, Validator = typeof(ImpostoIPIValidator))]
+        //[ValidateField(7)]
         public decimal BaseCalculo
         {
             get { return _baseCalculo; }
@@ -288,7 +288,7 @@ namespace NotaFiscalNet.Core
         /// [pIPI] Retorna ou define o Alíquota (percentual) do IPI. Opcional.
         /// </summary>
         [NFeField(FieldName = "pIPI", DataType = "TDec_0302", ID = "O13", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?", Opcional = true)]
-        //[ValidateField(8, Validator = typeof(ImpostoIPIValidator))]
+        //[ValidateField(8)]
         public decimal Aliquota
         {
             get { return _aliquota; }
@@ -313,7 +313,7 @@ namespace NotaFiscalNet.Core
         /// Obs. Somente para os produtos tributados por Unidade.
         /// </summary>
         [NFeField(FieldName = "qUnid", DataType = "TDec_1204", ID = "O11", Pattern = @"0|0\.[0-9]{4}|[1-9]{1}[0-9]{0,11}(\.[0-9]{4})", Opcional = true)]
-        //[ValidateField(9, Validator = typeof(ImpostoIPIValidator))]
+        //[ValidateField(9)]
         public decimal Quantidade
         {
             get { return _quantidade; }
@@ -336,7 +336,7 @@ namespace NotaFiscalNet.Core
         /// [vUnid] Retorna ou define o Valor por Unidade Tributável.
         /// </summary>
         [NFeField(FieldName = "vUnid", DataType = "TDec_1104", ID = "O12", Pattern = @"0|0\.[0-9]{4}|[1-9]{1}[0-9]{0,10}(\.[0-9]{4})?")]
-        //[ValidateField(10, Validator = typeof(ImpostoIPIValidator))]
+        //[ValidateField(10)]
         public decimal ValorUnidade
         {
             get { return _valorUnidade; }
@@ -360,7 +360,7 @@ namespace NotaFiscalNet.Core
         /// Situação Tributária.
         /// </summary>
         [NFeField(FieldName = "vIPI", DataType = "TDec_1302", ID = "O14", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional = true)]
-        //[ValidateField(11, Validator = typeof(ImpostoIPIValidator))]
+        //[ValidateField(11)]
         public decimal Valor
         {
             get { return _valor; }

@@ -2,29 +2,13 @@
 using System;
 using System.Collections.Generic;
 using NotaFiscalNet.Core.Tests.Dados;
+using NotaFiscalNet.Core.Validacao;
 using Xunit;
 
 namespace NotaFiscalNet.Core.Tests
 {
     public class ReferenciaDocumentoFiscalNotaFiscalTests
     {
-        [Fact]
-        public void DeveCriarUmaReferenciaNaoModificada()
-        {
-            var referencia = new ReferenciaDocumentoFiscalNotaFiscal();
-            Assert.False(referencia.Modificado);
-        }
-
-        [Fact]
-        public void DeveModificarUmaReferencia()
-        {
-            var referencia = new ReferenciaDocumentoFiscalNotaFiscal()
-            {
-                CodigoModeloDocumentoFiscal = "01"
-            };
-            Assert.True(referencia.Modificado);
-        }
-
         private readonly RepositorioReferenciaDocumentoFiscalNotaFiscal _repositorio;
 
         public ReferenciaDocumentoFiscalNotaFiscalTests()
@@ -42,31 +26,51 @@ namespace NotaFiscalNet.Core.Tests
             Assert.Equal(xml, resultado);
         }
 
-        [Theory]
-        [InlineData("1")]
-        [InlineData("2")]
-        public void DeveImpedirModeloDocumentoFiscalInexistente(string codigoModeloFiscal)
-        {
-            var exception = Record.Exception(() => new ReferenciaDocumentoFiscalNotaFiscal()
-            {
-                CodigoModeloDocumentoFiscal = codigoModeloFiscal
-            });
+        //[Theory]
+        //[InlineData("1")]
+        //[InlineData("2")]
+        //public void DeveImpedirModeloDocumentoFiscalInexistente(string codigoModeloFiscal)
+        //{
+        //    var exception = Record.Exception(() => new ReferenciaDocumentoFiscalNotaFiscal()
+        //    {
+        //        CodigoModelo = codigoModeloFiscal
+        //    });
 
-            Assert.NotNull(exception);
-            Assert.IsType<ArgumentException>(exception);
-            Assert.Contains("O código do modelo de Documento Fiscal informado é inválido", exception.Message);
-        }
+        //    Assert.NotNull(exception);
+        //    Assert.IsType<ArgumentException>(exception);
+        //    Assert.Contains("O código do modelo de Documento Fiscal informado é inválido", exception.Message);
+        //}
 
-        [Theory]
-        [InlineData("01")]
-        public void DevePermitirTodosModeloDocumentoFiscalExistente(string codigoModeloFiscal)
-        {
-            var exception = Record.Exception(() => new ReferenciaDocumentoFiscalNotaFiscal()
-            {
-                CodigoModeloDocumentoFiscal = codigoModeloFiscal
-            });
+        //[Theory]
+        //[InlineData("01")]
+        //public void DevePermitirTodosModeloDocumentoFiscalExistente(string codigoModeloFiscal)
+        //{
+        //    var exception = Record.Exception(() => new ReferenciaDocumentoFiscalNotaFiscal()
+        //    {
+        //        CodigoModelo = codigoModeloFiscal
+        //    });
 
-            Assert.Null(exception);
-        }
+        //    Assert.Null(exception);
+        //}
+
+        //[Fact]
+        //public void DeveValidarReferenciaDocumentoFiscalNotaFiscalNaoPreenchida()
+        //{
+        //    var referencia = new ReferenciaDocumentoFiscalNotaFiscal();
+        //    var validador = new MotorValidacao(referencia);
+        //    var resultado = validador.Validar();
+
+        //    Assert.False(resultado.Valido);
+        //}
+
+        //[Fact]
+        //public void DeveValidarReferenciaDocumentoFiscalNotaFiscalPreenchida()
+        //{
+        //    var referencia = _repositorio.Referencias["1"];
+        //    var validador = new MotorValidacao(referencia);
+        //    var resultado = validador.Validar();
+
+        //    Assert.True(resultado.Valido);
+        //}
     }
 }

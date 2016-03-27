@@ -1,7 +1,7 @@
 ﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
-using NotaFiscalNet.Core.Validacao.Validators;
+
 
 namespace NotaFiscalNet.Core
 {
@@ -21,7 +21,7 @@ namespace NotaFiscalNet.Core
         /// [infAdFisco] Retorna ou define Informações Complementares de Interesse do Fisco. Opcional.
         /// </summary>
         [NFeField(ID = "Z02", FieldName = "infAdFisco", DataType = "TString", MinLength = 1, MaxLength = 2000, Pattern = @"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}", Opcional = true)]
-        [ValidateField(1, true)]
+        [CampoValidavel(1, Opcional = true)]
         public string InformacoesComplementaresFisco
         {
             get { return _informacoesComplementaresFisco; }
@@ -35,7 +35,7 @@ namespace NotaFiscalNet.Core
         /// [infCpl] Retorna ou define Informações Complementares de Interesse do Contribuinte. Opcional.
         /// </summary>
         [NFeField(ID = "Z03", FieldName = "infCpl", DataType = "TString", MinLength = 1, MaxLength = 5000, Pattern = @"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}", Opcional = true)]
-        [ValidateField(2, true)]
+        [CampoValidavel(2, Opcional = true)]
         public string InformacoesComplementaresContribuinte
         {
             get { return _informacoesComplementaresContribuinte; }
@@ -49,21 +49,21 @@ namespace NotaFiscalNet.Core
         /// [obsCont] Retorna as Informações de uso Livre do Contribuinte. Opcional.
         /// </summary>
         [NFeField(ID = "Z04", FieldName = "obsCont", MinLength = 1, MaxLength = 10, Opcional = true)]
-        [ValidateField(3, ChaveErroValidacao.CollectionMinValue, Validator = typeof(RangeCollectionValidator), MaxLength = 10)]
+        [CampoValidavel(3, ChaveErroValidacao.CollectionMinValue)]
         public ObservacaoContribuinteCollection ObservacoesContribuinte => _observacoesContribuinte;
 
         /// <summary>
         /// [obsFisco] Retorna as Informações de uso Livre do Fisco. Opcional.
         /// </summary>
         [NFeField(ID = "Z07", FieldName = "obsFisco", MinLength = 1, MaxLength = 10, Opcional = true)]
-        [ValidateField(4, ChaveErroValidacao.CollectionMinValue, Validator = typeof(RangeCollectionValidator), MaxLength = 10)]
+        [CampoValidavel(4, ChaveErroValidacao.CollectionMinValue)]
         public ObservacaoFiscoCollection ObservacoesFisco => _observacoesFisco;
 
         /// <summary>
         /// [procRef] Retorna os Processos Referenciados. Opcional.
         /// </summary>
         [NFeField(ID = "Z10", FieldName = "procRef", Opcional = true)]
-        [ValidateField(5, ChaveErroValidacao.CollectionMinValue, Validator = typeof(RangeCollectionValidator))]
+        [CampoValidavel(5, ChaveErroValidacao.CollectionMinValue)]
         public ProcessoCollection Processos => _processos;
 
         /// <summary>

@@ -34,7 +34,7 @@ namespace NotaFiscalNet.Core
         /// Retorna ou define o Código do CEP (apenas números). Informar zeros não significativos. Opcional
         /// </summary>
         [NFeField(ID = "C13", FieldName = "CEP", DataType = "token", Pattern = "[0-9]{8}", Opcional = true)]
-        [ValidateField(8, true)]
+        [CampoValidavel(8, Opcional = true)]
         public string CEP
         {
             get { return _CEP; }
@@ -45,7 +45,7 @@ namespace NotaFiscalNet.Core
         /// [cPais] Retorna ou define o Código do País de acordo com a Tabela do BACEN (Brasil-1058).
         /// </summary>
         [NFeField(ID = "C14", FieldName = "cPais", DataType = "token", Pattern = "[0-9]{1,4}", Opcional = true)]
-        [ValidateField(9, true)]
+        [CampoValidavel(9, Opcional = true)]
         public int CodigoPaisBACEN
         {
             get { return _codigoPaisBACEN; }
@@ -63,7 +63,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "C15", FieldName = "xPais", DataType = "TString", Pattern = "[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}",
             MinLength = 1, MaxLength = 60, Opcional = true)]
-        [ValidateField(10, true)]
+        [CampoValidavel(10, Opcional = true)]
         public string NomePais { get; set; } = string.Empty;
 
         /// <summary>
@@ -71,7 +71,7 @@ namespace NotaFiscalNet.Core
         /// apenas número, sem espaços). Opcional.
         /// </summary>
         [NFeField(ID = "C16", FieldName = "fone", DataType = "token", Pattern = "[0-9]{1,10}", Opcional = true)]
-        [ValidateField(11, true)]
+        [CampoValidavel(11, Opcional = true)]
         public string Telefone
         {
             get { return _telefone; }

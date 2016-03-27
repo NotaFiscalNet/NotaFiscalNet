@@ -1,7 +1,6 @@
 ﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
 using NotaFiscalNet.Core.Validacao;
-using NotaFiscalNet.Core.Validacao.Validators;
 using System;
 using System.Xml;
 
@@ -25,7 +24,7 @@ namespace NotaFiscalNet.Core
         /// [safra] Retorna ou define o identificador da Safra. Informar AAAA ou AAAA/AAAA.
         /// </summary>
         [NFeField(ID = "ZC02", FieldName = "safra", DataType = "TString")]
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Safra
         {
             get { return _safra; }
@@ -36,7 +35,7 @@ namespace NotaFiscalNet.Core
         /// [ref] Retorna ou define o Mês e Ano de referência.
         /// </summary>
         [NFeField(ID = "ZC03", FieldName = "ref", DataType = "xs:string")]
-        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public DateTime Referencia
         {
             get { return _referencia; }
@@ -47,15 +46,14 @@ namespace NotaFiscalNet.Core
         /// [forDia] Retorna a lista de fornecimentos diários de Cana.
         /// </summary>
         [NFeField(ID = "ZC04", FieldName = "forDia")]
-        [ValidateField(3, ChaveErroValidacao.CampoNaoPreenchido, Validator = typeof(RangeCollectionValidator),
-            MinLength = 1, MaxLength = 31)]
+        [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido, TamanhoMinimo = 1, TamanhoMaximo = 31)]
         public FornecimentoDiarioCanaCollection FornecimentosDiarios { get; } = new FornecimentoDiarioCanaCollection();
 
         /// <summary>
         /// [qTotMes] Retorna ou define a quantidade total do mês.
         /// </summary>
         [NFeField(ID = "ZC07", FieldName = "qTotMes", DataType = "TDec_1110")]
-        [ValidateField(4, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal QuantidadeTotalMes
         {
             get { return _quantidadeTotalMes; }
@@ -66,7 +64,7 @@ namespace NotaFiscalNet.Core
         /// [qTotAnt] Retorna ou define a quantidade total anterior.
         /// </summary>
         [NFeField(ID = "ZC08", FieldName = "qTotAnt", DataType = "TDec_1110")]
-        [ValidateField(5, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal QuantidadeTotalAnterior
         {
             get { return _quantidadeTotalAnterior; }
@@ -77,7 +75,7 @@ namespace NotaFiscalNet.Core
         /// [qTotGer] Retorna ou define a quantidade total geral.
         /// </summary>
         [NFeField(ID = "ZC09", FieldName = "qTotGer", DataType = "TDec_1110")]
-        [ValidateField(6, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(6, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal QuantidadeTotalGeral
         {
             get { return _quantidadeTotalGeral; }
@@ -88,15 +86,14 @@ namespace NotaFiscalNet.Core
         /// [deduc] Retorna a lista de deduções (Taxas e Contribuições).
         /// </summary>
         [NFeField(ID = "ZC10", FieldName = "deduc")]
-        [ValidateField(7, ChaveErroValidacao.CampoNaoPreenchido, Validator = typeof(RangeCollectionValidator),
-            MinLength = 0, MaxLength = 10)]
+        [CampoValidavel(7, ChaveErroValidacao.CampoNaoPreenchido, TamanhoMinimo = 0, TamanhoMaximo = 10)]
         public DeducaoCanaCollection Deducoes { get; } = new DeducaoCanaCollection();
 
         /// <summary>
         /// [vFor] Retorna ou define o Valor dos Fornecimentos.
         /// </summary>
         [NFeField(ID = "ZC13", FieldName = "vFor", DataType = "TDec_1302")]
-        [ValidateField(8, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(8, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal ValorFornecimentos
         {
             get { return _valorFornecimentos; }
@@ -107,7 +104,7 @@ namespace NotaFiscalNet.Core
         /// [vTotDed] Retorna ou define o Valor Total das Deduções.
         /// </summary>
         [NFeField(ID = "ZC14", FieldName = "vTotDed", DataType = "TDec_1302")]
-        [ValidateField(9, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(9, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal ValorTotalDeducoes
         {
             get { return _valorTotalDeducoes; }
@@ -118,7 +115,7 @@ namespace NotaFiscalNet.Core
         /// [vLiqFor] Retorna ou define o Valor Líquido dos fornecimentos.
         /// </summary>
         [NFeField(ID = "ZC15", FieldName = "vLiqFor", DataType = "TDec_1302")]
-        [ValidateField(10, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(10, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal ValorLiquidoFornecimentos
         {
             get { return _valorLiquidoFornecimentos; }

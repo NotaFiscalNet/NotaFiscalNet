@@ -18,7 +18,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "ZC05", FieldName = "dia", DataType = "xs:string", Pattern = "[1-9]|[1][0-9]|[2][0-9]|[3][0-1]?")
         ]
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public int Dia
         {
             get { return _dia; }

@@ -40,7 +40,7 @@ namespace NotaFiscalNet.Core
         /// <remarks>O Cnpj e o Cpf do Destinatário são mutuamente exclusivos.</remarks>
         [NFeField(ID = "E02", FieldName = "Cnpj", DataType = "TCnpjOpc", Pattern = "[0-9]{0}|[0-9]{14}", Opcional = true
             )]
-        [ValidateField(10, true)]
+        [CampoValidavel(10, Opcional = true)]
         public string CNPJ
         {
             get { return _cnpj; }
@@ -63,7 +63,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         /// <remarks>O Cnpj e o Cpf do Destinatário são mutuamente exclusivos.</remarks>
         [NFeField(ID = "E03", FieldName = "Cpf", DataType = "TCpf", Pattern = "[0-9]{11}", Opcional = true)]
-        [ValidateField(20, true)]
+        [CampoValidavel(20, Opcional = true)]
         public string CPF
         {
             get { return _cpf; }
@@ -82,7 +82,7 @@ namespace NotaFiscalNet.Core
         /// pessoa estrangeira. Informar este campo no caso de operação com exterior.
         /// </summary>
         [NFeField(ID = "E03a", FieldName = "idEstrangeiro", DataType = "string", Pattern = "[!-ÿ]{0}|[!-ÿ]{5,14}")]
-        [ValidateField(30, true)]
+        [CampoValidavel(30, Opcional = true)]
         public string IdEstrangeiro
         {
             get { return _idEstrangeiro; }
@@ -99,7 +99,7 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "E04", FieldName = "xNome", DataType = "TString", Pattern = "[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}",
             MinLength = 2, MaxLength = 60, Opcional = true)]
-        [ValidateField(40, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(40, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Nome
         {
             get { return _nome; }
@@ -110,13 +110,13 @@ namespace NotaFiscalNet.Core
         /// [enderEmit] Retorna o Endereço do Emitente da Nota Fiscal
         /// </summary>
         [NFeField(ID = "E05", FieldName = "enderEmit", DataType = "TEndereco")]
-        [ValidateField(50, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(50, ChaveErroValidacao.CampoNaoPreenchido)]
         public Endereco Endereco { get; } = new Endereco();
 
         /// <summary>
         /// [indIEDest] Retorna ou define o Indicador da IE do Destinatário.
         /// </summary>
-        [NFeField(ID = "E16a", FieldName = "indIEDest"), ValidateField(51, ChaveErroValidacao.CampoNaoPreenchido)]
+        [NFeField(ID = "E16a", FieldName = "indIEDest"), CampoValidavel(51, ChaveErroValidacao.CampoNaoPreenchido)]
         public IndicadorIEDestinatario IndicadorIEDestinatario { get; set; }
 
         /// <summary>
@@ -131,7 +131,7 @@ namespace NotaFiscalNet.Core
         /// </remarks>
         [NFeField(ID = "E17", FieldName = "IE", DataType = "TIeDest", MinLength = 0, MaxLength = 14,
             Pattern = "ISENTO|[0-9]{0,14}", Opcional = true)]
-        [ValidateField(60, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(60, ChaveErroValidacao.CampoNaoPreenchido)]
         public string InscricaoEstadual
         {
             get { return _inscricaoEstadual; }
@@ -148,7 +148,7 @@ namespace NotaFiscalNet.Core
         /// comprovação do ingresso/internamento da mercadoria nas áreas sob controle da SUFRAMA.
         /// </remarks>
         [NFeField(ID = "E18", FieldName = "ISUF", DataType = "token", MinLength = 8, MaxLength = 9, Opcional = true)]
-        [ValidateField(70, true)]
+        [CampoValidavel(70, Opcional = true)]
         public string InscricaoSUFRAMA
         {
             get { return _inscricaoSUFRAMA; }
@@ -160,7 +160,7 @@ namespace NotaFiscalNet.Core
         }
 
         [NFeField(ID = "E18a", FieldName = "IM", DataType = "token", MinLength = 1, MaxLength = 15, Opcional = true)]
-        [ValidateField(70, true)]
+        [CampoValidavel(70, Opcional = true)]
         public string InscricaoMunicipal
         {
             get { return _inscricaoMunicipal; }
@@ -175,7 +175,7 @@ namespace NotaFiscalNet.Core
         /// [email] Retorna ou define o Email do destinatário
         /// </summary>
         [NFeField(ID = "E19", FieldName = "email", DataType = "string", MinLength = 1, MaxLength = 60, Opcional = true)]
-        [ValidateField(80, true)]
+        [CampoValidavel(80, Opcional = true)]
         public string Email
         {
             get { return _email; }

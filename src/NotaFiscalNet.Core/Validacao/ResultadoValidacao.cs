@@ -1,37 +1,34 @@
-ï»¿using System.Collections.Generic;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace NotaFiscalNet.Core.Validacao
 {
     public class ResultadoValidacao
     {
-        public bool Sucesso { get; private set; }
-
-        public IDictionary<string, ErroValidacao> Erros { get; private set; }
-
-        public ResultadoValidacao(IDictionary<string, ErroValidacao> erros)
-        {
-            Sucesso = false;
-            Erros = new Dictionary<string, ErroValidacao>(erros);
-        }
-
         public ResultadoValidacao()
         {
-            Sucesso = true;
-            Erros = new Dictionary<string, ErroValidacao>();
+            Erros = new List<ErroValidacao>();
         }
+
+        public ResultadoValidacao(IEnumerable<ErroValidacao> erros)
+        {
+            Erros = erros.ToList();
+        }
+
+        public List<ErroValidacao> Erros { get; }
+
+        public bool Valido => !Erros.Any();
 
         public override string ToString()
         {
-            if (Sucesso)
-                return "Nenhum erro de validaÃ§Ã£o foi encontrado.";
-            else
-            {
-                var sb = new StringBuilder();
-                foreach (var erro in Erros.Values)
-                    sb.AppendFormat("{0} - {1}\r\n", erro.Descricao, erro.Local);
-                return sb.ToString();
-            }
+            if (Valido)
+                return "Nenhum erro de validação foi encontrado.";
+
+            var sb = new StringBuilder();
+            foreach (var erro in Erros)
+                sb.AppendFormat("{0} - {1}\r\n", erro.Descricao, erro.Propriedade);
+            return sb.ToString();
         }
     }
 }

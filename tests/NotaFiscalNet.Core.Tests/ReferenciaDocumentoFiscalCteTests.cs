@@ -1,28 +1,12 @@
 ﻿using System.Xml;
 using NotaFiscalNet.Core.Tests.Comum;
+using NotaFiscalNet.Core.Validacao;
 using Xunit;
 
 namespace NotaFiscalNet.Core.Tests
 {
     public class ReferenciaDocumentoFiscalCteTests
     {
-        [Fact]
-        public void DeveCriarUmaReferenciaNaoModificada()
-        {
-            var referencia = new ReferenciaDocumentoFiscalCte();
-            Assert.False(referencia.Modificado);
-        }
-
-        [Fact]
-        public void DeveModificarUmaReferencia()
-        {
-            var referencia = new ReferenciaDocumentoFiscalCte()
-            {
-                ReferenciaCte = "32392"
-            };
-            Assert.True(referencia.Modificado);
-        }
-
         [Theory]
         [InlineData(123, "ReferenciaDocumentoFiscalCte1.xml")]
         [InlineData(789, "ReferenciaDocumentoFiscalCte2.xml")]

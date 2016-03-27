@@ -16,7 +16,7 @@ namespace NotaFiscalNet.Core
         /// [nProc] Retorna ou define o Identificador do Processo ou Ato Concessório
         /// </summary>
         [NFeField(ID = "Z11", FieldName = "nProc", DataType = "token", MinLength = 1, MaxLength = 60)]
-        [ValidateField(1, ChaveErroValidacao.CampoNaoPreenchido)]
+        [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Identificador
         {
             get { return _identificador; }
@@ -30,7 +30,7 @@ namespace NotaFiscalNet.Core
         /// [indProc] Retorna ou define a Origem do Processo
         /// </summary>
         [NFeField(ID = "Z12", FieldName = "indProc")]
-        [ValidateField(2, ChaveErroValidacao.CampoNaoPreenchido, DefaultValue = OrigemProcesso.NaoEspecificado)]
+        [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = OrigemProcesso.NaoEspecificado)]
         public OrigemProcesso OrigemProcesso
         {
             get { return _origemProcesso; }

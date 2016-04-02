@@ -22,7 +22,7 @@ namespace NotaFiscalNet.Core.Validacao.Validadores
 
             RuleFor(t => t.FormaPagamento)
                 .IsInEnum();
-
+            
             RuleFor(t => t.ModalidadeDocumentoFiscal)
                 .IsInEnum();
 
@@ -36,8 +36,7 @@ namespace NotaFiscalNet.Core.Validacao.Validadores
                 .NotEmpty();
 
             RuleFor(t => t.DataEntradaSaida)
-                .NotEmpty()
-                .When(t => t.DataEntradaSaida.HasValue);
+                .NotEqual(DateTime.MinValue);
 
             RuleFor(t => t.TipoNotaFiscal)
                 .IsInEnum();
@@ -60,9 +59,6 @@ namespace NotaFiscalNet.Core.Validacao.Validadores
             RuleFor(t => t.Finalidade)
                 .IsInEnum();
 
-            RuleFor(t => t.OperacaoConsumidorFinal)
-                .NotEmpty();
-
             RuleFor(t => t.IndicadorPresencaComprador)
                 .IsInEnum();
 
@@ -73,14 +69,23 @@ namespace NotaFiscalNet.Core.Validacao.Validadores
                 .NotEmpty()
                 .Length(1, 20);
 
-            RuleFor(t => t.DataEntradaSaida)
+            RuleFor(t => t.DataHoraEntradaContingencia)
                 .NotEmpty()
+                .NotEqual(DateTime.MinValue)
                 .When(t => t.TipoEmissao != TipoEmissaoNFe.Normal);
+
+            RuleFor(t => t.DataHoraEntradaContingencia)
+                .Null()
+                .When(t => t.TipoEmissao == TipoEmissaoNFe.Normal);
 
             RuleFor(t => t.JustificativaEntradaContingencia)
                 .NotEmpty()
                 .Length(15, 256)
                 .When(t => t.TipoEmissao != TipoEmissaoNFe.Normal);
+
+            RuleFor(t => t.JustificativaEntradaContingencia)
+                .Null()
+                .When(t => t.TipoEmissao == TipoEmissaoNFe.Normal);
 
             RuleFor(t => t.ReferenciasDocumentoFiscais)
                 .CollectionLength(0, 500)

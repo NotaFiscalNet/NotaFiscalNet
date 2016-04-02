@@ -125,7 +125,7 @@ namespace NotaFiscalNet.Core
         /// [dhCont] Retorna ou define a Data e Hora de entrada em contigência. Apenas se o tipo de
         /// emissão for diferente de normal.
         /// </summary>
-        public DateTime DataHoraEntradaContingencia { get; set; } = DateTime.MinValue;
+        public DateTime? DataHoraEntradaContingencia { get; set; }
 
         /// <summary>
         /// [xJust] Retorna ou define a Justificativa para entrada em contingência. Apenas se o tipo
@@ -175,7 +175,7 @@ namespace NotaFiscalNet.Core
 
             if (TipoEmissao != TipoEmissaoNFe.Normal)
             {
-                writer.WriteElementString("dhCont", DataHoraEntradaContingencia.ToTDateTimeUtc(nfe));
+                writer.WriteElementString("dhCont", DataHoraEntradaContingencia.GetValueOrDefault().ToTDateTimeUtc(nfe));
                 writer.WriteElementString("xJust", JustificativaEntradaContingencia);
             }
 

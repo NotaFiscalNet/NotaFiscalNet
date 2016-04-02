@@ -1,0 +1,239 @@
+items:
+- uid: NotaFiscalNet.Core.Transmissao.TipoServicoNFe
+  id: TipoServicoNFe
+  parent: NotaFiscalNet.Core.Transmissao
+  children:
+  - NotaFiscalNet.Core.Transmissao.TipoServicoNFe.Consulta
+  - NotaFiscalNet.Core.Transmissao.TipoServicoNFe.Inutilizacao
+  - NotaFiscalNet.Core.Transmissao.TipoServicoNFe.QRCode
+  - NotaFiscalNet.Core.Transmissao.TipoServicoNFe.Recepcao
+  - NotaFiscalNet.Core.Transmissao.TipoServicoNFe.RecepcaoEvento
+  - NotaFiscalNet.Core.Transmissao.TipoServicoNFe.RetRecepcao
+  - NotaFiscalNet.Core.Transmissao.TipoServicoNFe.StatusServico
+  langs:
+  - csharp
+  - vb
+  name: TipoServicoNFe
+  fullName: NotaFiscalNet.Core.Transmissao.TipoServicoNFe
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/TipoServicoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoServicoNFe
+    path: src/NotaFiscalNet.Core/Transmissao/TipoServicoNFe.cs
+    startLine: 2
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: public enum TipoServicoNFe
+    content.vb: Public Enum TipoServicoNFe
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.Transmissao.TipoServicoNFe.Recepcao
+  id: Recepcao
+  parent: NotaFiscalNet.Core.Transmissao.TipoServicoNFe
+  langs:
+  - csharp
+  - vb
+  name: Recepcao
+  fullName: NotaFiscalNet.Core.Transmissao.TipoServicoNFe.Recepcao
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/TipoServicoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Recepcao
+    path: src/NotaFiscalNet.Core/Transmissao/TipoServicoNFe.cs
+    startLine: 4
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: Recepcao = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Transmissao.TipoServicoNFe.RetRecepcao
+  id: RetRecepcao
+  parent: NotaFiscalNet.Core.Transmissao.TipoServicoNFe
+  langs:
+  - csharp
+  - vb
+  name: RetRecepcao
+  fullName: NotaFiscalNet.Core.Transmissao.TipoServicoNFe.RetRecepcao
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/TipoServicoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: RetRecepcao
+    path: src/NotaFiscalNet.Core/Transmissao/TipoServicoNFe.cs
+    startLine: 5
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: RetRecepcao = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Transmissao.TipoServicoNFe.Inutilizacao
+  id: Inutilizacao
+  parent: NotaFiscalNet.Core.Transmissao.TipoServicoNFe
+  langs:
+  - csharp
+  - vb
+  name: Inutilizacao
+  fullName: NotaFiscalNet.Core.Transmissao.TipoServicoNFe.Inutilizacao
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/TipoServicoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Inutilizacao
+    path: src/NotaFiscalNet.Core/Transmissao/TipoServicoNFe.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: Inutilizacao = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Transmissao.TipoServicoNFe.RecepcaoEvento
+  id: RecepcaoEvento
+  parent: NotaFiscalNet.Core.Transmissao.TipoServicoNFe
+  langs:
+  - csharp
+  - vb
+  name: RecepcaoEvento
+  fullName: NotaFiscalNet.Core.Transmissao.TipoServicoNFe.RecepcaoEvento
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/TipoServicoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: RecepcaoEvento
+    path: src/NotaFiscalNet.Core/Transmissao/TipoServicoNFe.cs
+    startLine: 7
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: RecepcaoEvento = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Transmissao.TipoServicoNFe.StatusServico
+  id: StatusServico
+  parent: NotaFiscalNet.Core.Transmissao.TipoServicoNFe
+  langs:
+  - csharp
+  - vb
+  name: StatusServico
+  fullName: NotaFiscalNet.Core.Transmissao.TipoServicoNFe.StatusServico
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/TipoServicoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: StatusServico
+    path: src/NotaFiscalNet.Core/Transmissao/TipoServicoNFe.cs
+    startLine: 8
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: StatusServico = 4
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Transmissao.TipoServicoNFe.Consulta
+  id: Consulta
+  parent: NotaFiscalNet.Core.Transmissao.TipoServicoNFe
+  langs:
+  - csharp
+  - vb
+  name: Consulta
+  fullName: NotaFiscalNet.Core.Transmissao.TipoServicoNFe.Consulta
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/TipoServicoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Consulta
+    path: src/NotaFiscalNet.Core/Transmissao/TipoServicoNFe.cs
+    startLine: 9
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: Consulta = 5
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Transmissao.TipoServicoNFe.QRCode
+  id: QRCode
+  parent: NotaFiscalNet.Core.Transmissao.TipoServicoNFe
+  langs:
+  - csharp
+  - vb
+  name: QRCode
+  fullName: NotaFiscalNet.Core.Transmissao.TipoServicoNFe.QRCode
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/TipoServicoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: QRCode
+    path: src/NotaFiscalNet.Core/Transmissao/TipoServicoNFe.cs
+    startLine: 10
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: QRCode = 6
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core.Transmissao
+  isExternal: false
+  name: NotaFiscalNet.Core.Transmissao
+  fullName: NotaFiscalNet.Core.Transmissao

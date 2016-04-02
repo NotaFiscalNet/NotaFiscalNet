@@ -1,0 +1,937 @@
+items:
+- uid: NotaFiscalNet.Core.SiglaUF
+  id: SiglaUF
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.SiglaUF.AC
+  - NotaFiscalNet.Core.SiglaUF.AL
+  - NotaFiscalNet.Core.SiglaUF.AM
+  - NotaFiscalNet.Core.SiglaUF.AP
+  - NotaFiscalNet.Core.SiglaUF.BA
+  - NotaFiscalNet.Core.SiglaUF.CE
+  - NotaFiscalNet.Core.SiglaUF.DF
+  - NotaFiscalNet.Core.SiglaUF.ES
+  - NotaFiscalNet.Core.SiglaUF.EX
+  - NotaFiscalNet.Core.SiglaUF.GO
+  - NotaFiscalNet.Core.SiglaUF.MA
+  - NotaFiscalNet.Core.SiglaUF.MG
+  - NotaFiscalNet.Core.SiglaUF.MS
+  - NotaFiscalNet.Core.SiglaUF.MT
+  - NotaFiscalNet.Core.SiglaUF.NaoEspecificado
+  - NotaFiscalNet.Core.SiglaUF.PA
+  - NotaFiscalNet.Core.SiglaUF.PB
+  - NotaFiscalNet.Core.SiglaUF.PE
+  - NotaFiscalNet.Core.SiglaUF.PI
+  - NotaFiscalNet.Core.SiglaUF.PR
+  - NotaFiscalNet.Core.SiglaUF.RJ
+  - NotaFiscalNet.Core.SiglaUF.RN
+  - NotaFiscalNet.Core.SiglaUF.RO
+  - NotaFiscalNet.Core.SiglaUF.RR
+  - NotaFiscalNet.Core.SiglaUF.RS
+  - NotaFiscalNet.Core.SiglaUF.SC
+  - NotaFiscalNet.Core.SiglaUF.SE
+  - NotaFiscalNet.Core.SiglaUF.SP
+  - NotaFiscalNet.Core.SiglaUF.TO
+  langs:
+  - csharp
+  - vb
+  name: SiglaUF
+  fullName: NotaFiscalNet.Core.SiglaUF
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SiglaUF
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nLista de Siglas de UF.\r\n"
+  example: []
+  syntax:
+    content: public enum SiglaUF
+    content.vb: Public Enum SiglaUF
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.SiglaUF.NaoEspecificado
+  id: NaoEspecificado
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: NaoEspecificado
+  fullName: NotaFiscalNet.Core.SiglaUF.NaoEspecificado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoEspecificado
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nNão Especificado. Não Utilizar.\r\n"
+  example: []
+  syntax:
+    content: NaoEspecificado = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.AC
+  id: AC
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: AC
+  fullName: NotaFiscalNet.Core.SiglaUF.AC
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: AC
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Acre\r\n"
+  example: []
+  syntax:
+    content: AC = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.AL
+  id: AL
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: AL
+  fullName: NotaFiscalNet.Core.SiglaUF.AL
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: AL
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Estado Alagoas\r\n"
+  example: []
+  syntax:
+    content: AL = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.AM
+  id: AM
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: AM
+  fullName: NotaFiscalNet.Core.SiglaUF.AM
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: AM
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 26
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Estado Amazonas\r\n"
+  example: []
+  syntax:
+    content: AM = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.AP
+  id: AP
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: AP
+  fullName: NotaFiscalNet.Core.SiglaUF.AP
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: AP
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 31
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Estado Amapá\r\n"
+  example: []
+  syntax:
+    content: AP = 4
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.BA
+  id: BA
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: BA
+  fullName: NotaFiscalNet.Core.SiglaUF.BA
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: BA
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 36
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Estado Bahia\r\n"
+  example: []
+  syntax:
+    content: BA = 5
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.CE
+  id: CE
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: CE
+  fullName: NotaFiscalNet.Core.SiglaUF.CE
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CE
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 41
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Estado Ceará\r\n"
+  example: []
+  syntax:
+    content: CE = 6
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.DF
+  id: DF
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: DF
+  fullName: NotaFiscalNet.Core.SiglaUF.DF
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DF
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 46
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Distrito Federal\r\n"
+  example: []
+  syntax:
+    content: DF = 7
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.ES
+  id: ES
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: ES
+  fullName: NotaFiscalNet.Core.SiglaUF.ES
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ES
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 51
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Estado Espirito Santo\r\n"
+  example: []
+  syntax:
+    content: ES = 8
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.GO
+  id: GO
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: GO
+  fullName: NotaFiscalNet.Core.SiglaUF.GO
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: GO
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 56
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Estado Goiás\r\n"
+  example: []
+  syntax:
+    content: GO = 9
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.MA
+  id: MA
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: MA
+  fullName: NotaFiscalNet.Core.SiglaUF.MA
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: MA
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 61
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Estado Maranhão\r\n"
+  example: []
+  syntax:
+    content: MA = 10
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.MG
+  id: MG
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: MG
+  fullName: NotaFiscalNet.Core.SiglaUF.MG
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: MG
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 66
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Estado Minas Gerais\r\n"
+  example: []
+  syntax:
+    content: MG = 11
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.MS
+  id: MS
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: MS
+  fullName: NotaFiscalNet.Core.SiglaUF.MS
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: MS
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 71
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Estado Mato Grosso do Sul\r\n"
+  example: []
+  syntax:
+    content: MS = 12
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.MT
+  id: MT
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: MT
+  fullName: NotaFiscalNet.Core.SiglaUF.MT
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: MT
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 76
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Estado Mato Grosso\r\n"
+  example: []
+  syntax:
+    content: MT = 13
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.PA
+  id: PA
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: PA
+  fullName: NotaFiscalNet.Core.SiglaUF.PA
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PA
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 81
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Estado Pará\r\n"
+  example: []
+  syntax:
+    content: PA = 14
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.PB
+  id: PB
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: PB
+  fullName: NotaFiscalNet.Core.SiglaUF.PB
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PB
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 86
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Estado Paraíba\r\n"
+  example: []
+  syntax:
+    content: PB = 15
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.PE
+  id: PE
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: PE
+  fullName: NotaFiscalNet.Core.SiglaUF.PE
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PE
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 91
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Estado Pernambuco\r\n"
+  example: []
+  syntax:
+    content: PE = 16
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.PI
+  id: PI
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: PI
+  fullName: NotaFiscalNet.Core.SiglaUF.PI
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PI
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 96
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Estado Piauí\r\n"
+  example: []
+  syntax:
+    content: PI = 17
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.PR
+  id: PR
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: PR
+  fullName: NotaFiscalNet.Core.SiglaUF.PR
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PR
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 101
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Estado Paraná\r\n"
+  example: []
+  syntax:
+    content: PR = 18
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.RJ
+  id: RJ
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: RJ
+  fullName: NotaFiscalNet.Core.SiglaUF.RJ
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: RJ
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 106
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Estado Rio de Janeiro\r\n"
+  example: []
+  syntax:
+    content: RJ = 19
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.RN
+  id: RN
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: RN
+  fullName: NotaFiscalNet.Core.SiglaUF.RN
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: RN
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 111
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Estado Rio Grande do Norte\r\n"
+  example: []
+  syntax:
+    content: RN = 20
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.RO
+  id: RO
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: RO
+  fullName: NotaFiscalNet.Core.SiglaUF.RO
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: RO
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 116
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Estado Rondônia\r\n"
+  example: []
+  syntax:
+    content: RO = 21
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.RR
+  id: RR
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: RR
+  fullName: NotaFiscalNet.Core.SiglaUF.RR
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: RR
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 121
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Estado Rorâima\r\n"
+  example: []
+  syntax:
+    content: RR = 22
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.RS
+  id: RS
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: RS
+  fullName: NotaFiscalNet.Core.SiglaUF.RS
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: RS
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 126
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Estado Rio Grande do Sul\r\n"
+  example: []
+  syntax:
+    content: RS = 23
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.SC
+  id: SC
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: SC
+  fullName: NotaFiscalNet.Core.SiglaUF.SC
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SC
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 131
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Estado Santa Catarina\r\n"
+  example: []
+  syntax:
+    content: SC = 24
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.SE
+  id: SE
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: SE
+  fullName: NotaFiscalNet.Core.SiglaUF.SE
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SE
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 136
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Estado Sergipe\r\n"
+  example: []
+  syntax:
+    content: SE = 25
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.SP
+  id: SP
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: SP
+  fullName: NotaFiscalNet.Core.SiglaUF.SP
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SP
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 141
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Estado São Paulo\r\n"
+  example: []
+  syntax:
+    content: SP = 26
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.TO
+  id: TO
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: TO
+  fullName: NotaFiscalNet.Core.SiglaUF.TO
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TO
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 146
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSigla do Estado Tocantins\r\n"
+  example: []
+  syntax:
+    content: TO = 27
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SiglaUF.EX
+  id: EX
+  parent: NotaFiscalNet.Core.SiglaUF
+  langs:
+  - csharp
+  - vb
+  name: EX
+  fullName: NotaFiscalNet.Core.SiglaUF.EX
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SiglaUF.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: EX
+    path: src/NotaFiscalNet.Core/SiglaUF.cs
+    startLine: 151
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nExterior. Utilizar quando referenciar o Exterior\r\n"
+  example: []
+  syntax:
+    content: EX = 28
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

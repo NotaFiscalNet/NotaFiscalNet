@@ -1,0 +1,439 @@
+items:
+- uid: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS
+  id: MotivoDesoneracaoCondicionalICMS
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.AmazoniaOcidentalAreaLivreComercio
+  - NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.DeficienteCondutor
+  - NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.DeficienteFisico
+  - NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.DeficienteNaoCondutor
+  - NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.DiplomaticoConsular
+  - NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.FomentoAgropecuario
+  - NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.FrotistaLocadora
+  - NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.NaoEspecificado
+  - NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.Outros
+  - NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.ProdutorAgropecuario
+  - NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.SUFRAMA
+  - NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.Taxi
+  - NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.VendaOrgaoPublico
+  langs:
+  - csharp
+  - vb
+  name: MotivoDesoneracaoCondicionalICMS
+  fullName: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: MotivoDesoneracaoCondicionalICMS
+    path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nMotivo da Desoneração Condicional do ICMS\r\n"
+  example: []
+  syntax:
+    content: public enum MotivoDesoneracaoCondicionalICMS
+    content.vb: Public Enum MotivoDesoneracaoCondicionalICMS
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.NaoEspecificado
+  id: NaoEspecificado
+  parent: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS
+  langs:
+  - csharp
+  - vb
+  name: NaoEspecificado
+  fullName: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.NaoEspecificado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoEspecificado
+    path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+    startLine: 8
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: NaoEspecificado = -1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.Taxi
+  id: Taxi
+  parent: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS
+  langs:
+  - csharp
+  - vb
+  name: Taxi
+  fullName: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.Taxi
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Taxi
+    path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+    startLine: 13
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n1 - Táxi.\r\n"
+  example: []
+  syntax:
+    content: Taxi = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.DeficienteFisico
+  id: DeficienteFisico
+  parent: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS
+  langs:
+  - csharp
+  - vb
+  name: DeficienteFisico
+  fullName: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.DeficienteFisico
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeficienteFisico
+    path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+    startLine: 18
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n2 - Deficiente Físico.\r\n"
+  example: []
+  syntax:
+    content: DeficienteFisico = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.ProdutorAgropecuario
+  id: ProdutorAgropecuario
+  parent: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS
+  langs:
+  - csharp
+  - vb
+  name: ProdutorAgropecuario
+  fullName: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.ProdutorAgropecuario
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ProdutorAgropecuario
+    path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+    startLine: 23
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n3 - Produtor Agropecuário.\r\n"
+  example: []
+  syntax:
+    content: ProdutorAgropecuario = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.FrotistaLocadora
+  id: FrotistaLocadora
+  parent: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS
+  langs:
+  - csharp
+  - vb
+  name: FrotistaLocadora
+  fullName: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.FrotistaLocadora
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: FrotistaLocadora
+    path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+    startLine: 28
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n4 - Frotista/Locadora\r\n"
+  example: []
+  syntax:
+    content: FrotistaLocadora = 4
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.DiplomaticoConsular
+  id: DiplomaticoConsular
+  parent: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS
+  langs:
+  - csharp
+  - vb
+  name: DiplomaticoConsular
+  fullName: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.DiplomaticoConsular
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DiplomaticoConsular
+    path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+    startLine: 33
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n5 - Diplomático/Consular.\r\n"
+  example: []
+  syntax:
+    content: DiplomaticoConsular = 5
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.AmazoniaOcidentalAreaLivreComercio
+  id: AmazoniaOcidentalAreaLivreComercio
+  parent: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS
+  langs:
+  - csharp
+  - vb
+  name: AmazoniaOcidentalAreaLivreComercio
+  fullName: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.AmazoniaOcidentalAreaLivreComercio
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: AmazoniaOcidentalAreaLivreComercio
+    path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+    startLine: 39
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n6 - Utilitários e Motocicletas da Amazônia Ocidental e Áreas de Livre Comércio (Resolução\r\n714/88 e 790/94 – CONTRAN e suas alterações)\r\n"
+  example: []
+  syntax:
+    content: AmazoniaOcidentalAreaLivreComercio = 6
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.SUFRAMA
+  id: SUFRAMA
+  parent: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS
+  langs:
+  - csharp
+  - vb
+  name: SUFRAMA
+  fullName: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.SUFRAMA
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SUFRAMA
+    path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+    startLine: 44
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n7 - SUFRAMA.\r\n"
+  example: []
+  syntax:
+    content: SUFRAMA = 7
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.VendaOrgaoPublico
+  id: VendaOrgaoPublico
+  parent: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS
+  langs:
+  - csharp
+  - vb
+  name: VendaOrgaoPublico
+  fullName: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.VendaOrgaoPublico
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: VendaOrgaoPublico
+    path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+    startLine: 49
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n8 - Venda a órgão Público\r\n"
+  example: []
+  syntax:
+    content: VendaOrgaoPublico = 8
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.Outros
+  id: Outros
+  parent: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS
+  langs:
+  - csharp
+  - vb
+  name: Outros
+  fullName: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.Outros
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Outros
+    path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+    startLine: 54
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n9 - Outros. (v2.0)\r\n"
+  example: []
+  syntax:
+    content: Outros = 9
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.DeficienteCondutor
+  id: DeficienteCondutor
+  parent: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS
+  langs:
+  - csharp
+  - vb
+  name: DeficienteCondutor
+  fullName: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.DeficienteCondutor
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeficienteCondutor
+    path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+    startLine: 59
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n10 - Decifiente Condutor.\r\n"
+  example: []
+  syntax:
+    content: DeficienteCondutor = 10
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.DeficienteNaoCondutor
+  id: DeficienteNaoCondutor
+  parent: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS
+  langs:
+  - csharp
+  - vb
+  name: DeficienteNaoCondutor
+  fullName: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.DeficienteNaoCondutor
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeficienteNaoCondutor
+    path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+    startLine: 64
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n11 - Deficiente não condutor.\r\n"
+  example: []
+  syntax:
+    content: DeficienteNaoCondutor = 11
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.FomentoAgropecuario
+  id: FomentoAgropecuario
+  parent: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS
+  langs:
+  - csharp
+  - vb
+  name: FomentoAgropecuario
+  fullName: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS.FomentoAgropecuario
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: FomentoAgropecuario
+    path: src/NotaFiscalNet.Core/MotivoDesoneracaoCondicionalICMS.cs
+    startLine: 69
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n12 - Fomento agropecuário\r\n"
+  example: []
+  syntax:
+    content: FomentoAgropecuario = 12
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

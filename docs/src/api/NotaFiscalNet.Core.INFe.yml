@@ -1,0 +1,126 @@
+items:
+- uid: NotaFiscalNet.Core.INFe
+  id: INFe
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.INFe.DigitoVerificadorChaveAcesso
+  - NotaFiscalNet.Core.INFe.Identificacao
+  langs:
+  - csharp
+  - vb
+  name: INFe
+  fullName: NotaFiscalNet.Core.INFe
+  type: Interface
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/INFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: INFe
+    path: src/NotaFiscalNet.Core/INFe.cs
+    startLine: 2
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public interface INFe
+    content.vb: Public Interface INFe
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: NotaFiscalNet.Core.INFe.DigitoVerificadorChaveAcesso
+  id: DigitoVerificadorChaveAcesso
+  parent: NotaFiscalNet.Core.INFe
+  langs:
+  - csharp
+  - vb
+  name: DigitoVerificadorChaveAcesso
+  fullName: NotaFiscalNet.Core.INFe.DigitoVerificadorChaveAcesso
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/INFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DigitoVerificadorChaveAcesso
+    path: src/NotaFiscalNet.Core/INFe.cs
+    startLine: 4
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: >-
+      int DigitoVerificadorChaveAcesso
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property DigitoVerificadorChaveAcesso As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: NotaFiscalNet.Core.INFe.Identificacao
+  id: Identificacao
+  parent: NotaFiscalNet.Core.INFe
+  langs:
+  - csharp
+  - vb
+  name: Identificacao
+  fullName: NotaFiscalNet.Core.INFe.Identificacao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/INFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Identificacao
+    path: src/NotaFiscalNet.Core/INFe.cs
+    startLine: 5
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: >-
+      IdentificacaoDocumentoFiscal Identificacao
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property Identificacao As IdentificacaoDocumentoFiscal
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: IdentificacaoDocumentoFiscal
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal

@@ -1,0 +1,1297 @@
+items:
+- uid: NotaFiscalNet.Core.NFeCollection
+  id: NFeCollection
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.NFeCollection.#ctor
+  - NotaFiscalNet.Core.NFeCollection.GerarLotes(System.Int64)
+  langs:
+  - csharp
+  - vb
+  name: NFeCollection
+  fullName: NotaFiscalNet.Core.NFeCollection
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFeCollection.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NFeCollection
+    path: src/NotaFiscalNet.Core/NFeCollection.cs
+    startLine: 9
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRepresenta uma lista de Notas Fiscais Eletrônicas.\r\n"
+  example: []
+  syntax:
+    content: 'public sealed class NFeCollection : BaseCollection<NFe>, ICollection<NFe>, IEnumerable<NFe>, IEnumerable'
+    content.vb: >-
+      Public NotInheritable Class NFeCollection
+
+          Inherits BaseCollection(Of NFe)
+
+          Implements ICollection(Of NFe), IEnumerable(Of NFe), IEnumerable
+  inheritance:
+  - System.Object
+  - NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}
+  implements:
+  - System.Collections.Generic.ICollection{NotaFiscalNet.Core.NFe}
+  - System.Collections.Generic.IEnumerable{NotaFiscalNet.Core.NFe}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.Item(System.Int32)
+  - NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.GetEnumerator
+  - NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.System#Collections#IEnumerable#GetEnumerator
+  - NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.PreAdd(System.ComponentModel.CancelEventArgs,NotaFiscalNet.Core.NFe)
+  - NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.PostAdd(NotaFiscalNet.Core.NFe)
+  - NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.PreRemove(System.ComponentModel.CancelEventArgs,NotaFiscalNet.Core.NFe)
+  - NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.PostRemove(NotaFiscalNet.Core.NFe)
+  - NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.Add(NotaFiscalNet.Core.NFe)
+  - NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.Clear
+  - NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.Contains(NotaFiscalNet.Core.NFe)
+  - NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.CopyTo(NotaFiscalNet.Core.NFe[],System.Int32)
+  - NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.Count
+  - NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.IsReadOnly
+  - NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.Remove(NotaFiscalNet.Core.NFe)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: NotaFiscalNet.Core.NFeCollection.#ctor
+  id: '#ctor'
+  parent: NotaFiscalNet.Core.NFeCollection
+  langs:
+  - csharp
+  - vb
+  name: NFeCollection()
+  fullName: NotaFiscalNet.Core.NFeCollection.NFeCollection()
+  type: Constructor
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFeCollection.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: src/NotaFiscalNet.Core/NFeCollection.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nInicializa uma nova instância da classe <xref href=\"NotaFiscalNet.Core.NFeCollection\" data-throw-if-not-resolved=\"false\"></xref>.\r\n"
+  example: []
+  syntax:
+    content: public NFeCollection()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.NFeCollection.GerarLotes(System.Int64)
+  id: GerarLotes(System.Int64)
+  parent: NotaFiscalNet.Core.NFeCollection
+  langs:
+  - csharp
+  - vb
+  name: GerarLotes(Int64)
+  fullName: NotaFiscalNet.Core.NFeCollection.GerarLotes(System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFeCollection.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: GerarLotes
+    path: src/NotaFiscalNet.Core/NFeCollection.cs
+    startLine: 32
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nGera uma lista de Lotes contendo até no máximo 50 Notas Fiscais Eletrônicas em cada lote\r\ne respeitando o limite de 500KB (referente ao xml).\r\n"
+  remarks: "\r\nO primeiro LoteNFe gerado conterá o valor informado no parâmetro *idLoteInicial*. Os lotes posteriormente gerados receberão *idLoteInicial* + 1.\r\n"
+  example: []
+  syntax:
+    content: public LoteNFeCollection GerarLotes(long idLoteInicial)
+    content.vb: Public Function GerarLotes(idLoteInicial As Long) As LoteNFeCollection
+    parameters:
+    - id: idLoteInicial
+      type: System.Int64
+      description: "Código identificador inicial dos Lotes gerados."
+    return:
+      type: NotaFiscalNet.Core.LoteNFeCollection
+      description: "Lista de Lotes de Nota Fiscal Eletrônica."
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}
+  parent: NotaFiscalNet.Core
+  definition: NotaFiscalNet.Core.BaseCollection`1
+  name: BaseCollection<NFe>
+  fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe)
+  name.vb: BaseCollection(Of NFe)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1
+    name: BaseCollection
+    fullName: NotaFiscalNet.Core.BaseCollection
+  - name: <
+    fullName: <
+  - uid: NotaFiscalNet.Core.NFe
+    name: NFe
+    fullName: NotaFiscalNet.Core.NFe
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1
+    name: BaseCollection
+    fullName: NotaFiscalNet.Core.BaseCollection
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: NotaFiscalNet.Core.NFe
+    name: NFe
+    fullName: NotaFiscalNet.Core.NFe
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{NotaFiscalNet.Core.NFe}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<NFe>
+  fullName: System.Collections.Generic.ICollection<NotaFiscalNet.Core.NFe>
+  fullname.vb: System.Collections.Generic.ICollection(Of NotaFiscalNet.Core.NFe)
+  name.vb: ICollection(Of NFe)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: NotaFiscalNet.Core.NFe
+    name: NFe
+    fullName: NotaFiscalNet.Core.NFe
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: NotaFiscalNet.Core.NFe
+    name: NFe
+    fullName: NotaFiscalNet.Core.NFe
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{NotaFiscalNet.Core.NFe}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<NFe>
+  fullName: System.Collections.Generic.IEnumerable<NotaFiscalNet.Core.NFe>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of NotaFiscalNet.Core.NFe)
+  name.vb: IEnumerable(Of NFe)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: NotaFiscalNet.Core.NFe
+    name: NFe
+    fullName: NotaFiscalNet.Core.NFe
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: NotaFiscalNet.Core.NFe
+    name: NFe
+    fullName: NotaFiscalNet.Core.NFe
+  - name: )
+    fullName: )
+- uid: System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.Item(System.Int32)
+  parent: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}
+  definition: NotaFiscalNet.Core.BaseCollection`1.Item(System.Int32)
+  name: Item[Int32]
+  fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.Item[System.Int32]
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).Item(System.Int32)
+  name.vb: Item(Int32)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.Item(System.Int32)
+    name: Item
+    fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.Item
+  - name: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.Item(System.Int32)
+    name: Item
+    fullName: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).Item
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.GetEnumerator
+  parent: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}
+  definition: NotaFiscalNet.Core.BaseCollection`1.GetEnumerator
+  name: GetEnumerator()
+  fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.GetEnumerator()
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).GetEnumerator()
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.GetEnumerator
+    name: GetEnumerator
+    fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.GetEnumerator
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.GetEnumerator
+    name: GetEnumerator
+    fullName: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).GetEnumerator
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.System#Collections#IEnumerable#GetEnumerator
+  parent: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}
+  definition: NotaFiscalNet.Core.BaseCollection`1.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.System.Collections.IEnumerable.GetEnumerator()
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).System.Collections.IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.System#Collections#IEnumerable#GetEnumerator
+    name: IEnumerable.GetEnumerator
+    fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.System.Collections.IEnumerable.GetEnumerator
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.System#Collections#IEnumerable#GetEnumerator
+    name: System.Collections.IEnumerable.GetEnumerator
+    fullName: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).System.Collections.IEnumerable.GetEnumerator
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.PreAdd(System.ComponentModel.CancelEventArgs,NotaFiscalNet.Core.NFe)
+  parent: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}
+  definition: NotaFiscalNet.Core.BaseCollection`1.PreAdd(System.ComponentModel.CancelEventArgs,{T})
+  name: PreAdd(CancelEventArgs, NFe)
+  fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.PreAdd(System.ComponentModel.CancelEventArgs, NotaFiscalNet.Core.NFe)
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).PreAdd(System.ComponentModel.CancelEventArgs, NotaFiscalNet.Core.NFe)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.PreAdd(System.ComponentModel.CancelEventArgs,`0)
+    name: PreAdd
+    fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.PreAdd
+  - name: (
+    fullName: (
+  - uid: System.ComponentModel.CancelEventArgs
+    name: CancelEventArgs
+    fullName: System.ComponentModel.CancelEventArgs
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: NotaFiscalNet.Core.NFe
+    name: NFe
+    fullName: NotaFiscalNet.Core.NFe
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.PreAdd(System.ComponentModel.CancelEventArgs,`0)
+    name: PreAdd
+    fullName: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).PreAdd
+  - name: (
+    fullName: (
+  - uid: System.ComponentModel.CancelEventArgs
+    name: CancelEventArgs
+    fullName: System.ComponentModel.CancelEventArgs
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: NotaFiscalNet.Core.NFe
+    name: NFe
+    fullName: NotaFiscalNet.Core.NFe
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.PostAdd(NotaFiscalNet.Core.NFe)
+  parent: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}
+  definition: NotaFiscalNet.Core.BaseCollection`1.PostAdd({T})
+  name: PostAdd(NFe)
+  fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.PostAdd(NotaFiscalNet.Core.NFe)
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).PostAdd(NotaFiscalNet.Core.NFe)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.PostAdd(`0)
+    name: PostAdd
+    fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.PostAdd
+  - name: (
+    fullName: (
+  - uid: NotaFiscalNet.Core.NFe
+    name: NFe
+    fullName: NotaFiscalNet.Core.NFe
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.PostAdd(`0)
+    name: PostAdd
+    fullName: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).PostAdd
+  - name: (
+    fullName: (
+  - uid: NotaFiscalNet.Core.NFe
+    name: NFe
+    fullName: NotaFiscalNet.Core.NFe
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.PreRemove(System.ComponentModel.CancelEventArgs,NotaFiscalNet.Core.NFe)
+  parent: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}
+  definition: NotaFiscalNet.Core.BaseCollection`1.PreRemove(System.ComponentModel.CancelEventArgs,{T})
+  name: PreRemove(CancelEventArgs, NFe)
+  fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.PreRemove(System.ComponentModel.CancelEventArgs, NotaFiscalNet.Core.NFe)
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).PreRemove(System.ComponentModel.CancelEventArgs, NotaFiscalNet.Core.NFe)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.PreRemove(System.ComponentModel.CancelEventArgs,`0)
+    name: PreRemove
+    fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.PreRemove
+  - name: (
+    fullName: (
+  - uid: System.ComponentModel.CancelEventArgs
+    name: CancelEventArgs
+    fullName: System.ComponentModel.CancelEventArgs
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: NotaFiscalNet.Core.NFe
+    name: NFe
+    fullName: NotaFiscalNet.Core.NFe
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.PreRemove(System.ComponentModel.CancelEventArgs,`0)
+    name: PreRemove
+    fullName: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).PreRemove
+  - name: (
+    fullName: (
+  - uid: System.ComponentModel.CancelEventArgs
+    name: CancelEventArgs
+    fullName: System.ComponentModel.CancelEventArgs
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: NotaFiscalNet.Core.NFe
+    name: NFe
+    fullName: NotaFiscalNet.Core.NFe
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.PostRemove(NotaFiscalNet.Core.NFe)
+  parent: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}
+  definition: NotaFiscalNet.Core.BaseCollection`1.PostRemove({T})
+  name: PostRemove(NFe)
+  fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.PostRemove(NotaFiscalNet.Core.NFe)
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).PostRemove(NotaFiscalNet.Core.NFe)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.PostRemove(`0)
+    name: PostRemove
+    fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.PostRemove
+  - name: (
+    fullName: (
+  - uid: NotaFiscalNet.Core.NFe
+    name: NFe
+    fullName: NotaFiscalNet.Core.NFe
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.PostRemove(`0)
+    name: PostRemove
+    fullName: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).PostRemove
+  - name: (
+    fullName: (
+  - uid: NotaFiscalNet.Core.NFe
+    name: NFe
+    fullName: NotaFiscalNet.Core.NFe
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.Add(NotaFiscalNet.Core.NFe)
+  parent: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}
+  definition: NotaFiscalNet.Core.BaseCollection`1.Add({T})
+  name: Add(NFe)
+  fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.Add(NotaFiscalNet.Core.NFe)
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).Add(NotaFiscalNet.Core.NFe)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.Add(`0)
+    name: Add
+    fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.Add
+  - name: (
+    fullName: (
+  - uid: NotaFiscalNet.Core.NFe
+    name: NFe
+    fullName: NotaFiscalNet.Core.NFe
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.Add(`0)
+    name: Add
+    fullName: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).Add
+  - name: (
+    fullName: (
+  - uid: NotaFiscalNet.Core.NFe
+    name: NFe
+    fullName: NotaFiscalNet.Core.NFe
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.Clear
+  parent: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}
+  definition: NotaFiscalNet.Core.BaseCollection`1.Clear
+  name: Clear()
+  fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.Clear()
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).Clear()
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.Clear
+    name: Clear
+    fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.Clear
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.Clear
+    name: Clear
+    fullName: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).Clear
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.Contains(NotaFiscalNet.Core.NFe)
+  parent: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}
+  definition: NotaFiscalNet.Core.BaseCollection`1.Contains({T})
+  name: Contains(NFe)
+  fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.Contains(NotaFiscalNet.Core.NFe)
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).Contains(NotaFiscalNet.Core.NFe)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.Contains(`0)
+    name: Contains
+    fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.Contains
+  - name: (
+    fullName: (
+  - uid: NotaFiscalNet.Core.NFe
+    name: NFe
+    fullName: NotaFiscalNet.Core.NFe
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.Contains(`0)
+    name: Contains
+    fullName: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).Contains
+  - name: (
+    fullName: (
+  - uid: NotaFiscalNet.Core.NFe
+    name: NFe
+    fullName: NotaFiscalNet.Core.NFe
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.CopyTo(NotaFiscalNet.Core.NFe[],System.Int32)
+  parent: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}
+  definition: NotaFiscalNet.Core.BaseCollection`1.CopyTo({T}[],System.Int32)
+  name: CopyTo(NFe[], Int32)
+  fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.CopyTo(NotaFiscalNet.Core.NFe[], System.Int32)
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).CopyTo(NotaFiscalNet.Core.NFe(), System.Int32)
+  name.vb: CopyTo(NFe(), Int32)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.CopyTo
+  - name: (
+    fullName: (
+  - uid: NotaFiscalNet.Core.NFe
+    name: NFe
+    fullName: NotaFiscalNet.Core.NFe
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    fullName: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).CopyTo
+  - name: (
+    fullName: (
+  - uid: NotaFiscalNet.Core.NFe
+    name: NFe
+    fullName: NotaFiscalNet.Core.NFe
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.Count
+  parent: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}
+  definition: NotaFiscalNet.Core.BaseCollection`1.Count
+  name: Count
+  fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.Count
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).Count
+- uid: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.IsReadOnly
+  parent: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}
+  definition: NotaFiscalNet.Core.BaseCollection`1.IsReadOnly
+  name: IsReadOnly
+  fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.IsReadOnly
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).IsReadOnly
+- uid: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}.Remove(NotaFiscalNet.Core.NFe)
+  parent: NotaFiscalNet.Core.BaseCollection{NotaFiscalNet.Core.NFe}
+  definition: NotaFiscalNet.Core.BaseCollection`1.Remove({T})
+  name: Remove(NFe)
+  fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.Remove(NotaFiscalNet.Core.NFe)
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).Remove(NotaFiscalNet.Core.NFe)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.Remove(`0)
+    name: Remove
+    fullName: NotaFiscalNet.Core.BaseCollection<NotaFiscalNet.Core.NFe>.Remove
+  - name: (
+    fullName: (
+  - uid: NotaFiscalNet.Core.NFe
+    name: NFe
+    fullName: NotaFiscalNet.Core.NFe
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.Remove(`0)
+    name: Remove
+    fullName: NotaFiscalNet.Core.BaseCollection(Of NotaFiscalNet.Core.NFe).Remove
+  - name: (
+    fullName: (
+  - uid: NotaFiscalNet.Core.NFe
+    name: NFe
+    fullName: NotaFiscalNet.Core.NFe
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: NotaFiscalNet.Core.BaseCollection`1
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: BaseCollection<T>
+  fullName: NotaFiscalNet.Core.BaseCollection<T>
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of T)
+  name.vb: BaseCollection(Of T)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1
+    name: BaseCollection
+    fullName: NotaFiscalNet.Core.BaseCollection
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1
+    name: BaseCollection
+    fullName: NotaFiscalNet.Core.BaseCollection
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  fullname.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: NotaFiscalNet.Core.BaseCollection`1.Item(System.Int32)
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  isExternal: true
+  name: Item[Int32]
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.Item[System.Int32]
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of T).Item(System.Int32)
+  name.vb: Item(Int32)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.Item(System.Int32)
+    name: Item
+    fullName: NotaFiscalNet.Core.BaseCollection<T>.Item
+  - name: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.Item(System.Int32)
+    name: Item
+    fullName: NotaFiscalNet.Core.BaseCollection(Of T).Item
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.BaseCollection`1.GetEnumerator
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  isExternal: false
+  name: GetEnumerator()
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.GetEnumerator()
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.GetEnumerator
+    name: GetEnumerator
+    fullName: NotaFiscalNet.Core.BaseCollection<T>.GetEnumerator
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.GetEnumerator
+    name: GetEnumerator
+    fullName: NotaFiscalNet.Core.BaseCollection(Of T).GetEnumerator
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.BaseCollection`1.System#Collections#IEnumerable#GetEnumerator
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  isExternal: false
+  name: IEnumerable.GetEnumerator()
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.System.Collections.IEnumerable.GetEnumerator()
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of T).System.Collections.IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.System#Collections#IEnumerable#GetEnumerator
+    name: IEnumerable.GetEnumerator
+    fullName: NotaFiscalNet.Core.BaseCollection<T>.System.Collections.IEnumerable.GetEnumerator
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.System#Collections#IEnumerable#GetEnumerator
+    name: System.Collections.IEnumerable.GetEnumerator
+    fullName: NotaFiscalNet.Core.BaseCollection(Of T).System.Collections.IEnumerable.GetEnumerator
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.BaseCollection`1.PreAdd(System.ComponentModel.CancelEventArgs,{T})
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  isExternal: true
+  name: PreAdd(CancelEventArgs, T)
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.PreAdd(System.ComponentModel.CancelEventArgs, T)
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of T).PreAdd(System.ComponentModel.CancelEventArgs, T)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.PreAdd(System.ComponentModel.CancelEventArgs,`0)
+    name: PreAdd
+    fullName: NotaFiscalNet.Core.BaseCollection<T>.PreAdd
+  - name: (
+    fullName: (
+  - uid: System.ComponentModel.CancelEventArgs
+    name: CancelEventArgs
+    fullName: System.ComponentModel.CancelEventArgs
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.PreAdd(System.ComponentModel.CancelEventArgs,`0)
+    name: PreAdd
+    fullName: NotaFiscalNet.Core.BaseCollection(Of T).PreAdd
+  - name: (
+    fullName: (
+  - uid: System.ComponentModel.CancelEventArgs
+    name: CancelEventArgs
+    fullName: System.ComponentModel.CancelEventArgs
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.BaseCollection`1.PostAdd({T})
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  isExternal: false
+  name: PostAdd(T)
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.PostAdd(T)
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of T).PostAdd(T)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.PostAdd(`0)
+    name: PostAdd
+    fullName: NotaFiscalNet.Core.BaseCollection<T>.PostAdd
+  - name: (
+    fullName: (
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.PostAdd(`0)
+    name: PostAdd
+    fullName: NotaFiscalNet.Core.BaseCollection(Of T).PostAdd
+  - name: (
+    fullName: (
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.BaseCollection`1.PreRemove(System.ComponentModel.CancelEventArgs,{T})
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  isExternal: true
+  name: PreRemove(CancelEventArgs, T)
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.PreRemove(System.ComponentModel.CancelEventArgs, T)
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of T).PreRemove(System.ComponentModel.CancelEventArgs, T)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.PreRemove(System.ComponentModel.CancelEventArgs,`0)
+    name: PreRemove
+    fullName: NotaFiscalNet.Core.BaseCollection<T>.PreRemove
+  - name: (
+    fullName: (
+  - uid: System.ComponentModel.CancelEventArgs
+    name: CancelEventArgs
+    fullName: System.ComponentModel.CancelEventArgs
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.PreRemove(System.ComponentModel.CancelEventArgs,`0)
+    name: PreRemove
+    fullName: NotaFiscalNet.Core.BaseCollection(Of T).PreRemove
+  - name: (
+    fullName: (
+  - uid: System.ComponentModel.CancelEventArgs
+    name: CancelEventArgs
+    fullName: System.ComponentModel.CancelEventArgs
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.BaseCollection`1.PostRemove({T})
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  isExternal: false
+  name: PostRemove(T)
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.PostRemove(T)
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of T).PostRemove(T)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.PostRemove(`0)
+    name: PostRemove
+    fullName: NotaFiscalNet.Core.BaseCollection<T>.PostRemove
+  - name: (
+    fullName: (
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.PostRemove(`0)
+    name: PostRemove
+    fullName: NotaFiscalNet.Core.BaseCollection(Of T).PostRemove
+  - name: (
+    fullName: (
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.BaseCollection`1.Add({T})
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  isExternal: false
+  name: Add(T)
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.Add(T)
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of T).Add(T)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.Add(`0)
+    name: Add
+    fullName: NotaFiscalNet.Core.BaseCollection<T>.Add
+  - name: (
+    fullName: (
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.Add(`0)
+    name: Add
+    fullName: NotaFiscalNet.Core.BaseCollection(Of T).Add
+  - name: (
+    fullName: (
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.BaseCollection`1.Clear
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  isExternal: false
+  name: Clear()
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.Clear()
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of T).Clear()
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.Clear
+    name: Clear
+    fullName: NotaFiscalNet.Core.BaseCollection<T>.Clear
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.Clear
+    name: Clear
+    fullName: NotaFiscalNet.Core.BaseCollection(Of T).Clear
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.BaseCollection`1.Contains({T})
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  isExternal: false
+  name: Contains(T)
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.Contains(T)
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.Contains(`0)
+    name: Contains
+    fullName: NotaFiscalNet.Core.BaseCollection<T>.Contains
+  - name: (
+    fullName: (
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.Contains(`0)
+    name: Contains
+    fullName: NotaFiscalNet.Core.BaseCollection(Of T).Contains
+  - name: (
+    fullName: (
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.BaseCollection`1.CopyTo({T}[],System.Int32)
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  isExternal: true
+  name: CopyTo(T[], Int32)
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.CopyTo(T[], System.Int32)
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    fullName: NotaFiscalNet.Core.BaseCollection<T>.CopyTo
+  - name: (
+    fullName: (
+  - name: T
+    fullName: T
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    fullName: NotaFiscalNet.Core.BaseCollection(Of T).CopyTo
+  - name: (
+    fullName: (
+  - name: T
+    fullName: T
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.BaseCollection`1.Count
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  isExternal: false
+  name: Count
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.Count
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of T).Count
+- uid: NotaFiscalNet.Core.BaseCollection`1.IsReadOnly
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  isExternal: false
+  name: IsReadOnly
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.IsReadOnly
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of T).IsReadOnly
+- uid: NotaFiscalNet.Core.BaseCollection`1.Remove({T})
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  isExternal: false
+  name: Remove(T)
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.Remove(T)
+  fullname.vb: NotaFiscalNet.Core.BaseCollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.Remove(`0)
+    name: Remove
+    fullName: NotaFiscalNet.Core.BaseCollection<T>.Remove
+  - name: (
+    fullName: (
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.BaseCollection`1.Remove(`0)
+    name: Remove
+    fullName: NotaFiscalNet.Core.BaseCollection(Of T).Remove
+  - name: (
+    fullName: (
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.NFeCollection
+  isExternal: false
+  name: NFeCollection
+  fullName: NotaFiscalNet.Core.NFeCollection
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: NotaFiscalNet.Core.LoteNFeCollection
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: LoteNFeCollection
+  fullName: NotaFiscalNet.Core.LoteNFeCollection

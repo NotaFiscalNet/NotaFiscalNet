@@ -1,0 +1,38 @@
+items:
+- uid: NotaFiscalNet.Core.Interfaces.IReferenciaDocumentoFiscal
+  id: IReferenciaDocumentoFiscal
+  parent: NotaFiscalNet.Core.Interfaces
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IReferenciaDocumentoFiscal
+  fullName: NotaFiscalNet.Core.Interfaces.IReferenciaDocumentoFiscal
+  type: Interface
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Interfaces/IReferenciaDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: IReferenciaDocumentoFiscal
+    path: src/NotaFiscalNet.Core/Interfaces/IReferenciaDocumentoFiscal.cs
+    startLine: 5
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Interfaces
+  summary: "\r\nRepresenta uma Referencia de Documento Fiscal\r\n"
+  example: []
+  syntax:
+    content: public interface IReferenciaDocumentoFiscal
+    content.vb: Public Interface IReferenciaDocumentoFiscal
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+references:
+- uid: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: NotaFiscalNet.Core.Interfaces
+  fullName: NotaFiscalNet.Core.Interfaces

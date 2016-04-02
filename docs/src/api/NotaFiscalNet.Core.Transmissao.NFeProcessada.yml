@@ -1,0 +1,455 @@
+items:
+- uid: NotaFiscalNet.Core.Transmissao.NFeProcessada
+  id: NFeProcessada
+  parent: NotaFiscalNet.Core.Transmissao
+  children:
+  - NotaFiscalNet.Core.Transmissao.NFeProcessada.#ctor(System.Xml.Linq.XDocument)
+  - NotaFiscalNet.Core.Transmissao.NFeProcessada.NFe
+  - NotaFiscalNet.Core.Transmissao.NFeProcessada.Parse(System.String)
+  - NotaFiscalNet.Core.Transmissao.NFeProcessada.Protocolo
+  langs:
+  - csharp
+  - vb
+  name: NFeProcessada
+  fullName: NotaFiscalNet.Core.Transmissao.NFeProcessada
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/NFeProcessada.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NFeProcessada
+    path: src/NotaFiscalNet.Core/Transmissao/NFeProcessada.cs
+    startLine: 8
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRepresenta uma NF-e/NFC-e processada (procNFe).\r\n"
+  example: []
+  syntax:
+    content: public class NFeProcessada
+    content.vb: Public Class NFeProcessada
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Transmissao.NFeProcessada.#ctor(System.Xml.Linq.XDocument)
+  id: '#ctor(System.Xml.Linq.XDocument)'
+  parent: NotaFiscalNet.Core.Transmissao.NFeProcessada
+  langs:
+  - csharp
+  - vb
+  name: NFeProcessada(XDocument)
+  fullName: NotaFiscalNet.Core.Transmissao.NFeProcessada.NFeProcessada(System.Xml.Linq.XDocument)
+  type: Constructor
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/NFeProcessada.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: src/NotaFiscalNet.Core/Transmissao/NFeProcessada.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nInicializa a classe com base no xml da NF-e/NFC-e processada (procNFe).\r\n"
+  example: []
+  syntax:
+    content: public NFeProcessada(XDocument procNFeDocument)
+    content.vb: Public Sub New(procNFeDocument As XDocument)
+    parameters:
+    - id: procNFeDocument
+      type: System.Xml.Linq.XDocument
+      description: Documento xml.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Transmissao.NFeProcessada.NFe
+  id: NFe
+  parent: NotaFiscalNet.Core.Transmissao.NFeProcessada
+  langs:
+  - csharp
+  - vb
+  name: NFe
+  fullName: NotaFiscalNet.Core.Transmissao.NFeProcessada.NFe
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/NFeProcessada.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NFe
+    path: src/NotaFiscalNet.Core/Transmissao/NFeProcessada.cs
+    startLine: 39
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRetorna a referência para objeto representando a NF-e/NFC-e.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public NFe NFe
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property NFe As NFe
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.NFe
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.NFeProcessada.Protocolo
+  id: Protocolo
+  parent: NotaFiscalNet.Core.Transmissao.NFeProcessada
+  langs:
+  - csharp
+  - vb
+  name: Protocolo
+  fullName: NotaFiscalNet.Core.Transmissao.NFeProcessada.Protocolo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/NFeProcessada.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Protocolo
+    path: src/NotaFiscalNet.Core/Transmissao/NFeProcessada.cs
+    startLine: 44
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRetorna a referência para o objeto representando o protocolo de processamento da NF-e.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public ProtocoloNFe Protocolo
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Protocolo As ProtocoloNFe
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.Transmissao.ProtocoloNFe
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.NFeProcessada.Parse(System.String)
+  id: Parse(System.String)
+  parent: NotaFiscalNet.Core.Transmissao.NFeProcessada
+  langs:
+  - csharp
+  - vb
+  name: Parse(String)
+  fullName: NotaFiscalNet.Core.Transmissao.NFeProcessada.Parse(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/NFeProcessada.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Parse
+    path: src/NotaFiscalNet.Core/Transmissao/NFeProcessada.cs
+    startLine: 51
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nCria uma nova instância da classe NFeProcessada com base no xml (proc) da nota.\r\n"
+  example: []
+  syntax:
+    content: public static NFeProcessada Parse(string text)
+    content.vb: Public Shared Function Parse(text As String) As NFeProcessada
+    parameters:
+    - id: text
+      type: System.String
+      description: Xml da nota processada.
+    return:
+      type: NotaFiscalNet.Core.Transmissao.NFeProcessada
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: NotaFiscalNet.Core.Transmissao
+  isExternal: false
+  name: NotaFiscalNet.Core.Transmissao
+  fullName: NotaFiscalNet.Core.Transmissao
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Xml.Linq.XDocument
+  parent: System.Xml.Linq
+  isExternal: true
+  name: XDocument
+  fullName: System.Xml.Linq.XDocument
+- uid: System.Xml.Linq
+  isExternal: false
+  name: System.Xml.Linq
+  fullName: System.Xml.Linq
+- uid: NotaFiscalNet.Core.NFe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: NFe
+  fullName: NotaFiscalNet.Core.NFe
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: NotaFiscalNet.Core.Transmissao.ProtocoloNFe
+  parent: NotaFiscalNet.Core.Transmissao
+  isExternal: false
+  name: ProtocoloNFe
+  fullName: NotaFiscalNet.Core.Transmissao.ProtocoloNFe
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: NotaFiscalNet.Core.Transmissao.NFeProcessada
+  parent: NotaFiscalNet.Core.Transmissao
+  isExternal: false
+  name: NFeProcessada
+  fullName: NotaFiscalNet.Core.Transmissao.NFeProcessada

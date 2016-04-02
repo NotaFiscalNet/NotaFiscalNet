@@ -1,0 +1,162 @@
+items:
+- uid: NotaFiscalNet.Core.TipoProcessoEmissaoNFe
+  id: TipoProcessoEmissaoNFe
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.TipoProcessoEmissaoNFe.AplicativoContribuinte
+  - NotaFiscalNet.Core.TipoProcessoEmissaoNFe.AplicativoFisco
+  - NotaFiscalNet.Core.TipoProcessoEmissaoNFe.AvulsaContribuinteSiteFisco
+  - NotaFiscalNet.Core.TipoProcessoEmissaoNFe.AvulsaFisco
+  langs:
+  - csharp
+  - vb
+  name: TipoProcessoEmissaoNFe
+  fullName: NotaFiscalNet.Core.TipoProcessoEmissaoNFe
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoProcessoEmissaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoProcessoEmissaoNFe
+    path: src/NotaFiscalNet.Core/TipoProcessoEmissaoNFe.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nTipo de Processo utilizado para Emissão da NF-e.\r\n"
+  example: []
+  syntax:
+    content: public enum TipoProcessoEmissaoNFe
+    content.vb: Public Enum TipoProcessoEmissaoNFe
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.TipoProcessoEmissaoNFe.AplicativoContribuinte
+  id: AplicativoContribuinte
+  parent: NotaFiscalNet.Core.TipoProcessoEmissaoNFe
+  langs:
+  - csharp
+  - vb
+  name: AplicativoContribuinte
+  fullName: NotaFiscalNet.Core.TipoProcessoEmissaoNFe.AplicativoContribuinte
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoProcessoEmissaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: AplicativoContribuinte
+    path: src/NotaFiscalNet.Core/TipoProcessoEmissaoNFe.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n0 - Emissão de NF-e com aplicativo do contribuinte.\r\n"
+  example: []
+  syntax:
+    content: AplicativoContribuinte = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoProcessoEmissaoNFe.AvulsaFisco
+  id: AvulsaFisco
+  parent: NotaFiscalNet.Core.TipoProcessoEmissaoNFe
+  langs:
+  - csharp
+  - vb
+  name: AvulsaFisco
+  fullName: NotaFiscalNet.Core.TipoProcessoEmissaoNFe.AvulsaFisco
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoProcessoEmissaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: AvulsaFisco
+    path: src/NotaFiscalNet.Core/TipoProcessoEmissaoNFe.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n1 - Emissão de NF-e avulsa pelo Fisco.\r\n"
+  example: []
+  syntax:
+    content: AvulsaFisco = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoProcessoEmissaoNFe.AvulsaContribuinteSiteFisco
+  id: AvulsaContribuinteSiteFisco
+  parent: NotaFiscalNet.Core.TipoProcessoEmissaoNFe
+  langs:
+  - csharp
+  - vb
+  name: AvulsaContribuinteSiteFisco
+  fullName: NotaFiscalNet.Core.TipoProcessoEmissaoNFe.AvulsaContribuinteSiteFisco
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoProcessoEmissaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: AvulsaContribuinteSiteFisco
+    path: src/NotaFiscalNet.Core/TipoProcessoEmissaoNFe.cs
+    startLine: 22
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n2 - Emissão de NF-e avulsa, pelo contribuinte com seu certificado digital, através do\r\nsite do Fisco.\r\n"
+  example: []
+  syntax:
+    content: AvulsaContribuinteSiteFisco = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoProcessoEmissaoNFe.AplicativoFisco
+  id: AplicativoFisco
+  parent: NotaFiscalNet.Core.TipoProcessoEmissaoNFe
+  langs:
+  - csharp
+  - vb
+  name: AplicativoFisco
+  fullName: NotaFiscalNet.Core.TipoProcessoEmissaoNFe.AplicativoFisco
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoProcessoEmissaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: AplicativoFisco
+    path: src/NotaFiscalNet.Core/TipoProcessoEmissaoNFe.cs
+    startLine: 27
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n3 - Emissão de NF-e pelo contribuinte com aplicativo fornecido pelo Fisco.\r\n"
+  example: []
+  syntax:
+    content: AplicativoFisco = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

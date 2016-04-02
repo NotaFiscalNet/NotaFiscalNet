@@ -1,0 +1,364 @@
+items:
+- uid: NotaFiscalNet.Core.Transmissao.ReciboLoteNFe
+  id: ReciboLoteNFe
+  parent: NotaFiscalNet.Core.Transmissao
+  children:
+  - NotaFiscalNet.Core.Transmissao.ReciboLoteNFe.NumeroRecibo
+  - NotaFiscalNet.Core.Transmissao.ReciboLoteNFe.TempoMedio
+  langs:
+  - csharp
+  - vb
+  name: ReciboLoteNFe
+  fullName: NotaFiscalNet.Core.Transmissao.ReciboLoteNFe
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/ReciboLoteNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ReciboLoteNFe
+    path: src/NotaFiscalNet.Core/Transmissao/ReciboLoteNFe.cs
+    startLine: 5
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRecibo de Entrega do Lote de NF-e's.\r\n"
+  example: []
+  syntax:
+    content: public class ReciboLoteNFe
+    content.vb: Public Class ReciboLoteNFe
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Transmissao.ReciboLoteNFe.NumeroRecibo
+  id: NumeroRecibo
+  parent: NotaFiscalNet.Core.Transmissao.ReciboLoteNFe
+  langs:
+  - csharp
+  - vb
+  name: NumeroRecibo
+  fullName: NotaFiscalNet.Core.Transmissao.ReciboLoteNFe.NumeroRecibo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/ReciboLoteNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NumeroRecibo
+    path: src/NotaFiscalNet.Core/Transmissao/ReciboLoteNFe.cs
+    startLine: 10
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRetorna ou define o número do recibo de entrega da lote de NF-e's.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string NumeroRecibo
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property NumeroRecibo As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Transmissao.ReciboLoteNFe.TempoMedio
+  id: TempoMedio
+  parent: NotaFiscalNet.Core.Transmissao.ReciboLoteNFe
+  langs:
+  - csharp
+  - vb
+  name: TempoMedio
+  fullName: NotaFiscalNet.Core.Transmissao.ReciboLoteNFe.TempoMedio
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/ReciboLoteNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TempoMedio
+    path: src/NotaFiscalNet.Core/Transmissao/ReciboLoteNFe.cs
+    startLine: 15
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRetorna ou define o tempo médio (em segundos) de resposta do serviço (nos últimos 5 minutos).\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int TempoMedio
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property TempoMedio As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core.Transmissao
+  isExternal: false
+  name: NotaFiscalNet.Core.Transmissao
+  fullName: NotaFiscalNet.Core.Transmissao
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

@@ -1,0 +1,116 @@
+items:
+- uid: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalProdutorTests
+  id: ReferenciaDocumentoFiscalNotaFiscalProdutorTests
+  parent: NotaFiscalNet.Core.Tests
+  children:
+  - NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalProdutorTests.#ctor
+  - NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalProdutorTests.DeveSerializarUmaReferenciaDocumentoFiscalNotaFiscalProdutor(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ReferenciaDocumentoFiscalNotaFiscalProdutorTests
+  fullName: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalProdutorTests
+  type: Class
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/ReferenciaDocumentoFiscalNotaFiscalProdutorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ReferenciaDocumentoFiscalNotaFiscalProdutorTests
+    path: tests/NotaFiscalNet.Core.Tests/ReferenciaDocumentoFiscalNotaFiscalProdutorTests.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests
+  syntax:
+    content: 'public class ReferenciaDocumentoFiscalNotaFiscalProdutorTests : object'
+    content.vb: >-
+      Public Class ReferenciaDocumentoFiscalNotaFiscalProdutorTests
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalProdutorTests.#ctor
+  id: '#ctor'
+  parent: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalProdutorTests
+  langs:
+  - csharp
+  - vb
+  name: ReferenciaDocumentoFiscalNotaFiscalProdutorTests()
+  fullName: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalProdutorTests.ReferenciaDocumentoFiscalNotaFiscalProdutorTests()
+  type: Constructor
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/ReferenciaDocumentoFiscalNotaFiscalProdutorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: tests/NotaFiscalNet.Core.Tests/ReferenciaDocumentoFiscalNotaFiscalProdutorTests.cs
+    startLine: 10
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests
+  syntax:
+    content: public ReferenciaDocumentoFiscalNotaFiscalProdutorTests()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalProdutorTests.DeveSerializarUmaReferenciaDocumentoFiscalNotaFiscalProdutor(System.String,System.String)
+  id: DeveSerializarUmaReferenciaDocumentoFiscalNotaFiscalProdutor(System.String,System.String)
+  parent: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalProdutorTests
+  langs:
+  - csharp
+  - vb
+  name: DeveSerializarUmaReferenciaDocumentoFiscalNotaFiscalProdutor(String, String)
+  fullName: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalProdutorTests.DeveSerializarUmaReferenciaDocumentoFiscalNotaFiscalProdutor(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/ReferenciaDocumentoFiscalNotaFiscalProdutorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveSerializarUmaReferenciaDocumentoFiscalNotaFiscalProdutor
+    path: tests/NotaFiscalNet.Core.Tests/ReferenciaDocumentoFiscalNotaFiscalProdutorTests.cs
+    startLine: 15
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests
+  syntax:
+    content: public void DeveSerializarUmaReferenciaDocumentoFiscalNotaFiscalProdutor(string chaveReferencia, string arquivoXml)
+    content.vb: Public Sub DeveSerializarUmaReferenciaDocumentoFiscalNotaFiscalProdutor(chaveReferencia As String, arquivoXml As String)
+    parameters:
+    - id: chaveReferencia
+      type: System.String
+    - id: arquivoXml
+      type: System.String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core.Tests
+  isExternal: false
+  name: NotaFiscalNet.Core.Tests
+  fullName: NotaFiscalNet.Core.Tests
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

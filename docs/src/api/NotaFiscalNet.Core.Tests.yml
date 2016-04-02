@@ -1,0 +1,58 @@
+items:
+- uid: NotaFiscalNet.Core.Tests
+  id: NotaFiscalNet.Core.Tests
+  children:
+  - NotaFiscalNet.Core.Tests.AvulsaTests
+  - NotaFiscalNet.Core.Tests.CompraTests
+  - NotaFiscalNet.Core.Tests.IdentificacaoDocumentoFiscalTests
+  - NotaFiscalNet.Core.Tests.InformacoesExportacaoTests
+  - NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalCteTests
+  - NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalEcfTests
+  - NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNfeTests
+  - NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalProdutorTests
+  - NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalTests
+  langs:
+  - csharp
+  - vb
+  name: NotaFiscalNet.Core.Tests
+  fullName: NotaFiscalNet.Core.Tests
+  type: Namespace
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+references:
+- uid: NotaFiscalNet.Core.Tests.CompraTests
+  isExternal: false
+  name: CompraTests
+  fullName: NotaFiscalNet.Core.Tests.CompraTests
+- uid: NotaFiscalNet.Core.Tests.AvulsaTests
+  isExternal: false
+  name: AvulsaTests
+  fullName: NotaFiscalNet.Core.Tests.AvulsaTests
+- uid: NotaFiscalNet.Core.Tests.InformacoesExportacaoTests
+  isExternal: false
+  name: InformacoesExportacaoTests
+  fullName: NotaFiscalNet.Core.Tests.InformacoesExportacaoTests
+- uid: NotaFiscalNet.Core.Tests.IdentificacaoDocumentoFiscalTests
+  isExternal: false
+  name: IdentificacaoDocumentoFiscalTests
+  fullName: NotaFiscalNet.Core.Tests.IdentificacaoDocumentoFiscalTests
+- uid: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNfeTests
+  isExternal: false
+  name: ReferenciaDocumentoFiscalNfeTests
+  fullName: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNfeTests
+- uid: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalCteTests
+  isExternal: false
+  name: ReferenciaDocumentoFiscalCteTests
+  fullName: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalCteTests
+- uid: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalTests
+  isExternal: false
+  name: ReferenciaDocumentoFiscalNotaFiscalTests
+  fullName: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalTests
+- uid: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalProdutorTests
+  isExternal: false
+  name: ReferenciaDocumentoFiscalNotaFiscalProdutorTests
+  fullName: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalProdutorTests
+- uid: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalEcfTests
+  isExternal: false
+  name: ReferenciaDocumentoFiscalEcfTests
+  fullName: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalEcfTests

@@ -1,0 +1,162 @@
+items:
+- uid: NotaFiscalNet.Core.CondicaoVeiculo
+  id: CondicaoVeiculo
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.CondicaoVeiculo.Acabado
+  - NotaFiscalNet.Core.CondicaoVeiculo.Inacabado
+  - NotaFiscalNet.Core.CondicaoVeiculo.NaoEspecificado
+  - NotaFiscalNet.Core.CondicaoVeiculo.SemiAcabado
+  langs:
+  - csharp
+  - vb
+  name: CondicaoVeiculo
+  fullName: NotaFiscalNet.Core.CondicaoVeiculo
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/CondicaoVeiculo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CondicaoVeiculo
+    path: src/NotaFiscalNet.Core/CondicaoVeiculo.cs
+    startLine: 5
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nEspecifica a Condição do Veículo.\r\n"
+  example: []
+  syntax:
+    content: public enum CondicaoVeiculo
+    content.vb: Public Enum CondicaoVeiculo
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.CondicaoVeiculo.NaoEspecificado
+  id: NaoEspecificado
+  parent: NotaFiscalNet.Core.CondicaoVeiculo
+  langs:
+  - csharp
+  - vb
+  name: NaoEspecificado
+  fullName: NotaFiscalNet.Core.CondicaoVeiculo.NaoEspecificado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/CondicaoVeiculo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoEspecificado
+    path: src/NotaFiscalNet.Core/CondicaoVeiculo.cs
+    startLine: 10
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nNão Especificado\r\n"
+  example: []
+  syntax:
+    content: NaoEspecificado = -1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.CondicaoVeiculo.Acabado
+  id: Acabado
+  parent: NotaFiscalNet.Core.CondicaoVeiculo
+  langs:
+  - csharp
+  - vb
+  name: Acabado
+  fullName: NotaFiscalNet.Core.CondicaoVeiculo.Acabado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/CondicaoVeiculo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Acabado
+    path: src/NotaFiscalNet.Core/CondicaoVeiculo.cs
+    startLine: 15
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nVeículo Acabado\r\n"
+  example: []
+  syntax:
+    content: Acabado = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.CondicaoVeiculo.Inacabado
+  id: Inacabado
+  parent: NotaFiscalNet.Core.CondicaoVeiculo
+  langs:
+  - csharp
+  - vb
+  name: Inacabado
+  fullName: NotaFiscalNet.Core.CondicaoVeiculo.Inacabado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/CondicaoVeiculo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Inacabado
+    path: src/NotaFiscalNet.Core/CondicaoVeiculo.cs
+    startLine: 20
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nVeículo Inacabado\r\n"
+  example: []
+  syntax:
+    content: Inacabado = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.CondicaoVeiculo.SemiAcabado
+  id: SemiAcabado
+  parent: NotaFiscalNet.Core.CondicaoVeiculo
+  langs:
+  - csharp
+  - vb
+  name: SemiAcabado
+  fullName: NotaFiscalNet.Core.CondicaoVeiculo.SemiAcabado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/CondicaoVeiculo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SemiAcabado
+    path: src/NotaFiscalNet.Core/CondicaoVeiculo.cs
+    startLine: 25
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nVeículo Semi-Acabado\r\n"
+  example: []
+  syntax:
+    content: SemiAcabado = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

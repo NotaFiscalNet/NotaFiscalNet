@@ -1,0 +1,122 @@
+items:
+- uid: NotaFiscalNet.Core.Validacao.FluentCustom.ChaveDeAcessoValidator
+  id: ChaveDeAcessoValidator
+  parent: NotaFiscalNet.Core.Validacao.FluentCustom
+  children:
+  - NotaFiscalNet.Core.Validacao.FluentCustom.ChaveDeAcessoValidator.#ctor
+  - NotaFiscalNet.Core.Validacao.FluentCustom.ChaveDeAcessoValidator.IsValid(PropertyValidatorContext)
+  langs:
+  - csharp
+  - vb
+  name: ChaveDeAcessoValidator
+  fullName: NotaFiscalNet.Core.Validacao.FluentCustom.ChaveDeAcessoValidator
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/ChaveDeAcessoValidator.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ChaveDeAcessoValidator
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/ChaveDeAcessoValidator.cs
+    startLine: 4
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao.FluentCustom
+  syntax:
+    content: 'public class ChaveDeAcessoValidator : PropertyValidator'
+    content.vb: >-
+      Public Class ChaveDeAcessoValidator
+
+          Inherits PropertyValidator
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Validacao.FluentCustom.ChaveDeAcessoValidator.#ctor
+  id: '#ctor'
+  parent: NotaFiscalNet.Core.Validacao.FluentCustom.ChaveDeAcessoValidator
+  langs:
+  - csharp
+  - vb
+  name: ChaveDeAcessoValidator()
+  fullName: NotaFiscalNet.Core.Validacao.FluentCustom.ChaveDeAcessoValidator.ChaveDeAcessoValidator()
+  type: Constructor
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/ChaveDeAcessoValidator.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/ChaveDeAcessoValidator.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao.FluentCustom
+  syntax:
+    content: public ChaveDeAcessoValidator()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Validacao.FluentCustom.ChaveDeAcessoValidator.IsValid(PropertyValidatorContext)
+  id: IsValid(PropertyValidatorContext)
+  parent: NotaFiscalNet.Core.Validacao.FluentCustom.ChaveDeAcessoValidator
+  langs:
+  - csharp
+  - vb
+  name: IsValid(PropertyValidatorContext)
+  fullName: NotaFiscalNet.Core.Validacao.FluentCustom.ChaveDeAcessoValidator.IsValid(PropertyValidatorContext)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/ChaveDeAcessoValidator.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: IsValid
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/ChaveDeAcessoValidator.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao.FluentCustom
+  syntax:
+    content: protected override bool IsValid(PropertyValidatorContext context)
+    content.vb: Protected Overrides Function IsValid(context As PropertyValidatorContext) As Boolean
+    parameters:
+    - id: context
+      type: PropertyValidatorContext
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: NotaFiscalNet.Core.Validacao.FluentCustom
+  isExternal: false
+  name: NotaFiscalNet.Core.Validacao.FluentCustom
+  fullName: NotaFiscalNet.Core.Validacao.FluentCustom
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: PropertyValidatorContext
+  isExternal: true
+  name: PropertyValidatorContext
+  fullName: PropertyValidatorContext
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

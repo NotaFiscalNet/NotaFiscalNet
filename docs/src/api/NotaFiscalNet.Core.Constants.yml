@@ -1,0 +1,1036 @@
+items:
+- uid: NotaFiscalNet.Core.Constants
+  id: Constants
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.Constants.CodigoModeloDocFiscalNFCe
+  - NotaFiscalNet.Core.Constants.CodigoModeloDocFiscalNFe
+  - NotaFiscalNet.Core.Constants.ConsultaTimeoutRetornoSefaz
+  - NotaFiscalNet.Core.Constants.DeclaracaoXml
+  - NotaFiscalNet.Core.Constants.DefaultResourceNamespace
+  - NotaFiscalNet.Core.Constants.InfomaxXmlSchemaBasicoFilename
+  - NotaFiscalNet.Core.Constants.InfomaxXmlSchemaFilename
+  - NotaFiscalNet.Core.Constants.InformaxXmlSchemaXmldsigFilename
+  - NotaFiscalNet.Core.Constants.MaxLoteItens
+  - NotaFiscalNet.Core.Constants.MaxXmlLength
+  - NotaFiscalNet.Core.Constants.NamespacePortalFiscalNFe
+  - NotaFiscalNet.Core.Constants.NamespaceSchemaXsi
+  - NotaFiscalNet.Core.Constants.NamespaceXmldsig
+  - NotaFiscalNet.Core.Constants.RequestTimeoutRetornoSefaz
+  - NotaFiscalNet.Core.Constants.SignatureAvgLength
+  - NotaFiscalNet.Core.Constants.VersaoLeiaute
+  - NotaFiscalNet.Core.Constants.VersaoLeiauteCancelamento
+  - NotaFiscalNet.Core.Constants.VersaoLeiauteConsultaLote
+  - NotaFiscalNet.Core.Constants.VersaoLeiauteEventos
+  - NotaFiscalNet.Core.Constants.VersaoLeiauteInutilizacao
+  - NotaFiscalNet.Core.Constants.VersaoLeiauteInutilizacaoNFCe
+  - NotaFiscalNet.Core.Constants.VersaoLeiauteLote
+  - NotaFiscalNet.Core.Constants.XNamespacePortalFiscalNFe
+  - NotaFiscalNet.Core.Constants.XNamespaceXmldsig
+  langs:
+  - csharp
+  - vb
+  name: Constants
+  fullName: NotaFiscalNet.Core.Constants
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Constants.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Constants
+    path: src/NotaFiscalNet.Core/Constants.cs
+    startLine: 5
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public class Constants
+    content.vb: Public Class Constants
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Constants.VersaoLeiaute
+  id: VersaoLeiaute
+  parent: NotaFiscalNet.Core.Constants
+  langs:
+  - csharp
+  - vb
+  name: VersaoLeiaute
+  fullName: NotaFiscalNet.Core.Constants.VersaoLeiaute
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Constants.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: VersaoLeiaute
+    path: src/NotaFiscalNet.Core/Constants.cs
+    startLine: 10
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nVersão do Leiaute NF-e.\r\n"
+  example: []
+  syntax:
+    content: public const string VersaoLeiaute
+    content.vb: Public Const VersaoLeiaute As String = "3.10"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Constants.VersaoLeiauteLote
+  id: VersaoLeiauteLote
+  parent: NotaFiscalNet.Core.Constants
+  langs:
+  - csharp
+  - vb
+  name: VersaoLeiauteLote
+  fullName: NotaFiscalNet.Core.Constants.VersaoLeiauteLote
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Constants.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: VersaoLeiauteLote
+    path: src/NotaFiscalNet.Core/Constants.cs
+    startLine: 15
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nVersão do leiaute do Lote NF-e.\r\n"
+  example: []
+  syntax:
+    content: public const string VersaoLeiauteLote
+    content.vb: Public Const VersaoLeiauteLote As String = "3.10"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Constants.VersaoLeiauteConsultaLote
+  id: VersaoLeiauteConsultaLote
+  parent: NotaFiscalNet.Core.Constants
+  langs:
+  - csharp
+  - vb
+  name: VersaoLeiauteConsultaLote
+  fullName: NotaFiscalNet.Core.Constants.VersaoLeiauteConsultaLote
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Constants.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: VersaoLeiauteConsultaLote
+    path: src/NotaFiscalNet.Core/Constants.cs
+    startLine: 20
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nVersão do leiaute da Consulta de Lote.\r\n"
+  example: []
+  syntax:
+    content: public const string VersaoLeiauteConsultaLote
+    content.vb: Public Const VersaoLeiauteConsultaLote As String = "2.00"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Constants.VersaoLeiauteCancelamento
+  id: VersaoLeiauteCancelamento
+  parent: NotaFiscalNet.Core.Constants
+  langs:
+  - csharp
+  - vb
+  name: VersaoLeiauteCancelamento
+  fullName: NotaFiscalNet.Core.Constants.VersaoLeiauteCancelamento
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Constants.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: VersaoLeiauteCancelamento
+    path: src/NotaFiscalNet.Core/Constants.cs
+    startLine: 25
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nVersão do leiaute de Cancelamento.\r\n"
+  example: []
+  syntax:
+    content: public const string VersaoLeiauteCancelamento
+    content.vb: Public Const VersaoLeiauteCancelamento As String = "2.00"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Constants.VersaoLeiauteInutilizacao
+  id: VersaoLeiauteInutilizacao
+  parent: NotaFiscalNet.Core.Constants
+  langs:
+  - csharp
+  - vb
+  name: VersaoLeiauteInutilizacao
+  fullName: NotaFiscalNet.Core.Constants.VersaoLeiauteInutilizacao
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Constants.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: VersaoLeiauteInutilizacao
+    path: src/NotaFiscalNet.Core/Constants.cs
+    startLine: 30
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nVersão do leiaute de Inutilização\r\n"
+  example: []
+  syntax:
+    content: public const string VersaoLeiauteInutilizacao
+    content.vb: Public Const VersaoLeiauteInutilizacao As String = "2.00"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Constants.VersaoLeiauteInutilizacaoNFCe
+  id: VersaoLeiauteInutilizacaoNFCe
+  parent: NotaFiscalNet.Core.Constants
+  langs:
+  - csharp
+  - vb
+  name: VersaoLeiauteInutilizacaoNFCe
+  fullName: NotaFiscalNet.Core.Constants.VersaoLeiauteInutilizacaoNFCe
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Constants.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: VersaoLeiauteInutilizacaoNFCe
+    path: src/NotaFiscalNet.Core/Constants.cs
+    startLine: 35
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nVersão do leiaute de Inutilização\r\n"
+  example: []
+  syntax:
+    content: public const string VersaoLeiauteInutilizacaoNFCe
+    content.vb: Public Const VersaoLeiauteInutilizacaoNFCe As String = "3.10"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Constants.VersaoLeiauteEventos
+  id: VersaoLeiauteEventos
+  parent: NotaFiscalNet.Core.Constants
+  langs:
+  - csharp
+  - vb
+  name: VersaoLeiauteEventos
+  fullName: NotaFiscalNet.Core.Constants.VersaoLeiauteEventos
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Constants.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: VersaoLeiauteEventos
+    path: src/NotaFiscalNet.Core/Constants.cs
+    startLine: 40
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nVersão do leiaute de Eventos.\r\n"
+  example: []
+  syntax:
+    content: public const string VersaoLeiauteEventos
+    content.vb: Public Const VersaoLeiauteEventos As String = "1.00"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Constants.DefaultResourceNamespace
+  id: DefaultResourceNamespace
+  parent: NotaFiscalNet.Core.Constants
+  langs:
+  - csharp
+  - vb
+  name: DefaultResourceNamespace
+  fullName: NotaFiscalNet.Core.Constants.DefaultResourceNamespace
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Constants.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DefaultResourceNamespace
+    path: src/NotaFiscalNet.Core/Constants.cs
+    startLine: 45
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nNamespace padrão para extrair recursos armazenados no assembly.\r\n"
+  example: []
+  syntax:
+    content: public const string DefaultResourceNamespace
+    content.vb: Public Const DefaultResourceNamespace As String = "MaxNFe"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Constants.CodigoModeloDocFiscalNFe
+  id: CodigoModeloDocFiscalNFe
+  parent: NotaFiscalNet.Core.Constants
+  langs:
+  - csharp
+  - vb
+  name: CodigoModeloDocFiscalNFe
+  fullName: NotaFiscalNet.Core.Constants.CodigoModeloDocFiscalNFe
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Constants.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CodigoModeloDocFiscalNFe
+    path: src/NotaFiscalNet.Core/Constants.cs
+    startLine: 50
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nCódigo do Modelo do Documento Fiscal para uma Nota Fiscal Eletrônica\r\n"
+  example: []
+  syntax:
+    content: public const string CodigoModeloDocFiscalNFe
+    content.vb: Public Const CodigoModeloDocFiscalNFe As String = "55"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Constants.CodigoModeloDocFiscalNFCe
+  id: CodigoModeloDocFiscalNFCe
+  parent: NotaFiscalNet.Core.Constants
+  langs:
+  - csharp
+  - vb
+  name: CodigoModeloDocFiscalNFCe
+  fullName: NotaFiscalNet.Core.Constants.CodigoModeloDocFiscalNFCe
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Constants.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CodigoModeloDocFiscalNFCe
+    path: src/NotaFiscalNet.Core/Constants.cs
+    startLine: 55
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nCódigo do Modelo do Documento Fiscal para uma Nota Fiscal de Consumidor Eletrônica\r\n"
+  example: []
+  syntax:
+    content: public const string CodigoModeloDocFiscalNFCe
+    content.vb: Public Const CodigoModeloDocFiscalNFCe As String = "65"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Constants.NamespacePortalFiscalNFe
+  id: NamespacePortalFiscalNFe
+  parent: NotaFiscalNet.Core.Constants
+  langs:
+  - csharp
+  - vb
+  name: NamespacePortalFiscalNFe
+  fullName: NotaFiscalNet.Core.Constants.NamespacePortalFiscalNFe
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Constants.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NamespacePortalFiscalNFe
+    path: src/NotaFiscalNet.Core/Constants.cs
+    startLine: 60
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nXml namespace padrão para NF-e (http://www.portalfiscal.inf.br/nfe).\r\n"
+  example: []
+  syntax:
+    content: public const string NamespacePortalFiscalNFe
+    content.vb: Public Const NamespacePortalFiscalNFe As String = "http://www.portalfiscal.inf.br/nfe"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Constants.InfomaxXmlSchemaFilename
+  id: InfomaxXmlSchemaFilename
+  parent: NotaFiscalNet.Core.Constants
+  langs:
+  - csharp
+  - vb
+  name: InfomaxXmlSchemaFilename
+  fullName: NotaFiscalNet.Core.Constants.InfomaxXmlSchemaFilename
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Constants.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: InfomaxXmlSchemaFilename
+    path: src/NotaFiscalNet.Core/Constants.cs
+    startLine: 65
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna o nome do arquivo xsd utilizado para validar o xml do arquivo de licença.\r\n"
+  example: []
+  syntax:
+    content: public const string InfomaxXmlSchemaFilename
+    content.vb: Public Const InfomaxXmlSchemaFilename As String = "license.xsd"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Constants.InfomaxXmlSchemaBasicoFilename
+  id: InfomaxXmlSchemaBasicoFilename
+  parent: NotaFiscalNet.Core.Constants
+  langs:
+  - csharp
+  - vb
+  name: InfomaxXmlSchemaBasicoFilename
+  fullName: NotaFiscalNet.Core.Constants.InfomaxXmlSchemaBasicoFilename
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Constants.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: InfomaxXmlSchemaBasicoFilename
+    path: src/NotaFiscalNet.Core/Constants.cs
+    startLine: 67
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public const string InfomaxXmlSchemaBasicoFilename
+    content.vb: Public Const InfomaxXmlSchemaBasicoFilename As String = "basicos.xsd"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Constants.InformaxXmlSchemaXmldsigFilename
+  id: InformaxXmlSchemaXmldsigFilename
+  parent: NotaFiscalNet.Core.Constants
+  langs:
+  - csharp
+  - vb
+  name: InformaxXmlSchemaXmldsigFilename
+  fullName: NotaFiscalNet.Core.Constants.InformaxXmlSchemaXmldsigFilename
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Constants.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: InformaxXmlSchemaXmldsigFilename
+    path: src/NotaFiscalNet.Core/Constants.cs
+    startLine: 68
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public const string InformaxXmlSchemaXmldsigFilename
+    content.vb: Public Const InformaxXmlSchemaXmldsigFilename As String = "xmldsig.xsd"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Constants.NamespaceXmldsig
+  id: NamespaceXmldsig
+  parent: NotaFiscalNet.Core.Constants
+  langs:
+  - csharp
+  - vb
+  name: NamespaceXmldsig
+  fullName: NotaFiscalNet.Core.Constants.NamespaceXmldsig
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Constants.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NamespaceXmldsig
+    path: src/NotaFiscalNet.Core/Constants.cs
+    startLine: 73
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nNamespace do padrão xmldsig#.\r\n"
+  example: []
+  syntax:
+    content: public const string NamespaceXmldsig
+    content.vb: Public Const NamespaceXmldsig As String = "http://www.w3.org/2000/09/xmldsig#"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Constants.NamespaceSchemaXsi
+  id: NamespaceSchemaXsi
+  parent: NotaFiscalNet.Core.Constants
+  langs:
+  - csharp
+  - vb
+  name: NamespaceSchemaXsi
+  fullName: NotaFiscalNet.Core.Constants.NamespaceSchemaXsi
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Constants.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NamespaceSchemaXsi
+    path: src/NotaFiscalNet.Core/Constants.cs
+    startLine: 75
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public const string NamespaceSchemaXsi
+    content.vb: Public Const NamespaceSchemaXsi As String = "http://www.w3.org/2001/XMLSchema-instance"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Constants.DeclaracaoXml
+  id: DeclaracaoXml
+  parent: NotaFiscalNet.Core.Constants
+  langs:
+  - csharp
+  - vb
+  name: DeclaracaoXml
+  fullName: NotaFiscalNet.Core.Constants.DeclaracaoXml
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Constants.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeclaracaoXml
+    path: src/NotaFiscalNet.Core/Constants.cs
+    startLine: 77
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public const string DeclaracaoXml
+    content.vb: Public Const DeclaracaoXml As String = "<?xml version=""1.0"" encoding=""utf-8""?>"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Constants.MaxLoteItens
+  id: MaxLoteItens
+  parent: NotaFiscalNet.Core.Constants
+  langs:
+  - csharp
+  - vb
+  name: MaxLoteItens
+  fullName: NotaFiscalNet.Core.Constants.MaxLoteItens
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Constants.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: MaxLoteItens
+    path: src/NotaFiscalNet.Core/Constants.cs
+    startLine: 82
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nQuantidade máxima de itens em um Lote de Notas Fiscais Eletrônicas.\r\n"
+  example: []
+  syntax:
+    content: public const int MaxLoteItens
+    content.vb: Public Const MaxLoteItens As Integer = 50
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Constants.MaxXmlLength
+  id: MaxXmlLength
+  parent: NotaFiscalNet.Core.Constants
+  langs:
+  - csharp
+  - vb
+  name: MaxXmlLength
+  fullName: NotaFiscalNet.Core.Constants.MaxXmlLength
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Constants.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: MaxXmlLength
+    path: src/NotaFiscalNet.Core/Constants.cs
+    startLine: 87
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nTamanho máximo xml web services.\r\n"
+  example: []
+  syntax:
+    content: public const int MaxXmlLength
+    content.vb: Public Const MaxXmlLength As Integer = 512000
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Constants.SignatureAvgLength
+  id: SignatureAvgLength
+  parent: NotaFiscalNet.Core.Constants
+  langs:
+  - csharp
+  - vb
+  name: SignatureAvgLength
+  fullName: NotaFiscalNet.Core.Constants.SignatureAvgLength
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Constants.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SignatureAvgLength
+    path: src/NotaFiscalNet.Core/Constants.cs
+    startLine: 89
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public const int SignatureAvgLength
+    content.vb: Public Const SignatureAvgLength As Integer = 3072
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Constants.RequestTimeoutRetornoSefaz
+  id: RequestTimeoutRetornoSefaz
+  parent: NotaFiscalNet.Core.Constants
+  langs:
+  - csharp
+  - vb
+  name: RequestTimeoutRetornoSefaz
+  fullName: NotaFiscalNet.Core.Constants.RequestTimeoutRetornoSefaz
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Constants.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: RequestTimeoutRetornoSefaz
+    path: src/NotaFiscalNet.Core/Constants.cs
+    startLine: 95
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nTempo de espera (em milisegundos) para resposta do web service da Sefaz (1 minuto).\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Usar 'MaxNFe.Processor.Configuration.AppSettingsHelper.NFeProcessorSettings.TimeoutWsAutorizacao'")]
+
+      public const int RequestTimeoutRetornoSefaz
+    content.vb: >-
+      <Obsolete("Usar 'MaxNFe.Processor.Configuration.AppSettingsHelper.NFeProcessorSettings.TimeoutWsAutorizacao'")>
+
+      Public Const RequestTimeoutRetornoSefaz As Integer = 60000
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Constants.ConsultaTimeoutRetornoSefaz
+  id: ConsultaTimeoutRetornoSefaz
+  parent: NotaFiscalNet.Core.Constants
+  langs:
+  - csharp
+  - vb
+  name: ConsultaTimeoutRetornoSefaz
+  fullName: NotaFiscalNet.Core.Constants.ConsultaTimeoutRetornoSefaz
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Constants.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ConsultaTimeoutRetornoSefaz
+    path: src/NotaFiscalNet.Core/Constants.cs
+    startLine: 102
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nTempo de espera (em milisegundos) para resposta do web service da Sefaz (15 segundos).\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Usar 'MaxNFe.Processor.Configuration.AppSettingsHelper.NFeProcessorSettings.TimeoutWsConsultaSituacao'")]
+
+      public const int ConsultaTimeoutRetornoSefaz
+    content.vb: >-
+      <Obsolete("Usar 'MaxNFe.Processor.Configuration.AppSettingsHelper.NFeProcessorSettings.TimeoutWsConsultaSituacao'")>
+
+      Public Const ConsultaTimeoutRetornoSefaz As Integer = 15000
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Constants.XNamespacePortalFiscalNFe
+  id: XNamespacePortalFiscalNFe
+  parent: NotaFiscalNet.Core.Constants
+  langs:
+  - csharp
+  - vb
+  name: XNamespacePortalFiscalNFe
+  fullName: NotaFiscalNet.Core.Constants.XNamespacePortalFiscalNFe
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Constants.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: XNamespacePortalFiscalNFe
+    path: src/NotaFiscalNet.Core/Constants.cs
+    startLine: 104
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public static readonly XNamespace XNamespacePortalFiscalNFe
+    content.vb: Public Shared ReadOnly XNamespacePortalFiscalNFe As XNamespace
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Constants.XNamespaceXmldsig
+  id: XNamespaceXmldsig
+  parent: NotaFiscalNet.Core.Constants
+  langs:
+  - csharp
+  - vb
+  name: XNamespaceXmldsig
+  fullName: NotaFiscalNet.Core.Constants.XNamespaceXmldsig
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Constants.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: XNamespaceXmldsig
+    path: src/NotaFiscalNet.Core/Constants.cs
+    startLine: 109
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nNamespace do padrão xmldsig# como objeto XNamespace.\r\n"
+  example: []
+  syntax:
+    content: public static readonly XNamespace XNamespaceXmldsig
+    content.vb: Public Shared ReadOnly XNamespaceXmldsig As XNamespace
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

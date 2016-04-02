@@ -1,0 +1,78 @@
+items:
+- uid: NotaFiscalNet.Core.Validacao.Validadores.NfeValidador
+  id: NfeValidador
+  parent: NotaFiscalNet.Core.Validacao.Validadores
+  children:
+  - NotaFiscalNet.Core.Validacao.Validadores.NfeValidador.#ctor
+  langs:
+  - csharp
+  - vb
+  name: NfeValidador
+  fullName: NotaFiscalNet.Core.Validacao.Validadores.NfeValidador
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/Validadores/NfeValidador.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NfeValidador
+    path: src/NotaFiscalNet.Core/Validacao/Validadores/NfeValidador.cs
+    startLine: 4
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao.Validadores
+  syntax:
+    content: 'public class NfeValidador : AbstractValidator<NFe>'
+    content.vb: >-
+      Public Class NfeValidador
+
+          Inherits AbstractValidator(Of NFe)
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Validacao.Validadores.NfeValidador.#ctor
+  id: '#ctor'
+  parent: NotaFiscalNet.Core.Validacao.Validadores.NfeValidador
+  langs:
+  - csharp
+  - vb
+  name: NfeValidador()
+  fullName: NotaFiscalNet.Core.Validacao.Validadores.NfeValidador.NfeValidador()
+  type: Constructor
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/Validadores/NfeValidador.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: src/NotaFiscalNet.Core/Validacao/Validadores/NfeValidador.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao.Validadores
+  syntax:
+    content: public NfeValidador()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core.Validacao.Validadores
+  isExternal: false
+  name: NotaFiscalNet.Core.Validacao.Validadores
+  fullName: NotaFiscalNet.Core.Validacao.Validadores
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

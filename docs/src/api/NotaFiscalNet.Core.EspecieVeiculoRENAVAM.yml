@@ -1,0 +1,255 @@
+items:
+- uid: NotaFiscalNet.Core.EspecieVeiculoRENAVAM
+  id: EspecieVeiculoRENAVAM
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.EspecieVeiculoRENAVAM.Carga
+  - NotaFiscalNet.Core.EspecieVeiculoRENAVAM.Corrida
+  - NotaFiscalNet.Core.EspecieVeiculoRENAVAM.Especial
+  - NotaFiscalNet.Core.EspecieVeiculoRENAVAM.Misto
+  - NotaFiscalNet.Core.EspecieVeiculoRENAVAM.NaoEspecificado
+  - NotaFiscalNet.Core.EspecieVeiculoRENAVAM.Passageiro
+  - "NotaFiscalNet.Core.EspecieVeiculoRENAVAM.Tração"
+  langs:
+  - csharp
+  - vb
+  name: EspecieVeiculoRENAVAM
+  fullName: NotaFiscalNet.Core.EspecieVeiculoRENAVAM
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/EspecieVeiculoRENAVAM.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: EspecieVeiculoRENAVAM
+    path: src/NotaFiscalNet.Core/EspecieVeiculoRENAVAM.cs
+    startLine: 5
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nEspecifica a Espécie do Veículo de acordo com tabela do RENAVAM.\r\n"
+  example: []
+  syntax:
+    content: public enum EspecieVeiculoRENAVAM
+    content.vb: Public Enum EspecieVeiculoRENAVAM
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.EspecieVeiculoRENAVAM.NaoEspecificado
+  id: NaoEspecificado
+  parent: NotaFiscalNet.Core.EspecieVeiculoRENAVAM
+  langs:
+  - csharp
+  - vb
+  name: NaoEspecificado
+  fullName: NotaFiscalNet.Core.EspecieVeiculoRENAVAM.NaoEspecificado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/EspecieVeiculoRENAVAM.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoEspecificado
+    path: src/NotaFiscalNet.Core/EspecieVeiculoRENAVAM.cs
+    startLine: 10
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nNão Especificado\r\n"
+  example: []
+  syntax:
+    content: NaoEspecificado = -1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.EspecieVeiculoRENAVAM.Passageiro
+  id: Passageiro
+  parent: NotaFiscalNet.Core.EspecieVeiculoRENAVAM
+  langs:
+  - csharp
+  - vb
+  name: Passageiro
+  fullName: NotaFiscalNet.Core.EspecieVeiculoRENAVAM.Passageiro
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/EspecieVeiculoRENAVAM.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Passageiro
+    path: src/NotaFiscalNet.Core/EspecieVeiculoRENAVAM.cs
+    startLine: 15
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n1 - Passageiro.\r\n"
+  example: []
+  syntax:
+    content: Passageiro = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.EspecieVeiculoRENAVAM.Carga
+  id: Carga
+  parent: NotaFiscalNet.Core.EspecieVeiculoRENAVAM
+  langs:
+  - csharp
+  - vb
+  name: Carga
+  fullName: NotaFiscalNet.Core.EspecieVeiculoRENAVAM.Carga
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/EspecieVeiculoRENAVAM.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Carga
+    path: src/NotaFiscalNet.Core/EspecieVeiculoRENAVAM.cs
+    startLine: 20
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n2 - Carga.\r\n"
+  example: []
+  syntax:
+    content: Carga = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.EspecieVeiculoRENAVAM.Misto
+  id: Misto
+  parent: NotaFiscalNet.Core.EspecieVeiculoRENAVAM
+  langs:
+  - csharp
+  - vb
+  name: Misto
+  fullName: NotaFiscalNet.Core.EspecieVeiculoRENAVAM.Misto
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/EspecieVeiculoRENAVAM.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Misto
+    path: src/NotaFiscalNet.Core/EspecieVeiculoRENAVAM.cs
+    startLine: 25
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n3 - Misto.\r\n"
+  example: []
+  syntax:
+    content: Misto = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.EspecieVeiculoRENAVAM.Corrida
+  id: Corrida
+  parent: NotaFiscalNet.Core.EspecieVeiculoRENAVAM
+  langs:
+  - csharp
+  - vb
+  name: Corrida
+  fullName: NotaFiscalNet.Core.EspecieVeiculoRENAVAM.Corrida
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/EspecieVeiculoRENAVAM.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Corrida
+    path: src/NotaFiscalNet.Core/EspecieVeiculoRENAVAM.cs
+    startLine: 30
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n4 - Corrida.\r\n"
+  example: []
+  syntax:
+    content: Corrida = 4
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: "NotaFiscalNet.Core.EspecieVeiculoRENAVAM.Tração"
+  id: "Tração"
+  parent: NotaFiscalNet.Core.EspecieVeiculoRENAVAM
+  langs:
+  - csharp
+  - vb
+  name: "Tração"
+  fullName: "NotaFiscalNet.Core.EspecieVeiculoRENAVAM.Tração"
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/EspecieVeiculoRENAVAM.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: "Tração"
+    path: src/NotaFiscalNet.Core/EspecieVeiculoRENAVAM.cs
+    startLine: 35
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n5 - Tração.\r\n"
+  example: []
+  syntax:
+    content: "Tração = 5"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.EspecieVeiculoRENAVAM.Especial
+  id: Especial
+  parent: NotaFiscalNet.Core.EspecieVeiculoRENAVAM
+  langs:
+  - csharp
+  - vb
+  name: Especial
+  fullName: NotaFiscalNet.Core.EspecieVeiculoRENAVAM.Especial
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/EspecieVeiculoRENAVAM.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Especial
+    path: src/NotaFiscalNet.Core/EspecieVeiculoRENAVAM.cs
+    startLine: 40
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n6 - Especial.\r\n"
+  example: []
+  syntax:
+    content: Especial = 6
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

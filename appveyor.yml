@@ -1,5 +1,14 @@
 version: 1.0.0.{build}
 
+environment:
+  GithubEmail: notafiscalnet@gmail.com
+  GithubUsername: NotaFiscal.net
+  GithubPersonalAccessToken:
+    secure: xDwP76rtY02prdj3ok14WISThtpw7pK4auHyTERwXGz3cqFLsorP0wJyEIDUu6UP
+
+init:
+- ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+	
 skip_tags: true
 
 configuration: Release
@@ -18,3 +27,9 @@ after_build:
 artifacts:
 - path: NotaFiscalNet.zip
   name: NotaFiscalNet
+
+after_test:
+- ps: ./build-docs.ps1 $env:APPVEYOR_BUILD_FOLDER $env:APPVEYOR_BUILD_VERSION $env:GithubEmail $env:GithubUsername $env:GithubPersonalAccessToken
+
+on_finish:
+- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))

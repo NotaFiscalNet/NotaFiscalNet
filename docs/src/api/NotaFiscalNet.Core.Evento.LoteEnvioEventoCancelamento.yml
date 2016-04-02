@@ -1,0 +1,514 @@
+items:
+- uid: NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento
+  id: LoteEnvioEventoCancelamento
+  parent: NotaFiscalNet.Core.Evento
+  children:
+  - NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento.#ctor
+  - NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento.Eventos
+  - NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento.GerarXmlNaoAssinado
+  - NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento.IdLote
+  - NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento.Versao
+  langs:
+  - csharp
+  - vb
+  name: LoteEnvioEventoCancelamento
+  fullName: NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/LoteEnvioEventoCancelamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: LoteEnvioEventoCancelamento
+    path: src/NotaFiscalNet.Core/Evento/LoteEnvioEventoCancelamento.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  summary: "\r\nRepresenta um lote de envio de eventos de cancelamento de NF-e's.\r\n"
+  example: []
+  syntax:
+    content: public class LoteEnvioEventoCancelamento
+    content.vb: Public Class LoteEnvioEventoCancelamento
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento.Versao
+  id: Versao
+  parent: NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento
+  langs:
+  - csharp
+  - vb
+  name: Versao
+  fullName: NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento.Versao
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/LoteEnvioEventoCancelamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Versao
+    path: src/NotaFiscalNet.Core/Evento/LoteEnvioEventoCancelamento.cs
+    startLine: 13
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  syntax:
+    content: public const string Versao
+    content.vb: Public Const Versao As String = "1.00"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento.#ctor
+  id: '#ctor'
+  parent: NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento
+  langs:
+  - csharp
+  - vb
+  name: LoteEnvioEventoCancelamento()
+  fullName: NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento.LoteEnvioEventoCancelamento()
+  type: Constructor
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/LoteEnvioEventoCancelamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: src/NotaFiscalNet.Core/Evento/LoteEnvioEventoCancelamento.cs
+    startLine: 18
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  summary: "\r\nInicializa uma nova instância do lote de envio de eventos de cancelamento.\r\n"
+  example: []
+  syntax:
+    content: public LoteEnvioEventoCancelamento()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento.IdLote
+  id: IdLote
+  parent: NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento
+  langs:
+  - csharp
+  - vb
+  name: IdLote
+  fullName: NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento.IdLote
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/LoteEnvioEventoCancelamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: IdLote
+    path: src/NotaFiscalNet.Core/Evento/LoteEnvioEventoCancelamento.cs
+    startLine: 32
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  summary: "\r\nRetorna ou define o Identificador do Lote.\r\n"
+  remarks: "\r\nIdentificador de controle do Lote de envio do Evento. Número sequencial autoincremental\r\núnico para identificação do Lote. A responsabilidade de gerar e controlar é exclusiva do\r\nautor do evento. O Web Service não faz qualquer uso deste identificador.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string IdLote
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property IdLote As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento.Eventos
+  id: Eventos
+  parent: NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento
+  langs:
+  - csharp
+  - vb
+  name: Eventos
+  fullName: NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento.Eventos
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/LoteEnvioEventoCancelamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Eventos
+    path: src/NotaFiscalNet.Core/Evento/LoteEnvioEventoCancelamento.cs
+    startLine: 37
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  summary: "\r\nRetorna a lista de eventos de cancelamento.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public ICollection<EventoCancelamentoNFe> Eventos
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Eventos As ICollection(Of EventoCancelamentoNFe)
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{NotaFiscalNet.Core.Evento.EventoCancelamentoNFe}
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento.GerarXmlNaoAssinado
+  id: GerarXmlNaoAssinado
+  parent: NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento
+  langs:
+  - csharp
+  - vb
+  name: GerarXmlNaoAssinado()
+  fullName: NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento.GerarXmlNaoAssinado()
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/LoteEnvioEventoCancelamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: GerarXmlNaoAssinado
+    path: src/NotaFiscalNet.Core/Evento/LoteEnvioEventoCancelamento.cs
+    startLine: 43
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  summary: "\r\nGera o xml não assinado do lote de envio de eventos de cancelemtndo de NF-e.\r\n"
+  example: []
+  syntax:
+    content: public string GerarXmlNaoAssinado()
+    content.vb: Public Function GerarXmlNaoAssinado As String
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core.Evento
+  isExternal: false
+  name: NotaFiscalNet.Core.Evento
+  fullName: NotaFiscalNet.Core.Evento
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Collections.Generic.ICollection{NotaFiscalNet.Core.Evento.EventoCancelamentoNFe}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<EventoCancelamentoNFe>
+  fullName: System.Collections.Generic.ICollection<NotaFiscalNet.Core.Evento.EventoCancelamentoNFe>
+  fullname.vb: System.Collections.Generic.ICollection(Of NotaFiscalNet.Core.Evento.EventoCancelamentoNFe)
+  name.vb: ICollection(Of EventoCancelamentoNFe)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: NotaFiscalNet.Core.Evento.EventoCancelamentoNFe
+    name: EventoCancelamentoNFe
+    fullName: NotaFiscalNet.Core.Evento.EventoCancelamentoNFe
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: NotaFiscalNet.Core.Evento.EventoCancelamentoNFe
+    name: EventoCancelamentoNFe
+    fullName: NotaFiscalNet.Core.Evento.EventoCancelamentoNFe
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  fullname.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic

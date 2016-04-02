@@ -1,0 +1,19 @@
+
+{{#isNamespace}}
+Namespace {{name.0.value}}
+{{/isNamespace}}
+{{#inClass}}
+Class {{name.0.value}}
+{{/inClass}}
+{{#inStruct}}
+Struct {{name.0.value}}
+{{/inStruct}}
+{{#inInterface}}
+Interface {{name.0.value}}
+{{/inInterface}}
+{{#inEnum}}
+Enum {{name.0.value}}
+{{/inEnum}}
+{{#inDelegate}}
+Delegate {{name.0.value}}
+{{/inDelegate}}

@@ -1,0 +1,123 @@
+items:
+- uid: NotaFiscalNet.Core.Interfaces.IPossuiDocumentoIdentificador
+  id: IPossuiDocumentoIdentificador
+  parent: NotaFiscalNet.Core.Interfaces
+  children:
+  - NotaFiscalNet.Core.Interfaces.IPossuiDocumentoIdentificador.CNPJ
+  - NotaFiscalNet.Core.Interfaces.IPossuiDocumentoIdentificador.CPF
+  langs:
+  - csharp
+  - vb
+  name: IPossuiDocumentoIdentificador
+  fullName: NotaFiscalNet.Core.Interfaces.IPossuiDocumentoIdentificador
+  type: Interface
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Interfaces/IPossuiDocumentoIdentificador.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: IPossuiDocumentoIdentificador
+    path: src/NotaFiscalNet.Core/Interfaces/IPossuiDocumentoIdentificador.cs
+    startLine: 2
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Interfaces
+  syntax:
+    content: public interface IPossuiDocumentoIdentificador
+    content.vb: Public Interface IPossuiDocumentoIdentificador
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: NotaFiscalNet.Core.Interfaces.IPossuiDocumentoIdentificador.CNPJ
+  id: CNPJ
+  parent: NotaFiscalNet.Core.Interfaces.IPossuiDocumentoIdentificador
+  langs:
+  - csharp
+  - vb
+  name: CNPJ
+  fullName: NotaFiscalNet.Core.Interfaces.IPossuiDocumentoIdentificador.CNPJ
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Interfaces/IPossuiDocumentoIdentificador.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CNPJ
+    path: src/NotaFiscalNet.Core/Interfaces/IPossuiDocumentoIdentificador.cs
+    startLine: 4
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Interfaces
+  syntax:
+    content: >-
+      string CNPJ
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Property CNPJ As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - get
+  - set
+- uid: NotaFiscalNet.Core.Interfaces.IPossuiDocumentoIdentificador.CPF
+  id: CPF
+  parent: NotaFiscalNet.Core.Interfaces.IPossuiDocumentoIdentificador
+  langs:
+  - csharp
+  - vb
+  name: CPF
+  fullName: NotaFiscalNet.Core.Interfaces.IPossuiDocumentoIdentificador.CPF
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Interfaces/IPossuiDocumentoIdentificador.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CPF
+    path: src/NotaFiscalNet.Core/Interfaces/IPossuiDocumentoIdentificador.cs
+    startLine: 5
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Interfaces
+  syntax:
+    content: >-
+      string CPF
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Property CPF As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: NotaFiscalNet.Core.Interfaces
+  fullName: NotaFiscalNet.Core.Interfaces
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

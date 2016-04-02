@@ -1,0 +1,1193 @@
+items:
+- uid: NotaFiscalNet.Core.Validacao.Mensagens
+  id: Mensagens
+  parent: NotaFiscalNet.Core.Validacao
+  children:
+  - NotaFiscalNet.Core.Validacao.Mensagens.collectionexact_length_error
+  - NotaFiscalNet.Core.Validacao.Mensagens.collectionlength_error
+  - NotaFiscalNet.Core.Validacao.Mensagens.CreditCardError
+  - NotaFiscalNet.Core.Validacao.Mensagens.email_error
+  - NotaFiscalNet.Core.Validacao.Mensagens.empty_error
+  - NotaFiscalNet.Core.Validacao.Mensagens.enum_error
+  - NotaFiscalNet.Core.Validacao.Mensagens.equal_error
+  - NotaFiscalNet.Core.Validacao.Mensagens.exact_length_error
+  - NotaFiscalNet.Core.Validacao.Mensagens.exclusivebetween_error
+  - NotaFiscalNet.Core.Validacao.Mensagens.greaterthan_error
+  - NotaFiscalNet.Core.Validacao.Mensagens.greaterthanorequal_error
+  - NotaFiscalNet.Core.Validacao.Mensagens.inclusivebetween_error
+  - NotaFiscalNet.Core.Validacao.Mensagens.length_error
+  - NotaFiscalNet.Core.Validacao.Mensagens.lessthan_error
+  - NotaFiscalNet.Core.Validacao.Mensagens.lessthanorequal_error
+  - NotaFiscalNet.Core.Validacao.Mensagens.notempty_error
+  - NotaFiscalNet.Core.Validacao.Mensagens.notequal_error
+  - NotaFiscalNet.Core.Validacao.Mensagens.notnull_error
+  - NotaFiscalNet.Core.Validacao.Mensagens.null_error
+  - NotaFiscalNet.Core.Validacao.Mensagens.predicate_error
+  - NotaFiscalNet.Core.Validacao.Mensagens.regex_error
+  - NotaFiscalNet.Core.Validacao.Mensagens.scale_precision_error
+  langs:
+  - csharp
+  - vb
+  name: Mensagens
+  fullName: NotaFiscalNet.Core.Validacao.Mensagens
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Mensagens
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+    startLine: 2
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: public class Mensagens
+    content.vb: Public Class Mensagens
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Validacao.Mensagens.email_error
+  id: email_error
+  parent: NotaFiscalNet.Core.Validacao.Mensagens
+  langs:
+  - csharp
+  - vb
+  name: email_error
+  fullName: NotaFiscalNet.Core.Validacao.Mensagens.email_error
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: email_error
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+    startLine: 5
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: >-
+      public static string email_error
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Shared ReadOnly Property email_error As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.Mensagens.greaterthanorequal_error
+  id: greaterthanorequal_error
+  parent: NotaFiscalNet.Core.Validacao.Mensagens
+  langs:
+  - csharp
+  - vb
+  name: greaterthanorequal_error
+  fullName: NotaFiscalNet.Core.Validacao.Mensagens.greaterthanorequal_error
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: greaterthanorequal_error
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+    startLine: 7
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: >-
+      public static string greaterthanorequal_error
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Shared ReadOnly Property greaterthanorequal_error As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.Mensagens.greaterthan_error
+  id: greaterthan_error
+  parent: NotaFiscalNet.Core.Validacao.Mensagens
+  langs:
+  - csharp
+  - vb
+  name: greaterthan_error
+  fullName: NotaFiscalNet.Core.Validacao.Mensagens.greaterthan_error
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: greaterthan_error
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+    startLine: 9
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: >-
+      public static string greaterthan_error
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Shared ReadOnly Property greaterthan_error As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.Mensagens.length_error
+  id: length_error
+  parent: NotaFiscalNet.Core.Validacao.Mensagens
+  langs:
+  - csharp
+  - vb
+  name: length_error
+  fullName: NotaFiscalNet.Core.Validacao.Mensagens.length_error
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: length_error
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: >-
+      public static string length_error
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Shared ReadOnly Property length_error As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.Mensagens.collectionlength_error
+  id: collectionlength_error
+  parent: NotaFiscalNet.Core.Validacao.Mensagens
+  langs:
+  - csharp
+  - vb
+  name: collectionlength_error
+  fullName: NotaFiscalNet.Core.Validacao.Mensagens.collectionlength_error
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: collectionlength_error
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+    startLine: 13
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: >-
+      public static string collectionlength_error
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Shared ReadOnly Property collectionlength_error As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.Mensagens.lessthanorequal_error
+  id: lessthanorequal_error
+  parent: NotaFiscalNet.Core.Validacao.Mensagens
+  langs:
+  - csharp
+  - vb
+  name: lessthanorequal_error
+  fullName: NotaFiscalNet.Core.Validacao.Mensagens.lessthanorequal_error
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: lessthanorequal_error
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+    startLine: 15
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: >-
+      public static string lessthanorequal_error
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Shared ReadOnly Property lessthanorequal_error As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.Mensagens.lessthan_error
+  id: lessthan_error
+  parent: NotaFiscalNet.Core.Validacao.Mensagens
+  langs:
+  - csharp
+  - vb
+  name: lessthan_error
+  fullName: NotaFiscalNet.Core.Validacao.Mensagens.lessthan_error
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: lessthan_error
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+    startLine: 17
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: >-
+      public static string lessthan_error
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Shared ReadOnly Property lessthan_error As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.Mensagens.notempty_error
+  id: notempty_error
+  parent: NotaFiscalNet.Core.Validacao.Mensagens
+  langs:
+  - csharp
+  - vb
+  name: notempty_error
+  fullName: NotaFiscalNet.Core.Validacao.Mensagens.notempty_error
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: notempty_error
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+    startLine: 19
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: >-
+      public static string notempty_error
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Shared ReadOnly Property notempty_error As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.Mensagens.notequal_error
+  id: notequal_error
+  parent: NotaFiscalNet.Core.Validacao.Mensagens
+  langs:
+  - csharp
+  - vb
+  name: notequal_error
+  fullName: NotaFiscalNet.Core.Validacao.Mensagens.notequal_error
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: notequal_error
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: >-
+      public static string notequal_error
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Shared ReadOnly Property notequal_error As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.Mensagens.notnull_error
+  id: notnull_error
+  parent: NotaFiscalNet.Core.Validacao.Mensagens
+  langs:
+  - csharp
+  - vb
+  name: notnull_error
+  fullName: NotaFiscalNet.Core.Validacao.Mensagens.notnull_error
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: notnull_error
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+    startLine: 23
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: >-
+      public static string notnull_error
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Shared ReadOnly Property notnull_error As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.Mensagens.predicate_error
+  id: predicate_error
+  parent: NotaFiscalNet.Core.Validacao.Mensagens
+  langs:
+  - csharp
+  - vb
+  name: predicate_error
+  fullName: NotaFiscalNet.Core.Validacao.Mensagens.predicate_error
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: predicate_error
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+    startLine: 25
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: >-
+      public static string predicate_error
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Shared ReadOnly Property predicate_error As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.Mensagens.regex_error
+  id: regex_error
+  parent: NotaFiscalNet.Core.Validacao.Mensagens
+  langs:
+  - csharp
+  - vb
+  name: regex_error
+  fullName: NotaFiscalNet.Core.Validacao.Mensagens.regex_error
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: regex_error
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+    startLine: 27
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: >-
+      public static string regex_error
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Shared ReadOnly Property regex_error As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.Mensagens.equal_error
+  id: equal_error
+  parent: NotaFiscalNet.Core.Validacao.Mensagens
+  langs:
+  - csharp
+  - vb
+  name: equal_error
+  fullName: NotaFiscalNet.Core.Validacao.Mensagens.equal_error
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: equal_error
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+    startLine: 29
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: >-
+      public static string equal_error
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Shared ReadOnly Property equal_error As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.Mensagens.exact_length_error
+  id: exact_length_error
+  parent: NotaFiscalNet.Core.Validacao.Mensagens
+  langs:
+  - csharp
+  - vb
+  name: exact_length_error
+  fullName: NotaFiscalNet.Core.Validacao.Mensagens.exact_length_error
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: exact_length_error
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+    startLine: 31
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: >-
+      public static string exact_length_error
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Shared ReadOnly Property exact_length_error As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.Mensagens.collectionexact_length_error
+  id: collectionexact_length_error
+  parent: NotaFiscalNet.Core.Validacao.Mensagens
+  langs:
+  - csharp
+  - vb
+  name: collectionexact_length_error
+  fullName: NotaFiscalNet.Core.Validacao.Mensagens.collectionexact_length_error
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: collectionexact_length_error
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+    startLine: 33
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: >-
+      public static string collectionexact_length_error
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Shared ReadOnly Property collectionexact_length_error As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.Mensagens.exclusivebetween_error
+  id: exclusivebetween_error
+  parent: NotaFiscalNet.Core.Validacao.Mensagens
+  langs:
+  - csharp
+  - vb
+  name: exclusivebetween_error
+  fullName: NotaFiscalNet.Core.Validacao.Mensagens.exclusivebetween_error
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: exclusivebetween_error
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+    startLine: 35
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: >-
+      public static string exclusivebetween_error
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Shared ReadOnly Property exclusivebetween_error As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.Mensagens.inclusivebetween_error
+  id: inclusivebetween_error
+  parent: NotaFiscalNet.Core.Validacao.Mensagens
+  langs:
+  - csharp
+  - vb
+  name: inclusivebetween_error
+  fullName: NotaFiscalNet.Core.Validacao.Mensagens.inclusivebetween_error
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: inclusivebetween_error
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+    startLine: 37
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: >-
+      public static string inclusivebetween_error
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Shared ReadOnly Property inclusivebetween_error As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.Mensagens.empty_error
+  id: empty_error
+  parent: NotaFiscalNet.Core.Validacao.Mensagens
+  langs:
+  - csharp
+  - vb
+  name: empty_error
+  fullName: NotaFiscalNet.Core.Validacao.Mensagens.empty_error
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: empty_error
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+    startLine: 39
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: >-
+      public static string empty_error
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Shared ReadOnly Property empty_error As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.Mensagens.null_error
+  id: null_error
+  parent: NotaFiscalNet.Core.Validacao.Mensagens
+  langs:
+  - csharp
+  - vb
+  name: null_error
+  fullName: NotaFiscalNet.Core.Validacao.Mensagens.null_error
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: null_error
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+    startLine: 41
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: >-
+      public static string null_error
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Shared ReadOnly Property null_error As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.Mensagens.CreditCardError
+  id: CreditCardError
+  parent: NotaFiscalNet.Core.Validacao.Mensagens
+  langs:
+  - csharp
+  - vb
+  name: CreditCardError
+  fullName: NotaFiscalNet.Core.Validacao.Mensagens.CreditCardError
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CreditCardError
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+    startLine: 43
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: >-
+      public static string CreditCardError
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Shared ReadOnly Property CreditCardError As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.Mensagens.scale_precision_error
+  id: scale_precision_error
+  parent: NotaFiscalNet.Core.Validacao.Mensagens
+  langs:
+  - csharp
+  - vb
+  name: scale_precision_error
+  fullName: NotaFiscalNet.Core.Validacao.Mensagens.scale_precision_error
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: scale_precision_error
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+    startLine: 45
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: >-
+      public static string scale_precision_error
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Shared ReadOnly Property scale_precision_error As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.Mensagens.enum_error
+  id: enum_error
+  parent: NotaFiscalNet.Core.Validacao.Mensagens
+  langs:
+  - csharp
+  - vb
+  name: enum_error
+  fullName: NotaFiscalNet.Core.Validacao.Mensagens.enum_error
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: enum_error
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/Mensagens.cs
+    startLine: 47
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: >-
+      public static string enum_error
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Shared ReadOnly Property enum_error As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+references:
+- uid: NotaFiscalNet.Core.Validacao
+  isExternal: false
+  name: NotaFiscalNet.Core.Validacao
+  fullName: NotaFiscalNet.Core.Validacao
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

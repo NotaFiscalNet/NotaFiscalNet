@@ -1,0 +1,62 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [ "**/*.sln" ],
+          "cwd": "../../",
+          "exclude": [
+            "**/obj/**",
+            "**/bin/**",
+            "_site/**"
+          ]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "api/**.yml",
+          "api/index.md"
+        ]
+      },
+      {
+        "files": [
+          "docs/**.md",
+          "docs/**/toc.yml",
+          "sobre/**.md",
+          "sobre/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**"
+        ]
+      }
+    ],
+    "globalMetadata": {
+       "_appTitle": "NotaFiscal.net",
+       "_enableSearch": true,
+       "_disableContribution": false
+     },
+    "dest": "_site",
+    "template": [
+      "template"
+    ]
+  }
+}

@@ -1,0 +1,534 @@
+- uid: NotaFiscalNet.Core
+  name: NotaFiscalNet.Core
+  items:
+  - uid: NotaFiscalNet.Core.AquisicaoCana
+    name: AquisicaoCana
+  - uid: NotaFiscalNet.Core.Armamento
+    name: Armamento
+  - uid: NotaFiscalNet.Core.ArmamentoCollection
+    name: ArmamentoCollection
+  - uid: NotaFiscalNet.Core.AutorizacaoDownloadXml
+    name: AutorizacaoDownloadXml
+  - uid: NotaFiscalNet.Core.AutorizacaoDownloadXmlCollection
+    name: AutorizacaoDownloadXmlCollection
+  - uid: NotaFiscalNet.Core.Avulsa
+    name: Avulsa
+  - uid: NotaFiscalNet.Core.BaseCollection`1
+    name: BaseCollection<T>
+    name.vb: BaseCollection(Of T)
+  - uid: NotaFiscalNet.Core.ChaveDeAcessoNFe
+    name: ChaveDeAcessoNFe
+  - uid: NotaFiscalNet.Core.CideCombustivel
+    name: CideCombustivel
+  - uid: NotaFiscalNet.Core.CobrancaNFe
+    name: CobrancaNFe
+  - uid: NotaFiscalNet.Core.CodigoRegimeTributario
+    name: CodigoRegimeTributario
+  - uid: NotaFiscalNet.Core.Combustivel
+    name: Combustivel
+  - uid: NotaFiscalNet.Core.Compra
+    name: Compra
+  - uid: NotaFiscalNet.Core.CondicaoVeiculo
+    name: CondicaoVeiculo
+  - uid: NotaFiscalNet.Core.ConfiguracaoDANFE
+    name: ConfiguracaoDANFE
+  - uid: NotaFiscalNet.Core.Constants
+    name: Constants
+  - uid: NotaFiscalNet.Core.CSOSN
+    name: CSOSN
+  - uid: NotaFiscalNet.Core.DeclaracaoImportacao
+    name: DeclaracaoImportacao
+  - uid: NotaFiscalNet.Core.DeclaracaoImportacaoAdicao
+    name: DeclaracaoImportacaoAdicao
+  - uid: NotaFiscalNet.Core.DeclaracaoImportacaoAdicaoCollection
+    name: DeclaracaoImportacaoAdicaoCollection
+  - uid: NotaFiscalNet.Core.DeclaracaoImportacaoCollection
+    name: DeclaracaoImportacaoCollection
+  - uid: NotaFiscalNet.Core.DeducaoCana
+    name: DeducaoCana
+  - uid: NotaFiscalNet.Core.DeducaoCanaCollection
+    name: DeducaoCanaCollection
+  - uid: NotaFiscalNet.Core.DestinatarioNFe
+    name: DestinatarioNFe
+  - uid: NotaFiscalNet.Core.DetalheExportacao
+    name: DetalheExportacao
+  - uid: NotaFiscalNet.Core.DetalheExportacaoCollection
+    name: DetalheExportacaoCollection
+  - uid: NotaFiscalNet.Core.DetalhesOperacaoCartao
+    name: DetalhesOperacaoCartao
+  - uid: NotaFiscalNet.Core.Duplicata
+    name: Duplicata
+  - uid: NotaFiscalNet.Core.DuplicataCollection
+    name: DuplicataCollection
+  - uid: NotaFiscalNet.Core.EmitenteNFe
+    name: EmitenteNFe
+  - uid: NotaFiscalNet.Core.Endereco
+    name: Endereco
+  - uid: NotaFiscalNet.Core.EnderecoEmpresa
+    name: EnderecoEmpresa
+  - uid: NotaFiscalNet.Core.EnderecoSimples
+    name: EnderecoSimples
+  - uid: NotaFiscalNet.Core.ErroValidacaoNFeException
+    name: ErroValidacaoNFeException
+  - uid: NotaFiscalNet.Core.EspecieVeiculoRENAVAM
+    name: EspecieVeiculoRENAVAM
+  - uid: NotaFiscalNet.Core.ExportacaoIndireta
+    name: ExportacaoIndireta
+  - uid: NotaFiscalNet.Core.Fatura
+    name: Fatura
+  - uid: NotaFiscalNet.Core.FornecimentoDiarioCana
+    name: FornecimentoDiarioCana
+  - uid: NotaFiscalNet.Core.FornecimentoDiarioCanaCollection
+    name: FornecimentoDiarioCanaCollection
+  - uid: NotaFiscalNet.Core.Icms
+    name: Icms
+  - uid: NotaFiscalNet.Core.Icms00
+    name: Icms00
+  - uid: NotaFiscalNet.Core.Icms10
+    name: Icms10
+  - uid: NotaFiscalNet.Core.Icms20
+    name: Icms20
+  - uid: NotaFiscalNet.Core.Icms30
+    name: Icms30
+  - uid: NotaFiscalNet.Core.Icms40
+    name: Icms40
+  - uid: NotaFiscalNet.Core.Icms51
+    name: Icms51
+  - uid: NotaFiscalNet.Core.Icms60
+    name: Icms60
+  - uid: NotaFiscalNet.Core.Icms70
+    name: Icms70
+  - uid: NotaFiscalNet.Core.Icms90
+    name: Icms90
+  - uid: NotaFiscalNet.Core.IcmsPartilha
+    name: IcmsPartilha
+  - uid: NotaFiscalNet.Core.IcmsSimplesNacional
+    name: IcmsSimplesNacional
+  - uid: NotaFiscalNet.Core.IcmsSN101
+    name: IcmsSN101
+  - uid: NotaFiscalNet.Core.IcmsSN102
+    name: IcmsSN102
+  - uid: NotaFiscalNet.Core.IcmsSN201
+    name: IcmsSN201
+  - uid: NotaFiscalNet.Core.IcmsSN202
+    name: IcmsSN202
+  - uid: NotaFiscalNet.Core.IcmsSN500
+    name: IcmsSN500
+  - uid: NotaFiscalNet.Core.IcmsSN900
+    name: IcmsSN900
+  - uid: NotaFiscalNet.Core.IcmsST
+    name: IcmsST
+  - uid: NotaFiscalNet.Core.IcmsTributacaoNormal
+    name: IcmsTributacaoNormal
+  - uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+    name: IdentificacaoDocumentoFiscal
+  - uid: NotaFiscalNet.Core.ImpostoCOFINS
+    name: ImpostoCOFINS
+  - uid: NotaFiscalNet.Core.ImpostoCOFINSST
+    name: ImpostoCOFINSST
+  - uid: NotaFiscalNet.Core.ImpostoDevolvido
+    name: ImpostoDevolvido
+  - uid: NotaFiscalNet.Core.ImpostoICMS
+    name: ImpostoICMS
+  - uid: NotaFiscalNet.Core.ImpostoII
+    name: ImpostoII
+  - uid: NotaFiscalNet.Core.ImpostoIPI
+    name: ImpostoIPI
+  - uid: NotaFiscalNet.Core.ImpostoISSQN
+    name: ImpostoISSQN
+  - uid: NotaFiscalNet.Core.ImpostoPIS
+    name: ImpostoPIS
+  - uid: NotaFiscalNet.Core.ImpostoPISST
+    name: ImpostoPISST
+  - uid: NotaFiscalNet.Core.ImpostoProduto
+    name: ImpostoProduto
+  - uid: NotaFiscalNet.Core.IndicadorExigibilidadeIss
+    name: IndicadorExigibilidadeIss
+  - uid: NotaFiscalNet.Core.IndicadorFormaPagamento
+    name: IndicadorFormaPagamento
+  - uid: NotaFiscalNet.Core.IndicadorIEDestinatario
+    name: IndicadorIEDestinatario
+  - uid: NotaFiscalNet.Core.INFe
+    name: INFe
+  - uid: NotaFiscalNet.Core.InformacoesAdicionaisNFe
+    name: InformacoesAdicionaisNFe
+  - uid: NotaFiscalNet.Core.InformacoesExportacao
+    name: InformacoesExportacao
+  - uid: NotaFiscalNet.Core.IpiDevolvido
+    name: IpiDevolvido
+  - uid: NotaFiscalNet.Core.Logger
+    name: Logger
+  - uid: NotaFiscalNet.Core.Logger.Level
+    name: Logger.Level
+  - uid: NotaFiscalNet.Core.LoggerWrapper
+    name: LoggerWrapper
+  - uid: NotaFiscalNet.Core.LoteNFe
+    name: LoteNFe
+  - uid: NotaFiscalNet.Core.LoteNFeCollection
+    name: LoteNFeCollection
+  - uid: NotaFiscalNet.Core.LoteNFeException
+    name: LoteNFeException
+  - uid: NotaFiscalNet.Core.Medicamento
+    name: Medicamento
+  - uid: NotaFiscalNet.Core.MedicamentoCollection
+    name: MedicamentoCollection
+  - uid: NotaFiscalNet.Core.ModalidadeBaseCalculoIcms
+    name: ModalidadeBaseCalculoIcms
+  - uid: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST
+    name: ModalidadeBaseCalculoIcmsST
+  - uid: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS
+    name: MotivoDesoneracaoCondicionalICMS
+  - uid: NotaFiscalNet.Core.NFe
+    name: NFe
+  - uid: NotaFiscalNet.Core.NFeCollection
+    name: NFeCollection
+  - uid: NotaFiscalNet.Core.NFeReadOnlyException
+    name: NFeReadOnlyException
+  - uid: NotaFiscalNet.Core.ObservacaoContribuinte
+    name: ObservacaoContribuinte
+  - uid: NotaFiscalNet.Core.ObservacaoContribuinteCollection
+    name: ObservacaoContribuinteCollection
+  - uid: NotaFiscalNet.Core.ObservacaoFisco
+    name: ObservacaoFisco
+  - uid: NotaFiscalNet.Core.ObservacaoFiscoCollection
+    name: ObservacaoFiscoCollection
+  - uid: NotaFiscalNet.Core.OrgaoIBGE
+    name: OrgaoIBGE
+  - uid: NotaFiscalNet.Core.OrigemMercadoria
+    name: OrigemMercadoria
+  - uid: NotaFiscalNet.Core.OrigemProcesso
+    name: OrigemProcesso
+  - uid: NotaFiscalNet.Core.Pagamento
+    name: Pagamento
+  - uid: NotaFiscalNet.Core.PagamentoCollection
+    name: PagamentoCollection
+  - uid: NotaFiscalNet.Core.Processo
+    name: Processo
+  - uid: NotaFiscalNet.Core.ProcessoCollection
+    name: ProcessoCollection
+  - uid: NotaFiscalNet.Core.Produto
+    name: Produto
+  - uid: NotaFiscalNet.Core.ProdutoCollection
+    name: ProdutoCollection
+  - uid: NotaFiscalNet.Core.QuantidadeMaximaLoteNFeException
+    name: QuantidadeMaximaLoteNFeException
+  - uid: NotaFiscalNet.Core.ReboqueCollection
+    name: ReboqueCollection
+  - uid: NotaFiscalNet.Core.ReferenciaDocumentoFiscalCte
+    name: ReferenciaDocumentoFiscalCte
+  - uid: NotaFiscalNet.Core.ReferenciaDocumentoFiscalEcf
+    name: ReferenciaDocumentoFiscalEcf
+  - uid: NotaFiscalNet.Core.ReferenciaDocumentoFiscalNfe
+    name: ReferenciaDocumentoFiscalNfe
+  - uid: NotaFiscalNet.Core.ReferenciaDocumentoFiscalNotaFiscal
+    name: ReferenciaDocumentoFiscalNotaFiscal
+  - uid: NotaFiscalNet.Core.ReferenciaDocumentoFiscalNotaFiscalProdutor
+    name: ReferenciaDocumentoFiscalNotaFiscalProdutor
+  - uid: NotaFiscalNet.Core.RetencaoICMSTransporte
+    name: RetencaoICMSTransporte
+  - uid: NotaFiscalNet.Core.RetencaoTributosFederais
+    name: RetencaoTributosFederais
+  - uid: NotaFiscalNet.Core.SiglaUF
+    name: SiglaUF
+  - uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+    name: SituacaoTributariaCOFINS
+  - uid: NotaFiscalNet.Core.SituacaoTributariaICMS
+    name: SituacaoTributariaICMS
+  - uid: NotaFiscalNet.Core.SituacaoTributariaIPI
+    name: SituacaoTributariaIPI
+  - uid: NotaFiscalNet.Core.SituacaoTributariaISSQN
+    name: SituacaoTributariaISSQN
+  - uid: NotaFiscalNet.Core.SituacaoTributariaPIS
+    name: SituacaoTributariaPIS
+  - uid: NotaFiscalNet.Core.StringCollection
+    name: StringCollection
+  - uid: NotaFiscalNet.Core.TamanhoMaximoBytesLoteNfeException
+    name: TamanhoMaximoBytesLoteNfeException
+  - uid: NotaFiscalNet.Core.TipoAmbiente
+    name: TipoAmbiente
+  - uid: NotaFiscalNet.Core.TipoAmbienteEx
+    name: TipoAmbienteEx
+  - uid: NotaFiscalNet.Core.TipoArmamento
+    name: TipoArmamento
+  - uid: NotaFiscalNet.Core.TipoBandeiraCartao
+    name: TipoBandeiraCartao
+  - uid: NotaFiscalNet.Core.TipoCalculoCOFINS
+    name: TipoCalculoCOFINS
+  - uid: NotaFiscalNet.Core.TipoCalculoIPI
+    name: TipoCalculoIPI
+  - uid: NotaFiscalNet.Core.TipoCalculoPIS
+    name: TipoCalculoPIS
+  - uid: NotaFiscalNet.Core.TipoCorDenatran
+    name: TipoCorDenatran
+  - uid: NotaFiscalNet.Core.TipoEmissaoNFe
+    name: TipoEmissaoNFe
+  - uid: NotaFiscalNet.Core.TipoEmissaoNFeEx
+    name: TipoEmissaoNFeEx
+  - uid: NotaFiscalNet.Core.TipoFinalidade
+    name: TipoFinalidade
+  - uid: NotaFiscalNet.Core.TipoFormatoImpressaoDanfe
+    name: TipoFormatoImpressaoDanfe
+  - uid: NotaFiscalNet.Core.TipoIdentificadorLocalDestinoOperacao
+    name: TipoIdentificadorLocalDestinoOperacao
+  - uid: NotaFiscalNet.Core.TipoIndicadorPresencaComprador
+    name: TipoIndicadorPresencaComprador
+  - uid: NotaFiscalNet.Core.TipoIntermedioImportacao
+    name: TipoIntermedioImportacao
+  - uid: NotaFiscalNet.Core.TipoMeioTransporte
+    name: TipoMeioTransporte
+  - uid: NotaFiscalNet.Core.TipoModalidadeDocumentoFiscal
+    name: TipoModalidadeDocumentoFiscal
+  - uid: NotaFiscalNet.Core.TipoModalidadeDocumentoFiscalEx
+    name: TipoModalidadeDocumentoFiscalEx
+  - uid: NotaFiscalNet.Core.TipoModalidadeFrete
+    name: TipoModalidadeFrete
+  - uid: NotaFiscalNet.Core.TipoNotaFiscal
+    name: TipoNotaFiscal
+  - uid: NotaFiscalNet.Core.TipoOperacaoVendaVeiculo
+    name: TipoOperacaoVendaVeiculo
+  - uid: NotaFiscalNet.Core.TipoPagamento
+    name: TipoPagamento
+  - uid: NotaFiscalNet.Core.TipoProcessoEmissaoNFe
+    name: TipoProcessoEmissaoNFe
+  - uid: NotaFiscalNet.Core.TipoProdutoEspecifico
+    name: TipoProdutoEspecifico
+  - uid: NotaFiscalNet.Core.TipoRestricaoVeiculo
+    name: TipoRestricaoVeiculo
+  - uid: NotaFiscalNet.Core.TiposBasicos
+    name: TiposBasicos
+  - uid: NotaFiscalNet.Core.TipoVeiculoRENAVAM
+    name: TipoVeiculoRENAVAM
+  - uid: NotaFiscalNet.Core.TipoViaTransporteInternacional
+    name: TipoViaTransporteInternacional
+  - uid: NotaFiscalNet.Core.TotalICMS
+    name: TotalICMS
+  - uid: NotaFiscalNet.Core.TotalISSQN
+    name: TotalISSQN
+  - uid: NotaFiscalNet.Core.TotalNFe
+    name: TotalNFe
+  - uid: NotaFiscalNet.Core.Transportador
+    name: Transportador
+  - uid: NotaFiscalNet.Core.TransporteNFe
+    name: TransporteNFe
+  - uid: NotaFiscalNet.Core.UfIBGE
+    name: UfIBGE
+  - uid: NotaFiscalNet.Core.UfIBGEEx
+    name: UfIBGEEx
+  - uid: NotaFiscalNet.Core.VeiculoNovo
+    name: VeiculoNovo
+  - uid: NotaFiscalNet.Core.VeiculoTransporte
+    name: VeiculoTransporte
+  - uid: NotaFiscalNet.Core.VolumeCarga
+    name: VolumeCarga
+  - uid: NotaFiscalNet.Core.VolumeCargaCollection
+    name: VolumeCargaCollection
+- uid: NotaFiscalNet.Core.Evento
+  name: NotaFiscalNet.Core.Evento
+  items:
+  - uid: NotaFiscalNet.Core.Evento.EventoCancelamentoNFe
+    name: EventoCancelamentoNFe
+  - uid: NotaFiscalNet.Core.Evento.EventoNFe
+    name: EventoNFe
+  - uid: NotaFiscalNet.Core.Evento.EventoNFeCollection`1
+    name: EventoNFeCollection<TEventoNFe>
+    name.vb: EventoNFeCollection(Of TEventoNFe)
+  - uid: NotaFiscalNet.Core.Evento.EventoNFeFactory
+    name: EventoNFeFactory
+  - uid: NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento
+    name: LoteEnvioEventoCancelamento
+  - uid: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento
+    name: RetornoEventoCancelamento
+  - uid: NotaFiscalNet.Core.Evento.RetornoLoteEnvioEventoCancelamento
+    name: RetornoLoteEnvioEventoCancelamento
+  - uid: NotaFiscalNet.Core.Evento.TipoEventoNFe
+    name: TipoEventoNFe
+- uid: NotaFiscalNet.Core.Interfaces
+  name: NotaFiscalNet.Core.Interfaces
+  items:
+  - uid: NotaFiscalNet.Core.Interfaces.IDesoneracaoIcms
+    name: IDesoneracaoIcms
+  - uid: NotaFiscalNet.Core.Interfaces.IModificavel
+    name: IModificavel
+  - uid: NotaFiscalNet.Core.Interfaces.IPossuiDocumentoIdentificador
+    name: IPossuiDocumentoIdentificador
+  - uid: NotaFiscalNet.Core.Interfaces.IReferenciaDocumentoFiscal
+    name: IReferenciaDocumentoFiscal
+  - uid: NotaFiscalNet.Core.Interfaces.ISerializavel
+    name: ISerializavel
+  - uid: NotaFiscalNet.Core.Interfaces.ISomenteLeitura
+    name: ISomenteLeitura
+- uid: NotaFiscalNet.Core.Inutilizacao
+  name: NotaFiscalNet.Core.Inutilizacao
+  items:
+  - uid: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe
+    name: InutilizacaoNFe
+  - uid: NotaFiscalNet.Core.Inutilizacao.ProcXmlInutilizacaoHelper
+    name: ProcXmlInutilizacaoHelper
+  - uid: NotaFiscalNet.Core.Inutilizacao.RetornoEnvioInutilizacaoNFe
+    name: RetornoEnvioInutilizacaoNFe
+- uid: NotaFiscalNet.Core.Schemas
+  name: NotaFiscalNet.Core.Schemas
+  items:
+  - uid: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe
+    name: IPacoteLiberacaoNFe
+  - uid: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008a
+    name: PacoteLiberacaoPL_008a
+  - uid: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2
+    name: PacoteLiberacaoPL_008h2
+  - uid: NotaFiscalNet.Core.Schemas.Schema
+    name: Schema
+- uid: NotaFiscalNet.Core.Tests
+  name: NotaFiscalNet.Core.Tests
+  items:
+  - uid: NotaFiscalNet.Core.Tests.AvulsaTests
+    name: AvulsaTests
+  - uid: NotaFiscalNet.Core.Tests.CompraTests
+    name: CompraTests
+  - uid: NotaFiscalNet.Core.Tests.IdentificacaoDocumentoFiscalTests
+    name: IdentificacaoDocumentoFiscalTests
+  - uid: NotaFiscalNet.Core.Tests.InformacoesExportacaoTests
+    name: InformacoesExportacaoTests
+  - uid: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalCteTests
+    name: ReferenciaDocumentoFiscalCteTests
+  - uid: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalEcfTests
+    name: ReferenciaDocumentoFiscalEcfTests
+  - uid: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNfeTests
+    name: ReferenciaDocumentoFiscalNfeTests
+  - uid: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalProdutorTests
+    name: ReferenciaDocumentoFiscalNotaFiscalProdutorTests
+  - uid: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalTests
+    name: ReferenciaDocumentoFiscalNotaFiscalTests
+- uid: NotaFiscalNet.Core.Tests.Comum
+  name: NotaFiscalNet.Core.Tests.Comum
+  items:
+  - uid: NotaFiscalNet.Core.Tests.Comum.CarregadorXml
+    name: CarregadorXml
+  - uid: NotaFiscalNet.Core.Tests.Comum.Serializador
+    name: Serializador
+- uid: NotaFiscalNet.Core.Tests.Dados
+  name: NotaFiscalNet.Core.Tests.Dados
+  items:
+  - uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1
+    name: Repositorio<T>
+    name.vb: Repositorio(Of T)
+  - uid: NotaFiscalNet.Core.Tests.Dados.RepositorioAvulsa
+    name: RepositorioAvulsa
+  - uid: NotaFiscalNet.Core.Tests.Dados.RepositorioIdentificacaoDocumentoFiscal
+    name: RepositorioIdentificacaoDocumentoFiscal
+  - uid: NotaFiscalNet.Core.Tests.Dados.RepositorioInformacoesExportacao
+    name: RepositorioInformacoesExportacao
+  - uid: NotaFiscalNet.Core.Tests.Dados.RepositorioReferenciaDocumentoFiscalNotaFiscal
+    name: RepositorioReferenciaDocumentoFiscalNotaFiscal
+  - uid: NotaFiscalNet.Core.Tests.Dados.RepositorioReferenciaDocumentoFiscalNotaFiscalProdutor
+    name: RepositorioReferenciaDocumentoFiscalNotaFiscalProdutor
+- uid: NotaFiscalNet.Core.Tests.Validacao
+  name: NotaFiscalNet.Core.Tests.Validacao
+  items:
+  - uid: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests
+    name: CompraValidadorTests
+  - uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalCteValidadorTests
+    name: ReferenciaDocumentoFiscalCteValidadorTests
+  - uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests
+    name: ReferenciaDocumentoFiscalEcfValidadorTests
+  - uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNfeValidadorTests
+    name: ReferenciaDocumentoFiscalNfeValidadorTests
+  - uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalProdutorValidadorTests
+    name: ReferenciaDocumentoFiscalNotaFiscalProdutorValidadorTests
+  - uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+    name: ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+- uid: NotaFiscalNet.Core.Transmissao
+  name: NotaFiscalNet.Core.Transmissao
+  items:
+  - uid: NotaFiscalNet.Core.Transmissao.NFeProcessada
+    name: NFeProcessada
+  - uid: NotaFiscalNet.Core.Transmissao.PedidoCancelamentoNFe
+    name: PedidoCancelamentoNFe
+  - uid: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe
+    name: PedidoInutilizacaoNFe
+  - uid: NotaFiscalNet.Core.Transmissao.ProtocoloEventoNFe
+    name: ProtocoloEventoNFe
+  - uid: NotaFiscalNet.Core.Transmissao.ProtocoloNFe
+    name: ProtocoloNFe
+  - uid: NotaFiscalNet.Core.Transmissao.ProtocoloStatusProcessamento
+    name: ProtocoloStatusProcessamento
+  - uid: NotaFiscalNet.Core.Transmissao.ProtocoloStatusProcessamentoCollection
+    name: ProtocoloStatusProcessamentoCollection
+  - uid: NotaFiscalNet.Core.Transmissao.ReciboEntregaLoteNFe
+    name: ReciboEntregaLoteNFe
+  - uid: NotaFiscalNet.Core.Transmissao.ReciboLoteNFe
+    name: ReciboLoteNFe
+  - uid: NotaFiscalNet.Core.Transmissao.RetEvento
+    name: RetEvento
+  - uid: NotaFiscalNet.Core.Transmissao.RetornoCancelamentoNFe
+    name: RetornoCancelamentoNFe
+  - uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo
+    name: RetornoConsultaRecibo
+  - uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoAtualNFe
+    name: RetornoConsultaSituacaoAtualNFe
+  - uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe
+    name: RetornoConsultaSituacaoNFe
+  - uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaStatusServico
+    name: RetornoConsultaStatusServico
+  - uid: NotaFiscalNet.Core.Transmissao.RetornoEnvioNFe
+    name: RetornoEnvioNFe
+  - uid: NotaFiscalNet.Core.Transmissao.RetornoPedidoCancelamentoNFe
+    name: RetornoPedidoCancelamentoNFe
+  - uid: NotaFiscalNet.Core.Transmissao.RetornoPedidoInutilizacaoNFe
+    name: RetornoPedidoInutilizacaoNFe
+  - uid: NotaFiscalNet.Core.Transmissao.TipoServicoNFe
+    name: TipoServicoNFe
+- uid: NotaFiscalNet.Core.Utils
+  name: NotaFiscalNet.Core.Utils
+  items:
+  - uid: NotaFiscalNet.Core.Utils.CalculadorFusoHorario
+    name: CalculadorFusoHorario
+  - uid: NotaFiscalNet.Core.Utils.DecimalExtensions
+    name: DecimalExtensions
+  - uid: NotaFiscalNet.Core.Utils.EnumEx
+    name: EnumEx
+  - uid: NotaFiscalNet.Core.Utils.SerializationExtensions
+    name: SerializationExtensions
+  - uid: NotaFiscalNet.Core.Utils.SerializationUtil
+    name: SerializationUtil
+  - uid: NotaFiscalNet.Core.Utils.StringEx
+    name: StringEx
+  - uid: NotaFiscalNet.Core.Utils.ValidationExtensions
+    name: ValidationExtensions
+  - uid: NotaFiscalNet.Core.Utils.ValidationUtil
+    name: ValidationUtil
+- uid: NotaFiscalNet.Core.Validacao
+  name: NotaFiscalNet.Core.Validacao
+  items:
+  - uid: NotaFiscalNet.Core.Validacao.CampoValidavelAttribute
+    name: CampoValidavelAttribute
+  - uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+    name: ChaveErroValidacao
+  - uid: NotaFiscalNet.Core.Validacao.ErroValidacao
+    name: ErroValidacao
+  - uid: NotaFiscalNet.Core.Validacao.Mensagens
+    name: Mensagens
+  - uid: NotaFiscalNet.Core.Validacao.MotorValidacao
+    name: MotorValidacao
+  - uid: NotaFiscalNet.Core.Validacao.ResultadoValidacao
+    name: ResultadoValidacao
+- uid: NotaFiscalNet.Core.Validacao.FluentCustom
+  name: NotaFiscalNet.Core.Validacao.FluentCustom
+  items:
+  - uid: NotaFiscalNet.Core.Validacao.FluentCustom.ChaveDeAcessoValidator
+    name: ChaveDeAcessoValidator
+  - uid: NotaFiscalNet.Core.Validacao.FluentCustom.CnpjValidator
+    name: CnpjValidator
+  - uid: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionExactLengthValidator
+    name: CollectionExactLengthValidator
+  - uid: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator
+    name: CollectionLengthValidator
+  - uid: NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions
+    name: FluentValidationCustomExtensions
+  - uid: NotaFiscalNet.Core.Validacao.FluentCustom.InValidator`1
+    name: InValidator<T>
+    name.vb: InValidator(Of T)
+- uid: NotaFiscalNet.Core.Validacao.Validadores
+  name: NotaFiscalNet.Core.Validacao.Validadores
+  items:
+  - uid: NotaFiscalNet.Core.Validacao.Validadores.NfeValidador
+    name: NfeValidador

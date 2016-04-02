@@ -1,0 +1,88 @@
+items:
+- uid: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalCteTests
+  id: ReferenciaDocumentoFiscalCteTests
+  parent: NotaFiscalNet.Core.Tests
+  children:
+  - NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalCteTests.DeveSerializarUmaReferenciaFiscalEcf(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ReferenciaDocumentoFiscalCteTests
+  fullName: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalCteTests
+  type: Class
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/ReferenciaDocumentoFiscalCteTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ReferenciaDocumentoFiscalCteTests
+    path: tests/NotaFiscalNet.Core.Tests/ReferenciaDocumentoFiscalCteTests.cs
+    startLine: 7
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests
+  syntax:
+    content: 'public class ReferenciaDocumentoFiscalCteTests : object'
+    content.vb: >-
+      Public Class ReferenciaDocumentoFiscalCteTests
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalCteTests.DeveSerializarUmaReferenciaFiscalEcf(System.String,System.String)
+  id: DeveSerializarUmaReferenciaFiscalEcf(System.String,System.String)
+  parent: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalCteTests
+  langs:
+  - csharp
+  - vb
+  name: DeveSerializarUmaReferenciaFiscalEcf(String, String)
+  fullName: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalCteTests.DeveSerializarUmaReferenciaFiscalEcf(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/ReferenciaDocumentoFiscalCteTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveSerializarUmaReferenciaFiscalEcf
+    path: tests/NotaFiscalNet.Core.Tests/ReferenciaDocumentoFiscalCteTests.cs
+    startLine: 9
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests
+  syntax:
+    content: public void DeveSerializarUmaReferenciaFiscalEcf(string cte, string arquivoXml)
+    content.vb: Public Sub DeveSerializarUmaReferenciaFiscalEcf(cte As String, arquivoXml As String)
+    parameters:
+    - id: cte
+      type: System.String
+    - id: arquivoXml
+      type: System.String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core.Tests
+  isExternal: false
+  name: NotaFiscalNet.Core.Tests
+  fullName: NotaFiscalNet.Core.Tests
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

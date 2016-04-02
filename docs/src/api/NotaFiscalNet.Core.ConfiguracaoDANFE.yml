@@ -1,0 +1,794 @@
+items:
+- uid: NotaFiscalNet.Core.ConfiguracaoDANFE
+  id: ConfiguracaoDANFE
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.ConfiguracaoDANFE.CaminhoPDF
+  - NotaFiscalNet.Core.ConfiguracaoDANFE.DataAutorizacao
+  - NotaFiscalNet.Core.ConfiguracaoDANFE.Imagem
+  - NotaFiscalNet.Core.ConfiguracaoDANFE.ImprimePDF
+  - NotaFiscalNet.Core.ConfiguracaoDANFE.MostraProgresso
+  - NotaFiscalNet.Core.ConfiguracaoDANFE.NomeImpressora
+  - NotaFiscalNet.Core.ConfiguracaoDANFE.NumeroCopias
+  - NotaFiscalNet.Core.ConfiguracaoDANFE.NumeroProtocolo
+  - NotaFiscalNet.Core.ConfiguracaoDANFE.SalvaPDF
+  langs:
+  - csharp
+  - vb
+  name: ConfiguracaoDANFE
+  fullName: NotaFiscalNet.Core.ConfiguracaoDANFE
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ConfiguracaoDANFE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ConfiguracaoDANFE
+    path: src/NotaFiscalNet.Core/ConfiguracaoDANFE.cs
+    startLine: 7
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRepresenta as informações de emissão da DANFE.\r\n"
+  example: []
+  syntax:
+    content: public sealed class ConfiguracaoDANFE
+    content.vb: Public NotInheritable Class ConfiguracaoDANFE
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: NotaFiscalNet.Core.ConfiguracaoDANFE.SalvaPDF
+  id: SalvaPDF
+  parent: NotaFiscalNet.Core.ConfiguracaoDANFE
+  langs:
+  - csharp
+  - vb
+  name: SalvaPDF
+  fullName: NotaFiscalNet.Core.ConfiguracaoDANFE.SalvaPDF
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ConfiguracaoDANFE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SalvaPDF
+    path: src/NotaFiscalNet.Core/ConfiguracaoDANFE.cs
+    startLine: 12
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSalva o relatório em formato PDF\r\n"
+  example: []
+  syntax:
+    content: >-
+      public bool SalvaPDF
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property SalvaPDF As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.ConfiguracaoDANFE.MostraProgresso
+  id: MostraProgresso
+  parent: NotaFiscalNet.Core.ConfiguracaoDANFE
+  langs:
+  - csharp
+  - vb
+  name: MostraProgresso
+  fullName: NotaFiscalNet.Core.ConfiguracaoDANFE.MostraProgresso
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ConfiguracaoDANFE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: MostraProgresso
+    path: src/NotaFiscalNet.Core/ConfiguracaoDANFE.cs
+    startLine: 17
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nMostra o progresso\r\n"
+  example: []
+  syntax:
+    content: >-
+      public bool MostraProgresso
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property MostraProgresso As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.ConfiguracaoDANFE.CaminhoPDF
+  id: CaminhoPDF
+  parent: NotaFiscalNet.Core.ConfiguracaoDANFE
+  langs:
+  - csharp
+  - vb
+  name: CaminhoPDF
+  fullName: NotaFiscalNet.Core.ConfiguracaoDANFE.CaminhoPDF
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ConfiguracaoDANFE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CaminhoPDF
+    path: src/NotaFiscalNet.Core/ConfiguracaoDANFE.cs
+    startLine: 22
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nCaminho onde o PDF será salvo\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string CaminhoPDF
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property CaminhoPDF As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.ConfiguracaoDANFE.ImprimePDF
+  id: ImprimePDF
+  parent: NotaFiscalNet.Core.ConfiguracaoDANFE
+  langs:
+  - csharp
+  - vb
+  name: ImprimePDF
+  fullName: NotaFiscalNet.Core.ConfiguracaoDANFE.ImprimePDF
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ConfiguracaoDANFE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ImprimePDF
+    path: src/NotaFiscalNet.Core/ConfiguracaoDANFE.cs
+    startLine: 27
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nImprime o relatório\r\n"
+  example: []
+  syntax:
+    content: >-
+      public bool ImprimePDF
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ImprimePDF As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.ConfiguracaoDANFE.NomeImpressora
+  id: NomeImpressora
+  parent: NotaFiscalNet.Core.ConfiguracaoDANFE
+  langs:
+  - csharp
+  - vb
+  name: NomeImpressora
+  fullName: NotaFiscalNet.Core.ConfiguracaoDANFE.NomeImpressora
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ConfiguracaoDANFE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NomeImpressora
+    path: src/NotaFiscalNet.Core/ConfiguracaoDANFE.cs
+    startLine: 32
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nNome da Impressora para imprimir\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string NomeImpressora
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property NomeImpressora As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.ConfiguracaoDANFE.NumeroCopias
+  id: NumeroCopias
+  parent: NotaFiscalNet.Core.ConfiguracaoDANFE
+  langs:
+  - csharp
+  - vb
+  name: NumeroCopias
+  fullName: NotaFiscalNet.Core.ConfiguracaoDANFE.NumeroCopias
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ConfiguracaoDANFE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NumeroCopias
+    path: src/NotaFiscalNet.Core/ConfiguracaoDANFE.cs
+    startLine: 37
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nNúmero de cópias para imprimir\r\n"
+  example: []
+  syntax:
+    content: >-
+      public short NumeroCopias
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property NumeroCopias As Short
+    parameters: []
+    return:
+      type: System.Int16
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.ConfiguracaoDANFE.Imagem
+  id: Imagem
+  parent: NotaFiscalNet.Core.ConfiguracaoDANFE
+  langs:
+  - csharp
+  - vb
+  name: Imagem
+  fullName: NotaFiscalNet.Core.ConfiguracaoDANFE.Imagem
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ConfiguracaoDANFE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Imagem
+    path: src/NotaFiscalNet.Core/ConfiguracaoDANFE.cs
+    startLine: 42
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nImagem da empresa impresso na DANFE\r\n"
+  example: []
+  syntax:
+    content: >-
+      public byte[] Imagem
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Imagem As Byte()
+    parameters: []
+    return:
+      type: System.Byte[]
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.ConfiguracaoDANFE.NumeroProtocolo
+  id: NumeroProtocolo
+  parent: NotaFiscalNet.Core.ConfiguracaoDANFE
+  langs:
+  - csharp
+  - vb
+  name: NumeroProtocolo
+  fullName: NotaFiscalNet.Core.ConfiguracaoDANFE.NumeroProtocolo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ConfiguracaoDANFE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NumeroProtocolo
+    path: src/NotaFiscalNet.Core/ConfiguracaoDANFE.cs
+    startLine: 47
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nNumero do Protocolo de Autorização da NFe\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long ? NumeroProtocolo
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property NumeroProtocolo As Long?
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.ConfiguracaoDANFE.DataAutorizacao
+  id: DataAutorizacao
+  parent: NotaFiscalNet.Core.ConfiguracaoDANFE
+  langs:
+  - csharp
+  - vb
+  name: DataAutorizacao
+  fullName: NotaFiscalNet.Core.ConfiguracaoDANFE.DataAutorizacao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ConfiguracaoDANFE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DataAutorizacao
+    path: src/NotaFiscalNet.Core/ConfiguracaoDANFE.cs
+    startLine: 52
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nData da Autorização da NFe\r\n"
+  example: []
+  syntax:
+    content: >-
+      public DateTime? DataAutorizacao
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property DataAutorizacao As Date?
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Int16
+  parent: System
+  isExternal: true
+  name: Int16
+  fullName: System.Int16
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  fullName: System.Byte[]
+  fullname.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Nullable{System.Int64}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int64>
+  fullName: System.Nullable<System.Int64>
+  fullname.vb: System.Nullable(Of System.Int64)
+  name.vb: Nullable(Of Int64)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DateTime>
+  fullName: System.Nullable<System.DateTime>
+  fullname.vb: System.Nullable(Of System.DateTime)
+  name.vb: Nullable(Of DateTime)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: )
+    fullName: )

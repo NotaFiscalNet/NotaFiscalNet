@@ -1,0 +1,132 @@
+items:
+- uid: NotaFiscalNet.Core.IndicadorIEDestinatario
+  id: IndicadorIEDestinatario
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.IndicadorIEDestinatario.ContribuinteIcms
+  - NotaFiscalNet.Core.IndicadorIEDestinatario.ContribuinteIsentoIE
+  - NotaFiscalNet.Core.IndicadorIEDestinatario.NaoContribuinte
+  langs:
+  - csharp
+  - vb
+  name: IndicadorIEDestinatario
+  fullName: NotaFiscalNet.Core.IndicadorIEDestinatario
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IndicadorIEDestinatario.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: IndicadorIEDestinatario
+    path: src/NotaFiscalNet.Core/IndicadorIEDestinatario.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nIndicador da Inscrição Estadual do Destinatário.\r\n"
+  remarks: "\r\nNota 1: No caso de NFC-e informar indIEDest=9 (NaoContribuinte) e não informar a tag IE do\r\ndestinatário; Nota 2: No caso de operação com o Exterior informar indIEDest=9\r\n(NaoContribuinte) e não informar a tag IE do destinatário; Nota 3: No caso de Contribuinte\r\nIsento de Inscrição (indIEDest=2) (ContribuinteIsentoIE), não informar a tag IE do destinatário\r\n"
+  example: []
+  syntax:
+    content: public enum IndicadorIEDestinatario
+    content.vb: Public Enum IndicadorIEDestinatario
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.IndicadorIEDestinatario.ContribuinteIcms
+  id: ContribuinteIcms
+  parent: NotaFiscalNet.Core.IndicadorIEDestinatario
+  langs:
+  - csharp
+  - vb
+  name: ContribuinteIcms
+  fullName: NotaFiscalNet.Core.IndicadorIEDestinatario.ContribuinteIcms
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IndicadorIEDestinatario.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ContribuinteIcms
+    path: src/NotaFiscalNet.Core/IndicadorIEDestinatario.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n1 - Contribuinte ICMS (informar a IE do destinatário).\r\n"
+  example: []
+  syntax:
+    content: ContribuinteIcms = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.IndicadorIEDestinatario.ContribuinteIsentoIE
+  id: ContribuinteIsentoIE
+  parent: NotaFiscalNet.Core.IndicadorIEDestinatario
+  langs:
+  - csharp
+  - vb
+  name: ContribuinteIsentoIE
+  fullName: NotaFiscalNet.Core.IndicadorIEDestinatario.ContribuinteIsentoIE
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IndicadorIEDestinatario.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ContribuinteIsentoIE
+    path: src/NotaFiscalNet.Core/IndicadorIEDestinatario.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n2 - Contribuinte isento de Inscrição no cadastro de Contribuintes do ICMS.\r\n"
+  example: []
+  syntax:
+    content: ContribuinteIsentoIE = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.IndicadorIEDestinatario.NaoContribuinte
+  id: NaoContribuinte
+  parent: NotaFiscalNet.Core.IndicadorIEDestinatario
+  langs:
+  - csharp
+  - vb
+  name: NaoContribuinte
+  fullName: NotaFiscalNet.Core.IndicadorIEDestinatario.NaoContribuinte
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IndicadorIEDestinatario.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoContribuinte
+    path: src/NotaFiscalNet.Core/IndicadorIEDestinatario.cs
+    startLine: 27
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n9 - Não Contribuinte, que pode ou não possuir Inscrição Estadual no Cadastro de\r\nContribuintes do ICMS.\r\n"
+  example: []
+  syntax:
+    content: NaoContribuinte = 9
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

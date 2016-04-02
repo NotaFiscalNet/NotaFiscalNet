@@ -1,0 +1,224 @@
+items:
+- uid: NotaFiscalNet.Core.OrigemProcesso
+  id: OrigemProcesso
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.OrigemProcesso.JusticaEstadual
+  - NotaFiscalNet.Core.OrigemProcesso.JusticaFederal
+  - NotaFiscalNet.Core.OrigemProcesso.NaoEspecificado
+  - NotaFiscalNet.Core.OrigemProcesso.Outros
+  - NotaFiscalNet.Core.OrigemProcesso.SecexRFB
+  - NotaFiscalNet.Core.OrigemProcesso.SEFAZ
+  langs:
+  - csharp
+  - vb
+  name: OrigemProcesso
+  fullName: NotaFiscalNet.Core.OrigemProcesso
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrigemProcesso.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: OrigemProcesso
+    path: src/NotaFiscalNet.Core/OrigemProcesso.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nLista de Origens do Processo Referenciado.\r\n"
+  example: []
+  syntax:
+    content: public enum OrigemProcesso
+    content.vb: Public Enum OrigemProcesso
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.OrigemProcesso.NaoEspecificado
+  id: NaoEspecificado
+  parent: NotaFiscalNet.Core.OrigemProcesso
+  langs:
+  - csharp
+  - vb
+  name: NaoEspecificado
+  fullName: NotaFiscalNet.Core.OrigemProcesso.NaoEspecificado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrigemProcesso.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoEspecificado
+    path: src/NotaFiscalNet.Core/OrigemProcesso.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nNão Especificado\r\n"
+  example: []
+  syntax:
+    content: NaoEspecificado = -1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrigemProcesso.SEFAZ
+  id: SEFAZ
+  parent: NotaFiscalNet.Core.OrigemProcesso
+  langs:
+  - csharp
+  - vb
+  name: SEFAZ
+  fullName: NotaFiscalNet.Core.OrigemProcesso.SEFAZ
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrigemProcesso.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SEFAZ
+    path: src/NotaFiscalNet.Core/OrigemProcesso.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nOrigem na SEFAZ\r\n"
+  example: []
+  syntax:
+    content: SEFAZ = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrigemProcesso.JusticaFederal
+  id: JusticaFederal
+  parent: NotaFiscalNet.Core.OrigemProcesso
+  langs:
+  - csharp
+  - vb
+  name: JusticaFederal
+  fullName: NotaFiscalNet.Core.OrigemProcesso.JusticaFederal
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrigemProcesso.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: JusticaFederal
+    path: src/NotaFiscalNet.Core/OrigemProcesso.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nOrigem na Justiça Federal\r\n"
+  example: []
+  syntax:
+    content: JusticaFederal = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrigemProcesso.JusticaEstadual
+  id: JusticaEstadual
+  parent: NotaFiscalNet.Core.OrigemProcesso
+  langs:
+  - csharp
+  - vb
+  name: JusticaEstadual
+  fullName: NotaFiscalNet.Core.OrigemProcesso.JusticaEstadual
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrigemProcesso.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: JusticaEstadual
+    path: src/NotaFiscalNet.Core/OrigemProcesso.cs
+    startLine: 26
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nOrigem na Justiça Estadual\r\n"
+  example: []
+  syntax:
+    content: JusticaEstadual = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrigemProcesso.SecexRFB
+  id: SecexRFB
+  parent: NotaFiscalNet.Core.OrigemProcesso
+  langs:
+  - csharp
+  - vb
+  name: SecexRFB
+  fullName: NotaFiscalNet.Core.OrigemProcesso.SecexRFB
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrigemProcesso.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SecexRFB
+    path: src/NotaFiscalNet.Core/OrigemProcesso.cs
+    startLine: 31
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nOrigem na Secex/RFB\r\n"
+  example: []
+  syntax:
+    content: SecexRFB = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrigemProcesso.Outros
+  id: Outros
+  parent: NotaFiscalNet.Core.OrigemProcesso
+  langs:
+  - csharp
+  - vb
+  name: Outros
+  fullName: NotaFiscalNet.Core.OrigemProcesso.Outros
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrigemProcesso.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Outros
+    path: src/NotaFiscalNet.Core/OrigemProcesso.cs
+    startLine: 36
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nOutras Origens\r\n"
+  example: []
+  syntax:
+    content: Outros = 9
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

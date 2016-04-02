@@ -1,0 +1,7 @@
+
+
+<div id="search-results">
+  <div class="search-list"></div>
+  <div class="sr-items"></div>
+  <ul id="pagination"></ul>
+</div>

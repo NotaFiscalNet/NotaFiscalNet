@@ -1,0 +1,129 @@
+items:
+- uid: NotaFiscalNet.Core.TipoIntermedioImportacao
+  id: TipoIntermedioImportacao
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.TipoIntermedioImportacao.ContaEOrdem
+  - NotaFiscalNet.Core.TipoIntermedioImportacao.ContaPropria
+  - NotaFiscalNet.Core.TipoIntermedioImportacao.Encomenda
+  langs:
+  - csharp
+  - vb
+  name: TipoIntermedioImportacao
+  fullName: NotaFiscalNet.Core.TipoIntermedioImportacao
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoIntermedioImportacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoIntermedioImportacao
+    path: src/NotaFiscalNet.Core/TipoIntermedioImportacao.cs
+    startLine: 2
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public enum TipoIntermedioImportacao
+    content.vb: Public Enum TipoIntermedioImportacao
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.TipoIntermedioImportacao.ContaPropria
+  id: ContaPropria
+  parent: NotaFiscalNet.Core.TipoIntermedioImportacao
+  langs:
+  - csharp
+  - vb
+  name: ContaPropria
+  fullName: NotaFiscalNet.Core.TipoIntermedioImportacao.ContaPropria
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoIntermedioImportacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ContaPropria
+    path: src/NotaFiscalNet.Core/TipoIntermedioImportacao.cs
+    startLine: 7
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n1 - Importação por conta própria.\r\n"
+  example: []
+  syntax:
+    content: ContaPropria = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoIntermedioImportacao.ContaEOrdem
+  id: ContaEOrdem
+  parent: NotaFiscalNet.Core.TipoIntermedioImportacao
+  langs:
+  - csharp
+  - vb
+  name: ContaEOrdem
+  fullName: NotaFiscalNet.Core.TipoIntermedioImportacao.ContaEOrdem
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoIntermedioImportacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ContaEOrdem
+    path: src/NotaFiscalNet.Core/TipoIntermedioImportacao.cs
+    startLine: 12
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n2 - Importação por conta e ordem.\r\n"
+  example: []
+  syntax:
+    content: ContaEOrdem = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoIntermedioImportacao.Encomenda
+  id: Encomenda
+  parent: NotaFiscalNet.Core.TipoIntermedioImportacao
+  langs:
+  - csharp
+  - vb
+  name: Encomenda
+  fullName: NotaFiscalNet.Core.TipoIntermedioImportacao.Encomenda
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoIntermedioImportacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Encomenda
+    path: src/NotaFiscalNet.Core/TipoIntermedioImportacao.cs
+    startLine: 17
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n3 - Importação por encomenda.\r\n"
+  example: []
+  syntax:
+    content: Encomenda = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

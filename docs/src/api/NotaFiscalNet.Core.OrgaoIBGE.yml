@@ -1,0 +1,1074 @@
+items:
+- uid: NotaFiscalNet.Core.OrgaoIBGE
+  id: OrgaoIBGE
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.OrgaoIBGE.AC
+  - NotaFiscalNet.Core.OrgaoIBGE.AL
+  - NotaFiscalNet.Core.OrgaoIBGE.AM
+  - NotaFiscalNet.Core.OrgaoIBGE.AN
+  - NotaFiscalNet.Core.OrgaoIBGE.AP
+  - NotaFiscalNet.Core.OrgaoIBGE.BA
+  - NotaFiscalNet.Core.OrgaoIBGE.CE
+  - NotaFiscalNet.Core.OrgaoIBGE.DF
+  - NotaFiscalNet.Core.OrgaoIBGE.ES
+  - NotaFiscalNet.Core.OrgaoIBGE.GO
+  - NotaFiscalNet.Core.OrgaoIBGE.MA
+  - NotaFiscalNet.Core.OrgaoIBGE.MG
+  - NotaFiscalNet.Core.OrgaoIBGE.MS
+  - NotaFiscalNet.Core.OrgaoIBGE.MT
+  - NotaFiscalNet.Core.OrgaoIBGE.NaoEspecificado
+  - NotaFiscalNet.Core.OrgaoIBGE.PA
+  - NotaFiscalNet.Core.OrgaoIBGE.PB
+  - NotaFiscalNet.Core.OrgaoIBGE.PE
+  - NotaFiscalNet.Core.OrgaoIBGE.PI
+  - NotaFiscalNet.Core.OrgaoIBGE.PR
+  - NotaFiscalNet.Core.OrgaoIBGE.RJ
+  - NotaFiscalNet.Core.OrgaoIBGE.RN
+  - NotaFiscalNet.Core.OrgaoIBGE.RO
+  - NotaFiscalNet.Core.OrgaoIBGE.RR
+  - NotaFiscalNet.Core.OrgaoIBGE.RS
+  - NotaFiscalNet.Core.OrgaoIBGE.SC
+  - NotaFiscalNet.Core.OrgaoIBGE.SE
+  - NotaFiscalNet.Core.OrgaoIBGE.SP
+  - NotaFiscalNet.Core.OrgaoIBGE.TO
+  langs:
+  - csharp
+  - vb
+  name: OrgaoIBGE
+  fullName: NotaFiscalNet.Core.OrgaoIBGE
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: OrgaoIBGE
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 8
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nLista de Códigos de UF do IBGE.\r\n"
+  example: []
+  syntax:
+    content: public enum OrgaoIBGE
+    content.vb: Public Enum OrgaoIBGE
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.OrgaoIBGE.NaoEspecificado
+  id: NaoEspecificado
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: NaoEspecificado
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.NaoEspecificado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoEspecificado
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 13
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n-1 - Não Especificado\r\n"
+  example: []
+  syntax:
+    content: "[Description(\"Não Especificado\")]\nNaoEspecificado = -1"
+    content.vb: "<Description(\"Não Especificado\")>\nNaoEspecificado = -1"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.RO
+  id: RO
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: RO
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.RO
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: RO
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 19
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n11 - Rondônia.\r\n"
+  example: []
+  syntax:
+    content: "[Description(\"Rondônia\")]\nRO = 11"
+    content.vb: "<Description(\"Rondônia\")>\nRO = 11"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.AC
+  id: AC
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: AC
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.AC
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: AC
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 25
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n12 - Acre.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Description("Acre")]
+
+      AC = 12
+    content.vb: >-
+      <Description("Acre")>
+
+      AC = 12
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.AM
+  id: AM
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: AM
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.AM
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: AM
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 31
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n13 - Amazonas.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Description("Amazonas")]
+
+      AM = 13
+    content.vb: >-
+      <Description("Amazonas")>
+
+      AM = 13
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.RR
+  id: RR
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: RR
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.RR
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: RR
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 37
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n14 - Roraima.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Description("Roraima")]
+
+      RR = 14
+    content.vb: >-
+      <Description("Roraima")>
+
+      RR = 14
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.PA
+  id: PA
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: PA
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.PA
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PA
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 43
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n15 - Pará.\r\n"
+  example: []
+  syntax:
+    content: "[Description(\"Pará\")]\nPA = 15"
+    content.vb: "<Description(\"Pará\")>\nPA = 15"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.AP
+  id: AP
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: AP
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.AP
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: AP
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 49
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n16 - Amapá.\r\n"
+  example: []
+  syntax:
+    content: "[Description(\"Amapá\")]\nAP = 16"
+    content.vb: "<Description(\"Amapá\")>\nAP = 16"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.TO
+  id: TO
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: TO
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.TO
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TO
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 55
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n17 - Tocantins.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Description("Tocantins")]
+
+      TO = 17
+    content.vb: >-
+      <Description("Tocantins")>
+
+      TO = 17
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.MA
+  id: MA
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: MA
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.MA
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: MA
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 61
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n21 - Maranhão.\r\n"
+  example: []
+  syntax:
+    content: "[Description(\"Maranhão\")]\nMA = 21"
+    content.vb: "<Description(\"Maranhão\")>\nMA = 21"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.PI
+  id: PI
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: PI
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.PI
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PI
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 67
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n22 - Piauí.\r\n"
+  example: []
+  syntax:
+    content: "[Description(\"Piauí\")]\nPI = 22"
+    content.vb: "<Description(\"Piauí\")>\nPI = 22"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.CE
+  id: CE
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: CE
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.CE
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CE
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 73
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n23 - Ceará.\r\n"
+  example: []
+  syntax:
+    content: "[Description(\"Ceará\")]\nCE = 23"
+    content.vb: "<Description(\"Ceará\")>\nCE = 23"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.RN
+  id: RN
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: RN
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.RN
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: RN
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 79
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n24 - Rio Grande do Norte.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Description("Rio Grande do Norte")]
+
+      RN = 24
+    content.vb: >-
+      <Description("Rio Grande do Norte")>
+
+      RN = 24
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.PB
+  id: PB
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: PB
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.PB
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PB
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 85
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n25 - Paraíba.\r\n"
+  example: []
+  syntax:
+    content: "[Description(\"Paraíba\")]\nPB = 25"
+    content.vb: "<Description(\"Paraíba\")>\nPB = 25"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.PE
+  id: PE
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: PE
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.PE
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PE
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 91
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n26 - Pernambuco.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Description("Pernambuco")]
+
+      PE = 26
+    content.vb: >-
+      <Description("Pernambuco")>
+
+      PE = 26
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.AL
+  id: AL
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: AL
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.AL
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: AL
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 97
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n27 - Alagoas.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Description("Alagoas")]
+
+      AL = 27
+    content.vb: >-
+      <Description("Alagoas")>
+
+      AL = 27
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.SE
+  id: SE
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: SE
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.SE
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SE
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 103
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n28 - Sergipe.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Description("Sergipe")]
+
+      SE = 28
+    content.vb: >-
+      <Description("Sergipe")>
+
+      SE = 28
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.BA
+  id: BA
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: BA
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.BA
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: BA
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 109
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n29 - Bahia.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Description("Bahia")]
+
+      BA = 29
+    content.vb: >-
+      <Description("Bahia")>
+
+      BA = 29
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.MG
+  id: MG
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: MG
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.MG
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: MG
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 115
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n31 - Minas Gerais.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Description("Minas Gerais")]
+
+      MG = 31
+    content.vb: >-
+      <Description("Minas Gerais")>
+
+      MG = 31
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.ES
+  id: ES
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: ES
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.ES
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ES
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 121
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n32 - Espirito Santo.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Description("Espirito Santo")]
+
+      ES = 32
+    content.vb: >-
+      <Description("Espirito Santo")>
+
+      ES = 32
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.RJ
+  id: RJ
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: RJ
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.RJ
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: RJ
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 127
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n33 - Rio de Janeiro.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Description("Rio de Janeiro")]
+
+      RJ = 33
+    content.vb: >-
+      <Description("Rio de Janeiro")>
+
+      RJ = 33
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.SP
+  id: SP
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: SP
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.SP
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SP
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 133
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n35 - São Paulo.\r\n"
+  example: []
+  syntax:
+    content: "[Description(\"São Paulo\")]\nSP = 35"
+    content.vb: "<Description(\"São Paulo\")>\nSP = 35"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.PR
+  id: PR
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: PR
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.PR
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PR
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 139
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n41 - Paraná.\r\n"
+  example: []
+  syntax:
+    content: "[Description(\"Paraná\")]\nPR = 41"
+    content.vb: "<Description(\"Paraná\")>\nPR = 41"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.SC
+  id: SC
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: SC
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.SC
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SC
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 145
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n42 - Santa Catarina.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Description("Santa Catarina")]
+
+      SC = 42
+    content.vb: >-
+      <Description("Santa Catarina")>
+
+      SC = 42
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.RS
+  id: RS
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: RS
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.RS
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: RS
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 151
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n43 - Rio Grande do Sul.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Description("Rio Grande do Sul")]
+
+      RS = 43
+    content.vb: >-
+      <Description("Rio Grande do Sul")>
+
+      RS = 43
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.MS
+  id: MS
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: MS
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.MS
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: MS
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 157
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n50 - Mato Grosso do Sul.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Description("Mato Grosso do Sul")]
+
+      MS = 50
+    content.vb: >-
+      <Description("Mato Grosso do Sul")>
+
+      MS = 50
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.MT
+  id: MT
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: MT
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.MT
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: MT
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 163
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n51 - Mato Grosso.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Description("Mato Grosso")]
+
+      MT = 51
+    content.vb: >-
+      <Description("Mato Grosso")>
+
+      MT = 51
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.GO
+  id: GO
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: GO
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.GO
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: GO
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 169
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n52 - Goiás.\r\n"
+  example: []
+  syntax:
+    content: "[Description(\"Goiás\")]\nGO = 52"
+    content.vb: "<Description(\"Goiás\")>\nGO = 52"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.DF
+  id: DF
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: DF
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.DF
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DF
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 175
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n53 - Distrito Federal.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Description("Distrito Federal")]
+
+      DF = 53
+    content.vb: >-
+      <Description("Distrito Federal")>
+
+      DF = 53
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrgaoIBGE.AN
+  id: AN
+  parent: NotaFiscalNet.Core.OrgaoIBGE
+  langs:
+  - csharp
+  - vb
+  name: AN
+  fullName: NotaFiscalNet.Core.OrgaoIBGE.AN
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: AN
+    path: src/NotaFiscalNet.Core/OrgaoIBGE.cs
+    startLine: 181
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n91 - Ambiente Nacional - RFB.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Description("Ambiente Nacional - RFB")]
+
+      AN = 91
+    content.vb: >-
+      <Description("Ambiente Nacional - RFB")>
+
+      AN = 91
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

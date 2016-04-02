@@ -1,0 +1,1016 @@
+items:
+- uid: NotaFiscalNet.Core.Transmissao.RetEvento
+  id: RetEvento
+  parent: NotaFiscalNet.Core.Transmissao
+  children:
+  - NotaFiscalNet.Core.Transmissao.RetEvento.Ambiente
+  - NotaFiscalNet.Core.Transmissao.RetEvento.ChaveAcessoNFe
+  - NotaFiscalNet.Core.Transmissao.RetEvento.CodigoStatus
+  - NotaFiscalNet.Core.Transmissao.RetEvento.CpfCnpjDestinatario
+  - NotaFiscalNet.Core.Transmissao.RetEvento.DataRegistro
+  - NotaFiscalNet.Core.Transmissao.RetEvento.Descricao
+  - NotaFiscalNet.Core.Transmissao.RetEvento.EmailDestinatario
+  - NotaFiscalNet.Core.Transmissao.RetEvento.Id
+  - NotaFiscalNet.Core.Transmissao.RetEvento.Motivo
+  - NotaFiscalNet.Core.Transmissao.RetEvento.NumeroProtocolo
+  - NotaFiscalNet.Core.Transmissao.RetEvento.NumeroSequencial
+  - NotaFiscalNet.Core.Transmissao.RetEvento.Orgao
+  - NotaFiscalNet.Core.Transmissao.RetEvento.Tipo
+  - NotaFiscalNet.Core.Transmissao.RetEvento.Versao
+  - NotaFiscalNet.Core.Transmissao.RetEvento.VersaoAplicativo
+  langs:
+  - csharp
+  - vb
+  name: RetEvento
+  fullName: NotaFiscalNet.Core.Transmissao.RetEvento
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: RetEvento
+    path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+    startLine: 10
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRepresenta o tipo complexo 'TRetEvento'.\r\n"
+  example: []
+  syntax:
+    content: public class RetEvento
+    content.vb: Public Class RetEvento
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Transmissao.RetEvento.Versao
+  id: Versao
+  parent: NotaFiscalNet.Core.Transmissao.RetEvento
+  langs:
+  - csharp
+  - vb
+  name: Versao
+  fullName: NotaFiscalNet.Core.Transmissao.RetEvento.Versao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Versao
+    path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+    startLine: 42
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\n[@versao] Retorna a versão do retorno de evento.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string Versao
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Versao As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetEvento.Id
+  id: Id
+  parent: NotaFiscalNet.Core.Transmissao.RetEvento
+  langs:
+  - csharp
+  - vb
+  name: Id
+  fullName: NotaFiscalNet.Core.Transmissao.RetEvento.Id
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Id
+    path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+    startLine: 47
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\n[@Id] Retorna o Identificador do retorno de evento.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string Id
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Id As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetEvento.Ambiente
+  id: Ambiente
+  parent: NotaFiscalNet.Core.Transmissao.RetEvento
+  langs:
+  - csharp
+  - vb
+  name: Ambiente
+  fullName: NotaFiscalNet.Core.Transmissao.RetEvento.Ambiente
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Ambiente
+    path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+    startLine: 52
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\n[tpAmb] Retorna ou define o Ambiente (Produção ou Homologação).\r\n"
+  example: []
+  syntax:
+    content: >-
+      public TipoAmbiente Ambiente
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Ambiente As TipoAmbiente
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoAmbiente
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetEvento.VersaoAplicativo
+  id: VersaoAplicativo
+  parent: NotaFiscalNet.Core.Transmissao.RetEvento
+  langs:
+  - csharp
+  - vb
+  name: VersaoAplicativo
+  fullName: NotaFiscalNet.Core.Transmissao.RetEvento.VersaoAplicativo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: VersaoAplicativo
+    path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+    startLine: 57
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\n[verAplic] Retorna ou define a versão do aplicativo que recebeu o Evento.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string VersaoAplicativo
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property VersaoAplicativo As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetEvento.Orgao
+  id: Orgao
+  parent: NotaFiscalNet.Core.Transmissao.RetEvento
+  langs:
+  - csharp
+  - vb
+  name: Orgao
+  fullName: NotaFiscalNet.Core.Transmissao.RetEvento.Orgao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Orgao
+    path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+    startLine: 65
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\n[cOrgao] Retorna ou define o Orgão de Recepção do Evento.\r\n"
+  remarks: "\r\nUtilizar a tabela do IBGE extendida. Utilizar 91 para identificar Ambiente Nacional.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public OrgaoIBGE Orgao
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Orgao As OrgaoIBGE
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.OrgaoIBGE
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetEvento.CodigoStatus
+  id: CodigoStatus
+  parent: NotaFiscalNet.Core.Transmissao.RetEvento
+  langs:
+  - csharp
+  - vb
+  name: CodigoStatus
+  fullName: NotaFiscalNet.Core.Transmissao.RetEvento.CodigoStatus
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CodigoStatus
+    path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+    startLine: 70
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\n[cStat] Retorna ou define o Código do Status do registro do Evento.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string CodigoStatus
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property CodigoStatus As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetEvento.Motivo
+  id: Motivo
+  parent: NotaFiscalNet.Core.Transmissao.RetEvento
+  langs:
+  - csharp
+  - vb
+  name: Motivo
+  fullName: NotaFiscalNet.Core.Transmissao.RetEvento.Motivo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Motivo
+    path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+    startLine: 75
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\n[xMotivo] Retorna ou define a descrição literal do status do registro do evento.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string Motivo
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Motivo As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetEvento.ChaveAcessoNFe
+  id: ChaveAcessoNFe
+  parent: NotaFiscalNet.Core.Transmissao.RetEvento
+  langs:
+  - csharp
+  - vb
+  name: ChaveAcessoNFe
+  fullName: NotaFiscalNet.Core.Transmissao.RetEvento.ChaveAcessoNFe
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ChaveAcessoNFe
+    path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+    startLine: 80
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\n[chNFe] Retorna ou define a Chave de Acesso da NFe vinculada ao evento.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string ChaveAcessoNFe
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property ChaveAcessoNFe As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetEvento.Tipo
+  id: Tipo
+  parent: NotaFiscalNet.Core.Transmissao.RetEvento
+  langs:
+  - csharp
+  - vb
+  name: Tipo
+  fullName: NotaFiscalNet.Core.Transmissao.RetEvento.Tipo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Tipo
+    path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+    startLine: 85
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\n[tpEvento] Retorna ou define o Tipo do Evento.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public TipoEventoNFe? Tipo
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Tipo As TipoEventoNFe?
+    parameters: []
+    return:
+      type: System.Nullable{NotaFiscalNet.Core.Evento.TipoEventoNFe}
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetEvento.Descricao
+  id: Descricao
+  parent: NotaFiscalNet.Core.Transmissao.RetEvento
+  langs:
+  - csharp
+  - vb
+  name: Descricao
+  fullName: NotaFiscalNet.Core.Transmissao.RetEvento.Descricao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Descricao
+    path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+    startLine: 90
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\n[xEvento] Retorna ou define a descrição do evento.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string Descricao
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Descricao As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetEvento.NumeroSequencial
+  id: NumeroSequencial
+  parent: NotaFiscalNet.Core.Transmissao.RetEvento
+  langs:
+  - csharp
+  - vb
+  name: NumeroSequencial
+  fullName: NotaFiscalNet.Core.Transmissao.RetEvento.NumeroSequencial
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NumeroSequencial
+    path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+    startLine: 95
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\n[nSeqEvento] Retorna ou define o número sequencial do evento para o mesmo tipo de evento.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int ? NumeroSequencial
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property NumeroSequencial As Integer?
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetEvento.CpfCnpjDestinatario
+  id: CpfCnpjDestinatario
+  parent: NotaFiscalNet.Core.Transmissao.RetEvento
+  langs:
+  - csharp
+  - vb
+  name: CpfCnpjDestinatario
+  fullName: NotaFiscalNet.Core.Transmissao.RetEvento.CpfCnpjDestinatario
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CpfCnpjDestinatario
+    path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+    startLine: 100
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\n[Cnpj,Cpf] Retorna ou define o Cpf ou Cnpj do Destinatário do Evento.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string CpfCnpjDestinatario
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property CpfCnpjDestinatario As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetEvento.EmailDestinatario
+  id: EmailDestinatario
+  parent: NotaFiscalNet.Core.Transmissao.RetEvento
+  langs:
+  - csharp
+  - vb
+  name: EmailDestinatario
+  fullName: NotaFiscalNet.Core.Transmissao.RetEvento.EmailDestinatario
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: EmailDestinatario
+    path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+    startLine: 105
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\n[emailDest] Retorna ou define o e-mail do destinatário.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string EmailDestinatario
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property EmailDestinatario As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Transmissao.RetEvento.DataRegistro
+  id: DataRegistro
+  parent: NotaFiscalNet.Core.Transmissao.RetEvento
+  langs:
+  - csharp
+  - vb
+  name: DataRegistro
+  fullName: NotaFiscalNet.Core.Transmissao.RetEvento.DataRegistro
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DataRegistro
+    path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+    startLine: 110
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\n[dhRegEvento] Retorna ou define a Data de registro do Evento.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public DateTime DataRegistro
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property DataRegistro As Date
+    parameters: []
+    return:
+      type: System.DateTime
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetEvento.NumeroProtocolo
+  id: NumeroProtocolo
+  parent: NotaFiscalNet.Core.Transmissao.RetEvento
+  langs:
+  - csharp
+  - vb
+  name: NumeroProtocolo
+  fullName: NotaFiscalNet.Core.Transmissao.RetEvento.NumeroProtocolo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NumeroProtocolo
+    path: src/NotaFiscalNet.Core/Transmissao/RetEvento.cs
+    startLine: 115
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\n[nProt] Retorna ou define o Número do Protocolo de registro do evento.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string NumeroProtocolo
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property NumeroProtocolo As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: NotaFiscalNet.Core.Transmissao
+  isExternal: false
+  name: NotaFiscalNet.Core.Transmissao
+  fullName: NotaFiscalNet.Core.Transmissao
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: NotaFiscalNet.Core.TipoAmbiente
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoAmbiente
+  fullName: NotaFiscalNet.Core.TipoAmbiente
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: NotaFiscalNet.Core.OrgaoIBGE
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: OrgaoIBGE
+  fullName: NotaFiscalNet.Core.OrgaoIBGE
+- uid: System.Nullable{NotaFiscalNet.Core.Evento.TipoEventoNFe}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<TipoEventoNFe>
+  fullName: System.Nullable<NotaFiscalNet.Core.Evento.TipoEventoNFe>
+  fullname.vb: System.Nullable(Of NotaFiscalNet.Core.Evento.TipoEventoNFe)
+  name.vb: Nullable(Of TipoEventoNFe)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: NotaFiscalNet.Core.Evento.TipoEventoNFe
+    name: TipoEventoNFe
+    fullName: NotaFiscalNet.Core.Evento.TipoEventoNFe
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: NotaFiscalNet.Core.Evento.TipoEventoNFe
+    name: TipoEventoNFe
+    fullName: NotaFiscalNet.Core.Evento.TipoEventoNFe
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  fullname.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime

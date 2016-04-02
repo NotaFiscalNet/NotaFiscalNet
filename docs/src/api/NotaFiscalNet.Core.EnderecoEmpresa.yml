@@ -1,0 +1,565 @@
+items:
+- uid: NotaFiscalNet.Core.EnderecoEmpresa
+  id: EnderecoEmpresa
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.EnderecoEmpresa.CNPJ
+  - NotaFiscalNet.Core.EnderecoEmpresa.CPF
+  - NotaFiscalNet.Core.EnderecoEmpresa.Modificado
+  - NotaFiscalNet.Core.EnderecoEmpresa.Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  langs:
+  - csharp
+  - vb
+  name: EnderecoEmpresa
+  fullName: NotaFiscalNet.Core.EnderecoEmpresa
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/EnderecoEmpresa.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: EnderecoEmpresa
+    path: src/NotaFiscalNet.Core/EnderecoEmpresa.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRepresenta o Endereço de uma Empresa para Retirada e Entrega\r\n"
+  example: []
+  syntax:
+    content: 'public sealed class EnderecoEmpresa : EnderecoSimples, IModificavel, ISerializavel, IPossuiDocumentoIdentificador'
+    content.vb: >-
+      Public NotInheritable Class EnderecoEmpresa
+
+          Inherits EnderecoSimples
+
+          Implements IModificavel, ISerializavel, IPossuiDocumentoIdentificador
+  inheritance:
+  - System.Object
+  - NotaFiscalNet.Core.EnderecoSimples
+  implements:
+  - NotaFiscalNet.Core.Interfaces.IModificavel
+  - NotaFiscalNet.Core.Interfaces.ISerializavel
+  - NotaFiscalNet.Core.Interfaces.IPossuiDocumentoIdentificador
+  inheritedMembers:
+  - NotaFiscalNet.Core.EnderecoSimples.Logradouro
+  - NotaFiscalNet.Core.EnderecoSimples.Numero
+  - NotaFiscalNet.Core.EnderecoSimples.Complemento
+  - NotaFiscalNet.Core.EnderecoSimples.Bairro
+  - NotaFiscalNet.Core.EnderecoSimples.CodigoMunicipioIBGE
+  - NotaFiscalNet.Core.EnderecoSimples.NomeMunicipio
+  - NotaFiscalNet.Core.EnderecoSimples.UF
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: NotaFiscalNet.Core.EnderecoEmpresa.Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  id: Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  parent: NotaFiscalNet.Core.EnderecoEmpresa
+  langs:
+  - csharp
+  - vb
+  name: Serializar(XmlWriter, INFe)
+  fullName: NotaFiscalNet.Core.EnderecoEmpresa.Serializar(System.Xml.XmlWriter, NotaFiscalNet.Core.INFe)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/EnderecoEmpresa.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Serializar
+    path: src/NotaFiscalNet.Core/EnderecoEmpresa.cs
+    startLine: 13
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public void Serializar(XmlWriter writer, INFe nfe)
+    content.vb: Public Sub Serializar(writer As XmlWriter, nfe As INFe)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+    - id: nfe
+      type: NotaFiscalNet.Core.INFe
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.EnderecoEmpresa.CNPJ
+  id: CNPJ
+  parent: NotaFiscalNet.Core.EnderecoEmpresa
+  langs:
+  - csharp
+  - vb
+  name: CNPJ
+  fullName: NotaFiscalNet.Core.EnderecoEmpresa.CNPJ
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/EnderecoEmpresa.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CNPJ
+    path: src/NotaFiscalNet.Core/EnderecoEmpresa.cs
+    startLine: 29
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna ou define o Cnpj da Empresa.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "G02", FieldName = "Cnpj", DataType = "TCnpjOpc", Pattern = "[0-9]{0}|[0-9]{14}")]
+
+      [NFeField(ID = "F02", FieldName = "Cnpj", DataType = "TCnpjOpc", Pattern = "[0-9]{0}|[0-9]{14}")]
+
+      [CampoValidavel(0)]
+
+      public string CNPJ
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="G02", FieldName:="Cnpj", DataType:="TCnpjOpc", Pattern:="[0-9]{0}|[0-9]{14}")>
+
+      <NFeField(ID:="F02", FieldName:="Cnpj", DataType:="TCnpjOpc", Pattern:="[0-9]{0}|[0-9]{14}")>
+
+      <CampoValidavel(0)>
+
+      Public Property CNPJ As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.EnderecoEmpresa.CPF
+  id: CPF
+  parent: NotaFiscalNet.Core.EnderecoEmpresa
+  langs:
+  - csharp
+  - vb
+  name: CPF
+  fullName: NotaFiscalNet.Core.EnderecoEmpresa.CPF
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/EnderecoEmpresa.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CPF
+    path: src/NotaFiscalNet.Core/EnderecoEmpresa.cs
+    startLine: 45
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna ou define o Cpf da Empresa.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "G03", FieldName = "Cpf", DataType = "TCpf", Pattern = "[0-9]{11}", Opcional = true)]
+
+      [NFeField(ID = "F03", FieldName = "Cpf", DataType = "TCpf", Pattern = "[0-9]{11}", Opcional = true)]
+
+      [CampoValidavel(1, Opcional = true)]
+
+      public string CPF
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="G03", FieldName:="Cpf", DataType:="TCpf", Pattern:="[0-9]{11}", Opcional:=True)>
+
+      <NFeField(ID:="F03", FieldName:="Cpf", DataType:="TCpf", Pattern:="[0-9]{11}", Opcional:=True)>
+
+      <CampoValidavel(1, Opcional:=True)>
+
+      Public Property CPF As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.EnderecoEmpresa.Modificado
+  id: Modificado
+  parent: NotaFiscalNet.Core.EnderecoEmpresa
+  langs:
+  - csharp
+  - vb
+  name: Modificado
+  fullName: NotaFiscalNet.Core.EnderecoEmpresa.Modificado
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/EnderecoEmpresa.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Modificado
+    path: src/NotaFiscalNet.Core/EnderecoEmpresa.cs
+    startLine: 61
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna se a classe foi modificada.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public override bool Modificado
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overrides ReadOnly Property Modificado As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  overridden: NotaFiscalNet.Core.EnderecoSimples.Modificado
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: NotaFiscalNet.Core.EnderecoSimples
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: EnderecoSimples
+  fullName: NotaFiscalNet.Core.EnderecoSimples
+- uid: NotaFiscalNet.Core.Interfaces.IModificavel
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: IModificavel
+  fullName: NotaFiscalNet.Core.Interfaces.IModificavel
+- uid: NotaFiscalNet.Core.Interfaces.ISerializavel
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: ISerializavel
+  fullName: NotaFiscalNet.Core.Interfaces.ISerializavel
+- uid: NotaFiscalNet.Core.Interfaces.IPossuiDocumentoIdentificador
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: IPossuiDocumentoIdentificador
+  fullName: NotaFiscalNet.Core.Interfaces.IPossuiDocumentoIdentificador
+- uid: NotaFiscalNet.Core.EnderecoSimples.Logradouro
+  parent: NotaFiscalNet.Core.EnderecoSimples
+  isExternal: false
+  name: Logradouro
+  fullName: NotaFiscalNet.Core.EnderecoSimples.Logradouro
+- uid: NotaFiscalNet.Core.EnderecoSimples.Numero
+  parent: NotaFiscalNet.Core.EnderecoSimples
+  isExternal: false
+  name: Numero
+  fullName: NotaFiscalNet.Core.EnderecoSimples.Numero
+- uid: NotaFiscalNet.Core.EnderecoSimples.Complemento
+  parent: NotaFiscalNet.Core.EnderecoSimples
+  isExternal: false
+  name: Complemento
+  fullName: NotaFiscalNet.Core.EnderecoSimples.Complemento
+- uid: NotaFiscalNet.Core.EnderecoSimples.Bairro
+  parent: NotaFiscalNet.Core.EnderecoSimples
+  isExternal: false
+  name: Bairro
+  fullName: NotaFiscalNet.Core.EnderecoSimples.Bairro
+- uid: NotaFiscalNet.Core.EnderecoSimples.CodigoMunicipioIBGE
+  parent: NotaFiscalNet.Core.EnderecoSimples
+  isExternal: false
+  name: CodigoMunicipioIBGE
+  fullName: NotaFiscalNet.Core.EnderecoSimples.CodigoMunicipioIBGE
+- uid: NotaFiscalNet.Core.EnderecoSimples.NomeMunicipio
+  parent: NotaFiscalNet.Core.EnderecoSimples
+  isExternal: false
+  name: NomeMunicipio
+  fullName: NotaFiscalNet.Core.EnderecoSimples.NomeMunicipio
+- uid: NotaFiscalNet.Core.EnderecoSimples.UF
+  parent: NotaFiscalNet.Core.EnderecoSimples
+  isExternal: false
+  name: UF
+  fullName: NotaFiscalNet.Core.EnderecoSimples.UF
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: NotaFiscalNet.Core.Interfaces
+  fullName: NotaFiscalNet.Core.Interfaces
+- uid: System.Xml.XmlWriter
+  parent: System.Xml
+  isExternal: true
+  name: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: NotaFiscalNet.Core.INFe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: INFe
+  fullName: NotaFiscalNet.Core.INFe
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: NotaFiscalNet.Core.EnderecoSimples.Modificado
+  parent: NotaFiscalNet.Core.EnderecoSimples
+  isExternal: false
+  name: Modificado
+  fullName: NotaFiscalNet.Core.EnderecoSimples.Modificado
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

@@ -1,0 +1,1215 @@
+items:
+- uid: NotaFiscalNet.Core.Icms70
+  id: Icms70
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.Icms70.#ctor
+  - NotaFiscalNet.Core.Icms70.Aliquota
+  - NotaFiscalNet.Core.Icms70.AliquotaST
+  - NotaFiscalNet.Core.Icms70.ModalidadeBaseCalculo
+  - NotaFiscalNet.Core.Icms70.ModalidadeBaseCalculoST
+  - NotaFiscalNet.Core.Icms70.MotivoDesoneracaoIcms
+  - NotaFiscalNet.Core.Icms70.PercentualMargemValorAdicionadoST
+  - NotaFiscalNet.Core.Icms70.PercentualReducaoBaseCalculo
+  - NotaFiscalNet.Core.Icms70.PercentualReducaoBaseCalculoST
+  - NotaFiscalNet.Core.Icms70.SerializeInternal(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  - NotaFiscalNet.Core.Icms70.Valor
+  - NotaFiscalNet.Core.Icms70.ValorBaseCalculo
+  - NotaFiscalNet.Core.Icms70.ValorBaseCalculoST
+  - NotaFiscalNet.Core.Icms70.ValorIcmsDesoneracao
+  - NotaFiscalNet.Core.Icms70.ValorST
+  langs:
+  - csharp
+  - vb
+  name: Icms70
+  fullName: NotaFiscalNet.Core.Icms70
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Icms70.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Icms70
+    path: src/NotaFiscalNet.Core/Icms70.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRepresenta o imposto ICMS CST 70 (Com redução de base de cálculo e cobrança do ICMS por\r\nsubstituição tributária).\r\n"
+  example: []
+  syntax:
+    content: 'public class Icms70 : IcmsTributacaoNormal, ISerializavel, IDesoneracaoIcms'
+    content.vb: >-
+      Public Class Icms70
+
+          Inherits IcmsTributacaoNormal
+
+          Implements ISerializavel, IDesoneracaoIcms
+  inheritance:
+  - System.Object
+  - NotaFiscalNet.Core.Icms
+  - NotaFiscalNet.Core.IcmsTributacaoNormal
+  implements:
+  - NotaFiscalNet.Core.Interfaces.ISerializavel
+  - NotaFiscalNet.Core.Interfaces.IDesoneracaoIcms
+  inheritedMembers:
+  - NotaFiscalNet.Core.Icms.Origem
+  - NotaFiscalNet.Core.Icms.CST
+  - NotaFiscalNet.Core.Icms.Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Icms70.#ctor
+  id: '#ctor'
+  parent: NotaFiscalNet.Core.Icms70
+  langs:
+  - csharp
+  - vb
+  name: Icms70()
+  fullName: NotaFiscalNet.Core.Icms70.Icms70()
+  type: Constructor
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Icms70.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: src/NotaFiscalNet.Core/Icms70.cs
+    startLine: 26
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public Icms70()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Icms70.ModalidadeBaseCalculo
+  id: ModalidadeBaseCalculo
+  parent: NotaFiscalNet.Core.Icms70
+  langs:
+  - csharp
+  - vb
+  name: ModalidadeBaseCalculo
+  fullName: NotaFiscalNet.Core.Icms70.ModalidadeBaseCalculo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Icms70.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ModalidadeBaseCalculo
+    path: src/NotaFiscalNet.Core/Icms70.cs
+    startLine: 34
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[modBC] Retorna ou define a Modalidade da Base de Cálculo do ICMS.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "N13", FieldName = "modBC")]
+
+      public ModalidadeBaseCalculoIcms ModalidadeBaseCalculo
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="N13", FieldName:="modBC")>
+
+      Public Property ModalidadeBaseCalculo As ModalidadeBaseCalculoIcms
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.ModalidadeBaseCalculoIcms
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Icms70.PercentualReducaoBaseCalculo
+  id: PercentualReducaoBaseCalculo
+  parent: NotaFiscalNet.Core.Icms70
+  langs:
+  - csharp
+  - vb
+  name: PercentualReducaoBaseCalculo
+  fullName: NotaFiscalNet.Core.Icms70.PercentualReducaoBaseCalculo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Icms70.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PercentualReducaoBaseCalculo
+    path: src/NotaFiscalNet.Core/Icms70.cs
+    startLine: 44
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vRedBC] Retorna ou define o Percentual de Redução da Base de Cálculo.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "vRedBC", DataType = "TDec_0302")]
+
+      public decimal PercentualReducaoBaseCalculo
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="vRedBC", DataType:="TDec_0302")>
+
+      Public Property PercentualReducaoBaseCalculo As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Icms70.ValorBaseCalculo
+  id: ValorBaseCalculo
+  parent: NotaFiscalNet.Core.Icms70
+  langs:
+  - csharp
+  - vb
+  name: ValorBaseCalculo
+  fullName: NotaFiscalNet.Core.Icms70.ValorBaseCalculo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Icms70.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorBaseCalculo
+    path: src/NotaFiscalNet.Core/Icms70.cs
+    startLine: 57
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vBC] Retorna ou define o Valor da Base de Cálculo do ICMS.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "N15", FieldName = "vBC", DataType = "TDec_1302")]
+
+      public decimal ValorBaseCalculo
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="N15", FieldName:="vBC", DataType:="TDec_1302")>
+
+      Public Property ValorBaseCalculo As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Icms70.Aliquota
+  id: Aliquota
+  parent: NotaFiscalNet.Core.Icms70
+  langs:
+  - csharp
+  - vb
+  name: Aliquota
+  fullName: NotaFiscalNet.Core.Icms70.Aliquota
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Icms70.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Aliquota
+    path: src/NotaFiscalNet.Core/Icms70.cs
+    startLine: 67
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[pICMS] Retorna ou define a Alíquota do ICMS.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "N16", FieldName = "pICMS", DataType = "TDec_0302")]
+
+      public decimal Aliquota
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="N16", FieldName:="pICMS", DataType:="TDec_0302")>
+
+      Public Property Aliquota As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Icms70.Valor
+  id: Valor
+  parent: NotaFiscalNet.Core.Icms70
+  langs:
+  - csharp
+  - vb
+  name: Valor
+  fullName: NotaFiscalNet.Core.Icms70.Valor
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Icms70.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Valor
+    path: src/NotaFiscalNet.Core/Icms70.cs
+    startLine: 77
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vICMS] Retorna ou define o Valor do ICMS.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "N17", FieldName = "vICMS", DataType = "TDec_0302")]
+
+      public decimal Valor
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="N17", FieldName:="vICMS", DataType:="TDec_0302")>
+
+      Public Property Valor As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Icms70.ModalidadeBaseCalculoST
+  id: ModalidadeBaseCalculoST
+  parent: NotaFiscalNet.Core.Icms70
+  langs:
+  - csharp
+  - vb
+  name: ModalidadeBaseCalculoST
+  fullName: NotaFiscalNet.Core.Icms70.ModalidadeBaseCalculoST
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Icms70.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ModalidadeBaseCalculoST
+    path: src/NotaFiscalNet.Core/Icms70.cs
+    startLine: 87
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[modBCST] Retorna ou define a Modalidade de Base de Cálculo do ICMS ST.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "modBCST")]
+
+      public ModalidadeBaseCalculoIcmsST ModalidadeBaseCalculoST
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="modBCST")>
+
+      Public Property ModalidadeBaseCalculoST As ModalidadeBaseCalculoIcmsST
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Icms70.PercentualMargemValorAdicionadoST
+  id: PercentualMargemValorAdicionadoST
+  parent: NotaFiscalNet.Core.Icms70
+  langs:
+  - csharp
+  - vb
+  name: PercentualMargemValorAdicionadoST
+  fullName: NotaFiscalNet.Core.Icms70.PercentualMargemValorAdicionadoST
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Icms70.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PercentualMargemValorAdicionadoST
+    path: src/NotaFiscalNet.Core/Icms70.cs
+    startLine: 101
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[pMVAST] Retorna ou define o Percentual da Margem de Valor Adicionado do ICMS ST.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "pMVAST", DataType = "TDec_0302Opc")]
+
+      public decimal PercentualMargemValorAdicionadoST
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="pMVAST", DataType:="TDec_0302Opc")>
+
+      Public Property PercentualMargemValorAdicionadoST As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Icms70.PercentualReducaoBaseCalculoST
+  id: PercentualReducaoBaseCalculoST
+  parent: NotaFiscalNet.Core.Icms70
+  langs:
+  - csharp
+  - vb
+  name: PercentualReducaoBaseCalculoST
+  fullName: NotaFiscalNet.Core.Icms70.PercentualReducaoBaseCalculoST
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Icms70.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PercentualReducaoBaseCalculoST
+    path: src/NotaFiscalNet.Core/Icms70.cs
+    startLine: 115
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[pRedBCST] Retorna ou define o Percentual de Redução da Base de Cálculo do ICMS ST.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "pRedBCST", DataType = "TDec_0302Opc")]
+
+      public decimal PercentualReducaoBaseCalculoST
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="pRedBCST", DataType:="TDec_0302Opc")>
+
+      Public Property PercentualReducaoBaseCalculoST As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Icms70.ValorBaseCalculoST
+  id: ValorBaseCalculoST
+  parent: NotaFiscalNet.Core.Icms70
+  langs:
+  - csharp
+  - vb
+  name: ValorBaseCalculoST
+  fullName: NotaFiscalNet.Core.Icms70.ValorBaseCalculoST
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Icms70.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorBaseCalculoST
+    path: src/NotaFiscalNet.Core/Icms70.cs
+    startLine: 129
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vBCST] Retorna ou define o Valor da Base de Cálculo do ICMS ST.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "vBCST", DataType = "TDec_1302")]
+
+      public decimal ValorBaseCalculoST
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="vBCST", DataType:="TDec_1302")>
+
+      Public Property ValorBaseCalculoST As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Icms70.AliquotaST
+  id: AliquotaST
+  parent: NotaFiscalNet.Core.Icms70
+  langs:
+  - csharp
+  - vb
+  name: AliquotaST
+  fullName: NotaFiscalNet.Core.Icms70.AliquotaST
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Icms70.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: AliquotaST
+    path: src/NotaFiscalNet.Core/Icms70.cs
+    startLine: 139
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[pICMSST] Retorna ou define a Alíquota do ICMS ST.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "pICMSST", DataType = "TDec_0302")]
+
+      public decimal AliquotaST
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="pICMSST", DataType:="TDec_0302")>
+
+      Public Property AliquotaST As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Icms70.ValorST
+  id: ValorST
+  parent: NotaFiscalNet.Core.Icms70
+  langs:
+  - csharp
+  - vb
+  name: ValorST
+  fullName: NotaFiscalNet.Core.Icms70.ValorST
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Icms70.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorST
+    path: src/NotaFiscalNet.Core/Icms70.cs
+    startLine: 149
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vICMSST] Retorna ou define o Valor do ICMS ST.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "vICMSST", DataType = "TDec_1302")]
+
+      public decimal ValorST
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="vICMSST", DataType:="TDec_1302")>
+
+      Public Property ValorST As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Icms70.ValorIcmsDesoneracao
+  id: ValorIcmsDesoneracao
+  parent: NotaFiscalNet.Core.Icms70
+  langs:
+  - csharp
+  - vb
+  name: ValorIcmsDesoneracao
+  fullName: NotaFiscalNet.Core.Icms70.ValorIcmsDesoneracao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Icms70.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorIcmsDesoneracao
+    path: src/NotaFiscalNet.Core/Icms70.cs
+    startLine: 159
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vICMSDeson] Retorna ou define o Valor do ICMS de desoneração.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "vICMSDeson", DataType = "TDec_1302", Opcional = true)]
+
+      public decimal ? ValorIcmsDesoneracao
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="vICMSDeson", DataType:="TDec_1302", Opcional:=True)>
+
+      Public Property ValorIcmsDesoneracao As Decimal?
+    parameters: []
+    return:
+      type: System.Nullable{System.Decimal}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Icms70.MotivoDesoneracaoIcms
+  id: MotivoDesoneracaoIcms
+  parent: NotaFiscalNet.Core.Icms70
+  langs:
+  - csharp
+  - vb
+  name: MotivoDesoneracaoIcms
+  fullName: NotaFiscalNet.Core.Icms70.MotivoDesoneracaoIcms
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Icms70.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: MotivoDesoneracaoIcms
+    path: src/NotaFiscalNet.Core/Icms70.cs
+    startLine: 166
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[motDesICMS] Retorna ou define o Motivo da desoneração do ICMS.\r\n"
+  remarks: "Valores aceitos: 3-Uso na agropecuária, 9-Outros e 12-Fomento agropecuário."
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "motDesICMS", DataType = "xs:string")]
+
+      public MotivoDesoneracaoCondicionalICMS? MotivoDesoneracaoIcms
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="motDesICMS", DataType:="xs:string")>
+
+      Public Property MotivoDesoneracaoIcms As MotivoDesoneracaoCondicionalICMS?
+    parameters: []
+    return:
+      type: System.Nullable{NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Icms70.SerializeInternal(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  id: SerializeInternal(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  parent: NotaFiscalNet.Core.Icms70
+  langs:
+  - csharp
+  - vb
+  name: SerializeInternal(XmlWriter, INFe)
+  fullName: NotaFiscalNet.Core.Icms70.SerializeInternal(System.Xml.XmlWriter, NotaFiscalNet.Core.INFe)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Icms70.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SerializeInternal
+    path: src/NotaFiscalNet.Core/Icms70.cs
+    startLine: 193
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: protected override void SerializeInternal(XmlWriter writer, INFe nfe)
+    content.vb: Protected Overrides Sub SerializeInternal(writer As XmlWriter, nfe As INFe)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+    - id: nfe
+      type: NotaFiscalNet.Core.INFe
+  overridden: NotaFiscalNet.Core.Icms.SerializeInternal(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: NotaFiscalNet.Core.Icms
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: Icms
+  fullName: NotaFiscalNet.Core.Icms
+- uid: NotaFiscalNet.Core.IcmsTributacaoNormal
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: IcmsTributacaoNormal
+  fullName: NotaFiscalNet.Core.IcmsTributacaoNormal
+- uid: NotaFiscalNet.Core.Interfaces.ISerializavel
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: ISerializavel
+  fullName: NotaFiscalNet.Core.Interfaces.ISerializavel
+- uid: NotaFiscalNet.Core.Interfaces.IDesoneracaoIcms
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: IDesoneracaoIcms
+  fullName: NotaFiscalNet.Core.Interfaces.IDesoneracaoIcms
+- uid: NotaFiscalNet.Core.Icms.Origem
+  parent: NotaFiscalNet.Core.Icms
+  isExternal: false
+  name: Origem
+  fullName: NotaFiscalNet.Core.Icms.Origem
+- uid: NotaFiscalNet.Core.Icms.CST
+  parent: NotaFiscalNet.Core.Icms
+  isExternal: false
+  name: CST
+  fullName: NotaFiscalNet.Core.Icms.CST
+- uid: NotaFiscalNet.Core.Icms.Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  parent: NotaFiscalNet.Core.Icms
+  isExternal: true
+  name: Serializar(XmlWriter, INFe)
+  fullName: NotaFiscalNet.Core.Icms.Serializar(System.Xml.XmlWriter, NotaFiscalNet.Core.INFe)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.Icms.Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+    name: Serializar
+    fullName: NotaFiscalNet.Core.Icms.Serializar
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: NotaFiscalNet.Core.INFe
+    name: INFe
+    fullName: NotaFiscalNet.Core.INFe
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.Icms.Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+    name: Serializar
+    fullName: NotaFiscalNet.Core.Icms.Serializar
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: NotaFiscalNet.Core.INFe
+    name: INFe
+    fullName: NotaFiscalNet.Core.INFe
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: NotaFiscalNet.Core.Interfaces
+  fullName: NotaFiscalNet.Core.Interfaces
+- uid: NotaFiscalNet.Core.ModalidadeBaseCalculoIcms
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: ModalidadeBaseCalculoIcms
+  fullName: NotaFiscalNet.Core.ModalidadeBaseCalculoIcms
+- uid: System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  fullName: System.Decimal
+- uid: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: ModalidadeBaseCalculoIcmsST
+  fullName: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST
+- uid: System.Nullable{System.Decimal}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Decimal>
+  fullName: System.Nullable<System.Decimal>
+  fullname.vb: System.Nullable(Of System.Decimal)
+  name.vb: Nullable(Of Decimal)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Decimal
+    name: Decimal
+    fullName: System.Decimal
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Decimal
+    name: Decimal
+    fullName: System.Decimal
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Nullable{NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<MotivoDesoneracaoCondicionalICMS>
+  fullName: System.Nullable<NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS>
+  fullname.vb: System.Nullable(Of NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS)
+  name.vb: Nullable(Of MotivoDesoneracaoCondicionalICMS)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS
+    name: MotivoDesoneracaoCondicionalICMS
+    fullName: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS
+    name: MotivoDesoneracaoCondicionalICMS
+    fullName: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.Icms.SerializeInternal(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  parent: NotaFiscalNet.Core.Icms
+  isExternal: true
+  name: SerializeInternal(XmlWriter, INFe)
+  fullName: NotaFiscalNet.Core.Icms.SerializeInternal(System.Xml.XmlWriter, NotaFiscalNet.Core.INFe)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.Icms.SerializeInternal(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+    name: SerializeInternal
+    fullName: NotaFiscalNet.Core.Icms.SerializeInternal
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: NotaFiscalNet.Core.INFe
+    name: INFe
+    fullName: NotaFiscalNet.Core.INFe
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.Icms.SerializeInternal(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+    name: SerializeInternal
+    fullName: NotaFiscalNet.Core.Icms.SerializeInternal
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: NotaFiscalNet.Core.INFe
+    name: INFe
+    fullName: NotaFiscalNet.Core.INFe
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlWriter
+  parent: System.Xml
+  isExternal: true
+  name: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: NotaFiscalNet.Core.INFe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: INFe
+  fullName: NotaFiscalNet.Core.INFe
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml

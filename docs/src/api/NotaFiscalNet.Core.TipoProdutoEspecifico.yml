@@ -1,0 +1,224 @@
+items:
+- uid: NotaFiscalNet.Core.TipoProdutoEspecifico
+  id: TipoProdutoEspecifico
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.TipoProdutoEspecifico.Armamento
+  - NotaFiscalNet.Core.TipoProdutoEspecifico.Combustivel
+  - NotaFiscalNet.Core.TipoProdutoEspecifico.Medicamento
+  - NotaFiscalNet.Core.TipoProdutoEspecifico.PapelImune
+  - NotaFiscalNet.Core.TipoProdutoEspecifico.ProdutoNaoEspecifico
+  - NotaFiscalNet.Core.TipoProdutoEspecifico.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: TipoProdutoEspecifico
+  fullName: NotaFiscalNet.Core.TipoProdutoEspecifico
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoProdutoEspecifico.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoProdutoEspecifico
+    path: src/NotaFiscalNet.Core/TipoProdutoEspecifico.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nIndicam o tipo específico de produto referente a um Item da Nota Fiscal Eletrõnica.\r\n"
+  example: []
+  syntax:
+    content: public enum TipoProdutoEspecifico
+    content.vb: Public Enum TipoProdutoEspecifico
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.TipoProdutoEspecifico.ProdutoNaoEspecifico
+  id: ProdutoNaoEspecifico
+  parent: NotaFiscalNet.Core.TipoProdutoEspecifico
+  langs:
+  - csharp
+  - vb
+  name: ProdutoNaoEspecifico
+  fullName: NotaFiscalNet.Core.TipoProdutoEspecifico.ProdutoNaoEspecifico
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoProdutoEspecifico.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ProdutoNaoEspecifico
+    path: src/NotaFiscalNet.Core/TipoProdutoEspecifico.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nIndica que não é um produto específico.\r\n"
+  example: []
+  syntax:
+    content: ProdutoNaoEspecifico = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoProdutoEspecifico.VeiculoNovo
+  id: VeiculoNovo
+  parent: NotaFiscalNet.Core.TipoProdutoEspecifico
+  langs:
+  - csharp
+  - vb
+  name: VeiculoNovo
+  fullName: NotaFiscalNet.Core.TipoProdutoEspecifico.VeiculoNovo
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoProdutoEspecifico.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: VeiculoNovo
+    path: src/NotaFiscalNet.Core/TipoProdutoEspecifico.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nAplicado em caso de produto ser um Veículo Novo.\r\n"
+  example: []
+  syntax:
+    content: VeiculoNovo = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoProdutoEspecifico.Medicamento
+  id: Medicamento
+  parent: NotaFiscalNet.Core.TipoProdutoEspecifico
+  langs:
+  - csharp
+  - vb
+  name: Medicamento
+  fullName: NotaFiscalNet.Core.TipoProdutoEspecifico.Medicamento
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoProdutoEspecifico.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Medicamento
+    path: src/NotaFiscalNet.Core/TipoProdutoEspecifico.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nAplicado em caso do produto ser Medicamento.\r\n"
+  example: []
+  syntax:
+    content: Medicamento = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoProdutoEspecifico.Armamento
+  id: Armamento
+  parent: NotaFiscalNet.Core.TipoProdutoEspecifico
+  langs:
+  - csharp
+  - vb
+  name: Armamento
+  fullName: NotaFiscalNet.Core.TipoProdutoEspecifico.Armamento
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoProdutoEspecifico.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Armamento
+    path: src/NotaFiscalNet.Core/TipoProdutoEspecifico.cs
+    startLine: 26
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nAplicado em caso do produto ser Armamento.\r\n"
+  example: []
+  syntax:
+    content: Armamento = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoProdutoEspecifico.Combustivel
+  id: Combustivel
+  parent: NotaFiscalNet.Core.TipoProdutoEspecifico
+  langs:
+  - csharp
+  - vb
+  name: Combustivel
+  fullName: NotaFiscalNet.Core.TipoProdutoEspecifico.Combustivel
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoProdutoEspecifico.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Combustivel
+    path: src/NotaFiscalNet.Core/TipoProdutoEspecifico.cs
+    startLine: 31
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nAplicado em caso do produto ser Combustível.\r\n"
+  example: []
+  syntax:
+    content: Combustivel = 4
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoProdutoEspecifico.PapelImune
+  id: PapelImune
+  parent: NotaFiscalNet.Core.TipoProdutoEspecifico
+  langs:
+  - csharp
+  - vb
+  name: PapelImune
+  fullName: NotaFiscalNet.Core.TipoProdutoEspecifico.PapelImune
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoProdutoEspecifico.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PapelImune
+    path: src/NotaFiscalNet.Core/TipoProdutoEspecifico.cs
+    startLine: 36
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nAplicado em caso de produto ser relacionado a Papel Imune.\r\n"
+  example: []
+  syntax:
+    content: PapelImune = 5
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

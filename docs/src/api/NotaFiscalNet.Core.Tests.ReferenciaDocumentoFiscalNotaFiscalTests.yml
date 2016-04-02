@@ -1,0 +1,116 @@
+items:
+- uid: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalTests
+  id: ReferenciaDocumentoFiscalNotaFiscalTests
+  parent: NotaFiscalNet.Core.Tests
+  children:
+  - NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalTests.#ctor
+  - NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalTests.DeveSerializarUmaReferenciaDocumentoFiscalNotaFiscal(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ReferenciaDocumentoFiscalNotaFiscalTests
+  fullName: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalTests
+  type: Class
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/ReferenciaDocumentoFiscalNotaFiscalTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ReferenciaDocumentoFiscalNotaFiscalTests
+    path: tests/NotaFiscalNet.Core.Tests/ReferenciaDocumentoFiscalNotaFiscalTests.cs
+    startLine: 9
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests
+  syntax:
+    content: 'public class ReferenciaDocumentoFiscalNotaFiscalTests : object'
+    content.vb: >-
+      Public Class ReferenciaDocumentoFiscalNotaFiscalTests
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalTests.#ctor
+  id: '#ctor'
+  parent: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalTests
+  langs:
+  - csharp
+  - vb
+  name: ReferenciaDocumentoFiscalNotaFiscalTests()
+  fullName: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalTests.ReferenciaDocumentoFiscalNotaFiscalTests()
+  type: Constructor
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/ReferenciaDocumentoFiscalNotaFiscalTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: tests/NotaFiscalNet.Core.Tests/ReferenciaDocumentoFiscalNotaFiscalTests.cs
+    startLine: 13
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests
+  syntax:
+    content: public ReferenciaDocumentoFiscalNotaFiscalTests()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalTests.DeveSerializarUmaReferenciaDocumentoFiscalNotaFiscal(System.String,System.String)
+  id: DeveSerializarUmaReferenciaDocumentoFiscalNotaFiscal(System.String,System.String)
+  parent: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalTests
+  langs:
+  - csharp
+  - vb
+  name: DeveSerializarUmaReferenciaDocumentoFiscalNotaFiscal(String, String)
+  fullName: NotaFiscalNet.Core.Tests.ReferenciaDocumentoFiscalNotaFiscalTests.DeveSerializarUmaReferenciaDocumentoFiscalNotaFiscal(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/ReferenciaDocumentoFiscalNotaFiscalTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveSerializarUmaReferenciaDocumentoFiscalNotaFiscal
+    path: tests/NotaFiscalNet.Core.Tests/ReferenciaDocumentoFiscalNotaFiscalTests.cs
+    startLine: 18
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests
+  syntax:
+    content: public void DeveSerializarUmaReferenciaDocumentoFiscalNotaFiscal(string chaveReferencia, string xml)
+    content.vb: Public Sub DeveSerializarUmaReferenciaDocumentoFiscalNotaFiscal(chaveReferencia As String, xml As String)
+    parameters:
+    - id: chaveReferencia
+      type: System.String
+    - id: xml
+      type: System.String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core.Tests
+  isExternal: false
+  name: NotaFiscalNet.Core.Tests
+  fullName: NotaFiscalNet.Core.Tests
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

@@ -1,0 +1,102 @@
+items:
+- uid: NotaFiscalNet.Core.TipoAmbiente
+  id: TipoAmbiente
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.TipoAmbiente.Homologacao
+  - NotaFiscalNet.Core.TipoAmbiente.Producao
+  langs:
+  - csharp
+  - vb
+  name: TipoAmbiente
+  fullName: NotaFiscalNet.Core.TipoAmbiente
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoAmbiente.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoAmbiente
+    path: src/NotaFiscalNet.Core/TipoAmbiente.cs
+    startLine: 8
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nTipo do ambiente no qual a NF-e está rodando.\r\n"
+  example: []
+  syntax:
+    content: public enum TipoAmbiente
+    content.vb: Public Enum TipoAmbiente
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.TipoAmbiente.Producao
+  id: Producao
+  parent: NotaFiscalNet.Core.TipoAmbiente
+  langs:
+  - csharp
+  - vb
+  name: Producao
+  fullName: NotaFiscalNet.Core.TipoAmbiente.Producao
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoAmbiente.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Producao
+    path: src/NotaFiscalNet.Core/TipoAmbiente.cs
+    startLine: 13
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n1 - Ambiente de produção.\r\n"
+  example: []
+  syntax:
+    content: "[Description(\"Produção\")]\nProducao = 1"
+    content.vb: "<Description(\"Produção\")>\nProducao = 1"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoAmbiente.Homologacao
+  id: Homologacao
+  parent: NotaFiscalNet.Core.TipoAmbiente
+  langs:
+  - csharp
+  - vb
+  name: Homologacao
+  fullName: NotaFiscalNet.Core.TipoAmbiente.Homologacao
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoAmbiente.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Homologacao
+    path: src/NotaFiscalNet.Core/TipoAmbiente.cs
+    startLine: 19
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n2 - Ambiente de homologação.\r\n"
+  example: []
+  syntax:
+    content: "[Description(\"Homologação\")]\nHomologacao = 2"
+    content.vb: "<Description(\"Homologação\")>\nHomologacao = 2"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

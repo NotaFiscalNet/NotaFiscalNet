@@ -1,0 +1,763 @@
+items:
+- uid: NotaFiscalNet.Core.ChaveDeAcessoNFe
+  id: ChaveDeAcessoNFe
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.ChaveDeAcessoNFe.#ctor(NotaFiscalNet.Core.UfIBGE,System.DateTime,System.String,NotaFiscalNet.Core.TipoModalidadeDocumentoFiscal,System.Int32,System.Int32,NotaFiscalNet.Core.TipoEmissaoNFe,System.Int32)
+  - NotaFiscalNet.Core.ChaveDeAcessoNFe.#ctor(System.String)
+  - NotaFiscalNet.Core.ChaveDeAcessoNFe.AnoMes
+  - NotaFiscalNet.Core.ChaveDeAcessoNFe.Cnpj
+  - NotaFiscalNet.Core.ChaveDeAcessoNFe.CodigoNF
+  - NotaFiscalNet.Core.ChaveDeAcessoNFe.DV
+  - NotaFiscalNet.Core.ChaveDeAcessoNFe.Modalidade
+  - NotaFiscalNet.Core.ChaveDeAcessoNFe.Numero
+  - NotaFiscalNet.Core.ChaveDeAcessoNFe.Serie
+  - NotaFiscalNet.Core.ChaveDeAcessoNFe.TipoEmissao
+  - NotaFiscalNet.Core.ChaveDeAcessoNFe.ToString
+  - NotaFiscalNet.Core.ChaveDeAcessoNFe.UF
+  langs:
+  - csharp
+  - vb
+  name: ChaveDeAcessoNFe
+  fullName: NotaFiscalNet.Core.ChaveDeAcessoNFe
+  type: Struct
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ChaveDeAcessoNFe
+    path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public struct ChaveDeAcessoNFe
+    content.vb: Public Structure ChaveDeAcessoNFe
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: NotaFiscalNet.Core.ChaveDeAcessoNFe.UF
+  id: UF
+  parent: NotaFiscalNet.Core.ChaveDeAcessoNFe
+  langs:
+  - csharp
+  - vb
+  name: UF
+  fullName: NotaFiscalNet.Core.ChaveDeAcessoNFe.UF
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: UF
+    path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+    startLine: 14
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna o código da UF de emissão.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public UfIBGE UF
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property UF As UfIBGE
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.UfIBGE
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.ChaveDeAcessoNFe.AnoMes
+  id: AnoMes
+  parent: NotaFiscalNet.Core.ChaveDeAcessoNFe
+  langs:
+  - csharp
+  - vb
+  name: AnoMes
+  fullName: NotaFiscalNet.Core.ChaveDeAcessoNFe.AnoMes
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: AnoMes
+    path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+    startLine: 19
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna o Ano e Mês da emissão.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public DateTime AnoMes
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property AnoMes As Date
+    parameters: []
+    return:
+      type: System.DateTime
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.ChaveDeAcessoNFe.Cnpj
+  id: Cnpj
+  parent: NotaFiscalNet.Core.ChaveDeAcessoNFe
+  langs:
+  - csharp
+  - vb
+  name: Cnpj
+  fullName: NotaFiscalNet.Core.ChaveDeAcessoNFe.Cnpj
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cnpj
+    path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+    startLine: 24
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna o Cnpj do Emitente.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string Cnpj
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Cnpj As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.ChaveDeAcessoNFe.Modalidade
+  id: Modalidade
+  parent: NotaFiscalNet.Core.ChaveDeAcessoNFe
+  langs:
+  - csharp
+  - vb
+  name: Modalidade
+  fullName: NotaFiscalNet.Core.ChaveDeAcessoNFe.Modalidade
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Modalidade
+    path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+    startLine: 29
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna o Tipo da Modalidade do Documento Fiscal (modalidade).\r\n"
+  example: []
+  syntax:
+    content: >-
+      public TipoModalidadeDocumentoFiscal Modalidade
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Modalidade As TipoModalidadeDocumentoFiscal
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoModalidadeDocumentoFiscal
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.ChaveDeAcessoNFe.Serie
+  id: Serie
+  parent: NotaFiscalNet.Core.ChaveDeAcessoNFe
+  langs:
+  - csharp
+  - vb
+  name: Serie
+  fullName: NotaFiscalNet.Core.ChaveDeAcessoNFe.Serie
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Serie
+    path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+    startLine: 34
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna a Série da Numeração do Documento Fiscal.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int Serie
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Serie As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.ChaveDeAcessoNFe.Numero
+  id: Numero
+  parent: NotaFiscalNet.Core.ChaveDeAcessoNFe
+  langs:
+  - csharp
+  - vb
+  name: Numero
+  fullName: NotaFiscalNet.Core.ChaveDeAcessoNFe.Numero
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Numero
+    path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+    startLine: 39
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna o Número do Documento Fiscal.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int Numero
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Numero As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.ChaveDeAcessoNFe.TipoEmissao
+  id: TipoEmissao
+  parent: NotaFiscalNet.Core.ChaveDeAcessoNFe
+  langs:
+  - csharp
+  - vb
+  name: TipoEmissao
+  fullName: NotaFiscalNet.Core.ChaveDeAcessoNFe.TipoEmissao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoEmissao
+    path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+    startLine: 44
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna o Tipo da Emissão do Documento Fiscal.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public TipoEmissaoNFe TipoEmissao
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property TipoEmissao As TipoEmissaoNFe
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoEmissaoNFe
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.ChaveDeAcessoNFe.CodigoNF
+  id: CodigoNF
+  parent: NotaFiscalNet.Core.ChaveDeAcessoNFe
+  langs:
+  - csharp
+  - vb
+  name: CodigoNF
+  fullName: NotaFiscalNet.Core.ChaveDeAcessoNFe.CodigoNF
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CodigoNF
+    path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+    startLine: 49
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna o código numérico do Documento Fiscal.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int CodigoNF
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property CodigoNF As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.ChaveDeAcessoNFe.DV
+  id: DV
+  parent: NotaFiscalNet.Core.ChaveDeAcessoNFe
+  langs:
+  - csharp
+  - vb
+  name: DV
+  fullName: NotaFiscalNet.Core.ChaveDeAcessoNFe.DV
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DV
+    path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+    startLine: 54
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna o Dígito Verificador da Chave de Acesso.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int DV
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property DV As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.ChaveDeAcessoNFe.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: NotaFiscalNet.Core.ChaveDeAcessoNFe
+  langs:
+  - csharp
+  - vb
+  name: ChaveDeAcessoNFe(String)
+  fullName: NotaFiscalNet.Core.ChaveDeAcessoNFe.ChaveDeAcessoNFe(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+    startLine: 60
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nInicializa uma nova instância com base em um valor existente.\r\n"
+  example: []
+  syntax:
+    content: public ChaveDeAcessoNFe(string valor)
+    content.vb: Public Sub New(valor As String)
+    parameters:
+    - id: valor
+      type: System.String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.ChaveDeAcessoNFe.#ctor(NotaFiscalNet.Core.UfIBGE,System.DateTime,System.String,NotaFiscalNet.Core.TipoModalidadeDocumentoFiscal,System.Int32,System.Int32,NotaFiscalNet.Core.TipoEmissaoNFe,System.Int32)
+  id: '#ctor(NotaFiscalNet.Core.UfIBGE,System.DateTime,System.String,NotaFiscalNet.Core.TipoModalidadeDocumentoFiscal,System.Int32,System.Int32,NotaFiscalNet.Core.TipoEmissaoNFe,System.Int32)'
+  parent: NotaFiscalNet.Core.ChaveDeAcessoNFe
+  langs:
+  - csharp
+  - vb
+  name: ChaveDeAcessoNFe(UfIBGE, DateTime, String, TipoModalidadeDocumentoFiscal, Int32, Int32, TipoEmissaoNFe, Int32)
+  fullName: NotaFiscalNet.Core.ChaveDeAcessoNFe.ChaveDeAcessoNFe(NotaFiscalNet.Core.UfIBGE, System.DateTime, System.String, NotaFiscalNet.Core.TipoModalidadeDocumentoFiscal, System.Int32, System.Int32, NotaFiscalNet.Core.TipoEmissaoNFe, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+    startLine: 77
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nCria uma nova chave de acesso.\r\n"
+  example: []
+  syntax:
+    content: public ChaveDeAcessoNFe(UfIBGE uf, DateTime anoMes, string cnpj, TipoModalidadeDocumentoFiscal modalidade, int serie, int numero, TipoEmissaoNFe tipoEmissao, int codigoNF)
+    content.vb: Public Sub New(uf As UfIBGE, anoMes As Date, cnpj As String, modalidade As TipoModalidadeDocumentoFiscal, serie As Integer, numero As Integer, tipoEmissao As TipoEmissaoNFe, codigoNF As Integer)
+    parameters:
+    - id: uf
+      type: NotaFiscalNet.Core.UfIBGE
+    - id: anoMes
+      type: System.DateTime
+    - id: cnpj
+      type: System.String
+    - id: modalidade
+      type: NotaFiscalNet.Core.TipoModalidadeDocumentoFiscal
+    - id: serie
+      type: System.Int32
+    - id: numero
+      type: System.Int32
+    - id: tipoEmissao
+      type: NotaFiscalNet.Core.TipoEmissaoNFe
+    - id: codigoNF
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.ChaveDeAcessoNFe.ToString
+  id: ToString
+  parent: NotaFiscalNet.Core.ChaveDeAcessoNFe
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  fullName: NotaFiscalNet.Core.ChaveDeAcessoNFe.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToString
+    path: src/NotaFiscalNet.Core/ChaveDeAcessoNFe.cs
+    startLine: 119
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+  overridden: System.ValueType.ToString
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: NotaFiscalNet.Core.UfIBGE
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: UfIBGE
+  fullName: NotaFiscalNet.Core.UfIBGE
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: NotaFiscalNet.Core.TipoModalidadeDocumentoFiscal
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoModalidadeDocumentoFiscal
+  fullName: NotaFiscalNet.Core.TipoModalidadeDocumentoFiscal
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: NotaFiscalNet.Core.TipoEmissaoNFe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoEmissaoNFe
+  fullName: NotaFiscalNet.Core.TipoEmissaoNFe
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )

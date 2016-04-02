@@ -1,0 +1,7 @@
+_site
+output/
+/**/drop/
+/**/temp/
+/**/packages/
+/**/bin/
+/**/obj/

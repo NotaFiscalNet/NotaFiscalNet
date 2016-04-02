@@ -1,0 +1,931 @@
+items:
+- uid: NotaFiscalNet.Core.AquisicaoCana
+  id: AquisicaoCana
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.AquisicaoCana.Deducoes
+  - NotaFiscalNet.Core.AquisicaoCana.FornecimentosDiarios
+  - NotaFiscalNet.Core.AquisicaoCana.Modificado
+  - NotaFiscalNet.Core.AquisicaoCana.QuantidadeTotalAnterior
+  - NotaFiscalNet.Core.AquisicaoCana.QuantidadeTotalGeral
+  - NotaFiscalNet.Core.AquisicaoCana.QuantidadeTotalMes
+  - NotaFiscalNet.Core.AquisicaoCana.Referencia
+  - NotaFiscalNet.Core.AquisicaoCana.Safra
+  - NotaFiscalNet.Core.AquisicaoCana.Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  - NotaFiscalNet.Core.AquisicaoCana.ValorFornecimentos
+  - NotaFiscalNet.Core.AquisicaoCana.ValorLiquidoFornecimentos
+  - NotaFiscalNet.Core.AquisicaoCana.ValorTotalDeducoes
+  langs:
+  - csharp
+  - vb
+  name: AquisicaoCana
+  fullName: NotaFiscalNet.Core.AquisicaoCana
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: AquisicaoCana
+    path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nInformações de registro aquisições de cana.\r\n"
+  example: []
+  syntax:
+    content: 'public sealed class AquisicaoCana : ISerializavel, IModificavel'
+    content.vb: >-
+      Public NotInheritable Class AquisicaoCana
+
+          Implements ISerializavel, IModificavel
+  inheritance:
+  - System.Object
+  implements:
+  - NotaFiscalNet.Core.Interfaces.ISerializavel
+  - NotaFiscalNet.Core.Interfaces.IModificavel
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: NotaFiscalNet.Core.AquisicaoCana.Safra
+  id: Safra
+  parent: NotaFiscalNet.Core.AquisicaoCana
+  langs:
+  - csharp
+  - vb
+  name: Safra
+  fullName: NotaFiscalNet.Core.AquisicaoCana.Safra
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Safra
+    path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+    startLine: 25
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[safra] Retorna ou define o identificador da Safra. Informar AAAA ou AAAA/AAAA.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "ZC02", FieldName = "safra", DataType = "TString")]
+
+      [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public string Safra
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="ZC02", FieldName:="safra", DataType:="TString")>
+
+      <CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property Safra As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.AquisicaoCana.Referencia
+  id: Referencia
+  parent: NotaFiscalNet.Core.AquisicaoCana
+  langs:
+  - csharp
+  - vb
+  name: Referencia
+  fullName: NotaFiscalNet.Core.AquisicaoCana.Referencia
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Referencia
+    path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+    startLine: 36
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[ref] Retorna ou define o Mês e Ano de referência.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "ZC03", FieldName = "ref", DataType = "xs:string")]
+
+      [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public DateTime Referencia
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="ZC03", FieldName:="ref", DataType:="xs:string")>
+
+      <CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property Referencia As Date
+    parameters: []
+    return:
+      type: System.DateTime
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.AquisicaoCana.FornecimentosDiarios
+  id: FornecimentosDiarios
+  parent: NotaFiscalNet.Core.AquisicaoCana
+  langs:
+  - csharp
+  - vb
+  name: FornecimentosDiarios
+  fullName: NotaFiscalNet.Core.AquisicaoCana.FornecimentosDiarios
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: FornecimentosDiarios
+    path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+    startLine: 47
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[forDia] Retorna a lista de fornecimentos diários de Cana.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "ZC04", FieldName = "forDia")]
+
+      [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido, TamanhoMinimo = 1, TamanhoMaximo = 31)]
+
+      public FornecimentoDiarioCanaCollection FornecimentosDiarios
+
+      {
+
+          get;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="ZC04", FieldName:="forDia")>
+
+      <CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido, TamanhoMinimo:=1, TamanhoMaximo:=31)>
+
+      Public ReadOnly Property FornecimentosDiarios As FornecimentoDiarioCanaCollection
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.FornecimentoDiarioCanaCollection
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.AquisicaoCana.QuantidadeTotalMes
+  id: QuantidadeTotalMes
+  parent: NotaFiscalNet.Core.AquisicaoCana
+  langs:
+  - csharp
+  - vb
+  name: QuantidadeTotalMes
+  fullName: NotaFiscalNet.Core.AquisicaoCana.QuantidadeTotalMes
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: QuantidadeTotalMes
+    path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+    startLine: 54
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[qTotMes] Retorna ou define a quantidade total do mês.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "ZC07", FieldName = "qTotMes", DataType = "TDec_1110")]
+
+      [CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public decimal QuantidadeTotalMes
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="ZC07", FieldName:="qTotMes", DataType:="TDec_1110")>
+
+      <CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property QuantidadeTotalMes As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.AquisicaoCana.QuantidadeTotalAnterior
+  id: QuantidadeTotalAnterior
+  parent: NotaFiscalNet.Core.AquisicaoCana
+  langs:
+  - csharp
+  - vb
+  name: QuantidadeTotalAnterior
+  fullName: NotaFiscalNet.Core.AquisicaoCana.QuantidadeTotalAnterior
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: QuantidadeTotalAnterior
+    path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+    startLine: 65
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[qTotAnt] Retorna ou define a quantidade total anterior.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "ZC08", FieldName = "qTotAnt", DataType = "TDec_1110")]
+
+      [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public decimal QuantidadeTotalAnterior
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="ZC08", FieldName:="qTotAnt", DataType:="TDec_1110")>
+
+      <CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property QuantidadeTotalAnterior As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.AquisicaoCana.QuantidadeTotalGeral
+  id: QuantidadeTotalGeral
+  parent: NotaFiscalNet.Core.AquisicaoCana
+  langs:
+  - csharp
+  - vb
+  name: QuantidadeTotalGeral
+  fullName: NotaFiscalNet.Core.AquisicaoCana.QuantidadeTotalGeral
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: QuantidadeTotalGeral
+    path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+    startLine: 76
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[qTotGer] Retorna ou define a quantidade total geral.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "ZC09", FieldName = "qTotGer", DataType = "TDec_1110")]
+
+      [CampoValidavel(6, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public decimal QuantidadeTotalGeral
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="ZC09", FieldName:="qTotGer", DataType:="TDec_1110")>
+
+      <CampoValidavel(6, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property QuantidadeTotalGeral As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.AquisicaoCana.Deducoes
+  id: Deducoes
+  parent: NotaFiscalNet.Core.AquisicaoCana
+  langs:
+  - csharp
+  - vb
+  name: Deducoes
+  fullName: NotaFiscalNet.Core.AquisicaoCana.Deducoes
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Deducoes
+    path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+    startLine: 87
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[deduc] Retorna a lista de deduções (Taxas e Contribuições).\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "ZC10", FieldName = "deduc")]
+
+      [CampoValidavel(7, ChaveErroValidacao.CampoNaoPreenchido, TamanhoMinimo = 0, TamanhoMaximo = 10)]
+
+      public DeducaoCanaCollection Deducoes
+
+      {
+
+          get;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="ZC10", FieldName:="deduc")>
+
+      <CampoValidavel(7, ChaveErroValidacao.CampoNaoPreenchido, TamanhoMinimo:=0, TamanhoMaximo:=10)>
+
+      Public ReadOnly Property Deducoes As DeducaoCanaCollection
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.DeducaoCanaCollection
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.AquisicaoCana.ValorFornecimentos
+  id: ValorFornecimentos
+  parent: NotaFiscalNet.Core.AquisicaoCana
+  langs:
+  - csharp
+  - vb
+  name: ValorFornecimentos
+  fullName: NotaFiscalNet.Core.AquisicaoCana.ValorFornecimentos
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorFornecimentos
+    path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+    startLine: 94
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vFor] Retorna ou define o Valor dos Fornecimentos.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "ZC13", FieldName = "vFor", DataType = "TDec_1302")]
+
+      [CampoValidavel(8, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public decimal ValorFornecimentos
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="ZC13", FieldName:="vFor", DataType:="TDec_1302")>
+
+      <CampoValidavel(8, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property ValorFornecimentos As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.AquisicaoCana.ValorTotalDeducoes
+  id: ValorTotalDeducoes
+  parent: NotaFiscalNet.Core.AquisicaoCana
+  langs:
+  - csharp
+  - vb
+  name: ValorTotalDeducoes
+  fullName: NotaFiscalNet.Core.AquisicaoCana.ValorTotalDeducoes
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorTotalDeducoes
+    path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+    startLine: 105
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vTotDed] Retorna ou define o Valor Total das Deduções.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "ZC14", FieldName = "vTotDed", DataType = "TDec_1302")]
+
+      [CampoValidavel(9, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public decimal ValorTotalDeducoes
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="ZC14", FieldName:="vTotDed", DataType:="TDec_1302")>
+
+      <CampoValidavel(9, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property ValorTotalDeducoes As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.AquisicaoCana.ValorLiquidoFornecimentos
+  id: ValorLiquidoFornecimentos
+  parent: NotaFiscalNet.Core.AquisicaoCana
+  langs:
+  - csharp
+  - vb
+  name: ValorLiquidoFornecimentos
+  fullName: NotaFiscalNet.Core.AquisicaoCana.ValorLiquidoFornecimentos
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorLiquidoFornecimentos
+    path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+    startLine: 116
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vLiqFor] Retorna ou define o Valor Líquido dos fornecimentos.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "ZC15", FieldName = "vLiqFor", DataType = "TDec_1302")]
+
+      [CampoValidavel(10, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public decimal ValorLiquidoFornecimentos
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="ZC15", FieldName:="vLiqFor", DataType:="TDec_1302")>
+
+      <CampoValidavel(10, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property ValorLiquidoFornecimentos As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.AquisicaoCana.Modificado
+  id: Modificado
+  parent: NotaFiscalNet.Core.AquisicaoCana
+  langs:
+  - csharp
+  - vb
+  name: Modificado
+  fullName: NotaFiscalNet.Core.AquisicaoCana.Modificado
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Modificado
+    path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+    startLine: 124
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: >-
+      public bool Modificado
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Modificado As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.AquisicaoCana.Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  id: Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  parent: NotaFiscalNet.Core.AquisicaoCana
+  langs:
+  - csharp
+  - vb
+  name: Serializar(XmlWriter, INFe)
+  fullName: NotaFiscalNet.Core.AquisicaoCana.Serializar(System.Xml.XmlWriter, NotaFiscalNet.Core.INFe)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Serializar
+    path: src/NotaFiscalNet.Core/AquisicaoCana.cs
+    startLine: 130
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public void Serializar(XmlWriter writer, INFe nfe)
+    content.vb: Public Sub Serializar(writer As XmlWriter, nfe As INFe)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+    - id: nfe
+      type: NotaFiscalNet.Core.INFe
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: NotaFiscalNet.Core.Interfaces.ISerializavel
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: ISerializavel
+  fullName: NotaFiscalNet.Core.Interfaces.ISerializavel
+- uid: NotaFiscalNet.Core.Interfaces.IModificavel
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: IModificavel
+  fullName: NotaFiscalNet.Core.Interfaces.IModificavel
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: NotaFiscalNet.Core.Interfaces
+  fullName: NotaFiscalNet.Core.Interfaces
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime
+- uid: NotaFiscalNet.Core.FornecimentoDiarioCanaCollection
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: FornecimentoDiarioCanaCollection
+  fullName: NotaFiscalNet.Core.FornecimentoDiarioCanaCollection
+- uid: System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  fullName: System.Decimal
+- uid: NotaFiscalNet.Core.DeducaoCanaCollection
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: DeducaoCanaCollection
+  fullName: NotaFiscalNet.Core.DeducaoCanaCollection
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Xml.XmlWriter
+  parent: System.Xml
+  isExternal: true
+  name: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: NotaFiscalNet.Core.INFe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: INFe
+  fullName: NotaFiscalNet.Core.INFe
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml

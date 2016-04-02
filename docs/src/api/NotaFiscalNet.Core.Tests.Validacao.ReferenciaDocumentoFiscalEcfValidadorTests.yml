@@ -1,0 +1,274 @@
+items:
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests
+  id: ReferenciaDocumentoFiscalEcfValidadorTests
+  parent: NotaFiscalNet.Core.Tests.Validacao
+  children:
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests.DeveImpedirModeloDocumentoFiscalInexistente(System.String)
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests.DeveMostrarErroSeNaoInformarCodigoModeloDocumentoFiscal
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests.DeveMostrarErroSeNaoInformarNumeroContadorOrdemOperacaoForaRange(System.Int32)
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests.DeveMostrarErroSeNaoInformarNumeroEcfForaRange(System.Int32)
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests.DevePermitirTodosModeloDocumentoFiscalExistente(System.String)
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests.NaoDeveMostrarErroSeNaoInformarNumeroContadorOrdemOperacaoDentroRange(System.Int32)
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests.NaoDeveMostrarErroSeNaoInformarNumeroEcfDentroRange(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: ReferenciaDocumentoFiscalEcfValidadorTests
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests
+  type: Class
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalEcfValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ReferenciaDocumentoFiscalEcfValidadorTests
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalEcfValidadorTests.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: 'public class ReferenciaDocumentoFiscalEcfValidadorTests : object'
+    content.vb: >-
+      Public Class ReferenciaDocumentoFiscalEcfValidadorTests
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests.DeveImpedirModeloDocumentoFiscalInexistente(System.String)
+  id: DeveImpedirModeloDocumentoFiscalInexistente(System.String)
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DeveImpedirModeloDocumentoFiscalInexistente(String)
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests.DeveImpedirModeloDocumentoFiscalInexistente(System.String)
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalEcfValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveImpedirModeloDocumentoFiscalInexistente
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalEcfValidadorTests.cs
+    startLine: 15
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DeveImpedirModeloDocumentoFiscalInexistente(string codigoModeloFiscal)
+    content.vb: Public Sub DeveImpedirModeloDocumentoFiscalInexistente(codigoModeloFiscal As String)
+    parameters:
+    - id: codigoModeloFiscal
+      type: System.String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests.DevePermitirTodosModeloDocumentoFiscalExistente(System.String)
+  id: DevePermitirTodosModeloDocumentoFiscalExistente(System.String)
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DevePermitirTodosModeloDocumentoFiscalExistente(String)
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests.DevePermitirTodosModeloDocumentoFiscalExistente(System.String)
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalEcfValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DevePermitirTodosModeloDocumentoFiscalExistente
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalEcfValidadorTests.cs
+    startLine: 27
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DevePermitirTodosModeloDocumentoFiscalExistente(string codigoModeloFiscal)
+    content.vb: Public Sub DevePermitirTodosModeloDocumentoFiscalExistente(codigoModeloFiscal As String)
+    parameters:
+    - id: codigoModeloFiscal
+      type: System.String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests.DeveMostrarErroSeNaoInformarCodigoModeloDocumentoFiscal
+  id: DeveMostrarErroSeNaoInformarCodigoModeloDocumentoFiscal
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DeveMostrarErroSeNaoInformarCodigoModeloDocumentoFiscal()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests.DeveMostrarErroSeNaoInformarCodigoModeloDocumentoFiscal()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalEcfValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveMostrarErroSeNaoInformarCodigoModeloDocumentoFiscal
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalEcfValidadorTests.cs
+    startLine: 36
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DeveMostrarErroSeNaoInformarCodigoModeloDocumentoFiscal()
+    content.vb: Public Sub DeveMostrarErroSeNaoInformarCodigoModeloDocumentoFiscal
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests.DeveMostrarErroSeNaoInformarNumeroEcfForaRange(System.Int32)
+  id: DeveMostrarErroSeNaoInformarNumeroEcfForaRange(System.Int32)
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DeveMostrarErroSeNaoInformarNumeroEcfForaRange(Int32)
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests.DeveMostrarErroSeNaoInformarNumeroEcfForaRange(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalEcfValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveMostrarErroSeNaoInformarNumeroEcfForaRange
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalEcfValidadorTests.cs
+    startLine: 46
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DeveMostrarErroSeNaoInformarNumeroEcfForaRange(int numeroEcf)
+    content.vb: Public Sub DeveMostrarErroSeNaoInformarNumeroEcfForaRange(numeroEcf As Integer)
+    parameters:
+    - id: numeroEcf
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests.NaoDeveMostrarErroSeNaoInformarNumeroEcfDentroRange(System.Int32)
+  id: NaoDeveMostrarErroSeNaoInformarNumeroEcfDentroRange(System.Int32)
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: NaoDeveMostrarErroSeNaoInformarNumeroEcfDentroRange(Int32)
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests.NaoDeveMostrarErroSeNaoInformarNumeroEcfDentroRange(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalEcfValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoDeveMostrarErroSeNaoInformarNumeroEcfDentroRange
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalEcfValidadorTests.cs
+    startLine: 60
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void NaoDeveMostrarErroSeNaoInformarNumeroEcfDentroRange(int numeroEcf)
+    content.vb: Public Sub NaoDeveMostrarErroSeNaoInformarNumeroEcfDentroRange(numeroEcf As Integer)
+    parameters:
+    - id: numeroEcf
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests.DeveMostrarErroSeNaoInformarNumeroContadorOrdemOperacaoForaRange(System.Int32)
+  id: DeveMostrarErroSeNaoInformarNumeroContadorOrdemOperacaoForaRange(System.Int32)
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DeveMostrarErroSeNaoInformarNumeroContadorOrdemOperacaoForaRange(Int32)
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests.DeveMostrarErroSeNaoInformarNumeroContadorOrdemOperacaoForaRange(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalEcfValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveMostrarErroSeNaoInformarNumeroContadorOrdemOperacaoForaRange
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalEcfValidadorTests.cs
+    startLine: 68
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DeveMostrarErroSeNaoInformarNumeroContadorOrdemOperacaoForaRange(int numeroContadorOrdemOperacao)
+    content.vb: Public Sub DeveMostrarErroSeNaoInformarNumeroContadorOrdemOperacaoForaRange(numeroContadorOrdemOperacao As Integer)
+    parameters:
+    - id: numeroContadorOrdemOperacao
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests.NaoDeveMostrarErroSeNaoInformarNumeroContadorOrdemOperacaoDentroRange(System.Int32)
+  id: NaoDeveMostrarErroSeNaoInformarNumeroContadorOrdemOperacaoDentroRange(System.Int32)
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: NaoDeveMostrarErroSeNaoInformarNumeroContadorOrdemOperacaoDentroRange(Int32)
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests.NaoDeveMostrarErroSeNaoInformarNumeroContadorOrdemOperacaoDentroRange(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalEcfValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoDeveMostrarErroSeNaoInformarNumeroContadorOrdemOperacaoDentroRange
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalEcfValidadorTests.cs
+    startLine: 82
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void NaoDeveMostrarErroSeNaoInformarNumeroContadorOrdemOperacaoDentroRange(int numeroContadorOrdemOperacao)
+    content.vb: Public Sub NaoDeveMostrarErroSeNaoInformarNumeroContadorOrdemOperacaoDentroRange(numeroContadorOrdemOperacao As Integer)
+    parameters:
+    - id: numeroContadorOrdemOperacao
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core.Tests.Validacao
+  isExternal: false
+  name: NotaFiscalNet.Core.Tests.Validacao
+  fullName: NotaFiscalNet.Core.Tests.Validacao
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

@@ -1,0 +1,2194 @@
+items:
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions
+  id: ValidationExtensions
+  parent: NotaFiscalNet.Core.Utils
+  children:
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.CheckReadOnly(NotaFiscalNet.Core.Interfaces.ISomenteLeitura)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.TruncateString(System.String,System.Int32)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateCEP(System.String,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateCEP(System.String,System.String,System.Boolean)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateCNAE(System.String,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateCNAE(System.String,System.String,System.Boolean)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateCNPJ(System.String,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateCNPJ(System.String,System.String,System.Boolean)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateCPF(System.String,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateCPF(System.String,System.String,System.Boolean)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateEnum``1(``0,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateEnumOptional``1(``0,``0,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateExTIPI(System.String,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateGTIN(System.String,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateIncricaoEstadual(System.String,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateIncricaoEstadualDestino(System.String,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateIncricaoSUFRAMA(System.String,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateInt7(System.Int32,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateInt9(System.Int32,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateLong15(System.Int64,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateNCM(System.String,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidatePlaca(System.String,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateRange(System.Decimal,System.Decimal,System.Decimal,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateRange(System.Double,System.Double,System.Double,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateRange(System.Int32,System.Int32,System.Int32,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateRange(System.Int64,System.Int64,System.Int64,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateRange(System.String,System.Int32,System.Int32,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateRegex(System.Int32,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateRegex(System.String,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTCfop(System.Int32,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTCListServ(System.Int32,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTCodMunIBGE(System.Int32,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTData(System.DateTime,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDateTimeUtc(System.DateTime,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_0302(System.Double,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_0504(System.Double,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_0803(System.Double,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_0804(System.Double,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_1104(System.Double,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_1110(System.Decimal,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_1203(System.Double,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_1204(System.Decimal,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_1302(System.Decimal,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_1302(System.Double,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_1302Opc(System.Double,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_1504(System.Double,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTelefone(System.String,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTNF(System.Int32,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTSerie(System.Int32,System.String)
+  - NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTString(System.String,System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: ValidationExtensions
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidationExtensions
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 10
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  summary: "\r\nClasse de Suporte para Validação\r\n"
+  example: []
+  syntax:
+    content: public class ValidationExtensions
+    content.vb: Public Class ValidationExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateRegex(System.String,System.String)
+  id: ValidateRegex(System.String,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateRegex(String, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateRegex(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateRegex
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 41
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static bool ValidateRegex(string value, string pattern)
+    content.vb: Public Shared Function ValidateRegex(value As String, pattern As String) As Boolean
+    parameters:
+    - id: value
+      type: System.String
+    - id: pattern
+      type: System.String
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateRegex(System.Int32,System.String)
+  id: ValidateRegex(System.Int32,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateRegex(Int32, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateRegex(System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateRegex
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 46
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static bool ValidateRegex(int value, string pattern)
+    content.vb: Public Shared Function ValidateRegex(value As Integer, pattern As String) As Boolean
+    parameters:
+    - id: value
+      type: System.Int32
+    - id: pattern
+      type: System.String
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateEnum``1(``0,System.String)
+  id: ValidateEnum``1(``0,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateEnum<TEnum>(TEnum, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateEnum<TEnum>(TEnum, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateEnum
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 51
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static TEnum ValidateEnum<TEnum>(TEnum value, string paramName)
+    content.vb: Public Shared Function ValidateEnum(Of TEnum)(value As TEnum, paramName As String) As TEnum
+    parameters:
+    - id: value
+      type: '{TEnum}'
+    - id: paramName
+      type: System.String
+    typeParameters:
+    - id: TEnum
+    return:
+      type: '{TEnum}'
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateEnum(Of TEnum)(TEnum, System.String)
+  name.vb: ValidateEnum(Of TEnum)(TEnum, String)
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateEnumOptional``1(``0,``0,System.String)
+  id: ValidateEnumOptional``1(``0,``0,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateEnumOptional<TEnum>(TEnum, TEnum, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateEnumOptional<TEnum>(TEnum, TEnum, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateEnumOptional
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 61
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static TEnum ValidateEnumOptional<TEnum>(TEnum value, TEnum notSetValue, string paramName)
+    content.vb: Public Shared Function ValidateEnumOptional(Of TEnum)(value As TEnum, notSetValue As TEnum, paramName As String) As TEnum
+    parameters:
+    - id: value
+      type: '{TEnum}'
+    - id: notSetValue
+      type: '{TEnum}'
+    - id: paramName
+      type: System.String
+    typeParameters:
+    - id: TEnum
+    return:
+      type: '{TEnum}'
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateEnumOptional(Of TEnum)(TEnum, TEnum, System.String)
+  name.vb: ValidateEnumOptional(Of TEnum)(TEnum, TEnum, String)
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateInt9(System.Int32,System.String)
+  id: ValidateInt9(System.Int32,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateInt9(Int32, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateInt9(System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateInt9
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 74
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static int ValidateInt9(int value, string paramName)
+    content.vb: Public Shared Function ValidateInt9(value As Integer, paramName As String) As Integer
+    parameters:
+    - id: value
+      type: System.Int32
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateInt7(System.Int32,System.String)
+  id: ValidateInt7(System.Int32,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateInt7(Int32, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateInt7(System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateInt7
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 79
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static int ValidateInt7(int value, string paramName)
+    content.vb: Public Shared Function ValidateInt7(value As Integer, paramName As String) As Integer
+    parameters:
+    - id: value
+      type: System.Int32
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateLong15(System.Int64,System.String)
+  id: ValidateLong15(System.Int64,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateLong15(Int64, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateLong15(System.Int64, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateLong15
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 84
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static long ValidateLong15(long value, string paramName)
+    content.vb: Public Shared Function ValidateLong15(value As Long, paramName As String) As Long
+    parameters:
+    - id: value
+      type: System.Int64
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Int64
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_0803(System.Double,System.String)
+  id: ValidateTDec_0803(System.Double,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateTDec_0803(Double, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_0803(System.Double, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateTDec_0803
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 89
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static double ValidateTDec_0803(double value, string paramName)
+    content.vb: Public Shared Function ValidateTDec_0803(value As Double, paramName As String) As Double
+    parameters:
+    - id: value
+      type: System.Double
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Double
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_1504(System.Double,System.String)
+  id: ValidateTDec_1504(System.Double,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateTDec_1504(Double, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_1504(System.Double, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateTDec_1504
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 94
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static double ValidateTDec_1504(double value, string paramName)
+    content.vb: Public Shared Function ValidateTDec_1504(value As Double, paramName As String) As Double
+    parameters:
+    - id: value
+      type: System.Double
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Double
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_0804(System.Double,System.String)
+  id: ValidateTDec_0804(System.Double,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateTDec_0804(Double, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_0804(System.Double, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateTDec_0804
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 101
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static double ValidateTDec_0804(double value, string paramName)
+    content.vb: Public Shared Function ValidateTDec_0804(value As Double, paramName As String) As Double
+    parameters:
+    - id: value
+      type: System.Double
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Double
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_1302Opc(System.Double,System.String)
+  id: ValidateTDec_1302Opc(System.Double,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateTDec_1302Opc(Double, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_1302Opc(System.Double, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateTDec_1302Opc
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 107
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static double ValidateTDec_1302Opc(double value, string paramName)
+    content.vb: Public Shared Function ValidateTDec_1302Opc(value As Double, paramName As String) As Double
+    parameters:
+    - id: value
+      type: System.Double
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Double
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_1302(System.Double,System.String)
+  id: ValidateTDec_1302(System.Double,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateTDec_1302(Double, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_1302(System.Double, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateTDec_1302
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 113
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static double ValidateTDec_1302(double value, string paramName)
+    content.vb: Public Shared Function ValidateTDec_1302(value As Double, paramName As String) As Double
+    parameters:
+    - id: value
+      type: System.Double
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Double
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_1302(System.Decimal,System.String)
+  id: ValidateTDec_1302(System.Decimal,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateTDec_1302(Decimal, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_1302(System.Decimal, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateTDec_1302
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 119
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static decimal ValidateTDec_1302(decimal value, string paramName)
+    content.vb: Public Shared Function ValidateTDec_1302(value As Decimal, paramName As String) As Decimal
+    parameters:
+    - id: value
+      type: System.Decimal
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_0302(System.Double,System.String)
+  id: ValidateTDec_0302(System.Double,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateTDec_0302(Double, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_0302(System.Double, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateTDec_0302
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 125
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static double ValidateTDec_0302(double value, string paramName)
+    content.vb: Public Shared Function ValidateTDec_0302(value As Double, paramName As String) As Double
+    parameters:
+    - id: value
+      type: System.Double
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Double
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_0504(System.Double,System.String)
+  id: ValidateTDec_0504(System.Double,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateTDec_0504(Double, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_0504(System.Double, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateTDec_0504
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 130
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static double ValidateTDec_0504(double value, string paramName)
+    content.vb: Public Shared Function ValidateTDec_0504(value As Double, paramName As String) As Double
+    parameters:
+    - id: value
+      type: System.Double
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Double
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_1203(System.Double,System.String)
+  id: ValidateTDec_1203(System.Double,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateTDec_1203(Double, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_1203(System.Double, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateTDec_1203
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 135
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static double ValidateTDec_1203(double value, string paramName)
+    content.vb: Public Shared Function ValidateTDec_1203(value As Double, paramName As String) As Double
+    parameters:
+    - id: value
+      type: System.Double
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Double
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_1104(System.Double,System.String)
+  id: ValidateTDec_1104(System.Double,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateTDec_1104(Double, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_1104(System.Double, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateTDec_1104
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 141
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static double ValidateTDec_1104(double value, string paramName)
+    content.vb: Public Shared Function ValidateTDec_1104(value As Double, paramName As String) As Double
+    parameters:
+    - id: value
+      type: System.Double
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Double
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_1204(System.Decimal,System.String)
+  id: ValidateTDec_1204(System.Decimal,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateTDec_1204(Decimal, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_1204(System.Decimal, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateTDec_1204
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 146
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static decimal ValidateTDec_1204(decimal value, string paramName)
+    content.vb: Public Shared Function ValidateTDec_1204(value As Decimal, paramName As String) As Decimal
+    parameters:
+    - id: value
+      type: System.Decimal
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_1110(System.Decimal,System.String)
+  id: ValidateTDec_1110(System.Decimal,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateTDec_1110(Decimal, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDec_1110(System.Decimal, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateTDec_1110
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 151
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static decimal ValidateTDec_1110(decimal value, string paramName)
+    content.vb: Public Shared Function ValidateTDec_1110(value As Decimal, paramName As String) As Decimal
+    parameters:
+    - id: value
+      type: System.Decimal
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateGTIN(System.String,System.String)
+  id: ValidateGTIN(System.String,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateGTIN(String, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateGTIN(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateGTIN
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 157
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ValidateGTIN(string value, string paramName)
+    content.vb: Public Shared Function ValidateGTIN(value As String, paramName As String) As String
+    parameters:
+    - id: value
+      type: System.String
+    - id: paramName
+      type: System.String
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateNCM(System.String,System.String)
+  id: ValidateNCM(System.String,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateNCM(String, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateNCM(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateNCM
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 164
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ValidateNCM(string value, string paramName)
+    content.vb: Public Shared Function ValidateNCM(value As String, paramName As String) As String
+    parameters:
+    - id: value
+      type: System.String
+    - id: paramName
+      type: System.String
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateExTIPI(System.String,System.String)
+  id: ValidateExTIPI(System.String,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateExTIPI(String, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateExTIPI(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateExTIPI
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 171
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ValidateExTIPI(string value, string paramName)
+    content.vb: Public Shared Function ValidateExTIPI(value As String, paramName As String) As String
+    parameters:
+    - id: value
+      type: System.String
+    - id: paramName
+      type: System.String
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateRange(System.String,System.Int32,System.Int32,System.String)
+  id: ValidateRange(System.String,System.Int32,System.Int32,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateRange(String, Int32, Int32, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateRange(System.String, System.Int32, System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateRange
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 181
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ValidateRange(string value, int min, int max, string paramName)
+    content.vb: Public Shared Function ValidateRange(value As String, min As Integer, max As Integer, paramName As String) As String
+    parameters:
+    - id: value
+      type: System.String
+    - id: min
+      type: System.Int32
+    - id: max
+      type: System.Int32
+    - id: paramName
+      type: System.String
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.TruncateString(System.String,System.Int32)
+  id: TruncateString(System.String,System.Int32)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: TruncateString(String, Int32)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.TruncateString(System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TruncateString
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 189
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string TruncateString(string value, int tamMax)
+    content.vb: Public Shared Function TruncateString(value As String, tamMax As Integer) As String
+    parameters:
+    - id: value
+      type: System.String
+    - id: tamMax
+      type: System.Int32
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTString(System.String,System.Int32,System.Int32)
+  id: ValidateTString(System.String,System.Int32,System.Int32)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateTString(String, Int32, Int32)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTString(System.String, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateTString
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 196
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ValidateTString(string value, int minLength, int maxLength)
+    content.vb: Public Shared Function ValidateTString(value As String, minLength As Integer, maxLength As Integer) As String
+    parameters:
+    - id: value
+      type: System.String
+    - id: minLength
+      type: System.Int32
+    - id: maxLength
+      type: System.Int32
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.CheckReadOnly(NotaFiscalNet.Core.Interfaces.ISomenteLeitura)
+  id: CheckReadOnly(NotaFiscalNet.Core.Interfaces.ISomenteLeitura)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: CheckReadOnly(ISomenteLeitura)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.CheckReadOnly(NotaFiscalNet.Core.Interfaces.ISomenteLeitura)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CheckReadOnly
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 207
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static void CheckReadOnly(ISomenteLeitura entity)
+    content.vb: Public Shared Sub CheckReadOnly(entity As ISomenteLeitura)
+    parameters:
+    - id: entity
+      type: NotaFiscalNet.Core.Interfaces.ISomenteLeitura
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTSerie(System.Int32,System.String)
+  id: ValidateTSerie(System.Int32,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateTSerie(Int32, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTSerie(System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateTSerie
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 213
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static int ValidateTSerie(int value, string paramName)
+    content.vb: Public Shared Function ValidateTSerie(value As Integer, paramName As String) As Integer
+    parameters:
+    - id: value
+      type: System.Int32
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTNF(System.Int32,System.String)
+  id: ValidateTNF(System.Int32,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateTNF(Int32, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTNF(System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateTNF
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 219
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static int ValidateTNF(int value, string paramName)
+    content.vb: Public Shared Function ValidateTNF(value As Integer, paramName As String) As Integer
+    parameters:
+    - id: value
+      type: System.Int32
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTData(System.DateTime,System.String)
+  id: ValidateTData(System.DateTime,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateTData(DateTime, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTData(System.DateTime, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateTData
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 225
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static DateTime ValidateTData(DateTime value, string paramName)
+    content.vb: Public Shared Function ValidateTData(value As Date, paramName As String) As Date
+    parameters:
+    - id: value
+      type: System.DateTime
+    - id: paramName
+      type: System.String
+    return:
+      type: System.DateTime
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDateTimeUtc(System.DateTime,System.String)
+  id: ValidateTDateTimeUtc(System.DateTime,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateTDateTimeUtc(DateTime, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTDateTimeUtc(System.DateTime, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateTDateTimeUtc
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 232
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static DateTime ValidateTDateTimeUtc(DateTime value, string paramName)
+    content.vb: Public Shared Function ValidateTDateTimeUtc(value As Date, paramName As String) As Date
+    parameters:
+    - id: value
+      type: System.DateTime
+    - id: paramName
+      type: System.String
+    return:
+      type: System.DateTime
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTCodMunIBGE(System.Int32,System.String)
+  id: ValidateTCodMunIBGE(System.Int32,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateTCodMunIBGE(Int32, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTCodMunIBGE(System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateTCodMunIBGE
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 239
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static int ValidateTCodMunIBGE(int value, string paramName)
+    content.vb: Public Shared Function ValidateTCodMunIBGE(value As Integer, paramName As String) As Integer
+    parameters:
+    - id: value
+      type: System.Int32
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateCNPJ(System.String,System.String)
+  id: ValidateCNPJ(System.String,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateCNPJ(String, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateCNPJ(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateCNPJ
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 246
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ValidateCNPJ(string value, string paramName)
+    content.vb: Public Shared Function ValidateCNPJ(value As String, paramName As String) As String
+    parameters:
+    - id: value
+      type: System.String
+    - id: paramName
+      type: System.String
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateCNPJ(System.String,System.String,System.Boolean)
+  id: ValidateCNPJ(System.String,System.String,System.Boolean)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateCNPJ(String, String, Boolean)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateCNPJ(System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateCNPJ
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 256
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ValidateCNPJ(string value, string paramName, bool opcional)
+    content.vb: Public Shared Function ValidateCNPJ(value As String, paramName As String, opcional As Boolean) As String
+    parameters:
+    - id: value
+      type: System.String
+    - id: paramName
+      type: System.String
+    - id: opcional
+      type: System.Boolean
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTelefone(System.String,System.String)
+  id: ValidateTelefone(System.String,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateTelefone(String, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTelefone(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateTelefone
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 267
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ValidateTelefone(string value, string paramName)
+    content.vb: Public Shared Function ValidateTelefone(value As String, paramName As String) As String
+    parameters:
+    - id: value
+      type: System.String
+    - id: paramName
+      type: System.String
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateCPF(System.String,System.String)
+  id: ValidateCPF(System.String,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateCPF(String, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateCPF(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateCPF
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 274
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ValidateCPF(string value, string paramName)
+    content.vb: Public Shared Function ValidateCPF(value As String, paramName As String) As String
+    parameters:
+    - id: value
+      type: System.String
+    - id: paramName
+      type: System.String
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateCPF(System.String,System.String,System.Boolean)
+  id: ValidateCPF(System.String,System.String,System.Boolean)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateCPF(String, String, Boolean)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateCPF(System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateCPF
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 279
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ValidateCPF(string value, string paramName, bool opcional)
+    content.vb: Public Shared Function ValidateCPF(value As String, paramName As String, opcional As Boolean) As String
+    parameters:
+    - id: value
+      type: System.String
+    - id: paramName
+      type: System.String
+    - id: opcional
+      type: System.Boolean
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateCNAE(System.String,System.String)
+  id: ValidateCNAE(System.String,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateCNAE(String, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateCNAE(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateCNAE
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 290
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ValidateCNAE(string value, string paramName)
+    content.vb: Public Shared Function ValidateCNAE(value As String, paramName As String) As String
+    parameters:
+    - id: value
+      type: System.String
+    - id: paramName
+      type: System.String
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateCNAE(System.String,System.String,System.Boolean)
+  id: ValidateCNAE(System.String,System.String,System.Boolean)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateCNAE(String, String, Boolean)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateCNAE(System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateCNAE
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 295
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ValidateCNAE(string value, string paramName, bool opcional)
+    content.vb: Public Shared Function ValidateCNAE(value As String, paramName As String, opcional As Boolean) As String
+    parameters:
+    - id: value
+      type: System.String
+    - id: paramName
+      type: System.String
+    - id: opcional
+      type: System.Boolean
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateCEP(System.String,System.String)
+  id: ValidateCEP(System.String,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateCEP(String, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateCEP(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateCEP
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 306
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ValidateCEP(string value, string paramName)
+    content.vb: Public Shared Function ValidateCEP(value As String, paramName As String) As String
+    parameters:
+    - id: value
+      type: System.String
+    - id: paramName
+      type: System.String
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateCEP(System.String,System.String,System.Boolean)
+  id: ValidateCEP(System.String,System.String,System.Boolean)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateCEP(String, String, Boolean)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateCEP(System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateCEP
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 311
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ValidateCEP(string value, string paramName, bool opcional)
+    content.vb: Public Shared Function ValidateCEP(value As String, paramName As String, opcional As Boolean) As String
+    parameters:
+    - id: value
+      type: System.String
+    - id: paramName
+      type: System.String
+    - id: opcional
+      type: System.Boolean
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateIncricaoEstadual(System.String,System.String)
+  id: ValidateIncricaoEstadual(System.String,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateIncricaoEstadual(String, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateIncricaoEstadual(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateIncricaoEstadual
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 321
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static void ValidateIncricaoEstadual(string value, string paramName)
+    content.vb: Public Shared Sub ValidateIncricaoEstadual(value As String, paramName As String)
+    parameters:
+    - id: value
+      type: System.String
+    - id: paramName
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateIncricaoEstadualDestino(System.String,System.String)
+  id: ValidateIncricaoEstadualDestino(System.String,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateIncricaoEstadualDestino(String, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateIncricaoEstadualDestino(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateIncricaoEstadualDestino
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 327
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static void ValidateIncricaoEstadualDestino(string value, string paramName)
+    content.vb: Public Shared Sub ValidateIncricaoEstadualDestino(value As String, paramName As String)
+    parameters:
+    - id: value
+      type: System.String
+    - id: paramName
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateIncricaoSUFRAMA(System.String,System.String)
+  id: ValidateIncricaoSUFRAMA(System.String,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateIncricaoSUFRAMA(String, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateIncricaoSUFRAMA(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateIncricaoSUFRAMA
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 333
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static void ValidateIncricaoSUFRAMA(string value, string paramName)
+    content.vb: Public Shared Sub ValidateIncricaoSUFRAMA(value As String, paramName As String)
+    parameters:
+    - id: value
+      type: System.String
+    - id: paramName
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTCfop(System.Int32,System.String)
+  id: ValidateTCfop(System.Int32,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateTCfop(Int32, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTCfop(System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateTCfop
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 339
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static int ValidateTCfop(int value, string paramName)
+    content.vb: Public Shared Function ValidateTCfop(value As Integer, paramName As String) As Integer
+    parameters:
+    - id: value
+      type: System.Int32
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidatePlaca(System.String,System.String)
+  id: ValidatePlaca(System.String,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidatePlaca(String, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidatePlaca(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidatePlaca
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 347
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ValidatePlaca(string value, string paramName)
+    content.vb: Public Shared Function ValidatePlaca(value As String, paramName As String) As String
+    parameters:
+    - id: value
+      type: System.String
+    - id: paramName
+      type: System.String
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTCListServ(System.Int32,System.String)
+  id: ValidateTCListServ(System.Int32,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateTCListServ(Int32, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateTCListServ(System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateTCListServ
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 355
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static int ValidateTCListServ(int value, string paramName)
+    content.vb: Public Shared Function ValidateTCListServ(value As Integer, paramName As String) As Integer
+    parameters:
+    - id: value
+      type: System.Int32
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateRange(System.Double,System.Double,System.Double,System.String)
+  id: ValidateRange(System.Double,System.Double,System.Double,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateRange(Double, Double, Double, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateRange(System.Double, System.Double, System.Double, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateRange
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 361
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static double ValidateRange(double value, double min, double max, string paramName)
+    content.vb: Public Shared Function ValidateRange(value As Double, min As Double, max As Double, paramName As String) As Double
+    parameters:
+    - id: value
+      type: System.Double
+    - id: min
+      type: System.Double
+    - id: max
+      type: System.Double
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Double
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateRange(System.Decimal,System.Decimal,System.Decimal,System.String)
+  id: ValidateRange(System.Decimal,System.Decimal,System.Decimal,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateRange(Decimal, Decimal, Decimal, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateRange(System.Decimal, System.Decimal, System.Decimal, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateRange
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 368
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static decimal ValidateRange(decimal value, decimal min, decimal max, string paramName)
+    content.vb: Public Shared Function ValidateRange(value As Decimal, min As Decimal, max As Decimal, paramName As String) As Decimal
+    parameters:
+    - id: value
+      type: System.Decimal
+    - id: min
+      type: System.Decimal
+    - id: max
+      type: System.Decimal
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateRange(System.Int32,System.Int32,System.Int32,System.String)
+  id: ValidateRange(System.Int32,System.Int32,System.Int32,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateRange(Int32, Int32, Int32, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateRange(System.Int32, System.Int32, System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateRange
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 375
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static int ValidateRange(int value, int min, int max, string paramName)
+    content.vb: Public Shared Function ValidateRange(value As Integer, min As Integer, max As Integer, paramName As String) As Integer
+    parameters:
+    - id: value
+      type: System.Int32
+    - id: min
+      type: System.Int32
+    - id: max
+      type: System.Int32
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateRange(System.Int64,System.Int64,System.Int64,System.String)
+  id: ValidateRange(System.Int64,System.Int64,System.Int64,System.String)
+  parent: NotaFiscalNet.Core.Utils.ValidationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateRange(Int64, Int64, Int64, String)
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions.ValidateRange(System.Int64, System.Int64, System.Int64, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValidateRange
+    path: src/NotaFiscalNet.Core/Utils/ValidationExtensions.cs
+    startLine: 382
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static long ValidateRange(long value, long min, long max, string paramName)
+    content.vb: Public Shared Function ValidateRange(value As Long, min As Long, max As Long, paramName As String) As Long
+    parameters:
+    - id: value
+      type: System.Int64
+    - id: min
+      type: System.Int64
+    - id: max
+      type: System.Int64
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Int64
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: NotaFiscalNet.Core.Utils
+  isExternal: false
+  name: NotaFiscalNet.Core.Utils
+  fullName: NotaFiscalNet.Core.Utils
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: '{TEnum}'
+  isExternal: false
+  name: TEnum
+  fullName: TEnum
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  fullName: System.Double
+- uid: System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  fullName: System.Decimal
+- uid: NotaFiscalNet.Core.Interfaces.ISomenteLeitura
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: ISomenteLeitura
+  fullName: NotaFiscalNet.Core.Interfaces.ISomenteLeitura
+- uid: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: NotaFiscalNet.Core.Interfaces
+  fullName: NotaFiscalNet.Core.Interfaces
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime

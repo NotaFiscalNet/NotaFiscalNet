@@ -1,0 +1,827 @@
+items:
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe
+  id: RetornoConsultaSituacaoNFe
+  parent: NotaFiscalNet.Core.Transmissao
+  children:
+  - NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.Ambiente
+  - NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.ChaveAcesso
+  - NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.CodigoStatus
+  - NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.DataRecebimento
+  - NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.Motivo
+  - NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.Parse(System.String)
+  - NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.ProtocoloCancelamentoNFe
+  - NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.ProtocoloEventoNFe
+  - NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.ProtocoloStatusNFe
+  - NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.RawXml
+  - NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.ReadFrom(System.Xml.XmlNode)
+  - NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.UF
+  - NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.Versao
+  langs:
+  - csharp
+  - vb
+  name: RetornoConsultaSituacaoNFe
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: RetornoConsultaSituacaoNFe
+    path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+    startLine: 7
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: public class RetornoConsultaSituacaoNFe
+    content.vb: Public Class RetornoConsultaSituacaoNFe
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.RawXml
+  id: RawXml
+  parent: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: RawXml
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.RawXml
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: RawXml
+    path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+    startLine: 9
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: >-
+      public string RawXml
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property RawXml As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.Versao
+  id: Versao
+  parent: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: Versao
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.Versao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Versao
+    path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: >-
+      public string Versao
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Versao As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.Ambiente
+  id: Ambiente
+  parent: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: Ambiente
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.Ambiente
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Ambiente
+    path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+    startLine: 13
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: >-
+      public TipoAmbiente Ambiente
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Ambiente As TipoAmbiente
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoAmbiente
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.CodigoStatus
+  id: CodigoStatus
+  parent: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: CodigoStatus
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.CodigoStatus
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CodigoStatus
+    path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+    startLine: 15
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: >-
+      public string CodigoStatus
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property CodigoStatus As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.Motivo
+  id: Motivo
+  parent: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: Motivo
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.Motivo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Motivo
+    path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+    startLine: 17
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: >-
+      public string Motivo
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Motivo As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.UF
+  id: UF
+  parent: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: UF
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.UF
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: UF
+    path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+    startLine: 19
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: >-
+      public UfIBGE UF
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property UF As UfIBGE
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.UfIBGE
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.DataRecebimento
+  id: DataRecebimento
+  parent: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: DataRecebimento
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.DataRecebimento
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DataRecebimento
+    path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: >-
+      public DateTime DataRecebimento
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property DataRecebimento As Date
+    parameters: []
+    return:
+      type: System.DateTime
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.ChaveAcesso
+  id: ChaveAcesso
+  parent: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: ChaveAcesso
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.ChaveAcesso
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ChaveAcesso
+    path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+    startLine: 23
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: >-
+      public string ChaveAcesso
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property ChaveAcesso As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.ProtocoloStatusNFe
+  id: ProtocoloStatusNFe
+  parent: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: ProtocoloStatusNFe
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.ProtocoloStatusNFe
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ProtocoloStatusNFe
+    path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+    startLine: 25
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: >-
+      public ProtocoloNFe ProtocoloStatusNFe
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property ProtocoloStatusNFe As ProtocoloNFe
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.Transmissao.ProtocoloNFe
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.ProtocoloCancelamentoNFe
+  id: ProtocoloCancelamentoNFe
+  parent: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: ProtocoloCancelamentoNFe
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.ProtocoloCancelamentoNFe
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ProtocoloCancelamentoNFe
+    path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+    startLine: 27
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: >-
+      public RetornoCancelamentoNFe ProtocoloCancelamentoNFe
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property ProtocoloCancelamentoNFe As RetornoCancelamentoNFe
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.Transmissao.RetornoCancelamentoNFe
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.ProtocoloEventoNFe
+  id: ProtocoloEventoNFe
+  parent: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: ProtocoloEventoNFe
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.ProtocoloEventoNFe
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ProtocoloEventoNFe
+    path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+    startLine: 29
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: >-
+      public ProtocoloEventoNFe ProtocoloEventoNFe
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property ProtocoloEventoNFe As ProtocoloEventoNFe
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.Transmissao.ProtocoloEventoNFe
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.Parse(System.String)
+  id: Parse(System.String)
+  parent: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: Parse(String)
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.Parse(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Parse
+    path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+    startLine: 68
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: public static RetornoConsultaSituacaoNFe Parse(string xmlRetConsSitNFe)
+    content.vb: Public Shared Function Parse(xmlRetConsSitNFe As String) As RetornoConsultaSituacaoNFe
+    parameters:
+    - id: xmlRetConsSitNFe
+      type: System.String
+    return:
+      type: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.ReadFrom(System.Xml.XmlNode)
+  id: ReadFrom(System.Xml.XmlNode)
+  parent: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: ReadFrom(XmlNode)
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe.ReadFrom(System.Xml.XmlNode)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ReadFrom
+    path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaSituacaoNFe.cs
+    startLine: 73
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: public static RetornoConsultaSituacaoNFe ReadFrom(XmlNode retConsSitNFe)
+    content.vb: Public Shared Function ReadFrom(retConsSitNFe As XmlNode) As RetornoConsultaSituacaoNFe
+    parameters:
+    - id: retConsSitNFe
+      type: System.Xml.XmlNode
+    return:
+      type: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: NotaFiscalNet.Core.Transmissao
+  isExternal: false
+  name: NotaFiscalNet.Core.Transmissao
+  fullName: NotaFiscalNet.Core.Transmissao
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: NotaFiscalNet.Core.TipoAmbiente
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoAmbiente
+  fullName: NotaFiscalNet.Core.TipoAmbiente
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: NotaFiscalNet.Core.UfIBGE
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: UfIBGE
+  fullName: NotaFiscalNet.Core.UfIBGE
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime
+- uid: NotaFiscalNet.Core.Transmissao.ProtocoloNFe
+  parent: NotaFiscalNet.Core.Transmissao
+  isExternal: false
+  name: ProtocoloNFe
+  fullName: NotaFiscalNet.Core.Transmissao.ProtocoloNFe
+- uid: NotaFiscalNet.Core.Transmissao.RetornoCancelamentoNFe
+  parent: NotaFiscalNet.Core.Transmissao
+  isExternal: false
+  name: RetornoCancelamentoNFe
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoCancelamentoNFe
+- uid: NotaFiscalNet.Core.Transmissao.ProtocoloEventoNFe
+  parent: NotaFiscalNet.Core.Transmissao
+  isExternal: false
+  name: ProtocoloEventoNFe
+  fullName: NotaFiscalNet.Core.Transmissao.ProtocoloEventoNFe
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe
+  parent: NotaFiscalNet.Core.Transmissao
+  isExternal: false
+  name: RetornoConsultaSituacaoNFe
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaSituacaoNFe
+- uid: System.Xml.XmlNode
+  parent: System.Xml
+  isExternal: true
+  name: XmlNode
+  fullName: System.Xml.XmlNode
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml

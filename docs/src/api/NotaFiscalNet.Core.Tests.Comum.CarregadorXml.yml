@@ -1,0 +1,116 @@
+items:
+- uid: NotaFiscalNet.Core.Tests.Comum.CarregadorXml
+  id: CarregadorXml
+  parent: NotaFiscalNet.Core.Tests.Comum
+  children:
+  - NotaFiscalNet.Core.Tests.Comum.CarregadorXml.#ctor(System.String)
+  - NotaFiscalNet.Core.Tests.Comum.CarregadorXml.Carregar
+  langs:
+  - csharp
+  - vb
+  name: CarregadorXml
+  fullName: NotaFiscalNet.Core.Tests.Comum.CarregadorXml
+  type: Class
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Comum/CarregadorXml.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CarregadorXml
+    path: tests/NotaFiscalNet.Core.Tests/Comum/CarregadorXml.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Comum
+  syntax:
+    content: 'public class CarregadorXml : object'
+    content.vb: >-
+      Public Class CarregadorXml
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Tests.Comum.CarregadorXml.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: NotaFiscalNet.Core.Tests.Comum.CarregadorXml
+  langs:
+  - csharp
+  - vb
+  name: CarregadorXml(String)
+  fullName: NotaFiscalNet.Core.Tests.Comum.CarregadorXml.CarregadorXml(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Comum/CarregadorXml.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: tests/NotaFiscalNet.Core.Tests/Comum/CarregadorXml.cs
+    startLine: 15
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Comum
+  syntax:
+    content: public CarregadorXml(string arquivoXml)
+    content.vb: Public Sub New(arquivoXml As String)
+    parameters:
+    - id: arquivoXml
+      type: System.String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Comum.CarregadorXml.Carregar
+  id: Carregar
+  parent: NotaFiscalNet.Core.Tests.Comum.CarregadorXml
+  langs:
+  - csharp
+  - vb
+  name: Carregar()
+  fullName: NotaFiscalNet.Core.Tests.Comum.CarregadorXml.Carregar()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Comum/CarregadorXml.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Carregar
+    path: tests/NotaFiscalNet.Core.Tests/Comum/CarregadorXml.cs
+    startLine: 20
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Comum
+  syntax:
+    content: public string Carregar()
+    content.vb: Public Function Carregar As String
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core.Tests.Comum
+  isExternal: false
+  name: NotaFiscalNet.Core.Tests.Comum
+  fullName: NotaFiscalNet.Core.Tests.Comum
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

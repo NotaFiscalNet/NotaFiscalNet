@@ -1,0 +1,702 @@
+items:
+- uid: NotaFiscalNet.Core.LoggerWrapper
+  id: LoggerWrapper
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.LoggerWrapper.#ctor
+  - NotaFiscalNet.Core.LoggerWrapper.#ctor(System.Type)
+  - NotaFiscalNet.Core.LoggerWrapper.Debug(System.String)
+  - NotaFiscalNet.Core.LoggerWrapper.Debug(System.String,System.Exception)
+  - NotaFiscalNet.Core.LoggerWrapper.Error(System.String)
+  - NotaFiscalNet.Core.LoggerWrapper.Error(System.String,System.Exception)
+  - NotaFiscalNet.Core.LoggerWrapper.Fatal(System.String)
+  - NotaFiscalNet.Core.LoggerWrapper.Fatal(System.String,System.Exception)
+  - NotaFiscalNet.Core.LoggerWrapper.Info(System.String)
+  - NotaFiscalNet.Core.LoggerWrapper.Info(System.String,System.Exception)
+  - NotaFiscalNet.Core.LoggerWrapper.Warn(System.String)
+  - NotaFiscalNet.Core.LoggerWrapper.Warn(System.String,System.Exception)
+  langs:
+  - csharp
+  - vb
+  name: LoggerWrapper
+  fullName: NotaFiscalNet.Core.LoggerWrapper
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: LoggerWrapper
+    path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+    startLine: 10
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nlog4net Log helper\r\n"
+  example: []
+  syntax:
+    content: public sealed class LoggerWrapper
+    content.vb: Public NotInheritable Class LoggerWrapper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: NotaFiscalNet.Core.LoggerWrapper.#ctor
+  id: '#ctor'
+  parent: NotaFiscalNet.Core.LoggerWrapper
+  langs:
+  - csharp
+  - vb
+  name: LoggerWrapper()
+  fullName: NotaFiscalNet.Core.LoggerWrapper.LoggerWrapper()
+  type: Constructor
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+    startLine: 45
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nInitializes a new instance of the Logger class.\r\n"
+  example: []
+  syntax:
+    content: public LoggerWrapper()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.LoggerWrapper.#ctor(System.Type)
+  id: '#ctor(System.Type)'
+  parent: NotaFiscalNet.Core.LoggerWrapper
+  langs:
+  - csharp
+  - vb
+  name: LoggerWrapper(Type)
+  fullName: NotaFiscalNet.Core.LoggerWrapper.LoggerWrapper(System.Type)
+  type: Constructor
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+    startLine: 54
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nInitializes a new instance of the Logger class.\r\n"
+  example: []
+  syntax:
+    content: public LoggerWrapper(Type type)
+    content.vb: Public Sub New(type As Type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of logger.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.LoggerWrapper.Debug(System.String)
+  id: Debug(System.String)
+  parent: NotaFiscalNet.Core.LoggerWrapper
+  langs:
+  - csharp
+  - vb
+  name: Debug(String)
+  fullName: NotaFiscalNet.Core.LoggerWrapper.Debug(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Debug
+    path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+    startLine: 69
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nLogs the debug message.\r\n"
+  example: []
+  syntax:
+    content: public void Debug(string message)
+    content.vb: Public Sub Debug(message As String)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.LoggerWrapper.Debug(System.String,System.Exception)
+  id: Debug(System.String,System.Exception)
+  parent: NotaFiscalNet.Core.LoggerWrapper
+  langs:
+  - csharp
+  - vb
+  name: Debug(String, Exception)
+  fullName: NotaFiscalNet.Core.LoggerWrapper.Debug(System.String, System.Exception)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Debug
+    path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+    startLine: 83
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nLogs the debug message and the exception.\r\n"
+  example: []
+  syntax:
+    content: public void Debug(string message, Exception exception)
+    content.vb: Public Sub Debug(message As String, exception As Exception)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message.
+    - id: exception
+      type: System.Exception
+      description: The exception.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.LoggerWrapper.Error(System.String)
+  id: Error(System.String)
+  parent: NotaFiscalNet.Core.LoggerWrapper
+  langs:
+  - csharp
+  - vb
+  name: Error(String)
+  fullName: NotaFiscalNet.Core.LoggerWrapper.Error(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Error
+    path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+    startLine: 96
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nLogs the error message.\r\n"
+  example: []
+  syntax:
+    content: public void Error(string errorMessage)
+    content.vb: Public Sub Error(errorMessage As String)
+    parameters:
+    - id: errorMessage
+      type: System.String
+      description: The error message.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.LoggerWrapper.Error(System.String,System.Exception)
+  id: Error(System.String,System.Exception)
+  parent: NotaFiscalNet.Core.LoggerWrapper
+  langs:
+  - csharp
+  - vb
+  name: Error(String, Exception)
+  fullName: NotaFiscalNet.Core.LoggerWrapper.Error(System.String, System.Exception)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Error
+    path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+    startLine: 110
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nLogs the error message and the exception.\r\n"
+  example: []
+  syntax:
+    content: public void Error(string errorMessage, Exception exception)
+    content.vb: Public Sub Error(errorMessage As String, exception As Exception)
+    parameters:
+    - id: errorMessage
+      type: System.String
+      description: The error message.
+    - id: exception
+      type: System.Exception
+      description: The exception.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.LoggerWrapper.Fatal(System.String)
+  id: Fatal(System.String)
+  parent: NotaFiscalNet.Core.LoggerWrapper
+  langs:
+  - csharp
+  - vb
+  name: Fatal(String)
+  fullName: NotaFiscalNet.Core.LoggerWrapper.Fatal(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Fatal
+    path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+    startLine: 123
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nLogs the fatal error message.\r\n"
+  example: []
+  syntax:
+    content: public void Fatal(string message)
+    content.vb: Public Sub Fatal(message As String)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.LoggerWrapper.Fatal(System.String,System.Exception)
+  id: Fatal(System.String,System.Exception)
+  parent: NotaFiscalNet.Core.LoggerWrapper
+  langs:
+  - csharp
+  - vb
+  name: Fatal(String, Exception)
+  fullName: NotaFiscalNet.Core.LoggerWrapper.Fatal(System.String, System.Exception)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Fatal
+    path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+    startLine: 137
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nLogs the fatal error message and the exception.\r\n"
+  example: []
+  syntax:
+    content: public void Fatal(string message, Exception exception)
+    content.vb: Public Sub Fatal(message As String, exception As Exception)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message.
+    - id: exception
+      type: System.Exception
+      description: The exception.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.LoggerWrapper.Info(System.String)
+  id: Info(System.String)
+  parent: NotaFiscalNet.Core.LoggerWrapper
+  langs:
+  - csharp
+  - vb
+  name: Info(String)
+  fullName: NotaFiscalNet.Core.LoggerWrapper.Info(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Info
+    path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+    startLine: 150
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nLogs the info message.\r\n"
+  example: []
+  syntax:
+    content: public void Info(string message)
+    content.vb: Public Sub Info(message As String)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.LoggerWrapper.Info(System.String,System.Exception)
+  id: Info(System.String,System.Exception)
+  parent: NotaFiscalNet.Core.LoggerWrapper
+  langs:
+  - csharp
+  - vb
+  name: Info(String, Exception)
+  fullName: NotaFiscalNet.Core.LoggerWrapper.Info(System.String, System.Exception)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Info
+    path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+    startLine: 164
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nLogs the info message and the exception.\r\n"
+  example: []
+  syntax:
+    content: public void Info(string message, Exception exception)
+    content.vb: Public Sub Info(message As String, exception As Exception)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message.
+    - id: exception
+      type: System.Exception
+      description: The exception.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.LoggerWrapper.Warn(System.String)
+  id: Warn(System.String)
+  parent: NotaFiscalNet.Core.LoggerWrapper
+  langs:
+  - csharp
+  - vb
+  name: Warn(String)
+  fullName: NotaFiscalNet.Core.LoggerWrapper.Warn(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Warn
+    path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+    startLine: 177
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nLogs the warning message.\r\n"
+  example: []
+  syntax:
+    content: public void Warn(string message)
+    content.vb: Public Sub Warn(message As String)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.LoggerWrapper.Warn(System.String,System.Exception)
+  id: Warn(System.String,System.Exception)
+  parent: NotaFiscalNet.Core.LoggerWrapper
+  langs:
+  - csharp
+  - vb
+  name: Warn(String, Exception)
+  fullName: NotaFiscalNet.Core.LoggerWrapper.Warn(System.String, System.Exception)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Warn
+    path: src/NotaFiscalNet.Core/LoggerWrapper.cs
+    startLine: 191
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nLogs the warning message and the exception.\r\n"
+  example: []
+  syntax:
+    content: public void Warn(string message, Exception exception)
+    content.vb: Public Sub Warn(message As String, exception As Exception)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message.
+    - id: exception
+      type: System.Exception
+      description: The exception.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  fullName: System.Exception

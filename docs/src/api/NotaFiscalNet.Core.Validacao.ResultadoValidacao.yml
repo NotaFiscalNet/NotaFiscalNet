@@ -1,0 +1,571 @@
+items:
+- uid: NotaFiscalNet.Core.Validacao.ResultadoValidacao
+  id: ResultadoValidacao
+  parent: NotaFiscalNet.Core.Validacao
+  children:
+  - NotaFiscalNet.Core.Validacao.ResultadoValidacao.#ctor
+  - NotaFiscalNet.Core.Validacao.ResultadoValidacao.#ctor(System.Collections.Generic.IEnumerable{NotaFiscalNet.Core.Validacao.ErroValidacao})
+  - NotaFiscalNet.Core.Validacao.ResultadoValidacao.Erros
+  - NotaFiscalNet.Core.Validacao.ResultadoValidacao.ToString
+  - NotaFiscalNet.Core.Validacao.ResultadoValidacao.Valido
+  langs:
+  - csharp
+  - vb
+  name: ResultadoValidacao
+  fullName: NotaFiscalNet.Core.Validacao.ResultadoValidacao
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ResultadoValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ResultadoValidacao
+    path: src/NotaFiscalNet.Core/Validacao/ResultadoValidacao.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: public class ResultadoValidacao
+    content.vb: Public Class ResultadoValidacao
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Validacao.ResultadoValidacao.#ctor
+  id: '#ctor'
+  parent: NotaFiscalNet.Core.Validacao.ResultadoValidacao
+  langs:
+  - csharp
+  - vb
+  name: ResultadoValidacao()
+  fullName: NotaFiscalNet.Core.Validacao.ResultadoValidacao.ResultadoValidacao()
+  type: Constructor
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ResultadoValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: src/NotaFiscalNet.Core/Validacao/ResultadoValidacao.cs
+    startLine: 8
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: public ResultadoValidacao()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Validacao.ResultadoValidacao.#ctor(System.Collections.Generic.IEnumerable{NotaFiscalNet.Core.Validacao.ErroValidacao})
+  id: '#ctor(System.Collections.Generic.IEnumerable{NotaFiscalNet.Core.Validacao.ErroValidacao})'
+  parent: NotaFiscalNet.Core.Validacao.ResultadoValidacao
+  langs:
+  - csharp
+  - vb
+  name: ResultadoValidacao(IEnumerable<ErroValidacao>)
+  fullName: NotaFiscalNet.Core.Validacao.ResultadoValidacao.ResultadoValidacao(System.Collections.Generic.IEnumerable<NotaFiscalNet.Core.Validacao.ErroValidacao>)
+  type: Constructor
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ResultadoValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: src/NotaFiscalNet.Core/Validacao/ResultadoValidacao.cs
+    startLine: 13
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: public ResultadoValidacao(IEnumerable<ErroValidacao> erros)
+    content.vb: Public Sub New(erros As IEnumerable(Of ErroValidacao))
+    parameters:
+    - id: erros
+      type: System.Collections.Generic.IEnumerable{NotaFiscalNet.Core.Validacao.ErroValidacao}
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: NotaFiscalNet.Core.Validacao.ResultadoValidacao.ResultadoValidacao(System.Collections.Generic.IEnumerable(Of NotaFiscalNet.Core.Validacao.ErroValidacao))
+  name.vb: ResultadoValidacao(IEnumerable(Of ErroValidacao))
+- uid: NotaFiscalNet.Core.Validacao.ResultadoValidacao.Erros
+  id: Erros
+  parent: NotaFiscalNet.Core.Validacao.ResultadoValidacao
+  langs:
+  - csharp
+  - vb
+  name: Erros
+  fullName: NotaFiscalNet.Core.Validacao.ResultadoValidacao.Erros
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ResultadoValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Erros
+    path: src/NotaFiscalNet.Core/Validacao/ResultadoValidacao.cs
+    startLine: 18
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: >-
+      public List<ErroValidacao> Erros
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Erros As List(Of ErroValidacao)
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{NotaFiscalNet.Core.Validacao.ErroValidacao}
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.ResultadoValidacao.Valido
+  id: Valido
+  parent: NotaFiscalNet.Core.Validacao.ResultadoValidacao
+  langs:
+  - csharp
+  - vb
+  name: Valido
+  fullName: NotaFiscalNet.Core.Validacao.ResultadoValidacao.Valido
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ResultadoValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Valido
+    path: src/NotaFiscalNet.Core/Validacao/ResultadoValidacao.cs
+    startLine: 20
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: >-
+      public bool Valido
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Valido As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.ResultadoValidacao.ToString
+  id: ToString
+  parent: NotaFiscalNet.Core.Validacao.ResultadoValidacao
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  fullName: NotaFiscalNet.Core.Validacao.ResultadoValidacao.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ResultadoValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToString
+    path: src/NotaFiscalNet.Core/Validacao/ResultadoValidacao.cs
+    startLine: 22
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+  overridden: System.Object.ToString
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: NotaFiscalNet.Core.Validacao
+  isExternal: false
+  name: NotaFiscalNet.Core.Validacao
+  fullName: NotaFiscalNet.Core.Validacao
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Collections.Generic.IEnumerable{NotaFiscalNet.Core.Validacao.ErroValidacao}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<ErroValidacao>
+  fullName: System.Collections.Generic.IEnumerable<NotaFiscalNet.Core.Validacao.ErroValidacao>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of NotaFiscalNet.Core.Validacao.ErroValidacao)
+  name.vb: IEnumerable(Of ErroValidacao)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: NotaFiscalNet.Core.Validacao.ErroValidacao
+    name: ErroValidacao
+    fullName: NotaFiscalNet.Core.Validacao.ErroValidacao
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: NotaFiscalNet.Core.Validacao.ErroValidacao
+    name: ErroValidacao
+    fullName: NotaFiscalNet.Core.Validacao.ErroValidacao
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.List{NotaFiscalNet.Core.Validacao.ErroValidacao}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ErroValidacao>
+  fullName: System.Collections.Generic.List<NotaFiscalNet.Core.Validacao.ErroValidacao>
+  fullname.vb: System.Collections.Generic.List(Of NotaFiscalNet.Core.Validacao.ErroValidacao)
+  name.vb: List(Of ErroValidacao)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: NotaFiscalNet.Core.Validacao.ErroValidacao
+    name: ErroValidacao
+    fullName: NotaFiscalNet.Core.Validacao.ErroValidacao
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: NotaFiscalNet.Core.Validacao.ErroValidacao
+    name: ErroValidacao
+    fullName: NotaFiscalNet.Core.Validacao.ErroValidacao
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: List<T>
+  fullName: System.Collections.Generic.List<T>
+  fullname.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

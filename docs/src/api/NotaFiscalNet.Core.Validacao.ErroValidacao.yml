@@ -1,0 +1,497 @@
+items:
+- uid: NotaFiscalNet.Core.Validacao.ErroValidacao
+  id: ErroValidacao
+  parent: NotaFiscalNet.Core.Validacao
+  children:
+  - NotaFiscalNet.Core.Validacao.ErroValidacao.#ctor(System.String,System.String)
+  - NotaFiscalNet.Core.Validacao.ErroValidacao.#ctor(System.String,System.String,System.Object)
+  - NotaFiscalNet.Core.Validacao.ErroValidacao.Descricao
+  - NotaFiscalNet.Core.Validacao.ErroValidacao.Propriedade
+  - NotaFiscalNet.Core.Validacao.ErroValidacao.ToString
+  - NotaFiscalNet.Core.Validacao.ErroValidacao.ValorInformado
+  langs:
+  - csharp
+  - vb
+  name: ErroValidacao
+  fullName: NotaFiscalNet.Core.Validacao.ErroValidacao
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ErroValidacao
+    path: src/NotaFiscalNet.Core/Validacao/ErroValidacao.cs
+    startLine: 7
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  summary: "\r\nRepresenta um erro de validação da Nota Fiscal Eletrônica.\r\n"
+  example: []
+  syntax:
+    content: public class ErroValidacao
+    content.vb: Public Class ErroValidacao
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Validacao.ErroValidacao.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: NotaFiscalNet.Core.Validacao.ErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: ErroValidacao(String, String)
+  fullName: NotaFiscalNet.Core.Validacao.ErroValidacao.ErroValidacao(System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: src/NotaFiscalNet.Core/Validacao/ErroValidacao.cs
+    startLine: 9
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: public ErroValidacao(string propriedade, string descricao)
+    content.vb: Public Sub New(propriedade As String, descricao As String)
+    parameters:
+    - id: propriedade
+      type: System.String
+    - id: descricao
+      type: System.String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Validacao.ErroValidacao.#ctor(System.String,System.String,System.Object)
+  id: '#ctor(System.String,System.String,System.Object)'
+  parent: NotaFiscalNet.Core.Validacao.ErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: ErroValidacao(String, String, Object)
+  fullName: NotaFiscalNet.Core.Validacao.ErroValidacao.ErroValidacao(System.String, System.String, System.Object)
+  type: Constructor
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: src/NotaFiscalNet.Core/Validacao/ErroValidacao.cs
+    startLine: 15
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: public ErroValidacao(string propriedade, string descricao, object valorInformado)
+    content.vb: Public Sub New(propriedade As String, descricao As String, valorInformado As Object)
+    parameters:
+    - id: propriedade
+      type: System.String
+    - id: descricao
+      type: System.String
+    - id: valorInformado
+      type: System.Object
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Validacao.ErroValidacao.ValorInformado
+  id: ValorInformado
+  parent: NotaFiscalNet.Core.Validacao.ErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: ValorInformado
+  fullName: NotaFiscalNet.Core.Validacao.ErroValidacao.ValorInformado
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorInformado
+    path: src/NotaFiscalNet.Core/Validacao/ErroValidacao.cs
+    startLine: 24
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  summary: "\r\nRetorna o valor informado que gerou o erro de validação.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public object ValorInformado
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property ValorInformado As Object
+    parameters: []
+    return:
+      type: System.Object
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.ErroValidacao.Descricao
+  id: Descricao
+  parent: NotaFiscalNet.Core.Validacao.ErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: Descricao
+  fullName: NotaFiscalNet.Core.Validacao.ErroValidacao.Descricao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Descricao
+    path: src/NotaFiscalNet.Core/Validacao/ErroValidacao.cs
+    startLine: 29
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  summary: "\r\nRetorna a descrição completa do erro de validação.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string Descricao
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Descricao As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.ErroValidacao.Propriedade
+  id: Propriedade
+  parent: NotaFiscalNet.Core.Validacao.ErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: Propriedade
+  fullName: NotaFiscalNet.Core.Validacao.ErroValidacao.Propriedade
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Propriedade
+    path: src/NotaFiscalNet.Core/Validacao/ErroValidacao.cs
+    startLine: 34
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  summary: "\r\nRetorna o caminho completo do local onde o erro ocorreu.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string Propriedade
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Propriedade As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Validacao.ErroValidacao.ToString
+  id: ToString
+  parent: NotaFiscalNet.Core.Validacao.ErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  fullName: NotaFiscalNet.Core.Validacao.ErroValidacao.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToString
+    path: src/NotaFiscalNet.Core/Validacao/ErroValidacao.cs
+    startLine: 36
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+  overridden: System.Object.ToString
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: NotaFiscalNet.Core.Validacao
+  isExternal: false
+  name: NotaFiscalNet.Core.Validacao
+  fullName: NotaFiscalNet.Core.Validacao
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )

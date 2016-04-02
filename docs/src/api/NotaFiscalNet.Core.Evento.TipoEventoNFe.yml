@@ -1,0 +1,67 @@
+items:
+- uid: NotaFiscalNet.Core.Evento.TipoEventoNFe
+  id: TipoEventoNFe
+  parent: NotaFiscalNet.Core.Evento
+  children:
+  - NotaFiscalNet.Core.Evento.TipoEventoNFe.Cancelamento
+  langs:
+  - csharp
+  - vb
+  name: TipoEventoNFe
+  fullName: NotaFiscalNet.Core.Evento.TipoEventoNFe
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/TipoEventoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoEventoNFe
+    path: src/NotaFiscalNet.Core/Evento/TipoEventoNFe.cs
+    startLine: 2
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  syntax:
+    content: public enum TipoEventoNFe
+    content.vb: Public Enum TipoEventoNFe
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.Evento.TipoEventoNFe.Cancelamento
+  id: Cancelamento
+  parent: NotaFiscalNet.Core.Evento.TipoEventoNFe
+  langs:
+  - csharp
+  - vb
+  name: Cancelamento
+  fullName: NotaFiscalNet.Core.Evento.TipoEventoNFe.Cancelamento
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/TipoEventoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cancelamento
+    path: src/NotaFiscalNet.Core/Evento/TipoEventoNFe.cs
+    startLine: 7
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  summary: "\r\nEvento de Cancelamento NFe.\r\n"
+  example: []
+  syntax:
+    content: Cancelamento = 110111
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core.Evento
+  isExternal: false
+  name: NotaFiscalNet.Core.Evento
+  fullName: NotaFiscalNet.Core.Evento

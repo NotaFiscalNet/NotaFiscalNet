@@ -1,0 +1,633 @@
+items:
+- uid: NotaFiscalNet.Core.Evento.EventoCancelamentoNFe
+  id: EventoCancelamentoNFe
+  parent: NotaFiscalNet.Core.Evento
+  children:
+  - NotaFiscalNet.Core.Evento.EventoCancelamentoNFe.Descricao
+  - NotaFiscalNet.Core.Evento.EventoCancelamentoNFe.Justificativa
+  - NotaFiscalNet.Core.Evento.EventoCancelamentoNFe.NumeroProtocolo
+  - NotaFiscalNet.Core.Evento.EventoCancelamentoNFe.SerializeDetalheEvento(System.Xml.XmlWriter)
+  - NotaFiscalNet.Core.Evento.EventoCancelamentoNFe.Tipo
+  langs:
+  - csharp
+  - vb
+  name: EventoCancelamentoNFe
+  fullName: NotaFiscalNet.Core.Evento.EventoCancelamentoNFe
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/EventoCancelamentoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: EventoCancelamentoNFe
+    path: src/NotaFiscalNet.Core/Evento/EventoCancelamentoNFe.cs
+    startLine: 7
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  summary: "\r\nDetalhamento de Evento de NFe para Cancelamento.\r\n"
+  example: []
+  syntax:
+    content: 'public class EventoCancelamentoNFe : EventoNFe'
+    content.vb: >-
+      Public Class EventoCancelamentoNFe
+
+          Inherits EventoNFe
+  inheritance:
+  - System.Object
+  - NotaFiscalNet.Core.Evento.EventoNFe
+  inheritedMembers:
+  - NotaFiscalNet.Core.Evento.EventoNFe.Versao
+  - NotaFiscalNet.Core.Evento.EventoNFe.Id
+  - NotaFiscalNet.Core.Evento.EventoNFe.Orgao
+  - NotaFiscalNet.Core.Evento.EventoNFe.Ambiente
+  - NotaFiscalNet.Core.Evento.EventoNFe.CpfCnpjAutor
+  - NotaFiscalNet.Core.Evento.EventoNFe.ChaveAcessoNFe
+  - NotaFiscalNet.Core.Evento.EventoNFe.Data
+  - NotaFiscalNet.Core.Evento.EventoNFe.NumeroSequencial
+  - NotaFiscalNet.Core.Evento.EventoNFe.VersaoEvento
+  - NotaFiscalNet.Core.Evento.EventoNFe.Serialize(System.Xml.XmlWriter)
+  - NotaFiscalNet.Core.Evento.EventoNFe.Validar
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Evento.EventoCancelamentoNFe.Tipo
+  id: Tipo
+  parent: NotaFiscalNet.Core.Evento.EventoCancelamentoNFe
+  langs:
+  - csharp
+  - vb
+  name: Tipo
+  fullName: NotaFiscalNet.Core.Evento.EventoCancelamentoNFe.Tipo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/EventoCancelamentoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Tipo
+    path: src/NotaFiscalNet.Core/Evento/EventoCancelamentoNFe.cs
+    startLine: 12
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  summary: "\r\n[tpEvento] Retorna o tipo de evento referente ao Cancelamento de NF-e.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public override TipoEventoNFe Tipo
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overrides ReadOnly Property Tipo As TipoEventoNFe
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.Evento.TipoEventoNFe
+  overridden: NotaFiscalNet.Core.Evento.EventoNFe.Tipo
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Evento.EventoCancelamentoNFe.Descricao
+  id: Descricao
+  parent: NotaFiscalNet.Core.Evento.EventoCancelamentoNFe
+  langs:
+  - csharp
+  - vb
+  name: Descricao
+  fullName: NotaFiscalNet.Core.Evento.EventoCancelamentoNFe.Descricao
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/EventoCancelamentoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Descricao
+    path: src/NotaFiscalNet.Core/Evento/EventoCancelamentoNFe.cs
+    startLine: 17
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  summary: "\r\n[descEvento ]Retorna a descrição para o evento de Cancelamento da NF-e.\r\n"
+  example: []
+  syntax:
+    content: public const string Descricao
+    content.vb: Public Const Descricao As String = "Cancelamento"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Evento.EventoCancelamentoNFe.NumeroProtocolo
+  id: NumeroProtocolo
+  parent: NotaFiscalNet.Core.Evento.EventoCancelamentoNFe
+  langs:
+  - csharp
+  - vb
+  name: NumeroProtocolo
+  fullName: NotaFiscalNet.Core.Evento.EventoCancelamentoNFe.NumeroProtocolo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/EventoCancelamentoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NumeroProtocolo
+    path: src/NotaFiscalNet.Core/Evento/EventoCancelamentoNFe.cs
+    startLine: 22
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  summary: "\r\n[nProt] Retorna ou define o Número do Protocolo de Status da NF-e.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string NumeroProtocolo
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property NumeroProtocolo As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Evento.EventoCancelamentoNFe.Justificativa
+  id: Justificativa
+  parent: NotaFiscalNet.Core.Evento.EventoCancelamentoNFe
+  langs:
+  - csharp
+  - vb
+  name: Justificativa
+  fullName: NotaFiscalNet.Core.Evento.EventoCancelamentoNFe.Justificativa
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/EventoCancelamentoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Justificativa
+    path: src/NotaFiscalNet.Core/Evento/EventoCancelamentoNFe.cs
+    startLine: 27
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  summary: "\r\n[xJust] Retorna ou define a justificativa do cancelamento da NF-e.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string Justificativa
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Justificativa As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Evento.EventoCancelamentoNFe.SerializeDetalheEvento(System.Xml.XmlWriter)
+  id: SerializeDetalheEvento(System.Xml.XmlWriter)
+  parent: NotaFiscalNet.Core.Evento.EventoCancelamentoNFe
+  langs:
+  - csharp
+  - vb
+  name: SerializeDetalheEvento(XmlWriter)
+  fullName: NotaFiscalNet.Core.Evento.EventoCancelamentoNFe.SerializeDetalheEvento(System.Xml.XmlWriter)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/EventoCancelamentoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SerializeDetalheEvento
+    path: src/NotaFiscalNet.Core/Evento/EventoCancelamentoNFe.cs
+    startLine: 29
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  syntax:
+    content: protected override void SerializeDetalheEvento(XmlWriter writer)
+    content.vb: Protected Overrides Sub SerializeDetalheEvento(writer As XmlWriter)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+  overridden: NotaFiscalNet.Core.Evento.EventoNFe.SerializeDetalheEvento(System.Xml.XmlWriter)
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: NotaFiscalNet.Core.Evento
+  isExternal: false
+  name: NotaFiscalNet.Core.Evento
+  fullName: NotaFiscalNet.Core.Evento
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: NotaFiscalNet.Core.Evento.EventoNFe
+  parent: NotaFiscalNet.Core.Evento
+  isExternal: false
+  name: EventoNFe
+  fullName: NotaFiscalNet.Core.Evento.EventoNFe
+- uid: NotaFiscalNet.Core.Evento.EventoNFe.Versao
+  parent: NotaFiscalNet.Core.Evento.EventoNFe
+  isExternal: false
+  name: Versao
+  fullName: NotaFiscalNet.Core.Evento.EventoNFe.Versao
+- uid: NotaFiscalNet.Core.Evento.EventoNFe.Id
+  parent: NotaFiscalNet.Core.Evento.EventoNFe
+  isExternal: false
+  name: Id
+  fullName: NotaFiscalNet.Core.Evento.EventoNFe.Id
+- uid: NotaFiscalNet.Core.Evento.EventoNFe.Orgao
+  parent: NotaFiscalNet.Core.Evento.EventoNFe
+  isExternal: false
+  name: Orgao
+  fullName: NotaFiscalNet.Core.Evento.EventoNFe.Orgao
+- uid: NotaFiscalNet.Core.Evento.EventoNFe.Ambiente
+  parent: NotaFiscalNet.Core.Evento.EventoNFe
+  isExternal: false
+  name: Ambiente
+  fullName: NotaFiscalNet.Core.Evento.EventoNFe.Ambiente
+- uid: NotaFiscalNet.Core.Evento.EventoNFe.CpfCnpjAutor
+  parent: NotaFiscalNet.Core.Evento.EventoNFe
+  isExternal: false
+  name: CpfCnpjAutor
+  fullName: NotaFiscalNet.Core.Evento.EventoNFe.CpfCnpjAutor
+- uid: NotaFiscalNet.Core.Evento.EventoNFe.ChaveAcessoNFe
+  parent: NotaFiscalNet.Core.Evento.EventoNFe
+  isExternal: false
+  name: ChaveAcessoNFe
+  fullName: NotaFiscalNet.Core.Evento.EventoNFe.ChaveAcessoNFe
+- uid: NotaFiscalNet.Core.Evento.EventoNFe.Data
+  parent: NotaFiscalNet.Core.Evento.EventoNFe
+  isExternal: false
+  name: Data
+  fullName: NotaFiscalNet.Core.Evento.EventoNFe.Data
+- uid: NotaFiscalNet.Core.Evento.EventoNFe.NumeroSequencial
+  parent: NotaFiscalNet.Core.Evento.EventoNFe
+  isExternal: false
+  name: NumeroSequencial
+  fullName: NotaFiscalNet.Core.Evento.EventoNFe.NumeroSequencial
+- uid: NotaFiscalNet.Core.Evento.EventoNFe.VersaoEvento
+  parent: NotaFiscalNet.Core.Evento.EventoNFe
+  isExternal: false
+  name: VersaoEvento
+  fullName: NotaFiscalNet.Core.Evento.EventoNFe.VersaoEvento
+- uid: NotaFiscalNet.Core.Evento.EventoNFe.Serialize(System.Xml.XmlWriter)
+  parent: NotaFiscalNet.Core.Evento.EventoNFe
+  isExternal: true
+  name: Serialize(XmlWriter)
+  fullName: NotaFiscalNet.Core.Evento.EventoNFe.Serialize(System.Xml.XmlWriter)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.Evento.EventoNFe.Serialize(System.Xml.XmlWriter)
+    name: Serialize
+    fullName: NotaFiscalNet.Core.Evento.EventoNFe.Serialize
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.Evento.EventoNFe.Serialize(System.Xml.XmlWriter)
+    name: Serialize
+    fullName: NotaFiscalNet.Core.Evento.EventoNFe.Serialize
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.Evento.EventoNFe.Validar
+  parent: NotaFiscalNet.Core.Evento.EventoNFe
+  isExternal: false
+  name: Validar()
+  fullName: NotaFiscalNet.Core.Evento.EventoNFe.Validar()
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.Evento.EventoNFe.Validar
+    name: Validar
+    fullName: NotaFiscalNet.Core.Evento.EventoNFe.Validar
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.Evento.EventoNFe.Validar
+    name: Validar
+    fullName: NotaFiscalNet.Core.Evento.EventoNFe.Validar
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: NotaFiscalNet.Core.Evento.EventoNFe.Tipo
+  parent: NotaFiscalNet.Core.Evento.EventoNFe
+  isExternal: false
+  name: Tipo
+  fullName: NotaFiscalNet.Core.Evento.EventoNFe.Tipo
+- uid: NotaFiscalNet.Core.Evento.TipoEventoNFe
+  parent: NotaFiscalNet.Core.Evento
+  isExternal: false
+  name: TipoEventoNFe
+  fullName: NotaFiscalNet.Core.Evento.TipoEventoNFe
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: NotaFiscalNet.Core.Evento.EventoNFe.SerializeDetalheEvento(System.Xml.XmlWriter)
+  parent: NotaFiscalNet.Core.Evento.EventoNFe
+  isExternal: true
+  name: SerializeDetalheEvento(XmlWriter)
+  fullName: NotaFiscalNet.Core.Evento.EventoNFe.SerializeDetalheEvento(System.Xml.XmlWriter)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.Evento.EventoNFe.SerializeDetalheEvento(System.Xml.XmlWriter)
+    name: SerializeDetalheEvento
+    fullName: NotaFiscalNet.Core.Evento.EventoNFe.SerializeDetalheEvento
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.Evento.EventoNFe.SerializeDetalheEvento(System.Xml.XmlWriter)
+    name: SerializeDetalheEvento
+    fullName: NotaFiscalNet.Core.Evento.EventoNFe.SerializeDetalheEvento
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlWriter
+  parent: System.Xml
+  isExternal: true
+  name: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml

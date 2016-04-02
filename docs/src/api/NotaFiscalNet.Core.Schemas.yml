@@ -1,0 +1,38 @@
+items:
+- uid: NotaFiscalNet.Core.Schemas
+  id: NotaFiscalNet.Core.Schemas
+  children:
+  - NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe
+  - NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008a
+  - NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2
+  - NotaFiscalNet.Core.Schemas.Schema
+  langs:
+  - csharp
+  - vb
+  name: NotaFiscalNet.Core.Schemas
+  fullName: NotaFiscalNet.Core.Schemas
+  type: Namespace
+  assemblies:
+  - NotaFiscalNet.Core
+references:
+- uid: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2
+  isExternal: false
+  name: PacoteLiberacaoPL_008h2
+  fullName: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2
+- uid: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe
+  parent: NotaFiscalNet.Core.Schemas
+  isExternal: false
+  name: IPacoteLiberacaoNFe
+  fullName: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe
+- uid: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008a
+  isExternal: false
+  name: PacoteLiberacaoPL_008a
+  fullName: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008a
+- uid: NotaFiscalNet.Core.Schemas.Schema
+  isExternal: false
+  name: Schema
+  fullName: NotaFiscalNet.Core.Schemas.Schema
+- uid: NotaFiscalNet.Core.Schemas
+  isExternal: false
+  name: NotaFiscalNet.Core.Schemas
+  fullName: NotaFiscalNet.Core.Schemas

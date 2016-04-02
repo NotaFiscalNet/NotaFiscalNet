@@ -1,0 +1,786 @@
+items:
+- uid: NotaFiscalNet.Core.Combustivel
+  id: Combustivel
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.Combustivel.CIDE
+  - NotaFiscalNet.Core.Combustivel.CodigoCODIF
+  - NotaFiscalNet.Core.Combustivel.CodigoProdutoANP
+  - NotaFiscalNet.Core.Combustivel.Modificado
+  - NotaFiscalNet.Core.Combustivel.PercentualMixGN
+  - NotaFiscalNet.Core.Combustivel.QuantidadeCombustivelFaturadaTempAmbiente
+  - NotaFiscalNet.Core.Combustivel.Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  - NotaFiscalNet.Core.Combustivel.UFConsumo
+  langs:
+  - csharp
+  - vb
+  name: Combustivel
+  fullName: NotaFiscalNet.Core.Combustivel
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Combustivel.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Combustivel
+    path: src/NotaFiscalNet.Core/Combustivel.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRepresenta as informações de detalhamento de um Item de Produto da Nota Fiscal referente a\r\ncombustíveis líquidos.\r\n"
+  example: []
+  syntax:
+    content: 'public sealed class Combustivel : ISerializavel, IModificavel'
+    content.vb: >-
+      Public NotInheritable Class Combustivel
+
+          Implements ISerializavel, IModificavel
+  inheritance:
+  - System.Object
+  implements:
+  - NotaFiscalNet.Core.Interfaces.ISerializavel
+  - NotaFiscalNet.Core.Interfaces.IModificavel
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: NotaFiscalNet.Core.Combustivel.Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  id: Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  parent: NotaFiscalNet.Core.Combustivel
+  langs:
+  - csharp
+  - vb
+  name: Serializar(XmlWriter, INFe)
+  fullName: NotaFiscalNet.Core.Combustivel.Serializar(System.Xml.XmlWriter, NotaFiscalNet.Core.INFe)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Combustivel.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Serializar
+    path: src/NotaFiscalNet.Core/Combustivel.cs
+    startLine: 18
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public void Serializar(XmlWriter writer, INFe nfe)
+    content.vb: Public Sub Serializar(writer As XmlWriter, nfe As INFe)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+    - id: nfe
+      type: NotaFiscalNet.Core.INFe
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Combustivel.CodigoProdutoANP
+  id: CodigoProdutoANP
+  parent: NotaFiscalNet.Core.Combustivel
+  langs:
+  - csharp
+  - vb
+  name: CodigoProdutoANP
+  fullName: NotaFiscalNet.Core.Combustivel.CodigoProdutoANP
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Combustivel.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CodigoProdutoANP
+    path: src/NotaFiscalNet.Core/Combustivel.cs
+    startLine: 52
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[cProdANP] Retorna ou define o Código de produto da ANP. Código de produto da ANP.\r\nUtilizar a codificação de produtos do Sistema de Informações de Movimentação de produtos\r\nSIMP(http://www.anp.gov.br/simp/index.htm), somente informar 999999999 quando não se\r\ntratar de produtos não regulados pela ANP - Agência Nacional do Petróleo\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "cProdANP", DataType = "token", ID = "L102", Pattern = "[0-9]{9}")]
+
+      [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public int CodigoProdutoANP
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="cProdANP", DataType:="token", ID:="L102", Pattern:="[0-9]{9}")>
+
+      <CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property CodigoProdutoANP As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Combustivel.PercentualMixGN
+  id: PercentualMixGN
+  parent: NotaFiscalNet.Core.Combustivel
+  langs:
+  - csharp
+  - vb
+  name: PercentualMixGN
+  fullName: NotaFiscalNet.Core.Combustivel.PercentualMixGN
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Combustivel.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PercentualMixGN
+    path: src/NotaFiscalNet.Core/Combustivel.cs
+    startLine: 64
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[pMixGN] Retorna ou define o Percentual de Gás Natural para o produto GLP\r\n(CodigoProdutoANP = 210203001).\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "pMixGN", DataType = "TDec_0204v", ID = "L102a", Opcional = true)]
+
+      [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public decimal ? PercentualMixGN
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="pMixGN", DataType:="TDec_0204v", ID:="L102a", Opcional:=True)>
+
+      <CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property PercentualMixGN As Decimal?
+    parameters: []
+    return:
+      type: System.Nullable{System.Decimal}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Combustivel.CodigoCODIF
+  id: CodigoCODIF
+  parent: NotaFiscalNet.Core.Combustivel
+  langs:
+  - csharp
+  - vb
+  name: CodigoCODIF
+  fullName: NotaFiscalNet.Core.Combustivel.CodigoCODIF
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Combustivel.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CodigoCODIF
+    path: src/NotaFiscalNet.Core/Combustivel.cs
+    startLine: 77
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[CODIF] Retorna ou define o CODIF (Sistema de Controle do Diferimento do Imposto nas\r\nOperações com AEAC - Álcool Etílico Anidro Combustível). Informar apenas quando a UF\r\nutilizar o CODIF. Apenas números (máximo 21 caracteres).\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "CODIF", DataType = "token", ID = "L103", Pattern = "[0-9]{0,21}", Opcional = true)]
+
+      [CampoValidavel(2, Opcional = true)]
+
+      public string CodigoCODIF
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="CODIF", DataType:="token", ID:="L103", Pattern:="[0-9]{0,21}", Opcional:=True)>
+
+      <CampoValidavel(2, Opcional:=True)>
+
+      Public Property CodigoCODIF As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Combustivel.QuantidadeCombustivelFaturadaTempAmbiente
+  id: QuantidadeCombustivelFaturadaTempAmbiente
+  parent: NotaFiscalNet.Core.Combustivel
+  langs:
+  - csharp
+  - vb
+  name: QuantidadeCombustivelFaturadaTempAmbiente
+  fullName: NotaFiscalNet.Core.Combustivel.QuantidadeCombustivelFaturadaTempAmbiente
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Combustivel.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: QuantidadeCombustivelFaturadaTempAmbiente
+    path: src/NotaFiscalNet.Core/Combustivel.cs
+    startLine: 93
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[qTemp] Retorna ou define a Quantidade de Combustível Faturada à Temperatura Ambiente.\r\n"
+  remarks: "\r\nInformar apenas quando o valor do campo Quantidade da classe Produto Informar quando a\r\nquantidade faturada informada no campo Quantidade, da classe Produto, tiver sido ajustada\r\npara uma temperatura diferente da ambiente.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "qTemp", DataType = "TDec_1204Opc", ID = "L104", Pattern = "0\\.[1-9]{1}[0-9]{3}|0\\.[0-9]{3}[1-9]{1}|0\\.[0-9]{2}[1-9]{1}[0-9]{1}|0\\.[0-9]{1}[1-9]{1}[0-9]{2}|[1-9]{1}[0-9]{0,11}(\\.[0-9]{4})?")]
+
+      [CampoValidavel(3, Opcional = true)]
+
+      public decimal QuantidadeCombustivelFaturadaTempAmbiente
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="qTemp", DataType:="TDec_1204Opc", ID:="L104", Pattern:="0\.[1-9]{1}[0-9]{3}|0\.[0-9]{3}[1-9]{1}|0\.[0-9]{2}[1-9]{1}[0-9]{1}|0\.[0-9]{1}[1-9]{1}[0-9]{2}|[1-9]{1}[0-9]{0,11}(\.[0-9]{4})?")>
+
+      <CampoValidavel(3, Opcional:=True)>
+
+      Public Property QuantidadeCombustivelFaturadaTempAmbiente As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Combustivel.UFConsumo
+  id: UFConsumo
+  parent: NotaFiscalNet.Core.Combustivel
+  langs:
+  - csharp
+  - vb
+  name: UFConsumo
+  fullName: NotaFiscalNet.Core.Combustivel.UFConsumo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Combustivel.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: UFConsumo
+    path: src/NotaFiscalNet.Core/Combustivel.cs
+    startLine: 114
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[UFCons] Retorna ou define a Sigla da UF de Destino\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "L120", FieldName = "UFCons", DataType = "TUf")]
+
+      [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = SiglaUF.NaoEspecificado)]
+
+      public SiglaUF UFConsumo
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="L120", FieldName:="UFCons", DataType:="TUf")>
+
+      <CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido:=SiglaUF.NaoEspecificado)>
+
+      Public Property UFConsumo As SiglaUF
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.SiglaUF
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Combustivel.CIDE
+  id: CIDE
+  parent: NotaFiscalNet.Core.Combustivel
+  langs:
+  - csharp
+  - vb
+  name: CIDE
+  fullName: NotaFiscalNet.Core.Combustivel.CIDE
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Combustivel.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CIDE
+    path: src/NotaFiscalNet.Core/Combustivel.cs
+    startLine: 129
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[CIDE] Retorna as informações de CIDE do combustível. Opcional.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "CIDE", ID = "L105", Opcional = true)]
+
+      [CampoValidavel(4, Opcional = true)]
+
+      public CideCombustivel CIDE
+
+      {
+
+          get;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="CIDE", ID:="L105", Opcional:=True)>
+
+      <CampoValidavel(4, Opcional:=True)>
+
+      Public ReadOnly Property CIDE As CideCombustivel
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.CideCombustivel
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Combustivel.Modificado
+  id: Modificado
+  parent: NotaFiscalNet.Core.Combustivel
+  langs:
+  - csharp
+  - vb
+  name: Modificado
+  fullName: NotaFiscalNet.Core.Combustivel.Modificado
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Combustivel.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Modificado
+    path: src/NotaFiscalNet.Core/Combustivel.cs
+    startLine: 141
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna se a Classe foi modificada\r\n"
+  example: []
+  syntax:
+    content: >-
+      public bool Modificado
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Modificado As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: NotaFiscalNet.Core.Interfaces.ISerializavel
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: ISerializavel
+  fullName: NotaFiscalNet.Core.Interfaces.ISerializavel
+- uid: NotaFiscalNet.Core.Interfaces.IModificavel
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: IModificavel
+  fullName: NotaFiscalNet.Core.Interfaces.IModificavel
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: NotaFiscalNet.Core.Interfaces
+  fullName: NotaFiscalNet.Core.Interfaces
+- uid: System.Xml.XmlWriter
+  parent: System.Xml
+  isExternal: true
+  name: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: NotaFiscalNet.Core.INFe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: INFe
+  fullName: NotaFiscalNet.Core.INFe
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Nullable{System.Decimal}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Decimal>
+  fullName: System.Nullable<System.Decimal>
+  fullname.vb: System.Nullable(Of System.Decimal)
+  name.vb: Nullable(Of Decimal)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Decimal
+    name: Decimal
+    fullName: System.Decimal
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Decimal
+    name: Decimal
+    fullName: System.Decimal
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  fullName: System.Decimal
+- uid: NotaFiscalNet.Core.SiglaUF
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: SiglaUF
+  fullName: NotaFiscalNet.Core.SiglaUF
+- uid: NotaFiscalNet.Core.CideCombustivel
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: CideCombustivel
+  fullName: NotaFiscalNet.Core.CideCombustivel
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

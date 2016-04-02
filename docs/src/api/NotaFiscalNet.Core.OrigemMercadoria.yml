@@ -1,0 +1,162 @@
+items:
+- uid: NotaFiscalNet.Core.OrigemMercadoria
+  id: OrigemMercadoria
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.OrigemMercadoria.EstrangeiraDireta
+  - NotaFiscalNet.Core.OrigemMercadoria.EstrangeiraIndireta
+  - NotaFiscalNet.Core.OrigemMercadoria.Nacional
+  - NotaFiscalNet.Core.OrigemMercadoria.NaoEspecificado
+  langs:
+  - csharp
+  - vb
+  name: OrigemMercadoria
+  fullName: NotaFiscalNet.Core.OrigemMercadoria
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrigemMercadoria.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: OrigemMercadoria
+    path: src/NotaFiscalNet.Core/OrigemMercadoria.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nEspecifica a Origem da Mercadoria\r\n"
+  example: []
+  syntax:
+    content: public enum OrigemMercadoria
+    content.vb: Public Enum OrigemMercadoria
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.OrigemMercadoria.NaoEspecificado
+  id: NaoEspecificado
+  parent: NotaFiscalNet.Core.OrigemMercadoria
+  langs:
+  - csharp
+  - vb
+  name: NaoEspecificado
+  fullName: NotaFiscalNet.Core.OrigemMercadoria.NaoEspecificado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrigemMercadoria.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoEspecificado
+    path: src/NotaFiscalNet.Core/OrigemMercadoria.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nNão Especificado (-1).\r\n"
+  example: []
+  syntax:
+    content: NaoEspecificado = -1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrigemMercadoria.Nacional
+  id: Nacional
+  parent: NotaFiscalNet.Core.OrigemMercadoria
+  langs:
+  - csharp
+  - vb
+  name: Nacional
+  fullName: NotaFiscalNet.Core.OrigemMercadoria.Nacional
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrigemMercadoria.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Nacional
+    path: src/NotaFiscalNet.Core/OrigemMercadoria.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nNacional (0).\r\n"
+  example: []
+  syntax:
+    content: Nacional = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrigemMercadoria.EstrangeiraDireta
+  id: EstrangeiraDireta
+  parent: NotaFiscalNet.Core.OrigemMercadoria
+  langs:
+  - csharp
+  - vb
+  name: EstrangeiraDireta
+  fullName: NotaFiscalNet.Core.OrigemMercadoria.EstrangeiraDireta
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrigemMercadoria.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: EstrangeiraDireta
+    path: src/NotaFiscalNet.Core/OrigemMercadoria.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nEstrangeira com Importação Direta (1).\r\n"
+  example: []
+  syntax:
+    content: EstrangeiraDireta = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.OrigemMercadoria.EstrangeiraIndireta
+  id: EstrangeiraIndireta
+  parent: NotaFiscalNet.Core.OrigemMercadoria
+  langs:
+  - csharp
+  - vb
+  name: EstrangeiraIndireta
+  fullName: NotaFiscalNet.Core.OrigemMercadoria.EstrangeiraIndireta
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/OrigemMercadoria.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: EstrangeiraIndireta
+    path: src/NotaFiscalNet.Core/OrigemMercadoria.cs
+    startLine: 26
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nEstrangeira adquirida no Mercado Interno (2).\r\n"
+  example: []
+  syntax:
+    content: EstrangeiraIndireta = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

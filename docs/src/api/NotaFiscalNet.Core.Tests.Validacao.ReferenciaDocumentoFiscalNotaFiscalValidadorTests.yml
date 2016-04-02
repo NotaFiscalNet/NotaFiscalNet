@@ -1,0 +1,487 @@
+items:
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+  id: ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+  parent: NotaFiscalNet.Core.Tests.Validacao
+  children:
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeInformarCnpjComMaisDe14Caracteres
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeInformarCnpjComMenosDe14Caracteres
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeInformarCodigoModeloDocumentoFiscalInvalido
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeNaoInformarCnpj
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeNaoInformarCodigoModeloDocumentoFiscal
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeNaoInformarMesAnoEmissao
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeNaoInformarNumeroDocumentoFiscalForaRange(System.Int32)
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeNaoInformarSerieDocumentoFiscalForaRange(System.Int32)
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeNaoInformarUnidadeFederativa
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DevePermitirInformarCnpjCom14Caracteres
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.NaoDeveMostrarErroSeInformarCodigoModeloDocumentoFiscalValido
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.NaoDeveMostrarErroSeInformarMesAnoEmissao
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.NaoDeveMostrarErroSeInformarUnidadeFederativa
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.NaoDeveMostrarErroSeNaoInformarNumeroDocumentoFiscalDentroRange(System.Int32)
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.NaoDeveMostrarErroSeNaoInformarSerieDocumentoFiscalDentroRange(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+  type: Class
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: 'public class ReferenciaDocumentoFiscalNotaFiscalValidadorTests : object'
+    content.vb: >-
+      Public Class ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeNaoInformarUnidadeFederativa
+  id: DeveMostrarErroSeNaoInformarUnidadeFederativa
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DeveMostrarErroSeNaoInformarUnidadeFederativa()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeNaoInformarUnidadeFederativa()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveMostrarErroSeNaoInformarUnidadeFederativa
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+    startLine: 15
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DeveMostrarErroSeNaoInformarUnidadeFederativa()
+    content.vb: Public Sub DeveMostrarErroSeNaoInformarUnidadeFederativa
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.NaoDeveMostrarErroSeInformarUnidadeFederativa
+  id: NaoDeveMostrarErroSeInformarUnidadeFederativa
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: NaoDeveMostrarErroSeInformarUnidadeFederativa()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.NaoDeveMostrarErroSeInformarUnidadeFederativa()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoDeveMostrarErroSeInformarUnidadeFederativa
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+    startLine: 25
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void NaoDeveMostrarErroSeInformarUnidadeFederativa()
+    content.vb: Public Sub NaoDeveMostrarErroSeInformarUnidadeFederativa
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeNaoInformarMesAnoEmissao
+  id: DeveMostrarErroSeNaoInformarMesAnoEmissao
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DeveMostrarErroSeNaoInformarMesAnoEmissao()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeNaoInformarMesAnoEmissao()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveMostrarErroSeNaoInformarMesAnoEmissao
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+    startLine: 31
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DeveMostrarErroSeNaoInformarMesAnoEmissao()
+    content.vb: Public Sub DeveMostrarErroSeNaoInformarMesAnoEmissao
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.NaoDeveMostrarErroSeInformarMesAnoEmissao
+  id: NaoDeveMostrarErroSeInformarMesAnoEmissao
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: NaoDeveMostrarErroSeInformarMesAnoEmissao()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.NaoDeveMostrarErroSeInformarMesAnoEmissao()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoDeveMostrarErroSeInformarMesAnoEmissao
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+    startLine: 41
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void NaoDeveMostrarErroSeInformarMesAnoEmissao()
+    content.vb: Public Sub NaoDeveMostrarErroSeInformarMesAnoEmissao
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeNaoInformarCnpj
+  id: DeveMostrarErroSeNaoInformarCnpj
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DeveMostrarErroSeNaoInformarCnpj()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeNaoInformarCnpj()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveMostrarErroSeNaoInformarCnpj
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+    startLine: 47
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DeveMostrarErroSeNaoInformarCnpj()
+    content.vb: Public Sub DeveMostrarErroSeNaoInformarCnpj
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeInformarCnpjComMaisDe14Caracteres
+  id: DeveMostrarErroSeInformarCnpjComMaisDe14Caracteres
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DeveMostrarErroSeInformarCnpjComMaisDe14Caracteres()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeInformarCnpjComMaisDe14Caracteres()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveMostrarErroSeInformarCnpjComMaisDe14Caracteres
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+    startLine: 57
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DeveMostrarErroSeInformarCnpjComMaisDe14Caracteres()
+    content.vb: Public Sub DeveMostrarErroSeInformarCnpjComMaisDe14Caracteres
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeInformarCnpjComMenosDe14Caracteres
+  id: DeveMostrarErroSeInformarCnpjComMenosDe14Caracteres
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DeveMostrarErroSeInformarCnpjComMenosDe14Caracteres()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeInformarCnpjComMenosDe14Caracteres()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveMostrarErroSeInformarCnpjComMenosDe14Caracteres
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+    startLine: 68
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DeveMostrarErroSeInformarCnpjComMenosDe14Caracteres()
+    content.vb: Public Sub DeveMostrarErroSeInformarCnpjComMenosDe14Caracteres
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DevePermitirInformarCnpjCom14Caracteres
+  id: DevePermitirInformarCnpjCom14Caracteres
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DevePermitirInformarCnpjCom14Caracteres()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DevePermitirInformarCnpjCom14Caracteres()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DevePermitirInformarCnpjCom14Caracteres
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+    startLine: 79
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DevePermitirInformarCnpjCom14Caracteres()
+    content.vb: Public Sub DevePermitirInformarCnpjCom14Caracteres
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeNaoInformarCodigoModeloDocumentoFiscal
+  id: DeveMostrarErroSeNaoInformarCodigoModeloDocumentoFiscal
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DeveMostrarErroSeNaoInformarCodigoModeloDocumentoFiscal()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeNaoInformarCodigoModeloDocumentoFiscal()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveMostrarErroSeNaoInformarCodigoModeloDocumentoFiscal
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+    startLine: 85
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DeveMostrarErroSeNaoInformarCodigoModeloDocumentoFiscal()
+    content.vb: Public Sub DeveMostrarErroSeNaoInformarCodigoModeloDocumentoFiscal
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeInformarCodigoModeloDocumentoFiscalInvalido
+  id: DeveMostrarErroSeInformarCodigoModeloDocumentoFiscalInvalido
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DeveMostrarErroSeInformarCodigoModeloDocumentoFiscalInvalido()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeInformarCodigoModeloDocumentoFiscalInvalido()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveMostrarErroSeInformarCodigoModeloDocumentoFiscalInvalido
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+    startLine: 95
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DeveMostrarErroSeInformarCodigoModeloDocumentoFiscalInvalido()
+    content.vb: Public Sub DeveMostrarErroSeInformarCodigoModeloDocumentoFiscalInvalido
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.NaoDeveMostrarErroSeInformarCodigoModeloDocumentoFiscalValido
+  id: NaoDeveMostrarErroSeInformarCodigoModeloDocumentoFiscalValido
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: NaoDeveMostrarErroSeInformarCodigoModeloDocumentoFiscalValido()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.NaoDeveMostrarErroSeInformarCodigoModeloDocumentoFiscalValido()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoDeveMostrarErroSeInformarCodigoModeloDocumentoFiscalValido
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+    startLine: 105
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void NaoDeveMostrarErroSeInformarCodigoModeloDocumentoFiscalValido()
+    content.vb: Public Sub NaoDeveMostrarErroSeInformarCodigoModeloDocumentoFiscalValido
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeNaoInformarSerieDocumentoFiscalForaRange(System.Int32)
+  id: DeveMostrarErroSeNaoInformarSerieDocumentoFiscalForaRange(System.Int32)
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DeveMostrarErroSeNaoInformarSerieDocumentoFiscalForaRange(Int32)
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeNaoInformarSerieDocumentoFiscalForaRange(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveMostrarErroSeNaoInformarSerieDocumentoFiscalForaRange
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+    startLine: 111
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DeveMostrarErroSeNaoInformarSerieDocumentoFiscalForaRange(int serieDocumentoFiscal)
+    content.vb: Public Sub DeveMostrarErroSeNaoInformarSerieDocumentoFiscalForaRange(serieDocumentoFiscal As Integer)
+    parameters:
+    - id: serieDocumentoFiscal
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.NaoDeveMostrarErroSeNaoInformarSerieDocumentoFiscalDentroRange(System.Int32)
+  id: NaoDeveMostrarErroSeNaoInformarSerieDocumentoFiscalDentroRange(System.Int32)
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: NaoDeveMostrarErroSeNaoInformarSerieDocumentoFiscalDentroRange(Int32)
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.NaoDeveMostrarErroSeNaoInformarSerieDocumentoFiscalDentroRange(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoDeveMostrarErroSeNaoInformarSerieDocumentoFiscalDentroRange
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+    startLine: 125
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void NaoDeveMostrarErroSeNaoInformarSerieDocumentoFiscalDentroRange(int serieDocumentoFiscal)
+    content.vb: Public Sub NaoDeveMostrarErroSeNaoInformarSerieDocumentoFiscalDentroRange(serieDocumentoFiscal As Integer)
+    parameters:
+    - id: serieDocumentoFiscal
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeNaoInformarNumeroDocumentoFiscalForaRange(System.Int32)
+  id: DeveMostrarErroSeNaoInformarNumeroDocumentoFiscalForaRange(System.Int32)
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DeveMostrarErroSeNaoInformarNumeroDocumentoFiscalForaRange(Int32)
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.DeveMostrarErroSeNaoInformarNumeroDocumentoFiscalForaRange(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveMostrarErroSeNaoInformarNumeroDocumentoFiscalForaRange
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+    startLine: 133
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DeveMostrarErroSeNaoInformarNumeroDocumentoFiscalForaRange(int numeroDocumentoFiscal)
+    content.vb: Public Sub DeveMostrarErroSeNaoInformarNumeroDocumentoFiscalForaRange(numeroDocumentoFiscal As Integer)
+    parameters:
+    - id: numeroDocumentoFiscal
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.NaoDeveMostrarErroSeNaoInformarNumeroDocumentoFiscalDentroRange(System.Int32)
+  id: NaoDeveMostrarErroSeNaoInformarNumeroDocumentoFiscalDentroRange(System.Int32)
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: NaoDeveMostrarErroSeNaoInformarNumeroDocumentoFiscalDentroRange(Int32)
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests.NaoDeveMostrarErroSeNaoInformarNumeroDocumentoFiscalDentroRange(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoDeveMostrarErroSeNaoInformarNumeroDocumentoFiscalDentroRange
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNotaFiscalValidadorTests.cs
+    startLine: 147
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void NaoDeveMostrarErroSeNaoInformarNumeroDocumentoFiscalDentroRange(int numeroDocumentoFiscal)
+    content.vb: Public Sub NaoDeveMostrarErroSeNaoInformarNumeroDocumentoFiscalDentroRange(numeroDocumentoFiscal As Integer)
+    parameters:
+    - id: numeroDocumentoFiscal
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core.Tests.Validacao
+  isExternal: false
+  name: NotaFiscalNet.Core.Tests.Validacao
+  fullName: NotaFiscalNet.Core.Tests.Validacao
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

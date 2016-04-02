@@ -1,0 +1,599 @@
+items:
+- uid: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2
+  id: PacoteLiberacaoPL_008h2
+  parent: NotaFiscalNet.Core.Schemas
+  children:
+  - NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2.PathEnvEventoCancelamento
+  - NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2.PathEnvEventoCancelamentoNoSig
+  - NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2.PathEnviNFe
+  - NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2.PathInutNFe
+  - NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2.PathInutNFeNoSig
+  - NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2.PathNFe
+  - NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2.PathNFeNoSig
+  - NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2.VersaoLayout
+  langs:
+  - csharp
+  - vb
+  name: PacoteLiberacaoPL_008h2
+  fullName: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Schemas/PacoteLiberacaoPL_008h2.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PacoteLiberacaoPL_008h2
+    path: src/NotaFiscalNet.Core/Schemas/PacoteLiberacaoPL_008h2.cs
+    startLine: 5
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Schemas
+  syntax:
+    content: 'public class PacoteLiberacaoPL_008h2 : IPacoteLiberacaoNFe'
+    content.vb: >-
+      Public Class PacoteLiberacaoPL_008h2
+
+          Implements IPacoteLiberacaoNFe
+  inheritance:
+  - System.Object
+  implements:
+  - NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2.VersaoLayout
+  id: VersaoLayout
+  parent: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2
+  langs:
+  - csharp
+  - vb
+  name: VersaoLayout
+  fullName: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2.VersaoLayout
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Schemas/PacoteLiberacaoPL_008h2.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: VersaoLayout
+    path: src/NotaFiscalNet.Core/Schemas/PacoteLiberacaoPL_008h2.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Schemas
+  syntax:
+    content: >-
+      public string VersaoLayout
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property VersaoLayout As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2.PathNFe
+  id: PathNFe
+  parent: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2
+  langs:
+  - csharp
+  - vb
+  name: PathNFe
+  fullName: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2.PathNFe
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Schemas/PacoteLiberacaoPL_008h2.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PathNFe
+    path: src/NotaFiscalNet.Core/Schemas/PacoteLiberacaoPL_008h2.cs
+    startLine: 13
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Schemas
+  syntax:
+    content: >-
+      public string PathNFe
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property PathNFe As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2.PathNFeNoSig
+  id: PathNFeNoSig
+  parent: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2
+  langs:
+  - csharp
+  - vb
+  name: PathNFeNoSig
+  fullName: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2.PathNFeNoSig
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Schemas/PacoteLiberacaoPL_008h2.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PathNFeNoSig
+    path: src/NotaFiscalNet.Core/Schemas/PacoteLiberacaoPL_008h2.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Schemas
+  syntax:
+    content: >-
+      public string PathNFeNoSig
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property PathNFeNoSig As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2.PathEnviNFe
+  id: PathEnviNFe
+  parent: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2
+  langs:
+  - csharp
+  - vb
+  name: PathEnviNFe
+  fullName: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2.PathEnviNFe
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Schemas/PacoteLiberacaoPL_008h2.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PathEnviNFe
+    path: src/NotaFiscalNet.Core/Schemas/PacoteLiberacaoPL_008h2.cs
+    startLine: 19
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Schemas
+  syntax:
+    content: >-
+      public string PathEnviNFe
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property PathEnviNFe As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2.PathEnvEventoCancelamento
+  id: PathEnvEventoCancelamento
+  parent: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2
+  langs:
+  - csharp
+  - vb
+  name: PathEnvEventoCancelamento
+  fullName: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2.PathEnvEventoCancelamento
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Schemas/PacoteLiberacaoPL_008h2.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PathEnvEventoCancelamento
+    path: src/NotaFiscalNet.Core/Schemas/PacoteLiberacaoPL_008h2.cs
+    startLine: 22
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Schemas
+  syntax:
+    content: >-
+      public string PathEnvEventoCancelamento
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property PathEnvEventoCancelamento As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2.PathEnvEventoCancelamentoNoSig
+  id: PathEnvEventoCancelamentoNoSig
+  parent: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2
+  langs:
+  - csharp
+  - vb
+  name: PathEnvEventoCancelamentoNoSig
+  fullName: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2.PathEnvEventoCancelamentoNoSig
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Schemas/PacoteLiberacaoPL_008h2.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PathEnvEventoCancelamentoNoSig
+    path: src/NotaFiscalNet.Core/Schemas/PacoteLiberacaoPL_008h2.cs
+    startLine: 25
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Schemas
+  syntax:
+    content: >-
+      public string PathEnvEventoCancelamentoNoSig
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property PathEnvEventoCancelamentoNoSig As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2.PathInutNFe
+  id: PathInutNFe
+  parent: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2
+  langs:
+  - csharp
+  - vb
+  name: PathInutNFe
+  fullName: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2.PathInutNFe
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Schemas/PacoteLiberacaoPL_008h2.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PathInutNFe
+    path: src/NotaFiscalNet.Core/Schemas/PacoteLiberacaoPL_008h2.cs
+    startLine: 28
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Schemas
+  syntax:
+    content: >-
+      public string PathInutNFe
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property PathInutNFe As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2.PathInutNFeNoSig
+  id: PathInutNFeNoSig
+  parent: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2
+  langs:
+  - csharp
+  - vb
+  name: PathInutNFeNoSig
+  fullName: NotaFiscalNet.Core.Schemas.PacoteLiberacaoPL_008h2.PathInutNFeNoSig
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Schemas/PacoteLiberacaoPL_008h2.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PathInutNFeNoSig
+    path: src/NotaFiscalNet.Core/Schemas/PacoteLiberacaoPL_008h2.cs
+    startLine: 31
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Schemas
+  syntax:
+    content: >-
+      public string PathInutNFeNoSig
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property PathInutNFeNoSig As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: NotaFiscalNet.Core.Schemas
+  isExternal: false
+  name: NotaFiscalNet.Core.Schemas
+  fullName: NotaFiscalNet.Core.Schemas
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe
+  parent: NotaFiscalNet.Core.Schemas
+  isExternal: false
+  name: IPacoteLiberacaoNFe
+  fullName: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

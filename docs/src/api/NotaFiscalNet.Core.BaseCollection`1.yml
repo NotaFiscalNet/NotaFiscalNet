@@ -1,0 +1,1054 @@
+items:
+- uid: NotaFiscalNet.Core.BaseCollection`1
+  id: BaseCollection`1
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.BaseCollection`1.#ctor
+  - NotaFiscalNet.Core.BaseCollection`1.Add(`0)
+  - NotaFiscalNet.Core.BaseCollection`1.Clear
+  - NotaFiscalNet.Core.BaseCollection`1.Contains(`0)
+  - NotaFiscalNet.Core.BaseCollection`1.CopyTo(`0[],System.Int32)
+  - NotaFiscalNet.Core.BaseCollection`1.Count
+  - NotaFiscalNet.Core.BaseCollection`1.GetEnumerator
+  - NotaFiscalNet.Core.BaseCollection`1.IsReadOnly
+  - NotaFiscalNet.Core.BaseCollection`1.Item(System.Int32)
+  - NotaFiscalNet.Core.BaseCollection`1.PostAdd(`0)
+  - NotaFiscalNet.Core.BaseCollection`1.PostRemove(`0)
+  - NotaFiscalNet.Core.BaseCollection`1.PreAdd(System.ComponentModel.CancelEventArgs,`0)
+  - NotaFiscalNet.Core.BaseCollection`1.PreRemove(System.ComponentModel.CancelEventArgs,`0)
+  - NotaFiscalNet.Core.BaseCollection`1.Remove(`0)
+  - NotaFiscalNet.Core.BaseCollection`1.System#Collections#IEnumerable#GetEnumerator
+  langs:
+  - csharp
+  - vb
+  name: BaseCollection<T>
+  fullName: NotaFiscalNet.Core.BaseCollection<T>
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/BaseCollection.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: BaseCollection
+    path: src/NotaFiscalNet.Core/BaseCollection.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nColeção genérica usada como base para outras coleções.\r\n"
+  example: []
+  syntax:
+    content: 'public abstract class BaseCollection<T> : ICollection<T>, IEnumerable<T>, IEnumerable'
+    content.vb: >-
+      Public MustInherit Class BaseCollection(Of T)
+
+          Implements ICollection(Of T), IEnumerable(Of T), IEnumerable
+    typeParameters:
+    - id: T
+      description: Tipo
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.ICollection{{T}}
+  - System.Collections.Generic.IEnumerable{{T}}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: NotaFiscalNet.Core.BaseCollection(Of T)
+  name.vb: BaseCollection(Of T)
+- uid: NotaFiscalNet.Core.BaseCollection`1.#ctor
+  id: '#ctor'
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  langs:
+  - csharp
+  - vb
+  name: BaseCollection()
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.BaseCollection()
+  type: Constructor
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/BaseCollection.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: src/NotaFiscalNet.Core/BaseCollection.cs
+    startLine: 15
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: protected BaseCollection()
+    content.vb: Protected Sub New
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: NotaFiscalNet.Core.BaseCollection(Of T).BaseCollection()
+- uid: NotaFiscalNet.Core.BaseCollection`1.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  langs:
+  - csharp
+  - vb
+  name: Item[Int32]
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.Item[System.Int32]
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/BaseCollection.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: this[]
+    path: src/NotaFiscalNet.Core/BaseCollection.cs
+    startLine: 33
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna um determinado item com base na posição ordinal.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public T this[int index]
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Item(index As Integer) As T
+    parameters:
+    - id: index
+      type: System.Int32
+      description: "Índice do item a ser retornado."
+    return:
+      type: '{T}'
+      description: "Retorna o item no qual o índice se refere."
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: NotaFiscalNet.Core.BaseCollection(Of T).Item(System.Int32)
+  name.vb: Item(Int32)
+- uid: NotaFiscalNet.Core.BaseCollection`1.GetEnumerator
+  id: GetEnumerator
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/BaseCollection.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: GetEnumerator
+    path: src/NotaFiscalNet.Core/BaseCollection.cs
+    startLine: 35
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public IEnumerator<T> GetEnumerator()
+    content.vb: Public Function GetEnumerator As IEnumerator(Of T)
+    return:
+      type: System.Collections.Generic.IEnumerator{{T}}
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: NotaFiscalNet.Core.BaseCollection(Of T).GetEnumerator()
+- uid: NotaFiscalNet.Core.BaseCollection`1.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  langs:
+  - csharp
+  - vb
+  name: IEnumerable.GetEnumerator()
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/BaseCollection.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: System.Collections.IEnumerable.GetEnumerator
+    path: src/NotaFiscalNet.Core/BaseCollection.cs
+    startLine: 40
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+    return:
+      type: System.Collections.IEnumerator
+  fullName.vb: NotaFiscalNet.Core.BaseCollection(Of T).System.Collections.IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+- uid: NotaFiscalNet.Core.BaseCollection`1.PreAdd(System.ComponentModel.CancelEventArgs,`0)
+  id: PreAdd(System.ComponentModel.CancelEventArgs,`0)
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  langs:
+  - csharp
+  - vb
+  name: PreAdd(CancelEventArgs, T)
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.PreAdd(System.ComponentModel.CancelEventArgs, T)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/BaseCollection.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PreAdd
+    path: src/NotaFiscalNet.Core/BaseCollection.cs
+    startLine: 45
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: protected virtual void PreAdd(CancelEventArgs e, T item)
+    content.vb: Protected Overridable Sub PreAdd(e As CancelEventArgs, item As T)
+    parameters:
+    - id: e
+      type: System.ComponentModel.CancelEventArgs
+    - id: item
+      type: '{T}'
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: NotaFiscalNet.Core.BaseCollection(Of T).PreAdd(System.ComponentModel.CancelEventArgs, T)
+- uid: NotaFiscalNet.Core.BaseCollection`1.PostAdd(`0)
+  id: PostAdd(`0)
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  langs:
+  - csharp
+  - vb
+  name: PostAdd(T)
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.PostAdd(T)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/BaseCollection.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PostAdd
+    path: src/NotaFiscalNet.Core/BaseCollection.cs
+    startLine: 49
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: protected virtual void PostAdd(T item)
+    content.vb: Protected Overridable Sub PostAdd(item As T)
+    parameters:
+    - id: item
+      type: '{T}'
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: NotaFiscalNet.Core.BaseCollection(Of T).PostAdd(T)
+- uid: NotaFiscalNet.Core.BaseCollection`1.PreRemove(System.ComponentModel.CancelEventArgs,`0)
+  id: PreRemove(System.ComponentModel.CancelEventArgs,`0)
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  langs:
+  - csharp
+  - vb
+  name: PreRemove(CancelEventArgs, T)
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.PreRemove(System.ComponentModel.CancelEventArgs, T)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/BaseCollection.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PreRemove
+    path: src/NotaFiscalNet.Core/BaseCollection.cs
+    startLine: 53
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: protected virtual void PreRemove(CancelEventArgs e, T item)
+    content.vb: Protected Overridable Sub PreRemove(e As CancelEventArgs, item As T)
+    parameters:
+    - id: e
+      type: System.ComponentModel.CancelEventArgs
+    - id: item
+      type: '{T}'
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: NotaFiscalNet.Core.BaseCollection(Of T).PreRemove(System.ComponentModel.CancelEventArgs, T)
+- uid: NotaFiscalNet.Core.BaseCollection`1.PostRemove(`0)
+  id: PostRemove(`0)
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  langs:
+  - csharp
+  - vb
+  name: PostRemove(T)
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.PostRemove(T)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/BaseCollection.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PostRemove
+    path: src/NotaFiscalNet.Core/BaseCollection.cs
+    startLine: 57
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: protected virtual void PostRemove(T item)
+    content.vb: Protected Overridable Sub PostRemove(item As T)
+    parameters:
+    - id: item
+      type: '{T}'
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: NotaFiscalNet.Core.BaseCollection(Of T).PostRemove(T)
+- uid: NotaFiscalNet.Core.BaseCollection`1.Add(`0)
+  id: Add(`0)
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  langs:
+  - csharp
+  - vb
+  name: Add(T)
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.Add(T)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/BaseCollection.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Add
+    path: src/NotaFiscalNet.Core/BaseCollection.cs
+    startLine: 65
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nAdiciona um novo item no final da coleção.\r\n"
+  example: []
+  syntax:
+    content: public void Add(T item)
+    content.vb: Public Sub Add(item As T)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: Item a ser adicionado.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: NotaFiscalNet.Core.BaseCollection(Of T).Add(T)
+- uid: NotaFiscalNet.Core.BaseCollection`1.Clear
+  id: Clear
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.Clear()
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/BaseCollection.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Clear
+    path: src/NotaFiscalNet.Core/BaseCollection.cs
+    startLine: 83
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRemove todos os itens da lista.\r\n"
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: NotaFiscalNet.Core.BaseCollection(Of T).Clear()
+- uid: NotaFiscalNet.Core.BaseCollection`1.Contains(`0)
+  id: Contains(`0)
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  langs:
+  - csharp
+  - vb
+  name: Contains(T)
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.Contains(T)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/BaseCollection.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Contains
+    path: src/NotaFiscalNet.Core/BaseCollection.cs
+    startLine: 96
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nCheca se um determinado item já consta na lista.\r\n"
+  example: []
+  syntax:
+    content: public bool Contains(T item)
+    content.vb: Public Function Contains(item As T) As Boolean
+    parameters:
+    - id: item
+      type: '{T}'
+      description: Item a ser verificado.
+    return:
+      type: System.Boolean
+      description: "True caso o item conste na lista. Caso contrário retorna False."
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: NotaFiscalNet.Core.BaseCollection(Of T).Contains(T)
+- uid: NotaFiscalNet.Core.BaseCollection`1.CopyTo(`0[],System.Int32)
+  id: CopyTo(`0[],System.Int32)
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(T[], Int32)
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.CopyTo(T[], System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/BaseCollection.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CopyTo
+    path: src/NotaFiscalNet.Core/BaseCollection.cs
+    startLine: 106
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRealiza uma cópia dos itens na lista para um Array do mesmo tipo do item.\r\n"
+  example: []
+  syntax:
+    content: public void CopyTo(T[] array, int arrayIndex)
+    content.vb: Public Sub CopyTo(array As T(), arrayIndex As Integer)
+    parameters:
+    - id: array
+      type: '{T}[]'
+      description: "Referência para o array que será preenchido com os itens da lista."
+    - id: arrayIndex
+      type: System.Int32
+      description: "Posição do array onde os itens começarão a ser inseridos."
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: NotaFiscalNet.Core.BaseCollection(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+- uid: NotaFiscalNet.Core.BaseCollection`1.Count
+  id: Count
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  langs:
+  - csharp
+  - vb
+  name: Count
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.Count
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/BaseCollection.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Count
+    path: src/NotaFiscalNet.Core/BaseCollection.cs
+    startLine: 114
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetora a quantidade de Itens na lista.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int Count
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: NotaFiscalNet.Core.BaseCollection(Of T).Count
+- uid: NotaFiscalNet.Core.BaseCollection`1.IsReadOnly
+  id: IsReadOnly
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.IsReadOnly
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/BaseCollection.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: IsReadOnly
+    path: src/NotaFiscalNet.Core/BaseCollection.cs
+    startLine: 119
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna o valor indicando se a lista é apenas-leitura ou não.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public bool IsReadOnly
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: NotaFiscalNet.Core.BaseCollection(Of T).IsReadOnly
+- uid: NotaFiscalNet.Core.BaseCollection`1.Remove(`0)
+  id: Remove(`0)
+  parent: NotaFiscalNet.Core.BaseCollection`1
+  langs:
+  - csharp
+  - vb
+  name: Remove(T)
+  fullName: NotaFiscalNet.Core.BaseCollection<T>.Remove(T)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/BaseCollection.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Remove
+    path: src/NotaFiscalNet.Core/BaseCollection.cs
+    startLine: 126
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRemove um determinado item da lista.\r\n"
+  example: []
+  syntax:
+    content: public bool Remove(T item)
+    content.vb: Public Function Remove(item As T) As Boolean
+    parameters:
+    - id: item
+      type: '{T}'
+      description: Item a ser removido da lista.
+    return:
+      type: System.Boolean
+      description: Retorna True caso o Item tenha sido removido com sucesso da lista.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: NotaFiscalNet.Core.BaseCollection(Of T).Remove(T)
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Collections.Generic.ICollection{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  fullname.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Collections.Generic.ICollection`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  fullname.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.Collections.Generic.IEnumerator{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullname.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullname.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.ComponentModel.CancelEventArgs
+  parent: System.ComponentModel
+  isExternal: true
+  name: CancelEventArgs
+  fullName: System.ComponentModel.CancelEventArgs
+- uid: System.ComponentModel
+  isExternal: false
+  name: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: '{T}[]'
+  isExternal: false
+  name: T[]
+  fullName: T[]
+  fullname.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+    fullName: T
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    fullName: T
+  - name: ()
+    fullName: ()

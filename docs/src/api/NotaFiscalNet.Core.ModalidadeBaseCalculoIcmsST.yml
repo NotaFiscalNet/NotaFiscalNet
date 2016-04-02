@@ -1,0 +1,255 @@
+items:
+- uid: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST
+  id: ModalidadeBaseCalculoIcmsST
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST.ListaNegativa
+  - NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST.ListaNeutra
+  - NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST.ListaPositiva
+  - NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST.MargemAgregado
+  - NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST.NaoEspecificado
+  - NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST.Pauta
+  - NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST.PrecoTabelado
+  langs:
+  - csharp
+  - vb
+  name: ModalidadeBaseCalculoIcmsST
+  fullName: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcmsST.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ModalidadeBaseCalculoIcmsST
+    path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcmsST.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nEspecifica a Modalidade de Determinação da Base de Cálculo do ICMS ST\r\n"
+  example: []
+  syntax:
+    content: public enum ModalidadeBaseCalculoIcmsST
+    content.vb: Public Enum ModalidadeBaseCalculoIcmsST
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST.NaoEspecificado
+  id: NaoEspecificado
+  parent: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST
+  langs:
+  - csharp
+  - vb
+  name: NaoEspecificado
+  fullName: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST.NaoEspecificado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcmsST.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoEspecificado
+    path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcmsST.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nNão informado.\r\n"
+  example: []
+  syntax:
+    content: NaoEspecificado = -1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST.PrecoTabelado
+  id: PrecoTabelado
+  parent: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST
+  langs:
+  - csharp
+  - vb
+  name: PrecoTabelado
+  fullName: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST.PrecoTabelado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcmsST.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PrecoTabelado
+    path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcmsST.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n0 - Preço Tabelado ou Máximo Sugerido em Valor.\r\n"
+  example: []
+  syntax:
+    content: PrecoTabelado = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST.ListaNegativa
+  id: ListaNegativa
+  parent: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST
+  langs:
+  - csharp
+  - vb
+  name: ListaNegativa
+  fullName: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST.ListaNegativa
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcmsST.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ListaNegativa
+    path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcmsST.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n1 - Lista Negativa em Valor.\r\n"
+  example: []
+  syntax:
+    content: ListaNegativa = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST.ListaPositiva
+  id: ListaPositiva
+  parent: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST
+  langs:
+  - csharp
+  - vb
+  name: ListaPositiva
+  fullName: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST.ListaPositiva
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcmsST.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ListaPositiva
+    path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcmsST.cs
+    startLine: 26
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n2 - Lista Positiva em Valor.\r\n"
+  example: []
+  syntax:
+    content: ListaPositiva = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST.ListaNeutra
+  id: ListaNeutra
+  parent: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST
+  langs:
+  - csharp
+  - vb
+  name: ListaNeutra
+  fullName: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST.ListaNeutra
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcmsST.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ListaNeutra
+    path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcmsST.cs
+    startLine: 31
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n3 - Lista Neutra em Valor.\r\n"
+  example: []
+  syntax:
+    content: ListaNeutra = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST.MargemAgregado
+  id: MargemAgregado
+  parent: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST
+  langs:
+  - csharp
+  - vb
+  name: MargemAgregado
+  fullName: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST.MargemAgregado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcmsST.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: MargemAgregado
+    path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcmsST.cs
+    startLine: 36
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n4 - Margem do Valor Agregado em Porcentagem.\r\n"
+  example: []
+  syntax:
+    content: MargemAgregado = 4
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST.Pauta
+  id: Pauta
+  parent: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST
+  langs:
+  - csharp
+  - vb
+  name: Pauta
+  fullName: NotaFiscalNet.Core.ModalidadeBaseCalculoIcmsST.Pauta
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcmsST.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Pauta
+    path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcmsST.cs
+    startLine: 41
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n5 - Pauta em Valor.\r\n"
+  example: []
+  syntax:
+    content: Pauta = 5
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

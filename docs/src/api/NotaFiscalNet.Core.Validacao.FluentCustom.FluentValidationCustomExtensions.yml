@@ -1,0 +1,786 @@
+items:
+- uid: NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions
+  id: FluentValidationCustomExtensions
+  parent: NotaFiscalNet.Core.Validacao.FluentCustom
+  children:
+  - NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions.ChaveDeAcessoValida``2(IRuleBuilder{``0,``1})
+  - NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions.CnpjValido``1(IRuleBuilder{``0,System.String})
+  - NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions.CollectionLength``1(IRuleBuilder{``0,System.Collections.ICollection},System.Int32)
+  - NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions.CollectionLength``1(IRuleBuilder{``0,System.Collections.ICollection},System.Int32,System.Int32)
+  - NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions.In``2(IRuleBuilder{``0,``1},``1[])
+  langs:
+  - csharp
+  - vb
+  name: FluentValidationCustomExtensions
+  fullName: NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/FluentValidationCustomExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: FluentValidationCustomExtensions
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/FluentValidationCustomExtensions.cs
+    startLine: 5
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao.FluentCustom
+  syntax:
+    content: public class FluentValidationCustomExtensions
+    content.vb: Public Class FluentValidationCustomExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions.In``2(IRuleBuilder{``0,``1},``1[])
+  id: In``2(IRuleBuilder{``0,``1},``1[])
+  parent: NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions
+  langs:
+  - csharp
+  - vb
+  name: In<T, TProperty>(IRuleBuilder<T, TProperty>, TProperty[])
+  fullName: NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions.In<T, TProperty>(IRuleBuilder<T, TProperty>, TProperty[])
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/FluentValidationCustomExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: In
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/FluentValidationCustomExtensions.cs
+    startLine: 7
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao.FluentCustom
+  syntax:
+    content: public static IRuleBuilderOptions<T, TProperty> In<T, TProperty>(IRuleBuilder<T, TProperty> ruleBuilder, params TProperty[] valores)
+    content.vb: Public Shared Function In(Of T, TProperty)(ruleBuilder As IRuleBuilder(Of T, TProperty), ParamArray valores As TProperty()) As IRuleBuilderOptions(Of T, TProperty)
+    parameters:
+    - id: ruleBuilder
+      type: IRuleBuilder{{T},{TProperty}}
+    - id: valores
+      type: '{TProperty}[]'
+    typeParameters:
+    - id: T
+    - id: TProperty
+    return:
+      type: IRuleBuilderOptions{{T},{TProperty}}
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions.In(Of T, TProperty)(IRuleBuilder(Of T, TProperty), TProperty())
+  name.vb: In(Of T, TProperty)(IRuleBuilder(Of T, TProperty), TProperty())
+- uid: NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions.CollectionLength``1(IRuleBuilder{``0,System.Collections.ICollection},System.Int32,System.Int32)
+  id: CollectionLength``1(IRuleBuilder{``0,System.Collections.ICollection},System.Int32,System.Int32)
+  parent: NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions
+  langs:
+  - csharp
+  - vb
+  name: CollectionLength<T>(IRuleBuilder<T, ICollection>, Int32, Int32)
+  fullName: NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions.CollectionLength<T>(IRuleBuilder<T, System.Collections.ICollection>, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/FluentValidationCustomExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CollectionLength
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/FluentValidationCustomExtensions.cs
+    startLine: 13
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao.FluentCustom
+  syntax:
+    content: public static IRuleBuilderOptions<T, ICollection> CollectionLength<T>(IRuleBuilder<T, ICollection> ruleBuilder, int min, int max)
+    content.vb: Public Shared Function CollectionLength(Of T)(ruleBuilder As IRuleBuilder(Of T, ICollection), min As Integer, max As Integer) As IRuleBuilderOptions(Of T, ICollection)
+    parameters:
+    - id: ruleBuilder
+      type: IRuleBuilder{{T},System.Collections.ICollection}
+    - id: min
+      type: System.Int32
+    - id: max
+      type: System.Int32
+    typeParameters:
+    - id: T
+    return:
+      type: IRuleBuilderOptions{{T},System.Collections.ICollection}
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions.CollectionLength(Of T)(IRuleBuilder(Of T, System.Collections.ICollection), System.Int32, System.Int32)
+  name.vb: CollectionLength(Of T)(IRuleBuilder(Of T, ICollection), Int32, Int32)
+- uid: NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions.CollectionLength``1(IRuleBuilder{``0,System.Collections.ICollection},System.Int32)
+  id: CollectionLength``1(IRuleBuilder{``0,System.Collections.ICollection},System.Int32)
+  parent: NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions
+  langs:
+  - csharp
+  - vb
+  name: CollectionLength<T>(IRuleBuilder<T, ICollection>, Int32)
+  fullName: NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions.CollectionLength<T>(IRuleBuilder<T, System.Collections.ICollection>, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/FluentValidationCustomExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CollectionLength
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/FluentValidationCustomExtensions.cs
+    startLine: 19
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao.FluentCustom
+  syntax:
+    content: public static IRuleBuilderOptions<T, ICollection> CollectionLength<T>(IRuleBuilder<T, ICollection> ruleBuilder, int exactLength)
+    content.vb: Public Shared Function CollectionLength(Of T)(ruleBuilder As IRuleBuilder(Of T, ICollection), exactLength As Integer) As IRuleBuilderOptions(Of T, ICollection)
+    parameters:
+    - id: ruleBuilder
+      type: IRuleBuilder{{T},System.Collections.ICollection}
+    - id: exactLength
+      type: System.Int32
+    typeParameters:
+    - id: T
+    return:
+      type: IRuleBuilderOptions{{T},System.Collections.ICollection}
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions.CollectionLength(Of T)(IRuleBuilder(Of T, System.Collections.ICollection), System.Int32)
+  name.vb: CollectionLength(Of T)(IRuleBuilder(Of T, ICollection), Int32)
+- uid: NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions.ChaveDeAcessoValida``2(IRuleBuilder{``0,``1})
+  id: ChaveDeAcessoValida``2(IRuleBuilder{``0,``1})
+  parent: NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions
+  langs:
+  - csharp
+  - vb
+  name: ChaveDeAcessoValida<T, TProperty>(IRuleBuilder<T, TProperty>)
+  fullName: NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions.ChaveDeAcessoValida<T, TProperty>(IRuleBuilder<T, TProperty>)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/FluentValidationCustomExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ChaveDeAcessoValida
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/FluentValidationCustomExtensions.cs
+    startLine: 25
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao.FluentCustom
+  syntax:
+    content: public static IRuleBuilderOptions<T, TProperty> ChaveDeAcessoValida<T, TProperty>(IRuleBuilder<T, TProperty> ruleBuilder)
+    content.vb: Public Shared Function ChaveDeAcessoValida(Of T, TProperty)(ruleBuilder As IRuleBuilder(Of T, TProperty)) As IRuleBuilderOptions(Of T, TProperty)
+    parameters:
+    - id: ruleBuilder
+      type: IRuleBuilder{{T},{TProperty}}
+    typeParameters:
+    - id: T
+    - id: TProperty
+    return:
+      type: IRuleBuilderOptions{{T},{TProperty}}
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions.ChaveDeAcessoValida(Of T, TProperty)(IRuleBuilder(Of T, TProperty))
+  name.vb: ChaveDeAcessoValida(Of T, TProperty)(IRuleBuilder(Of T, TProperty))
+- uid: NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions.CnpjValido``1(IRuleBuilder{``0,System.String})
+  id: CnpjValido``1(IRuleBuilder{``0,System.String})
+  parent: NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions
+  langs:
+  - csharp
+  - vb
+  name: CnpjValido<T>(IRuleBuilder<T, String>)
+  fullName: NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions.CnpjValido<T>(IRuleBuilder<T, System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/FluentValidationCustomExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CnpjValido
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/FluentValidationCustomExtensions.cs
+    startLine: 31
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao.FluentCustom
+  syntax:
+    content: public static IRuleBuilderOptions<T, string> CnpjValido<T>(IRuleBuilder<T, string> ruleBuilder)
+    content.vb: Public Shared Function CnpjValido(Of T)(ruleBuilder As IRuleBuilder(Of T, String)) As IRuleBuilderOptions(Of T, String)
+    parameters:
+    - id: ruleBuilder
+      type: IRuleBuilder{{T},System.String}
+    typeParameters:
+    - id: T
+    return:
+      type: IRuleBuilderOptions{{T},System.String}
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: NotaFiscalNet.Core.Validacao.FluentCustom.FluentValidationCustomExtensions.CnpjValido(Of T)(IRuleBuilder(Of T, System.String))
+  name.vb: CnpjValido(Of T)(IRuleBuilder(Of T, String))
+references:
+- uid: NotaFiscalNet.Core.Validacao.FluentCustom
+  isExternal: false
+  name: NotaFiscalNet.Core.Validacao.FluentCustom
+  fullName: NotaFiscalNet.Core.Validacao.FluentCustom
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: IRuleBuilder{{T},{TProperty}}
+  definition: IRuleBuilder`2
+  name: IRuleBuilder<T, TProperty>
+  fullName: IRuleBuilder<T, TProperty>
+  fullname.vb: IRuleBuilder(Of T, TProperty)
+  name.vb: IRuleBuilder(Of T, TProperty)
+  spec.csharp:
+  - uid: IRuleBuilder`2
+    name: IRuleBuilder
+    fullName: IRuleBuilder
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - name: TProperty
+    fullName: TProperty
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IRuleBuilder`2
+    name: IRuleBuilder
+    fullName: IRuleBuilder
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - name: TProperty
+    fullName: TProperty
+  - name: )
+    fullName: )
+- uid: '{TProperty}[]'
+  isExternal: false
+  name: TProperty[]
+  fullName: TProperty[]
+  fullname.vb: TProperty()
+  name.vb: TProperty()
+  spec.csharp:
+  - name: TProperty
+    fullName: TProperty
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: TProperty
+    fullName: TProperty
+  - name: ()
+    fullName: ()
+- uid: IRuleBuilderOptions{{T},{TProperty}}
+  definition: IRuleBuilderOptions`2
+  name: IRuleBuilderOptions<T, TProperty>
+  fullName: IRuleBuilderOptions<T, TProperty>
+  fullname.vb: IRuleBuilderOptions(Of T, TProperty)
+  name.vb: IRuleBuilderOptions(Of T, TProperty)
+  spec.csharp:
+  - uid: IRuleBuilderOptions`2
+    name: IRuleBuilderOptions
+    fullName: IRuleBuilderOptions
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - name: TProperty
+    fullName: TProperty
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IRuleBuilderOptions`2
+    name: IRuleBuilderOptions
+    fullName: IRuleBuilderOptions
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - name: TProperty
+    fullName: TProperty
+  - name: )
+    fullName: )
+- uid: IRuleBuilder`2
+  isExternal: true
+  name: IRuleBuilder<, >
+  fullName: IRuleBuilder<, >
+  fullname.vb: IRuleBuilder(Of , )
+  name.vb: IRuleBuilder(Of , )
+  spec.csharp:
+  - uid: IRuleBuilder`2
+    name: IRuleBuilder
+    fullName: IRuleBuilder
+    isExternal: true
+  - name: <
+    fullName: <
+  - {}
+  - name: ', '
+    fullName: ', '
+  - {}
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IRuleBuilder`2
+    name: IRuleBuilder
+    fullName: IRuleBuilder
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - {}
+  - name: ', '
+    fullName: ', '
+  - {}
+  - name: )
+    fullName: )
+- uid: IRuleBuilderOptions`2
+  isExternal: true
+  name: IRuleBuilderOptions<, >
+  fullName: IRuleBuilderOptions<, >
+  fullname.vb: IRuleBuilderOptions(Of , )
+  name.vb: IRuleBuilderOptions(Of , )
+  spec.csharp:
+  - uid: IRuleBuilderOptions`2
+    name: IRuleBuilderOptions
+    fullName: IRuleBuilderOptions
+    isExternal: true
+  - name: <
+    fullName: <
+  - {}
+  - name: ', '
+    fullName: ', '
+  - {}
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IRuleBuilderOptions`2
+    name: IRuleBuilderOptions
+    fullName: IRuleBuilderOptions
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - {}
+  - name: ', '
+    fullName: ', '
+  - {}
+  - name: )
+    fullName: )
+- uid: IRuleBuilder{{T},System.Collections.ICollection}
+  definition: IRuleBuilder`2
+  name: IRuleBuilder<T, ICollection>
+  fullName: IRuleBuilder<T, System.Collections.ICollection>
+  fullname.vb: IRuleBuilder(Of T, System.Collections.ICollection)
+  name.vb: IRuleBuilder(Of T, ICollection)
+  spec.csharp:
+  - uid: IRuleBuilder`2
+    name: IRuleBuilder
+    fullName: IRuleBuilder
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - uid: System.Collections.ICollection
+    name: ICollection
+    fullName: System.Collections.ICollection
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IRuleBuilder`2
+    name: IRuleBuilder
+    fullName: IRuleBuilder
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - uid: System.Collections.ICollection
+    name: ICollection
+    fullName: System.Collections.ICollection
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: IRuleBuilderOptions{{T},System.Collections.ICollection}
+  definition: IRuleBuilderOptions`2
+  name: IRuleBuilderOptions<T, ICollection>
+  fullName: IRuleBuilderOptions<T, System.Collections.ICollection>
+  fullname.vb: IRuleBuilderOptions(Of T, System.Collections.ICollection)
+  name.vb: IRuleBuilderOptions(Of T, ICollection)
+  spec.csharp:
+  - uid: IRuleBuilderOptions`2
+    name: IRuleBuilderOptions
+    fullName: IRuleBuilderOptions
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - uid: System.Collections.ICollection
+    name: ICollection
+    fullName: System.Collections.ICollection
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IRuleBuilderOptions`2
+    name: IRuleBuilderOptions
+    fullName: IRuleBuilderOptions
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - uid: System.Collections.ICollection
+    name: ICollection
+    fullName: System.Collections.ICollection
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: IRuleBuilder{{T},System.String}
+  definition: IRuleBuilder`2
+  name: IRuleBuilder<T, String>
+  fullName: IRuleBuilder<T, System.String>
+  fullname.vb: IRuleBuilder(Of T, System.String)
+  name.vb: IRuleBuilder(Of T, String)
+  spec.csharp:
+  - uid: IRuleBuilder`2
+    name: IRuleBuilder
+    fullName: IRuleBuilder
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IRuleBuilder`2
+    name: IRuleBuilder
+    fullName: IRuleBuilder
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: IRuleBuilderOptions{{T},System.String}
+  definition: IRuleBuilderOptions`2
+  name: IRuleBuilderOptions<T, String>
+  fullName: IRuleBuilderOptions<T, System.String>
+  fullname.vb: IRuleBuilderOptions(Of T, System.String)
+  name.vb: IRuleBuilderOptions(Of T, String)
+  spec.csharp:
+  - uid: IRuleBuilderOptions`2
+    name: IRuleBuilderOptions
+    fullName: IRuleBuilderOptions
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IRuleBuilderOptions`2
+    name: IRuleBuilderOptions
+    fullName: IRuleBuilderOptions
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )

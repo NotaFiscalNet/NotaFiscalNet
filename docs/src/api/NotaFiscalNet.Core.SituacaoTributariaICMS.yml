@@ -1,0 +1,720 @@
+items:
+- uid: NotaFiscalNet.Core.SituacaoTributariaICMS
+  id: SituacaoTributariaICMS
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN101
+  - NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN102
+  - NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN103
+  - NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN201
+  - NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN202
+  - NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN203
+  - NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN300
+  - NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN400
+  - NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN500
+  - NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN900
+  - NotaFiscalNet.Core.SituacaoTributariaICMS.Cst00
+  - NotaFiscalNet.Core.SituacaoTributariaICMS.Cst10
+  - NotaFiscalNet.Core.SituacaoTributariaICMS.Cst20
+  - NotaFiscalNet.Core.SituacaoTributariaICMS.Cst30
+  - NotaFiscalNet.Core.SituacaoTributariaICMS.Cst40
+  - NotaFiscalNet.Core.SituacaoTributariaICMS.Cst41
+  - NotaFiscalNet.Core.SituacaoTributariaICMS.Cst50
+  - NotaFiscalNet.Core.SituacaoTributariaICMS.Cst51
+  - NotaFiscalNet.Core.SituacaoTributariaICMS.Cst60
+  - NotaFiscalNet.Core.SituacaoTributariaICMS.Cst70
+  - NotaFiscalNet.Core.SituacaoTributariaICMS.Cst90
+  - NotaFiscalNet.Core.SituacaoTributariaICMS.NaoEspecificado
+  langs:
+  - csharp
+  - vb
+  name: SituacaoTributariaICMS
+  fullName: NotaFiscalNet.Core.SituacaoTributariaICMS
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SituacaoTributariaICMS
+    path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nLista dos Códigos de Situação Tributária (CST) do ICMS.\r\n"
+  example: []
+  syntax:
+    content: public enum SituacaoTributariaICMS
+    content.vb: Public Enum SituacaoTributariaICMS
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.SituacaoTributariaICMS.NaoEspecificado
+  id: NaoEspecificado
+  parent: NotaFiscalNet.Core.SituacaoTributariaICMS
+  langs:
+  - csharp
+  - vb
+  name: NaoEspecificado
+  fullName: NotaFiscalNet.Core.SituacaoTributariaICMS.NaoEspecificado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoEspecificado
+    path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nNão Especificado\r\n"
+  example: []
+  syntax:
+    content: NaoEspecificado = -1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaICMS.Cst00
+  id: Cst00
+  parent: NotaFiscalNet.Core.SituacaoTributariaICMS
+  langs:
+  - csharp
+  - vb
+  name: Cst00
+  fullName: NotaFiscalNet.Core.SituacaoTributariaICMS.Cst00
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst00
+    path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n00 - Tributada integralmente\r\n"
+  example: []
+  syntax:
+    content: Cst00 = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaICMS.Cst10
+  id: Cst10
+  parent: NotaFiscalNet.Core.SituacaoTributariaICMS
+  langs:
+  - csharp
+  - vb
+  name: Cst10
+  fullName: NotaFiscalNet.Core.SituacaoTributariaICMS.Cst10
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst10
+    path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n10 - Tributada e com cobrança do ICMS por substituição tributária\r\n"
+  example: []
+  syntax:
+    content: Cst10 = 10
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaICMS.Cst20
+  id: Cst20
+  parent: NotaFiscalNet.Core.SituacaoTributariaICMS
+  langs:
+  - csharp
+  - vb
+  name: Cst20
+  fullName: NotaFiscalNet.Core.SituacaoTributariaICMS.Cst20
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst20
+    path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+    startLine: 26
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n20 - Com redução de base de cálculo\r\n"
+  example: []
+  syntax:
+    content: Cst20 = 20
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaICMS.Cst30
+  id: Cst30
+  parent: NotaFiscalNet.Core.SituacaoTributariaICMS
+  langs:
+  - csharp
+  - vb
+  name: Cst30
+  fullName: NotaFiscalNet.Core.SituacaoTributariaICMS.Cst30
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst30
+    path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+    startLine: 31
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n30 - Isenta ou não tributada e com cobrança do ICMS por substituição tributária\r\n"
+  example: []
+  syntax:
+    content: Cst30 = 30
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaICMS.Cst40
+  id: Cst40
+  parent: NotaFiscalNet.Core.SituacaoTributariaICMS
+  langs:
+  - csharp
+  - vb
+  name: Cst40
+  fullName: NotaFiscalNet.Core.SituacaoTributariaICMS.Cst40
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst40
+    path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+    startLine: 36
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n40 - Isenta\r\n"
+  example: []
+  syntax:
+    content: Cst40 = 40
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaICMS.Cst41
+  id: Cst41
+  parent: NotaFiscalNet.Core.SituacaoTributariaICMS
+  langs:
+  - csharp
+  - vb
+  name: Cst41
+  fullName: NotaFiscalNet.Core.SituacaoTributariaICMS.Cst41
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst41
+    path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+    startLine: 41
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n41 - Não tributada\r\n"
+  example: []
+  syntax:
+    content: Cst41 = 41
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaICMS.Cst50
+  id: Cst50
+  parent: NotaFiscalNet.Core.SituacaoTributariaICMS
+  langs:
+  - csharp
+  - vb
+  name: Cst50
+  fullName: NotaFiscalNet.Core.SituacaoTributariaICMS.Cst50
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst50
+    path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+    startLine: 46
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n50 - Suspensão\r\n"
+  example: []
+  syntax:
+    content: Cst50 = 50
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaICMS.Cst51
+  id: Cst51
+  parent: NotaFiscalNet.Core.SituacaoTributariaICMS
+  langs:
+  - csharp
+  - vb
+  name: Cst51
+  fullName: NotaFiscalNet.Core.SituacaoTributariaICMS.Cst51
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst51
+    path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+    startLine: 52
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n51 - Diferimento. A exigência do preenchimento das informações do ICMS diferido fica à\r\ncritério de cada UF.\r\n"
+  example: []
+  syntax:
+    content: Cst51 = 51
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaICMS.Cst60
+  id: Cst60
+  parent: NotaFiscalNet.Core.SituacaoTributariaICMS
+  langs:
+  - csharp
+  - vb
+  name: Cst60
+  fullName: NotaFiscalNet.Core.SituacaoTributariaICMS.Cst60
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst60
+    path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+    startLine: 57
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n60 - ICMS cobrado anteriormente por substituição tributária\r\n"
+  example: []
+  syntax:
+    content: Cst60 = 60
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaICMS.Cst70
+  id: Cst70
+  parent: NotaFiscalNet.Core.SituacaoTributariaICMS
+  langs:
+  - csharp
+  - vb
+  name: Cst70
+  fullName: NotaFiscalNet.Core.SituacaoTributariaICMS.Cst70
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst70
+    path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+    startLine: 62
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n70 - Com redução de base de cálculo e cobrança do ICMS por substituição tributária\r\n"
+  example: []
+  syntax:
+    content: Cst70 = 70
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaICMS.Cst90
+  id: Cst90
+  parent: NotaFiscalNet.Core.SituacaoTributariaICMS
+  langs:
+  - csharp
+  - vb
+  name: Cst90
+  fullName: NotaFiscalNet.Core.SituacaoTributariaICMS.Cst90
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst90
+    path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+    startLine: 67
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n90 - Outros\r\n"
+  example: []
+  syntax:
+    content: Cst90 = 90
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN101
+  id: CSOSN101
+  parent: NotaFiscalNet.Core.SituacaoTributariaICMS
+  langs:
+  - csharp
+  - vb
+  name: CSOSN101
+  fullName: NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN101
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CSOSN101
+    path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+    startLine: 72
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n101- Tributada pelo Simples Nacional com permissão de crédito\r\n"
+  example: []
+  syntax:
+    content: CSOSN101 = 101
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN102
+  id: CSOSN102
+  parent: NotaFiscalNet.Core.SituacaoTributariaICMS
+  langs:
+  - csharp
+  - vb
+  name: CSOSN102
+  fullName: NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN102
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CSOSN102
+    path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+    startLine: 77
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n102 - Tributada pelo Simples Nacional sem permissão de crédito.\r\n"
+  example: []
+  syntax:
+    content: CSOSN102 = 102
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN103
+  id: CSOSN103
+  parent: NotaFiscalNet.Core.SituacaoTributariaICMS
+  langs:
+  - csharp
+  - vb
+  name: CSOSN103
+  fullName: NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN103
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CSOSN103
+    path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+    startLine: 82
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n103 – Isenção do ICMS no Simples Nacional para faixa de receita bruta.\r\n"
+  example: []
+  syntax:
+    content: CSOSN103 = 103
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN300
+  id: CSOSN300
+  parent: NotaFiscalNet.Core.SituacaoTributariaICMS
+  langs:
+  - csharp
+  - vb
+  name: CSOSN300
+  fullName: NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN300
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CSOSN300
+    path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+    startLine: 87
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n300 – Imune (Simples Nacional).\r\n"
+  example: []
+  syntax:
+    content: CSOSN300 = 300
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN400
+  id: CSOSN400
+  parent: NotaFiscalNet.Core.SituacaoTributariaICMS
+  langs:
+  - csharp
+  - vb
+  name: CSOSN400
+  fullName: NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN400
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CSOSN400
+    path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+    startLine: 92
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n400 – Não tributada pelo Simples Nacional\r\n"
+  example: []
+  syntax:
+    content: CSOSN400 = 400
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN201
+  id: CSOSN201
+  parent: NotaFiscalNet.Core.SituacaoTributariaICMS
+  langs:
+  - csharp
+  - vb
+  name: CSOSN201
+  fullName: NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN201
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CSOSN201
+    path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+    startLine: 98
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n201 - Tributada pelo Simples Nacional com permissão de crédito e com cobrança do ICMS por\r\nSubstituição Tributária\r\n"
+  example: []
+  syntax:
+    content: CSOSN201 = 201
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN202
+  id: CSOSN202
+  parent: NotaFiscalNet.Core.SituacaoTributariaICMS
+  langs:
+  - csharp
+  - vb
+  name: CSOSN202
+  fullName: NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN202
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CSOSN202
+    path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+    startLine: 104
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n202 - Tributada pelo Simples Nacional sem permissão de crédito e com cobrança do ICMS por\r\nSubstituição Tributária\r\n"
+  example: []
+  syntax:
+    content: CSOSN202 = 202
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN203
+  id: CSOSN203
+  parent: NotaFiscalNet.Core.SituacaoTributariaICMS
+  langs:
+  - csharp
+  - vb
+  name: CSOSN203
+  fullName: NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN203
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CSOSN203
+    path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+    startLine: 110
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n203 - Isenção do ICMS nos Simples Nacional para faixa de receita bruta e com cobrança do\r\nICMS por Substituição Tributária\r\n"
+  example: []
+  syntax:
+    content: CSOSN203 = 203
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN500
+  id: CSOSN500
+  parent: NotaFiscalNet.Core.SituacaoTributariaICMS
+  langs:
+  - csharp
+  - vb
+  name: CSOSN500
+  fullName: NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN500
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CSOSN500
+    path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+    startLine: 115
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n500 – ICMS cobrado anterirmente por substituição tributária (substituído) ou por antecipação\r\n"
+  example: []
+  syntax:
+    content: CSOSN500 = 500
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN900
+  id: CSOSN900
+  parent: NotaFiscalNet.Core.SituacaoTributariaICMS
+  langs:
+  - csharp
+  - vb
+  name: CSOSN900
+  fullName: NotaFiscalNet.Core.SituacaoTributariaICMS.CSOSN900
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CSOSN900
+    path: src/NotaFiscalNet.Core/SituacaoTributariaICMS.cs
+    startLine: 120
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n900 - Tributação pelo ICMS 900 - Outros\r\n"
+  example: []
+  syntax:
+    content: CSOSN900 = 900
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

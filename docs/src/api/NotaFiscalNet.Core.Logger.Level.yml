@@ -1,0 +1,181 @@
+items:
+- uid: NotaFiscalNet.Core.Logger.Level
+  id: Logger.Level
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.Logger.Level.Debug
+  - NotaFiscalNet.Core.Logger.Level.Error
+  - NotaFiscalNet.Core.Logger.Level.Fatal
+  - NotaFiscalNet.Core.Logger.Level.Info
+  - NotaFiscalNet.Core.Logger.Level.Warn
+  langs:
+  - csharp
+  - vb
+  name: Logger.Level
+  fullName: NotaFiscalNet.Core.Logger.Level
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Logger.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Level
+    path: src/NotaFiscalNet.Core/Logger.cs
+    startLine: 4
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public enum Level
+    content.vb: Public Enum Level
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.Logger.Level.Warn
+  id: Warn
+  parent: NotaFiscalNet.Core.Logger.Level
+  langs:
+  - csharp
+  - vb
+  name: Warn
+  fullName: NotaFiscalNet.Core.Logger.Level.Warn
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Logger.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Warn
+    path: src/NotaFiscalNet.Core/Logger.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: Warn = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Logger.Level.Info
+  id: Info
+  parent: NotaFiscalNet.Core.Logger.Level
+  langs:
+  - csharp
+  - vb
+  name: Info
+  fullName: NotaFiscalNet.Core.Logger.Level.Info
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Logger.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Info
+    path: src/NotaFiscalNet.Core/Logger.cs
+    startLine: 7
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: Info = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Logger.Level.Error
+  id: Error
+  parent: NotaFiscalNet.Core.Logger.Level
+  langs:
+  - csharp
+  - vb
+  name: Error
+  fullName: NotaFiscalNet.Core.Logger.Level.Error
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Logger.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Error
+    path: src/NotaFiscalNet.Core/Logger.cs
+    startLine: 8
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: Error = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Logger.Level.Debug
+  id: Debug
+  parent: NotaFiscalNet.Core.Logger.Level
+  langs:
+  - csharp
+  - vb
+  name: Debug
+  fullName: NotaFiscalNet.Core.Logger.Level.Debug
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Logger.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Debug
+    path: src/NotaFiscalNet.Core/Logger.cs
+    startLine: 9
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: Debug = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Logger.Level.Fatal
+  id: Fatal
+  parent: NotaFiscalNet.Core.Logger.Level
+  langs:
+  - csharp
+  - vb
+  name: Fatal
+  fullName: NotaFiscalNet.Core.Logger.Level.Fatal
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Logger.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Fatal
+    path: src/NotaFiscalNet.Core/Logger.cs
+    startLine: 10
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: Fatal = 4
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

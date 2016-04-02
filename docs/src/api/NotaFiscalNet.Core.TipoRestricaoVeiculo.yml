@@ -1,0 +1,253 @@
+items:
+- uid: NotaFiscalNet.Core.TipoRestricaoVeiculo
+  id: TipoRestricaoVeiculo
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.TipoRestricaoVeiculo.AlienacaoFiduciaria
+  - NotaFiscalNet.Core.TipoRestricaoVeiculo.ArrendamentoMercantil
+  - NotaFiscalNet.Core.TipoRestricaoVeiculo.NaoEspecificado
+  - NotaFiscalNet.Core.TipoRestricaoVeiculo.Outras
+  - NotaFiscalNet.Core.TipoRestricaoVeiculo.PenhorVeiculo
+  - NotaFiscalNet.Core.TipoRestricaoVeiculo.ReservaDominio
+  - NotaFiscalNet.Core.TipoRestricaoVeiculo.SemRestricoes
+  langs:
+  - csharp
+  - vb
+  name: TipoRestricaoVeiculo
+  fullName: NotaFiscalNet.Core.TipoRestricaoVeiculo
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoRestricaoVeiculo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoRestricaoVeiculo
+    path: src/NotaFiscalNet.Core/TipoRestricaoVeiculo.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nEspecifica o Tipo de Restrição do Veículo.\r\n"
+  example: []
+  syntax:
+    content: public enum TipoRestricaoVeiculo
+    content.vb: Public Enum TipoRestricaoVeiculo
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.TipoRestricaoVeiculo.NaoEspecificado
+  id: NaoEspecificado
+  parent: NotaFiscalNet.Core.TipoRestricaoVeiculo
+  langs:
+  - csharp
+  - vb
+  name: NaoEspecificado
+  fullName: NotaFiscalNet.Core.TipoRestricaoVeiculo.NaoEspecificado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoRestricaoVeiculo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoEspecificado
+    path: src/NotaFiscalNet.Core/TipoRestricaoVeiculo.cs
+    startLine: 8
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: NaoEspecificado = -1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoRestricaoVeiculo.SemRestricoes
+  id: SemRestricoes
+  parent: NotaFiscalNet.Core.TipoRestricaoVeiculo
+  langs:
+  - csharp
+  - vb
+  name: SemRestricoes
+  fullName: NotaFiscalNet.Core.TipoRestricaoVeiculo.SemRestricoes
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoRestricaoVeiculo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SemRestricoes
+    path: src/NotaFiscalNet.Core/TipoRestricaoVeiculo.cs
+    startLine: 13
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n0 - Não há restrições.\r\n"
+  example: []
+  syntax:
+    content: SemRestricoes = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoRestricaoVeiculo.AlienacaoFiduciaria
+  id: AlienacaoFiduciaria
+  parent: NotaFiscalNet.Core.TipoRestricaoVeiculo
+  langs:
+  - csharp
+  - vb
+  name: AlienacaoFiduciaria
+  fullName: NotaFiscalNet.Core.TipoRestricaoVeiculo.AlienacaoFiduciaria
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoRestricaoVeiculo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: AlienacaoFiduciaria
+    path: src/NotaFiscalNet.Core/TipoRestricaoVeiculo.cs
+    startLine: 18
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n1 - Alienação Fiduciária.\r\n"
+  example: []
+  syntax:
+    content: AlienacaoFiduciaria = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoRestricaoVeiculo.ArrendamentoMercantil
+  id: ArrendamentoMercantil
+  parent: NotaFiscalNet.Core.TipoRestricaoVeiculo
+  langs:
+  - csharp
+  - vb
+  name: ArrendamentoMercantil
+  fullName: NotaFiscalNet.Core.TipoRestricaoVeiculo.ArrendamentoMercantil
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoRestricaoVeiculo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ArrendamentoMercantil
+    path: src/NotaFiscalNet.Core/TipoRestricaoVeiculo.cs
+    startLine: 23
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n2 - Arrendamento Mercantil.\r\n"
+  example: []
+  syntax:
+    content: ArrendamentoMercantil = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoRestricaoVeiculo.ReservaDominio
+  id: ReservaDominio
+  parent: NotaFiscalNet.Core.TipoRestricaoVeiculo
+  langs:
+  - csharp
+  - vb
+  name: ReservaDominio
+  fullName: NotaFiscalNet.Core.TipoRestricaoVeiculo.ReservaDominio
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoRestricaoVeiculo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ReservaDominio
+    path: src/NotaFiscalNet.Core/TipoRestricaoVeiculo.cs
+    startLine: 28
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n3 - Reserva de Domínio.\r\n"
+  example: []
+  syntax:
+    content: ReservaDominio = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoRestricaoVeiculo.PenhorVeiculo
+  id: PenhorVeiculo
+  parent: NotaFiscalNet.Core.TipoRestricaoVeiculo
+  langs:
+  - csharp
+  - vb
+  name: PenhorVeiculo
+  fullName: NotaFiscalNet.Core.TipoRestricaoVeiculo.PenhorVeiculo
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoRestricaoVeiculo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PenhorVeiculo
+    path: src/NotaFiscalNet.Core/TipoRestricaoVeiculo.cs
+    startLine: 33
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n4 - Penhor de Veículos.\r\n"
+  example: []
+  syntax:
+    content: PenhorVeiculo = 4
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoRestricaoVeiculo.Outras
+  id: Outras
+  parent: NotaFiscalNet.Core.TipoRestricaoVeiculo
+  langs:
+  - csharp
+  - vb
+  name: Outras
+  fullName: NotaFiscalNet.Core.TipoRestricaoVeiculo.Outras
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoRestricaoVeiculo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Outras
+    path: src/NotaFiscalNet.Core/TipoRestricaoVeiculo.cs
+    startLine: 38
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n9 - Outras.\r\n"
+  example: []
+  syntax:
+    content: Outras = 9
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

@@ -1,0 +1,172 @@
+items:
+- uid: NotaFiscalNet.Core.Tests.IdentificacaoDocumentoFiscalTests
+  id: IdentificacaoDocumentoFiscalTests
+  parent: NotaFiscalNet.Core.Tests
+  children:
+  - NotaFiscalNet.Core.Tests.IdentificacaoDocumentoFiscalTests.#ctor
+  - NotaFiscalNet.Core.Tests.IdentificacaoDocumentoFiscalTests.DeveCriarIdenficacaoDocumentoComValoresPadroes
+  - NotaFiscalNet.Core.Tests.IdentificacaoDocumentoFiscalTests.DeveRetornarResultadoErrosValidacaoNfe
+  - NotaFiscalNet.Core.Tests.IdentificacaoDocumentoFiscalTests.DeveSerializarUmaIdentificacaoDocumentoFiscal(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IdentificacaoDocumentoFiscalTests
+  fullName: NotaFiscalNet.Core.Tests.IdentificacaoDocumentoFiscalTests
+  type: Class
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/IdentificacaoDocumentoFiscalTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: IdentificacaoDocumentoFiscalTests
+    path: tests/NotaFiscalNet.Core.Tests/IdentificacaoDocumentoFiscalTests.cs
+    startLine: 14
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests
+  syntax:
+    content: 'public class IdentificacaoDocumentoFiscalTests : object'
+    content.vb: >-
+      Public Class IdentificacaoDocumentoFiscalTests
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Tests.IdentificacaoDocumentoFiscalTests.DeveCriarIdenficacaoDocumentoComValoresPadroes
+  id: DeveCriarIdenficacaoDocumentoComValoresPadroes
+  parent: NotaFiscalNet.Core.Tests.IdentificacaoDocumentoFiscalTests
+  langs:
+  - csharp
+  - vb
+  name: DeveCriarIdenficacaoDocumentoComValoresPadroes()
+  fullName: NotaFiscalNet.Core.Tests.IdentificacaoDocumentoFiscalTests.DeveCriarIdenficacaoDocumentoComValoresPadroes()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/IdentificacaoDocumentoFiscalTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveCriarIdenficacaoDocumentoComValoresPadroes
+    path: tests/NotaFiscalNet.Core.Tests/IdentificacaoDocumentoFiscalTests.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests
+  syntax:
+    content: public void DeveCriarIdenficacaoDocumentoComValoresPadroes()
+    content.vb: Public Sub DeveCriarIdenficacaoDocumentoComValoresPadroes
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.IdentificacaoDocumentoFiscalTests.#ctor
+  id: '#ctor'
+  parent: NotaFiscalNet.Core.Tests.IdentificacaoDocumentoFiscalTests
+  langs:
+  - csharp
+  - vb
+  name: IdentificacaoDocumentoFiscalTests()
+  fullName: NotaFiscalNet.Core.Tests.IdentificacaoDocumentoFiscalTests.IdentificacaoDocumentoFiscalTests()
+  type: Constructor
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/IdentificacaoDocumentoFiscalTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: tests/NotaFiscalNet.Core.Tests/IdentificacaoDocumentoFiscalTests.cs
+    startLine: 232
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests
+  syntax:
+    content: public IdentificacaoDocumentoFiscalTests()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.IdentificacaoDocumentoFiscalTests.DeveSerializarUmaIdentificacaoDocumentoFiscal(System.String,System.String)
+  id: DeveSerializarUmaIdentificacaoDocumentoFiscal(System.String,System.String)
+  parent: NotaFiscalNet.Core.Tests.IdentificacaoDocumentoFiscalTests
+  langs:
+  - csharp
+  - vb
+  name: DeveSerializarUmaIdentificacaoDocumentoFiscal(String, String)
+  fullName: NotaFiscalNet.Core.Tests.IdentificacaoDocumentoFiscalTests.DeveSerializarUmaIdentificacaoDocumentoFiscal(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/IdentificacaoDocumentoFiscalTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveSerializarUmaIdentificacaoDocumentoFiscal
+    path: tests/NotaFiscalNet.Core.Tests/IdentificacaoDocumentoFiscalTests.cs
+    startLine: 237
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests
+  syntax:
+    content: public void DeveSerializarUmaIdentificacaoDocumentoFiscal(string chaveReferencia, string arquivoXml)
+    content.vb: Public Sub DeveSerializarUmaIdentificacaoDocumentoFiscal(chaveReferencia As String, arquivoXml As String)
+    parameters:
+    - id: chaveReferencia
+      type: System.String
+    - id: arquivoXml
+      type: System.String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.IdentificacaoDocumentoFiscalTests.DeveRetornarResultadoErrosValidacaoNfe
+  id: DeveRetornarResultadoErrosValidacaoNfe
+  parent: NotaFiscalNet.Core.Tests.IdentificacaoDocumentoFiscalTests
+  langs:
+  - csharp
+  - vb
+  name: DeveRetornarResultadoErrosValidacaoNfe()
+  fullName: NotaFiscalNet.Core.Tests.IdentificacaoDocumentoFiscalTests.DeveRetornarResultadoErrosValidacaoNfe()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/IdentificacaoDocumentoFiscalTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveRetornarResultadoErrosValidacaoNfe
+    path: tests/NotaFiscalNet.Core.Tests/IdentificacaoDocumentoFiscalTests.cs
+    startLine: 256
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests
+  syntax:
+    content: public void DeveRetornarResultadoErrosValidacaoNfe()
+    content.vb: Public Sub DeveRetornarResultadoErrosValidacaoNfe
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core.Tests
+  isExternal: false
+  name: NotaFiscalNet.Core.Tests
+  fullName: NotaFiscalNet.Core.Tests
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

@@ -1,0 +1,131 @@
+items:
+- uid: NotaFiscalNet.Core.TipoMeioTransporte
+  id: TipoMeioTransporte
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.TipoMeioTransporte.Ferroviario
+  - NotaFiscalNet.Core.TipoMeioTransporte.Pluvial
+  - NotaFiscalNet.Core.TipoMeioTransporte.Rodoviario
+  langs:
+  - csharp
+  - vb
+  name: TipoMeioTransporte
+  fullName: NotaFiscalNet.Core.TipoMeioTransporte
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoMeioTransporte.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoMeioTransporte
+    path: src/NotaFiscalNet.Core/TipoMeioTransporte.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nIndica a tipo do meio utilizado no transporte.\r\n"
+  example: []
+  syntax:
+    content: public enum TipoMeioTransporte
+    content.vb: Public Enum TipoMeioTransporte
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.TipoMeioTransporte.Rodoviario
+  id: Rodoviario
+  parent: NotaFiscalNet.Core.TipoMeioTransporte
+  langs:
+  - csharp
+  - vb
+  name: Rodoviario
+  fullName: NotaFiscalNet.Core.TipoMeioTransporte.Rodoviario
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoMeioTransporte.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Rodoviario
+    path: src/NotaFiscalNet.Core/TipoMeioTransporte.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n0 - Rodoviário.\r\n"
+  example: []
+  syntax:
+    content: Rodoviario = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoMeioTransporte.Ferroviario
+  id: Ferroviario
+  parent: NotaFiscalNet.Core.TipoMeioTransporte
+  langs:
+  - csharp
+  - vb
+  name: Ferroviario
+  fullName: NotaFiscalNet.Core.TipoMeioTransporte.Ferroviario
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoMeioTransporte.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Ferroviario
+    path: src/NotaFiscalNet.Core/TipoMeioTransporte.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n1 - Ferroviário.\r\n"
+  example: []
+  syntax:
+    content: Ferroviario = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoMeioTransporte.Pluvial
+  id: Pluvial
+  parent: NotaFiscalNet.Core.TipoMeioTransporte
+  langs:
+  - csharp
+  - vb
+  name: Pluvial
+  fullName: NotaFiscalNet.Core.TipoMeioTransporte.Pluvial
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoMeioTransporte.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Pluvial
+    path: src/NotaFiscalNet.Core/TipoMeioTransporte.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n2 - Pluvial.\r\n"
+  example: []
+  syntax:
+    content: Pluvial = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

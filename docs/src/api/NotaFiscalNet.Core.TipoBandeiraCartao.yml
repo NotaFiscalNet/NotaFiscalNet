@@ -1,0 +1,191 @@
+items:
+- uid: NotaFiscalNet.Core.TipoBandeiraCartao
+  id: TipoBandeiraCartao
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.TipoBandeiraCartao.AmericanExpress
+  - NotaFiscalNet.Core.TipoBandeiraCartao.Mastercard
+  - NotaFiscalNet.Core.TipoBandeiraCartao.Outros
+  - NotaFiscalNet.Core.TipoBandeiraCartao.Sorocred
+  - NotaFiscalNet.Core.TipoBandeiraCartao.Visa
+  langs:
+  - csharp
+  - vb
+  name: TipoBandeiraCartao
+  fullName: NotaFiscalNet.Core.TipoBandeiraCartao
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoBandeiraCartao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoBandeiraCartao
+    path: src/NotaFiscalNet.Core/TipoBandeiraCartao.cs
+    startLine: 2
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public enum TipoBandeiraCartao
+    content.vb: Public Enum TipoBandeiraCartao
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.TipoBandeiraCartao.Visa
+  id: Visa
+  parent: NotaFiscalNet.Core.TipoBandeiraCartao
+  langs:
+  - csharp
+  - vb
+  name: Visa
+  fullName: NotaFiscalNet.Core.TipoBandeiraCartao.Visa
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoBandeiraCartao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Visa
+    path: src/NotaFiscalNet.Core/TipoBandeiraCartao.cs
+    startLine: 7
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n01 - Visa.\r\n"
+  example: []
+  syntax:
+    content: Visa = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoBandeiraCartao.Mastercard
+  id: Mastercard
+  parent: NotaFiscalNet.Core.TipoBandeiraCartao
+  langs:
+  - csharp
+  - vb
+  name: Mastercard
+  fullName: NotaFiscalNet.Core.TipoBandeiraCartao.Mastercard
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoBandeiraCartao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Mastercard
+    path: src/NotaFiscalNet.Core/TipoBandeiraCartao.cs
+    startLine: 12
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n02 - Mastercard.\r\n"
+  example: []
+  syntax:
+    content: Mastercard = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoBandeiraCartao.AmericanExpress
+  id: AmericanExpress
+  parent: NotaFiscalNet.Core.TipoBandeiraCartao
+  langs:
+  - csharp
+  - vb
+  name: AmericanExpress
+  fullName: NotaFiscalNet.Core.TipoBandeiraCartao.AmericanExpress
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoBandeiraCartao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: AmericanExpress
+    path: src/NotaFiscalNet.Core/TipoBandeiraCartao.cs
+    startLine: 17
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n03 - American Express.\r\n"
+  example: []
+  syntax:
+    content: AmericanExpress = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoBandeiraCartao.Sorocred
+  id: Sorocred
+  parent: NotaFiscalNet.Core.TipoBandeiraCartao
+  langs:
+  - csharp
+  - vb
+  name: Sorocred
+  fullName: NotaFiscalNet.Core.TipoBandeiraCartao.Sorocred
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoBandeiraCartao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Sorocred
+    path: src/NotaFiscalNet.Core/TipoBandeiraCartao.cs
+    startLine: 22
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n04 - Sorocred.\r\n"
+  example: []
+  syntax:
+    content: Sorocred = 4
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoBandeiraCartao.Outros
+  id: Outros
+  parent: NotaFiscalNet.Core.TipoBandeiraCartao
+  langs:
+  - csharp
+  - vb
+  name: Outros
+  fullName: NotaFiscalNet.Core.TipoBandeiraCartao.Outros
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoBandeiraCartao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Outros
+    path: src/NotaFiscalNet.Core/TipoBandeiraCartao.cs
+    startLine: 27
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n99 - Outros.\r\n"
+  example: []
+  syntax:
+    content: Outros = 99
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

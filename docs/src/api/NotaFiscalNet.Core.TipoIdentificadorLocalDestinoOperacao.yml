@@ -1,0 +1,131 @@
+items:
+- uid: NotaFiscalNet.Core.TipoIdentificadorLocalDestinoOperacao
+  id: TipoIdentificadorLocalDestinoOperacao
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.TipoIdentificadorLocalDestinoOperacao.Exterior
+  - NotaFiscalNet.Core.TipoIdentificadorLocalDestinoOperacao.Interestadual
+  - NotaFiscalNet.Core.TipoIdentificadorLocalDestinoOperacao.Interna
+  langs:
+  - csharp
+  - vb
+  name: TipoIdentificadorLocalDestinoOperacao
+  fullName: NotaFiscalNet.Core.TipoIdentificadorLocalDestinoOperacao
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoIdentificadorLocalDestinoOperacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoIdentificadorLocalDestinoOperacao
+    path: src/NotaFiscalNet.Core/TipoIdentificadorLocalDestinoOperacao.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nIdentificador de Local de Destino da Opeeração.\r\n"
+  example: []
+  syntax:
+    content: public enum TipoIdentificadorLocalDestinoOperacao
+    content.vb: Public Enum TipoIdentificadorLocalDestinoOperacao
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.TipoIdentificadorLocalDestinoOperacao.Interna
+  id: Interna
+  parent: NotaFiscalNet.Core.TipoIdentificadorLocalDestinoOperacao
+  langs:
+  - csharp
+  - vb
+  name: Interna
+  fullName: NotaFiscalNet.Core.TipoIdentificadorLocalDestinoOperacao.Interna
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoIdentificadorLocalDestinoOperacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Interna
+    path: src/NotaFiscalNet.Core/TipoIdentificadorLocalDestinoOperacao.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n1 - Operação Interna.\r\n"
+  example: []
+  syntax:
+    content: Interna = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoIdentificadorLocalDestinoOperacao.Interestadual
+  id: Interestadual
+  parent: NotaFiscalNet.Core.TipoIdentificadorLocalDestinoOperacao
+  langs:
+  - csharp
+  - vb
+  name: Interestadual
+  fullName: NotaFiscalNet.Core.TipoIdentificadorLocalDestinoOperacao.Interestadual
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoIdentificadorLocalDestinoOperacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Interestadual
+    path: src/NotaFiscalNet.Core/TipoIdentificadorLocalDestinoOperacao.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n2 - Operação Interestadual.\r\n"
+  example: []
+  syntax:
+    content: Interestadual = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoIdentificadorLocalDestinoOperacao.Exterior
+  id: Exterior
+  parent: NotaFiscalNet.Core.TipoIdentificadorLocalDestinoOperacao
+  langs:
+  - csharp
+  - vb
+  name: Exterior
+  fullName: NotaFiscalNet.Core.TipoIdentificadorLocalDestinoOperacao.Exterior
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoIdentificadorLocalDestinoOperacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Exterior
+    path: src/NotaFiscalNet.Core/TipoIdentificadorLocalDestinoOperacao.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n3 - Operação com Exterior\r\n"
+  example: []
+  syntax:
+    content: Exterior = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

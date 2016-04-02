@@ -1,0 +1,85 @@
+items:
+- uid: NotaFiscalNet.Core.Interfaces.IModificavel
+  id: IModificavel
+  parent: NotaFiscalNet.Core.Interfaces
+  children:
+  - NotaFiscalNet.Core.Interfaces.IModificavel.Modificado
+  langs:
+  - csharp
+  - vb
+  name: IModificavel
+  fullName: NotaFiscalNet.Core.Interfaces.IModificavel
+  type: Interface
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Interfaces/IModificavel.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: IModificavel
+    path: src/NotaFiscalNet.Core/Interfaces/IModificavel.cs
+    startLine: 5
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Interfaces
+  summary: "\r\nInterface que define a estrutura de um tipo que pode conter a propriedade Dirty.\r\n"
+  example: []
+  syntax:
+    content: public interface IModificavel
+    content.vb: Public Interface IModificavel
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: NotaFiscalNet.Core.Interfaces.IModificavel.Modificado
+  id: Modificado
+  parent: NotaFiscalNet.Core.Interfaces.IModificavel
+  langs:
+  - csharp
+  - vb
+  name: Modificado
+  fullName: NotaFiscalNet.Core.Interfaces.IModificavel.Modificado
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Interfaces/IModificavel.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Modificado
+    path: src/NotaFiscalNet.Core/Interfaces/IModificavel.cs
+    startLine: 7
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Interfaces
+  syntax:
+    content: >-
+      bool Modificado
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property Modificado As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: NotaFiscalNet.Core.Interfaces
+  fullName: NotaFiscalNet.Core.Interfaces
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

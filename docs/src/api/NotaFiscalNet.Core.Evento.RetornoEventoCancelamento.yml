@@ -1,0 +1,1023 @@
+items:
+- uid: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento
+  id: RetornoEventoCancelamento
+  parent: NotaFiscalNet.Core.Evento
+  children:
+  - NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.Ambiente
+  - NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.ChaveAcessoNFe
+  - NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.CnpjDestinatario
+  - NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.CodigoStatus
+  - NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.CpfDestinatario
+  - NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.DataRegistroEvento
+  - NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.Descricao
+  - NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.EmailDestinatario
+  - NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.Id
+  - NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.Motivo
+  - NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.NumeroProtocolo
+  - NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.NumeroSequencial
+  - NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.Orgao
+  - NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.Tipo
+  - NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.Versao
+  - NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.VersaoAplicativo
+  langs:
+  - csharp
+  - vb
+  name: RetornoEventoCancelamento
+  fullName: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: RetornoEventoCancelamento
+    path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+    startLine: 9
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  summary: "\r\nRepresenta o detalhamento do evento\r\n"
+  example: []
+  syntax:
+    content: public class RetornoEventoCancelamento
+    content.vb: Public Class RetornoEventoCancelamento
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.Versao
+  id: Versao
+  parent: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento
+  langs:
+  - csharp
+  - vb
+  name: Versao
+  fullName: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.Versao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Versao
+    path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  syntax:
+    content: >-
+      public string Versao
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Versao As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.Id
+  id: Id
+  parent: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento
+  langs:
+  - csharp
+  - vb
+  name: Id
+  fullName: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.Id
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Id
+    path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+    startLine: 13
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  syntax:
+    content: >-
+      public string Id
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Id As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.Ambiente
+  id: Ambiente
+  parent: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento
+  langs:
+  - csharp
+  - vb
+  name: Ambiente
+  fullName: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.Ambiente
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Ambiente
+    path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+    startLine: 15
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  syntax:
+    content: >-
+      public TipoAmbiente Ambiente
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Ambiente As TipoAmbiente
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoAmbiente
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.VersaoAplicativo
+  id: VersaoAplicativo
+  parent: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento
+  langs:
+  - csharp
+  - vb
+  name: VersaoAplicativo
+  fullName: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.VersaoAplicativo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: VersaoAplicativo
+    path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+    startLine: 17
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  syntax:
+    content: >-
+      public string VersaoAplicativo
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property VersaoAplicativo As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.Orgao
+  id: Orgao
+  parent: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento
+  langs:
+  - csharp
+  - vb
+  name: Orgao
+  fullName: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.Orgao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Orgao
+    path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+    startLine: 19
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  syntax:
+    content: >-
+      public OrgaoIBGE Orgao
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Orgao As OrgaoIBGE
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.OrgaoIBGE
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.CodigoStatus
+  id: CodigoStatus
+  parent: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento
+  langs:
+  - csharp
+  - vb
+  name: CodigoStatus
+  fullName: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.CodigoStatus
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CodigoStatus
+    path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  syntax:
+    content: >-
+      public string CodigoStatus
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property CodigoStatus As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.Motivo
+  id: Motivo
+  parent: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento
+  langs:
+  - csharp
+  - vb
+  name: Motivo
+  fullName: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.Motivo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Motivo
+    path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+    startLine: 23
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  syntax:
+    content: >-
+      public string Motivo
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Motivo As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.ChaveAcessoNFe
+  id: ChaveAcessoNFe
+  parent: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento
+  langs:
+  - csharp
+  - vb
+  name: ChaveAcessoNFe
+  fullName: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.ChaveAcessoNFe
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ChaveAcessoNFe
+    path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+    startLine: 25
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  syntax:
+    content: >-
+      public string ChaveAcessoNFe
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property ChaveAcessoNFe As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.Tipo
+  id: Tipo
+  parent: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento
+  langs:
+  - csharp
+  - vb
+  name: Tipo
+  fullName: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.Tipo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Tipo
+    path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+    startLine: 27
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  syntax:
+    content: >-
+      public TipoEventoNFe? Tipo
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Tipo As TipoEventoNFe?
+    parameters: []
+    return:
+      type: System.Nullable{NotaFiscalNet.Core.Evento.TipoEventoNFe}
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.Descricao
+  id: Descricao
+  parent: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento
+  langs:
+  - csharp
+  - vb
+  name: Descricao
+  fullName: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.Descricao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Descricao
+    path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+    startLine: 29
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  syntax:
+    content: >-
+      public string Descricao
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Descricao As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.NumeroSequencial
+  id: NumeroSequencial
+  parent: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento
+  langs:
+  - csharp
+  - vb
+  name: NumeroSequencial
+  fullName: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.NumeroSequencial
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NumeroSequencial
+    path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+    startLine: 31
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  syntax:
+    content: >-
+      public int ? NumeroSequencial
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property NumeroSequencial As Integer?
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.CnpjDestinatario
+  id: CnpjDestinatario
+  parent: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento
+  langs:
+  - csharp
+  - vb
+  name: CnpjDestinatario
+  fullName: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.CnpjDestinatario
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CnpjDestinatario
+    path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+    startLine: 33
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  syntax:
+    content: >-
+      public string CnpjDestinatario
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property CnpjDestinatario As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.CpfDestinatario
+  id: CpfDestinatario
+  parent: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento
+  langs:
+  - csharp
+  - vb
+  name: CpfDestinatario
+  fullName: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.CpfDestinatario
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CpfDestinatario
+    path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+    startLine: 35
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  syntax:
+    content: >-
+      public string CpfDestinatario
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property CpfDestinatario As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.EmailDestinatario
+  id: EmailDestinatario
+  parent: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento
+  langs:
+  - csharp
+  - vb
+  name: EmailDestinatario
+  fullName: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.EmailDestinatario
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: EmailDestinatario
+    path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+    startLine: 37
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  syntax:
+    content: >-
+      public string EmailDestinatario
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property EmailDestinatario As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.DataRegistroEvento
+  id: DataRegistroEvento
+  parent: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento
+  langs:
+  - csharp
+  - vb
+  name: DataRegistroEvento
+  fullName: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.DataRegistroEvento
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DataRegistroEvento
+    path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+    startLine: 39
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  syntax:
+    content: >-
+      public DateTime DataRegistroEvento
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property DataRegistroEvento As Date
+    parameters: []
+    return:
+      type: System.DateTime
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.NumeroProtocolo
+  id: NumeroProtocolo
+  parent: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento
+  langs:
+  - csharp
+  - vb
+  name: NumeroProtocolo
+  fullName: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento.NumeroProtocolo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NumeroProtocolo
+    path: src/NotaFiscalNet.Core/Evento/RetornoEventoCancelamento.cs
+    startLine: 41
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Evento
+  syntax:
+    content: >-
+      public string NumeroProtocolo
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property NumeroProtocolo As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: NotaFiscalNet.Core.Evento
+  isExternal: false
+  name: NotaFiscalNet.Core.Evento
+  fullName: NotaFiscalNet.Core.Evento
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: NotaFiscalNet.Core.TipoAmbiente
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoAmbiente
+  fullName: NotaFiscalNet.Core.TipoAmbiente
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: NotaFiscalNet.Core.OrgaoIBGE
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: OrgaoIBGE
+  fullName: NotaFiscalNet.Core.OrgaoIBGE
+- uid: System.Nullable{NotaFiscalNet.Core.Evento.TipoEventoNFe}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<TipoEventoNFe>
+  fullName: System.Nullable<NotaFiscalNet.Core.Evento.TipoEventoNFe>
+  fullname.vb: System.Nullable(Of NotaFiscalNet.Core.Evento.TipoEventoNFe)
+  name.vb: Nullable(Of TipoEventoNFe)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: NotaFiscalNet.Core.Evento.TipoEventoNFe
+    name: TipoEventoNFe
+    fullName: NotaFiscalNet.Core.Evento.TipoEventoNFe
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: NotaFiscalNet.Core.Evento.TipoEventoNFe
+    name: TipoEventoNFe
+    fullName: NotaFiscalNet.Core.Evento.TipoEventoNFe
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  fullname.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime

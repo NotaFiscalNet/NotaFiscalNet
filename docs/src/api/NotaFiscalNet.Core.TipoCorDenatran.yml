@@ -1,0 +1,531 @@
+items:
+- uid: NotaFiscalNet.Core.TipoCorDenatran
+  id: TipoCorDenatran
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.TipoCorDenatran.Amarelo
+  - NotaFiscalNet.Core.TipoCorDenatran.Azul
+  - NotaFiscalNet.Core.TipoCorDenatran.Bege
+  - NotaFiscalNet.Core.TipoCorDenatran.Branca
+  - NotaFiscalNet.Core.TipoCorDenatran.Cinza
+  - NotaFiscalNet.Core.TipoCorDenatran.Dourada
+  - NotaFiscalNet.Core.TipoCorDenatran.Fantasia
+  - NotaFiscalNet.Core.TipoCorDenatran.Grena
+  - NotaFiscalNet.Core.TipoCorDenatran.Laranja
+  - NotaFiscalNet.Core.TipoCorDenatran.Marrom
+  - NotaFiscalNet.Core.TipoCorDenatran.NaoEspecificado
+  - NotaFiscalNet.Core.TipoCorDenatran.Prata
+  - NotaFiscalNet.Core.TipoCorDenatran.Preta
+  - NotaFiscalNet.Core.TipoCorDenatran.Rosa
+  - NotaFiscalNet.Core.TipoCorDenatran.Roxa
+  - NotaFiscalNet.Core.TipoCorDenatran.Verde
+  - NotaFiscalNet.Core.TipoCorDenatran.Vermelha
+  langs:
+  - csharp
+  - vb
+  name: TipoCorDenatran
+  fullName: NotaFiscalNet.Core.TipoCorDenatran
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoCorDenatran
+    path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nEspecifica o Tipo da Cor Segundo as regras de pré-cadastro do DENATRAN.\r\n"
+  example: []
+  syntax:
+    content: public enum TipoCorDenatran
+    content.vb: Public Enum TipoCorDenatran
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.TipoCorDenatran.NaoEspecificado
+  id: NaoEspecificado
+  parent: NotaFiscalNet.Core.TipoCorDenatran
+  langs:
+  - csharp
+  - vb
+  name: NaoEspecificado
+  fullName: NotaFiscalNet.Core.TipoCorDenatran.NaoEspecificado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoEspecificado
+    path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+    startLine: 8
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: NaoEspecificado = -1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoCorDenatran.Amarelo
+  id: Amarelo
+  parent: NotaFiscalNet.Core.TipoCorDenatran
+  langs:
+  - csharp
+  - vb
+  name: Amarelo
+  fullName: NotaFiscalNet.Core.TipoCorDenatran.Amarelo
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Amarelo
+    path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+    startLine: 9
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: Amarelo = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoCorDenatran.Azul
+  id: Azul
+  parent: NotaFiscalNet.Core.TipoCorDenatran
+  langs:
+  - csharp
+  - vb
+  name: Azul
+  fullName: NotaFiscalNet.Core.TipoCorDenatran.Azul
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Azul
+    path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+    startLine: 10
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: Azul = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoCorDenatran.Bege
+  id: Bege
+  parent: NotaFiscalNet.Core.TipoCorDenatran
+  langs:
+  - csharp
+  - vb
+  name: Bege
+  fullName: NotaFiscalNet.Core.TipoCorDenatran.Bege
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Bege
+    path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: Bege = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoCorDenatran.Branca
+  id: Branca
+  parent: NotaFiscalNet.Core.TipoCorDenatran
+  langs:
+  - csharp
+  - vb
+  name: Branca
+  fullName: NotaFiscalNet.Core.TipoCorDenatran.Branca
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Branca
+    path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+    startLine: 12
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: Branca = 4
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoCorDenatran.Cinza
+  id: Cinza
+  parent: NotaFiscalNet.Core.TipoCorDenatran
+  langs:
+  - csharp
+  - vb
+  name: Cinza
+  fullName: NotaFiscalNet.Core.TipoCorDenatran.Cinza
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cinza
+    path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+    startLine: 13
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: Cinza = 5
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoCorDenatran.Dourada
+  id: Dourada
+  parent: NotaFiscalNet.Core.TipoCorDenatran
+  langs:
+  - csharp
+  - vb
+  name: Dourada
+  fullName: NotaFiscalNet.Core.TipoCorDenatran.Dourada
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Dourada
+    path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+    startLine: 14
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: Dourada = 6
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoCorDenatran.Grena
+  id: Grena
+  parent: NotaFiscalNet.Core.TipoCorDenatran
+  langs:
+  - csharp
+  - vb
+  name: Grena
+  fullName: NotaFiscalNet.Core.TipoCorDenatran.Grena
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Grena
+    path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+    startLine: 15
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: Grena = 7
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoCorDenatran.Laranja
+  id: Laranja
+  parent: NotaFiscalNet.Core.TipoCorDenatran
+  langs:
+  - csharp
+  - vb
+  name: Laranja
+  fullName: NotaFiscalNet.Core.TipoCorDenatran.Laranja
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Laranja
+    path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: Laranja = 8
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoCorDenatran.Marrom
+  id: Marrom
+  parent: NotaFiscalNet.Core.TipoCorDenatran
+  langs:
+  - csharp
+  - vb
+  name: Marrom
+  fullName: NotaFiscalNet.Core.TipoCorDenatran.Marrom
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Marrom
+    path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+    startLine: 17
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: Marrom = 9
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoCorDenatran.Prata
+  id: Prata
+  parent: NotaFiscalNet.Core.TipoCorDenatran
+  langs:
+  - csharp
+  - vb
+  name: Prata
+  fullName: NotaFiscalNet.Core.TipoCorDenatran.Prata
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Prata
+    path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+    startLine: 18
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: Prata = 10
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoCorDenatran.Preta
+  id: Preta
+  parent: NotaFiscalNet.Core.TipoCorDenatran
+  langs:
+  - csharp
+  - vb
+  name: Preta
+  fullName: NotaFiscalNet.Core.TipoCorDenatran.Preta
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Preta
+    path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+    startLine: 19
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: Preta = 11
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoCorDenatran.Rosa
+  id: Rosa
+  parent: NotaFiscalNet.Core.TipoCorDenatran
+  langs:
+  - csharp
+  - vb
+  name: Rosa
+  fullName: NotaFiscalNet.Core.TipoCorDenatran.Rosa
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Rosa
+    path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+    startLine: 20
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: Rosa = 12
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoCorDenatran.Roxa
+  id: Roxa
+  parent: NotaFiscalNet.Core.TipoCorDenatran
+  langs:
+  - csharp
+  - vb
+  name: Roxa
+  fullName: NotaFiscalNet.Core.TipoCorDenatran.Roxa
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Roxa
+    path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: Roxa = 13
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoCorDenatran.Verde
+  id: Verde
+  parent: NotaFiscalNet.Core.TipoCorDenatran
+  langs:
+  - csharp
+  - vb
+  name: Verde
+  fullName: NotaFiscalNet.Core.TipoCorDenatran.Verde
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Verde
+    path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+    startLine: 22
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: Verde = 14
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoCorDenatran.Vermelha
+  id: Vermelha
+  parent: NotaFiscalNet.Core.TipoCorDenatran
+  langs:
+  - csharp
+  - vb
+  name: Vermelha
+  fullName: NotaFiscalNet.Core.TipoCorDenatran.Vermelha
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Vermelha
+    path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+    startLine: 23
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: Vermelha = 15
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoCorDenatran.Fantasia
+  id: Fantasia
+  parent: NotaFiscalNet.Core.TipoCorDenatran
+  langs:
+  - csharp
+  - vb
+  name: Fantasia
+  fullName: NotaFiscalNet.Core.TipoCorDenatran.Fantasia
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Fantasia
+    path: src/NotaFiscalNet.Core/TipoCorDenatran.cs
+    startLine: 24
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: Fantasia = 16
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

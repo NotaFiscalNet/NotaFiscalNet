@@ -1,0 +1,43 @@
+items:
+- uid: NotaFiscalNet.Core.Tests.Validacao
+  id: NotaFiscalNet.Core.Tests.Validacao
+  children:
+  - NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalCteValidadorTests
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNfeValidadorTests
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalProdutorValidadorTests
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: NotaFiscalNet.Core.Tests.Validacao
+  fullName: NotaFiscalNet.Core.Tests.Validacao
+  type: Namespace
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+references:
+- uid: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests
+  isExternal: false
+  name: CompraValidadorTests
+  fullName: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalCteValidadorTests
+  isExternal: false
+  name: ReferenciaDocumentoFiscalCteValidadorTests
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalCteValidadorTests
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests
+  isExternal: false
+  name: ReferenciaDocumentoFiscalEcfValidadorTests
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalEcfValidadorTests
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalProdutorValidadorTests
+  isExternal: false
+  name: ReferenciaDocumentoFiscalNotaFiscalProdutorValidadorTests
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalProdutorValidadorTests
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+  isExternal: false
+  name: ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNotaFiscalValidadorTests
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNfeValidadorTests
+  isExternal: false
+  name: ReferenciaDocumentoFiscalNfeValidadorTests
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNfeValidadorTests

@@ -1,0 +1,131 @@
+items:
+- uid: NotaFiscalNet.Core.IndicadorFormaPagamento
+  id: IndicadorFormaPagamento
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.IndicadorFormaPagamento.APrazo
+  - NotaFiscalNet.Core.IndicadorFormaPagamento.AVista
+  - NotaFiscalNet.Core.IndicadorFormaPagamento.Outro
+  langs:
+  - csharp
+  - vb
+  name: IndicadorFormaPagamento
+  fullName: NotaFiscalNet.Core.IndicadorFormaPagamento
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IndicadorFormaPagamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: IndicadorFormaPagamento
+    path: src/NotaFiscalNet.Core/IndicadorFormaPagamento.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nIndicador de Forma de Pagamento.\r\n"
+  example: []
+  syntax:
+    content: public enum IndicadorFormaPagamento
+    content.vb: Public Enum IndicadorFormaPagamento
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.IndicadorFormaPagamento.AVista
+  id: AVista
+  parent: NotaFiscalNet.Core.IndicadorFormaPagamento
+  langs:
+  - csharp
+  - vb
+  name: AVista
+  fullName: NotaFiscalNet.Core.IndicadorFormaPagamento.AVista
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IndicadorFormaPagamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: AVista
+    path: src/NotaFiscalNet.Core/IndicadorFormaPagamento.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n0 - Pagamento à vista.\r\n"
+  example: []
+  syntax:
+    content: AVista = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.IndicadorFormaPagamento.APrazo
+  id: APrazo
+  parent: NotaFiscalNet.Core.IndicadorFormaPagamento
+  langs:
+  - csharp
+  - vb
+  name: APrazo
+  fullName: NotaFiscalNet.Core.IndicadorFormaPagamento.APrazo
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IndicadorFormaPagamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: APrazo
+    path: src/NotaFiscalNet.Core/IndicadorFormaPagamento.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n1 - Pagamento à prazo.\r\n"
+  example: []
+  syntax:
+    content: APrazo = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.IndicadorFormaPagamento.Outro
+  id: Outro
+  parent: NotaFiscalNet.Core.IndicadorFormaPagamento
+  langs:
+  - csharp
+  - vb
+  name: Outro
+  fullName: NotaFiscalNet.Core.IndicadorFormaPagamento.Outro
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IndicadorFormaPagamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Outro
+    path: src/NotaFiscalNet.Core/IndicadorFormaPagamento.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n2- Outras formas de pagamento.\r\n"
+  example: []
+  syntax:
+    content: Outro = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

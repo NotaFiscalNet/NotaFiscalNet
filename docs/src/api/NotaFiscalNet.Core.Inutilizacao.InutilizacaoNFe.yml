@@ -1,0 +1,945 @@
+items:
+- uid: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe
+  id: InutilizacaoNFe
+  parent: NotaFiscalNet.Core.Inutilizacao
+  children:
+  - NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Ambiente
+  - NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Ano
+  - NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Cnpj
+  - NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.CodigoModeloDocFiscal
+  - NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.GerarXmlNaoAssinado
+  - NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Id
+  - NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Justificativa
+  - NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.NumeracaoFinal
+  - NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.NumeracaoInicial
+  - NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Serialize(System.Xml.XmlWriter)
+  - NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Serie
+  - NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Servico
+  - NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.UF
+  - NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Versao
+  langs:
+  - csharp
+  - vb
+  name: InutilizacaoNFe
+  fullName: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: InutilizacaoNFe
+    path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+    startLine: 8
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Inutilizacao
+  syntax:
+    content: public class InutilizacaoNFe
+    content.vb: Public Class InutilizacaoNFe
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Versao
+  id: Versao
+  parent: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: Versao
+  fullName: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Versao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Versao
+    path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+    startLine: 15
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Inutilizacao
+  summary: "\r\n[versao]\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "versao", DataType = "TVerInutNFe")]
+
+      public string Versao
+
+      {
+
+          get;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="versao", DataType:="TVerInutNFe")>
+
+      Public ReadOnly Property Versao As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Id
+  id: Id
+  parent: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: Id
+  fullName: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Id
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Id
+    path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Inutilizacao
+  summary: "\r\n[Id] Retorna o ID da Inutilização.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "Id")]
+
+      public string Id
+
+      {
+
+          get;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="Id")>
+
+      Public ReadOnly Property Id As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Ambiente
+  id: Ambiente
+  parent: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: Ambiente
+  fullName: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Ambiente
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Ambiente
+    path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+    startLine: 27
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Inutilizacao
+  summary: "\r\n[tpAmb] Retorna ou define o Ambiente do Documento Fiscal.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "tpAmb", DataType = "TAmb")]
+
+      public TipoAmbiente Ambiente
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="tpAmb", DataType:="TAmb")>
+
+      Public Property Ambiente As TipoAmbiente
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoAmbiente
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Servico
+  id: Servico
+  parent: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: Servico
+  fullName: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Servico
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Servico
+    path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+    startLine: 33
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Inutilizacao
+  summary: "\r\n[xServ] Retorna a descrição do serviço.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "xServ")]
+
+      public string Servico
+
+      {
+
+          get;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="xServ")>
+
+      Public ReadOnly Property Servico As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.UF
+  id: UF
+  parent: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: UF
+  fullName: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.UF
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: UF
+    path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+    startLine: 39
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Inutilizacao
+  summary: "\r\n[cUF] Retorna ou define o Código da UF do emitente.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "cUF", DataType = "TCodUfIBGE")]
+
+      public UfIBGE UF
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="cUF", DataType:="TCodUfIBGE")>
+
+      Public Property UF As UfIBGE
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.UfIBGE
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Ano
+  id: Ano
+  parent: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: Ano
+  fullName: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Ano
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Ano
+    path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+    startLine: 45
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Inutilizacao
+  summary: "\r\n[ano] Retorna ou define o ano de inutilização da numeração.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "ano", DataType = "Tano")]
+
+      public int Ano
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="ano", DataType:="Tano")>
+
+      Public Property Ano As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Cnpj
+  id: Cnpj
+  parent: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: Cnpj
+  fullName: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Cnpj
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cnpj
+    path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+    startLine: 64
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Inutilizacao
+  summary: "\r\n[Cnpj] Retorna ou define o ano de inutilização da numeração.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "Cnpj", DataType = "TCnpj")]
+
+      public string Cnpj
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="Cnpj", DataType:="TCnpj")>
+
+      Public Property Cnpj As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.CodigoModeloDocFiscal
+  id: CodigoModeloDocFiscal
+  parent: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: CodigoModeloDocFiscal
+  fullName: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.CodigoModeloDocFiscal
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CodigoModeloDocFiscal
+    path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+    startLine: 70
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Inutilizacao
+  summary: "\r\n[mod] Retorna ou define o modelo da NF-e (55, 65, etc).\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "mod", DataType = "TMod")]
+
+      public TipoModalidadeDocumentoFiscal CodigoModeloDocFiscal
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="mod", DataType:="TMod")>
+
+      Public Property CodigoModeloDocFiscal As TipoModalidadeDocumentoFiscal
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoModalidadeDocumentoFiscal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Serie
+  id: Serie
+  parent: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: Serie
+  fullName: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Serie
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Serie
+    path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+    startLine: 76
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Inutilizacao
+  summary: "\r\n[serie] Retorna ou define a Série da NF-e.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "serie", DataType = "TSerie")]
+
+      public int Serie
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="serie", DataType:="TSerie")>
+
+      Public Property Serie As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.NumeracaoInicial
+  id: NumeracaoInicial
+  parent: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: NumeracaoInicial
+  fullName: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.NumeracaoInicial
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NumeracaoInicial
+    path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+    startLine: 82
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Inutilizacao
+  summary: "\r\n[nNFIni] Retorna ou define o Número da NF-e inicial.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "nNFIni", DataType = "TNF")]
+
+      public int NumeracaoInicial
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="nNFIni", DataType:="TNF")>
+
+      Public Property NumeracaoInicial As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.NumeracaoFinal
+  id: NumeracaoFinal
+  parent: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: NumeracaoFinal
+  fullName: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.NumeracaoFinal
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NumeracaoFinal
+    path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+    startLine: 88
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Inutilizacao
+  summary: "\r\n[nNFFin] Retorna ou define o Número da NF-e final.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "nNFFin", DataType = "TNF")]
+
+      public int NumeracaoFinal
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="nNFFin", DataType:="TNF")>
+
+      Public Property NumeracaoFinal As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Justificativa
+  id: Justificativa
+  parent: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: Justificativa
+  fullName: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Justificativa
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Justificativa
+    path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+    startLine: 94
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Inutilizacao
+  summary: "\r\n[xJust] Retorna ou define a Justificativa do pedido de inutilização.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "xJust", DataType = "TJust")]
+
+      public string Justificativa
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="xJust", DataType:="TJust")>
+
+      Public Property Justificativa As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Serialize(System.Xml.XmlWriter)
+  id: Serialize(System.Xml.XmlWriter)
+  parent: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: Serialize(XmlWriter)
+  fullName: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.Serialize(System.Xml.XmlWriter)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Serialize
+    path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+    startLine: 97
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Inutilizacao
+  syntax:
+    content: public void Serialize(XmlWriter writer)
+    content.vb: Public Sub Serialize(writer As XmlWriter)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.GerarXmlNaoAssinado
+  id: GerarXmlNaoAssinado
+  parent: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: GerarXmlNaoAssinado()
+  fullName: NotaFiscalNet.Core.Inutilizacao.InutilizacaoNFe.GerarXmlNaoAssinado()
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: GerarXmlNaoAssinado
+    path: src/NotaFiscalNet.Core/Inutilizacao/InutilizacaoNFe.cs
+    startLine: 119
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Inutilizacao
+  syntax:
+    content: public string GerarXmlNaoAssinado()
+    content.vb: Public Function GerarXmlNaoAssinado As String
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core.Inutilizacao
+  isExternal: false
+  name: NotaFiscalNet.Core.Inutilizacao
+  fullName: NotaFiscalNet.Core.Inutilizacao
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: NotaFiscalNet.Core.TipoAmbiente
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoAmbiente
+  fullName: NotaFiscalNet.Core.TipoAmbiente
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: NotaFiscalNet.Core.UfIBGE
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: UfIBGE
+  fullName: NotaFiscalNet.Core.UfIBGE
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: NotaFiscalNet.Core.TipoModalidadeDocumentoFiscal
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoModalidadeDocumentoFiscal
+  fullName: NotaFiscalNet.Core.TipoModalidadeDocumentoFiscal
+- uid: System.Xml.XmlWriter
+  parent: System.Xml
+  isExternal: true
+  name: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml

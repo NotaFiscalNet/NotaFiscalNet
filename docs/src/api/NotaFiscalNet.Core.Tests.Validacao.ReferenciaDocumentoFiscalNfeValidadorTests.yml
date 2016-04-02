@@ -1,0 +1,162 @@
+items:
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNfeValidadorTests
+  id: ReferenciaDocumentoFiscalNfeValidadorTests
+  parent: NotaFiscalNet.Core.Tests.Validacao
+  children:
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNfeValidadorTests.DeveMostrarErroSeInformarChaveAcessoNfeComMaisDe44Caracteres
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNfeValidadorTests.DeveMostrarErroSeInformarChaveAcessoNfeComMenosDe44Caracteres
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNfeValidadorTests.DeveMostrarErroSeNaoInformarChaveAcessoNfe
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNfeValidadorTests.DevePermitirInformarChaveAcessoNfeCom44Caracteres
+  langs:
+  - csharp
+  - vb
+  name: ReferenciaDocumentoFiscalNfeValidadorTests
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNfeValidadorTests
+  type: Class
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNfeValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ReferenciaDocumentoFiscalNfeValidadorTests
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNfeValidadorTests.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: 'public class ReferenciaDocumentoFiscalNfeValidadorTests : object'
+    content.vb: >-
+      Public Class ReferenciaDocumentoFiscalNfeValidadorTests
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNfeValidadorTests.DeveMostrarErroSeNaoInformarChaveAcessoNfe
+  id: DeveMostrarErroSeNaoInformarChaveAcessoNfe
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNfeValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DeveMostrarErroSeNaoInformarChaveAcessoNfe()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNfeValidadorTests.DeveMostrarErroSeNaoInformarChaveAcessoNfe()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNfeValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveMostrarErroSeNaoInformarChaveAcessoNfe
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNfeValidadorTests.cs
+    startLine: 15
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DeveMostrarErroSeNaoInformarChaveAcessoNfe()
+    content.vb: Public Sub DeveMostrarErroSeNaoInformarChaveAcessoNfe
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNfeValidadorTests.DeveMostrarErroSeInformarChaveAcessoNfeComMaisDe44Caracteres
+  id: DeveMostrarErroSeInformarChaveAcessoNfeComMaisDe44Caracteres
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNfeValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DeveMostrarErroSeInformarChaveAcessoNfeComMaisDe44Caracteres()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNfeValidadorTests.DeveMostrarErroSeInformarChaveAcessoNfeComMaisDe44Caracteres()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNfeValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveMostrarErroSeInformarChaveAcessoNfeComMaisDe44Caracteres
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNfeValidadorTests.cs
+    startLine: 25
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DeveMostrarErroSeInformarChaveAcessoNfeComMaisDe44Caracteres()
+    content.vb: Public Sub DeveMostrarErroSeInformarChaveAcessoNfeComMaisDe44Caracteres
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNfeValidadorTests.DeveMostrarErroSeInformarChaveAcessoNfeComMenosDe44Caracteres
+  id: DeveMostrarErroSeInformarChaveAcessoNfeComMenosDe44Caracteres
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNfeValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DeveMostrarErroSeInformarChaveAcessoNfeComMenosDe44Caracteres()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNfeValidadorTests.DeveMostrarErroSeInformarChaveAcessoNfeComMenosDe44Caracteres()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNfeValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveMostrarErroSeInformarChaveAcessoNfeComMenosDe44Caracteres
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNfeValidadorTests.cs
+    startLine: 36
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DeveMostrarErroSeInformarChaveAcessoNfeComMenosDe44Caracteres()
+    content.vb: Public Sub DeveMostrarErroSeInformarChaveAcessoNfeComMenosDe44Caracteres
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNfeValidadorTests.DevePermitirInformarChaveAcessoNfeCom44Caracteres
+  id: DevePermitirInformarChaveAcessoNfeCom44Caracteres
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNfeValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DevePermitirInformarChaveAcessoNfeCom44Caracteres()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalNfeValidadorTests.DevePermitirInformarChaveAcessoNfeCom44Caracteres()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNfeValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DevePermitirInformarChaveAcessoNfeCom44Caracteres
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalNfeValidadorTests.cs
+    startLine: 47
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DevePermitirInformarChaveAcessoNfeCom44Caracteres()
+    content.vb: Public Sub DevePermitirInformarChaveAcessoNfeCom44Caracteres
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core.Tests.Validacao
+  isExternal: false
+  name: NotaFiscalNet.Core.Tests.Validacao
+  fullName: NotaFiscalNet.Core.Tests.Validacao
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

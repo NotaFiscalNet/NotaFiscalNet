@@ -1,0 +1,1061 @@
+items:
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  id: SituacaoTributariaCOFINS
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst01
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst02
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst03
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst04
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst06
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst07
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst08
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst09
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst49
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst50
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst51
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst52
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst53
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst54
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst55
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst56
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst60
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst61
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst62
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst63
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst64
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst65
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst66
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst67
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst70
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst71
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst72
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst73
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst74
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst75
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst98
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst99
+  - NotaFiscalNet.Core.SituacaoTributariaCOFINS.NaoEspecificado
+  langs:
+  - csharp
+  - vb
+  name: SituacaoTributariaCOFINS
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SituacaoTributariaCOFINS
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nLista dos Códigos de Situação Tributária (CST) do COFINS.\r\n"
+  example: []
+  syntax:
+    content: public enum SituacaoTributariaCOFINS
+    content.vb: Public Enum SituacaoTributariaCOFINS
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.NaoEspecificado
+  id: NaoEspecificado
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: NaoEspecificado
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.NaoEspecificado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoEspecificado
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nNão Especificado\r\n"
+  example: []
+  syntax:
+    content: NaoEspecificado = -1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst01
+  id: Cst01
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst01
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst01
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst01
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 17
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n01 - Operação Tributável - Base de Cálculo igual ao Valor da Operação com Alíquota Normal\r\n(Cumulativo / Não Cumulativo).\r\n"
+  example: []
+  syntax:
+    content: Cst01 = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst02
+  id: Cst02
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst02
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst02
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst02
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 22
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n02 - Operação Tributável - Base de Cálculo igual ao Valor da Operação com Alíquota Diferenciada.\r\n"
+  example: []
+  syntax:
+    content: Cst02 = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst03
+  id: Cst03
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst03
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst03
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst03
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 28
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n03 - Operação Tributável - Base de Cálculo igual a Quantidade Vendida x Alíquota por\r\nUnidade de Produto.\r\n"
+  example: []
+  syntax:
+    content: Cst03 = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst04
+  id: Cst04
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst04
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst04
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst04
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 33
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n04 - Operação Tributável - Tributação Monofásica com Alíquota Zero.\r\n"
+  example: []
+  syntax:
+    content: Cst04 = 4
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst06
+  id: Cst06
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst06
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst06
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst06
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 38
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n06 - Operação Tributável - Alíquota Zero.\r\n"
+  example: []
+  syntax:
+    content: Cst06 = 6
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst07
+  id: Cst07
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst07
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst07
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst07
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 43
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n07 - Operação Isenta de Contribuição.\r\n"
+  example: []
+  syntax:
+    content: Cst07 = 7
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst08
+  id: Cst08
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst08
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst08
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst08
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 48
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n08 - Operação Sem Incidência da Contribuição.\r\n"
+  example: []
+  syntax:
+    content: Cst08 = 8
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst09
+  id: Cst09
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst09
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst09
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst09
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 53
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n09 - Operação com Suspensão da Contribuição.\r\n"
+  example: []
+  syntax:
+    content: Cst09 = 9
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst49
+  id: Cst49
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst49
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst49
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst49
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 58
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n49 - Outras Operações de Saída\r\n"
+  example: []
+  syntax:
+    content: Cst49 = 49
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst50
+  id: Cst50
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst50
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst50
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst50
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 64
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n50 - Operação com Direito a Crédito - Vinculada Exclusivamente a Receita Tributada no\r\nMercado Interno\r\n"
+  example: []
+  syntax:
+    content: Cst50 = 50
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst51
+  id: Cst51
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst51
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst51
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst51
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 70
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n51 - Operação com Direito a Crédito – Vinculada Exclusivamente a Receita Não Tributada no\r\nMercado Interno\r\n"
+  example: []
+  syntax:
+    content: Cst51 = 51
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst52
+  id: Cst52
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst52
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst52
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst52
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 75
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n52 - Operação com Direito a Crédito - Vinculada Exclusivamente a Receita de Exportação\r\n"
+  example: []
+  syntax:
+    content: Cst52 = 52
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst53
+  id: Cst53
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst53
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst53
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst53
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 81
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n53 - Operação com Direito a Crédito - Vinculada a Receitas Tributadas e Não-Tributadas no\r\nMercado Interno\r\n"
+  example: []
+  syntax:
+    content: Cst53 = 53
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst54
+  id: Cst54
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst54
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst54
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst54
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 87
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n54 - Operação com Direito a Crédito - Vinculada a Receitas Tributadas no Mercado Interno\r\ne de Exportação\r\n"
+  example: []
+  syntax:
+    content: Cst54 = 54
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst55
+  id: Cst55
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst55
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst55
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst55
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 93
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n55 - Operação com Direito a Crédito - Vinculada a Receitas Não-Tributadas no Mercado\r\nInterno e de Exportação\r\n"
+  example: []
+  syntax:
+    content: Cst55 = 55
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst56
+  id: Cst56
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst56
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst56
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst56
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 99
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n56 - Operação com Direito a Crédito - Vinculada a Receitas Tributadas e Não-Tributadas no\r\nMercado Interno, e de Exportação\r\n"
+  example: []
+  syntax:
+    content: Cst56 = 56
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst60
+  id: Cst60
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst60
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst60
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst60
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 105
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n60 - Crédito Presumido - Operação de Aquisição Vinculada Exclusivamente a Receita\r\nTributada no Mercado Interno\r\n"
+  example: []
+  syntax:
+    content: Cst60 = 60
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst61
+  id: Cst61
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst61
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst61
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst61
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 111
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n61 - Crédito Presumido - Operação de Aquisição Vinculada Exclusivamente a Receita\r\nNão-Tributada no Mercado Interno\r\n"
+  example: []
+  syntax:
+    content: Cst61 = 61
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst62
+  id: Cst62
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst62
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst62
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst62
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 116
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n62 - Crédito Presumido - Operação de Aquisição Vinculada Exclusivamente a Receita de Exportação\r\n"
+  example: []
+  syntax:
+    content: Cst62 = 62
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst63
+  id: Cst63
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst63
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst63
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst63
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 122
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n63 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas e\r\nNão-Tributadas no Mercado Interno\r\n"
+  example: []
+  syntax:
+    content: Cst63 = 63
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst64
+  id: Cst64
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst64
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst64
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst64
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 128
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n64 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas no Mercado\r\nInterno e de Exportação\r\n"
+  example: []
+  syntax:
+    content: Cst64 = 64
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst65
+  id: Cst65
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst65
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst65
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst65
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 134
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n65 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Não-Tributadas no\r\nMercado Interno e de Exportação\r\n"
+  example: []
+  syntax:
+    content: Cst65 = 65
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst66
+  id: Cst66
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst66
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst66
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst66
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 140
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n66 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas e\r\nNão-Tributadas no Mercado Interno, e de Exportação\r\n"
+  example: []
+  syntax:
+    content: Cst66 = 66
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst67
+  id: Cst67
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst67
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst67
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst67
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 145
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n67 - Crédito Presumido - Outras Operações\r\n"
+  example: []
+  syntax:
+    content: Cst67 = 67
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst70
+  id: Cst70
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst70
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst70
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst70
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 150
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n70 - Operação de Aquisição sem Direito a Crédito\r\n"
+  example: []
+  syntax:
+    content: Cst70 = 70
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst71
+  id: Cst71
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst71
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst71
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst71
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 155
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n71 - Operação de Aquisição com Isenção\r\n"
+  example: []
+  syntax:
+    content: Cst71 = 71
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst72
+  id: Cst72
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst72
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst72
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst72
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 160
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n72 - Operação de Aquisição com Suspensão\r\n"
+  example: []
+  syntax:
+    content: Cst72 = 72
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst73
+  id: Cst73
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst73
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst73
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst73
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 165
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n73 - Operação de Aquisição a Alíquota Zero\r\n"
+  example: []
+  syntax:
+    content: Cst73 = 73
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst74
+  id: Cst74
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst74
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst74
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst74
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 170
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n74 - Operação de Aquisição sem Incidência da Contribuição\r\n"
+  example: []
+  syntax:
+    content: Cst74 = 74
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst75
+  id: Cst75
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst75
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst75
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst75
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 175
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n75 - Operação de Aquisição por Substituição Tributária\r\n"
+  example: []
+  syntax:
+    content: Cst75 = 75
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst98
+  id: Cst98
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst98
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst98
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst98
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 180
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n98 - Outras Operações de Entrada\r\n"
+  example: []
+  syntax:
+    content: Cst98 = 98
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst99
+  id: Cst99
+  parent: NotaFiscalNet.Core.SituacaoTributariaCOFINS
+  langs:
+  - csharp
+  - vb
+  name: Cst99
+  fullName: NotaFiscalNet.Core.SituacaoTributariaCOFINS.Cst99
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cst99
+    path: src/NotaFiscalNet.Core/SituacaoTributariaCOFINS.cs
+    startLine: 185
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n99 - Outras Operações\r\n"
+  example: []
+  syntax:
+    content: Cst99 = 99
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

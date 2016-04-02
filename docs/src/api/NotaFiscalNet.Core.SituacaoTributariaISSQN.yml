@@ -1,0 +1,193 @@
+items:
+- uid: NotaFiscalNet.Core.SituacaoTributariaISSQN
+  id: SituacaoTributariaISSQN
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.SituacaoTributariaISSQN.Isenta
+  - NotaFiscalNet.Core.SituacaoTributariaISSQN.NaoEspecificado
+  - NotaFiscalNet.Core.SituacaoTributariaISSQN.Normal
+  - NotaFiscalNet.Core.SituacaoTributariaISSQN.Retida
+  - NotaFiscalNet.Core.SituacaoTributariaISSQN.Substituta
+  langs:
+  - csharp
+  - vb
+  name: SituacaoTributariaISSQN
+  fullName: NotaFiscalNet.Core.SituacaoTributariaISSQN
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaISSQN.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SituacaoTributariaISSQN
+    path: src/NotaFiscalNet.Core/SituacaoTributariaISSQN.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nLista dos Códigos de Situação Tributária (CST) do ISSQN.\r\n"
+  example: []
+  syntax:
+    content: public enum SituacaoTributariaISSQN
+    content.vb: Public Enum SituacaoTributariaISSQN
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.SituacaoTributariaISSQN.NaoEspecificado
+  id: NaoEspecificado
+  parent: NotaFiscalNet.Core.SituacaoTributariaISSQN
+  langs:
+  - csharp
+  - vb
+  name: NaoEspecificado
+  fullName: NotaFiscalNet.Core.SituacaoTributariaISSQN.NaoEspecificado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaISSQN.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoEspecificado
+    path: src/NotaFiscalNet.Core/SituacaoTributariaISSQN.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nNão Informado\r\n"
+  example: []
+  syntax:
+    content: NaoEspecificado = -1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaISSQN.Normal
+  id: Normal
+  parent: NotaFiscalNet.Core.SituacaoTributariaISSQN
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  fullName: NotaFiscalNet.Core.SituacaoTributariaISSQN.Normal
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaISSQN.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Normal
+    path: src/NotaFiscalNet.Core/SituacaoTributariaISSQN.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nN - Normal\r\n"
+  example: []
+  syntax:
+    content: Normal = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaISSQN.Retida
+  id: Retida
+  parent: NotaFiscalNet.Core.SituacaoTributariaISSQN
+  langs:
+  - csharp
+  - vb
+  name: Retida
+  fullName: NotaFiscalNet.Core.SituacaoTributariaISSQN.Retida
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaISSQN.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Retida
+    path: src/NotaFiscalNet.Core/SituacaoTributariaISSQN.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nR - Retida\r\n"
+  example: []
+  syntax:
+    content: Retida = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaISSQN.Substituta
+  id: Substituta
+  parent: NotaFiscalNet.Core.SituacaoTributariaISSQN
+  langs:
+  - csharp
+  - vb
+  name: Substituta
+  fullName: NotaFiscalNet.Core.SituacaoTributariaISSQN.Substituta
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaISSQN.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Substituta
+    path: src/NotaFiscalNet.Core/SituacaoTributariaISSQN.cs
+    startLine: 26
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nS - Substituta\r\n"
+  example: []
+  syntax:
+    content: Substituta = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaISSQN.Isenta
+  id: Isenta
+  parent: NotaFiscalNet.Core.SituacaoTributariaISSQN
+  langs:
+  - csharp
+  - vb
+  name: Isenta
+  fullName: NotaFiscalNet.Core.SituacaoTributariaISSQN.Isenta
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaISSQN.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Isenta
+    path: src/NotaFiscalNet.Core/SituacaoTributariaISSQN.cs
+    startLine: 31
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nI - Isenta\r\n"
+  example: []
+  syntax:
+    content: Isenta = 4
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

@@ -1,0 +1,302 @@
+items:
+- uid: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests
+  id: CompraValidadorTests
+  parent: NotaFiscalNet.Core.Tests.Validacao
+  children:
+  - NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.DeveMostrarErroSeInformarContratoComMaisDe60Caracteres
+  - NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.DeveMostrarErroSeInformarNotaEmpenhoComMaisDe60Caracteres
+  - NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.DeveMostrarErroSeInformarPedidoComMaisDe60Caracteres
+  - NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.DevePermitirInformarContratoAte60Caracteres
+  - NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.DevePermitirInformarNotaEmpenhoAte22Caracteres
+  - NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.DevePermitirInformarPedidoAte60Caracteres
+  - NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.NaoDeveMostrarErroSeNaoInformarContrato
+  - NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.NaoDeveMostrarErroSeNaoInformarNotaEmpenho
+  - NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.NaoDeveMostrarErroSeNaoInformarPedido
+  langs:
+  - csharp
+  - vb
+  name: CompraValidadorTests
+  fullName: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests
+  type: Class
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/CompraValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CompraValidadorTests
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/CompraValidadorTests.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: 'public class CompraValidadorTests : object'
+    content.vb: >-
+      Public Class CompraValidadorTests
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.NaoDeveMostrarErroSeNaoInformarContrato
+  id: NaoDeveMostrarErroSeNaoInformarContrato
+  parent: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: NaoDeveMostrarErroSeNaoInformarContrato()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.NaoDeveMostrarErroSeNaoInformarContrato()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/CompraValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoDeveMostrarErroSeNaoInformarContrato
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/CompraValidadorTests.cs
+    startLine: 15
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void NaoDeveMostrarErroSeNaoInformarContrato()
+    content.vb: Public Sub NaoDeveMostrarErroSeNaoInformarContrato
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.NaoDeveMostrarErroSeNaoInformarNotaEmpenho
+  id: NaoDeveMostrarErroSeNaoInformarNotaEmpenho
+  parent: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: NaoDeveMostrarErroSeNaoInformarNotaEmpenho()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.NaoDeveMostrarErroSeNaoInformarNotaEmpenho()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/CompraValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoDeveMostrarErroSeNaoInformarNotaEmpenho
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/CompraValidadorTests.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void NaoDeveMostrarErroSeNaoInformarNotaEmpenho()
+    content.vb: Public Sub NaoDeveMostrarErroSeNaoInformarNotaEmpenho
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.NaoDeveMostrarErroSeNaoInformarPedido
+  id: NaoDeveMostrarErroSeNaoInformarPedido
+  parent: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: NaoDeveMostrarErroSeNaoInformarPedido()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.NaoDeveMostrarErroSeNaoInformarPedido()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/CompraValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoDeveMostrarErroSeNaoInformarPedido
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/CompraValidadorTests.cs
+    startLine: 27
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void NaoDeveMostrarErroSeNaoInformarPedido()
+    content.vb: Public Sub NaoDeveMostrarErroSeNaoInformarPedido
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.DeveMostrarErroSeInformarPedidoComMaisDe60Caracteres
+  id: DeveMostrarErroSeInformarPedidoComMaisDe60Caracteres
+  parent: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DeveMostrarErroSeInformarPedidoComMaisDe60Caracteres()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.DeveMostrarErroSeInformarPedidoComMaisDe60Caracteres()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/CompraValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveMostrarErroSeInformarPedidoComMaisDe60Caracteres
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/CompraValidadorTests.cs
+    startLine: 33
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DeveMostrarErroSeInformarPedidoComMaisDe60Caracteres()
+    content.vb: Public Sub DeveMostrarErroSeInformarPedidoComMaisDe60Caracteres
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.DevePermitirInformarPedidoAte60Caracteres
+  id: DevePermitirInformarPedidoAte60Caracteres
+  parent: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DevePermitirInformarPedidoAte60Caracteres()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.DevePermitirInformarPedidoAte60Caracteres()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/CompraValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DevePermitirInformarPedidoAte60Caracteres
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/CompraValidadorTests.cs
+    startLine: 45
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DevePermitirInformarPedidoAte60Caracteres()
+    content.vb: Public Sub DevePermitirInformarPedidoAte60Caracteres
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.DeveMostrarErroSeInformarContratoComMaisDe60Caracteres
+  id: DeveMostrarErroSeInformarContratoComMaisDe60Caracteres
+  parent: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DeveMostrarErroSeInformarContratoComMaisDe60Caracteres()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.DeveMostrarErroSeInformarContratoComMaisDe60Caracteres()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/CompraValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveMostrarErroSeInformarContratoComMaisDe60Caracteres
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/CompraValidadorTests.cs
+    startLine: 51
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DeveMostrarErroSeInformarContratoComMaisDe60Caracteres()
+    content.vb: Public Sub DeveMostrarErroSeInformarContratoComMaisDe60Caracteres
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.DevePermitirInformarContratoAte60Caracteres
+  id: DevePermitirInformarContratoAte60Caracteres
+  parent: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DevePermitirInformarContratoAte60Caracteres()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.DevePermitirInformarContratoAte60Caracteres()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/CompraValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DevePermitirInformarContratoAte60Caracteres
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/CompraValidadorTests.cs
+    startLine: 63
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DevePermitirInformarContratoAte60Caracteres()
+    content.vb: Public Sub DevePermitirInformarContratoAte60Caracteres
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.DeveMostrarErroSeInformarNotaEmpenhoComMaisDe60Caracteres
+  id: DeveMostrarErroSeInformarNotaEmpenhoComMaisDe60Caracteres
+  parent: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DeveMostrarErroSeInformarNotaEmpenhoComMaisDe60Caracteres()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.DeveMostrarErroSeInformarNotaEmpenhoComMaisDe60Caracteres()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/CompraValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveMostrarErroSeInformarNotaEmpenhoComMaisDe60Caracteres
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/CompraValidadorTests.cs
+    startLine: 69
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DeveMostrarErroSeInformarNotaEmpenhoComMaisDe60Caracteres()
+    content.vb: Public Sub DeveMostrarErroSeInformarNotaEmpenhoComMaisDe60Caracteres
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.DevePermitirInformarNotaEmpenhoAte22Caracteres
+  id: DevePermitirInformarNotaEmpenhoAte22Caracteres
+  parent: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DevePermitirInformarNotaEmpenhoAte22Caracteres()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.CompraValidadorTests.DevePermitirInformarNotaEmpenhoAte22Caracteres()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/CompraValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DevePermitirInformarNotaEmpenhoAte22Caracteres
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/CompraValidadorTests.cs
+    startLine: 81
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DevePermitirInformarNotaEmpenhoAte22Caracteres()
+    content.vb: Public Sub DevePermitirInformarNotaEmpenhoAte22Caracteres
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core.Tests.Validacao
+  isExternal: false
+  name: NotaFiscalNet.Core.Tests.Validacao
+  fullName: NotaFiscalNet.Core.Tests.Validacao
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

@@ -1,0 +1,100 @@
+items:
+- uid: NotaFiscalNet.Core.TipoCalculoIPI
+  id: TipoCalculoIPI
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.TipoCalculoIPI.Percentual
+  - NotaFiscalNet.Core.TipoCalculoIPI.Valor
+  langs:
+  - csharp
+  - vb
+  name: TipoCalculoIPI
+  fullName: NotaFiscalNet.Core.TipoCalculoIPI
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoCalculoIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoCalculoIPI
+    path: src/NotaFiscalNet.Core/TipoCalculoIPI.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nIndicador de Tipo de Cálculo do IPI. <br />\r\n"
+  example: []
+  syntax:
+    content: public enum TipoCalculoIPI
+    content.vb: Public Enum TipoCalculoIPI
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.TipoCalculoIPI.Percentual
+  id: Percentual
+  parent: NotaFiscalNet.Core.TipoCalculoIPI
+  langs:
+  - csharp
+  - vb
+  name: Percentual
+  fullName: NotaFiscalNet.Core.TipoCalculoIPI.Percentual
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoCalculoIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Percentual
+    path: src/NotaFiscalNet.Core/TipoCalculoIPI.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nCaso o cálculo do IPI seja por Alíquota.\r\n"
+  example: []
+  syntax:
+    content: Percentual = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoCalculoIPI.Valor
+  id: Valor
+  parent: NotaFiscalNet.Core.TipoCalculoIPI
+  langs:
+  - csharp
+  - vb
+  name: Valor
+  fullName: NotaFiscalNet.Core.TipoCalculoIPI.Valor
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoCalculoIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Valor
+    path: src/NotaFiscalNet.Core/TipoCalculoIPI.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nCaso o cálculo do IPI seja Valor por Unidade.\r\n"
+  example: []
+  syntax:
+    content: Valor = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

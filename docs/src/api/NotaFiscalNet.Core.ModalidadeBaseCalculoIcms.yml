@@ -1,0 +1,193 @@
+items:
+- uid: NotaFiscalNet.Core.ModalidadeBaseCalculoIcms
+  id: ModalidadeBaseCalculoIcms
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.ModalidadeBaseCalculoIcms.MargemAgregado
+  - NotaFiscalNet.Core.ModalidadeBaseCalculoIcms.NaoEspecificado
+  - NotaFiscalNet.Core.ModalidadeBaseCalculoIcms.Pauta
+  - NotaFiscalNet.Core.ModalidadeBaseCalculoIcms.PrecoTabelado
+  - NotaFiscalNet.Core.ModalidadeBaseCalculoIcms.ValorOperacao
+  langs:
+  - csharp
+  - vb
+  name: ModalidadeBaseCalculoIcms
+  fullName: NotaFiscalNet.Core.ModalidadeBaseCalculoIcms
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcms.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ModalidadeBaseCalculoIcms
+    path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcms.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nEspecifica a Modalidade de Determinação da Base de Cálculo do ICMS\r\n"
+  example: []
+  syntax:
+    content: public enum ModalidadeBaseCalculoIcms
+    content.vb: Public Enum ModalidadeBaseCalculoIcms
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.ModalidadeBaseCalculoIcms.NaoEspecificado
+  id: NaoEspecificado
+  parent: NotaFiscalNet.Core.ModalidadeBaseCalculoIcms
+  langs:
+  - csharp
+  - vb
+  name: NaoEspecificado
+  fullName: NotaFiscalNet.Core.ModalidadeBaseCalculoIcms.NaoEspecificado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcms.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoEspecificado
+    path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcms.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nNão Informado (-1).\r\n"
+  example: []
+  syntax:
+    content: NaoEspecificado = -1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.ModalidadeBaseCalculoIcms.MargemAgregado
+  id: MargemAgregado
+  parent: NotaFiscalNet.Core.ModalidadeBaseCalculoIcms
+  langs:
+  - csharp
+  - vb
+  name: MargemAgregado
+  fullName: NotaFiscalNet.Core.ModalidadeBaseCalculoIcms.MargemAgregado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcms.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: MargemAgregado
+    path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcms.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n0 - Margem do Valor Agregado em Porcentagem\r\n"
+  example: []
+  syntax:
+    content: MargemAgregado = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.ModalidadeBaseCalculoIcms.Pauta
+  id: Pauta
+  parent: NotaFiscalNet.Core.ModalidadeBaseCalculoIcms
+  langs:
+  - csharp
+  - vb
+  name: Pauta
+  fullName: NotaFiscalNet.Core.ModalidadeBaseCalculoIcms.Pauta
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcms.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Pauta
+    path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcms.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n1 - Pauta em Valor\r\n"
+  example: []
+  syntax:
+    content: Pauta = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.ModalidadeBaseCalculoIcms.PrecoTabelado
+  id: PrecoTabelado
+  parent: NotaFiscalNet.Core.ModalidadeBaseCalculoIcms
+  langs:
+  - csharp
+  - vb
+  name: PrecoTabelado
+  fullName: NotaFiscalNet.Core.ModalidadeBaseCalculoIcms.PrecoTabelado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcms.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PrecoTabelado
+    path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcms.cs
+    startLine: 26
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n2 - Preço Tabelado Máximo em Valor\r\n"
+  example: []
+  syntax:
+    content: PrecoTabelado = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.ModalidadeBaseCalculoIcms.ValorOperacao
+  id: ValorOperacao
+  parent: NotaFiscalNet.Core.ModalidadeBaseCalculoIcms
+  langs:
+  - csharp
+  - vb
+  name: ValorOperacao
+  fullName: NotaFiscalNet.Core.ModalidadeBaseCalculoIcms.ValorOperacao
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcms.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorOperacao
+    path: src/NotaFiscalNet.Core/ModalidadeBaseCalculoIcms.cs
+    startLine: 31
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n3 - Valor da Operação\r\n"
+  example: []
+  syntax:
+    content: ValorOperacao = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

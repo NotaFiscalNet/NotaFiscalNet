@@ -1,0 +1,193 @@
+items:
+- uid: NotaFiscalNet.Core.TipoOperacaoVendaVeiculo
+  id: TipoOperacaoVendaVeiculo
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.TipoOperacaoVendaVeiculo.Concessionaria
+  - NotaFiscalNet.Core.TipoOperacaoVendaVeiculo.FaturamentoDireto
+  - NotaFiscalNet.Core.TipoOperacaoVendaVeiculo.NaoEspecificado
+  - NotaFiscalNet.Core.TipoOperacaoVendaVeiculo.Outros
+  - NotaFiscalNet.Core.TipoOperacaoVendaVeiculo.VendaDireta
+  langs:
+  - csharp
+  - vb
+  name: TipoOperacaoVendaVeiculo
+  fullName: NotaFiscalNet.Core.TipoOperacaoVendaVeiculo
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoOperacaoVendaVeiculo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoOperacaoVendaVeiculo
+    path: src/NotaFiscalNet.Core/TipoOperacaoVendaVeiculo.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nIndica a modalidade de venda do Veículo Novo.\r\n"
+  example: []
+  syntax:
+    content: public enum TipoOperacaoVendaVeiculo
+    content.vb: Public Enum TipoOperacaoVendaVeiculo
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.TipoOperacaoVendaVeiculo.NaoEspecificado
+  id: NaoEspecificado
+  parent: NotaFiscalNet.Core.TipoOperacaoVendaVeiculo
+  langs:
+  - csharp
+  - vb
+  name: NaoEspecificado
+  fullName: NotaFiscalNet.Core.TipoOperacaoVendaVeiculo.NaoEspecificado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoOperacaoVendaVeiculo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoEspecificado
+    path: src/NotaFiscalNet.Core/TipoOperacaoVendaVeiculo.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nNão Especificado\r\n"
+  example: []
+  syntax:
+    content: NaoEspecificado = -1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoOperacaoVendaVeiculo.Concessionaria
+  id: Concessionaria
+  parent: NotaFiscalNet.Core.TipoOperacaoVendaVeiculo
+  langs:
+  - csharp
+  - vb
+  name: Concessionaria
+  fullName: NotaFiscalNet.Core.TipoOperacaoVendaVeiculo.Concessionaria
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoOperacaoVendaVeiculo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Concessionaria
+    path: src/NotaFiscalNet.Core/TipoOperacaoVendaVeiculo.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nVenda Concessionária.\r\n"
+  example: []
+  syntax:
+    content: Concessionaria = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoOperacaoVendaVeiculo.FaturamentoDireto
+  id: FaturamentoDireto
+  parent: NotaFiscalNet.Core.TipoOperacaoVendaVeiculo
+  langs:
+  - csharp
+  - vb
+  name: FaturamentoDireto
+  fullName: NotaFiscalNet.Core.TipoOperacaoVendaVeiculo.FaturamentoDireto
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoOperacaoVendaVeiculo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: FaturamentoDireto
+    path: src/NotaFiscalNet.Core/TipoOperacaoVendaVeiculo.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nFaturamento Direto.\r\n"
+  example: []
+  syntax:
+    content: FaturamentoDireto = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoOperacaoVendaVeiculo.VendaDireta
+  id: VendaDireta
+  parent: NotaFiscalNet.Core.TipoOperacaoVendaVeiculo
+  langs:
+  - csharp
+  - vb
+  name: VendaDireta
+  fullName: NotaFiscalNet.Core.TipoOperacaoVendaVeiculo.VendaDireta
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoOperacaoVendaVeiculo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: VendaDireta
+    path: src/NotaFiscalNet.Core/TipoOperacaoVendaVeiculo.cs
+    startLine: 26
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nVenda Direta.\r\n"
+  example: []
+  syntax:
+    content: VendaDireta = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoOperacaoVendaVeiculo.Outros
+  id: Outros
+  parent: NotaFiscalNet.Core.TipoOperacaoVendaVeiculo
+  langs:
+  - csharp
+  - vb
+  name: Outros
+  fullName: NotaFiscalNet.Core.TipoOperacaoVendaVeiculo.Outros
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoOperacaoVendaVeiculo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Outros
+    path: src/NotaFiscalNet.Core/TipoOperacaoVendaVeiculo.cs
+    startLine: 31
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nOutras modalidades.\r\n"
+  example: []
+  syntax:
+    content: Outros = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

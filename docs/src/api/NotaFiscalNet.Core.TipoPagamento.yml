@@ -1,0 +1,382 @@
+items:
+- uid: NotaFiscalNet.Core.TipoPagamento
+  id: TipoPagamento
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.TipoPagamento.CartaoCredito
+  - NotaFiscalNet.Core.TipoPagamento.CartaoDebito
+  - NotaFiscalNet.Core.TipoPagamento.Cheque
+  - NotaFiscalNet.Core.TipoPagamento.CreditoLoja
+  - NotaFiscalNet.Core.TipoPagamento.Dinheiro
+  - NotaFiscalNet.Core.TipoPagamento.Outros
+  - NotaFiscalNet.Core.TipoPagamento.ValeAlimentacao
+  - NotaFiscalNet.Core.TipoPagamento.ValeCombustivel
+  - NotaFiscalNet.Core.TipoPagamento.ValePresente
+  - NotaFiscalNet.Core.TipoPagamento.ValeRefeicao
+  langs:
+  - csharp
+  - vb
+  name: TipoPagamento
+  fullName: NotaFiscalNet.Core.TipoPagamento
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoPagamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoPagamento
+    path: src/NotaFiscalNet.Core/TipoPagamento.cs
+    startLine: 8
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nFormas de Pagamento\r\n"
+  example: []
+  syntax:
+    content: public enum TipoPagamento
+    content.vb: Public Enum TipoPagamento
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.TipoPagamento.Dinheiro
+  id: Dinheiro
+  parent: NotaFiscalNet.Core.TipoPagamento
+  langs:
+  - csharp
+  - vb
+  name: Dinheiro
+  fullName: NotaFiscalNet.Core.TipoPagamento.Dinheiro
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoPagamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Dinheiro
+    path: src/NotaFiscalNet.Core/TipoPagamento.cs
+    startLine: 13
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n01 - Dinheiro.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Description("Dinheiro")]
+
+      Dinheiro = 1
+    content.vb: >-
+      <Description("Dinheiro")>
+
+      Dinheiro = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoPagamento.Cheque
+  id: Cheque
+  parent: NotaFiscalNet.Core.TipoPagamento
+  langs:
+  - csharp
+  - vb
+  name: Cheque
+  fullName: NotaFiscalNet.Core.TipoPagamento.Cheque
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoPagamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cheque
+    path: src/NotaFiscalNet.Core/TipoPagamento.cs
+    startLine: 19
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n02 - Cheque.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Description("Cheque")]
+
+      Cheque = 2
+    content.vb: >-
+      <Description("Cheque")>
+
+      Cheque = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoPagamento.CartaoCredito
+  id: CartaoCredito
+  parent: NotaFiscalNet.Core.TipoPagamento
+  langs:
+  - csharp
+  - vb
+  name: CartaoCredito
+  fullName: NotaFiscalNet.Core.TipoPagamento.CartaoCredito
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoPagamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CartaoCredito
+    path: src/NotaFiscalNet.Core/TipoPagamento.cs
+    startLine: 25
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n03 - Cartão de Crédito.\r\n"
+  example: []
+  syntax:
+    content: "[Description(\"Cartão de Crédito\")]\nCartaoCredito = 3"
+    content.vb: "<Description(\"Cartão de Crédito\")>\nCartaoCredito = 3"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoPagamento.CartaoDebito
+  id: CartaoDebito
+  parent: NotaFiscalNet.Core.TipoPagamento
+  langs:
+  - csharp
+  - vb
+  name: CartaoDebito
+  fullName: NotaFiscalNet.Core.TipoPagamento.CartaoDebito
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoPagamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CartaoDebito
+    path: src/NotaFiscalNet.Core/TipoPagamento.cs
+    startLine: 31
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n04 - Cartão de Débito.\r\n"
+  example: []
+  syntax:
+    content: "[Description(\"Cartão de Débito\")]\nCartaoDebito = 4"
+    content.vb: "<Description(\"Cartão de Débito\")>\nCartaoDebito = 4"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoPagamento.CreditoLoja
+  id: CreditoLoja
+  parent: NotaFiscalNet.Core.TipoPagamento
+  langs:
+  - csharp
+  - vb
+  name: CreditoLoja
+  fullName: NotaFiscalNet.Core.TipoPagamento.CreditoLoja
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoPagamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CreditoLoja
+    path: src/NotaFiscalNet.Core/TipoPagamento.cs
+    startLine: 37
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n05 - Crédito Loja.\r\n"
+  example: []
+  syntax:
+    content: "[Description(\"Crédito Loja\")]\nCreditoLoja = 5"
+    content.vb: "<Description(\"Crédito Loja\")>\nCreditoLoja = 5"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoPagamento.ValeAlimentacao
+  id: ValeAlimentacao
+  parent: NotaFiscalNet.Core.TipoPagamento
+  langs:
+  - csharp
+  - vb
+  name: ValeAlimentacao
+  fullName: NotaFiscalNet.Core.TipoPagamento.ValeAlimentacao
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoPagamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValeAlimentacao
+    path: src/NotaFiscalNet.Core/TipoPagamento.cs
+    startLine: 43
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n10 - Vale Alimentação\r\n"
+  example: []
+  syntax:
+    content: "[Description(\"Vale Alientação\")]\nValeAlimentacao = 10"
+    content.vb: "<Description(\"Vale Alientação\")>\nValeAlimentacao = 10"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoPagamento.ValeRefeicao
+  id: ValeRefeicao
+  parent: NotaFiscalNet.Core.TipoPagamento
+  langs:
+  - csharp
+  - vb
+  name: ValeRefeicao
+  fullName: NotaFiscalNet.Core.TipoPagamento.ValeRefeicao
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoPagamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValeRefeicao
+    path: src/NotaFiscalNet.Core/TipoPagamento.cs
+    startLine: 49
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n11 - Vale Refeição.\r\n"
+  example: []
+  syntax:
+    content: "[Description(\"Vale Refeição\")]\nValeRefeicao = 11"
+    content.vb: "<Description(\"Vale Refeição\")>\nValeRefeicao = 11"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoPagamento.ValePresente
+  id: ValePresente
+  parent: NotaFiscalNet.Core.TipoPagamento
+  langs:
+  - csharp
+  - vb
+  name: ValePresente
+  fullName: NotaFiscalNet.Core.TipoPagamento.ValePresente
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoPagamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValePresente
+    path: src/NotaFiscalNet.Core/TipoPagamento.cs
+    startLine: 55
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n12 - Vale Presente.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Description("Vale Presente")]
+
+      ValePresente = 12
+    content.vb: >-
+      <Description("Vale Presente")>
+
+      ValePresente = 12
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoPagamento.ValeCombustivel
+  id: ValeCombustivel
+  parent: NotaFiscalNet.Core.TipoPagamento
+  langs:
+  - csharp
+  - vb
+  name: ValeCombustivel
+  fullName: NotaFiscalNet.Core.TipoPagamento.ValeCombustivel
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoPagamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValeCombustivel
+    path: src/NotaFiscalNet.Core/TipoPagamento.cs
+    startLine: 61
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n13 - Vale Combustível.\r\n"
+  example: []
+  syntax:
+    content: "[Description(\"Vale Combustível\")]\nValeCombustivel = 13"
+    content.vb: "<Description(\"Vale Combustível\")>\nValeCombustivel = 13"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoPagamento.Outros
+  id: Outros
+  parent: NotaFiscalNet.Core.TipoPagamento
+  langs:
+  - csharp
+  - vb
+  name: Outros
+  fullName: NotaFiscalNet.Core.TipoPagamento.Outros
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoPagamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Outros
+    path: src/NotaFiscalNet.Core/TipoPagamento.cs
+    startLine: 67
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n99 - Outros.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Description("Outros")]
+
+      Outros = 99
+    content.vb: >-
+      <Description("Outros")>
+
+      Outros = 99
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

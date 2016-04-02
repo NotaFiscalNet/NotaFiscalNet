@@ -1,0 +1,162 @@
+items:
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalCteValidadorTests
+  id: ReferenciaDocumentoFiscalCteValidadorTests
+  parent: NotaFiscalNet.Core.Tests.Validacao
+  children:
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalCteValidadorTests.DeveMostrarErroSeInformarReferenciaCteComMaisDe44Caracteres
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalCteValidadorTests.DeveMostrarErroSeInformarReferenciaCteComMenosDe44Caracteres
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalCteValidadorTests.DeveMostrarErroSeNaoInformarReferenciaCte
+  - NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalCteValidadorTests.DevePermitirInformarReferenciaCteCom44Caracteres
+  langs:
+  - csharp
+  - vb
+  name: ReferenciaDocumentoFiscalCteValidadorTests
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalCteValidadorTests
+  type: Class
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalCteValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ReferenciaDocumentoFiscalCteValidadorTests
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalCteValidadorTests.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: 'public class ReferenciaDocumentoFiscalCteValidadorTests : object'
+    content.vb: >-
+      Public Class ReferenciaDocumentoFiscalCteValidadorTests
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalCteValidadorTests.DeveMostrarErroSeNaoInformarReferenciaCte
+  id: DeveMostrarErroSeNaoInformarReferenciaCte
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalCteValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DeveMostrarErroSeNaoInformarReferenciaCte()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalCteValidadorTests.DeveMostrarErroSeNaoInformarReferenciaCte()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalCteValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveMostrarErroSeNaoInformarReferenciaCte
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalCteValidadorTests.cs
+    startLine: 15
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DeveMostrarErroSeNaoInformarReferenciaCte()
+    content.vb: Public Sub DeveMostrarErroSeNaoInformarReferenciaCte
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalCteValidadorTests.DeveMostrarErroSeInformarReferenciaCteComMaisDe44Caracteres
+  id: DeveMostrarErroSeInformarReferenciaCteComMaisDe44Caracteres
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalCteValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DeveMostrarErroSeInformarReferenciaCteComMaisDe44Caracteres()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalCteValidadorTests.DeveMostrarErroSeInformarReferenciaCteComMaisDe44Caracteres()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalCteValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveMostrarErroSeInformarReferenciaCteComMaisDe44Caracteres
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalCteValidadorTests.cs
+    startLine: 25
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DeveMostrarErroSeInformarReferenciaCteComMaisDe44Caracteres()
+    content.vb: Public Sub DeveMostrarErroSeInformarReferenciaCteComMaisDe44Caracteres
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalCteValidadorTests.DeveMostrarErroSeInformarReferenciaCteComMenosDe44Caracteres
+  id: DeveMostrarErroSeInformarReferenciaCteComMenosDe44Caracteres
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalCteValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DeveMostrarErroSeInformarReferenciaCteComMenosDe44Caracteres()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalCteValidadorTests.DeveMostrarErroSeInformarReferenciaCteComMenosDe44Caracteres()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalCteValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveMostrarErroSeInformarReferenciaCteComMenosDe44Caracteres
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalCteValidadorTests.cs
+    startLine: 36
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DeveMostrarErroSeInformarReferenciaCteComMenosDe44Caracteres()
+    content.vb: Public Sub DeveMostrarErroSeInformarReferenciaCteComMenosDe44Caracteres
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalCteValidadorTests.DevePermitirInformarReferenciaCteCom44Caracteres
+  id: DevePermitirInformarReferenciaCteCom44Caracteres
+  parent: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalCteValidadorTests
+  langs:
+  - csharp
+  - vb
+  name: DevePermitirInformarReferenciaCteCom44Caracteres()
+  fullName: NotaFiscalNet.Core.Tests.Validacao.ReferenciaDocumentoFiscalCteValidadorTests.DevePermitirInformarReferenciaCteCom44Caracteres()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalCteValidadorTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DevePermitirInformarReferenciaCteCom44Caracteres
+    path: tests/NotaFiscalNet.Core.Tests/Validacao/ReferenciaDocumentoFiscalCteValidadorTests.cs
+    startLine: 47
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Validacao
+  syntax:
+    content: public void DevePermitirInformarReferenciaCteCom44Caracteres()
+    content.vb: Public Sub DevePermitirInformarReferenciaCteCom44Caracteres
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core.Tests.Validacao
+  isExternal: false
+  name: NotaFiscalNet.Core.Tests.Validacao
+  fullName: NotaFiscalNet.Core.Tests.Validacao
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

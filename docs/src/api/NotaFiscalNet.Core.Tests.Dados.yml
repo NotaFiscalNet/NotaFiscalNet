@@ -1,0 +1,70 @@
+items:
+- uid: NotaFiscalNet.Core.Tests.Dados
+  id: NotaFiscalNet.Core.Tests.Dados
+  children:
+  - NotaFiscalNet.Core.Tests.Dados.Repositorio`1
+  - NotaFiscalNet.Core.Tests.Dados.RepositorioAvulsa
+  - NotaFiscalNet.Core.Tests.Dados.RepositorioIdentificacaoDocumentoFiscal
+  - NotaFiscalNet.Core.Tests.Dados.RepositorioInformacoesExportacao
+  - NotaFiscalNet.Core.Tests.Dados.RepositorioReferenciaDocumentoFiscalNotaFiscal
+  - NotaFiscalNet.Core.Tests.Dados.RepositorioReferenciaDocumentoFiscalNotaFiscalProdutor
+  langs:
+  - csharp
+  - vb
+  name: NotaFiscalNet.Core.Tests.Dados
+  fullName: NotaFiscalNet.Core.Tests.Dados
+  type: Namespace
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+references:
+- uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1
+  parent: NotaFiscalNet.Core.Tests.Dados
+  isExternal: false
+  name: Repositorio<T>
+  fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio<T>
+  fullname.vb: NotaFiscalNet.Core.Tests.Dados.Repositorio(Of T)
+  name.vb: Repositorio(Of T)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1
+    name: Repositorio
+    fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1
+    name: Repositorio
+    fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.Tests.Dados.RepositorioAvulsa
+  isExternal: false
+  name: RepositorioAvulsa
+  fullName: NotaFiscalNet.Core.Tests.Dados.RepositorioAvulsa
+- uid: NotaFiscalNet.Core.Tests.Dados.RepositorioInformacoesExportacao
+  isExternal: false
+  name: RepositorioInformacoesExportacao
+  fullName: NotaFiscalNet.Core.Tests.Dados.RepositorioInformacoesExportacao
+- uid: NotaFiscalNet.Core.Tests.Dados.RepositorioIdentificacaoDocumentoFiscal
+  isExternal: false
+  name: RepositorioIdentificacaoDocumentoFiscal
+  fullName: NotaFiscalNet.Core.Tests.Dados.RepositorioIdentificacaoDocumentoFiscal
+- uid: NotaFiscalNet.Core.Tests.Dados.RepositorioReferenciaDocumentoFiscalNotaFiscal
+  isExternal: false
+  name: RepositorioReferenciaDocumentoFiscalNotaFiscal
+  fullName: NotaFiscalNet.Core.Tests.Dados.RepositorioReferenciaDocumentoFiscalNotaFiscal
+- uid: NotaFiscalNet.Core.Tests.Dados.RepositorioReferenciaDocumentoFiscalNotaFiscalProdutor
+  isExternal: false
+  name: RepositorioReferenciaDocumentoFiscalNotaFiscalProdutor
+  fullName: NotaFiscalNet.Core.Tests.Dados.RepositorioReferenciaDocumentoFiscalNotaFiscalProdutor
+- uid: NotaFiscalNet.Core.Tests.Dados
+  isExternal: false
+  name: NotaFiscalNet.Core.Tests.Dados
+  fullName: NotaFiscalNet.Core.Tests.Dados

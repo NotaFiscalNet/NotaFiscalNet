@@ -1,0 +1,162 @@
+items:
+- uid: NotaFiscalNet.Core.TipoFinalidade
+  id: TipoFinalidade
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.TipoFinalidade.Ajuste
+  - NotaFiscalNet.Core.TipoFinalidade.Complementar
+  - NotaFiscalNet.Core.TipoFinalidade.Devolucao
+  - NotaFiscalNet.Core.TipoFinalidade.Normal
+  langs:
+  - csharp
+  - vb
+  name: TipoFinalidade
+  fullName: NotaFiscalNet.Core.TipoFinalidade
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoFinalidade.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoFinalidade
+    path: src/NotaFiscalNet.Core/TipoFinalidade.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRepresenta a Finalizada de Emissão da NF-e.\r\n"
+  example: []
+  syntax:
+    content: public enum TipoFinalidade
+    content.vb: Public Enum TipoFinalidade
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.TipoFinalidade.Normal
+  id: Normal
+  parent: NotaFiscalNet.Core.TipoFinalidade
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  fullName: NotaFiscalNet.Core.TipoFinalidade.Normal
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoFinalidade.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Normal
+    path: src/NotaFiscalNet.Core/TipoFinalidade.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n1 - NF-e Normal.\r\n"
+  example: []
+  syntax:
+    content: Normal = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoFinalidade.Complementar
+  id: Complementar
+  parent: NotaFiscalNet.Core.TipoFinalidade
+  langs:
+  - csharp
+  - vb
+  name: Complementar
+  fullName: NotaFiscalNet.Core.TipoFinalidade.Complementar
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoFinalidade.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Complementar
+    path: src/NotaFiscalNet.Core/TipoFinalidade.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n2 - NF-e Complementar.\r\n"
+  example: []
+  syntax:
+    content: Complementar = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoFinalidade.Ajuste
+  id: Ajuste
+  parent: NotaFiscalNet.Core.TipoFinalidade
+  langs:
+  - csharp
+  - vb
+  name: Ajuste
+  fullName: NotaFiscalNet.Core.TipoFinalidade.Ajuste
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoFinalidade.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Ajuste
+    path: src/NotaFiscalNet.Core/TipoFinalidade.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n3 - NF-e de Ajuste.\r\n"
+  example: []
+  syntax:
+    content: Ajuste = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoFinalidade.Devolucao
+  id: Devolucao
+  parent: NotaFiscalNet.Core.TipoFinalidade
+  langs:
+  - csharp
+  - vb
+  name: Devolucao
+  fullName: NotaFiscalNet.Core.TipoFinalidade.Devolucao
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoFinalidade.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Devolucao
+    path: src/NotaFiscalNet.Core/TipoFinalidade.cs
+    startLine: 26
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n4 - Devolução/Retorno\r\n"
+  example: []
+  syntax:
+    content: Devolucao = 4
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

@@ -1,0 +1,100 @@
+items:
+- uid: NotaFiscalNet.Core.TipoCalculoPIS
+  id: TipoCalculoPIS
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.TipoCalculoPIS.PercentualValor
+  - NotaFiscalNet.Core.TipoCalculoPIS.ValorQuantidade
+  langs:
+  - csharp
+  - vb
+  name: TipoCalculoPIS
+  fullName: NotaFiscalNet.Core.TipoCalculoPIS
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoCalculoPIS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoCalculoPIS
+    path: src/NotaFiscalNet.Core/TipoCalculoPIS.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nTipo de Cálculo do PIS\r\n"
+  example: []
+  syntax:
+    content: public enum TipoCalculoPIS
+    content.vb: Public Enum TipoCalculoPIS
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.TipoCalculoPIS.PercentualValor
+  id: PercentualValor
+  parent: NotaFiscalNet.Core.TipoCalculoPIS
+  langs:
+  - csharp
+  - vb
+  name: PercentualValor
+  fullName: NotaFiscalNet.Core.TipoCalculoPIS.PercentualValor
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoCalculoPIS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PercentualValor
+    path: src/NotaFiscalNet.Core/TipoCalculoPIS.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nAlíquota em Percentual, Base de Cálculo em Valor.\r\n"
+  example: []
+  syntax:
+    content: PercentualValor = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoCalculoPIS.ValorQuantidade
+  id: ValorQuantidade
+  parent: NotaFiscalNet.Core.TipoCalculoPIS
+  langs:
+  - csharp
+  - vb
+  name: ValorQuantidade
+  fullName: NotaFiscalNet.Core.TipoCalculoPIS.ValorQuantidade
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoCalculoPIS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorQuantidade
+    path: src/NotaFiscalNet.Core/TipoCalculoPIS.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nAlíquota em Valor, Base de Cálculo em Quantidade.\r\n"
+  example: []
+  syntax:
+    content: ValorQuantidade = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

@@ -1,0 +1,100 @@
+items:
+- uid: NotaFiscalNet.Core.TipoModalidadeDocumentoFiscal
+  id: TipoModalidadeDocumentoFiscal
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.TipoModalidadeDocumentoFiscal.Nfce
+  - NotaFiscalNet.Core.TipoModalidadeDocumentoFiscal.Nfe
+  langs:
+  - csharp
+  - vb
+  name: TipoModalidadeDocumentoFiscal
+  fullName: NotaFiscalNet.Core.TipoModalidadeDocumentoFiscal
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoModalidadeDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoModalidadeDocumentoFiscal
+    path: src/NotaFiscalNet.Core/TipoModalidadeDocumentoFiscal.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nEspecifica o tipo da Nota Fical.\r\n"
+  example: []
+  syntax:
+    content: public enum TipoModalidadeDocumentoFiscal
+    content.vb: Public Enum TipoModalidadeDocumentoFiscal
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.TipoModalidadeDocumentoFiscal.Nfe
+  id: Nfe
+  parent: NotaFiscalNet.Core.TipoModalidadeDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: Nfe
+  fullName: NotaFiscalNet.Core.TipoModalidadeDocumentoFiscal.Nfe
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoModalidadeDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Nfe
+    path: src/NotaFiscalNet.Core/TipoModalidadeDocumentoFiscal.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nNota Fiscal Eletrônica (NF-e).\r\n"
+  example: []
+  syntax:
+    content: Nfe = 55
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoModalidadeDocumentoFiscal.Nfce
+  id: Nfce
+  parent: NotaFiscalNet.Core.TipoModalidadeDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: Nfce
+  fullName: NotaFiscalNet.Core.TipoModalidadeDocumentoFiscal.Nfce
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoModalidadeDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Nfce
+    path: src/NotaFiscalNet.Core/TipoModalidadeDocumentoFiscal.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nNota Fiscal de Consumidor Eletrônica (NFC-e).\r\n"
+  example: []
+  syntax:
+    content: Nfce = 65
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

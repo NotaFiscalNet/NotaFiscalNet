@@ -1,0 +1,88 @@
+items:
+- uid: NotaFiscalNet.Core.Tests.AvulsaTests
+  id: AvulsaTests
+  parent: NotaFiscalNet.Core.Tests
+  children:
+  - NotaFiscalNet.Core.Tests.AvulsaTests.DeveSerializarUmaAvulsa(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: AvulsaTests
+  fullName: NotaFiscalNet.Core.Tests.AvulsaTests
+  type: Class
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/AvulsaTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: AvulsaTests
+    path: tests/NotaFiscalNet.Core.Tests/AvulsaTests.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests
+  syntax:
+    content: 'public class AvulsaTests : object'
+    content.vb: >-
+      Public Class AvulsaTests
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Tests.AvulsaTests.DeveSerializarUmaAvulsa(System.String,System.String)
+  id: DeveSerializarUmaAvulsa(System.String,System.String)
+  parent: NotaFiscalNet.Core.Tests.AvulsaTests
+  langs:
+  - csharp
+  - vb
+  name: DeveSerializarUmaAvulsa(String, String)
+  fullName: NotaFiscalNet.Core.Tests.AvulsaTests.DeveSerializarUmaAvulsa(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/AvulsaTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveSerializarUmaAvulsa
+    path: tests/NotaFiscalNet.Core.Tests/AvulsaTests.cs
+    startLine: 10
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests
+  syntax:
+    content: public void DeveSerializarUmaAvulsa(string chaveReferencia, string arquivoXml)
+    content.vb: Public Sub DeveSerializarUmaAvulsa(chaveReferencia As String, arquivoXml As String)
+    parameters:
+    - id: chaveReferencia
+      type: System.String
+    - id: arquivoXml
+      type: System.String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core.Tests
+  isExternal: false
+  name: NotaFiscalNet.Core.Tests
+  fullName: NotaFiscalNet.Core.Tests
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

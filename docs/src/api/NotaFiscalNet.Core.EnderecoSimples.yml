@@ -1,0 +1,647 @@
+items:
+- uid: NotaFiscalNet.Core.EnderecoSimples
+  id: EnderecoSimples
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.EnderecoSimples.Bairro
+  - NotaFiscalNet.Core.EnderecoSimples.CodigoMunicipioIBGE
+  - NotaFiscalNet.Core.EnderecoSimples.Complemento
+  - NotaFiscalNet.Core.EnderecoSimples.Logradouro
+  - NotaFiscalNet.Core.EnderecoSimples.Modificado
+  - NotaFiscalNet.Core.EnderecoSimples.NomeMunicipio
+  - NotaFiscalNet.Core.EnderecoSimples.Numero
+  - NotaFiscalNet.Core.EnderecoSimples.UF
+  langs:
+  - csharp
+  - vb
+  name: EnderecoSimples
+  fullName: NotaFiscalNet.Core.EnderecoSimples
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/EnderecoSimples.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: EnderecoSimples
+    path: src/NotaFiscalNet.Core/EnderecoSimples.cs
+    startLine: 10
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRepresenta o Endereço Simples do Emitente, Destinatário, Retirada e Entrega da Nota Fiscal Eletrônica.\r\n"
+  example: []
+  syntax:
+    content: 'public class EnderecoSimples : IModificavel'
+    content.vb: >-
+      Public Class EnderecoSimples
+
+          Implements IModificavel
+  inheritance:
+  - System.Object
+  implements:
+  - NotaFiscalNet.Core.Interfaces.IModificavel
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.EnderecoSimples.Modificado
+  id: Modificado
+  parent: NotaFiscalNet.Core.EnderecoSimples
+  langs:
+  - csharp
+  - vb
+  name: Modificado
+  fullName: NotaFiscalNet.Core.EnderecoSimples.Modificado
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/EnderecoSimples.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Modificado
+    path: src/NotaFiscalNet.Core/EnderecoSimples.cs
+    startLine: 12
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: >-
+      public virtual bool Modificado
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property Modificado As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: NotaFiscalNet.Core.EnderecoSimples.Logradouro
+  id: Logradouro
+  parent: NotaFiscalNet.Core.EnderecoSimples
+  langs:
+  - csharp
+  - vb
+  name: Logradouro
+  fullName: NotaFiscalNet.Core.EnderecoSimples.Logradouro
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/EnderecoSimples.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Logradouro
+    path: src/NotaFiscalNet.Core/EnderecoSimples.cs
+    startLine: 43
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[xLgr] Retorna ou define o Logradouro\r\n"
+  example: []
+  syntax:
+    content: "[NFeField(ID = \"C06\", FieldName = \"xLgr\", DataType = \"TString\", Pattern = \"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength = 1, MaxLength = 60)]\n[NFeField(ID = \"E06\", FieldName = \"xLgr\", DataType = \"TString\", Pattern = \"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength = 2, MaxLength = 60)]\n[NFeField(ID = \"F03\", FieldName = \"xLgr\", DataType = \"TString\", Pattern = \"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength = 1, MaxLength = 60)]\n[NFeField(ID = \"G03\", FieldName = \"xLgr\", DataType = \"TString\", Pattern = \"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength = 1, MaxLength = 60)]\n[CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]\npublic string Logradouro\n{\n    get;\n    set;\n}"
+    content.vb: "<NFeField(ID:=\"C06\", FieldName:=\"xLgr\", DataType:=\"TString\", Pattern:=\"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength:=1, MaxLength:=60)>\n<NFeField(ID:=\"E06\", FieldName:=\"xLgr\", DataType:=\"TString\", Pattern:=\"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength:=2, MaxLength:=60)>\n<NFeField(ID:=\"F03\", FieldName:=\"xLgr\", DataType:=\"TString\", Pattern:=\"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength:=1, MaxLength:=60)>\n<NFeField(ID:=\"G03\", FieldName:=\"xLgr\", DataType:=\"TString\", Pattern:=\"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength:=1, MaxLength:=60)>\n<CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)>\nPublic Property Logradouro As String"
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.EnderecoSimples.Numero
+  id: Numero
+  parent: NotaFiscalNet.Core.EnderecoSimples
+  langs:
+  - csharp
+  - vb
+  name: Numero
+  fullName: NotaFiscalNet.Core.EnderecoSimples.Numero
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/EnderecoSimples.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Numero
+    path: src/NotaFiscalNet.Core/EnderecoSimples.cs
+    startLine: 61
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[nro] Retorna ou define o Número\r\n"
+  example: []
+  syntax:
+    content: "[NFeField(ID = \"C07\", FieldName = \"nro\", DataType = \"TString\", Pattern = \"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength = 1, MaxLength = 60)]\n[NFeField(ID = \"E07\", FieldName = \"nro\", DataType = \"TString\", Pattern = \"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength = 1, MaxLength = 60)]\n[NFeField(ID = \"F04\", FieldName = \"nro\", DataType = \"TString\", Pattern = \"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength = 1, MaxLength = 60)]\n[NFeField(ID = \"G04\", FieldName = \"nro\", DataType = \"TString\", Pattern = \"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength = 1, MaxLength = 60)]\n[CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]\npublic string Numero\n{\n    get;\n    set;\n}"
+    content.vb: "<NFeField(ID:=\"C07\", FieldName:=\"nro\", DataType:=\"TString\", Pattern:=\"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength:=1, MaxLength:=60)>\n<NFeField(ID:=\"E07\", FieldName:=\"nro\", DataType:=\"TString\", Pattern:=\"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength:=1, MaxLength:=60)>\n<NFeField(ID:=\"F04\", FieldName:=\"nro\", DataType:=\"TString\", Pattern:=\"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength:=1, MaxLength:=60)>\n<NFeField(ID:=\"G04\", FieldName:=\"nro\", DataType:=\"TString\", Pattern:=\"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength:=1, MaxLength:=60)>\n<CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)>\nPublic Property Numero As String"
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.EnderecoSimples.Complemento
+  id: Complemento
+  parent: NotaFiscalNet.Core.EnderecoSimples
+  langs:
+  - csharp
+  - vb
+  name: Complemento
+  fullName: NotaFiscalNet.Core.EnderecoSimples.Complemento
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/EnderecoSimples.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Complemento
+    path: src/NotaFiscalNet.Core/EnderecoSimples.cs
+    startLine: 79
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[xCpl] Retorna ou define o Complemento. Opcional.\r\n"
+  example: []
+  syntax:
+    content: "[NFeField(ID = \"C08\", FieldName = \"xCpl\", DataType = \"TString\", Pattern = \"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength = 1, MaxLength = 60, Opcional = true)]\n[NFeField(ID = \"E08\", FieldName = \"xCpl\", DataType = \"TString\", Pattern = \"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength = 1, MaxLength = 60, Opcional = true)]\n[NFeField(ID = \"F05\", FieldName = \"xCpl\", DataType = \"TString\", Pattern = \"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength = 1, MaxLength = 60, Opcional = true)]\n[NFeField(ID = \"G05\", FieldName = \"xCpl\", DataType = \"TString\", Pattern = \"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength = 1, MaxLength = 60, Opcional = true)]\n[CampoValidavel(3, Opcional = true)]\npublic string Complemento\n{\n    get;\n    set;\n}"
+    content.vb: "<NFeField(ID:=\"C08\", FieldName:=\"xCpl\", DataType:=\"TString\", Pattern:=\"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength:=1, MaxLength:=60, Opcional:=True)>\n<NFeField(ID:=\"E08\", FieldName:=\"xCpl\", DataType:=\"TString\", Pattern:=\"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength:=1, MaxLength:=60, Opcional:=True)>\n<NFeField(ID:=\"F05\", FieldName:=\"xCpl\", DataType:=\"TString\", Pattern:=\"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength:=1, MaxLength:=60, Opcional:=True)>\n<NFeField(ID:=\"G05\", FieldName:=\"xCpl\", DataType:=\"TString\", Pattern:=\"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength:=1, MaxLength:=60, Opcional:=True)>\n<CampoValidavel(3, Opcional:=True)>\nPublic Property Complemento As String"
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.EnderecoSimples.Bairro
+  id: Bairro
+  parent: NotaFiscalNet.Core.EnderecoSimples
+  langs:
+  - csharp
+  - vb
+  name: Bairro
+  fullName: NotaFiscalNet.Core.EnderecoSimples.Bairro
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/EnderecoSimples.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Bairro
+    path: src/NotaFiscalNet.Core/EnderecoSimples.cs
+    startLine: 97
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[xBairro] Retorna ou define o Bairro\r\n"
+  example: []
+  syntax:
+    content: "[NFeField(ID = \"C09\", FieldName = \"xBairro\", DataType = \"TString\", Pattern = \"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength = 1, MaxLength = 60)]\n[NFeField(ID = \"E09\", FieldName = \"xBairro\", DataType = \"TString\", Pattern = \"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength = 1, MaxLength = 60)]\n[NFeField(ID = \"F06\", FieldName = \"xBairro\", DataType = \"TString\", Pattern = \"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength = 1, MaxLength = 60)]\n[NFeField(ID = \"G06\", FieldName = \"xBairro\", DataType = \"TString\", Pattern = \"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength = 1, MaxLength = 60)]\n[CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido)]\npublic string Bairro\n{\n    get;\n    set;\n}"
+    content.vb: "<NFeField(ID:=\"C09\", FieldName:=\"xBairro\", DataType:=\"TString\", Pattern:=\"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength:=1, MaxLength:=60)>\n<NFeField(ID:=\"E09\", FieldName:=\"xBairro\", DataType:=\"TString\", Pattern:=\"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength:=1, MaxLength:=60)>\n<NFeField(ID:=\"F06\", FieldName:=\"xBairro\", DataType:=\"TString\", Pattern:=\"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength:=1, MaxLength:=60)>\n<NFeField(ID:=\"G06\", FieldName:=\"xBairro\", DataType:=\"TString\", Pattern:=\"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength:=1, MaxLength:=60)>\n<CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido)>\nPublic Property Bairro As String"
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.EnderecoSimples.CodigoMunicipioIBGE
+  id: CodigoMunicipioIBGE
+  parent: NotaFiscalNet.Core.EnderecoSimples
+  langs:
+  - csharp
+  - vb
+  name: CodigoMunicipioIBGE
+  fullName: NotaFiscalNet.Core.EnderecoSimples.CodigoMunicipioIBGE
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/EnderecoSimples.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CodigoMunicipioIBGE
+    path: src/NotaFiscalNet.Core/EnderecoSimples.cs
+    startLine: 116
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[cMun] Retorna ou define o Código do Município de acordo com a Tabela do IBGE. Informar\r\n'9999999' para operações com o Exterior.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "C10", FieldName = "cMun", DataType = "TCodMunIBGE", Pattern = "[0-9]{7}")]
+
+      [NFeField(ID = "E10", FieldName = "cMun", DataType = "TCodMunIBGE", Pattern = "[0-9]{7}")]
+
+      [NFeField(ID = "F07", FieldName = "cMun", DataType = "TCodMunIBGE", Pattern = "[0-9]{7}")]
+
+      [NFeField(ID = "G07", FieldName = "cMun", DataType = "TCodMunIBGE", Pattern = "[0-9]{7}")]
+
+      [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public int CodigoMunicipioIBGE
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="C10", FieldName:="cMun", DataType:="TCodMunIBGE", Pattern:="[0-9]{7}")>
+
+      <NFeField(ID:="E10", FieldName:="cMun", DataType:="TCodMunIBGE", Pattern:="[0-9]{7}")>
+
+      <NFeField(ID:="F07", FieldName:="cMun", DataType:="TCodMunIBGE", Pattern:="[0-9]{7}")>
+
+      <NFeField(ID:="G07", FieldName:="cMun", DataType:="TCodMunIBGE", Pattern:="[0-9]{7}")>
+
+      <CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property CodigoMunicipioIBGE As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.EnderecoSimples.NomeMunicipio
+  id: NomeMunicipio
+  parent: NotaFiscalNet.Core.EnderecoSimples
+  langs:
+  - csharp
+  - vb
+  name: NomeMunicipio
+  fullName: NotaFiscalNet.Core.EnderecoSimples.NomeMunicipio
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/EnderecoSimples.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NomeMunicipio
+    path: src/NotaFiscalNet.Core/EnderecoSimples.cs
+    startLine: 130
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[xMun] Retorna ou define o Nome do Município. Informar 'EXTERIOR' para operações com o Exterior.\r\n"
+  example: []
+  syntax:
+    content: "[NFeField(ID = \"C11\", FieldName = \"xMun\", DataType = \"TString\", Pattern = \"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength = 2, MaxLength = 60)]\n[NFeField(ID = \"E11\", FieldName = \"xMun\", DataType = \"TString\", Pattern = \"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength = 2, MaxLength = 60)]\n[NFeField(ID = \"F08\", FieldName = \"xMun\", DataType = \"TString\", Pattern = \"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength = 2, MaxLength = 60)]\n[NFeField(ID = \"G08\", FieldName = \"xMun\", DataType = \"TString\", Pattern = \"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength = 2, MaxLength = 60)]\n[CampoValidavel(6, ChaveErroValidacao.CampoNaoPreenchido)]\npublic string NomeMunicipio\n{\n    get;\n    set;\n}"
+    content.vb: "<NFeField(ID:=\"C11\", FieldName:=\"xMun\", DataType:=\"TString\", Pattern:=\"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength:=2, MaxLength:=60)>\n<NFeField(ID:=\"E11\", FieldName:=\"xMun\", DataType:=\"TString\", Pattern:=\"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength:=2, MaxLength:=60)>\n<NFeField(ID:=\"F08\", FieldName:=\"xMun\", DataType:=\"TString\", Pattern:=\"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength:=2, MaxLength:=60)>\n<NFeField(ID:=\"G08\", FieldName:=\"xMun\", DataType:=\"TString\", Pattern:=\"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}\", MinLength:=2, MaxLength:=60)>\n<CampoValidavel(6, ChaveErroValidacao.CampoNaoPreenchido)>\nPublic Property NomeMunicipio As String"
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.EnderecoSimples.UF
+  id: UF
+  parent: NotaFiscalNet.Core.EnderecoSimples
+  langs:
+  - csharp
+  - vb
+  name: UF
+  fullName: NotaFiscalNet.Core.EnderecoSimples.UF
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/EnderecoSimples.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: UF
+    path: src/NotaFiscalNet.Core/EnderecoSimples.cs
+    startLine: 148
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[UF] Retorna ou define a Sigla da UF. Informar 'EX' para operações com o Exterior.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "C12", FieldName = "UF", DataType = "TUf")]
+
+      [NFeField(ID = "E12", FieldName = "UF", DataType = "TUf")]
+
+      [NFeField(ID = "F09", FieldName = "UF", DataType = "TUf")]
+
+      [NFeField(ID = "G09", FieldName = "UF", DataType = "TUf")]
+
+      [CampoValidavel(7, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = UfIBGE.NaoEspecificado)]
+
+      public SiglaUF UF
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="C12", FieldName:="UF", DataType:="TUf")>
+
+      <NFeField(ID:="E12", FieldName:="UF", DataType:="TUf")>
+
+      <NFeField(ID:="F09", FieldName:="UF", DataType:="TUf")>
+
+      <NFeField(ID:="G09", FieldName:="UF", DataType:="TUf")>
+
+      <CampoValidavel(7, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido:=UfIBGE.NaoEspecificado)>
+
+      Public Property UF As SiglaUF
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.SiglaUF
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: NotaFiscalNet.Core.Interfaces.IModificavel
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: IModificavel
+  fullName: NotaFiscalNet.Core.Interfaces.IModificavel
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: NotaFiscalNet.Core.Interfaces
+  fullName: NotaFiscalNet.Core.Interfaces
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: NotaFiscalNet.Core.SiglaUF
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: SiglaUF
+  fullName: NotaFiscalNet.Core.SiglaUF

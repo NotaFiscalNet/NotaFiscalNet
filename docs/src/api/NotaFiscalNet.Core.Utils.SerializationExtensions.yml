@@ -1,0 +1,1955 @@
+items:
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions
+  id: SerializationExtensions
+  parent: NotaFiscalNet.Core.Utils
+  children:
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.DecodificarCaracteresInvalidos(System.String)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.GetEnumValue(System.Enum)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.GetEnumValue``1(``0)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.IsDefined(System.Enum)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.RemoverAcentos(System.String)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.Serialize(NotaFiscalNet.Core.Interfaces.ISerializavel,System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.SerializeIfNotNull(NotaFiscalNet.Core.Interfaces.ISerializavel,System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToString2(System.Int32)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToString3(System.Int32)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToString4(System.Int32)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToString6(System.Int32)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToString7(System.Int32)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToString9(System.Int32)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToTCnpj(System.String)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToTCpf(System.String)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToTData(System.DateTime)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDataHora(System.DateTime)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDateTimeUtc(System.DateTime)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDateTimeUtc(System.DateTime,NotaFiscalNet.Core.INFe)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_0302(System.Decimal)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_0302(System.Double)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_0302a04(System.Decimal)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_0302a04Opc(System.Nullable{System.Decimal})
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_0302Max100(System.Decimal)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_0504(System.Double)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_0803(System.Double)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_0804(System.Double)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1104(System.Decimal)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1104(System.Double)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1104v(System.Decimal)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1110(System.Decimal)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1203(System.Double)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1204(System.Decimal)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1302(System.Decimal)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1302(System.Double)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1302Opc(System.Nullable{System.Decimal})
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToToken(System.Int32)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToToken(System.Int64)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToToken(System.String)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToToken(System.String,System.Int32)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToTString(System.String,System.Int32)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.ToTTime(System.DateTime)
+  - NotaFiscalNet.Core.Utils.SerializationExtensions.TratarCaracteresInvalidos(System.String)
+  langs:
+  - csharp
+  - vb
+  name: SerializationExtensions
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SerializationExtensions
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 12
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  summary: "\r\nClasse de Suporte para Serialização\r\n"
+  example: []
+  syntax:
+    content: public class SerializationExtensions
+    content.vb: Public Class SerializationExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.Serialize(NotaFiscalNet.Core.Interfaces.ISerializavel,System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  id: Serialize(NotaFiscalNet.Core.Interfaces.ISerializavel,System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: Serialize(ISerializavel, XmlWriter, INFe)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.Serialize(NotaFiscalNet.Core.Interfaces.ISerializavel, System.Xml.XmlWriter, NotaFiscalNet.Core.INFe)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Serialize
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 14
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static void Serialize(ISerializavel source, XmlWriter writer, INFe nfe)
+    content.vb: Public Shared Sub Serialize(source As ISerializavel, writer As XmlWriter, nfe As INFe)
+    parameters:
+    - id: source
+      type: NotaFiscalNet.Core.Interfaces.ISerializavel
+    - id: writer
+      type: System.Xml.XmlWriter
+    - id: nfe
+      type: NotaFiscalNet.Core.INFe
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.SerializeIfNotNull(NotaFiscalNet.Core.Interfaces.ISerializavel,System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  id: SerializeIfNotNull(NotaFiscalNet.Core.Interfaces.ISerializavel,System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: SerializeIfNotNull(ISerializavel, XmlWriter, INFe)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.SerializeIfNotNull(NotaFiscalNet.Core.Interfaces.ISerializavel, System.Xml.XmlWriter, NotaFiscalNet.Core.INFe)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SerializeIfNotNull
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static void SerializeIfNotNull(ISerializavel source, XmlWriter writer, INFe nfe)
+    content.vb: Public Shared Sub SerializeIfNotNull(source As ISerializavel, writer As XmlWriter, nfe As INFe)
+    parameters:
+    - id: source
+      type: NotaFiscalNet.Core.Interfaces.ISerializavel
+    - id: writer
+      type: System.Xml.XmlWriter
+    - id: nfe
+      type: NotaFiscalNet.Core.INFe
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.RemoverAcentos(System.String)
+  id: RemoverAcentos(System.String)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: RemoverAcentos(String)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.RemoverAcentos(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: RemoverAcentos
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 31
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  summary: "\r\nRemove os acentos do texto.\r\n"
+  example: []
+  syntax:
+    content: public static string RemoverAcentos(string value)
+    content.vb: Public Shared Function RemoverAcentos(value As String) As String
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.TratarCaracteresInvalidos(System.String)
+  id: TratarCaracteresInvalidos(System.String)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: TratarCaracteresInvalidos(String)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.TratarCaracteresInvalidos(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TratarCaracteresInvalidos
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 96
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string TratarCaracteresInvalidos(string value)
+    content.vb: Public Shared Function TratarCaracteresInvalidos(value As String) As String
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.DecodificarCaracteresInvalidos(System.String)
+  id: DecodificarCaracteresInvalidos(System.String)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: DecodificarCaracteresInvalidos(String)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.DecodificarCaracteresInvalidos(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DecodificarCaracteresInvalidos
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 107
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string DecodificarCaracteresInvalidos(string texto)
+    content.vb: Public Shared Function DecodificarCaracteresInvalidos(texto As String) As String
+    parameters:
+    - id: texto
+      type: System.String
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToToken(System.String,System.Int32)
+  id: ToToken(System.String,System.Int32)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToToken(String, Int32)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToToken(System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToToken
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 124
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  summary: "\r\nRealiza o tratamento de \"Tokenização\" da string retornando apenas uma quantidade\r\nespecificada de caracteres.\r\n"
+  example: []
+  syntax:
+    content: public static string ToToken(string value, int maxCharacters)
+    content.vb: Public Shared Function ToToken(value As String, maxCharacters As Integer) As String
+    parameters:
+    - id: value
+      type: System.String
+      description: Valor a ser tratado.
+    - id: maxCharacters
+      type: System.Int32
+      description: "Número máximo de caracteres a serem retornados."
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToToken(System.String)
+  id: ToToken(System.String)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToToken(String)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToToken(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToToken
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 136
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  summary: "\r\nFormata um Token\r\n"
+  example: []
+  syntax:
+    content: public static string ToToken(string value)
+    content.vb: Public Shared Function ToToken(value As String) As String
+    parameters:
+    - id: value
+      type: System.String
+      description: String Token
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToToken(System.Int32)
+  id: ToToken(System.Int32)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToToken(Int32)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToToken(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToToken
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 151
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  summary: "\r\nFormata um Token Int\r\n"
+  example: []
+  syntax:
+    content: public static string ToToken(int value)
+    content.vb: Public Shared Function ToToken(value As Integer) As String
+    parameters:
+    - id: value
+      type: System.Int32
+      description: String Token
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToToken(System.Int64)
+  id: ToToken(System.Int64)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToToken(Int64)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToToken(System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToToken
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 160
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  summary: "\r\nFormata um Token Long\r\n"
+  example: []
+  syntax:
+    content: public static string ToToken(long value)
+    content.vb: Public Shared Function ToToken(value As Long) As String
+    parameters:
+    - id: value
+      type: System.Int64
+      description: String Token
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_0803(System.Double)
+  id: ToTDec_0803(System.Double)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTDec_0803(Double)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_0803(System.Double)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToTDec_0803
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 165
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ToTDec_0803(double value)
+    content.vb: Public Shared Function ToTDec_0803(value As Double) As String
+    parameters:
+    - id: value
+      type: System.Double
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_0804(System.Double)
+  id: ToTDec_0804(System.Double)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTDec_0804(Double)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_0804(System.Double)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToTDec_0804
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 170
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ToTDec_0804(double value)
+    content.vb: Public Shared Function ToTDec_0804(value As Double) As String
+    parameters:
+    - id: value
+      type: System.Double
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1204(System.Decimal)
+  id: ToTDec_1204(System.Decimal)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTDec_1204(Decimal)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1204(System.Decimal)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToTDec_1204
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 175
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ToTDec_1204(decimal value)
+    content.vb: Public Shared Function ToTDec_1204(value As Decimal) As String
+    parameters:
+    - id: value
+      type: System.Decimal
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1110(System.Decimal)
+  id: ToTDec_1110(System.Decimal)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTDec_1110(Decimal)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1110(System.Decimal)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToTDec_1110
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 180
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ToTDec_1110(decimal value)
+    content.vb: Public Shared Function ToTDec_1110(value As Decimal) As String
+    parameters:
+    - id: value
+      type: System.Decimal
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1203(System.Double)
+  id: ToTDec_1203(System.Double)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTDec_1203(Double)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1203(System.Double)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToTDec_1203
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 187
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ToTDec_1203(double value)
+    content.vb: Public Shared Function ToTDec_1203(value As Double) As String
+    parameters:
+    - id: value
+      type: System.Double
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1104(System.Double)
+  id: ToTDec_1104(System.Double)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTDec_1104(Double)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1104(System.Double)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToTDec_1104
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 192
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ToTDec_1104(double value)
+    content.vb: Public Shared Function ToTDec_1104(value As Double) As String
+    parameters:
+    - id: value
+      type: System.Double
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1104(System.Decimal)
+  id: ToTDec_1104(System.Decimal)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTDec_1104(Decimal)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1104(System.Decimal)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToTDec_1104
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 197
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ToTDec_1104(decimal value)
+    content.vb: Public Shared Function ToTDec_1104(value As Decimal) As String
+    parameters:
+    - id: value
+      type: System.Decimal
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1104v(System.Decimal)
+  id: ToTDec_1104v(System.Decimal)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTDec_1104v(Decimal)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1104v(System.Decimal)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToTDec_1104v
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 202
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ToTDec_1104v(decimal value)
+    content.vb: Public Shared Function ToTDec_1104v(value As Decimal) As String
+    parameters:
+    - id: value
+      type: System.Decimal
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1302Opc(System.Nullable{System.Decimal})
+  id: ToTDec_1302Opc(System.Nullable{System.Decimal})
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTDec_1302Opc(Nullable<Decimal>)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1302Opc(System.Nullable<System.Decimal>)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToTDec_1302Opc
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 207
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ToTDec_1302Opc(decimal ? value)
+    content.vb: Public Shared Function ToTDec_1302Opc(value As Decimal?) As String
+    parameters:
+    - id: value
+      type: System.Nullable{System.Decimal}
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1302Opc(System.Nullable(Of System.Decimal))
+  name.vb: ToTDec_1302Opc(Nullable(Of Decimal))
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1302(System.Double)
+  id: ToTDec_1302(System.Double)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTDec_1302(Double)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1302(System.Double)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToTDec_1302
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 214
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ToTDec_1302(double value)
+    content.vb: Public Shared Function ToTDec_1302(value As Double) As String
+    parameters:
+    - id: value
+      type: System.Double
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1302(System.Decimal)
+  id: ToTDec_1302(System.Decimal)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTDec_1302(Decimal)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_1302(System.Decimal)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToTDec_1302
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 219
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ToTDec_1302(decimal value)
+    content.vb: Public Shared Function ToTDec_1302(value As Decimal) As String
+    parameters:
+    - id: value
+      type: System.Decimal
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_0302(System.Decimal)
+  id: ToTDec_0302(System.Decimal)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTDec_0302(Decimal)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_0302(System.Decimal)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToTDec_0302
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 224
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ToTDec_0302(decimal value)
+    content.vb: Public Shared Function ToTDec_0302(value As Decimal) As String
+    parameters:
+    - id: value
+      type: System.Decimal
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_0302Max100(System.Decimal)
+  id: ToTDec_0302Max100(System.Decimal)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTDec_0302Max100(Decimal)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_0302Max100(System.Decimal)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToTDec_0302Max100
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 229
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ToTDec_0302Max100(decimal value)
+    content.vb: Public Shared Function ToTDec_0302Max100(value As Decimal) As String
+    parameters:
+    - id: value
+      type: System.Decimal
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_0302a04(System.Decimal)
+  id: ToTDec_0302a04(System.Decimal)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTDec_0302a04(Decimal)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_0302a04(System.Decimal)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToTDec_0302a04
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 239
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  summary: "\r\nTipo Decimal com até 3 dígitos inteiros, podendo ter de 2 até 4 decimais\r\n"
+  example: []
+  syntax:
+    content: public static string ToTDec_0302a04(decimal value)
+    content.vb: Public Shared Function ToTDec_0302a04(value As Decimal) As String
+    parameters:
+    - id: value
+      type: System.Decimal
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_0302a04Opc(System.Nullable{System.Decimal})
+  id: ToTDec_0302a04Opc(System.Nullable{System.Decimal})
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTDec_0302a04Opc(Nullable<Decimal>)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_0302a04Opc(System.Nullable<System.Decimal>)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToTDec_0302a04Opc
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 257
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  summary: "\r\nTipo Decimal com até 3 dígitos inteiros, podendo ter de 2 até 4 decimais\r\n"
+  example: []
+  syntax:
+    content: public static string ToTDec_0302a04Opc(decimal ? value)
+    content.vb: Public Shared Function ToTDec_0302a04Opc(value As Decimal?) As String
+    parameters:
+    - id: value
+      type: System.Nullable{System.Decimal}
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_0302a04Opc(System.Nullable(Of System.Decimal))
+  name.vb: ToTDec_0302a04Opc(Nullable(Of Decimal))
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_0504(System.Double)
+  id: ToTDec_0504(System.Double)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTDec_0504(Double)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_0504(System.Double)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToTDec_0504
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 274
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ToTDec_0504(double value)
+    content.vb: Public Shared Function ToTDec_0504(value As Double) As String
+    parameters:
+    - id: value
+      type: System.Double
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_0302(System.Double)
+  id: ToTDec_0302(System.Double)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTDec_0302(Double)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDec_0302(System.Double)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToTDec_0302
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 279
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ToTDec_0302(double value)
+    content.vb: Public Shared Function ToTDec_0302(value As Double) As String
+    parameters:
+    - id: value
+      type: System.Double
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTData(System.DateTime)
+  id: ToTData(System.DateTime)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTData(DateTime)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTData(System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToTData
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 289
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  summary: "\r\nRetorna uma Data no formato AAAA-MM-DD.\r\n"
+  example: []
+  syntax:
+    content: public static string ToTData(DateTime value)
+    content.vb: Public Shared Function ToTData(value As Date) As String
+    parameters:
+    - id: value
+      type: System.DateTime
+      description: Objeto DateTime contendo a data.
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.GetEnumValue``1(``0)
+  id: GetEnumValue``1(``0)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetEnumValue<T>(T)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.GetEnumValue<T>(T)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: GetEnumValue
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 298
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  summary: "\r\n"
+  example: []
+  syntax:
+    content: public static string GetEnumValue<T>(T value)
+    content.vb: Public Shared Function GetEnumValue(Of T)(value As T) As String
+    parameters:
+    - id: value
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: NotaFiscalNet.Core.Utils.SerializationExtensions.GetEnumValue(Of T)(T)
+  name.vb: GetEnumValue(Of T)(T)
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.IsDefined(System.Enum)
+  id: IsDefined(System.Enum)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsDefined(Enum)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.IsDefined(System.Enum)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: IsDefined
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 306
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static bool IsDefined(Enum value)
+    content.vb: Public Shared Function IsDefined(value As  Enum) As Boolean
+    parameters:
+    - id: value
+      type: System.Enum
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.GetEnumValue(System.Enum)
+  id: GetEnumValue(System.Enum)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetEnumValue(Enum)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.GetEnumValue(System.Enum)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: GetEnumValue
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 311
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string GetEnumValue(Enum value)
+    content.vb: Public Shared Function GetEnumValue(value As  Enum) As String
+    parameters:
+    - id: value
+      type: System.Enum
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToString6(System.Int32)
+  id: ToString6(System.Int32)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToString6(Int32)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToString6(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToString6
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 316
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ToString6(int value)
+    content.vb: Public Shared Function ToString6(value As Integer) As String
+    parameters:
+    - id: value
+      type: System.Int32
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToString9(System.Int32)
+  id: ToString9(System.Int32)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToString9(Int32)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToString9(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToString9
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 321
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ToString9(int value)
+    content.vb: Public Shared Function ToString9(value As Integer) As String
+    parameters:
+    - id: value
+      type: System.Int32
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToString4(System.Int32)
+  id: ToString4(System.Int32)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToString4(Int32)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToString4(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToString4
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 326
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ToString4(int value)
+    content.vb: Public Shared Function ToString4(value As Integer) As String
+    parameters:
+    - id: value
+      type: System.Int32
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToString7(System.Int32)
+  id: ToString7(System.Int32)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToString7(Int32)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToString7(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToString7
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 331
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ToString7(int value)
+    content.vb: Public Shared Function ToString7(value As Integer) As String
+    parameters:
+    - id: value
+      type: System.Int32
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToString2(System.Int32)
+  id: ToString2(System.Int32)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToString2(Int32)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToString2(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToString2
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 336
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ToString2(int value)
+    content.vb: Public Shared Function ToString2(value As Integer) As String
+    parameters:
+    - id: value
+      type: System.Int32
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToString3(System.Int32)
+  id: ToString3(System.Int32)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToString3(Int32)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToString3(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToString3
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 341
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ToString3(int value)
+    content.vb: Public Shared Function ToString3(value As Integer) As String
+    parameters:
+    - id: value
+      type: System.Int32
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTCnpj(System.String)
+  id: ToTCnpj(System.String)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTCnpj(String)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTCnpj(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToTCnpj
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 346
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ToTCnpj(string value)
+    content.vb: Public Shared Function ToTCnpj(value As String) As String
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTCpf(System.String)
+  id: ToTCpf(System.String)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTCpf(String)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTCpf(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToTCpf
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 352
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ToTCpf(string value)
+    content.vb: Public Shared Function ToTCpf(value As String) As String
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTString(System.String,System.Int32)
+  id: ToTString(System.String,System.Int32)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTString(String, Int32)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTString(System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToTString
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 358
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string ToTString(string value, int maxCharacters)
+    content.vb: Public Shared Function ToTString(value As String, maxCharacters As Integer) As String
+    parameters:
+    - id: value
+      type: System.String
+    - id: maxCharacters
+      type: System.Int32
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTTime(System.DateTime)
+  id: ToTTime(System.DateTime)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTTime(DateTime)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTTime(System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToTTime
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 371
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  summary: "\r\nRetorna um horário no formato HH:MM:SS.\r\n"
+  example: []
+  syntax:
+    content: public static string ToTTime(DateTime value)
+    content.vb: Public Shared Function ToTTime(value As Date) As String
+    parameters:
+    - id: value
+      type: System.DateTime
+      description: Objeto DateTime contendo a hora.
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDataHora(System.DateTime)
+  id: ToTDataHora(System.DateTime)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTDataHora(DateTime)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDataHora(System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToTDataHora
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 381
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  summary: "\r\nRetorna uma data e hora no formato AAAA-MM-DDTHH:MM:SS.\r\n"
+  example: []
+  syntax:
+    content: public static string ToTDataHora(DateTime value)
+    content.vb: Public Shared Function ToTDataHora(value As Date) As String
+    parameters:
+    - id: value
+      type: System.DateTime
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDateTimeUtc(System.DateTime,NotaFiscalNet.Core.INFe)
+  id: ToTDateTimeUtc(System.DateTime,NotaFiscalNet.Core.INFe)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTDateTimeUtc(DateTime, INFe)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDateTimeUtc(System.DateTime, NotaFiscalNet.Core.INFe)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToTDateTimeUtc
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 392
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  summary: "\r\nConverte para o formato de data e hora com especificador de fuso-horário.\r\n"
+  example: []
+  syntax:
+    content: public static string ToTDateTimeUtc(DateTime value, INFe nfe)
+    content.vb: Public Shared Function ToTDateTimeUtc(value As Date, nfe As INFe) As String
+    parameters:
+    - id: value
+      type: System.DateTime
+    - id: nfe
+      type: NotaFiscalNet.Core.INFe
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDateTimeUtc(System.DateTime)
+  id: ToTDateTimeUtc(System.DateTime)
+  parent: NotaFiscalNet.Core.Utils.SerializationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTDateTimeUtc(DateTime)
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions.ToTDateTimeUtc(System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ToTDateTimeUtc
+    path: src/NotaFiscalNet.Core/Utils/SerializationExtensions.cs
+    startLine: 404
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  summary: "\r\nConverte para o formato de data e hora com especificador de fuso-horário.\r\n"
+  example: []
+  syntax:
+    content: public static string ToTDateTimeUtc(DateTime value)
+    content.vb: Public Shared Function ToTDateTimeUtc(value As Date) As String
+    parameters:
+    - id: value
+      type: System.DateTime
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: NotaFiscalNet.Core.Utils
+  isExternal: false
+  name: NotaFiscalNet.Core.Utils
+  fullName: NotaFiscalNet.Core.Utils
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: NotaFiscalNet.Core.Interfaces.ISerializavel
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: ISerializavel
+  fullName: NotaFiscalNet.Core.Interfaces.ISerializavel
+- uid: System.Xml.XmlWriter
+  parent: System.Xml
+  isExternal: true
+  name: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: NotaFiscalNet.Core.INFe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: INFe
+  fullName: NotaFiscalNet.Core.INFe
+- uid: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: NotaFiscalNet.Core.Interfaces
+  fullName: NotaFiscalNet.Core.Interfaces
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  fullName: System.Double
+- uid: System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  fullName: System.Decimal
+- uid: System.Nullable{System.Decimal}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Decimal>
+  fullName: System.Nullable<System.Decimal>
+  fullname.vb: System.Nullable(Of System.Decimal)
+  name.vb: Nullable(Of Decimal)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Decimal
+    name: Decimal
+    fullName: System.Decimal
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Decimal
+    name: Decimal
+    fullName: System.Decimal
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.Enum
+  parent: System
+  isExternal: true
+  name: Enum
+  fullName: System.Enum
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

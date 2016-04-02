@@ -1,0 +1,136 @@
+items:
+- uid: NotaFiscalNet.Core.Tests.Comum.Serializador
+  id: Serializador
+  parent: NotaFiscalNet.Core.Tests.Comum
+  children:
+  - NotaFiscalNet.Core.Tests.Comum.Serializador.#ctor(NotaFiscalNet.Core.Interfaces.ISerializavel,NotaFiscalNet.Core.INFe)
+  - NotaFiscalNet.Core.Tests.Comum.Serializador.Serializar
+  langs:
+  - csharp
+  - vb
+  name: Serializador
+  fullName: NotaFiscalNet.Core.Tests.Comum.Serializador
+  type: Class
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Comum/Serializador.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Serializador
+    path: tests/NotaFiscalNet.Core.Tests/Comum/Serializador.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Comum
+  syntax:
+    content: 'public class Serializador : object'
+    content.vb: >-
+      Public Class Serializador
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Tests.Comum.Serializador.#ctor(NotaFiscalNet.Core.Interfaces.ISerializavel,NotaFiscalNet.Core.INFe)
+  id: '#ctor(NotaFiscalNet.Core.Interfaces.ISerializavel,NotaFiscalNet.Core.INFe)'
+  parent: NotaFiscalNet.Core.Tests.Comum.Serializador
+  langs:
+  - csharp
+  - vb
+  name: Serializador(ISerializavel, INFe)
+  fullName: NotaFiscalNet.Core.Tests.Comum.Serializador.Serializador(NotaFiscalNet.Core.Interfaces.ISerializavel, NotaFiscalNet.Core.INFe)
+  type: Constructor
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Comum/Serializador.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: tests/NotaFiscalNet.Core.Tests/Comum/Serializador.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Comum
+  syntax:
+    content: public Serializador(ISerializavel serializavel, INFe nfe)
+    content.vb: Public Sub New(serializavel As ISerializavel, nfe As INFe)
+    parameters:
+    - id: serializavel
+      type: NotaFiscalNet.Core.Interfaces.ISerializavel
+    - id: nfe
+      type: NotaFiscalNet.Core.INFe
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.Comum.Serializador.Serializar
+  id: Serializar
+  parent: NotaFiscalNet.Core.Tests.Comum.Serializador
+  langs:
+  - csharp
+  - vb
+  name: Serializar()
+  fullName: NotaFiscalNet.Core.Tests.Comum.Serializador.Serializar()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Comum/Serializador.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Serializar
+    path: tests/NotaFiscalNet.Core.Tests/Comum/Serializador.cs
+    startLine: 17
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Comum
+  syntax:
+    content: public string Serializar()
+    content.vb: Public Function Serializar As String
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core.Tests.Comum
+  isExternal: false
+  name: NotaFiscalNet.Core.Tests.Comum
+  fullName: NotaFiscalNet.Core.Tests.Comum
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: NotaFiscalNet.Core.Interfaces.ISerializavel
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: ISerializavel
+  fullName: NotaFiscalNet.Core.Interfaces.ISerializavel
+- uid: NotaFiscalNet.Core.INFe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: INFe
+  fullName: NotaFiscalNet.Core.INFe
+- uid: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: NotaFiscalNet.Core.Interfaces
+  fullName: NotaFiscalNet.Core.Interfaces
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

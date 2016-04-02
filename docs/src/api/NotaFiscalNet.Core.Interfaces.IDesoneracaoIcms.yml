@@ -1,0 +1,211 @@
+items:
+- uid: NotaFiscalNet.Core.Interfaces.IDesoneracaoIcms
+  id: IDesoneracaoIcms
+  parent: NotaFiscalNet.Core.Interfaces
+  children:
+  - NotaFiscalNet.Core.Interfaces.IDesoneracaoIcms.MotivoDesoneracaoIcms
+  - NotaFiscalNet.Core.Interfaces.IDesoneracaoIcms.ValorIcmsDesoneracao
+  langs:
+  - csharp
+  - vb
+  name: IDesoneracaoIcms
+  fullName: NotaFiscalNet.Core.Interfaces.IDesoneracaoIcms
+  type: Interface
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Interfaces/IDesoneracaoIcms.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: IDesoneracaoIcms
+    path: src/NotaFiscalNet.Core/Interfaces/IDesoneracaoIcms.cs
+    startLine: 2
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Interfaces
+  syntax:
+    content: public interface IDesoneracaoIcms
+    content.vb: Public Interface IDesoneracaoIcms
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: NotaFiscalNet.Core.Interfaces.IDesoneracaoIcms.ValorIcmsDesoneracao
+  id: ValorIcmsDesoneracao
+  parent: NotaFiscalNet.Core.Interfaces.IDesoneracaoIcms
+  langs:
+  - csharp
+  - vb
+  name: ValorIcmsDesoneracao
+  fullName: NotaFiscalNet.Core.Interfaces.IDesoneracaoIcms.ValorIcmsDesoneracao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Interfaces/IDesoneracaoIcms.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorIcmsDesoneracao
+    path: src/NotaFiscalNet.Core/Interfaces/IDesoneracaoIcms.cs
+    startLine: 4
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Interfaces
+  syntax:
+    content: >-
+      decimal ? ValorIcmsDesoneracao
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Property ValorIcmsDesoneracao As Decimal?
+    parameters: []
+    return:
+      type: System.Nullable{System.Decimal}
+  modifiers.csharp:
+  - get
+  - set
+- uid: NotaFiscalNet.Core.Interfaces.IDesoneracaoIcms.MotivoDesoneracaoIcms
+  id: MotivoDesoneracaoIcms
+  parent: NotaFiscalNet.Core.Interfaces.IDesoneracaoIcms
+  langs:
+  - csharp
+  - vb
+  name: MotivoDesoneracaoIcms
+  fullName: NotaFiscalNet.Core.Interfaces.IDesoneracaoIcms.MotivoDesoneracaoIcms
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Interfaces/IDesoneracaoIcms.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: MotivoDesoneracaoIcms
+    path: src/NotaFiscalNet.Core/Interfaces/IDesoneracaoIcms.cs
+    startLine: 5
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Interfaces
+  syntax:
+    content: >-
+      MotivoDesoneracaoCondicionalICMS? MotivoDesoneracaoIcms
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Property MotivoDesoneracaoIcms As MotivoDesoneracaoCondicionalICMS?
+    parameters: []
+    return:
+      type: System.Nullable{NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS}
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: NotaFiscalNet.Core.Interfaces
+  fullName: NotaFiscalNet.Core.Interfaces
+- uid: System.Nullable{System.Decimal}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Decimal>
+  fullName: System.Nullable<System.Decimal>
+  fullname.vb: System.Nullable(Of System.Decimal)
+  name.vb: Nullable(Of Decimal)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Decimal
+    name: Decimal
+    fullName: System.Decimal
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Decimal
+    name: Decimal
+    fullName: System.Decimal
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Nullable{NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<MotivoDesoneracaoCondicionalICMS>
+  fullName: System.Nullable<NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS>
+  fullname.vb: System.Nullable(Of NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS)
+  name.vb: Nullable(Of MotivoDesoneracaoCondicionalICMS)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS
+    name: MotivoDesoneracaoCondicionalICMS
+    fullName: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS
+    name: MotivoDesoneracaoCondicionalICMS
+    fullName: NotaFiscalNet.Core.MotivoDesoneracaoCondicionalICMS
+  - name: )
+    fullName: )

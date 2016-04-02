@@ -1,0 +1,745 @@
+items:
+- uid: NotaFiscalNet.Core.Transmissao.ProtocoloNFe
+  id: ProtocoloNFe
+  parent: NotaFiscalNet.Core.Transmissao
+  children:
+  - NotaFiscalNet.Core.Transmissao.ProtocoloNFe.#ctor(System.Xml.Linq.XElement)
+  - NotaFiscalNet.Core.Transmissao.ProtocoloNFe.Ambiente
+  - NotaFiscalNet.Core.Transmissao.ProtocoloNFe.ChaveAcessoNFCe
+  - NotaFiscalNet.Core.Transmissao.ProtocoloNFe.CodigoStatus
+  - NotaFiscalNet.Core.Transmissao.ProtocoloNFe.DataRecebimento
+  - NotaFiscalNet.Core.Transmissao.ProtocoloNFe.DigitoValidador
+  - NotaFiscalNet.Core.Transmissao.ProtocoloNFe.Id
+  - NotaFiscalNet.Core.Transmissao.ProtocoloNFe.Motivo
+  - NotaFiscalNet.Core.Transmissao.ProtocoloNFe.Numero
+  - NotaFiscalNet.Core.Transmissao.ProtocoloNFe.Versao
+  - NotaFiscalNet.Core.Transmissao.ProtocoloNFe.VersaoAplicativo
+  langs:
+  - csharp
+  - vb
+  name: ProtocoloNFe
+  fullName: NotaFiscalNet.Core.Transmissao.ProtocoloNFe
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/ProtocoloNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ProtocoloNFe
+    path: src/NotaFiscalNet.Core/Transmissao/ProtocoloNFe.cs
+    startLine: 5
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: public class ProtocoloNFe
+    content.vb: Public Class ProtocoloNFe
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Transmissao.ProtocoloNFe.#ctor(System.Xml.Linq.XElement)
+  id: '#ctor(System.Xml.Linq.XElement)'
+  parent: NotaFiscalNet.Core.Transmissao.ProtocoloNFe
+  langs:
+  - csharp
+  - vb
+  name: ProtocoloNFe(XElement)
+  fullName: NotaFiscalNet.Core.Transmissao.ProtocoloNFe.ProtocoloNFe(System.Xml.Linq.XElement)
+  type: Constructor
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/ProtocoloNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: src/NotaFiscalNet.Core/Transmissao/ProtocoloNFe.cs
+    startLine: 7
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: public ProtocoloNFe(XElement protNFeEl)
+    content.vb: Public Sub New(protNFeEl As XElement)
+    parameters:
+    - id: protNFeEl
+      type: System.Xml.Linq.XElement
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Transmissao.ProtocoloNFe.Id
+  id: Id
+  parent: NotaFiscalNet.Core.Transmissao.ProtocoloNFe
+  langs:
+  - csharp
+  - vb
+  name: Id
+  fullName: NotaFiscalNet.Core.Transmissao.ProtocoloNFe.Id
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/ProtocoloNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Id
+    path: src/NotaFiscalNet.Core/Transmissao/ProtocoloNFe.cs
+    startLine: 34
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: >-
+      public string Id
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Id As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Transmissao.ProtocoloNFe.Versao
+  id: Versao
+  parent: NotaFiscalNet.Core.Transmissao.ProtocoloNFe
+  langs:
+  - csharp
+  - vb
+  name: Versao
+  fullName: NotaFiscalNet.Core.Transmissao.ProtocoloNFe.Versao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/ProtocoloNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Versao
+    path: src/NotaFiscalNet.Core/Transmissao/ProtocoloNFe.cs
+    startLine: 36
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: >-
+      public string Versao
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Versao As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Transmissao.ProtocoloNFe.Ambiente
+  id: Ambiente
+  parent: NotaFiscalNet.Core.Transmissao.ProtocoloNFe
+  langs:
+  - csharp
+  - vb
+  name: Ambiente
+  fullName: NotaFiscalNet.Core.Transmissao.ProtocoloNFe.Ambiente
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/ProtocoloNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Ambiente
+    path: src/NotaFiscalNet.Core/Transmissao/ProtocoloNFe.cs
+    startLine: 38
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: >-
+      public TipoAmbiente Ambiente
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Ambiente As TipoAmbiente
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoAmbiente
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Transmissao.ProtocoloNFe.VersaoAplicativo
+  id: VersaoAplicativo
+  parent: NotaFiscalNet.Core.Transmissao.ProtocoloNFe
+  langs:
+  - csharp
+  - vb
+  name: VersaoAplicativo
+  fullName: NotaFiscalNet.Core.Transmissao.ProtocoloNFe.VersaoAplicativo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/ProtocoloNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: VersaoAplicativo
+    path: src/NotaFiscalNet.Core/Transmissao/ProtocoloNFe.cs
+    startLine: 40
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: >-
+      public string VersaoAplicativo
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property VersaoAplicativo As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Transmissao.ProtocoloNFe.ChaveAcessoNFCe
+  id: ChaveAcessoNFCe
+  parent: NotaFiscalNet.Core.Transmissao.ProtocoloNFe
+  langs:
+  - csharp
+  - vb
+  name: ChaveAcessoNFCe
+  fullName: NotaFiscalNet.Core.Transmissao.ProtocoloNFe.ChaveAcessoNFCe
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/ProtocoloNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ChaveAcessoNFCe
+    path: src/NotaFiscalNet.Core/Transmissao/ProtocoloNFe.cs
+    startLine: 42
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: >-
+      public string ChaveAcessoNFCe
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ChaveAcessoNFCe As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Transmissao.ProtocoloNFe.DataRecebimento
+  id: DataRecebimento
+  parent: NotaFiscalNet.Core.Transmissao.ProtocoloNFe
+  langs:
+  - csharp
+  - vb
+  name: DataRecebimento
+  fullName: NotaFiscalNet.Core.Transmissao.ProtocoloNFe.DataRecebimento
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/ProtocoloNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DataRecebimento
+    path: src/NotaFiscalNet.Core/Transmissao/ProtocoloNFe.cs
+    startLine: 44
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: >-
+      public DateTime DataRecebimento
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property DataRecebimento As Date
+    parameters: []
+    return:
+      type: System.DateTime
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Transmissao.ProtocoloNFe.Numero
+  id: Numero
+  parent: NotaFiscalNet.Core.Transmissao.ProtocoloNFe
+  langs:
+  - csharp
+  - vb
+  name: Numero
+  fullName: NotaFiscalNet.Core.Transmissao.ProtocoloNFe.Numero
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/ProtocoloNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Numero
+    path: src/NotaFiscalNet.Core/Transmissao/ProtocoloNFe.cs
+    startLine: 49
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRetorna ou define o Número do Protocolo de Status.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string Numero
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Numero As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Transmissao.ProtocoloNFe.DigitoValidador
+  id: DigitoValidador
+  parent: NotaFiscalNet.Core.Transmissao.ProtocoloNFe
+  langs:
+  - csharp
+  - vb
+  name: DigitoValidador
+  fullName: NotaFiscalNet.Core.Transmissao.ProtocoloNFe.DigitoValidador
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/ProtocoloNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DigitoValidador
+    path: src/NotaFiscalNet.Core/Transmissao/ProtocoloNFe.cs
+    startLine: 51
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: >-
+      public string DigitoValidador
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property DigitoValidador As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Transmissao.ProtocoloNFe.CodigoStatus
+  id: CodigoStatus
+  parent: NotaFiscalNet.Core.Transmissao.ProtocoloNFe
+  langs:
+  - csharp
+  - vb
+  name: CodigoStatus
+  fullName: NotaFiscalNet.Core.Transmissao.ProtocoloNFe.CodigoStatus
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/ProtocoloNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CodigoStatus
+    path: src/NotaFiscalNet.Core/Transmissao/ProtocoloNFe.cs
+    startLine: 53
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: >-
+      public string CodigoStatus
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property CodigoStatus As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Transmissao.ProtocoloNFe.Motivo
+  id: Motivo
+  parent: NotaFiscalNet.Core.Transmissao.ProtocoloNFe
+  langs:
+  - csharp
+  - vb
+  name: Motivo
+  fullName: NotaFiscalNet.Core.Transmissao.ProtocoloNFe.Motivo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/ProtocoloNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Motivo
+    path: src/NotaFiscalNet.Core/Transmissao/ProtocoloNFe.cs
+    startLine: 55
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: >-
+      public string Motivo
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Motivo As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core.Transmissao
+  isExternal: false
+  name: NotaFiscalNet.Core.Transmissao
+  fullName: NotaFiscalNet.Core.Transmissao
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Xml.Linq.XElement
+  parent: System.Xml.Linq
+  isExternal: true
+  name: XElement
+  fullName: System.Xml.Linq.XElement
+- uid: System.Xml.Linq
+  isExternal: false
+  name: System.Xml.Linq
+  fullName: System.Xml.Linq
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: NotaFiscalNet.Core.TipoAmbiente
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoAmbiente
+  fullName: NotaFiscalNet.Core.TipoAmbiente
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime

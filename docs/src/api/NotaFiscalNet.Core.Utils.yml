@@ -1,0 +1,53 @@
+items:
+- uid: NotaFiscalNet.Core.Utils
+  id: NotaFiscalNet.Core.Utils
+  children:
+  - NotaFiscalNet.Core.Utils.CalculadorFusoHorario
+  - NotaFiscalNet.Core.Utils.DecimalExtensions
+  - NotaFiscalNet.Core.Utils.EnumEx
+  - NotaFiscalNet.Core.Utils.SerializationExtensions
+  - NotaFiscalNet.Core.Utils.SerializationUtil
+  - NotaFiscalNet.Core.Utils.StringEx
+  - NotaFiscalNet.Core.Utils.ValidationExtensions
+  - NotaFiscalNet.Core.Utils.ValidationUtil
+  langs:
+  - csharp
+  - vb
+  name: NotaFiscalNet.Core.Utils
+  fullName: NotaFiscalNet.Core.Utils
+  type: Namespace
+  assemblies:
+  - NotaFiscalNet.Core
+references:
+- uid: NotaFiscalNet.Core.Utils.DecimalExtensions
+  isExternal: false
+  name: DecimalExtensions
+  fullName: NotaFiscalNet.Core.Utils.DecimalExtensions
+- uid: NotaFiscalNet.Core.Utils.EnumEx
+  isExternal: false
+  name: EnumEx
+  fullName: NotaFiscalNet.Core.Utils.EnumEx
+- uid: NotaFiscalNet.Core.Utils.CalculadorFusoHorario
+  isExternal: false
+  name: CalculadorFusoHorario
+  fullName: NotaFiscalNet.Core.Utils.CalculadorFusoHorario
+- uid: NotaFiscalNet.Core.Utils.SerializationExtensions
+  isExternal: false
+  name: SerializationExtensions
+  fullName: NotaFiscalNet.Core.Utils.SerializationExtensions
+- uid: NotaFiscalNet.Core.Utils.SerializationUtil
+  isExternal: false
+  name: SerializationUtil
+  fullName: NotaFiscalNet.Core.Utils.SerializationUtil
+- uid: NotaFiscalNet.Core.Utils.StringEx
+  isExternal: false
+  name: StringEx
+  fullName: NotaFiscalNet.Core.Utils.StringEx
+- uid: NotaFiscalNet.Core.Utils.ValidationExtensions
+  isExternal: false
+  name: ValidationExtensions
+  fullName: NotaFiscalNet.Core.Utils.ValidationExtensions
+- uid: NotaFiscalNet.Core.Utils.ValidationUtil
+  isExternal: false
+  name: ValidationUtil
+  fullName: NotaFiscalNet.Core.Utils.ValidationUtil

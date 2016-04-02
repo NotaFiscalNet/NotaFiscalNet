@@ -1,0 +1,466 @@
+items:
+- uid: NotaFiscalNet.Core.Utils.EnumEx
+  id: EnumEx
+  parent: NotaFiscalNet.Core.Utils
+  children:
+  - NotaFiscalNet.Core.Utils.EnumEx.GetEnumDescription(System.Enum)
+  - NotaFiscalNet.Core.Utils.EnumEx.GetEnumDescription(System.Enum,System.Object[])
+  - NotaFiscalNet.Core.Utils.EnumEx.GetEnumDescriptionArray(System.Enum)
+  - NotaFiscalNet.Core.Utils.EnumEx.GetValueFromDescription``1(System.String)
+  langs:
+  - csharp
+  - vb
+  name: EnumEx
+  fullName: NotaFiscalNet.Core.Utils.EnumEx
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/EnumEx.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: EnumEx
+    path: src/NotaFiscalNet.Core/Utils/EnumEx.cs
+    startLine: 7
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public class EnumEx
+    content.vb: Public Class EnumEx
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Utils.EnumEx.GetEnumDescriptionArray(System.Enum)
+  id: GetEnumDescriptionArray(System.Enum)
+  parent: NotaFiscalNet.Core.Utils.EnumEx
+  langs:
+  - csharp
+  - vb
+  name: GetEnumDescriptionArray(Enum)
+  fullName: NotaFiscalNet.Core.Utils.EnumEx.GetEnumDescriptionArray(System.Enum)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/EnumEx.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: GetEnumDescriptionArray
+    path: src/NotaFiscalNet.Core/Utils/EnumEx.cs
+    startLine: 12
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string[] GetEnumDescriptionArray(Enum value)
+    content.vb: Public Shared Function GetEnumDescriptionArray(value As  Enum) As String()
+    parameters:
+    - id: value
+      type: System.Enum
+    return:
+      type: System.String[]
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.EnumEx.GetEnumDescription(System.Enum)
+  id: GetEnumDescription(System.Enum)
+  parent: NotaFiscalNet.Core.Utils.EnumEx
+  langs:
+  - csharp
+  - vb
+  name: GetEnumDescription(Enum)
+  fullName: NotaFiscalNet.Core.Utils.EnumEx.GetEnumDescription(System.Enum)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/EnumEx.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: GetEnumDescription
+    path: src/NotaFiscalNet.Core/Utils/EnumEx.cs
+    startLine: 45
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string GetEnumDescription(Enum value)
+    content.vb: Public Shared Function GetEnumDescription(value As  Enum) As String
+    parameters:
+    - id: value
+      type: System.Enum
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.Utils.EnumEx.GetEnumDescription(System.Enum,System.Object[])
+  id: GetEnumDescription(System.Enum,System.Object[])
+  parent: NotaFiscalNet.Core.Utils.EnumEx
+  langs:
+  - csharp
+  - vb
+  name: GetEnumDescription(Enum, Object[])
+  fullName: NotaFiscalNet.Core.Utils.EnumEx.GetEnumDescription(System.Enum, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/EnumEx.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: GetEnumDescription
+    path: src/NotaFiscalNet.Core/Utils/EnumEx.cs
+    startLine: 58
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static string GetEnumDescription(Enum value, params object[] args)
+    content.vb: Public Shared Function GetEnumDescription(value As  Enum, ParamArray args As Object()) As String
+    parameters:
+    - id: value
+      type: System.Enum
+    - id: args
+      type: System.Object[]
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: NotaFiscalNet.Core.Utils.EnumEx.GetEnumDescription(System.Enum, System.Object())
+  name.vb: GetEnumDescription(Enum, Object())
+- uid: NotaFiscalNet.Core.Utils.EnumEx.GetValueFromDescription``1(System.String)
+  id: GetValueFromDescription``1(System.String)
+  parent: NotaFiscalNet.Core.Utils.EnumEx
+  langs:
+  - csharp
+  - vb
+  name: GetValueFromDescription<T>(String)
+  fullName: NotaFiscalNet.Core.Utils.EnumEx.GetValueFromDescription<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Utils/EnumEx.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: GetValueFromDescription
+    path: src/NotaFiscalNet.Core/Utils/EnumEx.cs
+    startLine: 64
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Utils
+  syntax:
+    content: public static T GetValueFromDescription<T>(string description)
+    content.vb: Public Shared Function GetValueFromDescription(Of T)(description As String) As T
+    parameters:
+    - id: description
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: NotaFiscalNet.Core.Utils.EnumEx.GetValueFromDescription(Of T)(System.String)
+  name.vb: GetValueFromDescription(Of T)(String)
+references:
+- uid: NotaFiscalNet.Core.Utils
+  isExternal: false
+  name: NotaFiscalNet.Core.Utils
+  fullName: NotaFiscalNet.Core.Utils
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Enum
+  parent: System
+  isExternal: true
+  name: Enum
+  fullName: System.Enum
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  fullName: System.String[]
+  fullname.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  fullName: System.Object[]
+  fullname.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T

@@ -1,0 +1,475 @@
+items:
+- uid: NotaFiscalNet.Core.ReferenciaDocumentoFiscalEcf
+  id: ReferenciaDocumentoFiscalEcf
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.ReferenciaDocumentoFiscalEcf.CodigoModelo
+  - NotaFiscalNet.Core.ReferenciaDocumentoFiscalEcf.NumeroContadorOrdemOperacao
+  - NotaFiscalNet.Core.ReferenciaDocumentoFiscalEcf.NumeroEcf
+  - NotaFiscalNet.Core.ReferenciaDocumentoFiscalEcf.Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  langs:
+  - csharp
+  - vb
+  name: ReferenciaDocumentoFiscalEcf
+  fullName: NotaFiscalNet.Core.ReferenciaDocumentoFiscalEcf
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ReferenciaDocumentoFiscalEcf.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ReferenciaDocumentoFiscalEcf
+    path: src/NotaFiscalNet.Core/ReferenciaDocumentoFiscalEcf.cs
+    startLine: 7
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: 'public sealed class ReferenciaDocumentoFiscalEcf : ISerializavel, IReferenciaDocumentoFiscal'
+    content.vb: >-
+      Public NotInheritable Class ReferenciaDocumentoFiscalEcf
+
+          Implements ISerializavel, IReferenciaDocumentoFiscal
+  inheritance:
+  - System.Object
+  implements:
+  - NotaFiscalNet.Core.Interfaces.ISerializavel
+  - NotaFiscalNet.Core.Interfaces.IReferenciaDocumentoFiscal
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: NotaFiscalNet.Core.ReferenciaDocumentoFiscalEcf.CodigoModelo
+  id: CodigoModelo
+  parent: NotaFiscalNet.Core.ReferenciaDocumentoFiscalEcf
+  langs:
+  - csharp
+  - vb
+  name: CodigoModelo
+  fullName: NotaFiscalNet.Core.ReferenciaDocumentoFiscalEcf.CodigoModelo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ReferenciaDocumentoFiscalEcf.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CodigoModelo
+    path: src/NotaFiscalNet.Core/ReferenciaDocumentoFiscalEcf.cs
+    startLine: 15
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[mod] Retorna o Código do Modelo do Documento Fiscal Referênciado. Preencher com \"2B\",\r\nquando se tratar de Cupom Fiscal emitido por máquina registradora (não ECF), com \"2C\",\r\nquando se tratar de Cupom Fiscal PDV, ou \"2D\", quando se tratar de Cupom Fiscal (emitido\r\npor ECF)\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string CodigoModelo
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property CodigoModelo As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.ReferenciaDocumentoFiscalEcf.NumeroEcf
+  id: NumeroEcf
+  parent: NotaFiscalNet.Core.ReferenciaDocumentoFiscalEcf
+  langs:
+  - csharp
+  - vb
+  name: NumeroEcf
+  fullName: NotaFiscalNet.Core.ReferenciaDocumentoFiscalEcf.NumeroEcf
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ReferenciaDocumentoFiscalEcf.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NumeroEcf
+    path: src/NotaFiscalNet.Core/ReferenciaDocumentoFiscalEcf.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[nECF] Retorna ou define o número de ordem seqüencial do ECF que emitiu o Cupom Fiscal\r\nvinculado à NF-e.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int NumeroEcf
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property NumeroEcf As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.ReferenciaDocumentoFiscalEcf.NumeroContadorOrdemOperacao
+  id: NumeroContadorOrdemOperacao
+  parent: NotaFiscalNet.Core.ReferenciaDocumentoFiscalEcf
+  langs:
+  - csharp
+  - vb
+  name: NumeroContadorOrdemOperacao
+  fullName: NotaFiscalNet.Core.ReferenciaDocumentoFiscalEcf.NumeroContadorOrdemOperacao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ReferenciaDocumentoFiscalEcf.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NumeroContadorOrdemOperacao
+    path: src/NotaFiscalNet.Core/ReferenciaDocumentoFiscalEcf.cs
+    startLine: 26
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[nCOO] Retorna ou define o Número do Contador de Ordem de Operação - COO vinculado à NF-e.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int NumeroContadorOrdemOperacao
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property NumeroContadorOrdemOperacao As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.ReferenciaDocumentoFiscalEcf.Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  id: Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  parent: NotaFiscalNet.Core.ReferenciaDocumentoFiscalEcf
+  langs:
+  - csharp
+  - vb
+  name: Serializar(XmlWriter, INFe)
+  fullName: NotaFiscalNet.Core.ReferenciaDocumentoFiscalEcf.Serializar(System.Xml.XmlWriter, NotaFiscalNet.Core.INFe)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ReferenciaDocumentoFiscalEcf.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Serializar
+    path: src/NotaFiscalNet.Core/ReferenciaDocumentoFiscalEcf.cs
+    startLine: 28
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public void Serializar(XmlWriter writer, INFe nfe)
+    content.vb: Public Sub Serializar(writer As XmlWriter, nfe As INFe)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+    - id: nfe
+      type: NotaFiscalNet.Core.INFe
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: NotaFiscalNet.Core.Interfaces.ISerializavel
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: ISerializavel
+  fullName: NotaFiscalNet.Core.Interfaces.ISerializavel
+- uid: NotaFiscalNet.Core.Interfaces.IReferenciaDocumentoFiscal
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: IReferenciaDocumentoFiscal
+  fullName: NotaFiscalNet.Core.Interfaces.IReferenciaDocumentoFiscal
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: NotaFiscalNet.Core.Interfaces
+  fullName: NotaFiscalNet.Core.Interfaces
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Xml.XmlWriter
+  parent: System.Xml
+  isExternal: true
+  name: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: NotaFiscalNet.Core.INFe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: INFe
+  fullName: NotaFiscalNet.Core.INFe
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml

@@ -1,0 +1,254 @@
+items:
+- uid: NotaFiscalNet.Core.Tests.Dados.RepositorioInformacoesExportacao
+  id: RepositorioInformacoesExportacao
+  parent: NotaFiscalNet.Core.Tests.Dados
+  children:
+  - NotaFiscalNet.Core.Tests.Dados.RepositorioInformacoesExportacao.CriarElementos
+  langs:
+  - csharp
+  - vb
+  name: RepositorioInformacoesExportacao
+  fullName: NotaFiscalNet.Core.Tests.Dados.RepositorioInformacoesExportacao
+  type: Class
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Dados/RepositorioInformacoesExportacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: RepositorioInformacoesExportacao
+    path: tests/NotaFiscalNet.Core.Tests/Dados/RepositorioInformacoesExportacao.cs
+    startLine: 5
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Dados
+  syntax:
+    content: 'public class RepositorioInformacoesExportacao : Repositorio<InformacoesExportacao>'
+    content.vb: >-
+      Public Class RepositorioInformacoesExportacao
+
+          Inherits Repositorio(Of InformacoesExportacao)
+  inheritance:
+  - System.Object
+  - NotaFiscalNet.Core.Tests.Dados.Repositorio{NotaFiscalNet.Core.InformacoesExportacao}
+  inheritedMembers:
+  - NotaFiscalNet.Core.Tests.Dados.Repositorio{NotaFiscalNet.Core.InformacoesExportacao}.Referencias
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Tests.Dados.RepositorioInformacoesExportacao.CriarElementos
+  id: CriarElementos
+  parent: NotaFiscalNet.Core.Tests.Dados.RepositorioInformacoesExportacao
+  langs:
+  - csharp
+  - vb
+  name: CriarElementos()
+  fullName: NotaFiscalNet.Core.Tests.Dados.RepositorioInformacoesExportacao.CriarElementos()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Dados/RepositorioInformacoesExportacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CriarElementos
+    path: tests/NotaFiscalNet.Core.Tests/Dados/RepositorioInformacoesExportacao.cs
+    startLine: 8
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Dados
+  syntax:
+    content: public override List<InformacoesExportacao> CriarElementos()
+    content.vb: Public Overrides Function CriarElementos As List(Of InformacoesExportacao)
+    return:
+      type: List{NotaFiscalNet.Core.InformacoesExportacao}
+  overridden: NotaFiscalNet.Core.Tests.Dados.Repositorio{NotaFiscalNet.Core.InformacoesExportacao}.CriarElementos
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: NotaFiscalNet.Core.Tests.Dados
+  isExternal: false
+  name: NotaFiscalNet.Core.Tests.Dados
+  fullName: NotaFiscalNet.Core.Tests.Dados
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: NotaFiscalNet.Core.Tests.Dados.Repositorio{NotaFiscalNet.Core.InformacoesExportacao}
+  parent: NotaFiscalNet.Core.Tests.Dados
+  definition: NotaFiscalNet.Core.Tests.Dados.Repositorio`1
+  name: Repositorio<InformacoesExportacao>
+  fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio<NotaFiscalNet.Core.InformacoesExportacao>
+  fullname.vb: NotaFiscalNet.Core.Tests.Dados.Repositorio(Of NotaFiscalNet.Core.InformacoesExportacao)
+  name.vb: Repositorio(Of InformacoesExportacao)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1
+    name: Repositorio
+    fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio
+  - name: <
+    fullName: <
+  - uid: NotaFiscalNet.Core.InformacoesExportacao
+    name: InformacoesExportacao
+    fullName: NotaFiscalNet.Core.InformacoesExportacao
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1
+    name: Repositorio
+    fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: NotaFiscalNet.Core.InformacoesExportacao
+    name: InformacoesExportacao
+    fullName: NotaFiscalNet.Core.InformacoesExportacao
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.Tests.Dados.Repositorio{NotaFiscalNet.Core.InformacoesExportacao}.Referencias
+  parent: NotaFiscalNet.Core.Tests.Dados.Repositorio{NotaFiscalNet.Core.InformacoesExportacao}
+  definition: NotaFiscalNet.Core.Tests.Dados.Repositorio`1.Referencias
+  name: Referencias
+  fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio<NotaFiscalNet.Core.InformacoesExportacao>.Referencias
+  fullname.vb: NotaFiscalNet.Core.Tests.Dados.Repositorio(Of NotaFiscalNet.Core.InformacoesExportacao).Referencias
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1
+  parent: NotaFiscalNet.Core.Tests.Dados
+  isExternal: false
+  name: Repositorio<T>
+  fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio<T>
+  fullname.vb: NotaFiscalNet.Core.Tests.Dados.Repositorio(Of T)
+  name.vb: Repositorio(Of T)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1
+    name: Repositorio
+    fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1
+    name: Repositorio
+    fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1.Referencias
+  parent: NotaFiscalNet.Core.Tests.Dados.Repositorio`1
+  isExternal: false
+  name: Referencias
+  fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio<T>.Referencias
+  fullname.vb: NotaFiscalNet.Core.Tests.Dados.Repositorio(Of T).Referencias
+- uid: NotaFiscalNet.Core.Tests.Dados.Repositorio{NotaFiscalNet.Core.InformacoesExportacao}.CriarElementos
+  parent: NotaFiscalNet.Core.Tests.Dados.Repositorio{NotaFiscalNet.Core.InformacoesExportacao}
+  definition: NotaFiscalNet.Core.Tests.Dados.Repositorio`1.CriarElementos
+  name: CriarElementos()
+  fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio<NotaFiscalNet.Core.InformacoesExportacao>.CriarElementos()
+  fullname.vb: NotaFiscalNet.Core.Tests.Dados.Repositorio(Of NotaFiscalNet.Core.InformacoesExportacao).CriarElementos()
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1.CriarElementos
+    name: CriarElementos
+    fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio<NotaFiscalNet.Core.InformacoesExportacao>.CriarElementos
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1.CriarElementos
+    name: CriarElementos
+    fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio(Of NotaFiscalNet.Core.InformacoesExportacao).CriarElementos
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: List{NotaFiscalNet.Core.InformacoesExportacao}
+  definition: List`1
+  name: List<InformacoesExportacao>
+  fullName: List<NotaFiscalNet.Core.InformacoesExportacao>
+  fullname.vb: List(Of NotaFiscalNet.Core.InformacoesExportacao)
+  name.vb: List(Of InformacoesExportacao)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    fullName: List
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: NotaFiscalNet.Core.InformacoesExportacao
+    name: InformacoesExportacao
+    fullName: NotaFiscalNet.Core.InformacoesExportacao
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: NotaFiscalNet.Core.InformacoesExportacao
+    name: InformacoesExportacao
+    fullName: NotaFiscalNet.Core.InformacoesExportacao
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1.CriarElementos
+  parent: NotaFiscalNet.Core.Tests.Dados.Repositorio`1
+  isExternal: false
+  name: CriarElementos()
+  fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio<T>.CriarElementos()
+  fullname.vb: NotaFiscalNet.Core.Tests.Dados.Repositorio(Of T).CriarElementos()
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1.CriarElementos
+    name: CriarElementos
+    fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio<T>.CriarElementos
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1.CriarElementos
+    name: CriarElementos
+    fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio(Of T).CriarElementos
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  fullName: List<>
+  fullname.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    fullName: List
+    isExternal: true
+  - name: <
+    fullName: <
+  - {}
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - {}
+  - name: )
+    fullName: )

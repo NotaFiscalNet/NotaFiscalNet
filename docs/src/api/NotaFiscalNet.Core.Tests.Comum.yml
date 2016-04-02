@@ -1,0 +1,23 @@
+items:
+- uid: NotaFiscalNet.Core.Tests.Comum
+  id: NotaFiscalNet.Core.Tests.Comum
+  children:
+  - NotaFiscalNet.Core.Tests.Comum.CarregadorXml
+  - NotaFiscalNet.Core.Tests.Comum.Serializador
+  langs:
+  - csharp
+  - vb
+  name: NotaFiscalNet.Core.Tests.Comum
+  fullName: NotaFiscalNet.Core.Tests.Comum
+  type: Namespace
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+references:
+- uid: NotaFiscalNet.Core.Tests.Comum.CarregadorXml
+  isExternal: false
+  name: CarregadorXml
+  fullName: NotaFiscalNet.Core.Tests.Comum.CarregadorXml
+- uid: NotaFiscalNet.Core.Tests.Comum.Serializador
+  isExternal: false
+  name: Serializador
+  fullName: NotaFiscalNet.Core.Tests.Comum.Serializador

@@ -1,0 +1,162 @@
+items:
+- uid: NotaFiscalNet.Core.TipoModalidadeFrete
+  id: TipoModalidadeFrete
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.TipoModalidadeFrete.Destinatario
+  - NotaFiscalNet.Core.TipoModalidadeFrete.Emitente
+  - NotaFiscalNet.Core.TipoModalidadeFrete.SemFrete
+  - NotaFiscalNet.Core.TipoModalidadeFrete.Terceiros
+  langs:
+  - csharp
+  - vb
+  name: TipoModalidadeFrete
+  fullName: NotaFiscalNet.Core.TipoModalidadeFrete
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoModalidadeFrete.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoModalidadeFrete
+    path: src/NotaFiscalNet.Core/TipoModalidadeFrete.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nIndica a modalidade de frete do Nota Fiscal Eletrônica.\r\n"
+  example: []
+  syntax:
+    content: public enum TipoModalidadeFrete
+    content.vb: Public Enum TipoModalidadeFrete
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.TipoModalidadeFrete.Emitente
+  id: Emitente
+  parent: NotaFiscalNet.Core.TipoModalidadeFrete
+  langs:
+  - csharp
+  - vb
+  name: Emitente
+  fullName: NotaFiscalNet.Core.TipoModalidadeFrete.Emitente
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoModalidadeFrete.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Emitente
+    path: src/NotaFiscalNet.Core/TipoModalidadeFrete.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n0 - Por conta do Emitente.\r\n"
+  example: []
+  syntax:
+    content: Emitente = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoModalidadeFrete.Destinatario
+  id: Destinatario
+  parent: NotaFiscalNet.Core.TipoModalidadeFrete
+  langs:
+  - csharp
+  - vb
+  name: Destinatario
+  fullName: NotaFiscalNet.Core.TipoModalidadeFrete.Destinatario
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoModalidadeFrete.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Destinatario
+    path: src/NotaFiscalNet.Core/TipoModalidadeFrete.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n1 - Por conta do Destinatário.\r\n"
+  example: []
+  syntax:
+    content: Destinatario = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoModalidadeFrete.Terceiros
+  id: Terceiros
+  parent: NotaFiscalNet.Core.TipoModalidadeFrete
+  langs:
+  - csharp
+  - vb
+  name: Terceiros
+  fullName: NotaFiscalNet.Core.TipoModalidadeFrete.Terceiros
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoModalidadeFrete.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Terceiros
+    path: src/NotaFiscalNet.Core/TipoModalidadeFrete.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n2 - Por conta do Terceiros.\r\n"
+  example: []
+  syntax:
+    content: Terceiros = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoModalidadeFrete.SemFrete
+  id: SemFrete
+  parent: NotaFiscalNet.Core.TipoModalidadeFrete
+  langs:
+  - csharp
+  - vb
+  name: SemFrete
+  fullName: NotaFiscalNet.Core.TipoModalidadeFrete.SemFrete
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoModalidadeFrete.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SemFrete
+    path: src/NotaFiscalNet.Core/TipoModalidadeFrete.cs
+    startLine: 26
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n9 - Sem Frete.\r\n"
+  example: []
+  syntax:
+    content: SemFrete = 9
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

@@ -1,0 +1,131 @@
+items:
+- uid: NotaFiscalNet.Core.TipoArmamento
+  id: TipoArmamento
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.TipoArmamento.NaoEspecificado
+  - NotaFiscalNet.Core.TipoArmamento.UsoPermitido
+  - NotaFiscalNet.Core.TipoArmamento.UsoRestrito
+  langs:
+  - csharp
+  - vb
+  name: TipoArmamento
+  fullName: NotaFiscalNet.Core.TipoArmamento
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoArmamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoArmamento
+    path: src/NotaFiscalNet.Core/TipoArmamento.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nEspecifica o Tipo de Armamento.\r\n"
+  example: []
+  syntax:
+    content: public enum TipoArmamento
+    content.vb: Public Enum TipoArmamento
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.TipoArmamento.NaoEspecificado
+  id: NaoEspecificado
+  parent: NotaFiscalNet.Core.TipoArmamento
+  langs:
+  - csharp
+  - vb
+  name: NaoEspecificado
+  fullName: NotaFiscalNet.Core.TipoArmamento.NaoEspecificado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoArmamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoEspecificado
+    path: src/NotaFiscalNet.Core/TipoArmamento.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nNão Especificado\r\n"
+  example: []
+  syntax:
+    content: NaoEspecificado = -1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoArmamento.UsoPermitido
+  id: UsoPermitido
+  parent: NotaFiscalNet.Core.TipoArmamento
+  langs:
+  - csharp
+  - vb
+  name: UsoPermitido
+  fullName: NotaFiscalNet.Core.TipoArmamento.UsoPermitido
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoArmamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: UsoPermitido
+    path: src/NotaFiscalNet.Core/TipoArmamento.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nArmamento de Uso Permitido\r\n"
+  example: []
+  syntax:
+    content: UsoPermitido = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoArmamento.UsoRestrito
+  id: UsoRestrito
+  parent: NotaFiscalNet.Core.TipoArmamento
+  langs:
+  - csharp
+  - vb
+  name: UsoRestrito
+  fullName: NotaFiscalNet.Core.TipoArmamento.UsoRestrito
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoArmamento.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: UsoRestrito
+    path: src/NotaFiscalNet.Core/TipoArmamento.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nArmamento de Uso Restrito\r\n"
+  example: []
+  syntax:
+    content: UsoRestrito = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

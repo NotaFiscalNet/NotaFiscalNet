@@ -1,0 +1,1184 @@
+items:
+- uid: NotaFiscalNet.Core.DeclaracaoImportacao
+  id: DeclaracaoImportacao
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.DeclaracaoImportacao.#ctor
+  - NotaFiscalNet.Core.DeclaracaoImportacao.Adicoes
+  - NotaFiscalNet.Core.DeclaracaoImportacao.CNPJ
+  - NotaFiscalNet.Core.DeclaracaoImportacao.CodigoExportador
+  - NotaFiscalNet.Core.DeclaracaoImportacao.DataDesembaracoAduaneiro
+  - NotaFiscalNet.Core.DeclaracaoImportacao.DataRegistro
+  - NotaFiscalNet.Core.DeclaracaoImportacao.IsReadOnly
+  - NotaFiscalNet.Core.DeclaracaoImportacao.LocalDesembaracoAduaneiro
+  - NotaFiscalNet.Core.DeclaracaoImportacao.Modificado
+  - NotaFiscalNet.Core.DeclaracaoImportacao.Numero
+  - NotaFiscalNet.Core.DeclaracaoImportacao.Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  - NotaFiscalNet.Core.DeclaracaoImportacao.TipoIntermedio
+  - NotaFiscalNet.Core.DeclaracaoImportacao.TipoViaTransporte
+  - NotaFiscalNet.Core.DeclaracaoImportacao.UFDesembaracoAduaneiro
+  - NotaFiscalNet.Core.DeclaracaoImportacao.UFTerceiro
+  - NotaFiscalNet.Core.DeclaracaoImportacao.ValorAFRMM
+  langs:
+  - csharp
+  - vb
+  name: DeclaracaoImportacao
+  fullName: NotaFiscalNet.Core.DeclaracaoImportacao
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeclaracaoImportacao
+    path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+    startLine: 12
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRepresenta uma Declaração de Importação do Produto\r\n"
+  example: []
+  syntax:
+    content: 'public sealed class DeclaracaoImportacao : ISerializavel, IModificavel'
+    content.vb: >-
+      Public NotInheritable Class DeclaracaoImportacao
+
+          Implements ISerializavel, IModificavel
+  inheritance:
+  - System.Object
+  implements:
+  - NotaFiscalNet.Core.Interfaces.ISerializavel
+  - NotaFiscalNet.Core.Interfaces.IModificavel
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: NotaFiscalNet.Core.DeclaracaoImportacao.#ctor
+  id: '#ctor'
+  parent: NotaFiscalNet.Core.DeclaracaoImportacao
+  langs:
+  - csharp
+  - vb
+  name: DeclaracaoImportacao()
+  fullName: NotaFiscalNet.Core.DeclaracaoImportacao.DeclaracaoImportacao()
+  type: Constructor
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+    startLine: 19
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nInicializa uma nova instância da classe DeclaracaoImportacao\r\n"
+  example: []
+  syntax:
+    content: public DeclaracaoImportacao()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.DeclaracaoImportacao.Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  id: Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  parent: NotaFiscalNet.Core.DeclaracaoImportacao
+  langs:
+  - csharp
+  - vb
+  name: Serializar(XmlWriter, INFe)
+  fullName: NotaFiscalNet.Core.DeclaracaoImportacao.Serializar(System.Xml.XmlWriter, NotaFiscalNet.Core.INFe)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Serializar
+    path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+    startLine: 30
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public void Serializar(XmlWriter writer, INFe nfe)
+    content.vb: Public Sub Serializar(writer As XmlWriter, nfe As INFe)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+    - id: nfe
+      type: NotaFiscalNet.Core.INFe
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.DeclaracaoImportacao.Numero
+  id: Numero
+  parent: NotaFiscalNet.Core.DeclaracaoImportacao
+  langs:
+  - csharp
+  - vb
+  name: Numero
+  fullName: NotaFiscalNet.Core.DeclaracaoImportacao.Numero
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Numero
+    path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+    startLine: 63
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[nDI] Retorna ou define o Número da Declaração de Importação DI/DSI/DA\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "I19", FieldName = "nDI", DataType = "token", MinLength = 1, MaxLength = 10)]
+
+      [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public string Numero
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="I19", FieldName:="nDI", DataType:="token", MinLength:=1, MaxLength:=10)>
+
+      <CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property Numero As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.DeclaracaoImportacao.DataRegistro
+  id: DataRegistro
+  parent: NotaFiscalNet.Core.DeclaracaoImportacao
+  langs:
+  - csharp
+  - vb
+  name: DataRegistro
+  fullName: NotaFiscalNet.Core.DeclaracaoImportacao.DataRegistro
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DataRegistro
+    path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+    startLine: 71
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[dDI] Retorna ou define a Data do Registro da DI/DSI/DA\r\n"
+  remarks: Formato AAAA-MM-DD
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "I20", FieldName = "dDI", DataType = "TData", Pattern = "\\d{4}-\\d{2}-\\d{2}")]
+
+      [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public DateTime DataRegistro
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="I20", FieldName:="dDI", DataType:="TData", Pattern:="\d{4}-\d{2}-\d{2}")>
+
+      <CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property DataRegistro As Date
+    parameters: []
+    return:
+      type: System.DateTime
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.DeclaracaoImportacao.LocalDesembaracoAduaneiro
+  id: LocalDesembaracoAduaneiro
+  parent: NotaFiscalNet.Core.DeclaracaoImportacao
+  langs:
+  - csharp
+  - vb
+  name: LocalDesembaracoAduaneiro
+  fullName: NotaFiscalNet.Core.DeclaracaoImportacao.LocalDesembaracoAduaneiro
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: LocalDesembaracoAduaneiro
+    path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+    startLine: 78
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[xLocDesemb] Retorna ou define o Local de Desembaraço Aduaneiro.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "I21", FieldName = "xLocDesemb", DataType = "token", MinLength = 1, MaxLength = 60)]
+
+      [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public string LocalDesembaracoAduaneiro
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="I21", FieldName:="xLocDesemb", DataType:="token", MinLength:=1, MaxLength:=60)>
+
+      <CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property LocalDesembaracoAduaneiro As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.DeclaracaoImportacao.UFDesembaracoAduaneiro
+  id: UFDesembaracoAduaneiro
+  parent: NotaFiscalNet.Core.DeclaracaoImportacao
+  langs:
+  - csharp
+  - vb
+  name: UFDesembaracoAduaneiro
+  fullName: NotaFiscalNet.Core.DeclaracaoImportacao.UFDesembaracoAduaneiro
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: UFDesembaracoAduaneiro
+    path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+    startLine: 85
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[UFDesemb] Retorna ou define a Sigla da UF do Local de Desembaraço Aduaneiro.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "I22", FieldName = "UFDesemb")]
+
+      [CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = SiglaUF.NaoEspecificado)]
+
+      public SiglaUF UFDesembaracoAduaneiro
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="I22", FieldName:="UFDesemb")>
+
+      <CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido:=SiglaUF.NaoEspecificado)>
+
+      Public Property UFDesembaracoAduaneiro As SiglaUF
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.SiglaUF
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.DeclaracaoImportacao.DataDesembaracoAduaneiro
+  id: DataDesembaracoAduaneiro
+  parent: NotaFiscalNet.Core.DeclaracaoImportacao
+  langs:
+  - csharp
+  - vb
+  name: DataDesembaracoAduaneiro
+  fullName: NotaFiscalNet.Core.DeclaracaoImportacao.DataDesembaracoAduaneiro
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DataDesembaracoAduaneiro
+    path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+    startLine: 93
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[dDesemb] Retorna ou define a Data do Desembaraço Aduaneiro.\r\n"
+  remarks: Formato AAAA-MM-DD
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "I23", FieldName = "dDesemb", DataType = "TData")]
+
+      [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public DateTime DataDesembaracoAduaneiro
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="I23", FieldName:="dDesemb", DataType:="TData")>
+
+      <CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property DataDesembaracoAduaneiro As Date
+    parameters: []
+    return:
+      type: System.DateTime
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.DeclaracaoImportacao.TipoViaTransporte
+  id: TipoViaTransporte
+  parent: NotaFiscalNet.Core.DeclaracaoImportacao
+  langs:
+  - csharp
+  - vb
+  name: TipoViaTransporte
+  fullName: NotaFiscalNet.Core.DeclaracaoImportacao.TipoViaTransporte
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoViaTransporte
+    path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+    startLine: 100
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[tpViaTransp] Retorna ou define o Tipo da Via Internacional declarada na Declaração de Importação.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "I23a", FieldName = "tpViaTransp")]
+
+      [CampoValidavel(6, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public TipoViaTransporteInternacional TipoViaTransporte
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="I23a", FieldName:="tpViaTransp")>
+
+      <CampoValidavel(6, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property TipoViaTransporte As TipoViaTransporteInternacional
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoViaTransporteInternacional
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.DeclaracaoImportacao.ValorAFRMM
+  id: ValorAFRMM
+  parent: NotaFiscalNet.Core.DeclaracaoImportacao
+  langs:
+  - csharp
+  - vb
+  name: ValorAFRMM
+  fullName: NotaFiscalNet.Core.DeclaracaoImportacao.ValorAFRMM
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorAFRMM
+    path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+    startLine: 106
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vAFRMM] Retorna ou define o Valor Adicional ao Frete para Renovação da Marinha Mercante.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "I23b", FieldName = "vAFRMM")]
+
+      [CampoValidavel(7, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public decimal ? ValorAFRMM
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="I23b", FieldName:="vAFRMM")>
+
+      <CampoValidavel(7, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property ValorAFRMM As Decimal?
+    parameters: []
+    return:
+      type: System.Nullable{System.Decimal}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.DeclaracaoImportacao.TipoIntermedio
+  id: TipoIntermedio
+  parent: NotaFiscalNet.Core.DeclaracaoImportacao
+  langs:
+  - csharp
+  - vb
+  name: TipoIntermedio
+  fullName: NotaFiscalNet.Core.DeclaracaoImportacao.TipoIntermedio
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoIntermedio
+    path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+    startLine: 112
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[tpIntermedio] Retorna ou define a Forma de importação quanto a intermediação.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "I23c", FieldName = "tpIntermedio")]
+
+      [CampoValidavel(8, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public TipoIntermedioImportacao TipoIntermedio
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="I23c", FieldName:="tpIntermedio")>
+
+      <CampoValidavel(8, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property TipoIntermedio As TipoIntermedioImportacao
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoIntermedioImportacao
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.DeclaracaoImportacao.CNPJ
+  id: CNPJ
+  parent: NotaFiscalNet.Core.DeclaracaoImportacao
+  langs:
+  - csharp
+  - vb
+  name: CNPJ
+  fullName: NotaFiscalNet.Core.DeclaracaoImportacao.CNPJ
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CNPJ
+    path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+    startLine: 122
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[Cnpj] Retorna ou define o Cnpj do adquirinte ou do encomendante.\r\n"
+  remarks: "\r\nInformação obrigatória no caso de importação por conta e ordem ou por encomenda. Informar\r\nos zeros não significativos.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "I23d", FieldName = "Cnpj", DataType = "TCnpj")]
+
+      [CampoValidavel(9, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public string CNPJ
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="I23d", FieldName:="Cnpj", DataType:="TCnpj")>
+
+      <CampoValidavel(9, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property CNPJ As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.DeclaracaoImportacao.UFTerceiro
+  id: UFTerceiro
+  parent: NotaFiscalNet.Core.DeclaracaoImportacao
+  langs:
+  - csharp
+  - vb
+  name: UFTerceiro
+  fullName: NotaFiscalNet.Core.DeclaracaoImportacao.UFTerceiro
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: UFTerceiro
+    path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+    startLine: 129
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[UFTerceiro] Retorna ou define a sigla UF do adquirinte ou do encomendante.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "I23e", FieldName = "UFTerceiro", DataType = "TUfEmi")]
+
+      [CampoValidavel(10, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public SiglaUF UFTerceiro
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="I23e", FieldName:="UFTerceiro", DataType:="TUfEmi")>
+
+      <CampoValidavel(10, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property UFTerceiro As SiglaUF
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.SiglaUF
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.DeclaracaoImportacao.CodigoExportador
+  id: CodigoExportador
+  parent: NotaFiscalNet.Core.DeclaracaoImportacao
+  langs:
+  - csharp
+  - vb
+  name: CodigoExportador
+  fullName: NotaFiscalNet.Core.DeclaracaoImportacao.CodigoExportador
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CodigoExportador
+    path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+    startLine: 146
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[cExportador] Retorna ou define o Código do Exportador, usado nos sistemas internos de\r\ninformação do emitente da NFe\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "I24", FieldName = "cExportador", DataType = "token")]
+
+      [CampoValidavel(11, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public string CodigoExportador
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="I24", FieldName:="cExportador", DataType:="token")>
+
+      <CampoValidavel(11, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property CodigoExportador As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.DeclaracaoImportacao.Adicoes
+  id: Adicoes
+  parent: NotaFiscalNet.Core.DeclaracaoImportacao
+  langs:
+  - csharp
+  - vb
+  name: Adicoes
+  fullName: NotaFiscalNet.Core.DeclaracaoImportacao.Adicoes
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Adicoes
+    path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+    startLine: 153
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[adi] Retorna as Adições na Declaração de Importação\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "I25", FieldName = "adi")]
+
+      [CampoValidavel(12, ChaveErroValidacao.CampoNaoPreenchido, TamanhoMinimo = 1)]
+
+      public DeclaracaoImportacaoAdicaoCollection Adicoes
+
+      {
+
+          get;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="I25", FieldName:="adi")>
+
+      <CampoValidavel(12, ChaveErroValidacao.CampoNaoPreenchido, TamanhoMinimo:=1)>
+
+      Public ReadOnly Property Adicoes As DeclaracaoImportacaoAdicaoCollection
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.DeclaracaoImportacaoAdicaoCollection
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.DeclaracaoImportacao.IsReadOnly
+  id: IsReadOnly
+  parent: NotaFiscalNet.Core.DeclaracaoImportacao
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  fullName: NotaFiscalNet.Core.DeclaracaoImportacao.IsReadOnly
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: IsReadOnly
+    path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+    startLine: 170
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna o valor indicando se a Nota Fiscal Eletrônica está em modo somente-leitura.\r\n"
+  remarks: "\r\nA Nota Fiscal Eletrônica estará em modo somente-leitura quando for instanciada a partir\r\nde um arquivo assinado digitalmente.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public bool IsReadOnly
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.DeclaracaoImportacao.Modificado
+  id: Modificado
+  parent: NotaFiscalNet.Core.DeclaracaoImportacao
+  langs:
+  - csharp
+  - vb
+  name: Modificado
+  fullName: NotaFiscalNet.Core.DeclaracaoImportacao.Modificado
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Modificado
+    path: src/NotaFiscalNet.Core/DeclaracaoImportacao.cs
+    startLine: 175
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna se a Classe foi modificada\r\n"
+  example: []
+  syntax:
+    content: >-
+      public bool Modificado
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Modificado As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: NotaFiscalNet.Core.Interfaces.ISerializavel
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: ISerializavel
+  fullName: NotaFiscalNet.Core.Interfaces.ISerializavel
+- uid: NotaFiscalNet.Core.Interfaces.IModificavel
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: IModificavel
+  fullName: NotaFiscalNet.Core.Interfaces.IModificavel
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: NotaFiscalNet.Core.Interfaces
+  fullName: NotaFiscalNet.Core.Interfaces
+- uid: System.Xml.XmlWriter
+  parent: System.Xml
+  isExternal: true
+  name: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: NotaFiscalNet.Core.INFe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: INFe
+  fullName: NotaFiscalNet.Core.INFe
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime
+- uid: NotaFiscalNet.Core.SiglaUF
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: SiglaUF
+  fullName: NotaFiscalNet.Core.SiglaUF
+- uid: NotaFiscalNet.Core.TipoViaTransporteInternacional
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoViaTransporteInternacional
+  fullName: NotaFiscalNet.Core.TipoViaTransporteInternacional
+- uid: System.Nullable{System.Decimal}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Decimal>
+  fullName: System.Nullable<System.Decimal>
+  fullname.vb: System.Nullable(Of System.Decimal)
+  name.vb: Nullable(Of Decimal)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Decimal
+    name: Decimal
+    fullName: System.Decimal
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Decimal
+    name: Decimal
+    fullName: System.Decimal
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.TipoIntermedioImportacao
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoIntermedioImportacao
+  fullName: NotaFiscalNet.Core.TipoIntermedioImportacao
+- uid: NotaFiscalNet.Core.DeclaracaoImportacaoAdicaoCollection
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: DeclaracaoImportacaoAdicaoCollection
+  fullName: NotaFiscalNet.Core.DeclaracaoImportacaoAdicaoCollection
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

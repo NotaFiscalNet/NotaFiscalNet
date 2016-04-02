@@ -1,0 +1,53 @@
+items:
+- uid: NotaFiscalNet.Core.Interfaces
+  id: NotaFiscalNet.Core.Interfaces
+  children:
+  - NotaFiscalNet.Core.Interfaces.IDesoneracaoIcms
+  - NotaFiscalNet.Core.Interfaces.IModificavel
+  - NotaFiscalNet.Core.Interfaces.IPossuiDocumentoIdentificador
+  - NotaFiscalNet.Core.Interfaces.IReferenciaDocumentoFiscal
+  - NotaFiscalNet.Core.Interfaces.ISerializavel
+  - NotaFiscalNet.Core.Interfaces.ISomenteLeitura
+  langs:
+  - csharp
+  - vb
+  name: NotaFiscalNet.Core.Interfaces
+  fullName: NotaFiscalNet.Core.Interfaces
+  type: Namespace
+  assemblies:
+  - NotaFiscalNet.Core
+references:
+- uid: NotaFiscalNet.Core.Interfaces.IDesoneracaoIcms
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: IDesoneracaoIcms
+  fullName: NotaFiscalNet.Core.Interfaces.IDesoneracaoIcms
+- uid: NotaFiscalNet.Core.Interfaces.IReferenciaDocumentoFiscal
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: IReferenciaDocumentoFiscal
+  fullName: NotaFiscalNet.Core.Interfaces.IReferenciaDocumentoFiscal
+- uid: NotaFiscalNet.Core.Interfaces.IPossuiDocumentoIdentificador
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: IPossuiDocumentoIdentificador
+  fullName: NotaFiscalNet.Core.Interfaces.IPossuiDocumentoIdentificador
+- uid: NotaFiscalNet.Core.Interfaces.IModificavel
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: IModificavel
+  fullName: NotaFiscalNet.Core.Interfaces.IModificavel
+- uid: NotaFiscalNet.Core.Interfaces.ISerializavel
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: ISerializavel
+  fullName: NotaFiscalNet.Core.Interfaces.ISerializavel
+- uid: NotaFiscalNet.Core.Interfaces.ISomenteLeitura
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: ISomenteLeitura
+  fullName: NotaFiscalNet.Core.Interfaces.ISomenteLeitura
+- uid: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: NotaFiscalNet.Core.Interfaces
+  fullName: NotaFiscalNet.Core.Interfaces

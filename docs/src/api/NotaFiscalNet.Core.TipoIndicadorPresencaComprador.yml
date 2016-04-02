@@ -1,0 +1,224 @@
+items:
+- uid: NotaFiscalNet.Core.TipoIndicadorPresencaComprador
+  id: TipoIndicadorPresencaComprador
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.TipoIndicadorPresencaComprador.Internet
+  - NotaFiscalNet.Core.TipoIndicadorPresencaComprador.NaoSeAplica
+  - NotaFiscalNet.Core.TipoIndicadorPresencaComprador.NfceEntregaEmDomicilio
+  - NotaFiscalNet.Core.TipoIndicadorPresencaComprador.Outros
+  - NotaFiscalNet.Core.TipoIndicadorPresencaComprador.Presencial
+  - NotaFiscalNet.Core.TipoIndicadorPresencaComprador.TeleAtendimento
+  langs:
+  - csharp
+  - vb
+  name: TipoIndicadorPresencaComprador
+  fullName: NotaFiscalNet.Core.TipoIndicadorPresencaComprador
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoIndicadorPresencaComprador.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoIndicadorPresencaComprador
+    path: src/NotaFiscalNet.Core/TipoIndicadorPresencaComprador.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nIndicador de presença do comprador no estabelecimento comercial no momento da operação.\r\n"
+  example: []
+  syntax:
+    content: public enum TipoIndicadorPresencaComprador
+    content.vb: Public Enum TipoIndicadorPresencaComprador
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.TipoIndicadorPresencaComprador.NaoSeAplica
+  id: NaoSeAplica
+  parent: NotaFiscalNet.Core.TipoIndicadorPresencaComprador
+  langs:
+  - csharp
+  - vb
+  name: NaoSeAplica
+  fullName: NotaFiscalNet.Core.TipoIndicadorPresencaComprador.NaoSeAplica
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoIndicadorPresencaComprador.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoSeAplica
+    path: src/NotaFiscalNet.Core/TipoIndicadorPresencaComprador.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n0 - Não se aplica (ex.: Nota Fiscal complementar ou de ajuste).\r\n"
+  example: []
+  syntax:
+    content: NaoSeAplica = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoIndicadorPresencaComprador.Presencial
+  id: Presencial
+  parent: NotaFiscalNet.Core.TipoIndicadorPresencaComprador
+  langs:
+  - csharp
+  - vb
+  name: Presencial
+  fullName: NotaFiscalNet.Core.TipoIndicadorPresencaComprador.Presencial
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoIndicadorPresencaComprador.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Presencial
+    path: src/NotaFiscalNet.Core/TipoIndicadorPresencaComprador.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n1 - Operação presencial.\r\n"
+  example: []
+  syntax:
+    content: Presencial = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoIndicadorPresencaComprador.Internet
+  id: Internet
+  parent: NotaFiscalNet.Core.TipoIndicadorPresencaComprador
+  langs:
+  - csharp
+  - vb
+  name: Internet
+  fullName: NotaFiscalNet.Core.TipoIndicadorPresencaComprador.Internet
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoIndicadorPresencaComprador.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Internet
+    path: src/NotaFiscalNet.Core/TipoIndicadorPresencaComprador.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n2 - Operação não presencial, internet.\r\n"
+  example: []
+  syntax:
+    content: Internet = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoIndicadorPresencaComprador.TeleAtendimento
+  id: TeleAtendimento
+  parent: NotaFiscalNet.Core.TipoIndicadorPresencaComprador
+  langs:
+  - csharp
+  - vb
+  name: TeleAtendimento
+  fullName: NotaFiscalNet.Core.TipoIndicadorPresencaComprador.TeleAtendimento
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoIndicadorPresencaComprador.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TeleAtendimento
+    path: src/NotaFiscalNet.Core/TipoIndicadorPresencaComprador.cs
+    startLine: 26
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n3 - Operação não presencial, teleatendimento.\r\n"
+  example: []
+  syntax:
+    content: TeleAtendimento = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoIndicadorPresencaComprador.NfceEntregaEmDomicilio
+  id: NfceEntregaEmDomicilio
+  parent: NotaFiscalNet.Core.TipoIndicadorPresencaComprador
+  langs:
+  - csharp
+  - vb
+  name: NfceEntregaEmDomicilio
+  fullName: NotaFiscalNet.Core.TipoIndicadorPresencaComprador.NfceEntregaEmDomicilio
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoIndicadorPresencaComprador.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NfceEntregaEmDomicilio
+    path: src/NotaFiscalNet.Core/TipoIndicadorPresencaComprador.cs
+    startLine: 31
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n4 - NFC-e em operação com entrega em domicílio.\r\n"
+  example: []
+  syntax:
+    content: NfceEntregaEmDomicilio = 4
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoIndicadorPresencaComprador.Outros
+  id: Outros
+  parent: NotaFiscalNet.Core.TipoIndicadorPresencaComprador
+  langs:
+  - csharp
+  - vb
+  name: Outros
+  fullName: NotaFiscalNet.Core.TipoIndicadorPresencaComprador.Outros
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoIndicadorPresencaComprador.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Outros
+    path: src/NotaFiscalNet.Core/TipoIndicadorPresencaComprador.cs
+    startLine: 36
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n9 - Não presencial, outros.\r\n"
+  example: []
+  syntax:
+    content: Outros = 9
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

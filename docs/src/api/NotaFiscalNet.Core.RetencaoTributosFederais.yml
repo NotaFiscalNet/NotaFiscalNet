@@ -1,0 +1,727 @@
+items:
+- uid: NotaFiscalNet.Core.RetencaoTributosFederais
+  id: RetencaoTributosFederais
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.RetencaoTributosFederais.BaseCalculo
+  - NotaFiscalNet.Core.RetencaoTributosFederais.BaseCalculoRetencaoPrevidenciaSocial
+  - NotaFiscalNet.Core.RetencaoTributosFederais.Modificado
+  - NotaFiscalNet.Core.RetencaoTributosFederais.NotaFiscalNet#Core#Interfaces#ISerializavel#Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  - NotaFiscalNet.Core.RetencaoTributosFederais.ValorRetencaoPrevidenciaSocial
+  - NotaFiscalNet.Core.RetencaoTributosFederais.ValorRetidoCOFINS
+  - NotaFiscalNet.Core.RetencaoTributosFederais.ValorRetidoCSLL
+  - NotaFiscalNet.Core.RetencaoTributosFederais.ValorRetidoIRRF
+  - NotaFiscalNet.Core.RetencaoTributosFederais.ValorRetidoPIS
+  langs:
+  - csharp
+  - vb
+  name: RetencaoTributosFederais
+  fullName: NotaFiscalNet.Core.RetencaoTributosFederais
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/RetencaoTributosFederais.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: RetencaoTributosFederais
+    path: src/NotaFiscalNet.Core/RetencaoTributosFederais.cs
+    startLine: 8
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRepresenta a Retenção de Tributos Federais da Nota Fiscal Eletrônica\r\n"
+  example: []
+  syntax:
+    content: 'public sealed class RetencaoTributosFederais : ISerializavel, IModificavel'
+    content.vb: >-
+      Public NotInheritable Class RetencaoTributosFederais
+
+          Implements ISerializavel, IModificavel
+  inheritance:
+  - System.Object
+  implements:
+  - NotaFiscalNet.Core.Interfaces.ISerializavel
+  - NotaFiscalNet.Core.Interfaces.IModificavel
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: NotaFiscalNet.Core.RetencaoTributosFederais.ValorRetidoPIS
+  id: ValorRetidoPIS
+  parent: NotaFiscalNet.Core.RetencaoTributosFederais
+  langs:
+  - csharp
+  - vb
+  name: ValorRetidoPIS
+  fullName: NotaFiscalNet.Core.RetencaoTributosFederais.ValorRetidoPIS
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/RetencaoTributosFederais.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorRetidoPIS
+    path: src/NotaFiscalNet.Core/RetencaoTributosFederais.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vRetPIS] Retorna ou define o Valor Total Retido de PIS. Opcional.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "W24", FieldName = "vRetPIS", DataType = "TDec_1302Opc", Pattern = "0\\.[0-9]{1}[1-9]{1}|0\\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\\.[0-9]{2})?", Opcional = true)]
+
+      public decimal ValorRetidoPIS
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="W24", FieldName:="vRetPIS", DataType:="TDec_1302Opc", Pattern:="0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional:=True)>
+
+      Public Property ValorRetidoPIS As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.RetencaoTributosFederais.ValorRetidoCOFINS
+  id: ValorRetidoCOFINS
+  parent: NotaFiscalNet.Core.RetencaoTributosFederais
+  langs:
+  - csharp
+  - vb
+  name: ValorRetidoCOFINS
+  fullName: NotaFiscalNet.Core.RetencaoTributosFederais.ValorRetidoCOFINS
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/RetencaoTributosFederais.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorRetidoCOFINS
+    path: src/NotaFiscalNet.Core/RetencaoTributosFederais.cs
+    startLine: 35
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vRetCOFINS] Retorna ou define o Valor Total Retido de COFINS. Opcional.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "W25", FieldName = "vRetCOFINS", DataType = "TDec_1302Opc", Pattern = "0\\.[0-9]{1}[1-9]{1}|0\\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\\.[0-9]{2})?", Opcional = true)]
+
+      public decimal ValorRetidoCOFINS
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="W25", FieldName:="vRetCOFINS", DataType:="TDec_1302Opc", Pattern:="0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional:=True)>
+
+      Public Property ValorRetidoCOFINS As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.RetencaoTributosFederais.ValorRetidoCSLL
+  id: ValorRetidoCSLL
+  parent: NotaFiscalNet.Core.RetencaoTributosFederais
+  langs:
+  - csharp
+  - vb
+  name: ValorRetidoCSLL
+  fullName: NotaFiscalNet.Core.RetencaoTributosFederais.ValorRetidoCSLL
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/RetencaoTributosFederais.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorRetidoCSLL
+    path: src/NotaFiscalNet.Core/RetencaoTributosFederais.cs
+    startLine: 49
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vRetCSLL] Retorna ou define o Valor Total Retido de CSLL. Opcional.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "W26", FieldName = "vRetCSLL", DataType = "TDec_1302Opc", Pattern = "0\\.[0-9]{1}[1-9]{1}|0\\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\\.[0-9]{2})?", Opcional = true)]
+
+      public decimal ValorRetidoCSLL
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="W26", FieldName:="vRetCSLL", DataType:="TDec_1302Opc", Pattern:="0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional:=True)>
+
+      Public Property ValorRetidoCSLL As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.RetencaoTributosFederais.BaseCalculo
+  id: BaseCalculo
+  parent: NotaFiscalNet.Core.RetencaoTributosFederais
+  langs:
+  - csharp
+  - vb
+  name: BaseCalculo
+  fullName: NotaFiscalNet.Core.RetencaoTributosFederais.BaseCalculo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/RetencaoTributosFederais.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: BaseCalculo
+    path: src/NotaFiscalNet.Core/RetencaoTributosFederais.cs
+    startLine: 63
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vBCIRRF] Retorna ou define a Base de Cálculo do IRRF. Opcional.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "W27", FieldName = "vBCIRRF", DataType = "TDec_1302Opc", Pattern = "0\\.[0-9]{1}[1-9]{1}|0\\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\\.[0-9]{2})?", Opcional = true)]
+
+      public decimal BaseCalculo
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="W27", FieldName:="vBCIRRF", DataType:="TDec_1302Opc", Pattern:="0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional:=True)>
+
+      Public Property BaseCalculo As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.RetencaoTributosFederais.ValorRetidoIRRF
+  id: ValorRetidoIRRF
+  parent: NotaFiscalNet.Core.RetencaoTributosFederais
+  langs:
+  - csharp
+  - vb
+  name: ValorRetidoIRRF
+  fullName: NotaFiscalNet.Core.RetencaoTributosFederais.ValorRetidoIRRF
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/RetencaoTributosFederais.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorRetidoIRRF
+    path: src/NotaFiscalNet.Core/RetencaoTributosFederais.cs
+    startLine: 77
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vIRRF] Retorna ou define o Valor Retido do IRRF. Opcional.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "W28", FieldName = "vIRRF", DataType = "TDec_1302Opc", Pattern = "0\\.[0-9]{1}[1-9]{1}|0\\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\\.[0-9]{2})?", Opcional = true)]
+
+      public decimal ValorRetidoIRRF
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="W28", FieldName:="vIRRF", DataType:="TDec_1302Opc", Pattern:="0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional:=True)>
+
+      Public Property ValorRetidoIRRF As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.RetencaoTributosFederais.BaseCalculoRetencaoPrevidenciaSocial
+  id: BaseCalculoRetencaoPrevidenciaSocial
+  parent: NotaFiscalNet.Core.RetencaoTributosFederais
+  langs:
+  - csharp
+  - vb
+  name: BaseCalculoRetencaoPrevidenciaSocial
+  fullName: NotaFiscalNet.Core.RetencaoTributosFederais.BaseCalculoRetencaoPrevidenciaSocial
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/RetencaoTributosFederais.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: BaseCalculoRetencaoPrevidenciaSocial
+    path: src/NotaFiscalNet.Core/RetencaoTributosFederais.cs
+    startLine: 91
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vBCRetPrev] Retorna ou define a Base de Cálculo da Retenção da Previdência Social. Opcional.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "W29", FieldName = "vBCRetPrev", DataType = "TDec_1302Opc", Pattern = "0\\.[0-9]{1}[1-9]{1}|0\\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\\.[0-9]{2})?", Opcional = true)]
+
+      public decimal BaseCalculoRetencaoPrevidenciaSocial
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="W29", FieldName:="vBCRetPrev", DataType:="TDec_1302Opc", Pattern:="0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional:=True)>
+
+      Public Property BaseCalculoRetencaoPrevidenciaSocial As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.RetencaoTributosFederais.ValorRetencaoPrevidenciaSocial
+  id: ValorRetencaoPrevidenciaSocial
+  parent: NotaFiscalNet.Core.RetencaoTributosFederais
+  langs:
+  - csharp
+  - vb
+  name: ValorRetencaoPrevidenciaSocial
+  fullName: NotaFiscalNet.Core.RetencaoTributosFederais.ValorRetencaoPrevidenciaSocial
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/RetencaoTributosFederais.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorRetencaoPrevidenciaSocial
+    path: src/NotaFiscalNet.Core/RetencaoTributosFederais.cs
+    startLine: 105
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vRetPrev] Retorna ou define o Valor da Retenção da Previdência Social. Opcional.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "W30", FieldName = "vRetPrev", DataType = "TDec_1302Opc", Pattern = "0\\.[0-9]{1}[1-9]{1}|0\\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\\.[0-9]{2})?", Opcional = true)]
+
+      public decimal ValorRetencaoPrevidenciaSocial
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="W30", FieldName:="vRetPrev", DataType:="TDec_1302Opc", Pattern:="0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional:=True)>
+
+      Public Property ValorRetencaoPrevidenciaSocial As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.RetencaoTributosFederais.Modificado
+  id: Modificado
+  parent: NotaFiscalNet.Core.RetencaoTributosFederais
+  langs:
+  - csharp
+  - vb
+  name: Modificado
+  fullName: NotaFiscalNet.Core.RetencaoTributosFederais.Modificado
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/RetencaoTributosFederais.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Modificado
+    path: src/NotaFiscalNet.Core/RetencaoTributosFederais.cs
+    startLine: 119
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna se a Classe foi modificada\r\n"
+  example: []
+  syntax:
+    content: >-
+      public bool Modificado
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Modificado As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.RetencaoTributosFederais.NotaFiscalNet#Core#Interfaces#ISerializavel#Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  id: NotaFiscalNet#Core#Interfaces#ISerializavel#Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  parent: NotaFiscalNet.Core.RetencaoTributosFederais
+  langs:
+  - csharp
+  - vb
+  name: ISerializavel.Serializar(XmlWriter, INFe)
+  fullName: NotaFiscalNet.Core.RetencaoTributosFederais.NotaFiscalNet.Core.Interfaces.ISerializavel.Serializar(System.Xml.XmlWriter, NotaFiscalNet.Core.INFe)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/RetencaoTributosFederais.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NotaFiscalNet.Core.Interfaces.ISerializavel.Serializar
+    path: src/NotaFiscalNet.Core/RetencaoTributosFederais.cs
+    startLine: 127
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: void ISerializavel.Serializar(XmlWriter writer, INFe nfe)
+    content.vb: Sub NotaFiscalNet.Core.Interfaces.ISerializavel.Serializar(writer As XmlWriter, nfe As INFe) Implements ISerializavel.Serializar
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+    - id: nfe
+      type: NotaFiscalNet.Core.INFe
+  name.vb: NotaFiscalNet.Core.Interfaces.ISerializavel.Serializar(XmlWriter, INFe)
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: NotaFiscalNet.Core.Interfaces.ISerializavel
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: ISerializavel
+  fullName: NotaFiscalNet.Core.Interfaces.ISerializavel
+- uid: NotaFiscalNet.Core.Interfaces.IModificavel
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: IModificavel
+  fullName: NotaFiscalNet.Core.Interfaces.IModificavel
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: NotaFiscalNet.Core.Interfaces
+  fullName: NotaFiscalNet.Core.Interfaces
+- uid: System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  fullName: System.Decimal
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Xml.XmlWriter
+  parent: System.Xml
+  isExternal: true
+  name: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: NotaFiscalNet.Core.INFe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: INFe
+  fullName: NotaFiscalNet.Core.INFe
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml

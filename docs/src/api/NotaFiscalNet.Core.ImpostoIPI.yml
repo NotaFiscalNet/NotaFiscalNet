@@ -1,0 +1,1015 @@
+items:
+- uid: NotaFiscalNet.Core.ImpostoIPI
+  id: ImpostoIPI
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.ImpostoIPI.Aliquota
+  - NotaFiscalNet.Core.ImpostoIPI.BaseCalculo
+  - NotaFiscalNet.Core.ImpostoIPI.ClasseIPICigarroBebida
+  - NotaFiscalNet.Core.ImpostoIPI.CNPJProdutor
+  - NotaFiscalNet.Core.ImpostoIPI.CodigoEnquadramentoLegal
+  - NotaFiscalNet.Core.ImpostoIPI.CodigoSeloControle
+  - NotaFiscalNet.Core.ImpostoIPI.Modificado
+  - NotaFiscalNet.Core.ImpostoIPI.NotaFiscalNet#Core#Interfaces#ISerializavel#Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  - NotaFiscalNet.Core.ImpostoIPI.Quantidade
+  - NotaFiscalNet.Core.ImpostoIPI.QuantidadeSeloControle
+  - NotaFiscalNet.Core.ImpostoIPI.SituacaoTributaria
+  - NotaFiscalNet.Core.ImpostoIPI.TipoCalculo
+  - NotaFiscalNet.Core.ImpostoIPI.Valor
+  - NotaFiscalNet.Core.ImpostoIPI.ValorUnidade
+  langs:
+  - csharp
+  - vb
+  name: ImpostoIPI
+  fullName: NotaFiscalNet.Core.ImpostoIPI
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ImpostoIPI
+    path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+    startLine: 12
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nArmazena as informações do imposto IPI (Imposto sobre Produtos Industrializados) de um\r\ndeterminado produto na Nota Fiscal Eletrônica.\r\n"
+  example: []
+  syntax:
+    content: 'public sealed class ImpostoIPI : ISerializavel, IModificavel'
+    content.vb: >-
+      Public NotInheritable Class ImpostoIPI
+
+          Implements ISerializavel, IModificavel
+  inheritance:
+  - System.Object
+  implements:
+  - NotaFiscalNet.Core.Interfaces.ISerializavel
+  - NotaFiscalNet.Core.Interfaces.IModificavel
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: NotaFiscalNet.Core.ImpostoIPI.SituacaoTributaria
+  id: SituacaoTributaria
+  parent: NotaFiscalNet.Core.ImpostoIPI
+  langs:
+  - csharp
+  - vb
+  name: SituacaoTributaria
+  fullName: NotaFiscalNet.Core.ImpostoIPI.SituacaoTributaria
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SituacaoTributaria
+    path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+    startLine: 73
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[CST] Retorna ou define a Situação Tributária no cálculo do IPI.\r\n"
+  remarks: "\r\nOs campos abaixo citados deverão ser preenchidos apenas caso a Situação Tributária seja\r\ndiferente de <br /> 00 (EntradaComRecuperacaoCredito), 49 (OutrasEntradas), 50\r\n(SaidaTributada) e 99 (OutrasSaidas):\r\n<list type=\"bullet\">\r\n<item>\r\n<description>TipoCalculo</description>\r\n</item>\r\n<item>\r\n<description>ValorBaseCalculo</description>\r\n</item>\r\n<item>\r\n<description>Aliquota</description>\r\n</item>\r\n<item>\r\n<description>QuantidadeTotalUnidPadrao</description>\r\n</item>\r\n<item>\r\n<description>ValorUnidade</description>\r\n</item>\r\n<item>\r\n<description>ValorIPI</description>\r\n</item>\r\n</list>\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "CST", DataType = "token", ID = "O09")]
+
+      [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = SituacaoTributariaIPI.NaoEspecificado)]
+
+      public SituacaoTributariaIPI SituacaoTributaria
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="CST", DataType:="token", ID:="O09")>
+
+      <CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido:=SituacaoTributariaIPI.NaoEspecificado)>
+
+      Public Property SituacaoTributaria As SituacaoTributariaIPI
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.SituacaoTributariaIPI
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.ImpostoIPI.ClasseIPICigarroBebida
+  id: ClasseIPICigarroBebida
+  parent: NotaFiscalNet.Core.ImpostoIPI
+  langs:
+  - csharp
+  - vb
+  name: ClasseIPICigarroBebida
+  fullName: NotaFiscalNet.Core.ImpostoIPI.ClasseIPICigarroBebida
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ClasseIPICigarroBebida
+    path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+    startLine: 122
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[clEnq] Retorna ou define a Classe de Enquadramento do IPI para Cigarros e Bebidas. Até 5\r\ncaracteres. Opcional.\r\n"
+  remarks: "\r\nA informação da Classe de enquadramento do IPI para Cigarros e Bebidas, quando aplicável,\r\ndeve ser informada utilizando a codificação prevista nos Atos Normativos editados pela\r\nReceita Federal.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "clEnq", DataType = "token", ID = "O02", MinLength = 1, MaxLength = 5, Opcional = true)]
+
+      [CampoValidavel(2, Opcional = true)]
+
+      public string ClasseIPICigarroBebida
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="clEnq", DataType:="token", ID:="O02", MinLength:=1, MaxLength:=5, Opcional:=True)>
+
+      <CampoValidavel(2, Opcional:=True)>
+
+      Public Property ClasseIPICigarroBebida As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.ImpostoIPI.CNPJProdutor
+  id: CNPJProdutor
+  parent: NotaFiscalNet.Core.ImpostoIPI
+  langs:
+  - csharp
+  - vb
+  name: CNPJProdutor
+  fullName: NotaFiscalNet.Core.ImpostoIPI.CNPJProdutor
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CNPJProdutor
+    path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+    startLine: 138
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[CNPJProd] Retorna ou define o Cnpj do Produtor da Mercadoria, quando diferente do\r\nemitente. <br /> Somente para os casos de exportação direta ou indireta. Opcional.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "CNPJProd", DataType = "TCnpj", ID = "O03", Opcional = true, Pattern = "[0-9]{14}")]
+
+      [CampoValidavel(3, Opcional = true)]
+
+      public string CNPJProdutor
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="CNPJProd", DataType:="TCnpj", ID:="O03", Opcional:=True, Pattern:="[0-9]{14}")>
+
+      <CampoValidavel(3, Opcional:=True)>
+
+      Public Property CNPJProdutor As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.ImpostoIPI.CodigoSeloControle
+  id: CodigoSeloControle
+  parent: NotaFiscalNet.Core.ImpostoIPI
+  langs:
+  - csharp
+  - vb
+  name: CodigoSeloControle
+  fullName: NotaFiscalNet.Core.ImpostoIPI.CodigoSeloControle
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CodigoSeloControle
+    path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+    startLine: 159
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[cSelo] Retorna ou define o Código do Selo de Controle do IPI. <br /> Preenchimento\r\nconforme Atos Normativos editados pela Receita Federal. <br /> Opcional.\r\n"
+  remarks: "\r\nA informação do código de selo, quando aplicável, deve ser informada utilizando a\r\ncodificação prevista nos Atos Normativos editados pela Receita Federal.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "cSelo", DataType = "token", ID = "O04", MinLength = 1, MaxLength = 60, Opcional = true)]
+
+      [CampoValidavel(4, Opcional = true)]
+
+      public string CodigoSeloControle
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="cSelo", DataType:="token", ID:="O04", MinLength:=1, MaxLength:=60, Opcional:=True)>
+
+      <CampoValidavel(4, Opcional:=True)>
+
+      Public Property CodigoSeloControle As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.ImpostoIPI.QuantidadeSeloControle
+  id: QuantidadeSeloControle
+  parent: NotaFiscalNet.Core.ImpostoIPI
+  langs:
+  - csharp
+  - vb
+  name: QuantidadeSeloControle
+  fullName: NotaFiscalNet.Core.ImpostoIPI.QuantidadeSeloControle
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: QuantidadeSeloControle
+    path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+    startLine: 174
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[qSelo] Retorna ou define a Quantidade de Selo de Controle do IPI. Opcional.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "qSelo", DataType = "token", ID = "O05", Pattern = "[0-9]{1,12}", Opcional = true)]
+
+      [CampoValidavel(5, Opcional = true)]
+
+      public int QuantidadeSeloControle
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="qSelo", DataType:="token", ID:="O05", Pattern:="[0-9]{1,12}", Opcional:=True)>
+
+      <CampoValidavel(5, Opcional:=True)>
+
+      Public Property QuantidadeSeloControle As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.ImpostoIPI.CodigoEnquadramentoLegal
+  id: CodigoEnquadramentoLegal
+  parent: NotaFiscalNet.Core.ImpostoIPI
+  langs:
+  - csharp
+  - vb
+  name: CodigoEnquadramentoLegal
+  fullName: NotaFiscalNet.Core.ImpostoIPI.CodigoEnquadramentoLegal
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CodigoEnquadramentoLegal
+    path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+    startLine: 190
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[cEnq] Retorna ou define o Código de Enquadramento Legal do IPI (tabela criada pela RFB).\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "cEnq", DataType = "token", ID = "O06", MinLength = 1, MaxLength = 3)]
+
+      [CampoValidavel(6, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public string CodigoEnquadramentoLegal
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="cEnq", DataType:="token", ID:="O06", MinLength:=1, MaxLength:=3)>
+
+      <CampoValidavel(6, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property CodigoEnquadramentoLegal As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.ImpostoIPI.TipoCalculo
+  id: TipoCalculo
+  parent: NotaFiscalNet.Core.ImpostoIPI
+  langs:
+  - csharp
+  - vb
+  name: TipoCalculo
+  fullName: NotaFiscalNet.Core.ImpostoIPI.TipoCalculo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoCalculo
+    path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+    startLine: 218
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna ou define o Tipo de Cálculo do IPI.\r\n"
+  remarks: "\r\nEste campo deverá ser preenchido caso a Situação Tributária indique que deverá informar\r\nos dados de tributação. <br /> Para maiores informações, seja a documentação presente no\r\ncampo SituacaoTributaria.\r\n<para>\r\nCaso o Tipo de Cálculo seja por Percentual, os campos ValorBaseCalculo e Aliquota deverão\r\nser preenchidos.\r\n</para>\r\n<para>\r\nCaso o Tipo de Cálculo seja por Valor, os campos QuantidadeTotalUnidPadrao e ValorUnidade\r\ndeverão ser preenchidos.\r\n</para>\r\n"
+  example: []
+  syntax:
+    content: >-
+      public TipoCalculoIPI TipoCalculo
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property TipoCalculo As TipoCalculoIPI
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoCalculoIPI
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.ImpostoIPI.BaseCalculo
+  id: BaseCalculo
+  parent: NotaFiscalNet.Core.ImpostoIPI
+  langs:
+  - csharp
+  - vb
+  name: BaseCalculo
+  fullName: NotaFiscalNet.Core.ImpostoIPI.BaseCalculo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: BaseCalculo
+    path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+    startLine: 265
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vBC] Retorna ou define o Valor da Base de Cálculo do IPI.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "vBC", DataType = "TDec_1302", ID = "O10", Pattern = "0|0\\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\\.[0-9]{2})?", Opcional = true)]
+
+      public decimal BaseCalculo
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="vBC", DataType:="TDec_1302", ID:="O10", Pattern:="0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional:=True)>
+
+      Public Property BaseCalculo As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.ImpostoIPI.Aliquota
+  id: Aliquota
+  parent: NotaFiscalNet.Core.ImpostoIPI
+  langs:
+  - csharp
+  - vb
+  name: Aliquota
+  fullName: NotaFiscalNet.Core.ImpostoIPI.Aliquota
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Aliquota
+    path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+    startLine: 289
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[pIPI] Retorna ou define o Alíquota (percentual) do IPI. Opcional.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "pIPI", DataType = "TDec_0302", ID = "O13", Pattern = "0|0\\.[0-9]{2}|[1-9]{1}[0-9]{0,2}(\\.[0-9]{2})?", Opcional = true)]
+
+      public decimal Aliquota
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="pIPI", DataType:="TDec_0302", ID:="O13", Pattern:="0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?", Opcional:=True)>
+
+      Public Property Aliquota As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.ImpostoIPI.Quantidade
+  id: Quantidade
+  parent: NotaFiscalNet.Core.ImpostoIPI
+  langs:
+  - csharp
+  - vb
+  name: Quantidade
+  fullName: NotaFiscalNet.Core.ImpostoIPI.Quantidade
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Quantidade
+    path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+    startLine: 314
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[qUnid] Retorna ou define a Quantidade Total da Unidade Padrão para Tributação. <br />\r\nObs. Somente para os produtos tributados por Unidade.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "qUnid", DataType = "TDec_1204", ID = "O11", Pattern = "0|0\\.[0-9]{4}|[1-9]{1}[0-9]{0,11}(\\.[0-9]{4})", Opcional = true)]
+
+      public decimal Quantidade
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="qUnid", DataType:="TDec_1204", ID:="O11", Pattern:="0|0\.[0-9]{4}|[1-9]{1}[0-9]{0,11}(\.[0-9]{4})", Opcional:=True)>
+
+      Public Property Quantidade As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.ImpostoIPI.ValorUnidade
+  id: ValorUnidade
+  parent: NotaFiscalNet.Core.ImpostoIPI
+  langs:
+  - csharp
+  - vb
+  name: ValorUnidade
+  fullName: NotaFiscalNet.Core.ImpostoIPI.ValorUnidade
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorUnidade
+    path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+    startLine: 337
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vUnid] Retorna ou define o Valor por Unidade Tributável.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "vUnid", DataType = "TDec_1104", ID = "O12", Pattern = "0|0\\.[0-9]{4}|[1-9]{1}[0-9]{0,10}(\\.[0-9]{4})?")]
+
+      public decimal ValorUnidade
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="vUnid", DataType:="TDec_1104", ID:="O12", Pattern:="0|0\.[0-9]{4}|[1-9]{1}[0-9]{0,10}(\.[0-9]{4})?")>
+
+      Public Property ValorUnidade As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.ImpostoIPI.Valor
+  id: Valor
+  parent: NotaFiscalNet.Core.ImpostoIPI
+  langs:
+  - csharp
+  - vb
+  name: Valor
+  fullName: NotaFiscalNet.Core.ImpostoIPI.Valor
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Valor
+    path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+    startLine: 361
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vIPI] Retorna ou define o Valor do IPI. Opcional caso não haja tributação do IPI segundo\r\nSituação Tributária.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "vIPI", DataType = "TDec_1302", ID = "O14", Pattern = "0|0\\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\\.[0-9]{2})?", Opcional = true)]
+
+      public decimal Valor
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="vIPI", DataType:="TDec_1302", ID:="O14", Pattern:="0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional:=True)>
+
+      Public Property Valor As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.ImpostoIPI.Modificado
+  id: Modificado
+  parent: NotaFiscalNet.Core.ImpostoIPI
+  langs:
+  - csharp
+  - vb
+  name: Modificado
+  fullName: NotaFiscalNet.Core.ImpostoIPI.Modificado
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Modificado
+    path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+    startLine: 378
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna se a Classe foi modificada\r\n"
+  example: []
+  syntax:
+    content: >-
+      public bool Modificado
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Modificado As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.ImpostoIPI.NotaFiscalNet#Core#Interfaces#ISerializavel#Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  id: NotaFiscalNet#Core#Interfaces#ISerializavel#Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  parent: NotaFiscalNet.Core.ImpostoIPI
+  langs:
+  - csharp
+  - vb
+  name: ISerializavel.Serializar(XmlWriter, INFe)
+  fullName: NotaFiscalNet.Core.ImpostoIPI.NotaFiscalNet.Core.Interfaces.ISerializavel.Serializar(System.Xml.XmlWriter, NotaFiscalNet.Core.INFe)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NotaFiscalNet.Core.Interfaces.ISerializavel.Serializar
+    path: src/NotaFiscalNet.Core/ImpostoIPI.cs
+    startLine: 390
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: void ISerializavel.Serializar(XmlWriter writer, INFe nfe)
+    content.vb: Sub NotaFiscalNet.Core.Interfaces.ISerializavel.Serializar(writer As XmlWriter, nfe As INFe) Implements ISerializavel.Serializar
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+    - id: nfe
+      type: NotaFiscalNet.Core.INFe
+  name.vb: NotaFiscalNet.Core.Interfaces.ISerializavel.Serializar(XmlWriter, INFe)
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: NotaFiscalNet.Core.Interfaces.ISerializavel
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: ISerializavel
+  fullName: NotaFiscalNet.Core.Interfaces.ISerializavel
+- uid: NotaFiscalNet.Core.Interfaces.IModificavel
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: IModificavel
+  fullName: NotaFiscalNet.Core.Interfaces.IModificavel
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: NotaFiscalNet.Core.Interfaces
+  fullName: NotaFiscalNet.Core.Interfaces
+- uid: NotaFiscalNet.Core.SituacaoTributariaIPI
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: SituacaoTributariaIPI
+  fullName: NotaFiscalNet.Core.SituacaoTributariaIPI
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: NotaFiscalNet.Core.TipoCalculoIPI
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoCalculoIPI
+  fullName: NotaFiscalNet.Core.TipoCalculoIPI
+- uid: System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  fullName: System.Decimal
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Xml.XmlWriter
+  parent: System.Xml
+  isExternal: true
+  name: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: NotaFiscalNet.Core.INFe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: INFe
+  fullName: NotaFiscalNet.Core.INFe
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml

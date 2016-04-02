@@ -1,0 +1,285 @@
+items:
+- uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1
+  id: Repositorio`1
+  parent: NotaFiscalNet.Core.Tests.Dados
+  children:
+  - NotaFiscalNet.Core.Tests.Dados.Repositorio`1.#ctor
+  - NotaFiscalNet.Core.Tests.Dados.Repositorio`1.CriarElementos
+  - NotaFiscalNet.Core.Tests.Dados.Repositorio`1.Referencias
+  langs:
+  - csharp
+  - vb
+  name: Repositorio<T>
+  fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio<T>
+  type: Class
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Dados/Repositorio.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Repositorio
+    path: tests/NotaFiscalNet.Core.Tests/Dados/Repositorio.cs
+    startLine: 5
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Dados
+  syntax:
+    content: 'public abstract class Repositorio<T> : object where T : class'
+    content.vb: >-
+      Public MustInherit Class Repositorio(Of T As Class)
+
+          Inherits Object
+    typeParameters:
+    - id: T
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: NotaFiscalNet.Core.Tests.Dados.Repositorio(Of T)
+  name.vb: Repositorio(Of T)
+- uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1.Referencias
+  id: Referencias
+  parent: NotaFiscalNet.Core.Tests.Dados.Repositorio`1
+  langs:
+  - csharp
+  - vb
+  name: Referencias
+  fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio<T>.Referencias
+  type: Property
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Dados/Repositorio.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Referencias
+    path: tests/NotaFiscalNet.Core.Tests/Dados/Repositorio.cs
+    startLine: 7
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Dados
+  syntax:
+    content: >-
+      public Dictionary<string, T> Referencias
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Referencias As Dictionary(Of String, T)
+    parameters: []
+    return:
+      type: Dictionary{System.String,{T}}
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: NotaFiscalNet.Core.Tests.Dados.Repositorio(Of T).Referencias
+- uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1.#ctor
+  id: '#ctor'
+  parent: NotaFiscalNet.Core.Tests.Dados.Repositorio`1
+  langs:
+  - csharp
+  - vb
+  name: Repositorio()
+  fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio<T>.Repositorio()
+  type: Constructor
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Dados/Repositorio.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: tests/NotaFiscalNet.Core.Tests/Dados/Repositorio.cs
+    startLine: 9
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Dados
+  syntax:
+    content: protected Repositorio()
+    content.vb: Protected Sub New
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: NotaFiscalNet.Core.Tests.Dados.Repositorio(Of T).Repositorio()
+- uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1.CriarElementos
+  id: CriarElementos
+  parent: NotaFiscalNet.Core.Tests.Dados.Repositorio`1
+  langs:
+  - csharp
+  - vb
+  name: CriarElementos()
+  fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio<T>.CriarElementos()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Dados/Repositorio.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CriarElementos
+    path: tests/NotaFiscalNet.Core.Tests/Dados/Repositorio.cs
+    startLine: 24
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Dados
+  syntax:
+    content: public abstract List<T> CriarElementos()
+    content.vb: Public MustOverride Function CriarElementos As List(Of T)
+    return:
+      type: List{{T}}
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: NotaFiscalNet.Core.Tests.Dados.Repositorio(Of T).CriarElementos()
+references:
+- uid: NotaFiscalNet.Core.Tests.Dados
+  isExternal: false
+  name: NotaFiscalNet.Core.Tests.Dados
+  fullName: NotaFiscalNet.Core.Tests.Dados
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Dictionary{System.String,{T}}
+  definition: Dictionary`2
+  name: Dictionary<String, T>
+  fullName: Dictionary<System.String, T>
+  fullname.vb: Dictionary(Of System.String, T)
+  name.vb: Dictionary(Of String, T)
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: Dictionary`2
+  isExternal: true
+  name: Dictionary<, >
+  fullName: Dictionary<, >
+  fullname.vb: Dictionary(Of , )
+  name.vb: Dictionary(Of , )
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - {}
+  - name: ', '
+    fullName: ', '
+  - {}
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - {}
+  - name: ', '
+    fullName: ', '
+  - {}
+  - name: )
+    fullName: )
+- uid: List{{T}}
+  definition: List`1
+  name: List<T>
+  fullName: List<T>
+  fullname.vb: List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    fullName: List
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  fullName: List<>
+  fullname.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    fullName: List
+    isExternal: true
+  - name: <
+    fullName: <
+  - {}
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - {}
+  - name: )
+    fullName: )

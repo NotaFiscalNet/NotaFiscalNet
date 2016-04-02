@@ -1,0 +1,254 @@
+items:
+- uid: NotaFiscalNet.Core.Tests.Dados.RepositorioAvulsa
+  id: RepositorioAvulsa
+  parent: NotaFiscalNet.Core.Tests.Dados
+  children:
+  - NotaFiscalNet.Core.Tests.Dados.RepositorioAvulsa.CriarElementos
+  langs:
+  - csharp
+  - vb
+  name: RepositorioAvulsa
+  fullName: NotaFiscalNet.Core.Tests.Dados.RepositorioAvulsa
+  type: Class
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Dados/RepositorioAvulsa.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: RepositorioAvulsa
+    path: tests/NotaFiscalNet.Core.Tests/Dados/RepositorioAvulsa.cs
+    startLine: 5
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Dados
+  syntax:
+    content: 'public class RepositorioAvulsa : Repositorio<Avulsa>'
+    content.vb: >-
+      Public Class RepositorioAvulsa
+
+          Inherits Repositorio(Of Avulsa)
+  inheritance:
+  - System.Object
+  - NotaFiscalNet.Core.Tests.Dados.Repositorio{NotaFiscalNet.Core.Avulsa}
+  inheritedMembers:
+  - NotaFiscalNet.Core.Tests.Dados.Repositorio{NotaFiscalNet.Core.Avulsa}.Referencias
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Tests.Dados.RepositorioAvulsa.CriarElementos
+  id: CriarElementos
+  parent: NotaFiscalNet.Core.Tests.Dados.RepositorioAvulsa
+  langs:
+  - csharp
+  - vb
+  name: CriarElementos()
+  fullName: NotaFiscalNet.Core.Tests.Dados.RepositorioAvulsa.CriarElementos()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/Dados/RepositorioAvulsa.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CriarElementos
+    path: tests/NotaFiscalNet.Core.Tests/Dados/RepositorioAvulsa.cs
+    startLine: 8
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests.Dados
+  syntax:
+    content: public override List<Avulsa> CriarElementos()
+    content.vb: Public Overrides Function CriarElementos As List(Of Avulsa)
+    return:
+      type: List{NotaFiscalNet.Core.Avulsa}
+  overridden: NotaFiscalNet.Core.Tests.Dados.Repositorio{NotaFiscalNet.Core.Avulsa}.CriarElementos
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: NotaFiscalNet.Core.Tests.Dados
+  isExternal: false
+  name: NotaFiscalNet.Core.Tests.Dados
+  fullName: NotaFiscalNet.Core.Tests.Dados
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: NotaFiscalNet.Core.Tests.Dados.Repositorio{NotaFiscalNet.Core.Avulsa}
+  parent: NotaFiscalNet.Core.Tests.Dados
+  definition: NotaFiscalNet.Core.Tests.Dados.Repositorio`1
+  name: Repositorio<Avulsa>
+  fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio<NotaFiscalNet.Core.Avulsa>
+  fullname.vb: NotaFiscalNet.Core.Tests.Dados.Repositorio(Of NotaFiscalNet.Core.Avulsa)
+  name.vb: Repositorio(Of Avulsa)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1
+    name: Repositorio
+    fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio
+  - name: <
+    fullName: <
+  - uid: NotaFiscalNet.Core.Avulsa
+    name: Avulsa
+    fullName: NotaFiscalNet.Core.Avulsa
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1
+    name: Repositorio
+    fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: NotaFiscalNet.Core.Avulsa
+    name: Avulsa
+    fullName: NotaFiscalNet.Core.Avulsa
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.Tests.Dados.Repositorio{NotaFiscalNet.Core.Avulsa}.Referencias
+  parent: NotaFiscalNet.Core.Tests.Dados.Repositorio{NotaFiscalNet.Core.Avulsa}
+  definition: NotaFiscalNet.Core.Tests.Dados.Repositorio`1.Referencias
+  name: Referencias
+  fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio<NotaFiscalNet.Core.Avulsa>.Referencias
+  fullname.vb: NotaFiscalNet.Core.Tests.Dados.Repositorio(Of NotaFiscalNet.Core.Avulsa).Referencias
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1
+  parent: NotaFiscalNet.Core.Tests.Dados
+  isExternal: false
+  name: Repositorio<T>
+  fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio<T>
+  fullname.vb: NotaFiscalNet.Core.Tests.Dados.Repositorio(Of T)
+  name.vb: Repositorio(Of T)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1
+    name: Repositorio
+    fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1
+    name: Repositorio
+    fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1.Referencias
+  parent: NotaFiscalNet.Core.Tests.Dados.Repositorio`1
+  isExternal: false
+  name: Referencias
+  fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio<T>.Referencias
+  fullname.vb: NotaFiscalNet.Core.Tests.Dados.Repositorio(Of T).Referencias
+- uid: NotaFiscalNet.Core.Tests.Dados.Repositorio{NotaFiscalNet.Core.Avulsa}.CriarElementos
+  parent: NotaFiscalNet.Core.Tests.Dados.Repositorio{NotaFiscalNet.Core.Avulsa}
+  definition: NotaFiscalNet.Core.Tests.Dados.Repositorio`1.CriarElementos
+  name: CriarElementos()
+  fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio<NotaFiscalNet.Core.Avulsa>.CriarElementos()
+  fullname.vb: NotaFiscalNet.Core.Tests.Dados.Repositorio(Of NotaFiscalNet.Core.Avulsa).CriarElementos()
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1.CriarElementos
+    name: CriarElementos
+    fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio<NotaFiscalNet.Core.Avulsa>.CriarElementos
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1.CriarElementos
+    name: CriarElementos
+    fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio(Of NotaFiscalNet.Core.Avulsa).CriarElementos
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: List{NotaFiscalNet.Core.Avulsa}
+  definition: List`1
+  name: List<Avulsa>
+  fullName: List<NotaFiscalNet.Core.Avulsa>
+  fullname.vb: List(Of NotaFiscalNet.Core.Avulsa)
+  name.vb: List(Of Avulsa)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    fullName: List
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: NotaFiscalNet.Core.Avulsa
+    name: Avulsa
+    fullName: NotaFiscalNet.Core.Avulsa
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: NotaFiscalNet.Core.Avulsa
+    name: Avulsa
+    fullName: NotaFiscalNet.Core.Avulsa
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1.CriarElementos
+  parent: NotaFiscalNet.Core.Tests.Dados.Repositorio`1
+  isExternal: false
+  name: CriarElementos()
+  fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio<T>.CriarElementos()
+  fullname.vb: NotaFiscalNet.Core.Tests.Dados.Repositorio(Of T).CriarElementos()
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1.CriarElementos
+    name: CriarElementos
+    fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio<T>.CriarElementos
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.Tests.Dados.Repositorio`1.CriarElementos
+    name: CriarElementos
+    fullName: NotaFiscalNet.Core.Tests.Dados.Repositorio(Of T).CriarElementos
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  fullName: List<>
+  fullname.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    fullName: List
+    isExternal: true
+  - name: <
+    fullName: <
+  - {}
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - {}
+  - name: )
+    fullName: )

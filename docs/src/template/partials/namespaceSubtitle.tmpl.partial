@@ -1,0 +1,16 @@
+
+{{#inClass}}
+{{__global.classesInSubtitle}}
+{{/inClass}}
+{{#inStruct}}
+{{__global.structsInSubtitle}}
+{{/inStruct}}
+{{#inInterface}}
+{{__global.interfacesInSubtitle}}
+{{/inInterface}}
+{{#inEnum}}
+{{__global.enumsInSubtitle}}
+{{/inEnum}}
+{{#inDelegate}}
+{{__global.delegatesInSubtitle}}
+{{/inDelegate}}

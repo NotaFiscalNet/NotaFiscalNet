@@ -1,0 +1,1738 @@
+items:
+- uid: NotaFiscalNet.Core.VeiculoNovo
+  id: VeiculoNovo
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.VeiculoNovo.#ctor
+  - NotaFiscalNet.Core.VeiculoNovo.AnoFabricacao
+  - NotaFiscalNet.Core.VeiculoNovo.AnoModelo
+  - NotaFiscalNet.Core.VeiculoNovo.CapacidadeMaximaTracao
+  - NotaFiscalNet.Core.VeiculoNovo.Chassi
+  - NotaFiscalNet.Core.VeiculoNovo.ChassiRemarcado
+  - NotaFiscalNet.Core.VeiculoNovo.Cilindradas
+  - NotaFiscalNet.Core.VeiculoNovo.CodigoCor
+  - NotaFiscalNet.Core.VeiculoNovo.CodigoMarcaModelo
+  - NotaFiscalNet.Core.VeiculoNovo.Combustivel
+  - NotaFiscalNet.Core.VeiculoNovo.CondicaoVeiculo
+  - NotaFiscalNet.Core.VeiculoNovo.CorDenatran
+  - NotaFiscalNet.Core.VeiculoNovo.DescricaoCor
+  - NotaFiscalNet.Core.VeiculoNovo.DistanciaEixos
+  - NotaFiscalNet.Core.VeiculoNovo.EspecieVeiculo
+  - NotaFiscalNet.Core.VeiculoNovo.LotacaoMaximaPassageirosSentados
+  - NotaFiscalNet.Core.VeiculoNovo.Modificado
+  - NotaFiscalNet.Core.VeiculoNovo.NotaFiscalNet#Core#Interfaces#ISerializavel#Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  - NotaFiscalNet.Core.VeiculoNovo.NumeroMotor
+  - NotaFiscalNet.Core.VeiculoNovo.NumeroSerie
+  - NotaFiscalNet.Core.VeiculoNovo.PesoBruto
+  - NotaFiscalNet.Core.VeiculoNovo.PesoLiquido
+  - NotaFiscalNet.Core.VeiculoNovo.PotenciaMotor
+  - NotaFiscalNet.Core.VeiculoNovo.TipoOperacaoVenda
+  - NotaFiscalNet.Core.VeiculoNovo.TipoPintura
+  - NotaFiscalNet.Core.VeiculoNovo.TipoRestricao
+  - NotaFiscalNet.Core.VeiculoNovo.TipoVeiculo
+  langs:
+  - csharp
+  - vb
+  name: VeiculoNovo
+  fullName: NotaFiscalNet.Core.VeiculoNovo
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: VeiculoNovo
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 9
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRepresenta o Veículo Novo utilizado nos Produtos Específicos\r\n"
+  example: []
+  syntax:
+    content: 'public sealed class VeiculoNovo : ISerializavel, IModificavel'
+    content.vb: >-
+      Public NotInheritable Class VeiculoNovo
+
+          Implements ISerializavel, IModificavel
+  inheritance:
+  - System.Object
+  implements:
+  - NotaFiscalNet.Core.Interfaces.ISerializavel
+  - NotaFiscalNet.Core.Interfaces.IModificavel
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: NotaFiscalNet.Core.VeiculoNovo.#ctor
+  id: '#ctor'
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: VeiculoNovo()
+  fullName: NotaFiscalNet.Core.VeiculoNovo.VeiculoNovo()
+  type: Constructor
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 39
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nInicializa uma nova instância da classe <xref href=\"NotaFiscalNet.Core.VeiculoNovo\" data-throw-if-not-resolved=\"false\"></xref>.\r\n"
+  example: []
+  syntax:
+    content: public VeiculoNovo()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.VeiculoNovo.TipoOperacaoVenda
+  id: TipoOperacaoVenda
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: TipoOperacaoVenda
+  fullName: NotaFiscalNet.Core.VeiculoNovo.TipoOperacaoVenda
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoOperacaoVenda
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 55
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[tpOp] Retorna ou define o Tipo da Operação de Venda.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "J02", FieldName = "tpOp", DataType = "token")]
+
+      [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = TipoOperacaoVendaVeiculo.NaoEspecificado)]
+
+      public TipoOperacaoVendaVeiculo TipoOperacaoVenda
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="J02", FieldName:="tpOp", DataType:="token")>
+
+      <CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido:=TipoOperacaoVendaVeiculo.NaoEspecificado)>
+
+      Public Property TipoOperacaoVenda As TipoOperacaoVendaVeiculo
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoOperacaoVendaVeiculo
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.VeiculoNovo.Chassi
+  id: Chassi
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: Chassi
+  fullName: NotaFiscalNet.Core.VeiculoNovo.Chassi
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Chassi
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 69
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[chassi] Retorna ou define o Código de Chassi do Veículo.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "J03", FieldName = "chassi", DataType = "token", MinLength = 17, MaxLength = 17)]
+
+      [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public string Chassi
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="J03", FieldName:="chassi", DataType:="token", MinLength:=17, MaxLength:=17)>
+
+      <CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property Chassi As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.VeiculoNovo.CodigoCor
+  id: CodigoCor
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: CodigoCor
+  fullName: NotaFiscalNet.Core.VeiculoNovo.CodigoCor
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CodigoCor
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 83
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[cCor] Retorna ou define o Código da Cor do Veículo, específico de cada montadora.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "J04", FieldName = "cCor", DataType = "token", MinLength = 1, MaxLength = 4)]
+
+      [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public string CodigoCor
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="J04", FieldName:="cCor", DataType:="token", MinLength:=1, MaxLength:=4)>
+
+      <CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property CodigoCor As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.VeiculoNovo.DescricaoCor
+  id: DescricaoCor
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: DescricaoCor
+  fullName: NotaFiscalNet.Core.VeiculoNovo.DescricaoCor
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DescricaoCor
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 97
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[xCor] Retorna ou define a Descrição da Cor do Veículo, específico de cada montadora.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "J05", FieldName = "xCor", DataType = "token", MinLength = 1, MaxLength = 40)]
+
+      [CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public string DescricaoCor
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="J05", FieldName:="xCor", DataType:="token", MinLength:=1, MaxLength:=40)>
+
+      <CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property DescricaoCor As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.VeiculoNovo.PotenciaMotor
+  id: PotenciaMotor
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: PotenciaMotor
+  fullName: NotaFiscalNet.Core.VeiculoNovo.PotenciaMotor
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PotenciaMotor
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 111
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[pot] Retorna ou define a Potencia do Motor em cavalo vapor (CV)\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "J06", FieldName = "pot", DataType = "token", MinLength = 1, MaxLength = 4)]
+
+      [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public string PotenciaMotor
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="J06", FieldName:="pot", DataType:="token", MinLength:=1, MaxLength:=4)>
+
+      <CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property PotenciaMotor As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.VeiculoNovo.Cilindradas
+  id: Cilindradas
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: Cilindradas
+  fullName: NotaFiscalNet.Core.VeiculoNovo.Cilindradas
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cilindradas
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 127
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[cilin] Retorna ou define a Capacidade voluntária do motor expressa em centímetros\r\ncúbicos (CC).\r\n"
+  remarks: "De 1 até 4 caracteres."
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "J07", FieldName = "cilin", DataType = "token", MinLength = 1, MaxLength = 4)]
+
+      [CampoValidavel(6, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public string Cilindradas
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="J07", FieldName:="cilin", DataType:="token", MinLength:=1, MaxLength:=4)>
+
+      <CampoValidavel(6, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property Cilindradas As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.VeiculoNovo.PesoLiquido
+  id: PesoLiquido
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: PesoLiquido
+  fullName: NotaFiscalNet.Core.VeiculoNovo.PesoLiquido
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PesoLiquido
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 145
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[pesoL] Retorna ou define o Peso Líquido do Veículo.\r\n"
+  remarks: "De 1 até 9 caracteres"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "J08", FieldName = "pesoL", DataType = "token", MinLength = 1, MaxLength = 9)]
+
+      [CampoValidavel(7, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public string PesoLiquido
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="J08", FieldName:="pesoL", DataType:="token", MinLength:=1, MaxLength:=9)>
+
+      <CampoValidavel(7, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property PesoLiquido As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.VeiculoNovo.PesoBruto
+  id: PesoBruto
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: PesoBruto
+  fullName: NotaFiscalNet.Core.VeiculoNovo.PesoBruto
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PesoBruto
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 163
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[pesoB] Retorna ou define o Peso Bruto do Veículo.\r\n"
+  remarks: "De 1 até 9 caracteres"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "J09", FieldName = "pesoB", DataType = "token", MinLength = 1, MaxLength = 9)]
+
+      [CampoValidavel(8, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public string PesoBruto
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="J09", FieldName:="pesoB", DataType:="token", MinLength:=1, MaxLength:=9)>
+
+      <CampoValidavel(8, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property PesoBruto As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.VeiculoNovo.NumeroSerie
+  id: NumeroSerie
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: NumeroSerie
+  fullName: NotaFiscalNet.Core.VeiculoNovo.NumeroSerie
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NumeroSerie
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 180
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[nSerie] Retorna ou define o Número de Série do Veículo.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "J10", FieldName = "nSerie", DataType = "token", MinLength = 1, MaxLength = 9)]
+
+      [CampoValidavel(9, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public string NumeroSerie
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="J10", FieldName:="nSerie", DataType:="token", MinLength:=1, MaxLength:=9)>
+
+      <CampoValidavel(9, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property NumeroSerie As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.VeiculoNovo.Combustivel
+  id: Combustivel
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: Combustivel
+  fullName: NotaFiscalNet.Core.VeiculoNovo.Combustivel
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Combustivel
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 200
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[tpComb] Retorna ou define o Tipo do Combustível do Veículo. 01 ALCOOL 02 GASOLINA 03\r\nDIESEL 04 GASOGENIO 05 GAS METANO 06 ELETRICO/FONTE INTERNA 07 ELETRICO/FONTE EXTERNA 08\r\nGASOL/GAS NATURAL COMBUSTIVEL 09 ALCOOL/GAS NATURAL COMBUSTIVEL 10 DIESEL/GAS NATURAL\r\nCOMBUSTIVEL 11 VIDE/CAMPO/OBSERVACAO 12 ALCOOL/GAS NATURAL VEICULAR 13 GASOLINA/GAS\r\nNATURAL VEICULAR 14 DIESEL/GAS NATURAL VEICULAR 15 GAS NATURAL VEICULAR 16\r\nALCOOL/GASOLINA 17 GASOLINA/ALCOOL/GAS NATURAL 18 GASOLINA/ELETRICO\r\n"
+  remarks: "De 1 até 2 caracteres."
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "J11", FieldName = "tpComb", DataType = "token", MinLength = 1, MaxLength = 2)]
+
+      [CampoValidavel(10, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public string Combustivel
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="J11", FieldName:="tpComb", DataType:="token", MinLength:=1, MaxLength:=2)>
+
+      <CampoValidavel(10, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property Combustivel As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.VeiculoNovo.NumeroMotor
+  id: NumeroMotor
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: NumeroMotor
+  fullName: NotaFiscalNet.Core.VeiculoNovo.NumeroMotor
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NumeroMotor
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 215
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[nMotor] Retorna ou define o Número do Motor.\r\n"
+  remarks: "De 1 até 21 caracteres."
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "J12", FieldName = "nMotor", DataType = "token", MinLength = 1, MaxLength = 21)]
+
+      [CampoValidavel(11, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public string NumeroMotor
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="J12", FieldName:="nMotor", DataType:="token", MinLength:=1, MaxLength:=21)>
+
+      <CampoValidavel(11, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property NumeroMotor As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.VeiculoNovo.CapacidadeMaximaTracao
+  id: CapacidadeMaximaTracao
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: CapacidadeMaximaTracao
+  fullName: NotaFiscalNet.Core.VeiculoNovo.CapacidadeMaximaTracao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CapacidadeMaximaTracao
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 229
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[CMT] Retorna ou define a capacidade máxima de tração do Veículo, em toneladas, 4 casas decimais\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "CMT")]
+
+      [CampoValidavel(12, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public decimal CapacidadeMaximaTracao
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="CMT")>
+
+      <CampoValidavel(12, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property CapacidadeMaximaTracao As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.VeiculoNovo.DistanciaEixos
+  id: DistanciaEixos
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: DistanciaEixos
+  fullName: NotaFiscalNet.Core.VeiculoNovo.DistanciaEixos
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DistanciaEixos
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 243
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[dist] Retorna ou define a Distância entre os Eixos\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "J14", FieldName = "dist", DataType = "token")]
+
+      [CampoValidavel(13, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public int DistanciaEixos
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="J14", FieldName:="dist", DataType:="token")>
+
+      <CampoValidavel(13, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property DistanciaEixos As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.VeiculoNovo.AnoModelo
+  id: AnoModelo
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: AnoModelo
+  fullName: NotaFiscalNet.Core.VeiculoNovo.AnoModelo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: AnoModelo
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 258
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[anoMod] Retorna ou define o Ano Modelo do Veículo.\r\n"
+  remarks: "O valor deve compreender de 0 até 9999."
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "J16", FieldName = "anoMod", DataType = "token", MinLength = 1, MaxLength = 4, Pattern = "[0-9]{4}")]
+
+      [CampoValidavel(15, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public int AnoModelo
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="J16", FieldName:="anoMod", DataType:="token", MinLength:=1, MaxLength:=4, Pattern:="[0-9]{4}")>
+
+      <CampoValidavel(15, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property AnoModelo As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.VeiculoNovo.AnoFabricacao
+  id: AnoFabricacao
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: AnoFabricacao
+  fullName: NotaFiscalNet.Core.VeiculoNovo.AnoFabricacao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: AnoFabricacao
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 273
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[anoFab] Retorna ou define o Ano de Fabricação do Veículo\r\n"
+  remarks: "O valor deve compreender de 0 até 9999."
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "J17", FieldName = "anoFab", DataType = "token", MinLength = 1, MaxLength = 4, Pattern = "[0-9]{4}")]
+
+      [CampoValidavel(16, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public int AnoFabricacao
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="J17", FieldName:="anoFab", DataType:="token", MinLength:=1, MaxLength:=4, Pattern:="[0-9]{4}")>
+
+      <CampoValidavel(16, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property AnoFabricacao As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.VeiculoNovo.TipoPintura
+  id: TipoPintura
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: TipoPintura
+  fullName: NotaFiscalNet.Core.VeiculoNovo.TipoPintura
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoPintura
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 287
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[tpPint] Retorna ou define o Tipo de Pintura.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "J18", FieldName = "tpPint", DataType = "token", MinLength = 1, MaxLength = 1)]
+
+      [CampoValidavel(17, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public string TipoPintura
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="J18", FieldName:="tpPint", DataType:="token", MinLength:=1, MaxLength:=1)>
+
+      <CampoValidavel(17, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property TipoPintura As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.VeiculoNovo.TipoVeiculo
+  id: TipoVeiculo
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: TipoVeiculo
+  fullName: NotaFiscalNet.Core.VeiculoNovo.TipoVeiculo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoVeiculo
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 293
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[tpVeic] Retorna ou define Tipo do Veículo de acordo com a tabela do RENAVAM.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "J19", FieldName = "tpVeic", DataType = "token", Pattern = "[0-9]{1,2}")]
+
+      [CampoValidavel(18, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = TipoVeiculoRENAVAM.NaoEspecificado)]
+
+      public TipoVeiculoRENAVAM TipoVeiculo
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="J19", FieldName:="tpVeic", DataType:="token", Pattern:="[0-9]{1,2}")>
+
+      <CampoValidavel(18, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido:=TipoVeiculoRENAVAM.NaoEspecificado)>
+
+      Public Property TipoVeiculo As TipoVeiculoRENAVAM
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoVeiculoRENAVAM
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.VeiculoNovo.EspecieVeiculo
+  id: EspecieVeiculo
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: EspecieVeiculo
+  fullName: NotaFiscalNet.Core.VeiculoNovo.EspecieVeiculo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: EspecieVeiculo
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 307
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[espVeic] Retorna ou define a Espécie do Veículo de acordo com a tabela do RENAVAM.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "J20", FieldName = "espVeic", DataType = "token", Pattern = "[0-9]{1}")]
+
+      [CampoValidavel(19, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = EspecieVeiculoRENAVAM.NaoEspecificado)]
+
+      public EspecieVeiculoRENAVAM EspecieVeiculo
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="J20", FieldName:="espVeic", DataType:="token", Pattern:="[0-9]{1}")>
+
+      <CampoValidavel(19, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido:=EspecieVeiculoRENAVAM.NaoEspecificado)>
+
+      Public Property EspecieVeiculo As EspecieVeiculoRENAVAM
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.EspecieVeiculoRENAVAM
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.VeiculoNovo.ChassiRemarcado
+  id: ChassiRemarcado
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: ChassiRemarcado
+  fullName: NotaFiscalNet.Core.VeiculoNovo.ChassiRemarcado
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ChassiRemarcado
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 321
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[VIN] Retorna ou define se o chassi foi remarcado.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "J21", FieldName = "VIN")]
+
+      [CampoValidavel(20, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public bool ChassiRemarcado
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="J21", FieldName:="VIN")>
+
+      <CampoValidavel(20, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property ChassiRemarcado As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.VeiculoNovo.CondicaoVeiculo
+  id: CondicaoVeiculo
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: CondicaoVeiculo
+  fullName: NotaFiscalNet.Core.VeiculoNovo.CondicaoVeiculo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CondicaoVeiculo
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 327
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[condVeic] Retorna ou define a Condição do Veículo\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "J22", FieldName = "condVeic", DataType = "token")]
+
+      [CampoValidavel(21, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = CondicaoVeiculo.NaoEspecificado)]
+
+      public CondicaoVeiculo CondicaoVeiculo
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="J22", FieldName:="condVeic", DataType:="token")>
+
+      <CampoValidavel(21, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido:=CondicaoVeiculo.NaoEspecificado)>
+
+      Public Property CondicaoVeiculo As CondicaoVeiculo
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.CondicaoVeiculo
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.VeiculoNovo.CodigoMarcaModelo
+  id: CodigoMarcaModelo
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: CodigoMarcaModelo
+  fullName: NotaFiscalNet.Core.VeiculoNovo.CodigoMarcaModelo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CodigoMarcaModelo
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 341
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[cMod] Retorna ou define o Código Marca Modelo de acordo com a tabela do RENAVAM\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "J23", FieldName = "cMod", DataType = "token", Pattern = "[0-9]{1,6}")]
+
+      [CampoValidavel(22, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public int CodigoMarcaModelo
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="J23", FieldName:="cMod", DataType:="token", Pattern:="[0-9]{1,6}")>
+
+      <CampoValidavel(22, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property CodigoMarcaModelo As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.VeiculoNovo.CorDenatran
+  id: CorDenatran
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: CorDenatran
+  fullName: NotaFiscalNet.Core.VeiculoNovo.CorDenatran
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CorDenatran
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 355
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[cCorDENATRAN] Retorna ou define o Código da Cor Segundo as regras de pré-cadastro do DENATRAN.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "J24", FieldName = "cCorDENATRAN")]
+
+      [CampoValidavel(22, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public TipoCorDenatran CorDenatran
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="J24", FieldName:="cCorDENATRAN")>
+
+      <CampoValidavel(22, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property CorDenatran As TipoCorDenatran
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoCorDenatran
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.VeiculoNovo.LotacaoMaximaPassageirosSentados
+  id: LotacaoMaximaPassageirosSentados
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: LotacaoMaximaPassageirosSentados
+  fullName: NotaFiscalNet.Core.VeiculoNovo.LotacaoMaximaPassageirosSentados
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: LotacaoMaximaPassageirosSentados
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 370
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[lota] Retorna ou define a Quantidade máxima permitida de passageiros sentados, inclusive\r\no motorista.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "J25", FieldName = "lota")]
+
+      [CampoValidavel(22, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public int LotacaoMaximaPassageirosSentados
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="J25", FieldName:="lota")>
+
+      <CampoValidavel(22, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property LotacaoMaximaPassageirosSentados As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.VeiculoNovo.TipoRestricao
+  id: TipoRestricao
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: TipoRestricao
+  fullName: NotaFiscalNet.Core.VeiculoNovo.TipoRestricao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoRestricao
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 384
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[tpRest] Retorna ou define o Tipo de Restrição do Veículo.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "J26", FieldName = "tpRest")]
+
+      [CampoValidavel(22, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public TipoRestricaoVeiculo TipoRestricao
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="J26", FieldName:="tpRest")>
+
+      <CampoValidavel(22, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property TipoRestricao As TipoRestricaoVeiculo
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoRestricaoVeiculo
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.VeiculoNovo.Modificado
+  id: Modificado
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: Modificado
+  fullName: NotaFiscalNet.Core.VeiculoNovo.Modificado
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Modificado
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 403
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna se a Classe foi modificada\r\n"
+  example: []
+  syntax:
+    content: >-
+      public bool Modificado
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Modificado As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.VeiculoNovo.NotaFiscalNet#Core#Interfaces#ISerializavel#Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  id: NotaFiscalNet#Core#Interfaces#ISerializavel#Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  parent: NotaFiscalNet.Core.VeiculoNovo
+  langs:
+  - csharp
+  - vb
+  name: ISerializavel.Serializar(XmlWriter, INFe)
+  fullName: NotaFiscalNet.Core.VeiculoNovo.NotaFiscalNet.Core.Interfaces.ISerializavel.Serializar(System.Xml.XmlWriter, NotaFiscalNet.Core.INFe)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NotaFiscalNet.Core.Interfaces.ISerializavel.Serializar
+    path: src/NotaFiscalNet.Core/VeiculoNovo.cs
+    startLine: 427
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: void ISerializavel.Serializar(XmlWriter writer, INFe nfe)
+    content.vb: Sub NotaFiscalNet.Core.Interfaces.ISerializavel.Serializar(writer As XmlWriter, nfe As INFe) Implements ISerializavel.Serializar
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+    - id: nfe
+      type: NotaFiscalNet.Core.INFe
+  name.vb: NotaFiscalNet.Core.Interfaces.ISerializavel.Serializar(XmlWriter, INFe)
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: NotaFiscalNet.Core.Interfaces.ISerializavel
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: ISerializavel
+  fullName: NotaFiscalNet.Core.Interfaces.ISerializavel
+- uid: NotaFiscalNet.Core.Interfaces.IModificavel
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: IModificavel
+  fullName: NotaFiscalNet.Core.Interfaces.IModificavel
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: NotaFiscalNet.Core.Interfaces
+  fullName: NotaFiscalNet.Core.Interfaces
+- uid: NotaFiscalNet.Core.VeiculoNovo
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: VeiculoNovo
+  fullName: NotaFiscalNet.Core.VeiculoNovo
+- uid: NotaFiscalNet.Core.TipoOperacaoVendaVeiculo
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoOperacaoVendaVeiculo
+  fullName: NotaFiscalNet.Core.TipoOperacaoVendaVeiculo
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  fullName: System.Decimal
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: NotaFiscalNet.Core.TipoVeiculoRENAVAM
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoVeiculoRENAVAM
+  fullName: NotaFiscalNet.Core.TipoVeiculoRENAVAM
+- uid: NotaFiscalNet.Core.EspecieVeiculoRENAVAM
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: EspecieVeiculoRENAVAM
+  fullName: NotaFiscalNet.Core.EspecieVeiculoRENAVAM
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: NotaFiscalNet.Core.CondicaoVeiculo
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: CondicaoVeiculo
+  fullName: NotaFiscalNet.Core.CondicaoVeiculo
+- uid: NotaFiscalNet.Core.TipoCorDenatran
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoCorDenatran
+  fullName: NotaFiscalNet.Core.TipoCorDenatran
+- uid: NotaFiscalNet.Core.TipoRestricaoVeiculo
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoRestricaoVeiculo
+  fullName: NotaFiscalNet.Core.TipoRestricaoVeiculo
+- uid: System.Xml.XmlWriter
+  parent: System.Xml
+  isExternal: true
+  name: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: NotaFiscalNet.Core.INFe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: INFe
+  fullName: NotaFiscalNet.Core.INFe
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml

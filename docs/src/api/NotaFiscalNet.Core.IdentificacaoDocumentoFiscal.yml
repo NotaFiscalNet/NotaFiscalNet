@@ -1,0 +1,1538 @@
+items:
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  id: IdentificacaoDocumentoFiscal
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.Ambiente
+  - NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.CodigoMunicipioFatoGerador
+  - NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.CodigoNumerico
+  - NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.DataEmissao
+  - NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.DataEntradaSaida
+  - NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.DataHoraEntradaContingencia
+  - NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.Finalidade
+  - NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.FormaPagamento
+  - NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.IdentificadorLocalDestinoOperacao
+  - NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.IndicadorPresencaComprador
+  - NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.JustificativaEntradaContingencia
+  - NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.ModalidadeDocumentoFiscal
+  - NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.NaturezaOperacao
+  - NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.NotaFiscalNet#Core#Interfaces#ISerializavel#Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  - NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.Numero
+  - NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.OperacaoConsumidorFinal
+  - NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.ReferenciasDocumentoFiscais
+  - NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.Serie
+  - NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.TipoEmissao
+  - NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.TipoImpressao
+  - NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.TipoNotaFiscal
+  - NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.TipoProcessoEmissao
+  - NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.UnidadeFederativaEmitente
+  - NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.VersaoAplicativoEmissao
+  langs:
+  - csharp
+  - vb
+  name: IdentificacaoDocumentoFiscal
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: IdentificacaoDocumentoFiscal
+    path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+    startLine: 13
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nResponsável por armazenar as informações de Indentificação de um Documento Fiscal.\r\n"
+  example: []
+  syntax:
+    content: 'public class IdentificacaoDocumentoFiscal : ISerializavel'
+    content.vb: >-
+      Public Class IdentificacaoDocumentoFiscal
+
+          Implements ISerializavel
+  inheritance:
+  - System.Object
+  implements:
+  - NotaFiscalNet.Core.Interfaces.ISerializavel
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.UnidadeFederativaEmitente
+  id: UnidadeFederativaEmitente
+  parent: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: UnidadeFederativaEmitente
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.UnidadeFederativaEmitente
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: UnidadeFederativaEmitente
+    path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+    startLine: 18
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[cUF] Retorna ou define o código Unidade Federativa (IBGE) do Emitente do Documento Fiscal.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual UfIBGE UnidadeFederativaEmitente
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Overridable Property UnidadeFederativaEmitente As UfIBGE
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.UfIBGE
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.CodigoNumerico
+  id: CodigoNumerico
+  parent: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: CodigoNumerico
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.CodigoNumerico
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CodigoNumerico
+    path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+    startLine: 24
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[cNF] Retorna o código numérico que compõe a Chave de Acesso. Número aleatório gerado\r\npelo emitente para cada NF-e para evitar acessos indevidos da NF-e.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int CodigoNumerico
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property CodigoNumerico As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.NaturezaOperacao
+  id: NaturezaOperacao
+  parent: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: NaturezaOperacao
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.NaturezaOperacao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaturezaOperacao
+    path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+    startLine: 29
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[natOp] Retorna ou define a descrição da Natureza da Operação.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string NaturezaOperacao
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property NaturezaOperacao As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.FormaPagamento
+  id: FormaPagamento
+  parent: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: FormaPagamento
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.FormaPagamento
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: FormaPagamento
+    path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+    startLine: 34
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[indPag] Retorna ou define o indicador da Forma de Pagamento. Valor padrão 'AVista'.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public IndicadorFormaPagamento FormaPagamento
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property FormaPagamento As IndicadorFormaPagamento
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.IndicadorFormaPagamento
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.ModalidadeDocumentoFiscal
+  id: ModalidadeDocumentoFiscal
+  parent: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: ModalidadeDocumentoFiscal
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.ModalidadeDocumentoFiscal
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ModalidadeDocumentoFiscal
+    path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+    startLine: 40
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[mod] Código do modelo do Documento Fiscal. 55 = NF-e; 65 = NFC-e.\r\nValor padrão: NF-e\r\n"
+  example: []
+  syntax:
+    content: >-
+      public TipoModalidadeDocumentoFiscal ModalidadeDocumentoFiscal
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ModalidadeDocumentoFiscal As TipoModalidadeDocumentoFiscal
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoModalidadeDocumentoFiscal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.Serie
+  id: Serie
+  parent: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: Serie
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.Serie
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Serie
+    path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+    startLine: 48
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[serie] Retorna ou define a Série do Documento Fiscal. \r\nSérie Normal - 0-889\r\nAvulsa Fisco - 890-899\r\nSCAN - 900-999\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int Serie
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Serie As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.Numero
+  id: Numero
+  parent: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: Numero
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.Numero
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Numero
+    path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+    startLine: 53
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[nNF] Retorna ou define o Número da Nota Fiscal Eletrônica.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int Numero
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Numero As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.DataEmissao
+  id: DataEmissao
+  parent: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: DataEmissao
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.DataEmissao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DataEmissao
+    path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+    startLine: 58
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[dhEmi] Retorna ou define a Data e Hora de emissão do Documento Fiscal\r\n"
+  example: []
+  syntax:
+    content: >-
+      public DateTime DataEmissao
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property DataEmissao As Date
+    parameters: []
+    return:
+      type: System.DateTime
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.DataEntradaSaida
+  id: DataEntradaSaida
+  parent: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: DataEntradaSaida
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.DataEntradaSaida
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DataEntradaSaida
+    path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+    startLine: 63
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[dhSaiEnt] Retorna ou define a Data de Entrada/Saída da Mercadoria/Produto. Opcional.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public DateTime? DataEntradaSaida
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property DataEntradaSaida As Date?
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.TipoNotaFiscal
+  id: TipoNotaFiscal
+  parent: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: TipoNotaFiscal
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.TipoNotaFiscal
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoNotaFiscal
+    path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+    startLine: 68
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[tpNF] Retorna ou define o Tipo da Nota Fiscal. Valor padrão 'Saida'.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public TipoNotaFiscal TipoNotaFiscal
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property TipoNotaFiscal As TipoNotaFiscal
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoNotaFiscal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.IdentificadorLocalDestinoOperacao
+  id: IdentificadorLocalDestinoOperacao
+  parent: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: IdentificadorLocalDestinoOperacao
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.IdentificadorLocalDestinoOperacao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: IdentificadorLocalDestinoOperacao
+    path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+    startLine: 73
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[idDest] Retorna ou define o Identificador de Local de destino da operação.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public TipoIdentificadorLocalDestinoOperacao IdentificadorLocalDestinoOperacao
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property IdentificadorLocalDestinoOperacao As TipoIdentificadorLocalDestinoOperacao
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoIdentificadorLocalDestinoOperacao
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.CodigoMunicipioFatoGerador
+  id: CodigoMunicipioFatoGerador
+  parent: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: CodigoMunicipioFatoGerador
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.CodigoMunicipioFatoGerador
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CodigoMunicipioFatoGerador
+    path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+    startLine: 78
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[cMunFG] Retorna ou define o Código do Município de Ocorrência do Fator Gerador.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int CodigoMunicipioFatoGerador
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property CodigoMunicipioFatoGerador As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.TipoImpressao
+  id: TipoImpressao
+  parent: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: TipoImpressao
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.TipoImpressao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoImpressao
+    path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+    startLine: 84
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[tpImp] Retorna ou define o formato de impressão do DANFE. \r\nValor padrão 'Retrato'.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public TipoFormatoImpressaoDanfe TipoImpressao
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property TipoImpressao As TipoFormatoImpressaoDanfe
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoFormatoImpressaoDanfe
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.TipoEmissao
+  id: TipoEmissao
+  parent: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: TipoEmissao
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.TipoEmissao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoEmissao
+    path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+    startLine: 89
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[tpEmis] Retorna ou define o Tipo de Emissão da Nota Fiscal Eletrônica. Valor padrão 'Normal'.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public TipoEmissaoNFe TipoEmissao
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property TipoEmissao As TipoEmissaoNFe
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoEmissaoNFe
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.Ambiente
+  id: Ambiente
+  parent: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: Ambiente
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.Ambiente
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Ambiente
+    path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+    startLine: 95
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[tpAmb] Retorna ou define o valor indicando o ambiente do Documento Fiscal. \r\nValor padrão 'Producao'.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public TipoAmbiente Ambiente
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Ambiente As TipoAmbiente
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoAmbiente
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.Finalidade
+  id: Finalidade
+  parent: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: Finalidade
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.Finalidade
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Finalidade
+    path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+    startLine: 100
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[finNFe] Retorna ou define a Finalidade do Documento Fiscal. Valor padrão 'Normal'.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public TipoFinalidade Finalidade
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Finalidade As TipoFinalidade
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoFinalidade
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.OperacaoConsumidorFinal
+  id: OperacaoConsumidorFinal
+  parent: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: OperacaoConsumidorFinal
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.OperacaoConsumidorFinal
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: OperacaoConsumidorFinal
+    path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+    startLine: 105
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[indFinal] Retorna ou define o valor indicando se a operação foi realizada com consumidor final.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public bool OperacaoConsumidorFinal
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property OperacaoConsumidorFinal As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.IndicadorPresencaComprador
+  id: IndicadorPresencaComprador
+  parent: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: IndicadorPresencaComprador
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.IndicadorPresencaComprador
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: IndicadorPresencaComprador
+    path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+    startLine: 111
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[indPres] Retorna ou define o indicador de presença do comprador no estabelecimento\r\ncomercial no momento da operação.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public TipoIndicadorPresencaComprador IndicadorPresencaComprador
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property IndicadorPresencaComprador As TipoIndicadorPresencaComprador
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoIndicadorPresencaComprador
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.TipoProcessoEmissao
+  id: TipoProcessoEmissao
+  parent: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: TipoProcessoEmissao
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.TipoProcessoEmissao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoProcessoEmissao
+    path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+    startLine: 116
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[procEmi] Retorna ou define o Tipo de processo de emissão da NF-e. Valor padrão 'AplicativoContribuinte'.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public TipoProcessoEmissaoNFe TipoProcessoEmissao
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property TipoProcessoEmissao As TipoProcessoEmissaoNFe
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoProcessoEmissaoNFe
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.VersaoAplicativoEmissao
+  id: VersaoAplicativoEmissao
+  parent: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: VersaoAplicativoEmissao
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.VersaoAplicativoEmissao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: VersaoAplicativoEmissao
+    path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+    startLine: 121
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[verProc] Retorna ou define a Versão do Aplicativo de Emissão da NF-e.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string VersaoAplicativoEmissao
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property VersaoAplicativoEmissao As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.DataHoraEntradaContingencia
+  id: DataHoraEntradaContingencia
+  parent: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: DataHoraEntradaContingencia
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.DataHoraEntradaContingencia
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DataHoraEntradaContingencia
+    path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+    startLine: 127
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[dhCont] Retorna ou define a Data e Hora de entrada em contigência. Apenas se o tipo de\r\nemissão for diferente de normal.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public DateTime DataHoraEntradaContingencia
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property DataHoraEntradaContingencia As Date
+    parameters: []
+    return:
+      type: System.DateTime
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.JustificativaEntradaContingencia
+  id: JustificativaEntradaContingencia
+  parent: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: JustificativaEntradaContingencia
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.JustificativaEntradaContingencia
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: JustificativaEntradaContingencia
+    path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+    startLine: 133
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[xJust] Retorna ou define a Justificativa para entrada em contingência. Apenas se o tipo\r\nde emissão for diferente de normal.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string JustificativaEntradaContingencia
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property JustificativaEntradaContingencia As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.ReferenciasDocumentoFiscais
+  id: ReferenciasDocumentoFiscais
+  parent: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: ReferenciasDocumentoFiscais
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.ReferenciasDocumentoFiscais
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ReferenciasDocumentoFiscais
+    path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+    startLine: 143
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[NFref] Retorna a lista de referências à Documentos Fiscais vinculadas ao Documento\r\nFiscal atual.\r\n"
+  remarks: "\r\nEsta informação é utilizada nas hipóteses previstas na legislação (Devolução de\r\nMercadorias, Substituição de NF cancelada, Complementação de NF, etc).\r\n"
+  example: []
+  syntax:
+    content: >-
+      public List<IReferenciaDocumentoFiscal> ReferenciasDocumentoFiscais
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property ReferenciasDocumentoFiscais As List(Of IReferenciaDocumentoFiscal)
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{NotaFiscalNet.Core.Interfaces.IReferenciaDocumentoFiscal}
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.NotaFiscalNet#Core#Interfaces#ISerializavel#Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  id: NotaFiscalNet#Core#Interfaces#ISerializavel#Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  parent: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  langs:
+  - csharp
+  - vb
+  name: ISerializavel.Serializar(XmlWriter, INFe)
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal.NotaFiscalNet.Core.Interfaces.ISerializavel.Serializar(System.Xml.XmlWriter, NotaFiscalNet.Core.INFe)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NotaFiscalNet.Core.Interfaces.ISerializavel.Serializar
+    path: src/NotaFiscalNet.Core/IdentificacaoDocumentoFiscal.cs
+    startLine: 145
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: void ISerializavel.Serializar(XmlWriter writer, INFe nfe)
+    content.vb: Sub NotaFiscalNet.Core.Interfaces.ISerializavel.Serializar(writer As XmlWriter, nfe As INFe) Implements ISerializavel.Serializar
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+    - id: nfe
+      type: NotaFiscalNet.Core.INFe
+  name.vb: NotaFiscalNet.Core.Interfaces.ISerializavel.Serializar(XmlWriter, INFe)
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: NotaFiscalNet.Core.Interfaces.ISerializavel
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: ISerializavel
+  fullName: NotaFiscalNet.Core.Interfaces.ISerializavel
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: NotaFiscalNet.Core.Interfaces
+  fullName: NotaFiscalNet.Core.Interfaces
+- uid: NotaFiscalNet.Core.UfIBGE
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: UfIBGE
+  fullName: NotaFiscalNet.Core.UfIBGE
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: NotaFiscalNet.Core.IndicadorFormaPagamento
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: IndicadorFormaPagamento
+  fullName: NotaFiscalNet.Core.IndicadorFormaPagamento
+- uid: NotaFiscalNet.Core.TipoModalidadeDocumentoFiscal
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoModalidadeDocumentoFiscal
+  fullName: NotaFiscalNet.Core.TipoModalidadeDocumentoFiscal
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime
+- uid: System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DateTime>
+  fullName: System.Nullable<System.DateTime>
+  fullname.vb: System.Nullable(Of System.DateTime)
+  name.vb: Nullable(Of DateTime)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.TipoNotaFiscal
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoNotaFiscal
+  fullName: NotaFiscalNet.Core.TipoNotaFiscal
+- uid: NotaFiscalNet.Core.TipoIdentificadorLocalDestinoOperacao
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoIdentificadorLocalDestinoOperacao
+  fullName: NotaFiscalNet.Core.TipoIdentificadorLocalDestinoOperacao
+- uid: NotaFiscalNet.Core.TipoFormatoImpressaoDanfe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoFormatoImpressaoDanfe
+  fullName: NotaFiscalNet.Core.TipoFormatoImpressaoDanfe
+- uid: NotaFiscalNet.Core.TipoEmissaoNFe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoEmissaoNFe
+  fullName: NotaFiscalNet.Core.TipoEmissaoNFe
+- uid: NotaFiscalNet.Core.TipoAmbiente
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoAmbiente
+  fullName: NotaFiscalNet.Core.TipoAmbiente
+- uid: NotaFiscalNet.Core.TipoFinalidade
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoFinalidade
+  fullName: NotaFiscalNet.Core.TipoFinalidade
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: NotaFiscalNet.Core.TipoIndicadorPresencaComprador
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoIndicadorPresencaComprador
+  fullName: NotaFiscalNet.Core.TipoIndicadorPresencaComprador
+- uid: NotaFiscalNet.Core.TipoProcessoEmissaoNFe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoProcessoEmissaoNFe
+  fullName: NotaFiscalNet.Core.TipoProcessoEmissaoNFe
+- uid: System.Collections.Generic.List{NotaFiscalNet.Core.Interfaces.IReferenciaDocumentoFiscal}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<IReferenciaDocumentoFiscal>
+  fullName: System.Collections.Generic.List<NotaFiscalNet.Core.Interfaces.IReferenciaDocumentoFiscal>
+  fullname.vb: System.Collections.Generic.List(Of NotaFiscalNet.Core.Interfaces.IReferenciaDocumentoFiscal)
+  name.vb: List(Of IReferenciaDocumentoFiscal)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: NotaFiscalNet.Core.Interfaces.IReferenciaDocumentoFiscal
+    name: IReferenciaDocumentoFiscal
+    fullName: NotaFiscalNet.Core.Interfaces.IReferenciaDocumentoFiscal
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: NotaFiscalNet.Core.Interfaces.IReferenciaDocumentoFiscal
+    name: IReferenciaDocumentoFiscal
+    fullName: NotaFiscalNet.Core.Interfaces.IReferenciaDocumentoFiscal
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: List<T>
+  fullName: System.Collections.Generic.List<T>
+  fullname.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Xml.XmlWriter
+  parent: System.Xml
+  isExternal: true
+  name: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: NotaFiscalNet.Core.INFe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: INFe
+  fullName: NotaFiscalNet.Core.INFe
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml

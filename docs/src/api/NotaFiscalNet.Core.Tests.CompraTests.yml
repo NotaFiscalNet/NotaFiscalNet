@@ -1,0 +1,148 @@
+items:
+- uid: NotaFiscalNet.Core.Tests.CompraTests
+  id: CompraTests
+  parent: NotaFiscalNet.Core.Tests
+  children:
+  - NotaFiscalNet.Core.Tests.CompraTests.DeveCriarUmaReferenciaNaoModificada
+  - NotaFiscalNet.Core.Tests.CompraTests.DeveModificarUmaReferencia
+  - NotaFiscalNet.Core.Tests.CompraTests.DeveSerializarUmaCompra(System.String,System.String,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: CompraTests
+  fullName: NotaFiscalNet.Core.Tests.CompraTests
+  type: Class
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/CompraTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CompraTests
+    path: tests/NotaFiscalNet.Core.Tests/CompraTests.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests
+  syntax:
+    content: 'public class CompraTests : object'
+    content.vb: >-
+      Public Class CompraTests
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Tests.CompraTests.DeveCriarUmaReferenciaNaoModificada
+  id: DeveCriarUmaReferenciaNaoModificada
+  parent: NotaFiscalNet.Core.Tests.CompraTests
+  langs:
+  - csharp
+  - vb
+  name: DeveCriarUmaReferenciaNaoModificada()
+  fullName: NotaFiscalNet.Core.Tests.CompraTests.DeveCriarUmaReferenciaNaoModificada()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/CompraTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveCriarUmaReferenciaNaoModificada
+    path: tests/NotaFiscalNet.Core.Tests/CompraTests.cs
+    startLine: 8
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests
+  syntax:
+    content: public void DeveCriarUmaReferenciaNaoModificada()
+    content.vb: Public Sub DeveCriarUmaReferenciaNaoModificada
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.CompraTests.DeveModificarUmaReferencia
+  id: DeveModificarUmaReferencia
+  parent: NotaFiscalNet.Core.Tests.CompraTests
+  langs:
+  - csharp
+  - vb
+  name: DeveModificarUmaReferencia()
+  fullName: NotaFiscalNet.Core.Tests.CompraTests.DeveModificarUmaReferencia()
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/CompraTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveModificarUmaReferencia
+    path: tests/NotaFiscalNet.Core.Tests/CompraTests.cs
+    startLine: 15
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests
+  syntax:
+    content: public void DeveModificarUmaReferencia()
+    content.vb: Public Sub DeveModificarUmaReferencia
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Tests.CompraTests.DeveSerializarUmaCompra(System.String,System.String,System.String,System.String)
+  id: DeveSerializarUmaCompra(System.String,System.String,System.String,System.String)
+  parent: NotaFiscalNet.Core.Tests.CompraTests
+  langs:
+  - csharp
+  - vb
+  name: DeveSerializarUmaCompra(String, String, String, String)
+  fullName: NotaFiscalNet.Core.Tests.CompraTests.DeveSerializarUmaCompra(System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: tests/NotaFiscalNet.Core.Tests/CompraTests.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeveSerializarUmaCompra
+    path: tests/NotaFiscalNet.Core.Tests/CompraTests.cs
+    startLine: 25
+  assemblies:
+  - NotaFiscalNet.Core.Tests
+  namespace: NotaFiscalNet.Core.Tests
+  syntax:
+    content: public void DeveSerializarUmaCompra(string notaEmpenho, string pedido, string contrato, string arquivoXml)
+    content.vb: Public Sub DeveSerializarUmaCompra(notaEmpenho As String, pedido As String, contrato As String, arquivoXml As String)
+    parameters:
+    - id: notaEmpenho
+      type: System.String
+    - id: pedido
+      type: System.String
+    - id: contrato
+      type: System.String
+    - id: arquivoXml
+      type: System.String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core.Tests
+  isExternal: false
+  name: NotaFiscalNet.Core.Tests
+  fullName: NotaFiscalNet.Core.Tests
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

@@ -1,0 +1,1238 @@
+items:
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  id: ChaveErroValidacao
+  parent: NotaFiscalNet.Core.Validacao
+  children:
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CampoNaoPreenchido
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CEPInvalido
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CFOPInvalido
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CNAEInvalido
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CNPJInvalido
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CodigoExTipiInvalido
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CodigoRENAVAMInvalido
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CollectionMaxValue
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CollectionMinValue
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ConflitoICMSISSQN
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ConflitoIIISSQN
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ConflitoIPIISSQN
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ConflitoISSQNICMS
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ConflitoISSQNII
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ConflitoISSQNIPI
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CPFInvalido
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CPFouCNPJObrigatorio
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CstNaoPermitidoNoContexto
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.EnumNaoEspecificado
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ExcecaoNaoTratada
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.GenericArgumentException
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.GTINInvalido
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.InscricaoEstadualDestinatario
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NCMInvalido
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeAliquota
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeAliquotaTipoCalculo
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeBaseCalculo
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeBaseCalculoTipoCalculo
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeModalidadeBaseCalculo
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangePercentualMargemValorAdicionado
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangePercentualReducaoBaseCalculo
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeQuantidadeTipoCalculo
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeTipoCalculo
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeValor
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeValorUnidadeTipoCalculo
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NVEInvalido
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.PlacaInvalida
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ReadOnlyClass
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.TelefoneInvalido
+  - NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ValueOutOfRange
+  langs:
+  - csharp
+  - vb
+  name: ChaveErroValidacao
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ChaveErroValidacao
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 10
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  summary: "\r\nDEPRECATED - REMOVER\r\n"
+  example: []
+  syntax:
+    content: public enum ChaveErroValidacao
+    content.vb: Public Enum ChaveErroValidacao
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.EnumNaoEspecificado
+  id: EnumNaoEspecificado
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: EnumNaoEspecificado
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.EnumNaoEspecificado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: EnumNaoEspecificado
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 12
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0001|O valor 'NaoEspecificado' é inválido pois o campo {0} é obrigatório.\")]\nEnumNaoEspecificado = 0"
+    content.vb: "<Description(\"EV0001|O valor 'NaoEspecificado' é inválido pois o campo {0} é obrigatório.\")>\nEnumNaoEspecificado = 0"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.GenericArgumentException
+  id: GenericArgumentException
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: GenericArgumentException
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.GenericArgumentException
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: GenericArgumentException
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 15
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0002|O valor informado não é valido.\")]\nGenericArgumentException = 1"
+    content.vb: "<Description(\"EV0002|O valor informado não é valido.\")>\nGenericArgumentException = 1"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ReadOnlyClass
+  id: ReadOnlyClass
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: ReadOnlyClass
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ReadOnlyClass
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ReadOnlyClass
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 18
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0003|A Nota Fiscal Eletrônica não pode ser modificada por estar em modo somente-leitura.\")]\nReadOnlyClass = 2"
+    content.vb: "<Description(\"EV0003|A Nota Fiscal Eletrônica não pode ser modificada por estar em modo somente-leitura.\")>\nReadOnlyClass = 2"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ValueOutOfRange
+  id: ValueOutOfRange
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: ValueOutOfRange
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ValueOutOfRange
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValueOutOfRange
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0004|O valor informado é inválido.\\r\\nInforme um valor maior ou igual a '{0}' e menor ou igual a '{1}'\")]\nValueOutOfRange = 3"
+    content.vb: "<Description(\"EV0004|O valor informado é inválido.\" & vbCrLf & \"Informe um valor maior ou igual a '{0}' e menor ou igual a '{1}'\")>\nValueOutOfRange = 3"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CNPJInvalido
+  id: CNPJInvalido
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: CNPJInvalido
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CNPJInvalido
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CNPJInvalido
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 25
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0005|O valor informado para o Cnpj não é válido.\")]\nCNPJInvalido = 4"
+    content.vb: "<Description(\"EV0005|O valor informado para o Cnpj não é válido.\")>\nCNPJInvalido = 4"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CPFInvalido
+  id: CPFInvalido
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: CPFInvalido
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CPFInvalido
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CPFInvalido
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 28
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0006|O valor informado para o Cpf não é válido.\")]\nCPFInvalido = 5"
+    content.vb: "<Description(\"EV0006|O valor informado para o Cpf não é válido.\")>\nCPFInvalido = 5"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CNAEInvalido
+  id: CNAEInvalido
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: CNAEInvalido
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CNAEInvalido
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CNAEInvalido
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 31
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0007|O valor informado para o CNAE Fiscal não é válido.\")]\nCNAEInvalido = 6"
+    content.vb: "<Description(\"EV0007|O valor informado para o CNAE Fiscal não é válido.\")>\nCNAEInvalido = 6"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.TelefoneInvalido
+  id: TelefoneInvalido
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: TelefoneInvalido
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.TelefoneInvalido
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TelefoneInvalido
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 34
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0008|O valor informado para o Telefone não é válido.\")]\nTelefoneInvalido = 7"
+    content.vb: "<Description(\"EV0008|O valor informado para o Telefone não é válido.\")>\nTelefoneInvalido = 7"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CFOPInvalido
+  id: CFOPInvalido
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: CFOPInvalido
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CFOPInvalido
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CFOPInvalido
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 37
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0009|O valor informado para o CFOP não é válido.\")]\nCFOPInvalido = 8"
+    content.vb: "<Description(\"EV0009|O valor informado para o CFOP não é válido.\")>\nCFOPInvalido = 8"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.PlacaInvalida
+  id: PlacaInvalida
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: PlacaInvalida
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.PlacaInvalida
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PlacaInvalida
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 40
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0010|O valor informado para a Placa não é válido.\")]\nPlacaInvalida = 9"
+    content.vb: "<Description(\"EV0010|O valor informado para a Placa não é válido.\")>\nPlacaInvalida = 9"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.GTINInvalido
+  id: GTINInvalido
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: GTINInvalido
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.GTINInvalido
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: GTINInvalido
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 43
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0011|O código GTIN (Global Trade Item Number, antigo código EAN) informado não é válido.\")]\nGTINInvalido = 10"
+    content.vb: "<Description(\"EV0011|O código GTIN (Global Trade Item Number, antigo código EAN) informado não é válido.\")>\nGTINInvalido = 10"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeTipoCalculo
+  id: NotCanChangeTipoCalculo
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: NotCanChangeTipoCalculo
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeTipoCalculo
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NotCanChangeTipoCalculo
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 46
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0012|O Tipo da Alíquota e da Base de Cálculo não pode ser modificada para Situação Tributária informada ({0}).\")]\nNotCanChangeTipoCalculo = 11"
+    content.vb: "<Description(\"EV0012|O Tipo da Alíquota e da Base de Cálculo não pode ser modificada para Situação Tributária informada ({0}).\")>\nNotCanChangeTipoCalculo = 11"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeBaseCalculo
+  id: NotCanChangeBaseCalculo
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: NotCanChangeBaseCalculo
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeBaseCalculo
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NotCanChangeBaseCalculo
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 51
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0013|A Base de Cálculo não pode ser modificada para Situação Tributária informada ({0}).\")]\nNotCanChangeBaseCalculo = 12"
+    content.vb: "<Description(\"EV0013|A Base de Cálculo não pode ser modificada para Situação Tributária informada ({0}).\")>\nNotCanChangeBaseCalculo = 12"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CodigoExTipiInvalido
+  id: CodigoExTipiInvalido
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: CodigoExTipiInvalido
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CodigoExTipiInvalido
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CodigoExTipiInvalido
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 54
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0014|O Código EX da Tabela de Incidências do IPI não é válido. O valor deve ser numérico, de 2 a 3 caracteres.\")]\nCodigoExTipiInvalido = 13"
+    content.vb: "<Description(\"EV0014|O Código EX da Tabela de Incidências do IPI não é válido. O valor deve ser numérico, de 2 a 3 caracteres.\")>\nCodigoExTipiInvalido = 13"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeAliquota
+  id: NotCanChangeAliquota
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: NotCanChangeAliquota
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeAliquota
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NotCanChangeAliquota
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 59
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0015|A Aliquota não pode ser modificada para Situação Tributária informada ({0}).\")]\nNotCanChangeAliquota = 14"
+    content.vb: "<Description(\"EV0015|A Aliquota não pode ser modificada para Situação Tributária informada ({0}).\")>\nNotCanChangeAliquota = 14"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeValor
+  id: NotCanChangeValor
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: NotCanChangeValor
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeValor
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NotCanChangeValor
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 62
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0016|O Valor não pode ser modificado para Situação Tributária informada ({0}).\")]\nNotCanChangeValor = 15"
+    content.vb: "<Description(\"EV0016|O Valor não pode ser modificado para Situação Tributária informada ({0}).\")>\nNotCanChangeValor = 15"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeModalidadeBaseCalculo
+  id: NotCanChangeModalidadeBaseCalculo
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: NotCanChangeModalidadeBaseCalculo
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeModalidadeBaseCalculo
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NotCanChangeModalidadeBaseCalculo
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 65
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0017|A Modalidade de Base de Cálculo não pode ser modificada para Situação Tributária informada ({0}).\")]\nNotCanChangeModalidadeBaseCalculo = 16"
+    content.vb: "<Description(\"EV0017|A Modalidade de Base de Cálculo não pode ser modificada para Situação Tributária informada ({0}).\")>\nNotCanChangeModalidadeBaseCalculo = 16"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangePercentualReducaoBaseCalculo
+  id: NotCanChangePercentualReducaoBaseCalculo
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: NotCanChangePercentualReducaoBaseCalculo
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangePercentualReducaoBaseCalculo
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NotCanChangePercentualReducaoBaseCalculo
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 69
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0018|O Percentual de Redução de Base de Cálculo não pode ser modificado para Situação Tributária informada ({0}).\")]\nNotCanChangePercentualReducaoBaseCalculo = 17"
+    content.vb: "<Description(\"EV0018|O Percentual de Redução de Base de Cálculo não pode ser modificado para Situação Tributária informada ({0}).\")>\nNotCanChangePercentualReducaoBaseCalculo = 17"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangePercentualMargemValorAdicionado
+  id: NotCanChangePercentualMargemValorAdicionado
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: NotCanChangePercentualMargemValorAdicionado
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangePercentualMargemValorAdicionado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NotCanChangePercentualMargemValorAdicionado
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 74
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0019|O Percentual de Margem de Valor Adicionado não pode ser modificado para Situação Tributária informada ({0}).\")]\nNotCanChangePercentualMargemValorAdicionado = 18"
+    content.vb: "<Description(\"EV0019|O Percentual de Margem de Valor Adicionado não pode ser modificado para Situação Tributária informada ({0}).\")>\nNotCanChangePercentualMargemValorAdicionado = 18"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeBaseCalculoTipoCalculo
+  id: NotCanChangeBaseCalculoTipoCalculo
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: NotCanChangeBaseCalculoTipoCalculo
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeBaseCalculoTipoCalculo
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NotCanChangeBaseCalculoTipoCalculo
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 79
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0020|A Base de Cálculo não pode ser modificada para o Tipo de Cálculo informado ({0}).\")]\nNotCanChangeBaseCalculoTipoCalculo = 19"
+    content.vb: "<Description(\"EV0020|A Base de Cálculo não pode ser modificada para o Tipo de Cálculo informado ({0}).\")>\nNotCanChangeBaseCalculoTipoCalculo = 19"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeAliquotaTipoCalculo
+  id: NotCanChangeAliquotaTipoCalculo
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: NotCanChangeAliquotaTipoCalculo
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeAliquotaTipoCalculo
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NotCanChangeAliquotaTipoCalculo
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 82
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0021|A Aliquota não pode ser modificada para o Tipo de Cálculo informado ({0}).\")]\nNotCanChangeAliquotaTipoCalculo = 20"
+    content.vb: "<Description(\"EV0021|A Aliquota não pode ser modificada para o Tipo de Cálculo informado ({0}).\")>\nNotCanChangeAliquotaTipoCalculo = 20"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeQuantidadeTipoCalculo
+  id: NotCanChangeQuantidadeTipoCalculo
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: NotCanChangeQuantidadeTipoCalculo
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeQuantidadeTipoCalculo
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NotCanChangeQuantidadeTipoCalculo
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 85
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0022|A Quantidade não pode ser modificada para o Tipo de Cálculo informado ({0}).\")]\nNotCanChangeQuantidadeTipoCalculo = 21"
+    content.vb: "<Description(\"EV0022|A Quantidade não pode ser modificada para o Tipo de Cálculo informado ({0}).\")>\nNotCanChangeQuantidadeTipoCalculo = 21"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeValorUnidadeTipoCalculo
+  id: NotCanChangeValorUnidadeTipoCalculo
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: NotCanChangeValorUnidadeTipoCalculo
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NotCanChangeValorUnidadeTipoCalculo
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NotCanChangeValorUnidadeTipoCalculo
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 88
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0023|O Valor por Unidade não pode ser modificado para o Tipo de Cálculo informado ({0}).\")]\nNotCanChangeValorUnidadeTipoCalculo = 22"
+    content.vb: "<Description(\"EV0023|O Valor por Unidade não pode ser modificado para o Tipo de Cálculo informado ({0}).\")>\nNotCanChangeValorUnidadeTipoCalculo = 22"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CampoNaoPreenchido
+  id: CampoNaoPreenchido
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: CampoNaoPreenchido
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CampoNaoPreenchido
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CampoNaoPreenchido
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 91
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0025|O campo '{0}' não foi informado.\")]\nCampoNaoPreenchido = 23"
+    content.vb: "<Description(\"EV0025|O campo '{0}' não foi informado.\")>\nCampoNaoPreenchido = 23"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CEPInvalido
+  id: CEPInvalido
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: CEPInvalido
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CEPInvalido
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CEPInvalido
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 94
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0026|O valor informado para o CEP não é válido.\")]\nCEPInvalido = 24"
+    content.vb: "<Description(\"EV0026|O valor informado para o CEP não é válido.\")>\nCEPInvalido = 24"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CollectionMinValue
+  id: CollectionMinValue
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: CollectionMinValue
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CollectionMinValue
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CollectionMinValue
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 97
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0027|A quantidade de itens é inválida.\\r\\nInforme mais de '{0}' itens nesta coleção.\")]\nCollectionMinValue = 25"
+    content.vb: "<Description(\"EV0027|A quantidade de itens é inválida.\" & vbCrLf & \"Informe mais de '{0}' itens nesta coleção.\")>\nCollectionMinValue = 25"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CollectionMaxValue
+  id: CollectionMaxValue
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: CollectionMaxValue
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CollectionMaxValue
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CollectionMaxValue
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 100
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0028|A quantidade de itens é inválida.\\r\\nInforme menos de '{0}' itens nesta coleção.\")]\nCollectionMaxValue = 26"
+    content.vb: "<Description(\"EV0028|A quantidade de itens é inválida.\" & vbCrLf & \"Informe menos de '{0}' itens nesta coleção.\")>\nCollectionMaxValue = 26"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CPFouCNPJObrigatorio
+  id: CPFouCNPJObrigatorio
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: CPFouCNPJObrigatorio
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CPFouCNPJObrigatorio
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CPFouCNPJObrigatorio
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 103
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0029|O campo Cpf ou o campo Cnpj não foi informado.\")]\nCPFouCNPJObrigatorio = 27"
+    content.vb: "<Description(\"EV0029|O campo Cpf ou o campo Cnpj não foi informado.\")>\nCPFouCNPJObrigatorio = 27"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CodigoRENAVAMInvalido
+  id: CodigoRENAVAMInvalido
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: CodigoRENAVAMInvalido
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CodigoRENAVAMInvalido
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CodigoRENAVAMInvalido
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 106
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0030|O código RENAVAM informado não é válido.\")]\nCodigoRENAVAMInvalido = 28"
+    content.vb: "<Description(\"EV0030|O código RENAVAM informado não é válido.\")>\nCodigoRENAVAMInvalido = 28"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NCMInvalido
+  id: NCMInvalido
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: NCMInvalido
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NCMInvalido
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NCMInvalido
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 109
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0031|O código NCM (Nomeclatura Comum do Mercosul) informado não é válido.\")]\nNCMInvalido = 29"
+    content.vb: "<Description(\"EV0031|O código NCM (Nomeclatura Comum do Mercosul) informado não é válido.\")>\nNCMInvalido = 29"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ConflitoICMSISSQN
+  id: ConflitoICMSISSQN
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: ConflitoICMSISSQN
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ConflitoICMSISSQN
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ConflitoICMSISSQN
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 112
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0032|Não é possivel preencher o tipo de imposto ICMS pois já existem informações sobre o imposto ISSQN. Apenas um dos dois pode ser usado.\")]\nConflitoICMSISSQN = 30"
+    content.vb: "<Description(\"EV0032|Não é possivel preencher o tipo de imposto ICMS pois já existem informações sobre o imposto ISSQN. Apenas um dos dois pode ser usado.\")>\nConflitoICMSISSQN = 30"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ConflitoIPIISSQN
+  id: ConflitoIPIISSQN
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: ConflitoIPIISSQN
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ConflitoIPIISSQN
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ConflitoIPIISSQN
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 117
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0033|Não é possivel preencher o tipo de imposto IPI pois já existem informações sobre o imposto ISSQN. Apenas um dos dois pode ser usado.\")]\nConflitoIPIISSQN = 31"
+    content.vb: "<Description(\"EV0033|Não é possivel preencher o tipo de imposto IPI pois já existem informações sobre o imposto ISSQN. Apenas um dos dois pode ser usado.\")>\nConflitoIPIISSQN = 31"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ConflitoIIISSQN
+  id: ConflitoIIISSQN
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: ConflitoIIISSQN
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ConflitoIIISSQN
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ConflitoIIISSQN
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 122
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0034|Não é possivel preencher o tipo de imposto II pois já existem informações sobre o imposto ISSQN. Apenas um dos dois pode ser usado.\")]\nConflitoIIISSQN = 32"
+    content.vb: "<Description(\"EV0034|Não é possivel preencher o tipo de imposto II pois já existem informações sobre o imposto ISSQN. Apenas um dos dois pode ser usado.\")>\nConflitoIIISSQN = 32"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ConflitoISSQNICMS
+  id: ConflitoISSQNICMS
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: ConflitoISSQNICMS
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ConflitoISSQNICMS
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ConflitoISSQNICMS
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 127
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0035|Não é possivel preencher o tipo de imposto ISSQN pois já existem informações sobre o imposto ICMS. Apenas um dos dois pode ser usado.\")]\nConflitoISSQNICMS = 33"
+    content.vb: "<Description(\"EV0035|Não é possivel preencher o tipo de imposto ISSQN pois já existem informações sobre o imposto ICMS. Apenas um dos dois pode ser usado.\")>\nConflitoISSQNICMS = 33"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ConflitoISSQNIPI
+  id: ConflitoISSQNIPI
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: ConflitoISSQNIPI
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ConflitoISSQNIPI
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ConflitoISSQNIPI
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 132
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0036|Não é possivel preencher o tipo de imposto ISSQN pois já existem informações sobre o imposto IPI. Apenas um dos dois pode ser usado.\")]\nConflitoISSQNIPI = 34"
+    content.vb: "<Description(\"EV0036|Não é possivel preencher o tipo de imposto ISSQN pois já existem informações sobre o imposto IPI. Apenas um dos dois pode ser usado.\")>\nConflitoISSQNIPI = 34"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ConflitoISSQNII
+  id: ConflitoISSQNII
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: ConflitoISSQNII
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ConflitoISSQNII
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ConflitoISSQNII
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 137
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0037|Não é possivel preencher o tipo de imposto ISSQN pois já existem informações sobre o imposto II. Apenas um dos dois pode ser usado.\")]\nConflitoISSQNII = 35"
+    content.vb: "<Description(\"EV0037|Não é possivel preencher o tipo de imposto ISSQN pois já existem informações sobre o imposto II. Apenas um dos dois pode ser usado.\")>\nConflitoISSQNII = 35"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.InscricaoEstadualDestinatario
+  id: InscricaoEstadualDestinatario
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: InscricaoEstadualDestinatario
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.InscricaoEstadualDestinatario
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: InscricaoEstadualDestinatario
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 142
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0038|O valor informado para Inscrição Estadual do Destinatário é inválido.\")]\nInscricaoEstadualDestinatario = 36"
+    content.vb: "<Description(\"EV0038|O valor informado para Inscrição Estadual do Destinatário é inválido.\")>\nInscricaoEstadualDestinatario = 36"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CstNaoPermitidoNoContexto
+  id: CstNaoPermitidoNoContexto
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: CstNaoPermitidoNoContexto
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.CstNaoPermitidoNoContexto
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CstNaoPermitidoNoContexto
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 145
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0039|O CST informado não é permitido no contexto.\")]\nCstNaoPermitidoNoContexto = 37"
+    content.vb: "<Description(\"EV0039|O CST informado não é permitido no contexto.\")>\nCstNaoPermitidoNoContexto = 37"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NVEInvalido
+  id: NVEInvalido
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: NVEInvalido
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.NVEInvalido
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NVEInvalido
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 148
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV0040|O código NVE (Nomeclatura de Valor Aduaneiro e Estatístico) informado não é válido.\")]\nNVEInvalido = 38"
+    content.vb: "<Description(\"EV0040|O código NVE (Nomeclatura de Valor Aduaneiro e Estatístico) informado não é válido.\")>\nNVEInvalido = 38"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ExcecaoNaoTratada
+  id: ExcecaoNaoTratada
+  parent: NotaFiscalNet.Core.Validacao.ChaveErroValidacao
+  langs:
+  - csharp
+  - vb
+  name: ExcecaoNaoTratada
+  fullName: NotaFiscalNet.Core.Validacao.ChaveErroValidacao.ExcecaoNaoTratada
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ExcecaoNaoTratada
+    path: src/NotaFiscalNet.Core/Validacao/ChaveErroValidacao.cs
+    startLine: 151
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao
+  syntax:
+    content: "[Description(\"EV9000|Exceção não tratada.\")]\nExcecaoNaoTratada = 39"
+    content.vb: "<Description(\"EV9000|Exceção não tratada.\")>\nExcecaoNaoTratada = 39"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core.Validacao
+  isExternal: false
+  name: NotaFiscalNet.Core.Validacao
+  fullName: NotaFiscalNet.Core.Validacao

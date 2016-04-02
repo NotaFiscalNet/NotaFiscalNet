@@ -1,0 +1,503 @@
+items:
+- uid: NotaFiscalNet.Core.SituacaoTributariaIPI
+  id: SituacaoTributariaIPI
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.SituacaoTributariaIPI.EntradaComRecuperacaoCredito
+  - NotaFiscalNet.Core.SituacaoTributariaIPI.EntradaComSuspensao
+  - NotaFiscalNet.Core.SituacaoTributariaIPI.EntradaImune
+  - NotaFiscalNet.Core.SituacaoTributariaIPI.EntradaIsenta
+  - NotaFiscalNet.Core.SituacaoTributariaIPI.EntradaNaoTributada
+  - NotaFiscalNet.Core.SituacaoTributariaIPI.EntradaTributadaAliqZero
+  - NotaFiscalNet.Core.SituacaoTributariaIPI.NaoEspecificado
+  - NotaFiscalNet.Core.SituacaoTributariaIPI.OutrasEntradas
+  - NotaFiscalNet.Core.SituacaoTributariaIPI.OutrasSaidas
+  - NotaFiscalNet.Core.SituacaoTributariaIPI.SaidaComSuspensao
+  - NotaFiscalNet.Core.SituacaoTributariaIPI.SaidaImune
+  - NotaFiscalNet.Core.SituacaoTributariaIPI.SaidaIsenta
+  - NotaFiscalNet.Core.SituacaoTributariaIPI.SaidaNaoTributada
+  - NotaFiscalNet.Core.SituacaoTributariaIPI.SaidaTributada
+  - NotaFiscalNet.Core.SituacaoTributariaIPI.SaidaTributadaAliqZero
+  langs:
+  - csharp
+  - vb
+  name: SituacaoTributariaIPI
+  fullName: NotaFiscalNet.Core.SituacaoTributariaIPI
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SituacaoTributariaIPI
+    path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nLista dos Códigos de Situação Tributária (CST) do IPI.\r\n"
+  example: []
+  syntax:
+    content: public enum SituacaoTributariaIPI
+    content.vb: Public Enum SituacaoTributariaIPI
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.SituacaoTributariaIPI.NaoEspecificado
+  id: NaoEspecificado
+  parent: NotaFiscalNet.Core.SituacaoTributariaIPI
+  langs:
+  - csharp
+  - vb
+  name: NaoEspecificado
+  fullName: NotaFiscalNet.Core.SituacaoTributariaIPI.NaoEspecificado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoEspecificado
+    path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+    startLine: 13
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nNão Informado\r\n"
+  example: []
+  syntax:
+    content: NaoEspecificado = -1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaIPI.EntradaComRecuperacaoCredito
+  id: EntradaComRecuperacaoCredito
+  parent: NotaFiscalNet.Core.SituacaoTributariaIPI
+  langs:
+  - csharp
+  - vb
+  name: EntradaComRecuperacaoCredito
+  fullName: NotaFiscalNet.Core.SituacaoTributariaIPI.EntradaComRecuperacaoCredito
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: EntradaComRecuperacaoCredito
+    path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+    startLine: 18
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n00 - Entrada com Recuperação de Crédito.\r\n"
+  example: []
+  syntax:
+    content: EntradaComRecuperacaoCredito = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaIPI.EntradaTributadaAliqZero
+  id: EntradaTributadaAliqZero
+  parent: NotaFiscalNet.Core.SituacaoTributariaIPI
+  langs:
+  - csharp
+  - vb
+  name: EntradaTributadaAliqZero
+  fullName: NotaFiscalNet.Core.SituacaoTributariaIPI.EntradaTributadaAliqZero
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: EntradaTributadaAliqZero
+    path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+    startLine: 23
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n01 - Entrada Tributada com Alíquota Zero.\r\n"
+  example: []
+  syntax:
+    content: EntradaTributadaAliqZero = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaIPI.EntradaIsenta
+  id: EntradaIsenta
+  parent: NotaFiscalNet.Core.SituacaoTributariaIPI
+  langs:
+  - csharp
+  - vb
+  name: EntradaIsenta
+  fullName: NotaFiscalNet.Core.SituacaoTributariaIPI.EntradaIsenta
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: EntradaIsenta
+    path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+    startLine: 28
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n02 - Entrada Isenta.\r\n"
+  example: []
+  syntax:
+    content: EntradaIsenta = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaIPI.EntradaNaoTributada
+  id: EntradaNaoTributada
+  parent: NotaFiscalNet.Core.SituacaoTributariaIPI
+  langs:
+  - csharp
+  - vb
+  name: EntradaNaoTributada
+  fullName: NotaFiscalNet.Core.SituacaoTributariaIPI.EntradaNaoTributada
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: EntradaNaoTributada
+    path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+    startLine: 33
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n03 - Entrada Não-Tributada.\r\n"
+  example: []
+  syntax:
+    content: EntradaNaoTributada = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaIPI.EntradaImune
+  id: EntradaImune
+  parent: NotaFiscalNet.Core.SituacaoTributariaIPI
+  langs:
+  - csharp
+  - vb
+  name: EntradaImune
+  fullName: NotaFiscalNet.Core.SituacaoTributariaIPI.EntradaImune
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: EntradaImune
+    path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+    startLine: 38
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n04 - Entrada Imune.\r\n"
+  example: []
+  syntax:
+    content: EntradaImune = 4
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaIPI.EntradaComSuspensao
+  id: EntradaComSuspensao
+  parent: NotaFiscalNet.Core.SituacaoTributariaIPI
+  langs:
+  - csharp
+  - vb
+  name: EntradaComSuspensao
+  fullName: NotaFiscalNet.Core.SituacaoTributariaIPI.EntradaComSuspensao
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: EntradaComSuspensao
+    path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+    startLine: 43
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n05 - Entrada com suspensão\r\n"
+  example: []
+  syntax:
+    content: EntradaComSuspensao = 5
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaIPI.OutrasEntradas
+  id: OutrasEntradas
+  parent: NotaFiscalNet.Core.SituacaoTributariaIPI
+  langs:
+  - csharp
+  - vb
+  name: OutrasEntradas
+  fullName: NotaFiscalNet.Core.SituacaoTributariaIPI.OutrasEntradas
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: OutrasEntradas
+    path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+    startLine: 48
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n49 - Outras entradas\r\n"
+  example: []
+  syntax:
+    content: OutrasEntradas = 49
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaIPI.SaidaTributada
+  id: SaidaTributada
+  parent: NotaFiscalNet.Core.SituacaoTributariaIPI
+  langs:
+  - csharp
+  - vb
+  name: SaidaTributada
+  fullName: NotaFiscalNet.Core.SituacaoTributariaIPI.SaidaTributada
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SaidaTributada
+    path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+    startLine: 53
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n50 - Saída Tributada\r\n"
+  example: []
+  syntax:
+    content: SaidaTributada = 50
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaIPI.SaidaTributadaAliqZero
+  id: SaidaTributadaAliqZero
+  parent: NotaFiscalNet.Core.SituacaoTributariaIPI
+  langs:
+  - csharp
+  - vb
+  name: SaidaTributadaAliqZero
+  fullName: NotaFiscalNet.Core.SituacaoTributariaIPI.SaidaTributadaAliqZero
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SaidaTributadaAliqZero
+    path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+    startLine: 58
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n51 - Saída tributada com alíquota zero.\r\n"
+  example: []
+  syntax:
+    content: SaidaTributadaAliqZero = 51
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaIPI.SaidaIsenta
+  id: SaidaIsenta
+  parent: NotaFiscalNet.Core.SituacaoTributariaIPI
+  langs:
+  - csharp
+  - vb
+  name: SaidaIsenta
+  fullName: NotaFiscalNet.Core.SituacaoTributariaIPI.SaidaIsenta
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SaidaIsenta
+    path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+    startLine: 63
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n52 - Saída Isenta.\r\n"
+  example: []
+  syntax:
+    content: SaidaIsenta = 52
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaIPI.SaidaNaoTributada
+  id: SaidaNaoTributada
+  parent: NotaFiscalNet.Core.SituacaoTributariaIPI
+  langs:
+  - csharp
+  - vb
+  name: SaidaNaoTributada
+  fullName: NotaFiscalNet.Core.SituacaoTributariaIPI.SaidaNaoTributada
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SaidaNaoTributada
+    path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+    startLine: 68
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n53 - Saída Não-Tributada.\r\n"
+  example: []
+  syntax:
+    content: SaidaNaoTributada = 53
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaIPI.SaidaImune
+  id: SaidaImune
+  parent: NotaFiscalNet.Core.SituacaoTributariaIPI
+  langs:
+  - csharp
+  - vb
+  name: SaidaImune
+  fullName: NotaFiscalNet.Core.SituacaoTributariaIPI.SaidaImune
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SaidaImune
+    path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+    startLine: 73
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n54 - Saída Imune.\r\n"
+  example: []
+  syntax:
+    content: SaidaImune = 54
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaIPI.SaidaComSuspensao
+  id: SaidaComSuspensao
+  parent: NotaFiscalNet.Core.SituacaoTributariaIPI
+  langs:
+  - csharp
+  - vb
+  name: SaidaComSuspensao
+  fullName: NotaFiscalNet.Core.SituacaoTributariaIPI.SaidaComSuspensao
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SaidaComSuspensao
+    path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+    startLine: 78
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n55 - Saída com suspensão.\r\n"
+  example: []
+  syntax:
+    content: SaidaComSuspensao = 55
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.SituacaoTributariaIPI.OutrasSaidas
+  id: OutrasSaidas
+  parent: NotaFiscalNet.Core.SituacaoTributariaIPI
+  langs:
+  - csharp
+  - vb
+  name: OutrasSaidas
+  fullName: NotaFiscalNet.Core.SituacaoTributariaIPI.OutrasSaidas
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: OutrasSaidas
+    path: src/NotaFiscalNet.Core/SituacaoTributariaIPI.cs
+    startLine: 83
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n99 - Outras Saídas\r\n"
+  example: []
+  syntax:
+    content: OutrasSaidas = 99
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

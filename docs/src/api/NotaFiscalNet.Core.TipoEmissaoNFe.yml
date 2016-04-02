@@ -1,0 +1,286 @@
+items:
+- uid: NotaFiscalNet.Core.TipoEmissaoNFe
+  id: TipoEmissaoNFe
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.TipoEmissaoNFe.Contingencia
+  - NotaFiscalNet.Core.TipoEmissaoNFe.ContingenciaOffLineNfce
+  - NotaFiscalNet.Core.TipoEmissaoNFe.DeclaracaoPrevia
+  - NotaFiscalNet.Core.TipoEmissaoNFe.FormularioSeguranca
+  - NotaFiscalNet.Core.TipoEmissaoNFe.Normal
+  - NotaFiscalNet.Core.TipoEmissaoNFe.SefazVirtualAmbienteNacional
+  - NotaFiscalNet.Core.TipoEmissaoNFe.SefazVirtualRioGrandeDoSul
+  - NotaFiscalNet.Core.TipoEmissaoNFe.SistemaContigenciaAmbienteNacional
+  langs:
+  - csharp
+  - vb
+  name: TipoEmissaoNFe
+  fullName: NotaFiscalNet.Core.TipoEmissaoNFe
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoEmissaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoEmissaoNFe
+    path: src/NotaFiscalNet.Core/TipoEmissaoNFe.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nTipo de emissão da Nota Fiscal Eletrônica.\r\n"
+  example: []
+  syntax:
+    content: public enum TipoEmissaoNFe
+    content.vb: Public Enum TipoEmissaoNFe
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.TipoEmissaoNFe.Normal
+  id: Normal
+  parent: NotaFiscalNet.Core.TipoEmissaoNFe
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  fullName: NotaFiscalNet.Core.TipoEmissaoNFe.Normal
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoEmissaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Normal
+    path: src/NotaFiscalNet.Core/TipoEmissaoNFe.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n1 - Emissão normal com transmissão on-line da NF-e para a SEFAZ de origem.\r\n"
+  example: []
+  syntax:
+    content: Normal = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoEmissaoNFe.Contingencia
+  id: Contingencia
+  parent: NotaFiscalNet.Core.TipoEmissaoNFe
+  langs:
+  - csharp
+  - vb
+  name: Contingencia
+  fullName: NotaFiscalNet.Core.TipoEmissaoNFe.Contingencia
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoEmissaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Contingencia
+    path: src/NotaFiscalNet.Core/TipoEmissaoNFe.cs
+    startLine: 17
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n2 - Emissão em contingência FS-IA, com impressão do DANFE em formulário de segurança e\r\nposterior transmissão da NF-e para a SEFAZ de origem.\r\n"
+  example: []
+  syntax:
+    content: Contingencia = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoEmissaoNFe.SistemaContigenciaAmbienteNacional
+  id: SistemaContigenciaAmbienteNacional
+  parent: NotaFiscalNet.Core.TipoEmissaoNFe
+  langs:
+  - csharp
+  - vb
+  name: SistemaContigenciaAmbienteNacional
+  fullName: NotaFiscalNet.Core.TipoEmissaoNFe.SistemaContigenciaAmbienteNacional
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoEmissaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SistemaContigenciaAmbienteNacional
+    path: src/NotaFiscalNet.Core/TipoEmissaoNFe.cs
+    startLine: 22
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n3 - Emissão em contingência no SCAN (Sistema de Contingência do Ambiente Nacional).\r\n"
+  example: []
+  syntax:
+    content: SistemaContigenciaAmbienteNacional = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoEmissaoNFe.DeclaracaoPrevia
+  id: DeclaracaoPrevia
+  parent: NotaFiscalNet.Core.TipoEmissaoNFe
+  langs:
+  - csharp
+  - vb
+  name: DeclaracaoPrevia
+  fullName: NotaFiscalNet.Core.TipoEmissaoNFe.DeclaracaoPrevia
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoEmissaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DeclaracaoPrevia
+    path: src/NotaFiscalNet.Core/TipoEmissaoNFe.cs
+    startLine: 27
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n4 - Emissão em contingência com DEPC (Declaração Prévia de Emissão em Contingência).\r\n"
+  example: []
+  syntax:
+    content: DeclaracaoPrevia = 4
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoEmissaoNFe.FormularioSeguranca
+  id: FormularioSeguranca
+  parent: NotaFiscalNet.Core.TipoEmissaoNFe
+  langs:
+  - csharp
+  - vb
+  name: FormularioSeguranca
+  fullName: NotaFiscalNet.Core.TipoEmissaoNFe.FormularioSeguranca
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoEmissaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: FormularioSeguranca
+    path: src/NotaFiscalNet.Core/TipoEmissaoNFe.cs
+    startLine: 32
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n5 - Emissão em contingência no FSDA.\r\n"
+  example: []
+  syntax:
+    content: FormularioSeguranca = 5
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoEmissaoNFe.SefazVirtualAmbienteNacional
+  id: SefazVirtualAmbienteNacional
+  parent: NotaFiscalNet.Core.TipoEmissaoNFe
+  langs:
+  - csharp
+  - vb
+  name: SefazVirtualAmbienteNacional
+  fullName: NotaFiscalNet.Core.TipoEmissaoNFe.SefazVirtualAmbienteNacional
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoEmissaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SefazVirtualAmbienteNacional
+    path: src/NotaFiscalNet.Core/TipoEmissaoNFe.cs
+    startLine: 37
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n6 - Contingência SVC-AN (SEFAZ Virtual de Contingência do AN).\r\n"
+  example: []
+  syntax:
+    content: SefazVirtualAmbienteNacional = 6
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoEmissaoNFe.SefazVirtualRioGrandeDoSul
+  id: SefazVirtualRioGrandeDoSul
+  parent: NotaFiscalNet.Core.TipoEmissaoNFe
+  langs:
+  - csharp
+  - vb
+  name: SefazVirtualRioGrandeDoSul
+  fullName: NotaFiscalNet.Core.TipoEmissaoNFe.SefazVirtualRioGrandeDoSul
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoEmissaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SefazVirtualRioGrandeDoSul
+    path: src/NotaFiscalNet.Core/TipoEmissaoNFe.cs
+    startLine: 42
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n7 - Contingência SVC-RS (SEFAZ Virtual de Contingência do RS).\r\n"
+  example: []
+  syntax:
+    content: SefazVirtualRioGrandeDoSul = 7
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoEmissaoNFe.ContingenciaOffLineNfce
+  id: ContingenciaOffLineNfce
+  parent: NotaFiscalNet.Core.TipoEmissaoNFe
+  langs:
+  - csharp
+  - vb
+  name: ContingenciaOffLineNfce
+  fullName: NotaFiscalNet.Core.TipoEmissaoNFe.ContingenciaOffLineNfce
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoEmissaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ContingenciaOffLineNfce
+    path: src/NotaFiscalNet.Core/TipoEmissaoNFe.cs
+    startLine: 50
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n9 - Contingência off-line da NFC-e (as demais opções de contingência são válidas também\r\npara a NFC-e).\r\nNota: As opções de contingência 3, 4, 6 e 7 (SCAn, DPEC e SVC) não estão disponíveis no\r\n      momento atual.\r\n"
+  example: []
+  syntax:
+    content: ContingenciaOffLineNfce = 9
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

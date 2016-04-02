@@ -1,0 +1,253 @@
+items:
+- uid: NotaFiscalNet.Core.IndicadorExigibilidadeIss
+  id: IndicadorExigibilidadeIss
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.IndicadorExigibilidadeIss.Exigivel
+  - NotaFiscalNet.Core.IndicadorExigibilidadeIss.Exportacao
+  - NotaFiscalNet.Core.IndicadorExigibilidadeIss.Imunidade
+  - NotaFiscalNet.Core.IndicadorExigibilidadeIss.Isencao
+  - NotaFiscalNet.Core.IndicadorExigibilidadeIss.NaoIncidente
+  - NotaFiscalNet.Core.IndicadorExigibilidadeIss.SuspensaoAdministrativa
+  - NotaFiscalNet.Core.IndicadorExigibilidadeIss.SuspensaoJudicial
+  langs:
+  - csharp
+  - vb
+  name: IndicadorExigibilidadeIss
+  fullName: NotaFiscalNet.Core.IndicadorExigibilidadeIss
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IndicadorExigibilidadeIss.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: IndicadorExigibilidadeIss
+    path: src/NotaFiscalNet.Core/IndicadorExigibilidadeIss.cs
+    startLine: 2
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public enum IndicadorExigibilidadeIss
+    content.vb: Public Enum IndicadorExigibilidadeIss
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.IndicadorExigibilidadeIss.Exigivel
+  id: Exigivel
+  parent: NotaFiscalNet.Core.IndicadorExigibilidadeIss
+  langs:
+  - csharp
+  - vb
+  name: Exigivel
+  fullName: NotaFiscalNet.Core.IndicadorExigibilidadeIss.Exigivel
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IndicadorExigibilidadeIss.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Exigivel
+    path: src/NotaFiscalNet.Core/IndicadorExigibilidadeIss.cs
+    startLine: 7
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n1 - Exigível.\r\n"
+  example: []
+  syntax:
+    content: Exigivel = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.IndicadorExigibilidadeIss.NaoIncidente
+  id: NaoIncidente
+  parent: NotaFiscalNet.Core.IndicadorExigibilidadeIss
+  langs:
+  - csharp
+  - vb
+  name: NaoIncidente
+  fullName: NotaFiscalNet.Core.IndicadorExigibilidadeIss.NaoIncidente
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IndicadorExigibilidadeIss.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoIncidente
+    path: src/NotaFiscalNet.Core/IndicadorExigibilidadeIss.cs
+    startLine: 12
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n2 - Não Incidente.\r\n"
+  example: []
+  syntax:
+    content: NaoIncidente = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.IndicadorExigibilidadeIss.Isencao
+  id: Isencao
+  parent: NotaFiscalNet.Core.IndicadorExigibilidadeIss
+  langs:
+  - csharp
+  - vb
+  name: Isencao
+  fullName: NotaFiscalNet.Core.IndicadorExigibilidadeIss.Isencao
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IndicadorExigibilidadeIss.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Isencao
+    path: src/NotaFiscalNet.Core/IndicadorExigibilidadeIss.cs
+    startLine: 17
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n3 - Isenção.\r\n"
+  example: []
+  syntax:
+    content: Isencao = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.IndicadorExigibilidadeIss.Exportacao
+  id: Exportacao
+  parent: NotaFiscalNet.Core.IndicadorExigibilidadeIss
+  langs:
+  - csharp
+  - vb
+  name: Exportacao
+  fullName: NotaFiscalNet.Core.IndicadorExigibilidadeIss.Exportacao
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IndicadorExigibilidadeIss.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Exportacao
+    path: src/NotaFiscalNet.Core/IndicadorExigibilidadeIss.cs
+    startLine: 22
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n4 - Exportação;\r\n"
+  example: []
+  syntax:
+    content: Exportacao = 4
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.IndicadorExigibilidadeIss.Imunidade
+  id: Imunidade
+  parent: NotaFiscalNet.Core.IndicadorExigibilidadeIss
+  langs:
+  - csharp
+  - vb
+  name: Imunidade
+  fullName: NotaFiscalNet.Core.IndicadorExigibilidadeIss.Imunidade
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IndicadorExigibilidadeIss.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Imunidade
+    path: src/NotaFiscalNet.Core/IndicadorExigibilidadeIss.cs
+    startLine: 27
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n5 - Imunidade\r\n"
+  example: []
+  syntax:
+    content: Imunidade = 5
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.IndicadorExigibilidadeIss.SuspensaoJudicial
+  id: SuspensaoJudicial
+  parent: NotaFiscalNet.Core.IndicadorExigibilidadeIss
+  langs:
+  - csharp
+  - vb
+  name: SuspensaoJudicial
+  fullName: NotaFiscalNet.Core.IndicadorExigibilidadeIss.SuspensaoJudicial
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IndicadorExigibilidadeIss.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SuspensaoJudicial
+    path: src/NotaFiscalNet.Core/IndicadorExigibilidadeIss.cs
+    startLine: 32
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n6 - Exigibilidade Suspensa por Decisão Judicial.\r\n"
+  example: []
+  syntax:
+    content: SuspensaoJudicial = 6
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.IndicadorExigibilidadeIss.SuspensaoAdministrativa
+  id: SuspensaoAdministrativa
+  parent: NotaFiscalNet.Core.IndicadorExigibilidadeIss
+  langs:
+  - csharp
+  - vb
+  name: SuspensaoAdministrativa
+  fullName: NotaFiscalNet.Core.IndicadorExigibilidadeIss.SuspensaoAdministrativa
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IndicadorExigibilidadeIss.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SuspensaoAdministrativa
+    path: src/NotaFiscalNet.Core/IndicadorExigibilidadeIss.cs
+    startLine: 37
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n7 - Exigibilidade Suspensa por Processo Administrativo.\r\n"
+  example: []
+  syntax:
+    content: SuspensaoAdministrativa = 7
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

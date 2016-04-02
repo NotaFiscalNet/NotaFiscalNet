@@ -1,0 +1,251 @@
+items:
+- uid: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator
+  id: CollectionLengthValidator
+  parent: NotaFiscalNet.Core.Validacao.FluentCustom
+  children:
+  - NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator.#ctor(System.Int32,System.Int32)
+  - NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator.#ctor(System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{System.String}})
+  - NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator.IsValid(PropertyValidatorContext)
+  langs:
+  - csharp
+  - vb
+  name: CollectionLengthValidator
+  fullName: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/CollectionLengthValidator.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CollectionLengthValidator
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/CollectionLengthValidator.cs
+    startLine: 8
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao.FluentCustom
+  syntax:
+    content: 'public class CollectionLengthValidator : PropertyValidator'
+    content.vb: >-
+      Public Class CollectionLengthValidator
+
+          Inherits PropertyValidator
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator
+  langs:
+  - csharp
+  - vb
+  name: CollectionLengthValidator(Int32, Int32)
+  fullName: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator.CollectionLengthValidator(System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/CollectionLengthValidator.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/CollectionLengthValidator.cs
+    startLine: 13
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao.FluentCustom
+  syntax:
+    content: public CollectionLengthValidator(int min, int max)
+    content.vb: Public Sub New(min As Integer, max As Integer)
+    parameters:
+    - id: min
+      type: System.Int32
+    - id: max
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator.#ctor(System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{System.String}})
+  id: '#ctor(System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{System.String}})'
+  parent: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator
+  langs:
+  - csharp
+  - vb
+  name: CollectionLengthValidator(Int32, Int32, Expression<Func<String>>)
+  fullName: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator.CollectionLengthValidator(System.Int32, System.Int32, System.Linq.Expressions.Expression<System.Func<System.String>>)
+  type: Constructor
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/CollectionLengthValidator.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/CollectionLengthValidator.cs
+    startLine: 17
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao.FluentCustom
+  syntax:
+    content: public CollectionLengthValidator(int min, int max, Expression<Func<string>> errorMessageResourceSelector)
+    content.vb: Public Sub New(min As Integer, max As Integer, errorMessageResourceSelector As Expression(Of Func(Of String)))
+    parameters:
+    - id: min
+      type: System.Int32
+    - id: max
+      type: System.Int32
+    - id: errorMessageResourceSelector
+      type: System.Linq.Expressions.Expression{System.Func{System.String}}
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator.CollectionLengthValidator(System.Int32, System.Int32, System.Linq.Expressions.Expression(Of System.Func(Of System.String)))
+  name.vb: CollectionLengthValidator(Int32, Int32, Expression(Of Func(Of String)))
+- uid: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator.IsValid(PropertyValidatorContext)
+  id: IsValid(PropertyValidatorContext)
+  parent: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator
+  langs:
+  - csharp
+  - vb
+  name: IsValid(PropertyValidatorContext)
+  fullName: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator.IsValid(PropertyValidatorContext)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/CollectionLengthValidator.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: IsValid
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/CollectionLengthValidator.cs
+    startLine: 29
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao.FluentCustom
+  syntax:
+    content: protected override bool IsValid(PropertyValidatorContext context)
+    content.vb: Protected Overrides Function IsValid(context As PropertyValidatorContext) As Boolean
+    parameters:
+    - id: context
+      type: PropertyValidatorContext
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: NotaFiscalNet.Core.Validacao.FluentCustom
+  isExternal: false
+  name: NotaFiscalNet.Core.Validacao.FluentCustom
+  fullName: NotaFiscalNet.Core.Validacao.FluentCustom
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Linq.Expressions.Expression{System.Func{System.String}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  name: Expression<Func<String>>
+  fullName: System.Linq.Expressions.Expression<System.Func<System.String>>
+  fullname.vb: System.Linq.Expressions.Expression(Of System.Func(Of System.String))
+  name.vb: Expression(Of Func(Of String))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Func`1
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`1
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Linq.Expressions.Expression`1
+  parent: System.Linq.Expressions
+  isExternal: true
+  name: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  fullname.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TDelegate
+    fullName: TDelegate
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TDelegate
+    fullName: TDelegate
+  - name: )
+    fullName: )
+- uid: System.Linq.Expressions
+  isExternal: false
+  name: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+- uid: PropertyValidatorContext
+  isExternal: true
+  name: PropertyValidatorContext
+  fullName: PropertyValidatorContext
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

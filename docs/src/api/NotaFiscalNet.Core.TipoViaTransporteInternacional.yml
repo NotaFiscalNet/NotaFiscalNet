@@ -1,0 +1,346 @@
+items:
+- uid: NotaFiscalNet.Core.TipoViaTransporteInternacional
+  id: TipoViaTransporteInternacional
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.TipoViaTransporteInternacional.Aerea
+  - NotaFiscalNet.Core.TipoViaTransporteInternacional.Conduto
+  - NotaFiscalNet.Core.TipoViaTransporteInternacional.EntradaSaidaFicta
+  - NotaFiscalNet.Core.TipoViaTransporteInternacional.Ferroviaria
+  - NotaFiscalNet.Core.TipoViaTransporteInternacional.Fluvial
+  - NotaFiscalNet.Core.TipoViaTransporteInternacional.Lacustre
+  - NotaFiscalNet.Core.TipoViaTransporteInternacional.Maritima
+  - NotaFiscalNet.Core.TipoViaTransporteInternacional.MeiosProprios
+  - NotaFiscalNet.Core.TipoViaTransporteInternacional.Postal
+  - NotaFiscalNet.Core.TipoViaTransporteInternacional.Rodoviaria
+  langs:
+  - csharp
+  - vb
+  name: TipoViaTransporteInternacional
+  fullName: NotaFiscalNet.Core.TipoViaTransporteInternacional
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoViaTransporteInternacional.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoViaTransporteInternacional
+    path: src/NotaFiscalNet.Core/TipoViaTransporteInternacional.cs
+    startLine: 2
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public enum TipoViaTransporteInternacional
+    content.vb: Public Enum TipoViaTransporteInternacional
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.TipoViaTransporteInternacional.Maritima
+  id: Maritima
+  parent: NotaFiscalNet.Core.TipoViaTransporteInternacional
+  langs:
+  - csharp
+  - vb
+  name: Maritima
+  fullName: NotaFiscalNet.Core.TipoViaTransporteInternacional.Maritima
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoViaTransporteInternacional.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Maritima
+    path: src/NotaFiscalNet.Core/TipoViaTransporteInternacional.cs
+    startLine: 7
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n1 - Marítima\r\n"
+  example: []
+  syntax:
+    content: Maritima = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoViaTransporteInternacional.Fluvial
+  id: Fluvial
+  parent: NotaFiscalNet.Core.TipoViaTransporteInternacional
+  langs:
+  - csharp
+  - vb
+  name: Fluvial
+  fullName: NotaFiscalNet.Core.TipoViaTransporteInternacional.Fluvial
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoViaTransporteInternacional.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Fluvial
+    path: src/NotaFiscalNet.Core/TipoViaTransporteInternacional.cs
+    startLine: 12
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n2 - Fluvial.\r\n"
+  example: []
+  syntax:
+    content: Fluvial = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoViaTransporteInternacional.Lacustre
+  id: Lacustre
+  parent: NotaFiscalNet.Core.TipoViaTransporteInternacional
+  langs:
+  - csharp
+  - vb
+  name: Lacustre
+  fullName: NotaFiscalNet.Core.TipoViaTransporteInternacional.Lacustre
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoViaTransporteInternacional.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Lacustre
+    path: src/NotaFiscalNet.Core/TipoViaTransporteInternacional.cs
+    startLine: 17
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n3 - Lacustre.\r\n"
+  example: []
+  syntax:
+    content: Lacustre = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoViaTransporteInternacional.Aerea
+  id: Aerea
+  parent: NotaFiscalNet.Core.TipoViaTransporteInternacional
+  langs:
+  - csharp
+  - vb
+  name: Aerea
+  fullName: NotaFiscalNet.Core.TipoViaTransporteInternacional.Aerea
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoViaTransporteInternacional.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Aerea
+    path: src/NotaFiscalNet.Core/TipoViaTransporteInternacional.cs
+    startLine: 22
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n4 - Aérea.\r\n"
+  example: []
+  syntax:
+    content: Aerea = 4
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoViaTransporteInternacional.Postal
+  id: Postal
+  parent: NotaFiscalNet.Core.TipoViaTransporteInternacional
+  langs:
+  - csharp
+  - vb
+  name: Postal
+  fullName: NotaFiscalNet.Core.TipoViaTransporteInternacional.Postal
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoViaTransporteInternacional.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Postal
+    path: src/NotaFiscalNet.Core/TipoViaTransporteInternacional.cs
+    startLine: 27
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n5 - Postal.\r\n"
+  example: []
+  syntax:
+    content: Postal = 5
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoViaTransporteInternacional.Ferroviaria
+  id: Ferroviaria
+  parent: NotaFiscalNet.Core.TipoViaTransporteInternacional
+  langs:
+  - csharp
+  - vb
+  name: Ferroviaria
+  fullName: NotaFiscalNet.Core.TipoViaTransporteInternacional.Ferroviaria
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoViaTransporteInternacional.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Ferroviaria
+    path: src/NotaFiscalNet.Core/TipoViaTransporteInternacional.cs
+    startLine: 32
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n6 - Ferroviária.\r\n"
+  example: []
+  syntax:
+    content: Ferroviaria = 6
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoViaTransporteInternacional.Rodoviaria
+  id: Rodoviaria
+  parent: NotaFiscalNet.Core.TipoViaTransporteInternacional
+  langs:
+  - csharp
+  - vb
+  name: Rodoviaria
+  fullName: NotaFiscalNet.Core.TipoViaTransporteInternacional.Rodoviaria
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoViaTransporteInternacional.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Rodoviaria
+    path: src/NotaFiscalNet.Core/TipoViaTransporteInternacional.cs
+    startLine: 37
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n7 - Rodoviária.\r\n"
+  example: []
+  syntax:
+    content: Rodoviaria = 7
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoViaTransporteInternacional.Conduto
+  id: Conduto
+  parent: NotaFiscalNet.Core.TipoViaTransporteInternacional
+  langs:
+  - csharp
+  - vb
+  name: Conduto
+  fullName: NotaFiscalNet.Core.TipoViaTransporteInternacional.Conduto
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoViaTransporteInternacional.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Conduto
+    path: src/NotaFiscalNet.Core/TipoViaTransporteInternacional.cs
+    startLine: 42
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n8 - Conduto/Rede Transmissão.\r\n"
+  example: []
+  syntax:
+    content: Conduto = 8
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoViaTransporteInternacional.MeiosProprios
+  id: MeiosProprios
+  parent: NotaFiscalNet.Core.TipoViaTransporteInternacional
+  langs:
+  - csharp
+  - vb
+  name: MeiosProprios
+  fullName: NotaFiscalNet.Core.TipoViaTransporteInternacional.MeiosProprios
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoViaTransporteInternacional.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: MeiosProprios
+    path: src/NotaFiscalNet.Core/TipoViaTransporteInternacional.cs
+    startLine: 47
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n9 - Meios Próprios.\r\n"
+  example: []
+  syntax:
+    content: MeiosProprios = 9
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoViaTransporteInternacional.EntradaSaidaFicta
+  id: EntradaSaidaFicta
+  parent: NotaFiscalNet.Core.TipoViaTransporteInternacional
+  langs:
+  - csharp
+  - vb
+  name: EntradaSaidaFicta
+  fullName: NotaFiscalNet.Core.TipoViaTransporteInternacional.EntradaSaidaFicta
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoViaTransporteInternacional.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: EntradaSaidaFicta
+    path: src/NotaFiscalNet.Core/TipoViaTransporteInternacional.cs
+    startLine: 52
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n10 - Entrada/Saída Ficta.\r\n"
+  example: []
+  syntax:
+    content: EntradaSaidaFicta = 10
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

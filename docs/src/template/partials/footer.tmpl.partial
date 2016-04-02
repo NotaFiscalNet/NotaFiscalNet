@@ -1,0 +1,13 @@
+
+
+<footer>
+  <div class="grad-bottom"></div>
+  <div class="footer">
+    <div class="container">
+      <span class="pull-right">
+        <a href="#top">Voltar ao topo</a>
+      </span>
+      <span>Copyright © 2016 NotaFiscal.net<br>Gerado por <strong>DocFX</strong></span>
+    </div>
+  </div>
+</footer>

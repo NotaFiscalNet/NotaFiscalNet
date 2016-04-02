@@ -1,0 +1,123 @@
+items:
+- uid: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionExactLengthValidator
+  id: CollectionExactLengthValidator
+  parent: NotaFiscalNet.Core.Validacao.FluentCustom
+  children:
+  - NotaFiscalNet.Core.Validacao.FluentCustom.CollectionExactLengthValidator.#ctor(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: CollectionExactLengthValidator
+  fullName: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionExactLengthValidator
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/CollectionExactLengthValidator.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CollectionExactLengthValidator
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/CollectionExactLengthValidator.cs
+    startLine: 4
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao.FluentCustom
+  syntax:
+    content: 'public class CollectionExactLengthValidator : CollectionLengthValidator'
+    content.vb: >-
+      Public Class CollectionExactLengthValidator
+
+          Inherits CollectionLengthValidator
+  inheritance:
+  - System.Object
+  - NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator
+  inheritedMembers:
+  - NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator.IsValid(PropertyValidatorContext)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionExactLengthValidator.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionExactLengthValidator
+  langs:
+  - csharp
+  - vb
+  name: CollectionExactLengthValidator(Int32)
+  fullName: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionExactLengthValidator.CollectionExactLengthValidator(System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Validacao/FluentCustom/CollectionExactLengthValidator.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: src/NotaFiscalNet.Core/Validacao/FluentCustom/CollectionExactLengthValidator.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Validacao.FluentCustom
+  syntax:
+    content: public CollectionExactLengthValidator(int length)
+    content.vb: Public Sub New(length As Integer)
+    parameters:
+    - id: length
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core.Validacao.FluentCustom
+  isExternal: false
+  name: NotaFiscalNet.Core.Validacao.FluentCustom
+  fullName: NotaFiscalNet.Core.Validacao.FluentCustom
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator
+  parent: NotaFiscalNet.Core.Validacao.FluentCustom
+  isExternal: false
+  name: CollectionLengthValidator
+  fullName: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator
+- uid: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator.IsValid(PropertyValidatorContext)
+  parent: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator
+  isExternal: true
+  name: IsValid(PropertyValidatorContext)
+  fullName: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator.IsValid(PropertyValidatorContext)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator.IsValid(PropertyValidatorContext)
+    name: IsValid
+    fullName: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator.IsValid
+  - name: (
+    fullName: (
+  - uid: PropertyValidatorContext
+    name: PropertyValidatorContext
+    fullName: PropertyValidatorContext
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator.IsValid(PropertyValidatorContext)
+    name: IsValid
+    fullName: NotaFiscalNet.Core.Validacao.FluentCustom.CollectionLengthValidator.IsValid
+  - name: (
+    fullName: (
+  - uid: PropertyValidatorContext
+    name: PropertyValidatorContext
+    fullName: PropertyValidatorContext
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

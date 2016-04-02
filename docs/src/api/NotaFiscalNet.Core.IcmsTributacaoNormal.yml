@@ -1,0 +1,380 @@
+items:
+- uid: NotaFiscalNet.Core.IcmsTributacaoNormal
+  id: IcmsTributacaoNormal
+  parent: NotaFiscalNet.Core
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IcmsTributacaoNormal
+  fullName: NotaFiscalNet.Core.IcmsTributacaoNormal
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/IcmsTributacaoNormal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: IcmsTributacaoNormal
+    path: src/NotaFiscalNet.Core/IcmsTributacaoNormal.cs
+    startLine: 2
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: 'public abstract class IcmsTributacaoNormal : Icms, ISerializavel'
+    content.vb: >-
+      Public MustInherit Class IcmsTributacaoNormal
+
+          Inherits Icms
+
+          Implements ISerializavel
+  inheritance:
+  - System.Object
+  - NotaFiscalNet.Core.Icms
+  implements:
+  - NotaFiscalNet.Core.Interfaces.ISerializavel
+  inheritedMembers:
+  - NotaFiscalNet.Core.Icms.Origem
+  - NotaFiscalNet.Core.Icms.CST
+  - NotaFiscalNet.Core.Icms.Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  - NotaFiscalNet.Core.Icms.SerializeInternal(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: NotaFiscalNet.Core.Icms
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: Icms
+  fullName: NotaFiscalNet.Core.Icms
+- uid: NotaFiscalNet.Core.Interfaces.ISerializavel
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: ISerializavel
+  fullName: NotaFiscalNet.Core.Interfaces.ISerializavel
+- uid: NotaFiscalNet.Core.Icms.Origem
+  parent: NotaFiscalNet.Core.Icms
+  isExternal: false
+  name: Origem
+  fullName: NotaFiscalNet.Core.Icms.Origem
+- uid: NotaFiscalNet.Core.Icms.CST
+  parent: NotaFiscalNet.Core.Icms
+  isExternal: false
+  name: CST
+  fullName: NotaFiscalNet.Core.Icms.CST
+- uid: NotaFiscalNet.Core.Icms.Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  parent: NotaFiscalNet.Core.Icms
+  isExternal: true
+  name: Serializar(XmlWriter, INFe)
+  fullName: NotaFiscalNet.Core.Icms.Serializar(System.Xml.XmlWriter, NotaFiscalNet.Core.INFe)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.Icms.Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+    name: Serializar
+    fullName: NotaFiscalNet.Core.Icms.Serializar
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: NotaFiscalNet.Core.INFe
+    name: INFe
+    fullName: NotaFiscalNet.Core.INFe
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.Icms.Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+    name: Serializar
+    fullName: NotaFiscalNet.Core.Icms.Serializar
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: NotaFiscalNet.Core.INFe
+    name: INFe
+    fullName: NotaFiscalNet.Core.INFe
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.Icms.SerializeInternal(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  parent: NotaFiscalNet.Core.Icms
+  isExternal: true
+  name: SerializeInternal(XmlWriter, INFe)
+  fullName: NotaFiscalNet.Core.Icms.SerializeInternal(System.Xml.XmlWriter, NotaFiscalNet.Core.INFe)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.Icms.SerializeInternal(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+    name: SerializeInternal
+    fullName: NotaFiscalNet.Core.Icms.SerializeInternal
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: NotaFiscalNet.Core.INFe
+    name: INFe
+    fullName: NotaFiscalNet.Core.INFe
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: NotaFiscalNet.Core.Icms.SerializeInternal(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+    name: SerializeInternal
+    fullName: NotaFiscalNet.Core.Icms.SerializeInternal
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: NotaFiscalNet.Core.INFe
+    name: INFe
+    fullName: NotaFiscalNet.Core.INFe
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: NotaFiscalNet.Core.Interfaces
+  fullName: NotaFiscalNet.Core.Interfaces

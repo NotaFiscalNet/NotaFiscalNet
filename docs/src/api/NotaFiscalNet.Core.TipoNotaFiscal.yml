@@ -1,0 +1,100 @@
+items:
+- uid: NotaFiscalNet.Core.TipoNotaFiscal
+  id: TipoNotaFiscal
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.TipoNotaFiscal.Entrada
+  - NotaFiscalNet.Core.TipoNotaFiscal.Saida
+  langs:
+  - csharp
+  - vb
+  name: TipoNotaFiscal
+  fullName: NotaFiscalNet.Core.TipoNotaFiscal
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoNotaFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoNotaFiscal
+    path: src/NotaFiscalNet.Core/TipoNotaFiscal.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nEspecifica o tipo da Nota Fical.\r\n"
+  example: []
+  syntax:
+    content: public enum TipoNotaFiscal
+    content.vb: Public Enum TipoNotaFiscal
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.TipoNotaFiscal.Entrada
+  id: Entrada
+  parent: NotaFiscalNet.Core.TipoNotaFiscal
+  langs:
+  - csharp
+  - vb
+  name: Entrada
+  fullName: NotaFiscalNet.Core.TipoNotaFiscal.Entrada
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoNotaFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Entrada
+    path: src/NotaFiscalNet.Core/TipoNotaFiscal.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nNota Fiscal de Entrada (0).\r\n"
+  example: []
+  syntax:
+    content: Entrada = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoNotaFiscal.Saida
+  id: Saida
+  parent: NotaFiscalNet.Core.TipoNotaFiscal
+  langs:
+  - csharp
+  - vb
+  name: Saida
+  fullName: NotaFiscalNet.Core.TipoNotaFiscal.Saida
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoNotaFiscal.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Saida
+    path: src/NotaFiscalNet.Core/TipoNotaFiscal.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nNota Fiscal de Saída (1).\r\n"
+  example: []
+  syntax:
+    content: Saida = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

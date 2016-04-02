@@ -1,0 +1,85 @@
+items:
+- uid: NotaFiscalNet.Core.Interfaces.ISomenteLeitura
+  id: ISomenteLeitura
+  parent: NotaFiscalNet.Core.Interfaces
+  children:
+  - NotaFiscalNet.Core.Interfaces.ISomenteLeitura.SomenteLeitura
+  langs:
+  - csharp
+  - vb
+  name: ISomenteLeitura
+  fullName: NotaFiscalNet.Core.Interfaces.ISomenteLeitura
+  type: Interface
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Interfaces/ISomenteLeitura.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ISomenteLeitura
+    path: src/NotaFiscalNet.Core/Interfaces/ISomenteLeitura.cs
+    startLine: 5
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Interfaces
+  summary: "\r\nInterface que define a estrutura de um tipo que pode conter a situação de Apenas-Leitura.\r\n"
+  example: []
+  syntax:
+    content: public interface ISomenteLeitura
+    content.vb: Public Interface ISomenteLeitura
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: NotaFiscalNet.Core.Interfaces.ISomenteLeitura.SomenteLeitura
+  id: SomenteLeitura
+  parent: NotaFiscalNet.Core.Interfaces.ISomenteLeitura
+  langs:
+  - csharp
+  - vb
+  name: SomenteLeitura
+  fullName: NotaFiscalNet.Core.Interfaces.ISomenteLeitura.SomenteLeitura
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Interfaces/ISomenteLeitura.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SomenteLeitura
+    path: src/NotaFiscalNet.Core/Interfaces/ISomenteLeitura.cs
+    startLine: 7
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Interfaces
+  syntax:
+    content: >-
+      bool SomenteLeitura
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property SomenteLeitura As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: NotaFiscalNet.Core.Interfaces
+  fullName: NotaFiscalNet.Core.Interfaces
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

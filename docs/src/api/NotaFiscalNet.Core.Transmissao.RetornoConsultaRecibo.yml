@@ -1,0 +1,699 @@
+items:
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo
+  id: RetornoConsultaRecibo
+  parent: NotaFiscalNet.Core.Transmissao
+  children:
+  - NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.#ctor(System.String)
+  - NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.Ambiente
+  - NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.Motivo
+  - NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.NumeroRecibo
+  - NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.Protocolos
+  - NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.SalvarXml(System.String)
+  - NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.Status
+  - NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.UFIBGE
+  - NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.VersaoAplicacao
+  - NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.VersaoLeiaute
+  langs:
+  - csharp
+  - vb
+  name: RetornoConsultaRecibo
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaRecibo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: RetornoConsultaRecibo
+    path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaRecibo.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRepresenta o Retorno da Consulta de Recibo de Entrega de Lote de Notas Fiscais Eletrônicas.\r\n"
+  example: []
+  syntax:
+    content: public sealed class RetornoConsultaRecibo
+    content.vb: Public NotInheritable Class RetornoConsultaRecibo
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo
+  langs:
+  - csharp
+  - vb
+  name: RetornoConsultaRecibo(String)
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.RetornoConsultaRecibo(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaRecibo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: .ctor
+    path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaRecibo.cs
+    startLine: 13
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: public RetornoConsultaRecibo(string xmlRetornoConsultaRecibo)
+    content.vb: Public Sub New(xmlRetornoConsultaRecibo As String)
+    parameters:
+    - id: xmlRetornoConsultaRecibo
+      type: System.String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.Ambiente
+  id: Ambiente
+  parent: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo
+  langs:
+  - csharp
+  - vb
+  name: Ambiente
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.Ambiente
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaRecibo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Ambiente
+    path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaRecibo.cs
+    startLine: 71
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRetorna o valor indicando o tipo de ambiente que o retorno se refere.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public TipoAmbiente Ambiente
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Ambiente As TipoAmbiente
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoAmbiente
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.VersaoLeiaute
+  id: VersaoLeiaute
+  parent: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo
+  langs:
+  - csharp
+  - vb
+  name: VersaoLeiaute
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.VersaoLeiaute
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaRecibo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: VersaoLeiaute
+    path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaRecibo.cs
+    startLine: 76
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRetorna a versão do leiaute de retorno do recibo.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string VersaoLeiaute
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property VersaoLeiaute As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.VersaoAplicacao
+  id: VersaoAplicacao
+  parent: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo
+  langs:
+  - csharp
+  - vb
+  name: VersaoAplicacao
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.VersaoAplicacao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaRecibo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: VersaoAplicacao
+    path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaRecibo.cs
+    startLine: 81
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRetorna a versão da aplicação que processa o lote.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string VersaoAplicacao
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property VersaoAplicacao As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.Status
+  id: Status
+  parent: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo
+  langs:
+  - csharp
+  - vb
+  name: Status
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.Status
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaRecibo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Status
+    path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaRecibo.cs
+    startLine: 86
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRetorna o código do status de envio do lote.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string Status
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Status As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.Motivo
+  id: Motivo
+  parent: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo
+  langs:
+  - csharp
+  - vb
+  name: Motivo
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.Motivo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaRecibo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Motivo
+    path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaRecibo.cs
+    startLine: 91
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRetorna a descrição referente ao código do status de envio do lote.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string Motivo
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Motivo As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.UFIBGE
+  id: UFIBGE
+  parent: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo
+  langs:
+  - csharp
+  - vb
+  name: UFIBGE
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.UFIBGE
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaRecibo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: UFIBGE
+    path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaRecibo.cs
+    startLine: 96
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRetorna a código da UF IBGE onde o lote foi entregue.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public UfIBGE UFIBGE
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property UFIBGE As UfIBGE
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.UfIBGE
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.NumeroRecibo
+  id: NumeroRecibo
+  parent: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo
+  langs:
+  - csharp
+  - vb
+  name: NumeroRecibo
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.NumeroRecibo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaRecibo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NumeroRecibo
+    path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaRecibo.cs
+    startLine: 101
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRetorna o número do recibo consultado.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long NumeroRecibo
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property NumeroRecibo As Long
+    parameters: []
+    return:
+      type: System.Int64
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.Protocolos
+  id: Protocolos
+  parent: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo
+  langs:
+  - csharp
+  - vb
+  name: Protocolos
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.Protocolos
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaRecibo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Protocolos
+    path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaRecibo.cs
+    startLine: 106
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRetorna a lista de Protocolos referente as Notas Fiscais Eletrônicas contidas no lote.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public ProtocoloStatusProcessamentoCollection Protocolos
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Protocolos As ProtocoloStatusProcessamentoCollection
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.Transmissao.ProtocoloStatusProcessamentoCollection
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.SalvarXml(System.String)
+  id: SalvarXml(System.String)
+  parent: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo
+  langs:
+  - csharp
+  - vb
+  name: SalvarXml(String)
+  fullName: NotaFiscalNet.Core.Transmissao.RetornoConsultaRecibo.SalvarXml(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaRecibo.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SalvarXml
+    path: src/NotaFiscalNet.Core/Transmissao/RetornoConsultaRecibo.cs
+    startLine: 113
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nSalva o recibo de entrega do Lote de Notas Fiscais Eletrônicas em um arquivo xml.\r\n"
+  remarks: "O arquivo terá o seguinte nome: [NúmeroRecibo]-rec.xml."
+  example: []
+  syntax:
+    content: public void SalvarXml(string caminho)
+    content.vb: Public Sub SalvarXml(caminho As String)
+    parameters:
+    - id: caminho
+      type: System.String
+      description: "Caminho onde o arquivo será salvo."
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core.Transmissao
+  isExternal: false
+  name: NotaFiscalNet.Core.Transmissao
+  fullName: NotaFiscalNet.Core.Transmissao
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: NotaFiscalNet.Core.TipoAmbiente
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoAmbiente
+  fullName: NotaFiscalNet.Core.TipoAmbiente
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: NotaFiscalNet.Core.UfIBGE
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: UfIBGE
+  fullName: NotaFiscalNet.Core.UfIBGE
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: NotaFiscalNet.Core.Transmissao.ProtocoloStatusProcessamentoCollection
+  parent: NotaFiscalNet.Core.Transmissao
+  isExternal: false
+  name: ProtocoloStatusProcessamentoCollection
+  fullName: NotaFiscalNet.Core.Transmissao.ProtocoloStatusProcessamentoCollection

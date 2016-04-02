@@ -1,0 +1,888 @@
+items:
+- uid: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe
+  id: PedidoInutilizacaoNFe
+  parent: NotaFiscalNet.Core.Transmissao
+  children:
+  - NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.Ambiente
+  - NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.Ano
+  - NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.CarregarXml(System.String)
+  - NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.CNPJ
+  - NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.GerarXmlNaoAssinado(System.Boolean)
+  - NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.Id
+  - NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.IsReadOnly
+  - NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.Justificativa
+  - NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.ModeloDocumentoFiscal
+  - NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.NumeracaoFinalNF
+  - NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.NumeracaoInicialNF
+  - NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.Serie
+  - NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.Servico
+  - NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.UFIBGE
+  langs:
+  - csharp
+  - vb
+  name: PedidoInutilizacaoNFe
+  fullName: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PedidoInutilizacaoNFe
+    path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+    startLine: 9
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  syntax:
+    content: public sealed class PedidoInutilizacaoNFe
+    content.vb: Public NotInheritable Class PedidoInutilizacaoNFe
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.Id
+  id: Id
+  parent: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: Id
+  fullName: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.Id
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Id
+    path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+    startLine: 30
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRetorna a chave identificadora usada na assinatura digital xml.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string Id
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Id As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.Ambiente
+  id: Ambiente
+  parent: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: Ambiente
+  fullName: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.Ambiente
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Ambiente
+    path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+    startLine: 50
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRetorna ou define o valor indicando o tipo de ambiente para onde será enviado o pedido.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public TipoAmbiente Ambiente
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Ambiente As TipoAmbiente
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TipoAmbiente
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.Servico
+  id: Servico
+  parent: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: Servico
+  fullName: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.Servico
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Servico
+    path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+    startLine: 63
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRetorna o nome interno do serviço.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string Servico
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Servico As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.UFIBGE
+  id: UFIBGE
+  parent: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: UFIBGE
+  fullName: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.UFIBGE
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: UFIBGE
+    path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+    startLine: 68
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRetorna ou define o código da UF IBGE do emitente.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public UfIBGE UFIBGE
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property UFIBGE As UfIBGE
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.UfIBGE
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.Ano
+  id: Ano
+  parent: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: Ano
+  fullName: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.Ano
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Ano
+    path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+    startLine: 88
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRetorna ou define o ano de inutilização da numeração. Informar apenas o ano com 2 dígitos.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int Ano
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Ano As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.CNPJ
+  id: CNPJ
+  parent: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: CNPJ
+  fullName: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.CNPJ
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CNPJ
+    path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+    startLine: 103
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRetorna ou define o número do Cnpj do emitente. Informar apenas números.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string CNPJ
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property CNPJ As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.ModeloDocumentoFiscal
+  id: ModeloDocumentoFiscal
+  parent: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: ModeloDocumentoFiscal
+  fullName: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.ModeloDocumentoFiscal
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ModeloDocumentoFiscal
+    path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+    startLine: 118
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRetorna o Modelo do Documento Fiscal que será inutilizado. Retorna sempre 55 (NF-e).\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string ModeloDocumentoFiscal
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property ModeloDocumentoFiscal As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.Serie
+  id: Serie
+  parent: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: Serie
+  fullName: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.Serie
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Serie
+    path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+    startLine: 123
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRetorna ou define a Série da NF-e.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int Serie
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Serie As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.NumeracaoInicialNF
+  id: NumeracaoInicialNF
+  parent: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: NumeracaoInicialNF
+  fullName: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.NumeracaoInicialNF
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NumeracaoInicialNF
+    path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+    startLine: 138
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRetorna ou define a Numeração Inicial da NF-e.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int NumeracaoInicialNF
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property NumeracaoInicialNF As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.NumeracaoFinalNF
+  id: NumeracaoFinalNF
+  parent: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: NumeracaoFinalNF
+  fullName: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.NumeracaoFinalNF
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NumeracaoFinalNF
+    path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+    startLine: 153
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRetorna ou define a Numeração Final da NF-e.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int NumeracaoFinalNF
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property NumeracaoFinalNF As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.Justificativa
+  id: Justificativa
+  parent: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: Justificativa
+  fullName: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.Justificativa
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Justificativa
+    path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+    startLine: 169
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRetorna ou define a Justificativa para a inutilização.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string Justificativa
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Justificativa As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.IsReadOnly
+  id: IsReadOnly
+  parent: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  fullName: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.IsReadOnly
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: IsReadOnly
+    path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+    startLine: 193
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nRetorna o valor indicando se a classe está ou não em modo Somente-Leitura.\r\n"
+  remarks: "\r\nA classe entra em modo Somente-Leitura quando ela é carregada com base em um arquivo xml\r\nassinado digitalmente.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public bool IsReadOnly
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.CarregarXml(System.String)
+  id: CarregarXml(System.String)
+  parent: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: CarregarXml(String)
+  fullName: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.CarregarXml(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CarregarXml
+    path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+    startLine: 203
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nCarrega a classe com base em um arquivo xml de pedido de inutilização.\r\n"
+  remarks: "\r\nApós a classe ter sido carregada com base em um arquivo xml, não será permitido alterar\r\nnenhum campo da classe.\r\n"
+  example: []
+  syntax:
+    content: public void CarregarXml(string caminho)
+    content.vb: Public Sub CarregarXml(caminho As String)
+    parameters:
+    - id: caminho
+      type: System.String
+      description: "Caminho do arquivo contendo o pedido de inutilização."
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.GerarXmlNaoAssinado(System.Boolean)
+  id: GerarXmlNaoAssinado(System.Boolean)
+  parent: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: GerarXmlNaoAssinado(Boolean)
+  fullName: NotaFiscalNet.Core.Transmissao.PedidoInutilizacaoNFe.GerarXmlNaoAssinado(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: GerarXmlNaoAssinado
+    path: src/NotaFiscalNet.Core/Transmissao/PedidoInutilizacaoNFe.cs
+    startLine: 256
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Transmissao
+  summary: "\r\nGera o xml de pedido de inutilização.\r\n"
+  example: []
+  syntax:
+    content: public string GerarXmlNaoAssinado(bool incluirDeclaracaoXml)
+    content.vb: Public Function GerarXmlNaoAssinado(incluirDeclaracaoXml As Boolean) As String
+    parameters:
+    - id: incluirDeclaracaoXml
+      type: System.Boolean
+      description: "\r\nValor indicando se deve ou não incluir no topo do xml a declaração xml padrão.\r\n"
+    return:
+      type: System.String
+      description: "Retorna uma string xml contendo o pedido de inutilização."
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core.Transmissao
+  isExternal: false
+  name: NotaFiscalNet.Core.Transmissao
+  fullName: NotaFiscalNet.Core.Transmissao
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: NotaFiscalNet.Core.TipoAmbiente
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TipoAmbiente
+  fullName: NotaFiscalNet.Core.TipoAmbiente
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: NotaFiscalNet.Core.UfIBGE
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: UfIBGE
+  fullName: NotaFiscalNet.Core.UfIBGE
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

@@ -1,0 +1,1744 @@
+items:
+- uid: NotaFiscalNet.Core.NFe
+  id: NFe
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.NFe.AquisicoesCana
+  - NotaFiscalNet.Core.NFe.AutorizacoesDownloadXml
+  - NotaFiscalNet.Core.NFe.Avulsa
+  - NotaFiscalNet.Core.NFe.ChaveAcesso
+  - NotaFiscalNet.Core.NFe.Cobranca
+  - NotaFiscalNet.Core.NFe.Compras
+  - NotaFiscalNet.Core.NFe.Destinatario
+  - NotaFiscalNet.Core.NFe.DigestValue
+  - NotaFiscalNet.Core.NFe.DigitoVerificadorChaveAcesso
+  - NotaFiscalNet.Core.NFe.Emitente
+  - NotaFiscalNet.Core.NFe.EnderecoEntrega
+  - NotaFiscalNet.Core.NFe.EnderecoRetirada
+  - NotaFiscalNet.Core.NFe.Exportacao
+  - NotaFiscalNet.Core.NFe.GerarXmlNaoAssinado
+  - NotaFiscalNet.Core.NFe.GerarXmlNaoAssinadoSemValidacao
+  - NotaFiscalNet.Core.NFe.Identificacao
+  - NotaFiscalNet.Core.NFe.InformacoesAdicionais
+  - NotaFiscalNet.Core.NFe.Itens
+  - NotaFiscalNet.Core.NFe.Pagamentos
+  - NotaFiscalNet.Core.NFe.Parse(System.String)
+  - NotaFiscalNet.Core.NFe.Parse(System.Xml.Linq.XDocument)
+  - NotaFiscalNet.Core.NFe.Parse(System.Xml.Linq.XDocument,System.Boolean)
+  - NotaFiscalNet.Core.NFe.Parse(System.Xml.Linq.XElement)
+  - NotaFiscalNet.Core.NFe.SalvarXmlNaoAssinado(System.String)
+  - NotaFiscalNet.Core.NFe.Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  - NotaFiscalNet.Core.NFe.Totais
+  - NotaFiscalNet.Core.NFe.Transporte
+  - NotaFiscalNet.Core.NFe.Validar
+  - NotaFiscalNet.Core.NFe.Versao
+  langs:
+  - csharp
+  - vb
+  name: NFe
+  fullName: NotaFiscalNet.Core.NFe
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NFe
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 19
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRepresenta uma Nota Fiscal Eletrônica.\r\n"
+  example: []
+  syntax:
+    content: 'public sealed class NFe : ISerializavel, INFe'
+    content.vb: >-
+      Public NotInheritable Class NFe
+
+          Implements ISerializavel, INFe
+  inheritance:
+  - System.Object
+  implements:
+  - NotaFiscalNet.Core.Interfaces.ISerializavel
+  - NotaFiscalNet.Core.INFe
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: NotaFiscalNet.Core.NFe.Versao
+  id: Versao
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: Versao
+  fullName: NotaFiscalNet.Core.NFe.Versao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Versao
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 40
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[versao] Retorna ou define a Versão do Leiaute NF-e. Ex. 2.0.4, 2.0.3, etc.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "versao", DataType = "TVerNFe", ID = "A02")]
+
+      [CampoValidavel(1, Opcional = true)]
+
+      public string Versao
+
+      {
+
+          get;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="versao", DataType:="TVerNFe", ID:="A02")>
+
+      <CampoValidavel(1, Opcional:=True)>
+
+      Public ReadOnly Property Versao As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.NFe.ChaveAcesso
+  id: ChaveAcesso
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: ChaveAcesso
+  fullName: NotaFiscalNet.Core.NFe.ChaveAcesso
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ChaveAcesso
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 47
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[Id] Retorna a Chave de Acesso da Nota Fiscal Eletrônica.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "Id", DataType = "ID", ID = "A03")]
+
+      [CampoValidavel(2, Opcional = true)]
+
+      public string ChaveAcesso
+
+      {
+
+          get;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="Id", DataType:="ID", ID:="A03")>
+
+      <CampoValidavel(2, Opcional:=True)>
+
+      Public ReadOnly Property ChaveAcesso As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.NFe.DigitoVerificadorChaveAcesso
+  id: DigitoVerificadorChaveAcesso
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: DigitoVerificadorChaveAcesso
+  fullName: NotaFiscalNet.Core.NFe.DigitoVerificadorChaveAcesso
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DigitoVerificadorChaveAcesso
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 89
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[cDV] Retorna o Digito Verificador da Chave de Acesso da Nota Fiscal Eletrônica.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "cDV", DataType = "token", ID = "B23", Pattern = "[0-9]{1}")]
+
+      [CampoValidavel(3, Opcional = true)]
+
+      public int DigitoVerificadorChaveAcesso
+
+      {
+
+          get;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="cDV", DataType:="token", ID:="B23", Pattern:="[0-9]{1}")>
+
+      <CampoValidavel(3, Opcional:=True)>
+
+      Public ReadOnly Property DigitoVerificadorChaveAcesso As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.NFe.Identificacao
+  id: Identificacao
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: Identificacao
+  fullName: NotaFiscalNet.Core.NFe.Identificacao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Identificacao
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 104
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna a referência para o objeto contendo os dados de Identificação da Nota Fiscal Eletrônica.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "ide", ID = "B01")]
+
+      [CampoValidavel(4)]
+
+      public IdentificacaoDocumentoFiscal Identificacao
+
+      {
+
+          get;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="ide", ID:="B01")>
+
+      <CampoValidavel(4)>
+
+      Public ReadOnly Property Identificacao As IdentificacaoDocumentoFiscal
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.NFe.Emitente
+  id: Emitente
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: Emitente
+  fullName: NotaFiscalNet.Core.NFe.Emitente
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Emitente
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 111
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna as informações do Emitente da Nota Fiscal Eletrônica.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "emit", ID = "C01")]
+
+      [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public EmitenteNFe Emitente
+
+      {
+
+          get;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="emit", ID:="C01")>
+
+      <CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public ReadOnly Property Emitente As EmitenteNFe
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.EmitenteNFe
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.NFe.Avulsa
+  id: Avulsa
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: Avulsa
+  fullName: NotaFiscalNet.Core.NFe.Avulsa
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Avulsa
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 119
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna as informações do Fisco emitente da Nota Fiscal Eletrônica Avulsa. <br /> Informar\r\napenas no caso de emissão de Nota Fiscal Eletrônica Avulsa, pelo Fisco Emitente.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "avulsa", ID = "D01", Opcional = true)]
+
+      [CampoValidavel(6, Opcional = true)]
+
+      public Avulsa Avulsa
+
+      {
+
+          get;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="avulsa", ID:="D01", Opcional:=True)>
+
+      <CampoValidavel(6, Opcional:=True)>
+
+      Public ReadOnly Property Avulsa As Avulsa
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.Avulsa
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.NFe.Destinatario
+  id: Destinatario
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: Destinatario
+  fullName: NotaFiscalNet.Core.NFe.Destinatario
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Destinatario
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 126
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna as informações do Destinatário da Nota Fiscal Eletrônica.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "dest", ID = "E01")]
+
+      [CampoValidavel(7, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public DestinatarioNFe Destinatario
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="dest", ID:="E01")>
+
+      <CampoValidavel(7, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public Property Destinatario As DestinatarioNFe
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.DestinatarioNFe
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.NFe.EnderecoRetirada
+  id: EnderecoRetirada
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: EnderecoRetirada
+  fullName: NotaFiscalNet.Core.NFe.EnderecoRetirada
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: EnderecoRetirada
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 133
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna o Endereço de Retirada (endereço de retirada dos produtos) da Nota Fiscal\r\nEletrônica. Informar apenas quando for diferente do Endereço do Remetente. Opcional.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "retirada", ID = "F01", Opcional = true)]
+
+      [CampoValidavel(8, Opcional = true)]
+
+      public EnderecoEmpresa EnderecoRetirada
+
+      {
+
+          get;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="retirada", ID:="F01", Opcional:=True)>
+
+      <CampoValidavel(8, Opcional:=True)>
+
+      Public ReadOnly Property EnderecoRetirada As EnderecoEmpresa
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.EnderecoEmpresa
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.NFe.EnderecoEntrega
+  id: EnderecoEntrega
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: EnderecoEntrega
+  fullName: NotaFiscalNet.Core.NFe.EnderecoEntrega
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: EnderecoEntrega
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 141
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna o Endereço de Entrega (endereço de entrega dos produtos) da Nota Fiscal\r\nEletrônica. Informar apenas quando for diferente do Endereço do Destinatário. Opcional.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "entrega", ID = "G01", Opcional = true)]
+
+      [CampoValidavel(9, Opcional = true)]
+
+      public EnderecoEmpresa EnderecoEntrega
+
+      {
+
+          get;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="entrega", ID:="G01", Opcional:=True)>
+
+      <CampoValidavel(9, Opcional:=True)>
+
+      Public ReadOnly Property EnderecoEntrega As EnderecoEmpresa
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.EnderecoEmpresa
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.NFe.AutorizacoesDownloadXml
+  id: AutorizacoesDownloadXml
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: AutorizacoesDownloadXml
+  fullName: NotaFiscalNet.Core.NFe.AutorizacoesDownloadXml
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: AutorizacoesDownloadXml
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 148
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[autXML] Retorna a lista de Autorizações de Download do XML.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "autXML", ID = "G50", Opcional = true)]
+
+      [CampoValidavel(10, Opcional = true)]
+
+      public AutorizacaoDownloadXmlCollection AutorizacoesDownloadXml
+
+      {
+
+          get;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="autXML", ID:="G50", Opcional:=True)>
+
+      <CampoValidavel(10, Opcional:=True)>
+
+      Public ReadOnly Property AutorizacoesDownloadXml As AutorizacaoDownloadXmlCollection
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.AutorizacaoDownloadXmlCollection
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.NFe.Itens
+  id: Itens
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: Itens
+  fullName: NotaFiscalNet.Core.NFe.Itens
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Itens
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 156
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna a lista de Itens (Produtos ou Serviços) da Nota Fiscal Eletrônica.\r\n"
+  remarks: "A lista pode conter até no máximo 990 itens."
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "det", ID = "H01", MinLength = 1, MaxLength = 990)]
+
+      [CampoValidavel(11, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public ProdutoCollection Itens
+
+      {
+
+          get;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="det", ID:="H01", MinLength:=1, MaxLength:=990)>
+
+      <CampoValidavel(11, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public ReadOnly Property Itens As ProdutoCollection
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.ProdutoCollection
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.NFe.Totais
+  id: Totais
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: Totais
+  fullName: NotaFiscalNet.Core.NFe.Totais
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Totais
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 163
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna as Informações de Totalização da Nota Fiscal Eletrônica.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "total", ID = "W01")]
+
+      [CampoValidavel(12, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public TotalNFe Totais
+
+      {
+
+          get;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="total", ID:="W01")>
+
+      <CampoValidavel(12, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public ReadOnly Property Totais As TotalNFe
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TotalNFe
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.NFe.Transporte
+  id: Transporte
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: Transporte
+  fullName: NotaFiscalNet.Core.NFe.Transporte
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Transporte
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 170
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna as Informações de Transporte da Nota Fiscal Eletrônica.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "transp", ID = "X01")]
+
+      [CampoValidavel(13, ChaveErroValidacao.CampoNaoPreenchido)]
+
+      public TransporteNFe Transporte
+
+      {
+
+          get;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="transp", ID:="X01")>
+
+      <CampoValidavel(13, ChaveErroValidacao.CampoNaoPreenchido)>
+
+      Public ReadOnly Property Transporte As TransporteNFe
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.TransporteNFe
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.NFe.Cobranca
+  id: Cobranca
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: Cobranca
+  fullName: NotaFiscalNet.Core.NFe.Cobranca
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Cobranca
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 177
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna as Informações de Cobrança da Nota Fiscal Eletrônica. Opcional.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "cobr", ID = "Y01", Opcional = true)]
+
+      [CampoValidavel(14, Opcional = true)]
+
+      public CobrancaNFe Cobranca
+
+      {
+
+          get;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="cobr", ID:="Y01", Opcional:=True)>
+
+      <CampoValidavel(14, Opcional:=True)>
+
+      Public ReadOnly Property Cobranca As CobrancaNFe
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.CobrancaNFe
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.NFe.Pagamentos
+  id: Pagamentos
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: Pagamentos
+  fullName: NotaFiscalNet.Core.NFe.Pagamentos
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Pagamentos
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 181
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: >-
+      [NFeField(FieldName = "pag", ID = "YA01", Opcional = true)]
+
+      [CampoValidavel(15, Opcional = true)]
+
+      public PagamentoCollection Pagamentos
+
+      {
+
+          get;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="pag", ID:="YA01", Opcional:=True)>
+
+      <CampoValidavel(15, Opcional:=True)>
+
+      Public ReadOnly Property Pagamentos As PagamentoCollection
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.PagamentoCollection
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.NFe.InformacoesAdicionais
+  id: InformacoesAdicionais
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: InformacoesAdicionais
+  fullName: NotaFiscalNet.Core.NFe.InformacoesAdicionais
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: InformacoesAdicionais
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 188
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna as Informações Adicionais da Nota Fiscal Eletrônica. Opcional.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "infAdic", ID = "Z01", Opcional = true)]
+
+      [CampoValidavel(16, Opcional = true)]
+
+      public InformacoesAdicionaisNFe InformacoesAdicionais
+
+      {
+
+          get;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="infAdic", ID:="Z01", Opcional:=True)>
+
+      <CampoValidavel(16, Opcional:=True)>
+
+      Public ReadOnly Property InformacoesAdicionais As InformacoesAdicionaisNFe
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.InformacoesAdicionaisNFe
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.NFe.Exportacao
+  id: Exportacao
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: Exportacao
+  fullName: NotaFiscalNet.Core.NFe.Exportacao
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Exportacao
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 195
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna as Informações de Exportação da Nota Fiscal Eletrônica. Opcional.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "exporta", ID = "ZA01", Opcional = true)]
+
+      [CampoValidavel(17, Opcional = true)]
+
+      public InformacoesExportacao Exportacao
+
+      {
+
+          get;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="exporta", ID:="ZA01", Opcional:=True)>
+
+      <CampoValidavel(17, Opcional:=True)>
+
+      Public ReadOnly Property Exportacao As InformacoesExportacao
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.InformacoesExportacao
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.NFe.Compras
+  id: Compras
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: Compras
+  fullName: NotaFiscalNet.Core.NFe.Compras
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Compras
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 203
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna as Informações de Compras (Notas de Empenho, Pedido e Contrato) da Nota Fiscal\r\nEletrônica. Opcional.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "compra", ID = "ZA01", Opcional = true)]
+
+      [CampoValidavel(18, Opcional = true)]
+
+      public Compra Compras
+
+      {
+
+          get;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="compra", ID:="ZA01", Opcional:=True)>
+
+      <CampoValidavel(18, Opcional:=True)>
+
+      Public ReadOnly Property Compras As Compra
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.Compra
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.NFe.DigestValue
+  id: DigestValue
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: DigestValue
+  fullName: NotaFiscalNet.Core.NFe.DigestValue
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: DigestValue
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 210
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna ou define o Hash da NFe.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string DigestValue
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property DigestValue As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.NFe.AquisicoesCana
+  id: AquisicoesCana
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: AquisicoesCana
+  fullName: NotaFiscalNet.Core.NFe.AquisicoesCana
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: AquisicoesCana
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 215
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRetorna o valor referente ao registro de aquisições de cana.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public AquisicaoCana AquisicoesCana
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property AquisicoesCana As AquisicaoCana
+    parameters: []
+    return:
+      type: NotaFiscalNet.Core.AquisicaoCana
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: NotaFiscalNet.Core.NFe.Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  id: Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: Serializar(XmlWriter, INFe)
+  fullName: NotaFiscalNet.Core.NFe.Serializar(System.Xml.XmlWriter, NotaFiscalNet.Core.INFe)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Serializar
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 217
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public void Serializar(XmlWriter writer, INFe nfe)
+    content.vb: Public Sub Serializar(writer As XmlWriter, nfe As INFe)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+    - id: nfe
+      type: NotaFiscalNet.Core.INFe
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.NFe.Validar
+  id: Validar
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: Validar()
+  fullName: NotaFiscalNet.Core.NFe.Validar()
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Validar
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 1833
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRealiza a validação da Nota Fiscal Eletrônica preenchida.\r\n"
+  example: []
+  syntax:
+    content: public ResultadoValidacao Validar()
+    content.vb: Public Function Validar As ResultadoValidacao
+    return:
+      type: NotaFiscalNet.Core.Validacao.ResultadoValidacao
+  exceptions:
+  - type: System.Exception
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.NFe.Parse(System.String)
+  id: Parse(System.String)
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: Parse(String)
+  fullName: NotaFiscalNet.Core.NFe.Parse(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Parse
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 1839
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public static NFe Parse(string xml)
+    content.vb: Public Shared Function Parse(xml As String) As NFe
+    parameters:
+    - id: xml
+      type: System.String
+    return:
+      type: NotaFiscalNet.Core.NFe
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.NFe.Parse(System.Xml.Linq.XDocument)
+  id: Parse(System.Xml.Linq.XDocument)
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: Parse(XDocument)
+  fullName: NotaFiscalNet.Core.NFe.Parse(System.Xml.Linq.XDocument)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Parse
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 1848
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public static NFe Parse(XDocument doc)
+    content.vb: Public Shared Function Parse(doc As XDocument) As NFe
+    parameters:
+    - id: doc
+      type: System.Xml.Linq.XDocument
+    return:
+      type: NotaFiscalNet.Core.NFe
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.NFe.Parse(System.Xml.Linq.XDocument,System.Boolean)
+  id: Parse(System.Xml.Linq.XDocument,System.Boolean)
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: Parse(XDocument, Boolean)
+  fullName: NotaFiscalNet.Core.NFe.Parse(System.Xml.Linq.XDocument, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Parse
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 1857
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public static NFe Parse(XDocument doc, bool ignoreSchemaValidation)
+    content.vb: Public Shared Function Parse(doc As XDocument, ignoreSchemaValidation As Boolean) As NFe
+    parameters:
+    - id: doc
+      type: System.Xml.Linq.XDocument
+    - id: ignoreSchemaValidation
+      type: System.Boolean
+    return:
+      type: NotaFiscalNet.Core.NFe
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.NFe.Parse(System.Xml.Linq.XElement)
+  id: Parse(System.Xml.Linq.XElement)
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: Parse(XElement)
+  fullName: NotaFiscalNet.Core.NFe.Parse(System.Xml.Linq.XElement)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Parse
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 1866
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: public static NFe Parse(XElement nfeEl)
+    content.vb: Public Shared Function Parse(nfeEl As XElement) As NFe
+    parameters:
+    - id: nfeEl
+      type: System.Xml.Linq.XElement
+    return:
+      type: NotaFiscalNet.Core.NFe
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: NotaFiscalNet.Core.NFe.GerarXmlNaoAssinado
+  id: GerarXmlNaoAssinado
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: GerarXmlNaoAssinado()
+  fullName: NotaFiscalNet.Core.NFe.GerarXmlNaoAssinado()
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: GerarXmlNaoAssinado
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 1880
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nGera o xml (não assinado) de acordo com o preenchimento da Nota Fiscal Eletrônica.\r\n"
+  example: []
+  syntax:
+    content: public string GerarXmlNaoAssinado()
+    content.vb: Public Function GerarXmlNaoAssinado As String
+    return:
+      type: System.String
+      description: "String xml contendo a Nota Fiscal Eletrônica não assinada."
+  exceptions:
+  - type: System.Exception
+    description: "Causado caso a NF-e não seja válida."
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.NFe.GerarXmlNaoAssinadoSemValidacao
+  id: GerarXmlNaoAssinadoSemValidacao
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: GerarXmlNaoAssinadoSemValidacao()
+  fullName: NotaFiscalNet.Core.NFe.GerarXmlNaoAssinadoSemValidacao()
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: GerarXmlNaoAssinadoSemValidacao
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 1903
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nGera o xml (não assinado) de acordo com o preenchimento da Nota Fiscal Eletrônica, sem\r\nvalidação dos dados.\r\n"
+  example: []
+  syntax:
+    content: public string GerarXmlNaoAssinadoSemValidacao()
+    content.vb: Public Function GerarXmlNaoAssinadoSemValidacao As String
+    return:
+      type: System.String
+      description: "String xml contendo a Nota Fiscal Eletrônica não assinada."
+  exceptions:
+  - type: System.Exception
+    description: "Causado caso a NF-e não seja válida."
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.NFe.SalvarXmlNaoAssinado(System.String)
+  id: SalvarXmlNaoAssinado(System.String)
+  parent: NotaFiscalNet.Core.NFe
+  langs:
+  - csharp
+  - vb
+  name: SalvarXmlNaoAssinado(String)
+  fullName: NotaFiscalNet.Core.NFe.SalvarXmlNaoAssinado(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/NFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SalvarXmlNaoAssinado
+    path: src/NotaFiscalNet.Core/NFe.cs
+    startLine: 1933
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSalva o xml gerado referente a Nota Fiscal Eletrônica sem assinatura digital.\r\n"
+  remarks: "\r\nO nome do arquivo será gerado automaticamente com base na chave de acesso. O seguinte\r\nformato será utilizado: [CHAVE_ACESSO]-nfe.xml.\r\n"
+  example: []
+  syntax:
+    content: public string SalvarXmlNaoAssinado(string caminho)
+    content.vb: Public Function SalvarXmlNaoAssinado(caminho As String) As String
+    parameters:
+    - id: caminho
+      type: System.String
+      description: "Caminho onde o arquivo contendo a NF-e será gravado."
+    return:
+      type: System.String
+      description: "Retorna o nome do arquivo xml contendo a Nota Fiscal Eletrônica assinada."
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: NotaFiscalNet.Core.Interfaces.ISerializavel
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: ISerializavel
+  fullName: NotaFiscalNet.Core.Interfaces.ISerializavel
+- uid: NotaFiscalNet.Core.INFe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: INFe
+  fullName: NotaFiscalNet.Core.INFe
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: NotaFiscalNet.Core.Interfaces
+  fullName: NotaFiscalNet.Core.Interfaces
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: IdentificacaoDocumentoFiscal
+  fullName: NotaFiscalNet.Core.IdentificacaoDocumentoFiscal
+- uid: NotaFiscalNet.Core.EmitenteNFe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: EmitenteNFe
+  fullName: NotaFiscalNet.Core.EmitenteNFe
+- uid: NotaFiscalNet.Core.Avulsa
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: Avulsa
+  fullName: NotaFiscalNet.Core.Avulsa
+- uid: NotaFiscalNet.Core.DestinatarioNFe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: DestinatarioNFe
+  fullName: NotaFiscalNet.Core.DestinatarioNFe
+- uid: NotaFiscalNet.Core.EnderecoEmpresa
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: EnderecoEmpresa
+  fullName: NotaFiscalNet.Core.EnderecoEmpresa
+- uid: NotaFiscalNet.Core.AutorizacaoDownloadXmlCollection
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: AutorizacaoDownloadXmlCollection
+  fullName: NotaFiscalNet.Core.AutorizacaoDownloadXmlCollection
+- uid: NotaFiscalNet.Core.ProdutoCollection
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: ProdutoCollection
+  fullName: NotaFiscalNet.Core.ProdutoCollection
+- uid: NotaFiscalNet.Core.TotalNFe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TotalNFe
+  fullName: NotaFiscalNet.Core.TotalNFe
+- uid: NotaFiscalNet.Core.TransporteNFe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: TransporteNFe
+  fullName: NotaFiscalNet.Core.TransporteNFe
+- uid: NotaFiscalNet.Core.CobrancaNFe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: CobrancaNFe
+  fullName: NotaFiscalNet.Core.CobrancaNFe
+- uid: NotaFiscalNet.Core.PagamentoCollection
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: PagamentoCollection
+  fullName: NotaFiscalNet.Core.PagamentoCollection
+- uid: NotaFiscalNet.Core.InformacoesAdicionaisNFe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: InformacoesAdicionaisNFe
+  fullName: NotaFiscalNet.Core.InformacoesAdicionaisNFe
+- uid: NotaFiscalNet.Core.InformacoesExportacao
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: InformacoesExportacao
+  fullName: NotaFiscalNet.Core.InformacoesExportacao
+- uid: NotaFiscalNet.Core.Compra
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: Compra
+  fullName: NotaFiscalNet.Core.Compra
+- uid: NotaFiscalNet.Core.AquisicaoCana
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: AquisicaoCana
+  fullName: NotaFiscalNet.Core.AquisicaoCana
+- uid: System.Xml.XmlWriter
+  parent: System.Xml
+  isExternal: true
+  name: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  fullName: System.Exception
+- uid: NotaFiscalNet.Core.Validacao.ResultadoValidacao
+  parent: NotaFiscalNet.Core.Validacao
+  isExternal: false
+  name: ResultadoValidacao
+  fullName: NotaFiscalNet.Core.Validacao.ResultadoValidacao
+- uid: NotaFiscalNet.Core.Validacao
+  isExternal: false
+  name: NotaFiscalNet.Core.Validacao
+  fullName: NotaFiscalNet.Core.Validacao
+- uid: NotaFiscalNet.Core.NFe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: NFe
+  fullName: NotaFiscalNet.Core.NFe
+- uid: System.Xml.Linq.XDocument
+  parent: System.Xml.Linq
+  isExternal: true
+  name: XDocument
+  fullName: System.Xml.Linq.XDocument
+- uid: System.Xml.Linq
+  isExternal: false
+  name: System.Xml.Linq
+  fullName: System.Xml.Linq
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Xml.Linq.XElement
+  parent: System.Xml.Linq
+  isExternal: true
+  name: XElement
+  fullName: System.Xml.Linq.XElement

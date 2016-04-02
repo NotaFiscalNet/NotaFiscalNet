@@ -1,0 +1,349 @@
+items:
+- uid: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe
+  id: IPacoteLiberacaoNFe
+  parent: NotaFiscalNet.Core.Schemas
+  children:
+  - NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe.PathEnvEventoCancelamento
+  - NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe.PathEnvEventoCancelamentoNoSig
+  - NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe.PathEnviNFe
+  - NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe.PathInutNFe
+  - NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe.PathInutNFeNoSig
+  - NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe.PathNFe
+  - NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe.PathNFeNoSig
+  - NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe.VersaoLayout
+  langs:
+  - csharp
+  - vb
+  name: IPacoteLiberacaoNFe
+  fullName: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe
+  type: Interface
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Schemas/IPacoteLiberacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: IPacoteLiberacaoNFe
+    path: src/NotaFiscalNet.Core/Schemas/IPacoteLiberacaoNFe.cs
+    startLine: 2
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Schemas
+  syntax:
+    content: public interface IPacoteLiberacaoNFe
+    content.vb: Public Interface IPacoteLiberacaoNFe
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe.VersaoLayout
+  id: VersaoLayout
+  parent: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: VersaoLayout
+  fullName: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe.VersaoLayout
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Schemas/IPacoteLiberacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: VersaoLayout
+    path: src/NotaFiscalNet.Core/Schemas/IPacoteLiberacaoNFe.cs
+    startLine: 4
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Schemas
+  syntax:
+    content: >-
+      string VersaoLayout
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property VersaoLayout As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe.PathNFe
+  id: PathNFe
+  parent: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: PathNFe
+  fullName: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe.PathNFe
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Schemas/IPacoteLiberacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PathNFe
+    path: src/NotaFiscalNet.Core/Schemas/IPacoteLiberacaoNFe.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Schemas
+  syntax:
+    content: >-
+      string PathNFe
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property PathNFe As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe.PathNFeNoSig
+  id: PathNFeNoSig
+  parent: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: PathNFeNoSig
+  fullName: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe.PathNFeNoSig
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Schemas/IPacoteLiberacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PathNFeNoSig
+    path: src/NotaFiscalNet.Core/Schemas/IPacoteLiberacaoNFe.cs
+    startLine: 8
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Schemas
+  syntax:
+    content: >-
+      string PathNFeNoSig
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property PathNFeNoSig As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe.PathEnviNFe
+  id: PathEnviNFe
+  parent: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: PathEnviNFe
+  fullName: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe.PathEnviNFe
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Schemas/IPacoteLiberacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PathEnviNFe
+    path: src/NotaFiscalNet.Core/Schemas/IPacoteLiberacaoNFe.cs
+    startLine: 10
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Schemas
+  syntax:
+    content: >-
+      string PathEnviNFe
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property PathEnviNFe As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe.PathEnvEventoCancelamento
+  id: PathEnvEventoCancelamento
+  parent: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: PathEnvEventoCancelamento
+  fullName: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe.PathEnvEventoCancelamento
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Schemas/IPacoteLiberacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PathEnvEventoCancelamento
+    path: src/NotaFiscalNet.Core/Schemas/IPacoteLiberacaoNFe.cs
+    startLine: 12
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Schemas
+  syntax:
+    content: >-
+      string PathEnvEventoCancelamento
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property PathEnvEventoCancelamento As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe.PathEnvEventoCancelamentoNoSig
+  id: PathEnvEventoCancelamentoNoSig
+  parent: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: PathEnvEventoCancelamentoNoSig
+  fullName: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe.PathEnvEventoCancelamentoNoSig
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Schemas/IPacoteLiberacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PathEnvEventoCancelamentoNoSig
+    path: src/NotaFiscalNet.Core/Schemas/IPacoteLiberacaoNFe.cs
+    startLine: 14
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Schemas
+  syntax:
+    content: >-
+      string PathEnvEventoCancelamentoNoSig
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property PathEnvEventoCancelamentoNoSig As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe.PathInutNFe
+  id: PathInutNFe
+  parent: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: PathInutNFe
+  fullName: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe.PathInutNFe
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Schemas/IPacoteLiberacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PathInutNFe
+    path: src/NotaFiscalNet.Core/Schemas/IPacoteLiberacaoNFe.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Schemas
+  syntax:
+    content: >-
+      string PathInutNFe
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property PathInutNFe As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe.PathInutNFeNoSig
+  id: PathInutNFeNoSig
+  parent: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe
+  langs:
+  - csharp
+  - vb
+  name: PathInutNFeNoSig
+  fullName: NotaFiscalNet.Core.Schemas.IPacoteLiberacaoNFe.PathInutNFeNoSig
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/Schemas/IPacoteLiberacaoNFe.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: PathInutNFeNoSig
+    path: src/NotaFiscalNet.Core/Schemas/IPacoteLiberacaoNFe.cs
+    startLine: 18
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core.Schemas
+  syntax:
+    content: >-
+      string PathInutNFeNoSig
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property PathInutNFeNoSig As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: NotaFiscalNet.Core.Schemas
+  isExternal: false
+  name: NotaFiscalNet.Core.Schemas
+  fullName: NotaFiscalNet.Core.Schemas
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

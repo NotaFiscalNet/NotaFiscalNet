@@ -1,0 +1,162 @@
+items:
+- uid: NotaFiscalNet.Core.CodigoRegimeTributario
+  id: CodigoRegimeTributario
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.CodigoRegimeTributario.NaoInformado
+  - NotaFiscalNet.Core.CodigoRegimeTributario.RegimeNormal
+  - NotaFiscalNet.Core.CodigoRegimeTributario.SimplesNacional
+  - NotaFiscalNet.Core.CodigoRegimeTributario.SimplesNacionalExcessoSublimite
+  langs:
+  - csharp
+  - vb
+  name: CodigoRegimeTributario
+  fullName: NotaFiscalNet.Core.CodigoRegimeTributario
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/CodigoRegimeTributario.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: CodigoRegimeTributario
+    path: src/NotaFiscalNet.Core/CodigoRegimeTributario.cs
+    startLine: 5
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nLista de Siglas de UF.\r\n"
+  example: []
+  syntax:
+    content: public enum CodigoRegimeTributario
+    content.vb: Public Enum CodigoRegimeTributario
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.CodigoRegimeTributario.NaoInformado
+  id: NaoInformado
+  parent: NotaFiscalNet.Core.CodigoRegimeTributario
+  langs:
+  - csharp
+  - vb
+  name: NaoInformado
+  fullName: NotaFiscalNet.Core.CodigoRegimeTributario.NaoInformado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/CodigoRegimeTributario.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NaoInformado
+    path: src/NotaFiscalNet.Core/CodigoRegimeTributario.cs
+    startLine: 10
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n0 - Não informado.\r\n"
+  example: []
+  syntax:
+    content: NaoInformado = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.CodigoRegimeTributario.SimplesNacional
+  id: SimplesNacional
+  parent: NotaFiscalNet.Core.CodigoRegimeTributario
+  langs:
+  - csharp
+  - vb
+  name: SimplesNacional
+  fullName: NotaFiscalNet.Core.CodigoRegimeTributario.SimplesNacional
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/CodigoRegimeTributario.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SimplesNacional
+    path: src/NotaFiscalNet.Core/CodigoRegimeTributario.cs
+    startLine: 15
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSimples Nacional\r\n"
+  example: []
+  syntax:
+    content: SimplesNacional = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.CodigoRegimeTributario.SimplesNacionalExcessoSublimite
+  id: SimplesNacionalExcessoSublimite
+  parent: NotaFiscalNet.Core.CodigoRegimeTributario
+  langs:
+  - csharp
+  - vb
+  name: SimplesNacionalExcessoSublimite
+  fullName: NotaFiscalNet.Core.CodigoRegimeTributario.SimplesNacionalExcessoSublimite
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/CodigoRegimeTributario.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SimplesNacionalExcessoSublimite
+    path: src/NotaFiscalNet.Core/CodigoRegimeTributario.cs
+    startLine: 20
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nSimples Nacional com Excesso de Sublimite de Receita Bruta\r\n"
+  example: []
+  syntax:
+    content: SimplesNacionalExcessoSublimite = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.CodigoRegimeTributario.RegimeNormal
+  id: RegimeNormal
+  parent: NotaFiscalNet.Core.CodigoRegimeTributario
+  langs:
+  - csharp
+  - vb
+  name: RegimeNormal
+  fullName: NotaFiscalNet.Core.CodigoRegimeTributario.RegimeNormal
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/CodigoRegimeTributario.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: RegimeNormal
+    path: src/NotaFiscalNet.Core/CodigoRegimeTributario.cs
+    startLine: 25
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRegime Normal\r\n"
+  example: []
+  syntax:
+    content: RegimeNormal = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

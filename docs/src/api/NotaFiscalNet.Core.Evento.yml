@@ -1,0 +1,81 @@
+items:
+- uid: NotaFiscalNet.Core.Evento
+  id: NotaFiscalNet.Core.Evento
+  children:
+  - NotaFiscalNet.Core.Evento.EventoCancelamentoNFe
+  - NotaFiscalNet.Core.Evento.EventoNFe
+  - NotaFiscalNet.Core.Evento.EventoNFeCollection`1
+  - NotaFiscalNet.Core.Evento.EventoNFeFactory
+  - NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento
+  - NotaFiscalNet.Core.Evento.RetornoEventoCancelamento
+  - NotaFiscalNet.Core.Evento.RetornoLoteEnvioEventoCancelamento
+  - NotaFiscalNet.Core.Evento.TipoEventoNFe
+  langs:
+  - csharp
+  - vb
+  name: NotaFiscalNet.Core.Evento
+  fullName: NotaFiscalNet.Core.Evento
+  type: Namespace
+  assemblies:
+  - NotaFiscalNet.Core
+references:
+- uid: NotaFiscalNet.Core.Evento.EventoCancelamentoNFe
+  isExternal: false
+  name: EventoCancelamentoNFe
+  fullName: NotaFiscalNet.Core.Evento.EventoCancelamentoNFe
+- uid: NotaFiscalNet.Core.Evento.EventoNFe
+  parent: NotaFiscalNet.Core.Evento
+  isExternal: false
+  name: EventoNFe
+  fullName: NotaFiscalNet.Core.Evento.EventoNFe
+- uid: NotaFiscalNet.Core.Evento.EventoNFeCollection`1
+  isExternal: false
+  name: EventoNFeCollection<TEventoNFe>
+  fullName: NotaFiscalNet.Core.Evento.EventoNFeCollection<TEventoNFe>
+  fullname.vb: NotaFiscalNet.Core.Evento.EventoNFeCollection(Of TEventoNFe)
+  name.vb: EventoNFeCollection(Of TEventoNFe)
+  spec.csharp:
+  - uid: NotaFiscalNet.Core.Evento.EventoNFeCollection`1
+    name: EventoNFeCollection
+    fullName: NotaFiscalNet.Core.Evento.EventoNFeCollection
+  - name: <
+    fullName: <
+  - name: TEventoNFe
+    fullName: TEventoNFe
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: NotaFiscalNet.Core.Evento.EventoNFeCollection`1
+    name: EventoNFeCollection
+    fullName: NotaFiscalNet.Core.Evento.EventoNFeCollection
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TEventoNFe
+    fullName: TEventoNFe
+  - name: )
+    fullName: )
+- uid: NotaFiscalNet.Core.Evento.EventoNFeFactory
+  isExternal: false
+  name: EventoNFeFactory
+  fullName: NotaFiscalNet.Core.Evento.EventoNFeFactory
+- uid: NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento
+  isExternal: false
+  name: LoteEnvioEventoCancelamento
+  fullName: NotaFiscalNet.Core.Evento.LoteEnvioEventoCancelamento
+- uid: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento
+  isExternal: false
+  name: RetornoEventoCancelamento
+  fullName: NotaFiscalNet.Core.Evento.RetornoEventoCancelamento
+- uid: NotaFiscalNet.Core.Evento.RetornoLoteEnvioEventoCancelamento
+  isExternal: false
+  name: RetornoLoteEnvioEventoCancelamento
+  fullName: NotaFiscalNet.Core.Evento.RetornoLoteEnvioEventoCancelamento
+- uid: NotaFiscalNet.Core.Evento.TipoEventoNFe
+  parent: NotaFiscalNet.Core.Evento
+  isExternal: false
+  name: TipoEventoNFe
+  fullName: NotaFiscalNet.Core.Evento.TipoEventoNFe
+- uid: NotaFiscalNet.Core.Evento
+  isExternal: false
+  name: NotaFiscalNet.Core.Evento
+  fullName: NotaFiscalNet.Core.Evento

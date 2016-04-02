@@ -1,0 +1,1241 @@
+items:
+- uid: NotaFiscalNet.Core.TotalICMS
+  id: TotalICMS
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.TotalICMS.BaseCalculo
+  - NotaFiscalNet.Core.TotalICMS.BaseCalculoST
+  - NotaFiscalNet.Core.TotalICMS.NotaFiscalNet#Core#Interfaces#ISerializavel#Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  - NotaFiscalNet.Core.TotalICMS.ValorOutrasDespesas
+  - NotaFiscalNet.Core.TotalICMS.ValorTotalCOFINS
+  - NotaFiscalNet.Core.TotalICMS.ValorTotalDesconto
+  - NotaFiscalNet.Core.TotalICMS.ValorTotalFrete
+  - NotaFiscalNet.Core.TotalICMS.ValorTotalICMS
+  - NotaFiscalNet.Core.TotalICMS.ValorTotalICMSDesonerado
+  - NotaFiscalNet.Core.TotalICMS.ValorTotalICMSST
+  - NotaFiscalNet.Core.TotalICMS.ValorTotalII
+  - NotaFiscalNet.Core.TotalICMS.ValorTotalIPI
+  - NotaFiscalNet.Core.TotalICMS.ValorTotalNFe
+  - NotaFiscalNet.Core.TotalICMS.ValorTotalPIS
+  - NotaFiscalNet.Core.TotalICMS.ValorTotalProdutos
+  - NotaFiscalNet.Core.TotalICMS.ValorTotalSeguro
+  - NotaFiscalNet.Core.TotalICMS.ValorTotalTributos
+  langs:
+  - csharp
+  - vb
+  name: TotalICMS
+  fullName: NotaFiscalNet.Core.TotalICMS
+  type: Class
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TotalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TotalICMS
+    path: src/NotaFiscalNet.Core/TotalICMS.cs
+    startLine: 10
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRepresenta o Total de ICMS da Nota Fiscal Eletrônica.\r\n"
+  example: []
+  syntax:
+    content: 'public sealed class TotalICMS : ISerializavel'
+    content.vb: >-
+      Public NotInheritable Class TotalICMS
+
+          Implements ISerializavel
+  inheritance:
+  - System.Object
+  implements:
+  - NotaFiscalNet.Core.Interfaces.ISerializavel
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: NotaFiscalNet.Core.TotalICMS.BaseCalculo
+  id: BaseCalculo
+  parent: NotaFiscalNet.Core.TotalICMS
+  langs:
+  - csharp
+  - vb
+  name: BaseCalculo
+  fullName: NotaFiscalNet.Core.TotalICMS.BaseCalculo
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TotalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: BaseCalculo
+    path: src/NotaFiscalNet.Core/TotalICMS.cs
+    startLine: 32
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vBC] Retorna ou define a Base de Cálculo do ICMS.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "W03", FieldName = "vBC", DataType = "TDec_1302", Pattern = "0|0\\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\\.[0-9]{2})?")]
+
+      [CampoValidavel(1, Opcional = true)]
+
+      public decimal BaseCalculo
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="W03", FieldName:="vBC", DataType:="TDec_1302", Pattern:="0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")>
+
+      <CampoValidavel(1, Opcional:=True)>
+
+      Public Property BaseCalculo As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.TotalICMS.ValorTotalICMS
+  id: ValorTotalICMS
+  parent: NotaFiscalNet.Core.TotalICMS
+  langs:
+  - csharp
+  - vb
+  name: ValorTotalICMS
+  fullName: NotaFiscalNet.Core.TotalICMS.ValorTotalICMS
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TotalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorTotalICMS
+    path: src/NotaFiscalNet.Core/TotalICMS.cs
+    startLine: 47
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vICMS] Retorna ou define o Valor Total do ICMS.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "W04", FieldName = "vICMS", DataType = "TDec_1302", Pattern = "0|0\\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\\.[0-9]{2})?")]
+
+      [CampoValidavel(2, Opcional = true)]
+
+      public decimal ValorTotalICMS
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="W04", FieldName:="vICMS", DataType:="TDec_1302", Pattern:="0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")>
+
+      <CampoValidavel(2, Opcional:=True)>
+
+      Public Property ValorTotalICMS As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.TotalICMS.ValorTotalICMSDesonerado
+  id: ValorTotalICMSDesonerado
+  parent: NotaFiscalNet.Core.TotalICMS
+  langs:
+  - csharp
+  - vb
+  name: ValorTotalICMSDesonerado
+  fullName: NotaFiscalNet.Core.TotalICMS.ValorTotalICMSDesonerado
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TotalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorTotalICMSDesonerado
+    path: src/NotaFiscalNet.Core/TotalICMS.cs
+    startLine: 62
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vICMSDeson] Retorna ou define o Valor Total do ICMS desonerado\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "W04", FieldName = "vICMS", DataType = "TDec_1302", Pattern = "0|0\\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\\.[0-9]{2})?")]
+
+      [CampoValidavel(2, Opcional = true)]
+
+      public decimal ValorTotalICMSDesonerado
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="W04", FieldName:="vICMS", DataType:="TDec_1302", Pattern:="0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")>
+
+      <CampoValidavel(2, Opcional:=True)>
+
+      Public Property ValorTotalICMSDesonerado As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.TotalICMS.BaseCalculoST
+  id: BaseCalculoST
+  parent: NotaFiscalNet.Core.TotalICMS
+  langs:
+  - csharp
+  - vb
+  name: BaseCalculoST
+  fullName: NotaFiscalNet.Core.TotalICMS.BaseCalculoST
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TotalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: BaseCalculoST
+    path: src/NotaFiscalNet.Core/TotalICMS.cs
+    startLine: 77
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vBCST] Retorna ou define a Base de Cálculo do ICMS do Substituto Tributário.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "W05", FieldName = "vBCST", DataType = "TDec_1302", Pattern = "0|0\\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\\.[0-9]{2})?")]
+
+      [CampoValidavel(3, Opcional = true)]
+
+      public decimal BaseCalculoST
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="W05", FieldName:="vBCST", DataType:="TDec_1302", Pattern:="0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")>
+
+      <CampoValidavel(3, Opcional:=True)>
+
+      Public Property BaseCalculoST As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.TotalICMS.ValorTotalICMSST
+  id: ValorTotalICMSST
+  parent: NotaFiscalNet.Core.TotalICMS
+  langs:
+  - csharp
+  - vb
+  name: ValorTotalICMSST
+  fullName: NotaFiscalNet.Core.TotalICMS.ValorTotalICMSST
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TotalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorTotalICMSST
+    path: src/NotaFiscalNet.Core/TotalICMS.cs
+    startLine: 92
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vST] Retorna ou define o Valor Total do ICMS do Substituto Tributário.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "W06", FieldName = "vST", DataType = "TDec_1302", Pattern = "0|0\\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\\.[0-9]{2})?")]
+
+      [CampoValidavel(4, Opcional = true)]
+
+      public decimal ValorTotalICMSST
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="W06", FieldName:="vST", DataType:="TDec_1302", Pattern:="0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")>
+
+      <CampoValidavel(4, Opcional:=True)>
+
+      Public Property ValorTotalICMSST As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.TotalICMS.ValorTotalProdutos
+  id: ValorTotalProdutos
+  parent: NotaFiscalNet.Core.TotalICMS
+  langs:
+  - csharp
+  - vb
+  name: ValorTotalProdutos
+  fullName: NotaFiscalNet.Core.TotalICMS.ValorTotalProdutos
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TotalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorTotalProdutos
+    path: src/NotaFiscalNet.Core/TotalICMS.cs
+    startLine: 107
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vProd] Retorna ou define o Valor Total dos Produtos e Serviços.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "W07", FieldName = "vProd", DataType = "TDec_1302", Pattern = "0|0\\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\\.[0-9]{2})?")]
+
+      [CampoValidavel(5, Opcional = true)]
+
+      public decimal ValorTotalProdutos
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="W07", FieldName:="vProd", DataType:="TDec_1302", Pattern:="0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")>
+
+      <CampoValidavel(5, Opcional:=True)>
+
+      Public Property ValorTotalProdutos As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.TotalICMS.ValorTotalFrete
+  id: ValorTotalFrete
+  parent: NotaFiscalNet.Core.TotalICMS
+  langs:
+  - csharp
+  - vb
+  name: ValorTotalFrete
+  fullName: NotaFiscalNet.Core.TotalICMS.ValorTotalFrete
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TotalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorTotalFrete
+    path: src/NotaFiscalNet.Core/TotalICMS.cs
+    startLine: 122
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vFrete] Retorna ou define o Valor Total do Frete.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "W08", FieldName = "vFrete", DataType = "TDec_1302", Pattern = "0|0\\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\\.[0-9]{2})?")]
+
+      [CampoValidavel(6, Opcional = true)]
+
+      public decimal ValorTotalFrete
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="W08", FieldName:="vFrete", DataType:="TDec_1302", Pattern:="0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")>
+
+      <CampoValidavel(6, Opcional:=True)>
+
+      Public Property ValorTotalFrete As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.TotalICMS.ValorTotalSeguro
+  id: ValorTotalSeguro
+  parent: NotaFiscalNet.Core.TotalICMS
+  langs:
+  - csharp
+  - vb
+  name: ValorTotalSeguro
+  fullName: NotaFiscalNet.Core.TotalICMS.ValorTotalSeguro
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TotalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorTotalSeguro
+    path: src/NotaFiscalNet.Core/TotalICMS.cs
+    startLine: 137
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vSeg] Retorna ou define o Valor Total do Seguro.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "W09", FieldName = "vSeg", DataType = "TDec_1302", Pattern = "0|0\\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\\.[0-9]{2})?")]
+
+      [CampoValidavel(7, Opcional = true)]
+
+      public decimal ValorTotalSeguro
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="W09", FieldName:="vSeg", DataType:="TDec_1302", Pattern:="0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")>
+
+      <CampoValidavel(7, Opcional:=True)>
+
+      Public Property ValorTotalSeguro As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.TotalICMS.ValorTotalDesconto
+  id: ValorTotalDesconto
+  parent: NotaFiscalNet.Core.TotalICMS
+  langs:
+  - csharp
+  - vb
+  name: ValorTotalDesconto
+  fullName: NotaFiscalNet.Core.TotalICMS.ValorTotalDesconto
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TotalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorTotalDesconto
+    path: src/NotaFiscalNet.Core/TotalICMS.cs
+    startLine: 152
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vDesc] Retorna ou define o Valor Total do Desconto.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "W10", FieldName = "vDesc", DataType = "TDec_1302", Pattern = "0|0\\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\\.[0-9]{2})?")]
+
+      [CampoValidavel(8, Opcional = true)]
+
+      public decimal ValorTotalDesconto
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="W10", FieldName:="vDesc", DataType:="TDec_1302", Pattern:="0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")>
+
+      <CampoValidavel(8, Opcional:=True)>
+
+      Public Property ValorTotalDesconto As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.TotalICMS.ValorTotalII
+  id: ValorTotalII
+  parent: NotaFiscalNet.Core.TotalICMS
+  langs:
+  - csharp
+  - vb
+  name: ValorTotalII
+  fullName: NotaFiscalNet.Core.TotalICMS.ValorTotalII
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TotalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorTotalII
+    path: src/NotaFiscalNet.Core/TotalICMS.cs
+    startLine: 167
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vII] Retorna ou define o Valor Total do II.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "W11", FieldName = "vII", DataType = "TDec_1302", Pattern = "0|0\\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\\.[0-9]{2})?")]
+
+      [CampoValidavel(9, Opcional = true)]
+
+      public decimal ValorTotalII
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="W11", FieldName:="vII", DataType:="TDec_1302", Pattern:="0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")>
+
+      <CampoValidavel(9, Opcional:=True)>
+
+      Public Property ValorTotalII As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.TotalICMS.ValorTotalIPI
+  id: ValorTotalIPI
+  parent: NotaFiscalNet.Core.TotalICMS
+  langs:
+  - csharp
+  - vb
+  name: ValorTotalIPI
+  fullName: NotaFiscalNet.Core.TotalICMS.ValorTotalIPI
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TotalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorTotalIPI
+    path: src/NotaFiscalNet.Core/TotalICMS.cs
+    startLine: 182
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vIPI] Retorna ou define o Valor Total do IPI.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "W12", FieldName = "vIPI", DataType = "TDec_1302", Pattern = "0|0\\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\\.[0-9]{2})?")]
+
+      [CampoValidavel(10, Opcional = true)]
+
+      public decimal ValorTotalIPI
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="W12", FieldName:="vIPI", DataType:="TDec_1302", Pattern:="0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")>
+
+      <CampoValidavel(10, Opcional:=True)>
+
+      Public Property ValorTotalIPI As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.TotalICMS.ValorTotalPIS
+  id: ValorTotalPIS
+  parent: NotaFiscalNet.Core.TotalICMS
+  langs:
+  - csharp
+  - vb
+  name: ValorTotalPIS
+  fullName: NotaFiscalNet.Core.TotalICMS.ValorTotalPIS
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TotalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorTotalPIS
+    path: src/NotaFiscalNet.Core/TotalICMS.cs
+    startLine: 197
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vPIS] Retorna ou define o Valor Total do PIS.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "W13", FieldName = "vPIS", DataType = "TDec_1302", Pattern = "0|0\\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\\.[0-9]{2})?")]
+
+      [CampoValidavel(11, Opcional = true)]
+
+      public decimal ValorTotalPIS
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="W13", FieldName:="vPIS", DataType:="TDec_1302", Pattern:="0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")>
+
+      <CampoValidavel(11, Opcional:=True)>
+
+      Public Property ValorTotalPIS As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.TotalICMS.ValorTotalCOFINS
+  id: ValorTotalCOFINS
+  parent: NotaFiscalNet.Core.TotalICMS
+  langs:
+  - csharp
+  - vb
+  name: ValorTotalCOFINS
+  fullName: NotaFiscalNet.Core.TotalICMS.ValorTotalCOFINS
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TotalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorTotalCOFINS
+    path: src/NotaFiscalNet.Core/TotalICMS.cs
+    startLine: 212
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vCOFINS] Retorna ou define o Valor Total do COFINS.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "W14", FieldName = "vCOFINS", DataType = "TDec_1302", Pattern = "0|0\\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\\.[0-9]{2})?")]
+
+      [CampoValidavel(12, Opcional = true)]
+
+      public decimal ValorTotalCOFINS
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="W14", FieldName:="vCOFINS", DataType:="TDec_1302", Pattern:="0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")>
+
+      <CampoValidavel(12, Opcional:=True)>
+
+      Public Property ValorTotalCOFINS As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.TotalICMS.ValorOutrasDespesas
+  id: ValorOutrasDespesas
+  parent: NotaFiscalNet.Core.TotalICMS
+  langs:
+  - csharp
+  - vb
+  name: ValorOutrasDespesas
+  fullName: NotaFiscalNet.Core.TotalICMS.ValorOutrasDespesas
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TotalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorOutrasDespesas
+    path: src/NotaFiscalNet.Core/TotalICMS.cs
+    startLine: 227
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vOutro] Retorna ou define o Valor de Outras Despesas Acessórias.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "W15", FieldName = "vOutro", DataType = "TDec_1302", Pattern = "0|0\\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\\.[0-9]{2})?")]
+
+      [CampoValidavel(13, Opcional = true)]
+
+      public decimal ValorOutrasDespesas
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="W15", FieldName:="vOutro", DataType:="TDec_1302", Pattern:="0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")>
+
+      <CampoValidavel(13, Opcional:=True)>
+
+      Public Property ValorOutrasDespesas As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.TotalICMS.ValorTotalNFe
+  id: ValorTotalNFe
+  parent: NotaFiscalNet.Core.TotalICMS
+  langs:
+  - csharp
+  - vb
+  name: ValorTotalNFe
+  fullName: NotaFiscalNet.Core.TotalICMS.ValorTotalNFe
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TotalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorTotalNFe
+    path: src/NotaFiscalNet.Core/TotalICMS.cs
+    startLine: 242
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vNF] Retorna ou define o Valor Total da Nota Fiscal Eletrônica.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(ID = "W16", FieldName = "vNF", DataType = "TDec_1302", Pattern = "0|0\\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\\.[0-9]{2})?")]
+
+      [CampoValidavel(14, Opcional = true)]
+
+      public decimal ValorTotalNFe
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(ID:="W16", FieldName:="vNF", DataType:="TDec_1302", Pattern:="0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")>
+
+      <CampoValidavel(14, Opcional:=True)>
+
+      Public Property ValorTotalNFe As Decimal
+    parameters: []
+    return:
+      type: System.Decimal
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.TotalICMS.ValorTotalTributos
+  id: ValorTotalTributos
+  parent: NotaFiscalNet.Core.TotalICMS
+  langs:
+  - csharp
+  - vb
+  name: ValorTotalTributos
+  fullName: NotaFiscalNet.Core.TotalICMS.ValorTotalTributos
+  type: Property
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TotalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: ValorTotalTributos
+    path: src/NotaFiscalNet.Core/TotalICMS.cs
+    startLine: 257
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n[vTotTrib] Retorna ou define o Valor Total da Nota Fiscal Eletrônica.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [NFeField(FieldName = "vTotTrib", DataType = "TDec_1302")]
+
+      [CampoValidavel(15, Opcional = true)]
+
+      public decimal ? ValorTotalTributos
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: >-
+      <NFeField(FieldName:="vTotTrib", DataType:="TDec_1302")>
+
+      <CampoValidavel(15, Opcional:=True)>
+
+      Public Property ValorTotalTributos As Decimal?
+    parameters: []
+    return:
+      type: System.Nullable{System.Decimal}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NotaFiscalNet.Core.TotalICMS.NotaFiscalNet#Core#Interfaces#ISerializavel#Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  id: NotaFiscalNet#Core#Interfaces#ISerializavel#Serializar(System.Xml.XmlWriter,NotaFiscalNet.Core.INFe)
+  parent: NotaFiscalNet.Core.TotalICMS
+  langs:
+  - csharp
+  - vb
+  name: ISerializavel.Serializar(XmlWriter, INFe)
+  fullName: NotaFiscalNet.Core.TotalICMS.NotaFiscalNet.Core.Interfaces.ISerializavel.Serializar(System.Xml.XmlWriter, NotaFiscalNet.Core.INFe)
+  type: Method
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TotalICMS.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NotaFiscalNet.Core.Interfaces.ISerializavel.Serializar
+    path: src/NotaFiscalNet.Core/TotalICMS.cs
+    startLine: 270
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  syntax:
+    content: void ISerializavel.Serializar(XmlWriter writer, INFe nfe)
+    content.vb: Sub NotaFiscalNet.Core.Interfaces.ISerializavel.Serializar(writer As XmlWriter, nfe As INFe) Implements ISerializavel.Serializar
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+    - id: nfe
+      type: NotaFiscalNet.Core.INFe
+  name.vb: NotaFiscalNet.Core.Interfaces.ISerializavel.Serializar(XmlWriter, INFe)
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: NotaFiscalNet.Core.Interfaces.ISerializavel
+  parent: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: ISerializavel
+  fullName: NotaFiscalNet.Core.Interfaces.ISerializavel
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: NotaFiscalNet.Core.Interfaces
+  isExternal: false
+  name: NotaFiscalNet.Core.Interfaces
+  fullName: NotaFiscalNet.Core.Interfaces
+- uid: System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  fullName: System.Decimal
+- uid: System.Nullable{System.Decimal}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Decimal>
+  fullName: System.Nullable<System.Decimal>
+  fullname.vb: System.Nullable(Of System.Decimal)
+  name.vb: Nullable(Of Decimal)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Decimal
+    name: Decimal
+    fullName: System.Decimal
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Decimal
+    name: Decimal
+    fullName: System.Decimal
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlWriter
+  parent: System.Xml
+  isExternal: true
+  name: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: NotaFiscalNet.Core.INFe
+  parent: NotaFiscalNet.Core
+  isExternal: false
+  name: INFe
+  fullName: NotaFiscalNet.Core.INFe
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml

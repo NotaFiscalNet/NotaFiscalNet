@@ -1,0 +1,224 @@
+items:
+- uid: NotaFiscalNet.Core.TipoFormatoImpressaoDanfe
+  id: TipoFormatoImpressaoDanfe
+  parent: NotaFiscalNet.Core
+  children:
+  - NotaFiscalNet.Core.TipoFormatoImpressaoDanfe.Nfce
+  - NotaFiscalNet.Core.TipoFormatoImpressaoDanfe.NfceMensagemEletronica
+  - NotaFiscalNet.Core.TipoFormatoImpressaoDanfe.Paisagem
+  - NotaFiscalNet.Core.TipoFormatoImpressaoDanfe.Retrato
+  - NotaFiscalNet.Core.TipoFormatoImpressaoDanfe.SemImpressao
+  - NotaFiscalNet.Core.TipoFormatoImpressaoDanfe.Simplificado
+  langs:
+  - csharp
+  - vb
+  name: TipoFormatoImpressaoDanfe
+  fullName: NotaFiscalNet.Core.TipoFormatoImpressaoDanfe
+  type: Enum
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoFormatoImpressaoDANFE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: TipoFormatoImpressaoDanfe
+    path: src/NotaFiscalNet.Core/TipoFormatoImpressaoDANFE.cs
+    startLine: 6
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\nRepresenta o formato de impressão da DANFE.\r\n"
+  example: []
+  syntax:
+    content: public enum TipoFormatoImpressaoDanfe
+    content.vb: Public Enum TipoFormatoImpressaoDanfe
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NotaFiscalNet.Core.TipoFormatoImpressaoDanfe.SemImpressao
+  id: SemImpressao
+  parent: NotaFiscalNet.Core.TipoFormatoImpressaoDanfe
+  langs:
+  - csharp
+  - vb
+  name: SemImpressao
+  fullName: NotaFiscalNet.Core.TipoFormatoImpressaoDanfe.SemImpressao
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoFormatoImpressaoDANFE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: SemImpressao
+    path: src/NotaFiscalNet.Core/TipoFormatoImpressaoDANFE.cs
+    startLine: 11
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n0 - Sem geração de DANFE.\r\n"
+  example: []
+  syntax:
+    content: SemImpressao = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoFormatoImpressaoDanfe.Retrato
+  id: Retrato
+  parent: NotaFiscalNet.Core.TipoFormatoImpressaoDanfe
+  langs:
+  - csharp
+  - vb
+  name: Retrato
+  fullName: NotaFiscalNet.Core.TipoFormatoImpressaoDanfe.Retrato
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoFormatoImpressaoDANFE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Retrato
+    path: src/NotaFiscalNet.Core/TipoFormatoImpressaoDANFE.cs
+    startLine: 16
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n1 - DANFE Normal (Impressão no formato Retrato).\r\n"
+  example: []
+  syntax:
+    content: Retrato = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoFormatoImpressaoDanfe.Paisagem
+  id: Paisagem
+  parent: NotaFiscalNet.Core.TipoFormatoImpressaoDanfe
+  langs:
+  - csharp
+  - vb
+  name: Paisagem
+  fullName: NotaFiscalNet.Core.TipoFormatoImpressaoDanfe.Paisagem
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoFormatoImpressaoDANFE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Paisagem
+    path: src/NotaFiscalNet.Core/TipoFormatoImpressaoDANFE.cs
+    startLine: 21
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n2 - DANFE Normal (Impressão no formato Paisagem).\r\n"
+  example: []
+  syntax:
+    content: Paisagem = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoFormatoImpressaoDanfe.Simplificado
+  id: Simplificado
+  parent: NotaFiscalNet.Core.TipoFormatoImpressaoDanfe
+  langs:
+  - csharp
+  - vb
+  name: Simplificado
+  fullName: NotaFiscalNet.Core.TipoFormatoImpressaoDanfe.Simplificado
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoFormatoImpressaoDANFE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Simplificado
+    path: src/NotaFiscalNet.Core/TipoFormatoImpressaoDANFE.cs
+    startLine: 26
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n3 - DANFE Simplificado.\r\n"
+  example: []
+  syntax:
+    content: Simplificado = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoFormatoImpressaoDanfe.Nfce
+  id: Nfce
+  parent: NotaFiscalNet.Core.TipoFormatoImpressaoDanfe
+  langs:
+  - csharp
+  - vb
+  name: Nfce
+  fullName: NotaFiscalNet.Core.TipoFormatoImpressaoDanfe.Nfce
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoFormatoImpressaoDANFE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: Nfce
+    path: src/NotaFiscalNet.Core/TipoFormatoImpressaoDANFE.cs
+    startLine: 31
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n4 - DANFE NFC-e.\r\n"
+  example: []
+  syntax:
+    content: Nfce = 4
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NotaFiscalNet.Core.TipoFormatoImpressaoDanfe.NfceMensagemEletronica
+  id: NfceMensagemEletronica
+  parent: NotaFiscalNet.Core.TipoFormatoImpressaoDanfe
+  langs:
+  - csharp
+  - vb
+  name: NfceMensagemEletronica
+  fullName: NotaFiscalNet.Core.TipoFormatoImpressaoDanfe.NfceMensagemEletronica
+  type: Field
+  source:
+    remote:
+      path: src/NotaFiscalNet.Core/TipoFormatoImpressaoDANFE.cs
+      branch: docs
+      repo: git@github.com:NotaFiscalNet/NotaFiscalNet.git
+    id: NfceMensagemEletronica
+    path: src/NotaFiscalNet.Core/TipoFormatoImpressaoDANFE.cs
+    startLine: 36
+  assemblies:
+  - NotaFiscalNet.Core
+  namespace: NotaFiscalNet.Core
+  summary: "\r\n5 - DANFE NFC-e em mensagem eletronica.\r\n"
+  example: []
+  syntax:
+    content: NfceMensagemEletronica = 5
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NotaFiscalNet.Core
+  isExternal: false
+  name: NotaFiscalNet.Core
+  fullName: NotaFiscalNet.Core

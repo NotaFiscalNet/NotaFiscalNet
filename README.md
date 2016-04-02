@@ -9,3 +9,9 @@ Este é um projeto gratuito para geração de Notas Fiscais Eletrônicas, desenv
 
 ### Para quem é esse projeto?
 O foco é atender desenvolvedores que precisam gerar NFe em seus softwares de forma simplificada, utilizando nomes customizados próximos a realidade do negócio, sem se preocupar com Xml's, Validações, etc.
+
+### **Atenção**
+A versão atual pode apresentar **instabilidade**, pois projeto está sendo migrado para um schema atualizado.
+
+Abra um issue se tiver interesse de rodar em produção.
+

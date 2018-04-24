@@ -11,6 +11,9 @@ using System.Text;
 using System.Xml;
 using System.Xml.Linq;
 
+using System.Runtime.CompilerServices;
+[assembly: InternalsVisibleTo("NotaFiscalNet.Core.Tests")]
+
 namespace NotaFiscalNet.Core
 {
     /// <summary>

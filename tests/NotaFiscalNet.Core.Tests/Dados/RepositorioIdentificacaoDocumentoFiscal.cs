@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core.Tests.Dados
 {

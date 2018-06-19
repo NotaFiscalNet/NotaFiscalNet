@@ -1,6 +1,4 @@
-﻿using System.Xml;
-using NotaFiscalNet.Core.Tests.Comum;
-using NotaFiscalNet.Core.Validacao;
+﻿using NotaFiscalNet.Core.Tests.Comum;
 using Xunit;
 
 namespace NotaFiscalNet.Core.Tests

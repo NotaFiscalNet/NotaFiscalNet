@@ -1,6 +1,4 @@
 ﻿using NotaFiscalNet.Core.Interfaces;
-using NotaFiscalNet.Core.Validacao;
-using System;
 
 namespace NotaFiscalNet.Core
 {

@@ -344,7 +344,7 @@ namespace NotaFiscalNet.Core
         private void SerializeCOFINSAliq(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("COFINSAliq"); // Elemento 'COFINSAliq'
-            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaCOFINS>(SituacaoTributaria))));
+            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
             writer.WriteElementString("vBC", BaseCalculo.ToTDec_1302());
             writer.WriteElementString("pCOFINS", Aliquota.ToTDec_1302());
             writer.WriteElementString("vCOFINS", Valor.ToTDec_1302());

@@ -1,5 +1,6 @@
 ﻿using NotaFiscalNet.Core.Interfaces;
 using System;
+using System.Linq;
 
 namespace NotaFiscalNet.Core
 {
@@ -26,21 +27,10 @@ namespace NotaFiscalNet.Core
             base.PreAdd(e, item);
         }
 
-        /// <summary>
-        /// Retorna se existe alguma instancia da classe modificada na coleção
-        /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                foreach (ObservacaoFisco item in this)
-                {
-                    if (item.Modificado)
-                        return true;
-                }
-                return false;
-            }
-        }
+	    /// <summary>
+	    /// Retorna se existe alguma instancia da classe modificada na coleção
+	    /// </summary>
+	    public bool Modificado => this.Any(item => item.Modificado);
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, INFe nfe)
         {

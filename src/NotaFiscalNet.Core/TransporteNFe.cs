@@ -100,7 +100,7 @@ namespace NotaFiscalNet.Core
         {
             writer.WriteStartElement("transp");
 
-            writer.WriteElementString("modFrete", SerializationUtil.GetEnumValue<TipoModalidadeFrete>(ModalidadeFrete));
+            writer.WriteElementString("modFrete", SerializationUtil.GetEnumValue(ModalidadeFrete));
 
             if (Transportador.Modificado)
                 ((ISerializavel)Transportador).Serializar(writer, nfe);

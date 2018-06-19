@@ -37,7 +37,7 @@ namespace NotaFiscalNet.Core
             get => _situacaoTributaria;
 	        set
             {
-                ValidationUtil.ValidateEnum<SituacaoTributariaPIS>(value, "SituacaoTributaria");
+                ValidationUtil.ValidateEnum(value, "SituacaoTributaria");
 
                 switch (value)
                 {
@@ -104,7 +104,7 @@ namespace NotaFiscalNet.Core
             {
                 if (!_canChangeTipo)
                     throw new ErroValidacaoNFeException(ErroValidacao.Create(ChaveErroValidacao.NotCanChangeTipoCalculo, SituacaoTributaria));
-                ValidationUtil.ValidateEnum<TipoCalculoPIS>(value, "TipoCalculo");
+                ValidationUtil.ValidateEnum(value, "TipoCalculo");
                 _tipo = value;
             }
         }
@@ -342,7 +342,7 @@ namespace NotaFiscalNet.Core
         private void SerializePISAliq(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("PISAliq"); // Elemento 'PISAliq'
-            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaPIS>(SituacaoTributaria))));
+            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
             writer.WriteElementString("vBC", SerializationUtil.ToTDec_1302(BaseCalculo));
             writer.WriteElementString("pPIS", SerializationUtil.ToTDec_0302(Aliquota));
             writer.WriteElementString("vPIS", SerializationUtil.ToTDec_1302(Valor));
@@ -355,7 +355,7 @@ namespace NotaFiscalNet.Core
         private void SerializePISQtde(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("PISQtde"); // Elemento 'PISQtde'
-            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaPIS>(SituacaoTributaria))));
+            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
             writer.WriteElementString("qBCProd", SerializationUtil.ToTDec_1204(BaseCalculo));
             writer.WriteElementString("vAliqProd", SerializationUtil.ToTDec_1104(Aliquota));
             writer.WriteElementString("vPIS", SerializationUtil.ToTDec_1302(Valor));
@@ -368,7 +368,7 @@ namespace NotaFiscalNet.Core
         private void SerializePISNT(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("PISNT"); // Elemento 'PISNT'
-            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaPIS>(SituacaoTributaria))));
+            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
             writer.WriteEndElement(); // Elemento 'PISNT'
         }
 
@@ -378,7 +378,7 @@ namespace NotaFiscalNet.Core
         private void SerializePISOutr(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("PISOutr"); // Elemento 'PISOutr'
-            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaPIS>(SituacaoTributaria))));
+            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
             switch (TipoCalculo)
             {
                 case TipoCalculoPIS.PercentualValor:

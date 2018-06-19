@@ -14,19 +14,17 @@ namespace NotaFiscalNet.Core
         private decimal _aliquota;
         private decimal _valor;
 
-        private readonly ImpostoProduto _imposto;
-
-        internal ImpostoPISST(ImpostoProduto imposto)
+	    internal ImpostoPISST(ImpostoProduto imposto)
         {
-            _imposto = imposto;
+            Imposto = imposto;
         }
 
         /// <summary>
         /// Retorna a referência para o objeto ImpostoProduto no qual o Imposto se refere.
         /// </summary>
-        internal ImpostoProduto Imposto => _imposto;
+        internal ImpostoProduto Imposto { get; }
 
-        /// <summary>
+	    /// <summary>
         /// Retorna ou define o Tipo da Alíquota e da Base de Cálculo.
         /// </summary>
         public TipoCalculoPIS TipoCalculo

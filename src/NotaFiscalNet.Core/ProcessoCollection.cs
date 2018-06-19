@@ -1,4 +1,5 @@
-﻿using NotaFiscalNet.Core.Interfaces;
+﻿using System.Linq;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
@@ -10,22 +11,11 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se existe alguma instancia da classe modificada na coleção
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                foreach (Processo item in this)
-                {
-                    if (item.Modificado)
-                        return true;
-                }
-                return false;
-            }
-        }
+        public bool Modificado => this.Any(item => item.Modificado);
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, INFe nfe)
         {
-            foreach (Processo processo in this)
+            foreach (var processo in this)
             {
                 if (processo.Modificado)
                     ((ISerializavel)processo).Serializar(writer, nfe);

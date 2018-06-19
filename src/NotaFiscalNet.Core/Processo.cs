@@ -31,7 +31,7 @@ namespace NotaFiscalNet.Core
         public OrigemProcesso OrigemProcesso
         {
             get => _origemProcesso;
-	        set => _origemProcesso = ValidationUtil.ValidateEnum<OrigemProcesso>(value, "OrigemProcesso");
+	        set => _origemProcesso = ValidationUtil.ValidateEnum(value, "OrigemProcesso");
         }
 
         /// <summary>
@@ -44,7 +44,7 @@ namespace NotaFiscalNet.Core
         {
             writer.WriteStartElement("procRef"); // Elemento 'procRef'
             writer.WriteElementString("nProc", SerializationUtil.ToToken(Identificador, 60));
-            writer.WriteElementString("indProc", SerializationUtil.GetEnumValue<OrigemProcesso>(OrigemProcesso));
+            writer.WriteElementString("indProc", SerializationUtil.GetEnumValue(OrigemProcesso));
             writer.WriteEndElement(); // Elemento 'procRef'
         }
     }

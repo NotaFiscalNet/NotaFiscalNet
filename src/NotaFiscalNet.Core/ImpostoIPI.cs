@@ -226,7 +226,7 @@ namespace NotaFiscalNet.Core
                     case SituacaoTributariaIPI.OutrasEntradas:
                     case SituacaoTributariaIPI.SaidaTributada:
                     case SituacaoTributariaIPI.OutrasSaidas:
-                        ValidationUtil.ValidateEnum<TipoCalculoIPI>(value, "TipoCalculo");
+                        ValidationUtil.ValidateEnum(value, "TipoCalculo");
                         break;
 
                     case SituacaoTributariaIPI.EntradaTributadaAliqZero:
@@ -432,7 +432,7 @@ namespace NotaFiscalNet.Core
         private void SerializeIPITrib(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("IPITrib"); // Elemento 'IPITrib'
-            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaIPI>(SituacaoTributaria))));
+            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
             switch (TipoCalculo)
             {
                 case TipoCalculoIPI.Percentual:
@@ -455,7 +455,7 @@ namespace NotaFiscalNet.Core
         private void SerializeIPINT(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("IPINT"); // Elemento 'IPINT'
-            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaIPI>(SituacaoTributaria))));
+            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
             writer.WriteEndElement(); // Elemento 'IPINT'
         }
     }

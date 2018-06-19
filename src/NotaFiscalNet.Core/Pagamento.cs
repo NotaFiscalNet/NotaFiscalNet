@@ -23,7 +23,7 @@ namespace NotaFiscalNet.Core
             get => _tipoPagamento;
 	        set
             {
-                ValidationUtil.ValidateEnum<TipoPagamento>(value, "TipoPagamento");
+                ValidationUtil.ValidateEnum(value, "TipoPagamento");
                 _tipoPagamento = value;
             }
         }

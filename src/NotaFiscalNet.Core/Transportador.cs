@@ -103,7 +103,7 @@ namespace NotaFiscalNet.Core
             get => _UF;
 	        set
             {
-                ValidationUtil.ValidateEnum<SiglaUF>(value, "UF");
+                ValidationUtil.ValidateEnum(value, "UF");
                 _UF = value;
             }
         }

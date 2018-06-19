@@ -56,7 +56,7 @@ namespace NotaFiscalNet.Core
         public TipoOperacaoVendaVeiculo TipoOperacaoVenda
         {
             get => _tipoOperacaoVenda;
-	        set => _tipoOperacaoVenda = ValidationUtil.ValidateEnum<TipoOperacaoVendaVeiculo>(value, "TipoOperacaoVenda");
+	        set => _tipoOperacaoVenda = ValidationUtil.ValidateEnum(value, "TipoOperacaoVenda");
         }
 
         /// <summary>
@@ -251,7 +251,7 @@ namespace NotaFiscalNet.Core
         public EspecieVeiculoRENAVAM EspecieVeiculo
         {
             get => _especieVeiculo;
-	        set => _especieVeiculo = ValidationUtil.ValidateEnum<EspecieVeiculoRENAVAM>(value, "EspecieVeiculo");
+	        set => _especieVeiculo = ValidationUtil.ValidateEnum(value, "EspecieVeiculo");
         }
 
         /// <summary>
@@ -268,7 +268,7 @@ namespace NotaFiscalNet.Core
         public CondicaoVeiculo CondicaoVeiculo
         {
             get => _condicaoVeiculo;
-	        set => _condicaoVeiculo = ValidationUtil.ValidateEnum<CondicaoVeiculo>(value, "CondicaoVeiculo");
+	        set => _condicaoVeiculo = ValidationUtil.ValidateEnum(value, "CondicaoVeiculo");
         }
 
         /// <summary>
@@ -352,7 +352,7 @@ namespace NotaFiscalNet.Core
         {
             writer.WriteStartElement("veicProd");
 
-            writer.WriteElementString("tpOp", SerializationUtil.GetEnumValue<TipoOperacaoVendaVeiculo>(TipoOperacaoVenda));
+            writer.WriteElementString("tpOp", SerializationUtil.GetEnumValue(TipoOperacaoVenda));
             writer.WriteElementString("chassi", SerializationUtil.ToToken(Chassi, 17));
             writer.WriteElementString("cCor", SerializationUtil.ToToken(CodigoCor, 4));
             writer.WriteElementString("xCor", SerializationUtil.ToToken(DescricaoCor, 40));
@@ -368,10 +368,10 @@ namespace NotaFiscalNet.Core
             writer.WriteElementString("anoMod", AnoModelo.ToString());
             writer.WriteElementString("anoFab", AnoFabricacao.ToString());
             writer.WriteElementString("tpPint", TipoPintura);
-            writer.WriteElementString("tpVeic", SerializationUtil.GetEnumValue<TipoVeiculoRENAVAM>(TipoVeiculo));
-            writer.WriteElementString("espVeic", SerializationUtil.GetEnumValue<EspecieVeiculoRENAVAM>(EspecieVeiculo));
+            writer.WriteElementString("tpVeic", SerializationUtil.GetEnumValue(TipoVeiculo));
+            writer.WriteElementString("espVeic", SerializationUtil.GetEnumValue(EspecieVeiculo));
             writer.WriteElementString("VIN", ChassiRemarcado ? "R" : "N");
-            writer.WriteElementString("condVeic", SerializationUtil.GetEnumValue<CondicaoVeiculo>(CondicaoVeiculo));
+            writer.WriteElementString("condVeic", SerializationUtil.GetEnumValue(CondicaoVeiculo));
             writer.WriteElementString("cMod", CodigoMarcaModelo.ToString());
             writer.WriteElementString("cCorDENATRAN", ((int)CorDenatran).ToString("00"));
             writer.WriteElementString("lota", LotacaoMaximaPassageirosSentados.ToString());

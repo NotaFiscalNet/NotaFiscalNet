@@ -16,10 +16,7 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se existe alguma instancia da classe modificada na coleção
         /// </summary>
-        public bool Modificado
-        {
-            get { return this.Any(x => x.Modificado); }
-        }
+        public bool Modificado => this.Any(item => item.Modificado);
 
         public void Serializar(XmlWriter writer, INFe nfe)
         {

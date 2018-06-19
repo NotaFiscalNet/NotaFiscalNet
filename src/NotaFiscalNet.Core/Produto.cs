@@ -353,7 +353,7 @@ namespace NotaFiscalNet.Core
         public TipoProdutoEspecifico TipoProdutoEspecifico
         {
             get => _tipoProdutoEspecifico;
-	        set => _tipoProdutoEspecifico = ValidationUtil.ValidateEnum<TipoProdutoEspecifico>(value, "TipoProdutoEspecifico");
+	        set => _tipoProdutoEspecifico = ValidationUtil.ValidateEnum(value, "TipoProdutoEspecifico");
         }
 
         /// <summary>

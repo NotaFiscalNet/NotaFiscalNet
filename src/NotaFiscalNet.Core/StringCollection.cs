@@ -1,4 +1,5 @@
-﻿using NotaFiscalNet.Core.Interfaces;
+﻿using System.Linq;
+using NotaFiscalNet.Core.Interfaces;
 
 namespace NotaFiscalNet.Core
 {
@@ -7,20 +8,9 @@ namespace NotaFiscalNet.Core
     /// </summary>
     public sealed class StringCollection : BaseCollection<string>, IModificavel
     {
-        /// <summary>
-        /// Retorna se existe alguma instancia da classe modificada na coleção
-        /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                foreach (string item in this)
-                {
-                    if (!string.IsNullOrEmpty(item))
-                        return true;
-                }
-                return false;
-            }
-        }
+	    /// <summary>
+	    /// Retorna se existe alguma instancia da classe modificada na coleção
+	    /// </summary>
+	    public bool Modificado => this.Any(item => !string.IsNullOrEmpty(item));
     }
 }

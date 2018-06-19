@@ -13,11 +13,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "vIPIDevol", DataType = "TDec_1302", ID = "U61")]
         public decimal ValorIpiDevolvido
         {
-            get { return _valorIpiDevolvido; }
-            set
-            {
-                _valorIpiDevolvido = ValidationUtil.ValidateTDec_0302Max100(value, "ValorIpiDevolvido"); ;
-            }
+            get => _valorIpiDevolvido;
+	        set => _valorIpiDevolvido = ValidationUtil.ValidateTDec_0302Max100(value, "ValorIpiDevolvido");
         }
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, INFe nfe)

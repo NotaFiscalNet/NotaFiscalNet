@@ -131,8 +131,8 @@ namespace NotaFiscalNet.Core
          CampoValidavel(10, ChaveErroValidacao.CampoNaoPreenchido)]
         public SiglaUF UFTerceiro
         {
-            get { return _ufTerceiro; }
-            set
+            get => _ufTerceiro;
+	        set
             {
                 if (value == SiglaUF.EX)
                     throw new ApplicationException("O valor informado ('EX') não é permitido neste contexto.");

@@ -22,8 +22,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "Cpf", DataType = "TCpf", ID = "X05")]
         public string CPF
         {
-            get { return _cpf; }
-            set
+            get => _cpf;
+	        set
             {
                 ValidationUtil.ValidateCPF(value, "Cpf", true);
 
@@ -38,8 +38,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "Cnpj", DataType = "TCnpj", ID = "X04")]
         public string CNPJ
         {
-            get { return _cnpj; }
-            set
+            get => _cnpj;
+	        set
             {
                 ValidationUtil.ValidateCNPJ(value, "Cnpj", true);
 
@@ -55,11 +55,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "xNome", DataType = "TString", ID = "X06", MinLength = 2, MaxLength = 60, Pattern = @"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}")]
         public string Nome
         {
-            get { return _xNome; }
-            set
-            {
-                _xNome = ValidationUtil.TruncateString(value, 60);
-            }
+            get => _xNome;
+	        set => _xNome = ValidationUtil.TruncateString(value, 60);
         }
 
         /// <summary>
@@ -68,8 +65,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "IE", DataType = "TIeDest", ID = "X07", MinLength = 2, MaxLength = 14)]
         public string InscricaoEstadual
         {
-            get { return _inscricaoEstadual; }
-            set
+            get => _inscricaoEstadual;
+	        set
             {
                 ValidationUtil.ValidateIncricaoEstadualDestino(value, "InscricaoEstadual");
 
@@ -83,11 +80,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "xEnder", DataType = "TString", ID = "X08", MinLength = 1, MaxLength = 60, Pattern = @"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}")]
         public string EnderecoCompleto
         {
-            get { return _xEnder; }
-            set
-            {
-                _xEnder = ValidationUtil.TruncateString(value, 60);
-            }
+            get => _xEnder;
+	        set => _xEnder = ValidationUtil.TruncateString(value, 60);
         }
 
         /// <summary>
@@ -96,11 +90,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "xMun", DataType = "TString", ID = "X09", MinLength = 1, MaxLength = 60, Pattern = @"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}")]
         public string Municipio
         {
-            get { return _xMun; }
-            set
-            {
-                _xMun = ValidationUtil.TruncateString(value, 60);
-            }
+            get => _xMun;
+	        set => _xMun = ValidationUtil.TruncateString(value, 60);
         }
 
         /// <summary>
@@ -109,8 +100,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "UF", DataType = "TUf", ID = "X10")]
         public SiglaUF UF
         {
-            get { return _UF; }
-            set
+            get => _UF;
+	        set
             {
                 ValidationUtil.ValidateEnum<SiglaUF>(value, "UF");
                 _UF = value;

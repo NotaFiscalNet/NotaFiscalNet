@@ -43,8 +43,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "CST")]
         public override SituacaoTributariaICMS CST
         {
-            get { return _cst; }
-            protected set
+            get => _cst;
+	        protected set
             {
                 switch (value)
                 {
@@ -83,8 +83,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "motDesICMS", DataType = "TDec_1302")]
         public MotivoDesoneracaoCondicionalICMS? MotivoDesoneracaoIcms
         {
-            get { return _motivoDesoneracao; }
-            set
+            get => _motivoDesoneracao;
+	        set
             {
                 if (!value.HasValue)
                     _motivoDesoneracao = null;

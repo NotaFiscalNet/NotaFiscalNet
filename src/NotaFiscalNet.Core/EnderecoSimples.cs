@@ -52,8 +52,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Logradouro
         {
-            get { return _logradouro; }
-            set { _logradouro = ValidationUtil.ValidateTString(value, 2, 60); }
+            get => _logradouro;
+	        set => _logradouro = ValidationUtil.ValidateTString(value, 2, 60);
         }
 
         /// <summary>
@@ -70,8 +70,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Numero
         {
-            get { return _numero; }
-            set { _numero = ValidationUtil.ValidateTString(value, 1, 60); }
+            get => _numero;
+	        set => _numero = ValidationUtil.ValidateTString(value, 1, 60);
         }
 
         /// <summary>
@@ -88,8 +88,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(3, Opcional = true)]
         public string Complemento
         {
-            get { return _complemento; }
-            set { _complemento = value == null ? null : ValidationUtil.ValidateTString(value, 1, 60); }
+            get => _complemento;
+	        set => _complemento = value == null ? null : ValidationUtil.ValidateTString(value, 1, 60);
         }
 
         /// <summary>
@@ -106,8 +106,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Bairro
         {
-            get { return _bairro; }
-            set { _bairro = ValidationUtil.ValidateTString(value, 2, 60); }
+            get => _bairro;
+	        set => _bairro = ValidationUtil.ValidateTString(value, 2, 60);
         }
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
         public int CodigoMunicipioIBGE
         {
-            get { return _codigoMunicipioIBGE; }
-            set { _codigoMunicipioIBGE = ValidationUtil.ValidateTCodMunIBGE(value, "CodigoMunicipioIBGE"); }
+            get => _codigoMunicipioIBGE;
+	        set => _codigoMunicipioIBGE = ValidationUtil.ValidateTCodMunIBGE(value, "CodigoMunicipioIBGE");
         }
 
         /// <summary>
@@ -139,8 +139,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(6, ChaveErroValidacao.CampoNaoPreenchido)]
         public string NomeMunicipio
         {
-            get { return _nomeMunicipio; }
-            set { _nomeMunicipio = ValidationUtil.ValidateTString(value, 2, 60); }
+            get => _nomeMunicipio;
+	        set => _nomeMunicipio = ValidationUtil.ValidateTString(value, 2, 60);
         }
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(7, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = UfIBGE.NaoEspecificado)]
         public SiglaUF UF
         {
-            get { return _UF; }
-            set { _UF = ValidationUtil.ValidateEnum(value, "UF"); }
+            get => _UF;
+	        set => _UF = ValidationUtil.ValidateEnum(value, "UF");
         }
     }
 }

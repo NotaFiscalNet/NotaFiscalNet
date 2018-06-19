@@ -42,13 +42,10 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "vTotTrib", DataType = "TDec_1302")]
         public decimal? ValorTotalTributos
         {
-            get { return _valorTotalTributos; }
-            set
-            {
-                _valorTotalTributos = value.HasValue
-                    ? (decimal?)ValidationUtil.ValidateTDec_1302(value.Value, "ValorTotalTributos")
-                    : null;
-            }
+            get => _valorTotalTributos;
+	        set => _valorTotalTributos = value.HasValue
+		        ? (decimal?)ValidationUtil.ValidateTDec_1302(value.Value, "ValorTotalTributos")
+		        : null;
         }
 
         /// <summary>
@@ -56,8 +53,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public Icms Icms
         {
-            get { return _icms; }
-            set
+            get => _icms;
+	        set
             {
                 ValidarConflitoISSQN();
                 _icms = value;

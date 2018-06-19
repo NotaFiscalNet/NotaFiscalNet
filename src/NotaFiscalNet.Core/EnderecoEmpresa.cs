@@ -32,8 +32,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(0)]
         public string CNPJ
         {
-            get { return _CNPJ; }
-            set
+            get => _CNPJ;
+	        set
             {
                 _CPF = string.Empty;
                 _CNPJ = ValidationUtil.ValidateCNPJ(value, "Cnpj", true);
@@ -48,8 +48,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, Opcional = true)]
         public string CPF
         {
-            get { return _CPF; }
-            set
+            get => _CPF;
+	        set
             {
                 _CNPJ = string.Empty;
                 _CPF = ValidationUtil.ValidateCPF(value, "Cpf", true);

@@ -54,8 +54,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public int CodigoProdutoANP
         {
-            get { return _codigoProdutoANP; }
-            set { _codigoProdutoANP = ValidationUtil.ValidateRange(value, 0, 999999999, "CodigoProdutoANP"); }
+            get => _codigoProdutoANP;
+	        set => _codigoProdutoANP = ValidationUtil.ValidateRange(value, 0, 999999999, "CodigoProdutoANP");
         }
 
         /// <summary>
@@ -66,8 +66,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal? PercentualMixGN
         {
-            get { return _percentualMixGn; }
-            set { _percentualMixGn = ValidationUtil.ValidateTDec_0204v(value, "PercentualMixGN"); }
+            get => _percentualMixGn;
+	        set => _percentualMixGn = ValidationUtil.ValidateTDec_0204v(value, "PercentualMixGN");
         }
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(2, Opcional = true)]
         public string CodigoCODIF
         {
-            get { return _codif; }
-            set { _codif = ValidationUtil.ValidateRange(SerializationUtil.ToToken(value), 0, 21, "CodigoCODIF"); }
+            get => _codif;
+	        set => _codif = ValidationUtil.ValidateRange(SerializationUtil.ToToken(value), 0, 21, "CodigoCODIF");
         }
 
         /// <summary>
@@ -98,8 +98,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(3, Opcional = true)]
         public decimal QuantidadeCombustivelFaturadaTempAmbiente
         {
-            get { return _quantidadeCombustivelTempAmbiente; }
-            set
+            get => _quantidadeCombustivelTempAmbiente;
+	        set
             {
                 if (value == 0m)
                     _quantidadeCombustivelTempAmbiente = value;
@@ -116,8 +116,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = SiglaUF.NaoEspecificado)]
         public SiglaUF UFConsumo
         {
-            get { return _UFConsumo; }
-            set
+            get => _UFConsumo;
+	        set
             {
                 ValidationUtil.ValidateEnum(value, "UFConsumo");
                 _UFConsumo = value;

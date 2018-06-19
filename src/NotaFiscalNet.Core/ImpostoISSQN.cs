@@ -47,8 +47,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal BaseCalculo
         {
-            get { return _baseCalculo; }
-            set
+            get => _baseCalculo;
+	        set
             {
                 ValidarConflitoIcmsIpiII();
                 ValidationUtil.ValidateTDec_1302(value, "BaseCalculo");
@@ -63,8 +63,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal Aliquota
         {
-            get { return _aliquota; }
-            set
+            get => _aliquota;
+	        set
             {
                 ValidarConflitoIcmsIpiII();
                 ValidationUtil.ValidateTDec_0302(value, "Aliquota");
@@ -79,8 +79,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal ValorISSQN
         {
-            get { return _valor; }
-            set
+            get => _valor;
+	        set
             {
                 ValidarConflitoIcmsIpiII();
                 ValidationUtil.ValidateTDec_1302(value, "ValorISSQN");
@@ -96,8 +96,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido)]
         public int CodigoMunicipioFatoGeradorIBGE
         {
-            get { return _codigoMunicipioFatoGeradorIBGE; }
-            set
+            get => _codigoMunicipioFatoGeradorIBGE;
+	        set
             {
                 ValidarConflitoIcmsIpiII();
                 ValidationUtil.ValidateTCodMunIBGE(value, "CodigoMunicipioFatoGeradorIBGE");
@@ -112,8 +112,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
         public string CodigoServico
         {
-            get { return _codigoServico; }
-            set
+            get => _codigoServico;
+	        set
             {
                 ValidarConflitoIcmsIpiII();
                 _codigoServico = ValidationUtil.ValidateTCListServ(value, "CodigoServico");
@@ -162,11 +162,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "U13", FieldName = "cServico")]
         public string CodigoServicoPrestadoMunicipio
         {
-            get { return _codigoServicoPrestadoMunicipio; }
-            set
-            {
-                _codigoServicoPrestadoMunicipio = ValidationUtil.ValidateRange(value, 1, 20, "CodigoServicoPrestadoMunicipio");
-            }
+            get => _codigoServicoPrestadoMunicipio;
+	        set => _codigoServicoPrestadoMunicipio = ValidationUtil.ValidateRange(value, 1, 20, "CodigoServicoPrestadoMunicipio");
         }
 
         /// <summary>
@@ -188,11 +185,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "U16", FieldName = "nProcesso", DataType = "xs:string", MinLength = 1, MaxLength = 30)]
         public string NumeroProcessoSuspensao
         {
-            get { return _numeroProcessoSuspensao; }
-            set
-            {
-                _numeroProcessoSuspensao = ValidationUtil.ValidateRange(value, 1, 30, "NumeroProcessoSuspensao");
-            }
+            get => _numeroProcessoSuspensao;
+	        set => _numeroProcessoSuspensao = ValidationUtil.ValidateRange(value, 1, 30, "NumeroProcessoSuspensao");
         }
 
         /// <summary>

@@ -34,8 +34,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public string FieldName
         {
-            get { return _fieldName; }
-            set { _fieldName = value; }
+            get => _fieldName;
+	        set => _fieldName = value;
         }
 
         /// <summary>
@@ -43,8 +43,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public string ID
         {
-            get { return _id; }
-            set { _id = value; }
+            get => _id;
+	        set => _id = value;
         }
 
         /// <summary>
@@ -52,8 +52,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public string DataType
         {
-            get { return _dataType; }
-            set { _dataType = value; }
+            get => _dataType;
+	        set => _dataType = value;
         }
 
         /// <summary>
@@ -61,8 +61,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public int MinLength
         {
-            get { return _minLength; }
-            set
+            get => _minLength;
+	        set
             {
                 if (value >= 0)
                     _minLength = value;
@@ -76,8 +76,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public int MaxLength
         {
-            get { return _maxLength; }
-            set
+            get => _maxLength;
+	        set
             {
                 if (value >= 0)
                     _maxLength = value;
@@ -91,8 +91,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public string Pattern
         {
-            get { return _pattern; }
-            set { _pattern = value; }
+            get => _pattern;
+	        set => _pattern = value;
         }
 
         /// <summary>
@@ -100,8 +100,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public bool Opcional
         {
-            get { return _opcional; }
-            set { _opcional = value; }
+            get => _opcional;
+	        set => _opcional = value;
         }
 
         /// <summary>
@@ -109,8 +109,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public XmlNodeType NodeType
         {
-            get { return _nodeType; }
-            set { _nodeType = value; }
+            get => _nodeType;
+	        set => _nodeType = value;
         }
     }
 }

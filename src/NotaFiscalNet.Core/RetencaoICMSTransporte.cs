@@ -24,8 +24,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal ValorServico
         {
-            get { return _valorServico; }
-            set
+            get => _valorServico;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorServico");
 
@@ -40,8 +40,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal BaseCalculoRetencao
         {
-            get { return _BaseCalculoRetencao; }
-            set
+            get => _BaseCalculoRetencao;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "BaseCalculoRetencao");
 
@@ -56,8 +56,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal AliquotaRetencao
         {
-            get { return _aliquotaRetencao; }
-            set
+            get => _aliquotaRetencao;
+	        set
             {
                 ValidationUtil.ValidateTDec_0302(value, "AliquotaRetencao");
 
@@ -72,8 +72,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal ValorICMSRetido
         {
-            get { return _valorICMSRetido; }
-            set
+            get => _valorICMSRetido;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorICMSRetido");
 
@@ -88,8 +88,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
         public int CFOP
         {
-            get { return _cfop; }
-            set
+            get => _cfop;
+	        set
             {
                 ValidationUtil.ValidateTCfop(value, "CFOP");
 
@@ -105,8 +105,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(6, ChaveErroValidacao.CampoNaoPreenchido)]
         public int CodigoMunicipioFatorGerador
         {
-            get { return _codigoMunicipioFatorGeradorICMS; }
-            set
+            get => _codigoMunicipioFatorGeradorICMS;
+	        set
             {
                 ValidationUtil.ValidateTCodMunIBGE(value, "CodigoMunicipioFatorGerador");
 

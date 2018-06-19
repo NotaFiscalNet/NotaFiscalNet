@@ -36,8 +36,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = SituacaoTributariaPIS.NaoEspecificado)]
         public SituacaoTributariaPIS SituacaoTributaria
         {
-            get { return _situacaoTributaria; }
-            set
+            get => _situacaoTributaria;
+	        set
             {
                 ValidationUtil.ValidateEnum<SituacaoTributariaPIS>(value, "SituacaoTributaria");
 
@@ -101,8 +101,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public TipoCalculoPIS TipoCalculo
         {
-            get { return _tipo; }
-            set
+            get => _tipo;
+	        set
             {
                 if (!_canChangeTipo)
                     throw new ErroValidacaoNFeException(ErroValidacao.Create(ChaveErroValidacao.NotCanChangeTipoCalculo, SituacaoTributaria));
@@ -119,8 +119,8 @@ namespace NotaFiscalNet.Core
         //[ValidateField(2, Validador=typeof(ImpostoPISValidator))]
         public decimal BaseCalculo
         {
-            get { return _baseCalculo; }
-            set
+            get => _baseCalculo;
+	        set
             {
                 switch (SituacaoTributaria)
                 {
@@ -187,8 +187,8 @@ namespace NotaFiscalNet.Core
         //[ValidateField(3)]
         public decimal Aliquota
         {
-            get { return _aliquota; }
-            set
+            get => _aliquota;
+	        set
             {
                 switch (SituacaoTributaria)
                 {
@@ -231,8 +231,8 @@ namespace NotaFiscalNet.Core
         //[ValidateField(4)]
         public decimal Valor
         {
-            get { return _valor; }
-            set
+            get => _valor;
+	        set
             {
                 switch (SituacaoTributaria)
                 {

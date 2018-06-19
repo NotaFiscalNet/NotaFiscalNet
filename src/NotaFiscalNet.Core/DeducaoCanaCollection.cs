@@ -1,6 +1,7 @@
 ﻿using NotaFiscalNet.Core.Interfaces;
 using System;
 using System.ComponentModel;
+using System.Linq;
 using System.Xml;
 
 namespace NotaFiscalNet.Core
@@ -15,19 +16,8 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna se existe alguma instancia da classe modificada na coleção
         /// </summary>
-        public bool Modificado
-        {
-            get
-            {
-                foreach (var item in this)
-                {
-                    if (item.Modificado)
-                        return true;
-                }
-                return false;
-            }
-        }
-
+        public bool Modificado => this.Any(item => item.Modificado);
+	    
         public void Serializar(XmlWriter writer, INFe nfe)
         {
             foreach (var item in this)

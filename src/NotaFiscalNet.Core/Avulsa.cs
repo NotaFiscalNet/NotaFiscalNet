@@ -27,8 +27,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public string Cnpj
         {
-            get { return _cnpj; }
-            set { _cnpj = ValidationUtil.ValidateCNPJ(value, "Cnpj", false); }
+            get => _cnpj;
+	        set => _cnpj = ValidationUtil.ValidateCNPJ(value, "Cnpj", false);
         }
 
         /// <summary>
@@ -36,8 +36,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public string OrgaoEmitente
         {
-            get { return _orgaoEmitente; }
-            set { _orgaoEmitente = ValidationUtil.TruncateString(value, 60); }
+            get => _orgaoEmitente;
+	        set => _orgaoEmitente = ValidationUtil.TruncateString(value, 60);
         }
 
         /// <summary>
@@ -45,8 +45,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public string MatriculaAgente
         {
-            get { return _matriculaAgente; }
-            set { _matriculaAgente = ValidationUtil.TruncateString(value, 60); }
+            get => _matriculaAgente;
+	        set => _matriculaAgente = ValidationUtil.TruncateString(value, 60);
         }
 
         /// <summary>
@@ -54,8 +54,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public string NomeAgente
         {
-            get { return _nomeAgente; }
-            set { _nomeAgente = ValidationUtil.TruncateString(value, 60); }
+            get => _nomeAgente;
+	        set => _nomeAgente = ValidationUtil.TruncateString(value, 60);
         }
 
         /// <summary>
@@ -63,8 +63,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public string Telefone
         {
-            get { return _telefone; }
-            set
+            get => _telefone;
+	        set
             {
                 ValidationUtil.ValidateTelefone(value, "Telefone");
                 _telefone = value;
@@ -76,8 +76,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public UfIBGE UnidadeFederativa
         {
-            get { return _unidadeFederativa; }
-            set { _unidadeFederativa = ValidationUtil.ValidateEnum(value, "UnidadeFederativa"); }
+            get => _unidadeFederativa;
+	        set => _unidadeFederativa = ValidationUtil.ValidateEnum(value, "UnidadeFederativa");
         }
 
         /// <summary>
@@ -85,8 +85,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public string NumeroDocumento
         {
-            get { return _numeroDocumento; }
-            set { _numeroDocumento = ValidationUtil.TruncateString(value, 60); }
+            get => _numeroDocumento;
+	        set => _numeroDocumento = ValidationUtil.TruncateString(value, 60);
         }
 
         /// <summary>
@@ -95,8 +95,8 @@ namespace NotaFiscalNet.Core
         /// <remarks>Formato AAAA-MM-DD</remarks>
         public DateTime? DataEmissao
         {
-            get { return _dataEmissao; }
-            set
+            get => _dataEmissao;
+	        set
             {
                 if (value.HasValue)
                     ValidationUtil.ValidateTData(value.GetValueOrDefault(), "DataEmissao");
@@ -111,8 +111,8 @@ namespace NotaFiscalNet.Core
         /// <remarks>Formato com 15 caracteres, sendo 13 no corpo e 2 decimais</remarks>
         public decimal? Valor
         {
-            get { return _valor; }
-            set
+            get => _valor;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "Valor");
                 _valor = value;
@@ -124,8 +124,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public string ReparticaoFiscalEmitente
         {
-            get { return _reparticaoFiscalEmitente; }
-            set { _reparticaoFiscalEmitente = ValidationUtil.TruncateString(value, 60); }
+            get => _reparticaoFiscalEmitente;
+	        set => _reparticaoFiscalEmitente = ValidationUtil.TruncateString(value, 60);
         }
 
         /// <summary>
@@ -134,8 +134,8 @@ namespace NotaFiscalNet.Core
         /// <remarks>Formato AAAA-MM-DD</remarks>
         public DateTime? DataPagamento
         {
-            get { return _dataPagamento; }
-            set
+            get => _dataPagamento;
+	        set
             {
                 if (value.HasValue)
                     ValidationUtil.ValidateTData(value.GetValueOrDefault(), "DataPagamento");

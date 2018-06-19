@@ -53,8 +53,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = OrigemMercadoria.NaoEspecificado)]
         public OrigemMercadoria OrigemMercadoria
         {
-            get { return _origemMercadoria; }
-            set
+            get => _origemMercadoria;
+	        set
             {
                 ValidarConflitoISSQN();
                 ValidationUtil.ValidateEnum(value, "OrigemMercadoria");
@@ -69,8 +69,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = SituacaoTributariaICMS.NaoEspecificado)]
         public SituacaoTributariaICMS SituacaoTributaria
         {
-            get { return _situacaoTributaria; }
-            set
+            get => _situacaoTributaria;
+	        set
             {
                 ValidarConflitoISSQN();
                 ValidationUtil.ValidateEnum(value, "SituacaoTributaria");
@@ -86,8 +86,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(3)]
         public ModalidadeBaseCalculoIcms ModalidadeBaseCalculo
         {
-            get { return _modalidadeBaseCalculo; }
-            set
+            get => _modalidadeBaseCalculo;
+	        set
             {
                 ValidarConflitoISSQN();
                 if (value != ModalidadeBaseCalculoIcms.NaoEspecificado)
@@ -119,8 +119,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "N14", FieldName = "pRedBC", DataType = "TDec_0302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?")]
         public decimal PercentualReducaoBaseCalculo
         {
-            get { return _percentualReducaoBaseCalculo; }
-            set
+            get => _percentualReducaoBaseCalculo;
+	        set
             {
                 ValidarConflitoISSQN();
                 if (value != 0m)
@@ -150,8 +150,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "N15", FieldName = "vBC", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
         public decimal BaseCalculo
         {
-            get { return _baseCalculo; }
-            set
+            get => _baseCalculo;
+	        set
             {
                 ValidarConflitoISSQN();
                 if (value != 0m)
@@ -184,8 +184,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "N16", FieldName = "pICMS", DataType = "TDec_0302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?")]
         public decimal Aliquota
         {
-            get { return _aliquota; }
-            set
+            get => _aliquota;
+	        set
             {
                 ValidarConflitoISSQN();
                 if (value != 0m)
@@ -217,8 +217,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "N16", FieldName = "pCredSN", DataType = "TDec_0302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?")]
         public decimal AliquotaSN
         {
-            get { return _aliquotaSN; }
-            set
+            get => _aliquotaSN;
+	        set
             {
                 ValidarConflitoISSQN();
                 if (value != 0m)
@@ -247,8 +247,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "vCredICMSSN", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
         public decimal Valor
         {
-            get { return _valor; }
-            set
+            get => _valor;
+	        set
             {
                 ValidarConflitoISSQN();
                 if (value != 0m)
@@ -283,8 +283,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "vCredICMSSN", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
         public decimal ValorSN
         {
-            get { return _valorSN; }
-            set
+            get => _valorSN;
+	        set
             {
                 ValidarConflitoISSQN();
                 if (value != 0m)
@@ -314,8 +314,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(5)]
         public MotivoDesoneracaoCondicionalICMS MotivoDesoneracaoCondicional
         {
-            get { return _motivoDesoneracaoCondicional; }
-            set
+            get => _motivoDesoneracaoCondicional;
+	        set
             {
                 ValidarConflitoISSQN();
                 ValidationUtil.ValidateEnum(value, "MotivoDesoneracaoCondicional");
@@ -330,8 +330,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "N18", FieldName = "modBCST")]
         public ModalidadeBaseCalculoIcmsST ModalidadeBaseCalculoST
         {
-            get { return _modalidadeBaseCalculoST; }
-            set
+            get => _modalidadeBaseCalculoST;
+	        set
             {
                 ValidarConflitoISSQN();
                 if (value != ModalidadeBaseCalculoIcmsST.NaoEspecificado)
@@ -364,8 +364,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "N19", FieldName = "pMVAST", DataType = "TDec_0302Opc", Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?")]
         public decimal PercentualMargemValorAdicionadoST
         {
-            get { return _percentualMargemValorAdicionado; }
-            set
+            get => _percentualMargemValorAdicionado;
+	        set
             {
                 ValidarConflitoISSQN();
                 if (value != 0m)
@@ -398,8 +398,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "N20", FieldName = "pRedBCST", DataType = "TDec_0302Opc", Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?")]
         public decimal PercentualReducaoBaseCalculoST
         {
-            get { return _percentualReducaoBaseCalculoST; }
-            set
+            get => _percentualReducaoBaseCalculoST;
+	        set
             {
                 ValidarConflitoISSQN();
                 if (value != 0m)
@@ -433,8 +433,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "N21", FieldName = "vBCST", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
         public decimal BaseCalculoST
         {
-            get { return _baseCalculoST; }
-            set
+            get => _baseCalculoST;
+	        set
             {
                 ValidarConflitoISSQN();
 
@@ -469,8 +469,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "N22", FieldName = "pICMSST", DataType = "TDec_0302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?")]
         public decimal AliquotaST
         {
-            get { return _aliquotaST; }
-            set
+            get => _aliquotaST;
+	        set
             {
                 ValidarConflitoISSQN();
                 if (value != 0m)
@@ -502,8 +502,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "N23", FieldName = "vICMSST", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
         public decimal ValorST
         {
-            get { return _valorST; }
-            set
+            get => _valorST;
+	        set
             {
                 ValidarConflitoISSQN();
                 if (value != 0m)

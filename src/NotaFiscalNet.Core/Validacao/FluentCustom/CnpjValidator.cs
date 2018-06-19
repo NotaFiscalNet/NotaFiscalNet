@@ -5,7 +5,7 @@ namespace NotaFiscalNet.Core.Validacao.FluentCustom
     public class CnpjValidator : PropertyValidator
     {
         public CnpjValidator()
-            : base("'{PropertyName}' È um CNPJ inv·lido!")
+            : base("'{PropertyName}' √© um CNPJ inv√°lido!")
         {
         }
 

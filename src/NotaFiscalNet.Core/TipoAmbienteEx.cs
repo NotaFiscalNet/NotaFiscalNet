@@ -16,7 +16,7 @@ namespace NotaFiscalNet.Core
                     return "H";
 
                 default:
-                    throw new InvalidEnumArgumentException("Valor inv·lido para o enum (" + (int)source + ").");
+                    throw new InvalidEnumArgumentException("Valor inv√°lido para o enum (" + (int)source + ").");
             }
         }
 
@@ -30,7 +30,7 @@ namespace NotaFiscalNet.Core
                 case "P": return TipoAmbiente.Producao;
                 case "H": return TipoAmbiente.Homologacao;
                 default:
-                    throw new ArgumentOutOfRangeException(nameof(value), value, "O valor informado n„o È um ambiente de Documento Fiscal v·lido.");
+                    throw new ArgumentOutOfRangeException(nameof(value), value, "O valor informado n√£o √© um ambiente de Documento Fiscal v√°lido.");
             }
         }
     }

@@ -37,8 +37,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(8, Opcional = true)]
         public string CEP
         {
-            get { return _CEP; }
-            set { _CEP = ValidationUtil.ValidateCEP(value, "CEP"); }
+            get => _CEP;
+	        set => _CEP = ValidationUtil.ValidateCEP(value, "CEP");
         }
 
         /// <summary>
@@ -48,8 +48,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(9, Opcional = true)]
         public int CodigoPaisBACEN
         {
-            get { return _codigoPaisBACEN; }
-            set
+            get => _codigoPaisBACEN;
+	        set
             {
                 if (value > 0 && !ValidationUtil.ValidateRegex(value, "[0-9]{1,4}"))
                     throw new ArgumentException("O valor informado para o Código do País não é válido.");
@@ -74,8 +74,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(11, Opcional = true)]
         public string Telefone
         {
-            get { return _telefone; }
-            set
+            get => _telefone;
+	        set
             {
                 if (!string.IsNullOrEmpty(value) && !ValidationUtil.ValidateRegex(value, "^[0-9]{1,10}$"))
                     throw new ArgumentException(

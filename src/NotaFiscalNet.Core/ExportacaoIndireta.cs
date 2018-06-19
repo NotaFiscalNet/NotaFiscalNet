@@ -16,8 +16,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "I53", FieldName = "nRE", DataType = "xs:string", Pattern = "[0-9]{0,12}")]
         public string NumeroRegistro
         {
-            get { return _numeroRegistro; }
-            set
+            get => _numeroRegistro;
+	        set
             {
                 if (!ValidationUtil.ValidateRegex(value, "^[0-9]{0,12}$"))
                     throw new ArgumentException("O valor informado não é válido.");
@@ -31,8 +31,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "I54", FieldName = "chNFe", DataType = "xs:string", Pattern = "^[0-9]{44}$")]
         public string ChaveAcessoNFe
         {
-            get { return _chaveAcessoNFe; }
-            set
+            get => _chaveAcessoNFe;
+	        set
             {
                 if (!ValidationUtil.ValidateRegex(value, "^[0-9]{44}$"))
                     throw new ArgumentException("A chave de acesso informada não é válida (Exportação Indireta).");

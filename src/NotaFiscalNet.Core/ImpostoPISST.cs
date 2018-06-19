@@ -31,8 +31,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public TipoCalculoPIS TipoCalculo
         {
-            get { return _tipo; }
-            set
+            get => _tipo;
+	        set
             {
                 ValidationUtil.ValidateEnum(value, "TipoCalculo");
                 _tipo = value;
@@ -47,8 +47,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal BaseCalculo
         {
-            get { return _baseCalculo; }
-            set
+            get => _baseCalculo;
+	        set
             {
                 switch (TipoCalculo)
                 {
@@ -72,8 +72,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal Aliquota
         {
-            get { return _aliquota; }
-            set
+            get => _aliquota;
+	        set
             {
                 switch (TipoCalculo)
                 {
@@ -96,8 +96,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal Valor
         {
-            get { return _valor; }
-            set
+            get => _valor;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "Valor");
                 _valor = value;

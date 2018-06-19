@@ -34,7 +34,7 @@ namespace NotaFiscalNet.Core.Transmissao
         /// <param name="retCancNFe">Representa o tipo complexo 'TRetCancNFe'.</param>
         internal RetornoCancelamentoNFe(XElement retCancNFeEl)
         {
-            if (retCancNFeEl == null) throw new ArgumentException("retCancNFeEl est· vazio.");
+            if (retCancNFeEl == null) throw new ArgumentException("retCancNFeEl est√° vazio.");
 
             var ns = Constants.XNamespacePortalFiscalNFe;
 

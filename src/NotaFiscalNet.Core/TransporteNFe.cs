@@ -31,8 +31,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(0, Opcional = false)]
         public TipoMeioTransporte MeioTransporte
         {
-            get { return _meioTransporte; }
-            set
+            get => _meioTransporte;
+	        set
             {
                 ValidationUtil.ValidateEnum(value, "MeioTransporte");
                 _meioTransporte = value;
@@ -46,8 +46,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, Opcional = true)]
         public TipoModalidadeFrete ModalidadeFrete
         {
-            get { return _modFrete; }
-            set
+            get => _modFrete;
+	        set
             {
                 ValidationUtil.ValidateEnum(value, "ModalidadeFrete");
                 _modFrete = value;

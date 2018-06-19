@@ -17,11 +17,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public UfIBGE UnidadeFederativa
         {
-            get { return _unidadeFederativa; }
-            set
-            {
-                _unidadeFederativa = ValidationUtil.ValidateEnum(value, "UnidadeFederativa");
-            }
+            get => _unidadeFederativa;
+	        set => _unidadeFederativa = ValidationUtil.ValidateEnum(value, "UnidadeFederativa");
         }
 
         /// <summary>
@@ -29,11 +26,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public string LocalEmbarque
         {
-            get { return _localEmbarque; }
-            set
-            {
-                _localEmbarque = ValidationUtil.TruncateString(value, 60);
-            }
+            get => _localEmbarque;
+	        set => _localEmbarque = ValidationUtil.TruncateString(value, 60);
         }
 
         /// <summary>
@@ -41,11 +35,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public string LocalDespacho
         {
-            get { return _localDespacho; }
-            set
-            {
-                _localDespacho = ValidationUtil.TruncateString(value, 60);
-            }
+            get => _localDespacho;
+	        set => _localDespacho = ValidationUtil.TruncateString(value, 60);
         }
 
         /// <summary>

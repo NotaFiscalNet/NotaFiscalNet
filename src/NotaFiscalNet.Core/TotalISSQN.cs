@@ -22,8 +22,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "W18", FieldName = "vServ", DataType = "TDec_1302Opc", Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional = true)]
         public decimal ValorTotalServicos
         {
-            get { return _valorTotalServicos; }
-            set
+            get => _valorTotalServicos;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalServicos");
                 _valorTotalServicos = value;
@@ -36,8 +36,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "W19", FieldName = "vBC", DataType = "TDec_1302Opc", Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional = true)]
         public decimal BaseCalculo
         {
-            get { return _baseCalculo; }
-            set
+            get => _baseCalculo;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "BaseCalculo");
                 _baseCalculo = value;
@@ -50,8 +50,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "W20", FieldName = "vISS", DataType = "TDec_1302Opc", Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional = true)]
         public decimal ValorTotalISS
         {
-            get { return _valorTotalISS; }
-            set
+            get => _valorTotalISS;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalISS");
                 _valorTotalISS = value;
@@ -64,8 +64,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "W21", FieldName = "vPIS", DataType = "TDec_1302Opc", Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional = true)]
         public decimal ValorPIS
         {
-            get { return _valorPIS; }
-            set
+            get => _valorPIS;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorPIS");
                 _valorPIS = value;
@@ -78,8 +78,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "W22", FieldName = "vCOFINS", DataType = "TDec_1302Opc", Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional = true)]
         public decimal ValorCOFINS
         {
-            get { return _valorCOFINS; }
-            set
+            get => _valorCOFINS;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorCOFINS");
                 _valorCOFINS = value;

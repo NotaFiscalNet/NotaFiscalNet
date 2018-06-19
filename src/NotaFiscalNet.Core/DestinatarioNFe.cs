@@ -43,8 +43,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(10, Opcional = true)]
         public string CNPJ
         {
-            get { return _cnpj; }
-            set
+            get => _cnpj;
+	        set
             {
                 long cnpj;
                 long.TryParse(value, out cnpj);
@@ -66,8 +66,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(20, Opcional = true)]
         public string CPF
         {
-            get { return _cpf; }
-            set
+            get => _cpf;
+	        set
             {
                 ValidationUtil.ValidateCPF(value, "Cpf", true);
 
@@ -85,8 +85,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(30, Opcional = true)]
         public string IdEstrangeiro
         {
-            get { return _idEstrangeiro; }
-            set
+            get => _idEstrangeiro;
+	        set
             {
                 if (!string.IsNullOrEmpty(value))
                     ValidationUtil.ValidateRange(value, 5, 14, "IdEstrangeiro");
@@ -102,8 +102,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(40, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Nome
         {
-            get { return _nome; }
-            set { _nome = ValidationUtil.TruncateString(value, 60); }
+            get => _nome;
+	        set => _nome = ValidationUtil.TruncateString(value, 60);
         }
 
         /// <summary>
@@ -134,8 +134,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(60, ChaveErroValidacao.CampoNaoPreenchido)]
         public string InscricaoEstadual
         {
-            get { return _inscricaoEstadual; }
-            set { _inscricaoEstadual = ValidationUtil.ValidateTIeDest(value, "InscricaoEstadual"); }
+            get => _inscricaoEstadual;
+	        set => _inscricaoEstadual = ValidationUtil.ValidateTIeDest(value, "InscricaoEstadual");
         }
 
         /// <summary>
@@ -151,8 +151,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(70, Opcional = true)]
         public string InscricaoSUFRAMA
         {
-            get { return _inscricaoSUFRAMA; }
-            set
+            get => _inscricaoSUFRAMA;
+	        set
             {
                 ValidationUtil.ValidateIncricaoSUFRAMA(value, "InscricaoSUFRAMA");
                 _inscricaoSUFRAMA = ValidationUtil.TruncateString(value, 9);
@@ -163,8 +163,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(70, Opcional = true)]
         public string InscricaoMunicipal
         {
-            get { return _inscricaoMunicipal; }
-            set
+            get => _inscricaoMunicipal;
+	        set
             {
                 ValidationUtil.ValidateIncricaoSUFRAMA(value, "InscricaoMunicipal");
                 _inscricaoMunicipal = ValidationUtil.TruncateString(value, 15);
@@ -178,8 +178,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(80, Opcional = true)]
         public string Email
         {
-            get { return _email; }
-            set { _email = ValidationUtil.TruncateString(value, 60); }
+            get => _email;
+	        set => _email = ValidationUtil.TruncateString(value, 60);
         }
 
         public void Serializar(XmlWriter writer, INFe nfe)

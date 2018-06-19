@@ -57,11 +57,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = TipoOperacaoVendaVeiculo.NaoEspecificado)]
         public TipoOperacaoVendaVeiculo TipoOperacaoVenda
         {
-            get { return _tipoOperacaoVenda; }
-            set
-            {
-                _tipoOperacaoVenda = ValidationUtil.ValidateEnum<TipoOperacaoVendaVeiculo>(value, "TipoOperacaoVenda");
-            }
+            get => _tipoOperacaoVenda;
+	        set => _tipoOperacaoVenda = ValidationUtil.ValidateEnum<TipoOperacaoVendaVeiculo>(value, "TipoOperacaoVenda");
         }
 
         /// <summary>
@@ -71,11 +68,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Chassi
         {
-            get { return _chassi; }
-            set
-            {
-                _chassi = ValidationUtil.ValidateRange(SerializationUtil.ToToken(value), 17, 17, "Chassi");
-            }
+            get => _chassi;
+	        set => _chassi = ValidationUtil.ValidateRange(SerializationUtil.ToToken(value), 17, 17, "Chassi");
         }
 
         /// <summary>
@@ -85,11 +79,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)]
         public string CodigoCor
         {
-            get { return _codigoCor; }
-            set
-            {
-                _codigoCor = ValidationUtil.ValidateRange(SerializationUtil.ToToken(value), 1, 4, "CodigoCor");
-            }
+            get => _codigoCor;
+	        set => _codigoCor = ValidationUtil.ValidateRange(SerializationUtil.ToToken(value), 1, 4, "CodigoCor");
         }
 
         /// <summary>
@@ -99,11 +90,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido)]
         public string DescricaoCor
         {
-            get { return _descricaoCor; }
-            set
-            {
-                _descricaoCor = ValidationUtil.ValidateRange(SerializationUtil.ToToken(value), 1, 40, "DescricaoCor");
-            }
+            get => _descricaoCor;
+	        set => _descricaoCor = ValidationUtil.ValidateRange(SerializationUtil.ToToken(value), 1, 40, "DescricaoCor");
         }
 
         /// <summary>
@@ -113,11 +101,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
         public string PotenciaMotor
         {
-            get { return _potencia; }
-            set
-            {
-                _potencia = ValidationUtil.ValidateRange(SerializationUtil.ToToken(value), 1, 4, "PotenciaMotor");
-            }
+            get => _potencia;
+	        set => _potencia = ValidationUtil.ValidateRange(SerializationUtil.ToToken(value), 1, 4, "PotenciaMotor");
         }
 
         /// <summary>
@@ -129,14 +114,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(6, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Cilindradas
         {
-            get
-            {
-                return _cilindradas;
-            }
-            set
-            {
-                _cilindradas = ValidationUtil.ValidateRange(SerializationUtil.ToToken(value), 1, 4, "CM3");
-            }
+            get => _cilindradas;
+	        set => _cilindradas = ValidationUtil.ValidateRange(SerializationUtil.ToToken(value), 1, 4, "CM3");
         }
 
         /// <summary>
@@ -147,14 +126,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(7, ChaveErroValidacao.CampoNaoPreenchido)]
         public string PesoLiquido
         {
-            get
-            {
-                return _pesoLiquido;
-            }
-            set
-            {
-                _pesoLiquido = ValidationUtil.ValidateRange(SerializationUtil.ToToken(value), 1, 9, "PesoLiquido");
-            }
+            get => _pesoLiquido;
+	        set => _pesoLiquido = ValidationUtil.ValidateRange(SerializationUtil.ToToken(value), 1, 9, "PesoLiquido");
         }
 
         /// <summary>
@@ -165,14 +138,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(8, ChaveErroValidacao.CampoNaoPreenchido)]
         public string PesoBruto
         {
-            get
-            {
-                return _pesoBruto;
-            }
-            set
-            {
-                _pesoBruto = ValidationUtil.ValidateRange(SerializationUtil.ToToken(value), 1, 9, "PesoBruto");
-            }
+            get => _pesoBruto;
+	        set => _pesoBruto = ValidationUtil.ValidateRange(SerializationUtil.ToToken(value), 1, 9, "PesoBruto");
         }
 
         /// <summary>
@@ -182,11 +149,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(9, ChaveErroValidacao.CampoNaoPreenchido)]
         public string NumeroSerie
         {
-            get { return _serie; }
-            set
-            {
-                _serie = ValidationUtil.ValidateRange(SerializationUtil.ToToken(value), 1, 9, "NumeroSerie");
-            }
+            get => _serie;
+	        set => _serie = ValidationUtil.ValidateRange(SerializationUtil.ToToken(value), 1, 9, "NumeroSerie");
         }
 
         /// <summary>
@@ -202,11 +166,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(10, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Combustivel
         {
-            get { return _combustivel; }
-            set
-            {
-                _combustivel = ValidationUtil.ValidateRange(SerializationUtil.ToToken(value), 1, 2, "Combustivel");
-            }
+            get => _combustivel;
+	        set => _combustivel = ValidationUtil.ValidateRange(SerializationUtil.ToToken(value), 1, 2, "Combustivel");
         }
 
         /// <summary>
@@ -217,11 +178,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(11, ChaveErroValidacao.CampoNaoPreenchido)]
         public string NumeroMotor
         {
-            get { return _numeroMotor; }
-            set
-            {
-                _numeroMotor = ValidationUtil.ValidateRange(SerializationUtil.ToToken(value), 1, 21, "NumeroMotor");
-            }
+            get => _numeroMotor;
+	        set => _numeroMotor = ValidationUtil.ValidateRange(SerializationUtil.ToToken(value), 1, 21, "NumeroMotor");
         }
 
         /// <summary>
@@ -231,11 +189,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(12, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal CapacidadeMaximaTracao
         {
-            get { return _capacidadeMaximaTracao; }
-            set
-            {
-                _capacidadeMaximaTracao = ValidationUtil.ValidateTDec_0504(value, "CapacidadeMaximaTracao");
-            }
+            get => _capacidadeMaximaTracao;
+	        set => _capacidadeMaximaTracao = ValidationUtil.ValidateTDec_0504(value, "CapacidadeMaximaTracao");
         }
 
         /// <summary>
@@ -245,11 +200,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(13, ChaveErroValidacao.CampoNaoPreenchido)]
         public int DistanciaEixos
         {
-            get { return _distanciaEntreEixo; }
-            set
-            {
-                _distanciaEntreEixo = ValidationUtil.ValidateRange(value, 0, 9999, "DistanciaEixos");
-            }
+            get => _distanciaEntreEixo;
+	        set => _distanciaEntreEixo = ValidationUtil.ValidateRange(value, 0, 9999, "DistanciaEixos");
         }
 
         /// <summary>
@@ -260,11 +212,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(15, ChaveErroValidacao.CampoNaoPreenchido)]
         public int AnoModelo
         {
-            get { return _anoModelo; }
-            set
-            {
-                _anoModelo = ValidationUtil.ValidateRange(value, 0, 9999, "AnoModelo");
-            }
+            get => _anoModelo;
+	        set => _anoModelo = ValidationUtil.ValidateRange(value, 0, 9999, "AnoModelo");
         }
 
         /// <summary>
@@ -275,11 +224,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(16, ChaveErroValidacao.CampoNaoPreenchido)]
         public int AnoFabricacao
         {
-            get { return _anoFabricacao; }
-            set
-            {
-                _anoFabricacao = ValidationUtil.ValidateRange(value, 0, 9999, "AnoFabricacao");
-            }
+            get => _anoFabricacao;
+	        set => _anoFabricacao = ValidationUtil.ValidateRange(value, 0, 9999, "AnoFabricacao");
         }
 
         /// <summary>
@@ -295,11 +241,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(18, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = TipoVeiculoRENAVAM.NaoEspecificado)]
         public TipoVeiculoRENAVAM TipoVeiculo
         {
-            get { return _tipoVeiculo; }
-            set
-            {
-                _tipoVeiculo = ValidationUtil.ValidateEnum(value, "TipoVeiculo");
-            }
+            get => _tipoVeiculo;
+	        set => _tipoVeiculo = ValidationUtil.ValidateEnum(value, "TipoVeiculo");
         }
 
         /// <summary>
@@ -309,11 +252,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(19, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = EspecieVeiculoRENAVAM.NaoEspecificado)]
         public EspecieVeiculoRENAVAM EspecieVeiculo
         {
-            get { return _especieVeiculo; }
-            set
-            {
-                _especieVeiculo = ValidationUtil.ValidateEnum<EspecieVeiculoRENAVAM>(value, "EspecieVeiculo");
-            }
+            get => _especieVeiculo;
+	        set => _especieVeiculo = ValidationUtil.ValidateEnum<EspecieVeiculoRENAVAM>(value, "EspecieVeiculo");
         }
 
         /// <summary>
@@ -329,11 +269,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(21, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = CondicaoVeiculo.NaoEspecificado)]
         public CondicaoVeiculo CondicaoVeiculo
         {
-            get { return _condicaoVeiculo; }
-            set
-            {
-                _condicaoVeiculo = ValidationUtil.ValidateEnum<CondicaoVeiculo>(value, "CondicaoVeiculo");
-            }
+            get => _condicaoVeiculo;
+	        set => _condicaoVeiculo = ValidationUtil.ValidateEnum<CondicaoVeiculo>(value, "CondicaoVeiculo");
         }
 
         /// <summary>
@@ -343,11 +280,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(22, ChaveErroValidacao.CampoNaoPreenchido)]
         public int CodigoMarcaModelo
         {
-            get { return _codigoMarcaModelo; }
-            set
-            {
-                _codigoMarcaModelo = ValidationUtil.ValidateRange(value, 0, 999999, "CodigoMarcaModelo");
-            }
+            get => _codigoMarcaModelo;
+	        set => _codigoMarcaModelo = ValidationUtil.ValidateRange(value, 0, 999999, "CodigoMarcaModelo");
         }
 
         /// <summary>
@@ -357,11 +291,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(22, ChaveErroValidacao.CampoNaoPreenchido)]
         public TipoCorDenatran CorDenatran
         {
-            get { return _corDenatran; }
-            set
-            {
-                _corDenatran = ValidationUtil.ValidateEnum(value, "CorDenatran");
-            }
+            get => _corDenatran;
+	        set => _corDenatran = ValidationUtil.ValidateEnum(value, "CorDenatran");
         }
 
         /// <summary>
@@ -372,11 +303,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(22, ChaveErroValidacao.CampoNaoPreenchido)]
         public int LotacaoMaximaPassageirosSentados
         {
-            get { return _lotacaoMaximaPassageirosSentados; }
-            set
-            {
-                _lotacaoMaximaPassageirosSentados = ValidationUtil.ValidateRange(value, 0, 999, "LotacaoMaximaPassageirosSentados");
-            }
+            get => _lotacaoMaximaPassageirosSentados;
+	        set => _lotacaoMaximaPassageirosSentados = ValidationUtil.ValidateRange(value, 0, 999, "LotacaoMaximaPassageirosSentados");
         }
 
         /// <summary>
@@ -386,11 +314,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(22, ChaveErroValidacao.CampoNaoPreenchido)]
         public TipoRestricaoVeiculo TipoRestricao
         {
-            get { return _tipoRestricao; }
-            set
-            {
-                _tipoRestricao = ValidationUtil.ValidateEnum(value, "TipoRestricao");
-            }
+            get => _tipoRestricao;
+	        set => _tipoRestricao = ValidationUtil.ValidateEnum(value, "TipoRestricao");
         }
 
         /// <summary>

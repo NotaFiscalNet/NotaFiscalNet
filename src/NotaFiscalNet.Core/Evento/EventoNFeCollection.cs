@@ -12,7 +12,7 @@ namespace NotaFiscalNet.Core.Evento
         {
             if (Count >= MaxItensPorEnvioEvento)
                 throw new ApplicationException(
-                    $"A quantdade m·xima de itens no envio de evento È {MaxItensPorEnvioEvento}.");
+                    $"A quantdade m√°xima de itens no envio de evento √© {MaxItensPorEnvioEvento}.");
         }
     }
 }

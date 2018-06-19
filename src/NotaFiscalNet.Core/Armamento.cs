@@ -34,8 +34,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = TipoArmamento.NaoEspecificado)]
         public TipoArmamento TipoArma
         {
-            get { return _tipoArma; }
-            set
+            get => _tipoArma;
+	        set
             {
                 ValidationUtil.ValidateEnum(value, "TipoArma");
                 _tipoArma = value;
@@ -49,8 +49,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public string NumeroSerie
         {
-            get { return _numeroSerie; }
-            set { _numeroSerie = ValidationUtil.TruncateString(value, 15); }
+            get => _numeroSerie;
+	        set => _numeroSerie = ValidationUtil.TruncateString(value, 15);
         }
 
         /// <summary>
@@ -60,8 +60,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)]
         public string NumeroCano
         {
-            get { return _numeroCano; }
-            set { _numeroCano = ValidationUtil.TruncateString(value, 15); }
+            get => _numeroCano;
+	        set => _numeroCano = ValidationUtil.TruncateString(value, 15);
         }
 
         /// <summary>
@@ -73,8 +73,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Descricao
         {
-            get { return _descricao; }
-            set { _descricao = ValidationUtil.TruncateString(value, 256); }
+            get => _descricao;
+	        set => _descricao = ValidationUtil.TruncateString(value, 256);
         }
 
         /// <summary>

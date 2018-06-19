@@ -22,8 +22,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "pCredSN", DataType = "TDec_0302")]
         public decimal AliquotaCredito
         {
-            get { return _aliquotaCredito; }
-            set { _aliquotaCredito = ValidationUtil.ValidateTDec_0302(value, "AliquotaCredito"); }
+            get => _aliquotaCredito;
+	        set => _aliquotaCredito = ValidationUtil.ValidateTDec_0302(value, "AliquotaCredito");
         }
 
         /// <summary>
@@ -33,8 +33,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "vCredICMSSN", DataType = "TDec_1302")]
         public decimal ValorCredito
         {
-            get { return _valorCredito; }
-            set { _valorCredito = ValidationUtil.ValidateTDec_0302(value, "ValorCredito"); }
+            get => _valorCredito;
+	        set => _valorCredito = ValidationUtil.ValidateTDec_0302(value, "ValorCredito");
         }
 
         protected override void SerializeInternal(XmlWriter writer, INFe nfe)

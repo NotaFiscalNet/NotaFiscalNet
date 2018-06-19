@@ -27,8 +27,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Safra
         {
-            get { return _safra; }
-            set { _safra = ValidationUtil.ValidateRange(value, 4, 9, "Safra"); }
+            get => _safra;
+	        set => _safra = ValidationUtil.ValidateRange(value, 4, 9, "Safra");
         }
 
         /// <summary>
@@ -38,8 +38,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public DateTime Referencia
         {
-            get { return _referencia; }
-            set { _referencia = new DateTime(value.Year, value.Month, 1); }
+            get => _referencia;
+	        set => _referencia = new DateTime(value.Year, value.Month, 1);
         }
 
         /// <summary>
@@ -56,8 +56,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal QuantidadeTotalMes
         {
-            get { return _quantidadeTotalMes; }
-            set { _quantidadeTotalMes = ValidationUtil.ValidateTDec_1110(value, "QuantidadeTotalMes"); }
+            get => _quantidadeTotalMes;
+	        set => _quantidadeTotalMes = ValidationUtil.ValidateTDec_1110(value, "QuantidadeTotalMes");
         }
 
         /// <summary>
@@ -67,8 +67,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal QuantidadeTotalAnterior
         {
-            get { return _quantidadeTotalAnterior; }
-            set { _quantidadeTotalAnterior = ValidationUtil.ValidateTDec_1110(value, "QuantidadeTotalAnterior"); }
+            get => _quantidadeTotalAnterior;
+	        set => _quantidadeTotalAnterior = ValidationUtil.ValidateTDec_1110(value, "QuantidadeTotalAnterior");
         }
 
         /// <summary>
@@ -78,8 +78,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(6, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal QuantidadeTotalGeral
         {
-            get { return _quantidadeTotalGeral; }
-            set { _quantidadeTotalGeral = ValidationUtil.ValidateTDec_1110(value, "QuantidadeTotalGeral"); }
+            get => _quantidadeTotalGeral;
+	        set => _quantidadeTotalGeral = ValidationUtil.ValidateTDec_1110(value, "QuantidadeTotalGeral");
         }
 
         /// <summary>
@@ -96,8 +96,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(8, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal ValorFornecimentos
         {
-            get { return _valorFornecimentos; }
-            set { _valorFornecimentos = ValidationUtil.ValidateTDec_1302(value, "ValorFornecimentos"); }
+            get => _valorFornecimentos;
+	        set => _valorFornecimentos = ValidationUtil.ValidateTDec_1302(value, "ValorFornecimentos");
         }
 
         /// <summary>
@@ -107,8 +107,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(9, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal ValorTotalDeducoes
         {
-            get { return _valorTotalDeducoes; }
-            set { _valorTotalDeducoes = ValidationUtil.ValidateTDec_1302(value, "ValorTotalDeducoes"); }
+            get => _valorTotalDeducoes;
+	        set => _valorTotalDeducoes = ValidationUtil.ValidateTDec_1302(value, "ValorTotalDeducoes");
         }
 
         /// <summary>
@@ -118,8 +118,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(10, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal ValorLiquidoFornecimentos
         {
-            get { return _valorLiquidoFornecimentos; }
-            set { _valorLiquidoFornecimentos = ValidationUtil.ValidateTDec_1302(value, "ValorLiquidoFornecimentos"); }
+            get => _valorLiquidoFornecimentos;
+	        set => _valorLiquidoFornecimentos = ValidationUtil.ValidateTDec_1302(value, "ValorLiquidoFornecimentos");
         }
 
         public bool Modificado => !string.IsNullOrEmpty(Safra) || Referencia != DateTime.MinValue ||

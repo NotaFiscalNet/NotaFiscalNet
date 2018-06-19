@@ -24,11 +24,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, Opcional = true)]
         public string InformacoesComplementaresFisco
         {
-            get { return _informacoesComplementaresFisco; }
-            set
-            {
-                _informacoesComplementaresFisco = ValidationUtil.TruncateString(value, 2000);
-            }
+            get => _informacoesComplementaresFisco;
+	        set => _informacoesComplementaresFisco = ValidationUtil.TruncateString(value, 2000);
         }
 
         /// <summary>
@@ -38,11 +35,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(2, Opcional = true)]
         public string InformacoesComplementaresContribuinte
         {
-            get { return _informacoesComplementaresContribuinte; }
-            set
-            {
-                _informacoesComplementaresContribuinte = ValidationUtil.TruncateString(value, 5000);
-            }
+            get => _informacoesComplementaresContribuinte;
+	        set => _informacoesComplementaresContribuinte = ValidationUtil.TruncateString(value, 5000);
         }
 
         /// <summary>

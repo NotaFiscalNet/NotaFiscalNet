@@ -40,8 +40,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal BaseCalculo
         {
-            get { return _baseCalculo; }
-            set
+            get => _baseCalculo;
+	        set
             {
                 ValidarConflitoISSQN();
                 ValidationUtil.ValidateTDec_1302(value, "BaseCalculo");
@@ -56,8 +56,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal ValorDespesasAduaneiras
         {
-            get { return _valorDespesasAduaneiras; }
-            set
+            get => _valorDespesasAduaneiras;
+	        set
             {
                 ValidarConflitoISSQN();
                 ValidationUtil.ValidateTDec_1302(value, "ValorDespesasAduaneiras");
@@ -72,8 +72,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal ValorII
         {
-            get { return _valorII; }
-            set
+            get => _valorII;
+	        set
             {
                 ValidarConflitoISSQN();
                 ValidationUtil.ValidateTDec_1302(value, "ValorII");
@@ -88,8 +88,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal ValorIOF
         {
-            get { return _valorIOF; }
-            set
+            get => _valorIOF;
+	        set
             {
                 ValidarConflitoISSQN();
                 ValidationUtil.ValidateTDec_1302(value, "ValorIOF");

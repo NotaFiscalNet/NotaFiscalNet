@@ -428,7 +428,7 @@ namespace NotaFiscalNet.Core.Utils
 
         public static string ValidateTIeDest(string value, string paramName)
         {
-            if (!Regex.IsMatch(value, "ISENTO|[0-9]{0,14})"))
+            if (!Regex.IsMatch(value, "ISENTO|[0-9]{0,14}"))
                 throw new ErroValidacaoNFeException(ErroValidacao.Create(ChaveErroValidacao.InscricaoEstadualDestinatario, paramName));
             return value;
         }

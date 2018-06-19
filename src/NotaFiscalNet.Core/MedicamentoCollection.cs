@@ -11,19 +11,17 @@ namespace NotaFiscalNet.Core
     {
         private const int Capacidade = 500;
 
-        private Produto _produto;
-
-        internal MedicamentoCollection(Produto produto)
+	    internal MedicamentoCollection(Produto produto)
         {
-            _produto = produto;
+            Produto = produto;
         }
 
         /// <summary>
         /// Retorna a referência para o Produto no qual a coleção está contida.
         /// </summary>
-        internal Produto Produto => _produto;
+        internal Produto Produto { get; }
 
-        protected override void PreAdd(CancelEventArgs e, Medicamento item)
+	    protected override void PreAdd(CancelEventArgs e, Medicamento item)
         {
             if (Count == Capacidade)
                 throw new ApplicationException($"A capacidade máxima deste campo é de {Capacidade} medicamento(s).");

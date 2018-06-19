@@ -28,19 +28,17 @@ namespace NotaFiscalNet.Core
         private decimal _valorST;
         private decimal _valorSN;
 
-        private readonly ImpostoProduto _imposto;
-
-        internal ImpostoICMS(ImpostoProduto imposto)
+	    internal ImpostoICMS(ImpostoProduto imposto)
         {
-            _imposto = imposto;
+            Imposto = imposto;
         }
 
         /// <summary>
         /// Retorna a referência para o objeto ImpostoProduto no qual o Imposto se refere.
         /// </summary>
-        internal ImpostoProduto Imposto => _imposto;
+        internal ImpostoProduto Imposto { get; }
 
-        private void ValidarConflitoISSQN()
+	    private void ValidarConflitoISSQN()
         {
             if (Imposto.ISSQN.Modificado)
                 throw new ErroValidacaoNFeException(ChaveErroValidacao.ConflitoICMSISSQN);

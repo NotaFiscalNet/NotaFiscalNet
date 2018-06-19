@@ -32,9 +32,7 @@ namespace NotaFiscalNet.Core
         private int _lotacaoMaximaPassageirosSentados;
         private TipoRestricaoVeiculo _tipoRestricao = TipoRestricaoVeiculo.NaoEspecificado;
 
-        private readonly Produto _produto;
-
-        /// <summary>
+	    /// <summary>
         /// Inicializa uma nova instância da classe <see cref="VeiculoNovo"/>.
         /// </summary>
         public VeiculoNovo()
@@ -47,7 +45,7 @@ namespace NotaFiscalNet.Core
         {
             ChassiRemarcado = false;
             TipoPintura = string.Empty;
-            _produto = produto;
+            Produto = produto;
         }
 
         /// <summary>
@@ -321,9 +319,9 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna a referência para o objeto Produto no qual o VeiculoNovo se refere.
         /// </summary>
-        internal Produto Produto => _produto;
+        internal Produto Produto { get; }
 
-        /// <summary>
+	    /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
         public bool Modificado => TipoOperacaoVenda != TipoOperacaoVendaVeiculo.NaoEspecificado ||

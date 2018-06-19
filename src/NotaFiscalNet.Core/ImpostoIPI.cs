@@ -25,19 +25,17 @@ namespace NotaFiscalNet.Core
         private decimal _valorUnidade;
         private decimal _valor;
 
-        private readonly ImpostoProduto _imposto;
-
-        internal ImpostoIPI(ImpostoProduto imposto)
+	    internal ImpostoIPI(ImpostoProduto imposto)
         {
-            _imposto = imposto;
+            Imposto = imposto;
         }
 
         /// <summary>
         /// Retorna a referência para o objeto ImpostoProduto no qual o Imposto se refere.
         /// </summary>
-        internal ImpostoProduto Imposto => _imposto;
+        internal ImpostoProduto Imposto { get; }
 
-        private void ValidarConflitoISSQN()
+	    private void ValidarConflitoISSQN()
         {
             if (Imposto.ISSQN.Modificado)
                 throw new ErroValidacaoNFeException(ChaveErroValidacao.ConflitoIPIISSQN);

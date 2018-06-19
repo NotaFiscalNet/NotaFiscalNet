@@ -16,21 +16,20 @@ namespace NotaFiscalNet.Core
         private int _codigoMunicipioFatoGeradorIBGE;
         private string _codigoServico;
 
-        private readonly ImpostoProduto _imposto;
-        private string _codigoServicoPrestadoMunicipio;
+	    private string _codigoServicoPrestadoMunicipio;
         private string _numeroProcessoSuspensao;
 
         internal ImpostoISSQN(ImpostoProduto imposto)
         {
-            _imposto = imposto;
+            Imposto = imposto;
         }
 
         /// <summary>
         /// Retorna a referência para o objeto ImpostoProduto no qual o Imposto se refere.
         /// </summary>
-        internal ImpostoProduto Imposto => _imposto;
+        internal ImpostoProduto Imposto { get; }
 
-        private void ValidarConflitoIcmsIpiII()
+	    private void ValidarConflitoIcmsIpiII()
         {
             if (Imposto.ICMS.Modificado)
                 throw new ErroValidacaoNFeException(ChaveErroValidacao.ConflitoISSQNICMS);

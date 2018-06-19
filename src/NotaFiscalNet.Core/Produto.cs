@@ -13,8 +13,7 @@ namespace NotaFiscalNet.Core
     public sealed class Produto : ISerializavel, IModificavel
     {
         private string _informacoesAdicionais = string.Empty;
-        private readonly ImpostoProduto _imposto;
-        private string _codigo = string.Empty;
+	    private string _codigo = string.Empty;
         private string _codigoGTIN = string.Empty;
         private string _descricao = string.Empty;
         private string _codigoNCM;
@@ -33,14 +32,8 @@ namespace NotaFiscalNet.Core
         private decimal _valorTotalSeguro;
         private decimal _valorDesconto;
         private decimal _valorOutrasDespesasAcessorias;
-        private readonly DeclaracaoImportacaoCollection _declaracaoImportacao;
-        private readonly DetalheExportacaoCollection _detalhamentoExportacao;
-        private TipoProdutoEspecifico _tipoProdutoEspecifico;
-        private readonly VeiculoNovo _detalhamentoVeiculo;
-        private readonly MedicamentoCollection _detalhamentoMedicamentos;
-        private readonly ArmamentoCollection _detalhamentoArmamentos;
-        private readonly Combustivel _detalhamentoCombustivel;
-        private string _pedidoCompra;
+	    private TipoProdutoEspecifico _tipoProdutoEspecifico;
+	    private string _pedidoCompra;
         private int _itemPedidoCompra;
 
         private string _numeroRecopi;
@@ -303,15 +296,15 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(FieldName = "DI", ID = "I18", Opcional = true)]
         [CampoValidavel(20, Opcional = true)]
-        public DeclaracaoImportacaoCollection DeclaracoesImportacao => _declaracaoImportacao;
+        public DeclaracaoImportacaoCollection DeclaracoesImportacao { get; }
 
-        /// <summary>
+	    /// <summary>
         /// [detExport] Retorna a lista com o detalhamento da Exportação.
         /// </summary>
         [NFeField(FieldName = "detExport", ID = "I50", Opcional = true)]
-        public DetalheExportacaoCollection DetalhamentoExportacao => _detalhamentoExportacao;
+        public DetalheExportacaoCollection DetalhamentoExportacao { get; }
 
-        /// <summary>
+	    /// <summary>
         /// [xPed] Retorna ou define o Pedido de Compra, informação de interesse do emissor para
         /// controle do B2B
         /// </summary>
@@ -369,34 +362,34 @@ namespace NotaFiscalNet.Core
         /// <remarks>Informar apenas se o campo TipoProdutoEspecifico for igual a 'VeiculoNovo'.</remarks>
         [NFeField(FieldName = "veicProd", ID = "J01", Opcional = true)]
         [CampoValidavel(21)]
-        public VeiculoNovo DetalhamentoVeiculo => _detalhamentoVeiculo;
+        public VeiculoNovo DetalhamentoVeiculo { get; }
 
-        /// <summary>
+	    /// <summary>
         /// [med] Retorna ou define a lista de detalhamentos de Medicamentos.
         /// </summary>
         /// <remarks>Informar apenas se o campo TipoProdutoEspecifico for igual a 'Medicamento'.</remarks>
         [NFeField(FieldName = "med", ID = "K01")]
         [CampoValidavel(22)]
         //[ValidateField(22, Opcional = true)]
-        public MedicamentoCollection DetalhamentoMedicamento => _detalhamentoMedicamentos;
+        public MedicamentoCollection DetalhamentoMedicamento { get; }
 
-        /// <summary>
+	    /// <summary>
         /// [arma] Retorna ou define a lista de detalhamentos de Armamentos. Informar apenas se o
         /// campo TipoProdutoEspecifico for igual a 'Armamento'.
         /// </summary>
         [NFeField(FieldName = "arma", ID = "L01")]
         [CampoValidavel(23)]
-        public ArmamentoCollection DetalhamentoArmamento => _detalhamentoArmamentos;
+        public ArmamentoCollection DetalhamentoArmamento { get; }
 
-        /// <summary>
+	    /// <summary>
         /// [comb] Retorna o detalhamento das informações de Combustível.
         /// </summary>
         /// <remarks>Informar apenas se o campo TipoProdutoEspecifico for igual a 'Combustivel'.</remarks>
         [NFeField(FieldName = "comb", ID = "L101")]
         [CampoValidavel(24)]
-        public Combustivel DetalhamentoCombustivel => _detalhamentoCombustivel;
+        public Combustivel DetalhamentoCombustivel { get; }
 
-        /// <summary>
+	    /// <summary>
         /// [nRECOPI] Retorna ou define o Número do RECOPI (Registro e Controle das Operações com o
         /// Papel Imune Nacional).
         /// </summary>
@@ -429,9 +422,9 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "M01", FieldName = "imposto")]
         [CampoValidavel(26, ChaveErroValidacao.CampoNaoPreenchido)]
-        public ImpostoProduto Imposto => _imposto;
+        public ImpostoProduto Imposto { get; }
 
-        /// <summary>
+	    /// <summary>
         /// [impostoDevol] Retorna ou define as informações do Imposto Devolvido.
         /// </summary>
         [NFeField(ID = "U50", FieldName = "impostoDevol"), CampoValidavel(26, ChaveErroValidacao.CampoNaoPreenchido)]
@@ -478,7 +471,7 @@ namespace NotaFiscalNet.Core
         public Produto()
         {
             _informacoesAdicionais = string.Empty;
-            _imposto = new ImpostoProduto(this);
+            Imposto = new ImpostoProduto(this);
             _codigo = string.Empty;
             _codigoGTIN = string.Empty;
             _codigoNCM = string.Empty;
@@ -489,13 +482,13 @@ namespace NotaFiscalNet.Core
             _unidadeComercial = string.Empty;
             _codigoGTINTributario = string.Empty;
             _unidadeTributavel = string.Empty;
-            _declaracaoImportacao = new DeclaracaoImportacaoCollection(this);
-            _detalhamentoExportacao = new DetalheExportacaoCollection();
+            DeclaracoesImportacao = new DeclaracaoImportacaoCollection(this);
+            DetalhamentoExportacao = new DetalheExportacaoCollection();
             _tipoProdutoEspecifico = TipoProdutoEspecifico.ProdutoNaoEspecifico;
-            _detalhamentoVeiculo = new VeiculoNovo(this);
-            _detalhamentoMedicamentos = new MedicamentoCollection(this);
-            _detalhamentoArmamentos = new ArmamentoCollection(this);
-            _detalhamentoCombustivel = new Combustivel(this);
+            DetalhamentoVeiculo = new VeiculoNovo(this);
+            DetalhamentoMedicamento = new MedicamentoCollection(this);
+            DetalhamentoArmamento = new ArmamentoCollection(this);
+            DetalhamentoCombustivel = new Combustivel(this);
         }
 
         public void Serializar(XmlWriter writer, INFe nfe)

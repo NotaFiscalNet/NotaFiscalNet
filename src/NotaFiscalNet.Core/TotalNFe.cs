@@ -9,27 +9,21 @@ namespace NotaFiscalNet.Core
 
     public sealed class TotalNFe : ISerializavel
     {
-        private TotalICMS _ICMS = new TotalICMS();
-        private TotalISSQN _ISSQN = new TotalISSQN();
-        private RetencaoTributosFederais _retencaoTributosFederais = new RetencaoTributosFederais();
-
-        private bool _isReadOnly = false;
-
-        /// <summary>
+	    /// <summary>
         /// Retorna o Total de ICMS
         /// </summary>
         [NFeField(ID = "W01", FieldName = "ICMSTot")]
         [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
-        public TotalICMS ICMS => _ICMS;
+        public TotalICMS ICMS { get; } = new TotalICMS();
 
-        /// <summary>
+	    /// <summary>
         /// Retorna o Total de ISSQN. Opcional.
         /// </summary>
         [NFeField(ID = "W17", FieldName = "ISSQNtot", Opcional = true)]
         [CampoValidavel(2, Opcional = true)]
-        public TotalISSQN ISSQN => _ISSQN;
+        public TotalISSQN ISSQN { get; } = new TotalISSQN();
 
-        /// <summary>
+	    /// <summary>
         /// Retorna as Retenções de Tributos Federais. Opcional.
         /// </summary>
         /// <remarks>
@@ -45,18 +39,18 @@ namespace NotaFiscalNet.Core
         /// </remarks>
         [NFeField(ID = "W23", FieldName = "retTrib", Opcional = true)]
         [CampoValidavel(3, Opcional = true)]
-        public RetencaoTributosFederais RetencaoTributosFederais => _retencaoTributosFederais;
+        public RetencaoTributosFederais RetencaoTributosFederais { get; } = new RetencaoTributosFederais();
 
-        /// <summary>
+	    /// <summary>
         /// Retorna o valor indicando se a Nota Fiscal Eletrônica está em modo somente-leitura.
         /// </summary>
         /// <remarks>
         /// A Nota Fiscal Eletrônica estará em modo somente-leitura quando for instanciada a partir
         /// de um arquivo assinado digitalmente.
         /// </remarks>
-        public bool IsReadOnly => _isReadOnly;
+        public bool IsReadOnly { get; } = false;
 
-        void ISerializavel.Serializar(System.Xml.XmlWriter writer, INFe nfe)
+	    void ISerializavel.Serializar(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("total");
 

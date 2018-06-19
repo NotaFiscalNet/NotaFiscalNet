@@ -18,19 +18,17 @@ namespace NotaFiscalNet.Core
         private decimal _valor;
         private bool _canChangeTipo = true;
 
-        private readonly ImpostoProduto _imposto;
-
-        internal ImpostoCOFINS(ImpostoProduto imposto)
+	    internal ImpostoCOFINS(ImpostoProduto imposto)
         {
-            _imposto = imposto;
+            Imposto = imposto;
         }
 
         /// <summary>
         /// Retorna a referência para o objeto ImpostoProduto no qual o Imposto se refere.
         /// </summary>
-        internal ImpostoProduto Imposto => _imposto;
+        internal ImpostoProduto Imposto { get; }
 
-        /// <summary>
+	    /// <summary>
         /// [CST] Retorna ou define a Situação Tributária.
         /// </summary>
         [NFeField(ID = "S06", FieldName = "CST", DataType = "token")]

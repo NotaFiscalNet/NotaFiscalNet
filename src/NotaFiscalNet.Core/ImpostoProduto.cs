@@ -11,29 +11,19 @@ namespace NotaFiscalNet.Core
     public sealed class ImpostoProduto : ISerializavel, IModificavel
     {
         private Icms _icms;
-        private readonly ImpostoICMS _ICMS;
-        private readonly ImpostoIPI _ipi;
-        private readonly ImpostoII _ii;
-        private readonly ImpostoPIS _pis;
-        private readonly ImpostoPISST _pisst;
-        private readonly ImpostoCOFINS _cofins;
-        private readonly ImpostoCOFINSST _cofinsst;
-        private readonly ImpostoISSQN _issqn;
-        private decimal? _valorTotalTributos;
+	    private decimal? _valorTotalTributos;
 
-        private readonly Produto _produto;
-
-        internal ImpostoProduto(Produto produto)
+	    internal ImpostoProduto(Produto produto)
         {
-            _produto = produto;
-            _ICMS = new ImpostoICMS(this);
-            _ipi = new ImpostoIPI(this);
-            _ii = new ImpostoII(this);
-            _pis = new ImpostoPIS(this);
-            _pisst = new ImpostoPISST(this);
-            _cofins = new ImpostoCOFINS(this);
-            _cofinsst = new ImpostoCOFINSST(this);
-            _issqn = new ImpostoISSQN(this);
+            Produto = produto;
+            ICMS = new ImpostoICMS(this);
+            IPI = new ImpostoIPI(this);
+            II = new ImpostoII(this);
+            PIS = new ImpostoPIS(this);
+            PISST = new ImpostoPISST(this);
+            COFINS = new ImpostoCOFINS(this);
+            COFINSST = new ImpostoCOFINSST(this);
+            ISSQN = new ImpostoISSQN(this);
         }
 
         /// <summary>
@@ -67,63 +57,63 @@ namespace NotaFiscalNet.Core
         [Obsolete("Usar o campos Icms.")]
         [NFeField(ID = "N01", FieldName = "ICMS")]
         [CampoValidavel(1, Opcional = true)]
-        public ImpostoICMS ICMS => _ICMS;
+        public ImpostoICMS ICMS { get; }
 
-        /// <summary>
+	    /// <summary>
         /// Retorna o valor representando as informações de declaração do IPI para o produto. Opcional.
         /// </summary>
         [NFeField(ID = "O01", FieldName = "IPI", Opcional = true)]
         [CampoValidavel(2, Opcional = true)]
-        public ImpostoIPI IPI => _ipi;
+        public ImpostoIPI IPI { get; }
 
-        /// <summary>
+	    /// <summary>
         /// Retorna o II (Imposto de Importação). Opcional.
         /// </summary>
         [NFeField(ID = "P01", FieldName = "II", Opcional = true)]
         [CampoValidavel(3, Opcional = true)]
-        public ImpostoII II => _ii;
+        public ImpostoII II { get; }
 
-        /// <summary>
+	    /// <summary>
         /// Retorna o ISSQN
         /// </summary>
         [NFeField(ID = "U01", FieldName = "ISSQN")]
         [CampoValidavel(4, Opcional = true)]
-        public ImpostoISSQN ISSQN => _issqn;
+        public ImpostoISSQN ISSQN { get; }
 
-        /// <summary>
+	    /// <summary>
         /// Retorna as informações do PIS (Programa de Integração Social).
         /// </summary>
         [NFeField(ID = "Q01", FieldName = "PIS")]
         [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
-        public ImpostoPIS PIS => _pis;
+        public ImpostoPIS PIS { get; }
 
-        /// <summary>
+	    /// <summary>
         /// Retorna o PIS ST. Opcional.
         /// </summary>
         [NFeField(ID = "R01", FieldName = "PISST", Opcional = true)]
         [CampoValidavel(6, Opcional = true)]
-        public ImpostoPISST PISST => _pisst;
+        public ImpostoPISST PISST { get; }
 
-        /// <summary>
+	    /// <summary>
         /// Retorna o COFINS
         /// </summary>
         [NFeField(ID = "S01", FieldName = "COFINS")]
         [CampoValidavel(7, ChaveErroValidacao.CampoNaoPreenchido)]
-        public ImpostoCOFINS COFINS => _cofins;
+        public ImpostoCOFINS COFINS { get; }
 
-        /// <summary>
+	    /// <summary>
         /// Retorna o COFINS ST. Opcional.
         /// </summary>
         [NFeField(ID = "T01", FieldName = "COFINSST")]
         [CampoValidavel(8, Opcional = true)]
-        public ImpostoCOFINSST COFINSST => _cofinsst;
+        public ImpostoCOFINSST COFINSST { get; }
 
-        /// <summary>
+	    /// <summary>
         /// Retorna a referência para o objeto Produto no qual o Imposto se refere.
         /// </summary>
-        internal Produto Produto => _produto;
+        internal Produto Produto { get; }
 
-        /// <summary>
+	    /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
         public bool Modificado => ICMS.Modificado || Icms != null ||

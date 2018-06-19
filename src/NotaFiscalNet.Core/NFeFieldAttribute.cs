@@ -9,54 +9,36 @@ namespace NotaFiscalNet.Core
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field, AllowMultiple = true)]
     internal class NFeFieldAttribute : Attribute
     {
-        private string _fieldName = string.Empty;
-        private string _id = string.Empty;
-        private string _dataType = string.Empty;
-        private int _minLength;
+	    private int _minLength;
         private int _maxLength;
-        private string _pattern = string.Empty;
-        private bool _opcional = false;
-        private XmlNodeType _nodeType = XmlNodeType.Element;
 
-        public NFeFieldAttribute()
+	    public NFeFieldAttribute()
         {
         }
 
         public NFeFieldAttribute(string fieldName, string dataType, string id)
         {
-            _fieldName = fieldName;
-            _dataType = dataType;
-            _id = id;
+            FieldName = fieldName;
+            DataType = dataType;
+            ID = id;
         }
 
         /// <summary>
         /// Retorna ou define o Nome do campo contido no leiaute xml da Nota Fiscal Eletrônica.
         /// </summary>
-        public string FieldName
-        {
-            get => _fieldName;
-	        set => _fieldName = value;
-        }
+        public string FieldName { get; set; } = string.Empty;
 
-        /// <summary>
+	    /// <summary>
         /// Retorna ou define o identificador do campo contigo no leiaute xml da Nota Fiscal Eletrônica.
         /// </summary>
-        public string ID
-        {
-            get => _id;
-	        set => _id = value;
-        }
+        public string ID { get; set; } = string.Empty;
 
-        /// <summary>
+	    /// <summary>
         /// Retorna ou define o tipo de dado da NF-e.
         /// </summary>
-        public string DataType
-        {
-            get => _dataType;
-	        set => _dataType = value;
-        }
+        public string DataType { get; set; } = string.Empty;
 
-        /// <summary>
+	    /// <summary>
         /// Retorna ou define o tamanho mínimo de caracteres de um campo.
         /// </summary>
         public int MinLength
@@ -89,28 +71,16 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna ou define o padrão (expressão regular) usado para validar o conteúdo do campo.
         /// </summary>
-        public string Pattern
-        {
-            get => _pattern;
-	        set => _pattern = value;
-        }
+        public string Pattern { get; set; } = string.Empty;
 
-        /// <summary>
+	    /// <summary>
         /// Retorna ou define o valor indicando se o campo é de preenchimento opcional ou obrigatório.
         /// </summary>
-        public bool Opcional
-        {
-            get => _opcional;
-	        set => _opcional = value;
-        }
+        public bool Opcional { get; set; } = false;
 
-        /// <summary>
+	    /// <summary>
         /// Retorna ou define o tipo de nó xml do campo.
         /// </summary>
-        public XmlNodeType NodeType
-        {
-            get => _nodeType;
-	        set => _nodeType = value;
-        }
+        public XmlNodeType NodeType { get; set; } = XmlNodeType.Element;
     }
 }

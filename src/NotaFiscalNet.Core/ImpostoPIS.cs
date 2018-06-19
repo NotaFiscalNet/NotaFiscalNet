@@ -17,19 +17,17 @@ namespace NotaFiscalNet.Core
         private decimal _valor;
         private bool _canChangeTipo = true;
 
-        private readonly ImpostoProduto _imposto;
-
-        internal ImpostoPIS(ImpostoProduto imposto)
+	    internal ImpostoPIS(ImpostoProduto imposto)
         {
-            _imposto = imposto;
+            Imposto = imposto;
         }
 
         /// <summary>
         /// Retorna a referência para o objeto ImpostoProduto no qual o Imposto se refere.
         /// </summary>
-        internal ImpostoProduto Imposto => _imposto;
+        internal ImpostoProduto Imposto { get; }
 
-        /// <summary>
+	    /// <summary>
         /// Retorna ou define a Situação Tributária.
         /// </summary>
         [NFeField(ID = "Q06", FieldName = "CST", DataType = "token")]

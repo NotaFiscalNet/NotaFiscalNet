@@ -15,9 +15,8 @@ namespace NotaFiscalNet.Core
         private string _numeracao = string.Empty;
         private decimal _pesoLiquido;
         private decimal _pesoBruto;
-        private StringCollection _lacres = new StringCollection();
 
-        /// <summary>
+	    /// <summary>
         /// [qVol] Retorna ou define a Quantidade de Volumes transportados (valor máximo
         /// 999999999999999). Opcional.
         /// </summary>
@@ -95,9 +94,9 @@ namespace NotaFiscalNet.Core
         /// [lacres] Retorna uma Coleção de Lacres
         /// </summary>
         [NFeField(FieldName = "lacres", ID = "X33", MinLength = 1, MaxLength = 60)]
-        public StringCollection Lacres => _lacres;
+        public StringCollection Lacres { get; } = new StringCollection();
 
-        /// <summary>
+	    /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
         public bool Modificado => QuantidadeVolumes != 0L ||

@@ -12,12 +12,7 @@ namespace NotaFiscalNet.Core
     public sealed class TransporteNFe : ISerializavel
     {
         private TipoModalidadeFrete _modFrete = TipoModalidadeFrete.Destinatario;
-        private Transportador _transporta = new Transportador();
-        private RetencaoICMSTransporte _retencaoICMS = new RetencaoICMSTransporte();
-        private VeiculoTransporte _veiculoTransporte = new VeiculoTransporte();
-        private ReboqueCollection _reboques = new ReboqueCollection();
-        private VolumeCargaCollection _volumes = new VolumeCargaCollection();
-        private TipoMeioTransporte _meioTransporte = TipoMeioTransporte.Rodoviario;
+	    private TipoMeioTransporte _meioTransporte = TipoMeioTransporte.Rodoviario;
 
         public TransporteNFe()
         {
@@ -59,37 +54,37 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(FieldName = "transporta", ID = "X03")]
         [CampoValidavel(2, Opcional = true)]
-        public Transportador Transportador => _transporta;
+        public Transportador Transportador { get; } = new Transportador();
 
-        /// <summary>
+	    /// <summary>
         /// [retTransp] Retorna as informações de Retenção de ICMS do transporte. <strong>Opcional</strong>.
         /// </summary>
         [NFeField(FieldName = "retTransp", ID = "X11")]
         [CampoValidavel(3, Opcional = true)]
-        public RetencaoICMSTransporte RetencaoICMS => _retencaoICMS;
+        public RetencaoICMSTransporte RetencaoICMS { get; } = new RetencaoICMSTransporte();
 
-        /// <summary>
+	    /// <summary>
         /// [veicTransp] Retorna as informações do Veículo de Transporte da Carga. <strong>Opcional</strong>.
         /// </summary>
         [NFeField(FieldName = "veicTransp", ID = "X18")]
         [CampoValidavel(4, Opcional = true)]
-        public VeiculoTransporte VeiculoTransporte => _veiculoTransporte;
+        public VeiculoTransporte VeiculoTransporte { get; } = new VeiculoTransporte();
 
-        /// <summary>
+	    /// <summary>
         /// [reboque] Retorna a lista de Reboques. <strong>Opcional</strong>.
         /// </summary>
         [NFeField(FieldName = "reboque", ID = "X22")]
         [CampoValidavel(5, ChaveErroValidacao.CollectionMinValue)]
-        public ReboqueCollection Reboques => _reboques;
+        public ReboqueCollection Reboques { get; } = new ReboqueCollection();
 
-        /// <summary>
+	    /// <summary>
         /// [vol] Retorna a lista de Volumes da Carga. <strong>Opcional</strong>.
         /// </summary>
         [NFeField(FieldName = "vol", ID = "X26")]
         [CampoValidavel(6, Opcional = true)]
-        public VolumeCargaCollection VolumesCarga => _volumes;
+        public VolumeCargaCollection VolumesCarga { get; } = new VolumeCargaCollection();
 
-        /// <summary>
+	    /// <summary>
         /// [vagao] Retorna ou define os dados do Vagão.
         /// </summary>
         [NFeField(FieldName = "vagao", DataType = "TString", Pattern = "[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}", MinLength = 1, MaxLength = 20, Opcional = true), CampoValidavel(7, Opcional = true)]

@@ -14,8 +14,7 @@ namespace NotaFiscalNet.Core.Transmissao
         private UfIBGE _ufIBGE = UfIBGE.NaoEspecificado;
         private int _ano = 0;
         private string _cnpj = string.Empty;
-        private string _mod = "55";
-        private int _serie = 0;
+	    private int _serie = 0;
         private int _numeracaoInicialNFe = 0;
         private int _numeracaoFinalNFe = 0;
         private string _justificativa = string.Empty;
@@ -112,11 +111,9 @@ namespace NotaFiscalNet.Core.Transmissao
         /// <summary>
         /// Retorna o Modelo do Documento Fiscal que será inutilizado. Retorna sempre 55 (NF-e).
         /// </summary>
-        public string ModeloDocumentoFiscal { get => _mod;
-	        private set => _mod = value;
-        }
+        public string ModeloDocumentoFiscal { get; private set; } = "55";
 
-        /// <summary>
+	    /// <summary>
         /// Retorna ou define a Série da NF-e.
         /// </summary>
         public int Serie

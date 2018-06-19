@@ -1,4 +1,6 @@
-﻿using Moq;
+﻿using System;
+using System.Linq;
+using Moq;
 using NotaFiscalNet.Core.Tests.Comum;
 using NotaFiscalNet.Core.Tests.Dados;
 using Xunit;

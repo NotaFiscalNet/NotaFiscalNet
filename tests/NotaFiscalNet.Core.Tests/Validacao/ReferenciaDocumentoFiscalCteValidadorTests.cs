@@ -20,7 +20,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("notempty_error", erro.ErrorCode);
+            Assert.Equal("NotEmptyValidator", erro.ErrorCode);
         }
 
         [Fact]
@@ -30,7 +30,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("exact_length_error", erro.ErrorCode);
+            Assert.Equal("ExactLengthValidator", erro.ErrorCode);
             Assert.Equal(44, erro.FormattedMessagePlaceholderValues["MaxLength"]);
         }
 
@@ -41,7 +41,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("exact_length_error", erro.ErrorCode);
+            Assert.Equal("ExactLengthValidator", erro.ErrorCode);
             Assert.Equal(44, erro.FormattedMessagePlaceholderValues["MaxLength"]);
         }
 

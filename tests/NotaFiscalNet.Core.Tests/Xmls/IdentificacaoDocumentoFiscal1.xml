@@ -6,8 +6,8 @@
   <mod>55</mod>
   <serie>2</serie>
   <nNF>12345</nNF>
-  <dhEmi>2016-01-02T00:00:00-05:00</dhEmi>
-  <dhSaiEnt>2016-01-02T00:00:00-05:00</dhSaiEnt>
+  <dhEmi>2016-01-02T00:00:00-04:00</dhEmi>
+  <dhSaiEnt>2016-01-02T00:00:00-04:00</dhSaiEnt>
   <tpNF>1</tpNF>
   <idDest>3</idDest>
   <cMunFG>1234567</cMunFG>

@@ -20,7 +20,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("notequal_error", erro.ErrorCode);
+            Assert.Equal("NotEqualValidator", erro.ErrorCode);
         }
 
         [Fact]
@@ -36,7 +36,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("notempty_error", erro.ErrorCode);
+            Assert.Equal("NotEmptyValidator", erro.ErrorCode);
         }
 
         [Fact]
@@ -52,7 +52,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("notempty_error", erro.ErrorCode);
+            Assert.Equal("NotEmptyValidator", erro.ErrorCode);
         }
 
         [Fact]
@@ -62,7 +62,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("exact_length_error", erro.ErrorCode);
+            Assert.Equal("ExactLengthValidator", erro.ErrorCode);
             Assert.Equal(14, erro.FormattedMessagePlaceholderValues["MaxLength"]);
         }
 
@@ -73,7 +73,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("exact_length_error", erro.ErrorCode);
+            Assert.Equal("ExactLengthValidator", erro.ErrorCode);
             Assert.Equal(14, erro.FormattedMessagePlaceholderValues["MaxLength"]);
         }
 
@@ -118,7 +118,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("inclusivebetween_error", erro.ErrorCode);
+            Assert.Equal("InclusiveBetweenValidator", erro.ErrorCode);
             Assert.Equal(0, erro.FormattedMessagePlaceholderValues["From"]);
             Assert.Equal(999, erro.FormattedMessagePlaceholderValues["To"]);
         }
@@ -140,7 +140,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("inclusivebetween_error", erro.ErrorCode);
+            Assert.Equal("InclusiveBetweenValidator", erro.ErrorCode);
             Assert.Equal(0, erro.FormattedMessagePlaceholderValues["From"]);
             Assert.Equal(999999999, erro.FormattedMessagePlaceholderValues["To"]);
         }

@@ -5,21 +5,21 @@ namespace NotaFiscalNet.Core
     public sealed class ReferenciaDocumentoFiscalEcf : ISerializavel, IReferenciaDocumentoFiscal
     {
         /// <summary>
-        /// [mod] Retorna o C�digo do Modelo do Documento Fiscal Refer�nciado. Preencher com "2B",
-        /// quando se tratar de Cupom Fiscal emitido por m�quina registradora (n�o ECF), com "2C",
+        /// [mod] Retorna o Código do Modelo do Documento Fiscal Referênciado. Preencher com "2B",
+        /// quando se tratar de Cupom Fiscal emitido por máquina registradora (não ECF), com "2C",
         /// quando se tratar de Cupom Fiscal PDV, ou "2D", quando se tratar de Cupom Fiscal (emitido
         /// por ECF)
         /// </summary>
         public string CodigoModelo { get; set; }
 
         /// <summary>
-        /// [nECF] Retorna ou define o n�mero de ordem seq�encial do ECF que emitiu o Cupom Fiscal
-        /// vinculado � NF-e.
+	    /// [nECF] Retorna ou define o número de ordem seqüencial do ECF que emitiu o Cupom Fiscal
+        /// vinculado à NF-e.
         /// </summary>
         public int NumeroEcf { get; set; }
 
         /// <summary>
-        /// [nCOO] Retorna ou define o N�mero do Contador de Ordem de Opera��o - COO vinculado � NF-e.
+        /// [nCOO] Retorna ou define o Número do Contador de Ordem de Operação - COO vinculado à NF-e.
         /// </summary>
         public int NumeroContadorOrdemOperacao { get; set; }
 

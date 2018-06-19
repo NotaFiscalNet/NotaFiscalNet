@@ -6,7 +6,7 @@
   <mod>65</mod>
   <serie>3</serie>
   <nNF>67889</nNF>
-  <dhEmi>2016-01-02T00:00:00-05:00</dhEmi>
+  <dhEmi>2016-01-02T00:00:00-04:00</dhEmi>
   <dhSaiEnt>2016-10-03T00:00:00-04:00</dhSaiEnt>
   <tpNF>0</tpNF>
   <idDest>2</idDest>
@@ -20,6 +20,6 @@
   <indPres>4</indPres>
   <procEmi>0</procEmi>
   <verProc>3.0</verProc>
-  <dhCont>0001-01-01T00:00:00-05:00</dhCont>
+  <dhCont>0001-01-01T00:00:00-04:00</dhCont>
   <xJust />
 </ide>

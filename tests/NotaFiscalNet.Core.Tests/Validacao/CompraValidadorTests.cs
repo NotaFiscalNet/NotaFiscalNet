@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using FluentValidation.TestHelper;
 using NotaFiscalNet.Core.Validacao.Validadores;
 using Xunit;
@@ -38,7 +34,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("length_error", erro.ErrorCode);
+            Assert.Equal("LengthValidator", erro.ErrorCode);
             Assert.Equal(0, erro.FormattedMessagePlaceholderValues["MinLength"]);
             Assert.Equal(60, erro.FormattedMessagePlaceholderValues["MaxLength"]);
         }
@@ -56,7 +52,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("length_error", erro.ErrorCode);
+            Assert.Equal("LengthValidator", erro.ErrorCode);
             Assert.Equal(0, erro.FormattedMessagePlaceholderValues["MinLength"]);
             Assert.Equal(60, erro.FormattedMessagePlaceholderValues["MaxLength"]);
         }
@@ -74,7 +70,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("length_error", erro.ErrorCode);
+            Assert.Equal("LengthValidator", erro.ErrorCode);
             Assert.Equal(0, erro.FormattedMessagePlaceholderValues["MinLength"]);
             Assert.Equal(22, erro.FormattedMessagePlaceholderValues["MaxLength"]);
         }

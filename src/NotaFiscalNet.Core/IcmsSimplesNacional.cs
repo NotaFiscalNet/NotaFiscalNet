@@ -3,17 +3,17 @@ namespace NotaFiscalNet.Core
     public abstract class IcmsSimplesNacional : Icms
     {
         /// <summary>
-        /// Retorna ou define o CÛdido do ICMS pelo Simples Nacional.
+        /// Retorna ou define o C√≥dido do ICMS pelo Simples Nacional.
         /// </summary>
         public virtual CSOSN CSOSN { get; protected set; }
 
         /// <summary>
-        /// Retorna ou define o CÛdido da SituaÁ„o Tribut·ria do ICMS.
+        /// Retorna ou define o C√≥dido da Situa√ß√£o Tribut√°ria do ICMS.
         /// </summary>
         public override SituacaoTributariaICMS CST
         {
-            get { return (SituacaoTributariaICMS)(int)CSOSN; }
-            protected set { }
+            get => (SituacaoTributariaICMS)(int)CSOSN;
+	        protected set { }
         }
     }
 }

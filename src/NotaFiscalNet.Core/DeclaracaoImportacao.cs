@@ -53,7 +53,7 @@ namespace NotaFiscalNet.Core
             writer.WriteStartElement("cExportador", SerializationUtil.ToToken(CodigoExportador, 60));
 
             /// renderiza os elementos 'adi'
-            ((ISerializavel)Adicoes).Serializar(writer, nfe);
+            Adicoes.Serializar(writer, nfe);
 
             writer.WriteEndElement(); // fim do elemento 'DI'
         }
@@ -131,8 +131,8 @@ namespace NotaFiscalNet.Core
          CampoValidavel(10, ChaveErroValidacao.CampoNaoPreenchido)]
         public SiglaUF UFTerceiro
         {
-            get { return _ufTerceiro; }
-            set
+            get => _ufTerceiro;
+	        set
             {
                 if (value == SiglaUF.EX)
                     throw new ApplicationException("O valor informado ('EX') não é permitido neste contexto.");

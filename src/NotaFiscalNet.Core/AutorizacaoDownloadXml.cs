@@ -39,12 +39,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CNPJInvalido)]
         public string CNPJ
         {
-            get { return _cnpj; }
-            private set
-            {
-                _cnpj = ValidationUtil.ValidateCPF(value, "Cnpj");
-                ;
-            }
+            get => _cnpj;
+	        private set => _cnpj = ValidationUtil.ValidateCPF(value, "Cnpj");
         }
 
         /// <summary>
@@ -54,12 +50,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CPFInvalido)]
         public string CPF
         {
-            get { return _cpf; }
-            private set
-            {
-                _cpf = ValidationUtil.ValidateCPF(value, "Cpf");
-                ;
-            }
+            get => _cpf;
+	        private set => _cpf = ValidationUtil.ValidateCPF(value, "Cpf");
         }
 
         public void Serializar(XmlWriter writer, INFe nfe)

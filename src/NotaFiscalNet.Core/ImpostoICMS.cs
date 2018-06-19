@@ -28,19 +28,17 @@ namespace NotaFiscalNet.Core
         private decimal _valorST;
         private decimal _valorSN;
 
-        private readonly ImpostoProduto _imposto;
-
-        internal ImpostoICMS(ImpostoProduto imposto)
+	    internal ImpostoICMS(ImpostoProduto imposto)
         {
-            _imposto = imposto;
+            Imposto = imposto;
         }
 
         /// <summary>
         /// Retorna a referência para o objeto ImpostoProduto no qual o Imposto se refere.
         /// </summary>
-        internal ImpostoProduto Imposto => _imposto;
+        internal ImpostoProduto Imposto { get; }
 
-        private void ValidarConflitoISSQN()
+	    private void ValidarConflitoISSQN()
         {
             if (Imposto.ISSQN.Modificado)
                 throw new ErroValidacaoNFeException(ChaveErroValidacao.ConflitoICMSISSQN);
@@ -53,8 +51,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = OrigemMercadoria.NaoEspecificado)]
         public OrigemMercadoria OrigemMercadoria
         {
-            get { return _origemMercadoria; }
-            set
+            get => _origemMercadoria;
+	        set
             {
                 ValidarConflitoISSQN();
                 ValidationUtil.ValidateEnum(value, "OrigemMercadoria");
@@ -69,8 +67,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = SituacaoTributariaICMS.NaoEspecificado)]
         public SituacaoTributariaICMS SituacaoTributaria
         {
-            get { return _situacaoTributaria; }
-            set
+            get => _situacaoTributaria;
+	        set
             {
                 ValidarConflitoISSQN();
                 ValidationUtil.ValidateEnum(value, "SituacaoTributaria");
@@ -86,8 +84,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(3)]
         public ModalidadeBaseCalculoIcms ModalidadeBaseCalculo
         {
-            get { return _modalidadeBaseCalculo; }
-            set
+            get => _modalidadeBaseCalculo;
+	        set
             {
                 ValidarConflitoISSQN();
                 if (value != ModalidadeBaseCalculoIcms.NaoEspecificado)
@@ -101,7 +99,7 @@ namespace NotaFiscalNet.Core
                         case SituacaoTributariaICMS.Cst70:
                         case SituacaoTributariaICMS.Cst90:
                         case SituacaoTributariaICMS.CSOSN900:
-                            ValidationUtil.ValidateEnum<ModalidadeBaseCalculoIcms>(value, "ModalidadeBaseCalculo");
+                            ValidationUtil.ValidateEnum(value, "ModalidadeBaseCalculo");
                             break;
 
                         default:
@@ -119,8 +117,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "N14", FieldName = "pRedBC", DataType = "TDec_0302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?")]
         public decimal PercentualReducaoBaseCalculo
         {
-            get { return _percentualReducaoBaseCalculo; }
-            set
+            get => _percentualReducaoBaseCalculo;
+	        set
             {
                 ValidarConflitoISSQN();
                 if (value != 0m)
@@ -150,8 +148,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "N15", FieldName = "vBC", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
         public decimal BaseCalculo
         {
-            get { return _baseCalculo; }
-            set
+            get => _baseCalculo;
+	        set
             {
                 ValidarConflitoISSQN();
                 if (value != 0m)
@@ -184,8 +182,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "N16", FieldName = "pICMS", DataType = "TDec_0302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?")]
         public decimal Aliquota
         {
-            get { return _aliquota; }
-            set
+            get => _aliquota;
+	        set
             {
                 ValidarConflitoISSQN();
                 if (value != 0m)
@@ -217,8 +215,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "N16", FieldName = "pCredSN", DataType = "TDec_0302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?")]
         public decimal AliquotaSN
         {
-            get { return _aliquotaSN; }
-            set
+            get => _aliquotaSN;
+	        set
             {
                 ValidarConflitoISSQN();
                 if (value != 0m)
@@ -247,8 +245,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "vCredICMSSN", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
         public decimal Valor
         {
-            get { return _valor; }
-            set
+            get => _valor;
+	        set
             {
                 ValidarConflitoISSQN();
                 if (value != 0m)
@@ -283,8 +281,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "vCredICMSSN", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
         public decimal ValorSN
         {
-            get { return _valorSN; }
-            set
+            get => _valorSN;
+	        set
             {
                 ValidarConflitoISSQN();
                 if (value != 0m)
@@ -314,8 +312,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(5)]
         public MotivoDesoneracaoCondicionalICMS MotivoDesoneracaoCondicional
         {
-            get { return _motivoDesoneracaoCondicional; }
-            set
+            get => _motivoDesoneracaoCondicional;
+	        set
             {
                 ValidarConflitoISSQN();
                 ValidationUtil.ValidateEnum(value, "MotivoDesoneracaoCondicional");
@@ -330,8 +328,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "N18", FieldName = "modBCST")]
         public ModalidadeBaseCalculoIcmsST ModalidadeBaseCalculoST
         {
-            get { return _modalidadeBaseCalculoST; }
-            set
+            get => _modalidadeBaseCalculoST;
+	        set
             {
                 ValidarConflitoISSQN();
                 if (value != ModalidadeBaseCalculoIcmsST.NaoEspecificado)
@@ -364,8 +362,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "N19", FieldName = "pMVAST", DataType = "TDec_0302Opc", Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?")]
         public decimal PercentualMargemValorAdicionadoST
         {
-            get { return _percentualMargemValorAdicionado; }
-            set
+            get => _percentualMargemValorAdicionado;
+	        set
             {
                 ValidarConflitoISSQN();
                 if (value != 0m)
@@ -398,8 +396,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "N20", FieldName = "pRedBCST", DataType = "TDec_0302Opc", Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?")]
         public decimal PercentualReducaoBaseCalculoST
         {
-            get { return _percentualReducaoBaseCalculoST; }
-            set
+            get => _percentualReducaoBaseCalculoST;
+	        set
             {
                 ValidarConflitoISSQN();
                 if (value != 0m)
@@ -433,8 +431,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "N21", FieldName = "vBCST", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
         public decimal BaseCalculoST
         {
-            get { return _baseCalculoST; }
-            set
+            get => _baseCalculoST;
+	        set
             {
                 ValidarConflitoISSQN();
 
@@ -469,8 +467,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "N22", FieldName = "pICMSST", DataType = "TDec_0302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?")]
         public decimal AliquotaST
         {
-            get { return _aliquotaST; }
-            set
+            get => _aliquotaST;
+	        set
             {
                 ValidarConflitoISSQN();
                 if (value != 0m)
@@ -502,8 +500,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "N23", FieldName = "vICMSST", DataType = "TDec_1302", Pattern = @"0|0\.[0-9]{2}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?")]
         public decimal ValorST
         {
-            get { return _valorST; }
-            set
+            get => _valorST;
+	        set
             {
                 ValidarConflitoISSQN();
                 if (value != 0m)
@@ -630,9 +628,9 @@ namespace NotaFiscalNet.Core
         private void SerializeICMSSN900(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMSSN900"); // Elemento 'ICMSSN900'
-            writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));
-            writer.WriteElementString("CSOSN", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaICMS>(SituacaoTributaria))));
-            writer.WriteElementString("modBC", SerializationUtil.GetEnumValue<ModalidadeBaseCalculoIcms>(ModalidadeBaseCalculo));
+            writer.WriteElementString("orig", SerializationUtil.GetEnumValue(OrigemMercadoria));
+            writer.WriteElementString("CSOSN", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
+            writer.WriteElementString("modBC", SerializationUtil.GetEnumValue(ModalidadeBaseCalculo));
             writer.WriteElementString("vBC", SerializationUtil.ToTDec_1302(BaseCalculo));
             if (PercentualReducaoBaseCalculo > 0)
                 writer.WriteElementString("pRedBC", SerializationUtil.ToTDec_0302(PercentualReducaoBaseCalculo));
@@ -641,7 +639,7 @@ namespace NotaFiscalNet.Core
 
             if (ModalidadeBaseCalculoST != ModalidadeBaseCalculoIcmsST.NaoEspecificado)
             {
-                writer.WriteElementString("modBCST", SerializationUtil.GetEnumValue<ModalidadeBaseCalculoIcmsST>(ModalidadeBaseCalculoST));
+                writer.WriteElementString("modBCST", SerializationUtil.GetEnumValue(ModalidadeBaseCalculoST));
                 if (PercentualMargemValorAdicionadoST > 0)
                     writer.WriteElementString("pMVAST", SerializationUtil.ToTDec_0302(PercentualMargemValorAdicionadoST));
                 if (PercentualReducaoBaseCalculoST > 0)
@@ -663,8 +661,8 @@ namespace NotaFiscalNet.Core
         private void SerializeICMSSN500(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMSSN500"); // Elemento 'ICMSSN500'
-            writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));
-            writer.WriteElementString("CSOSN", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaICMS>(SituacaoTributaria))));
+            writer.WriteElementString("orig", SerializationUtil.GetEnumValue(OrigemMercadoria));
+            writer.WriteElementString("CSOSN", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
             writer.WriteElementString("vBCSTRet", SerializationUtil.ToTDec_1302(BaseCalculoST));
             writer.WriteElementString("vICMSSTRest", SerializationUtil.ToTDec_1302(ValorST));
             writer.WriteEndElement();
@@ -673,9 +671,9 @@ namespace NotaFiscalNet.Core
         private void SerializeICMSSN202(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMSSN202"); // Elemento 'ICMSSN202'
-            writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));
-            writer.WriteElementString("CSOSN", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaICMS>(SituacaoTributaria))));
-            writer.WriteElementString("modBCST", SerializationUtil.GetEnumValue<ModalidadeBaseCalculoIcmsST>(ModalidadeBaseCalculoST));
+            writer.WriteElementString("orig", SerializationUtil.GetEnumValue(OrigemMercadoria));
+            writer.WriteElementString("CSOSN", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
+            writer.WriteElementString("modBCST", SerializationUtil.GetEnumValue(ModalidadeBaseCalculoST));
             if (PercentualMargemValorAdicionadoST > 0)
                 writer.WriteElementString("pMVAST", SerializationUtil.ToTDec_0302(PercentualMargemValorAdicionadoST));
             if (PercentualReducaoBaseCalculoST > 0)
@@ -689,9 +687,9 @@ namespace NotaFiscalNet.Core
         private void SerializeICMSSN201(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMSSN201"); // Elemento 'ICMSSN201'
-            writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));
-            writer.WriteElementString("CSOSN", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaICMS>(SituacaoTributaria))));
-            writer.WriteElementString("modBCST", SerializationUtil.GetEnumValue<ModalidadeBaseCalculoIcmsST>(ModalidadeBaseCalculoST));
+            writer.WriteElementString("orig", SerializationUtil.GetEnumValue(OrigemMercadoria));
+            writer.WriteElementString("CSOSN", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
+            writer.WriteElementString("modBCST", SerializationUtil.GetEnumValue(ModalidadeBaseCalculoST));
             if (PercentualMargemValorAdicionadoST > 0)
                 writer.WriteElementString("pMVAST", SerializationUtil.ToTDec_0302(PercentualMargemValorAdicionadoST));
             if (PercentualReducaoBaseCalculoST > 0)
@@ -707,8 +705,8 @@ namespace NotaFiscalNet.Core
         private void SerializeICMSSN102(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMSSN102"); // Elemento 'ICMSSN102'
-            writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));
-            writer.WriteElementString("CSOSN", SerializationUtil.ToString3(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaICMS>(SituacaoTributaria))));
+            writer.WriteElementString("orig", SerializationUtil.GetEnumValue(OrigemMercadoria));
+            writer.WriteElementString("CSOSN", SerializationUtil.ToString3(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
             writer.WriteEndElement();
         }
 
@@ -718,7 +716,7 @@ namespace NotaFiscalNet.Core
         private void SerializeICMSSN101(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMSSN101"); // Elemento 'ICMSSN101'
-            writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));
+            writer.WriteElementString("orig", SerializationUtil.GetEnumValue(OrigemMercadoria));
             writer.WriteElementString("CSOSN", SerializationUtil.ToString3(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
             writer.WriteElementString("pCredSN", SerializationUtil.ToTDec_0302(AliquotaSN));
             writer.WriteElementString("vCredICMSSN", SerializationUtil.ToTDec_1302(ValorSN));
@@ -731,9 +729,9 @@ namespace NotaFiscalNet.Core
         private void SerializeICMS00(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMS00"); // Elemento 'ICMS00'
-            writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));
-            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaICMS>(SituacaoTributaria))));
-            writer.WriteElementString("modBC", SerializationUtil.GetEnumValue<ModalidadeBaseCalculoIcms>(ModalidadeBaseCalculo));
+            writer.WriteElementString("orig", SerializationUtil.GetEnumValue(OrigemMercadoria));
+            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
+            writer.WriteElementString("modBC", SerializationUtil.GetEnumValue(ModalidadeBaseCalculo));
             writer.WriteElementString("vBC", SerializationUtil.ToTDec_1302(BaseCalculo));
             writer.WriteElementString("pICMS", SerializationUtil.ToTDec_0302(Aliquota));
             writer.WriteElementString("vICMS", SerializationUtil.ToTDec_1302(Valor));
@@ -747,7 +745,7 @@ namespace NotaFiscalNet.Core
         {
             writer.WriteStartElement("ICMS10"); // Elemento 'ICMS10'
             writer.WriteElementString("orig", SerializationUtil.GetEnumValue(OrigemMercadoria));
-            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaICMS>(SituacaoTributaria))));
+            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
             writer.WriteElementString("modBC", SerializationUtil.GetEnumValue(ModalidadeBaseCalculo));
             writer.WriteElementString("vBC", SerializationUtil.ToTDec_1302(BaseCalculo));
             writer.WriteElementString("pICMS", SerializationUtil.ToTDec_0302(Aliquota));
@@ -769,9 +767,9 @@ namespace NotaFiscalNet.Core
         private void SerializeICMS20(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMS20"); // Elemento 'ICMS20'
-            writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));
-            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaICMS>(SituacaoTributaria))));
-            writer.WriteElementString("modBC", SerializationUtil.GetEnumValue<ModalidadeBaseCalculoIcms>(ModalidadeBaseCalculo));
+            writer.WriteElementString("orig", SerializationUtil.GetEnumValue(OrigemMercadoria));
+            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
+            writer.WriteElementString("modBC", SerializationUtil.GetEnumValue(ModalidadeBaseCalculo));
             writer.WriteElementString("pRedBC", SerializationUtil.ToTDec_0302(PercentualReducaoBaseCalculo));
             writer.WriteElementString("vBC", SerializationUtil.ToTDec_1302(BaseCalculo));
             writer.WriteElementString("pICMS", SerializationUtil.ToTDec_0302(Aliquota));
@@ -785,9 +783,9 @@ namespace NotaFiscalNet.Core
         private void SerializeICMS30(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMS30"); // Elemento 'ICMS30'
-            writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));
-            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaICMS>(SituacaoTributaria))));
-            writer.WriteElementString("modBCST", SerializationUtil.GetEnumValue<ModalidadeBaseCalculoIcmsST>(ModalidadeBaseCalculoST));
+            writer.WriteElementString("orig", SerializationUtil.GetEnumValue(OrigemMercadoria));
+            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
+            writer.WriteElementString("modBCST", SerializationUtil.GetEnumValue(ModalidadeBaseCalculoST));
             if (PercentualMargemValorAdicionadoST > 0)
                 writer.WriteElementString("pMVAST", SerializationUtil.ToTDec_0302(PercentualMargemValorAdicionadoST));
             if (PercentualReducaoBaseCalculoST > 0)
@@ -821,10 +819,10 @@ namespace NotaFiscalNet.Core
         private void SerializeICMS51(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMS51"); // Elemento 'ICMS51'
-            writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));
-            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaICMS>(SituacaoTributaria))));
+            writer.WriteElementString("orig", SerializationUtil.GetEnumValue(OrigemMercadoria));
+            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
             if (ModalidadeBaseCalculo != ModalidadeBaseCalculoIcms.NaoEspecificado)
-                writer.WriteElementString("modBC", SerializationUtil.GetEnumValue<ModalidadeBaseCalculoIcms>(ModalidadeBaseCalculo));
+                writer.WriteElementString("modBC", SerializationUtil.GetEnumValue(ModalidadeBaseCalculo));
             if (PercentualReducaoBaseCalculo > 0)
                 writer.WriteElementString("pRedBC", SerializationUtil.ToTDec_0302(PercentualReducaoBaseCalculo));
             if (BaseCalculo > 0)
@@ -842,8 +840,8 @@ namespace NotaFiscalNet.Core
         private void SerializeICMS60(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMS60"); // Elemento 'ICMS60'
-            writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));
-            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaICMS>(SituacaoTributaria))));
+            writer.WriteElementString("orig", SerializationUtil.GetEnumValue(OrigemMercadoria));
+            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
             writer.WriteElementString("vBCSTRet", SerializationUtil.ToTDec_1302(BaseCalculoST));
             writer.WriteElementString("vICMSSTRet", SerializationUtil.ToTDec_1302(ValorST));
             writer.WriteEndElement();
@@ -855,14 +853,14 @@ namespace NotaFiscalNet.Core
         private void SerializeICMS70(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMS70"); // Elemento 'ICMS70'
-            writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));
-            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaICMS>(SituacaoTributaria))));
-            writer.WriteElementString("modBC", SerializationUtil.GetEnumValue<ModalidadeBaseCalculoIcms>(ModalidadeBaseCalculo));
+            writer.WriteElementString("orig", SerializationUtil.GetEnumValue(OrigemMercadoria));
+            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
+            writer.WriteElementString("modBC", SerializationUtil.GetEnumValue(ModalidadeBaseCalculo));
             writer.WriteElementString("pRedBC", SerializationUtil.ToTDec_0302(PercentualReducaoBaseCalculo));
             writer.WriteElementString("vBC", SerializationUtil.ToTDec_1302(BaseCalculo));
             writer.WriteElementString("pICMS", SerializationUtil.ToTDec_0302(Aliquota));
             writer.WriteElementString("vICMS", SerializationUtil.ToTDec_1302(Valor));
-            writer.WriteElementString("modBCST", SerializationUtil.GetEnumValue<ModalidadeBaseCalculoIcmsST>(ModalidadeBaseCalculoST));
+            writer.WriteElementString("modBCST", SerializationUtil.GetEnumValue(ModalidadeBaseCalculoST));
             if (PercentualMargemValorAdicionadoST > 0)
                 writer.WriteElementString("pMVAST", SerializationUtil.ToTDec_0302(PercentualMargemValorAdicionadoST));
             if (PercentualReducaoBaseCalculoST > 0)
@@ -879,12 +877,12 @@ namespace NotaFiscalNet.Core
         private void SerializeICMS90(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("ICMS90"); // Elemento 'ICMS90'
-            writer.WriteElementString("orig", SerializationUtil.GetEnumValue<OrigemMercadoria>(OrigemMercadoria));
-            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaICMS>(SituacaoTributaria))));
+            writer.WriteElementString("orig", SerializationUtil.GetEnumValue(OrigemMercadoria));
+            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
 
             if (ModalidadeBaseCalculo != ModalidadeBaseCalculoIcms.NaoEspecificado)
             {
-                writer.WriteElementString("modBC", SerializationUtil.GetEnumValue<ModalidadeBaseCalculoIcms>(ModalidadeBaseCalculo));
+                writer.WriteElementString("modBC", SerializationUtil.GetEnumValue(ModalidadeBaseCalculo));
                 writer.WriteElementString("vBC", SerializationUtil.ToTDec_1302(BaseCalculo));
                 if (PercentualReducaoBaseCalculo > 0)
                     writer.WriteElementString("pRedBC", SerializationUtil.ToTDec_0302(PercentualReducaoBaseCalculo));
@@ -894,7 +892,7 @@ namespace NotaFiscalNet.Core
 
             if (ModalidadeBaseCalculoST != ModalidadeBaseCalculoIcmsST.NaoEspecificado)
             {
-                writer.WriteElementString("modBCST", SerializationUtil.GetEnumValue<ModalidadeBaseCalculoIcmsST>(ModalidadeBaseCalculoST));
+                writer.WriteElementString("modBCST", SerializationUtil.GetEnumValue(ModalidadeBaseCalculoST));
                 if (PercentualMargemValorAdicionadoST > 0)
                     writer.WriteElementString("pMVAST", SerializationUtil.ToTDec_0302(PercentualMargemValorAdicionadoST));
                 if (PercentualReducaoBaseCalculoST > 0)

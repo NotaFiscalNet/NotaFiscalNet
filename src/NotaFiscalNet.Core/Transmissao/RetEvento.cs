@@ -38,7 +38,7 @@ namespace NotaFiscalNet.Core.Transmissao
         }
 
         /// <summary>
-        /// [@versao] Retorna a vers„o do retorno de evento.
+        /// [@versao] Retorna a vers√£o do retorno de evento.
         /// </summary>
         public string Versao { get; private set; }
 
@@ -48,17 +48,17 @@ namespace NotaFiscalNet.Core.Transmissao
         public string Id { get; private set; }
 
         /// <summary>
-        /// [tpAmb] Retorna ou define o Ambiente (ProduÁ„o ou HomologaÁ„o).
+        /// [tpAmb] Retorna ou define o Ambiente (Produ√ß√£o ou Homologa√ß√£o).
         /// </summary>
         public TipoAmbiente Ambiente { get; private set; }
 
         /// <summary>
-        /// [verAplic] Retorna ou define a vers„o do aplicativo que recebeu o Evento.
+        /// [verAplic] Retorna ou define a vers√£o do aplicativo que recebeu o Evento.
         /// </summary>
         public string VersaoAplicativo { get; private set; }
 
         /// <summary>
-        /// [cOrgao] Retorna ou define o Org„o de RecepÁ„o do Evento.
+        /// [cOrgao] Retorna ou define o Org√£o de Recep√ß√£o do Evento.
         /// </summary>
         /// <remarks>
         /// Utilizar a tabela do IBGE extendida. Utilizar 91 para identificar Ambiente Nacional.
@@ -66,12 +66,12 @@ namespace NotaFiscalNet.Core.Transmissao
         public OrgaoIBGE Orgao { get; private set; }
 
         /// <summary>
-        /// [cStat] Retorna ou define o CÛdigo do Status do registro do Evento.
+        /// [cStat] Retorna ou define o C√≥digo do Status do registro do Evento.
         /// </summary>
         public string CodigoStatus { get; private set; }
 
         /// <summary>
-        /// [xMotivo] Retorna ou define a descriÁ„o literal do status do registro do evento.
+        /// [xMotivo] Retorna ou define a descri√ß√£o literal do status do registro do evento.
         /// </summary>
         public string Motivo { get; private set; }
 
@@ -86,22 +86,22 @@ namespace NotaFiscalNet.Core.Transmissao
         public TipoEventoNFe? Tipo { get; private set; }
 
         /// <summary>
-        /// [xEvento] Retorna ou define a descriÁ„o do evento.
+        /// [xEvento] Retorna ou define a descri√ß√£o do evento.
         /// </summary>
         public string Descricao { get; private set; }
 
         /// <summary>
-        /// [nSeqEvento] Retorna ou define o n˙mero sequencial do evento para o mesmo tipo de evento.
+        /// [nSeqEvento] Retorna ou define o n√∫mero sequencial do evento para o mesmo tipo de evento.
         /// </summary>
         public int? NumeroSequencial { get; private set; }
 
         /// <summary>
-        /// [Cnpj,Cpf] Retorna ou define o Cpf ou Cnpj do Destinat·rio do Evento.
+        /// [Cnpj,Cpf] Retorna ou define o Cpf ou Cnpj do Destinat√°rio do Evento.
         /// </summary>
         public string CpfCnpjDestinatario { get; private set; }
 
         /// <summary>
-        /// [emailDest] Retorna ou define o e-mail do destinat·rio.
+        /// [emailDest] Retorna ou define o e-mail do destinat√°rio.
         /// </summary>
         public string EmailDestinatario { get; set; }
 
@@ -111,7 +111,7 @@ namespace NotaFiscalNet.Core.Transmissao
         public DateTime DataRegistro { get; private set; }
 
         /// <summary>
-        /// [nProt] Retorna ou define o N˙mero do Protocolo de registro do evento.
+        /// [nProt] Retorna ou define o N√∫mero do Protocolo de registro do evento.
         /// </summary>
         public string NumeroProtocolo { get; private set; }
     }

@@ -1,28 +1,25 @@
 using NotaFiscalNet.Core.Interfaces;
-using NotaFiscalNet.Core.Validacao;
-using System;
-using System.Linq;
 
 namespace NotaFiscalNet.Core
 {
     public sealed class ReferenciaDocumentoFiscalEcf : ISerializavel, IReferenciaDocumentoFiscal
     {
         /// <summary>
-        /// [mod] Retorna o Código do Modelo do Documento Fiscal Referênciado. Preencher com "2B",
-        /// quando se tratar de Cupom Fiscal emitido por máquina registradora (não ECF), com "2C",
+        /// [mod] Retorna o CÃ³digo do Modelo do Documento Fiscal ReferÃªnciado. Preencher com "2B",
+        /// quando se tratar de Cupom Fiscal emitido por mÃ¡quina registradora (nÃ£o ECF), com "2C",
         /// quando se tratar de Cupom Fiscal PDV, ou "2D", quando se tratar de Cupom Fiscal (emitido
         /// por ECF)
         /// </summary>
         public string CodigoModelo { get; set; }
 
         /// <summary>
-        /// [nECF] Retorna ou define o número de ordem seqüencial do ECF que emitiu o Cupom Fiscal
-        /// vinculado à NF-e.
+	    /// [nECF] Retorna ou define o nÃºmero de ordem seqÃ¼encial do ECF que emitiu o Cupom Fiscal
+        /// vinculado Ã  NF-e.
         /// </summary>
         public int NumeroEcf { get; set; }
 
         /// <summary>
-        /// [nCOO] Retorna ou define o Número do Contador de Ordem de Operação - COO vinculado à NF-e.
+        /// [nCOO] Retorna ou define o NÃºmero do Contador de Ordem de OperaÃ§Ã£o - COO vinculado Ã  NF-e.
         /// </summary>
         public int NumeroContadorOrdemOperacao { get; set; }
 

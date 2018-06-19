@@ -36,8 +36,8 @@ namespace NotaFiscalNet.Core
         /// </exception>
         public long IDLote
         {
-            get { return _idLote; }
-            set
+            get => _idLote;
+	        set
             {
                 if (value < 1 || value > 999999999999999L)
                     throw new ArgumentOutOfRangeException("IDLote", value, "O valor informado para o Código Identificador do Lote não está dentro da faixa permitida (de 1 ate 999999999999999).");

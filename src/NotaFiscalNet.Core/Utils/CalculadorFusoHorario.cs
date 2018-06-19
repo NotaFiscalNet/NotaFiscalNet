@@ -1,18 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.InteropServices;
 
 namespace NotaFiscalNet.Core.Utils
 {
     public class CalculadorFusoHorario
     {
-        private readonly TimeZoneInfo _fusoHorarioGmtMenos3 = TimeZoneInfo.FindSystemTimeZoneById("E. South America Standard Time");
-        private readonly TimeZoneInfo _fusoHorarioGmtMenos4 = TimeZoneInfo.FindSystemTimeZoneById("Central Brazilian Standard Time");
-        private readonly TimeZoneInfo _fusoHorarioGmtMenos5 = TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time");
+	    private static readonly bool _isWindows = RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
 
+	    private readonly TimeZoneInfo _fusoHorarioGmtMenos3 =
+		    TimeZoneInfo.FindSystemTimeZoneById(_isWindows ? "E. South America Standard Time" : "Brazil/East");
+
+	    private readonly TimeZoneInfo _fusoHorarioGmtMenos4 =
+		    TimeZoneInfo.FindSystemTimeZoneById(_isWindows ? "Central Brazilian Standard Time" : "Brazil/West");
+
+	    private readonly TimeZoneInfo _fusoHorarioGmtMenos5 =
+		    TimeZoneInfo.FindSystemTimeZoneById(_isWindows ? "Eastern Standard Time" : "Brazil/Acre");
+	    
         private readonly TimeZoneInfo _fusoHorario;
         private readonly TimeSpan _fusoHorarioOffset;
 
@@ -22,7 +25,7 @@ namespace NotaFiscalNet.Core.Utils
             _fusoHorarioOffset = ObtemOffsetFusoHorario(_fusoHorario);
         }
 
-        public bool EstaEmPeriodoHorarioVerao(DateTime data)
+	    private bool EstaEmPeriodoHorarioVerao(DateTime data)
         {
             return _fusoHorario.IsDaylightSavingTime(data);
         }
@@ -37,7 +40,7 @@ namespace NotaFiscalNet.Core.Utils
             return offset;
         }
 
-        private TimeSpan ObtemOffsetFusoHorario(TimeZoneInfo fusoHorario)
+        private static TimeSpan ObtemOffsetFusoHorario(TimeZoneInfo fusoHorario)
         {
             return fusoHorario.BaseUtcOffset;
         }
@@ -61,7 +64,7 @@ namespace NotaFiscalNet.Core.Utils
                 case UfIBGE.MT:
                 case UfIBGE.MS:
                     return _fusoHorarioGmtMenos4;
-                default:
+	            default:
                     return _fusoHorarioGmtMenos3;
             }
         }

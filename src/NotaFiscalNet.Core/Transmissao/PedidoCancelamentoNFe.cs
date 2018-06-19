@@ -39,8 +39,8 @@ namespace NotaFiscalNet.Core.Transmissao
         /// </exception>
         public string ChaveAcesso
         {
-            get { return _chaveAcesso; }
-            set
+            get => _chaveAcesso;
+	        set
             {
                 CheckReadOnly();
                 if (value == null)
@@ -58,8 +58,8 @@ namespace NotaFiscalNet.Core.Transmissao
         /// </summary>
         public TipoAmbiente Ambiente
         {
-            get { return _ambiente; }
-            set
+            get => _ambiente;
+	        set
             {
                 CheckReadOnly();
                 _ambiente = value;
@@ -80,8 +80,8 @@ namespace NotaFiscalNet.Core.Transmissao
         /// </exception>
         public string NumeroProtocoloStatusNFe
         {
-            get { return _numeroProtocoloStatusNFe; }
-            set
+            get => _numeroProtocoloStatusNFe;
+	        set
             {
                 CheckReadOnly();
                 if (value == null)
@@ -106,8 +106,8 @@ namespace NotaFiscalNet.Core.Transmissao
         /// </exception>
         public string Justificativa
         {
-            get { return _justificativa; }
-            set
+            get => _justificativa;
+	        set
             {
                 CheckReadOnly();
                 if (value == null)

@@ -19,11 +19,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Identificador
         {
-            get { return _identificador; }
-            set
-            {
-                _identificador = ValidationUtil.TruncateString(value, 60);
-            }
+            get => _identificador;
+	        set => _identificador = ValidationUtil.TruncateString(value, 60);
         }
 
         /// <summary>
@@ -33,11 +30,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = OrigemProcesso.NaoEspecificado)]
         public OrigemProcesso OrigemProcesso
         {
-            get { return _origemProcesso; }
-            set
-            {
-                _origemProcesso = ValidationUtil.ValidateEnum<OrigemProcesso>(value, "OrigemProcesso");
-            }
+            get => _origemProcesso;
+	        set => _origemProcesso = ValidationUtil.ValidateEnum(value, "OrigemProcesso");
         }
 
         /// <summary>
@@ -50,7 +44,7 @@ namespace NotaFiscalNet.Core
         {
             writer.WriteStartElement("procRef"); // Elemento 'procRef'
             writer.WriteElementString("nProc", SerializationUtil.ToToken(Identificador, 60));
-            writer.WriteElementString("indProc", SerializationUtil.GetEnumValue<OrigemProcesso>(OrigemProcesso));
+            writer.WriteElementString("indProc", SerializationUtil.GetEnumValue(OrigemProcesso));
             writer.WriteEndElement(); // Elemento 'procRef'
         }
     }

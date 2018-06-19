@@ -13,22 +13,16 @@ namespace NotaFiscalNet.Core
     {
         private string _informacoesComplementaresFisco = string.Empty;
         private string _informacoesComplementaresContribuinte = string.Empty;
-        private ObservacaoContribuinteCollection _observacoesContribuinte = new ObservacaoContribuinteCollection();
-        private ObservacaoFiscoCollection _observacoesFisco = new ObservacaoFiscoCollection();
-        private ProcessoCollection _processos = new ProcessoCollection();
 
-        /// <summary>
+	    /// <summary>
         /// [infAdFisco] Retorna ou define Informações Complementares de Interesse do Fisco. Opcional.
         /// </summary>
         [NFeField(ID = "Z02", FieldName = "infAdFisco", DataType = "TString", MinLength = 1, MaxLength = 2000, Pattern = @"[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}", Opcional = true)]
         [CampoValidavel(1, Opcional = true)]
         public string InformacoesComplementaresFisco
         {
-            get { return _informacoesComplementaresFisco; }
-            set
-            {
-                _informacoesComplementaresFisco = ValidationUtil.TruncateString(value, 2000);
-            }
+            get => _informacoesComplementaresFisco;
+	        set => _informacoesComplementaresFisco = ValidationUtil.TruncateString(value, 2000);
         }
 
         /// <summary>
@@ -38,11 +32,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(2, Opcional = true)]
         public string InformacoesComplementaresContribuinte
         {
-            get { return _informacoesComplementaresContribuinte; }
-            set
-            {
-                _informacoesComplementaresContribuinte = ValidationUtil.TruncateString(value, 5000);
-            }
+            get => _informacoesComplementaresContribuinte;
+	        set => _informacoesComplementaresContribuinte = ValidationUtil.TruncateString(value, 5000);
         }
 
         /// <summary>
@@ -50,23 +41,23 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "Z04", FieldName = "obsCont", MinLength = 1, MaxLength = 10, Opcional = true)]
         [CampoValidavel(3, ChaveErroValidacao.CollectionMinValue)]
-        public ObservacaoContribuinteCollection ObservacoesContribuinte => _observacoesContribuinte;
+        public ObservacaoContribuinteCollection ObservacoesContribuinte { get; } = new ObservacaoContribuinteCollection();
 
-        /// <summary>
+	    /// <summary>
         /// [obsFisco] Retorna as Informações de uso Livre do Fisco. Opcional.
         /// </summary>
         [NFeField(ID = "Z07", FieldName = "obsFisco", MinLength = 1, MaxLength = 10, Opcional = true)]
         [CampoValidavel(4, ChaveErroValidacao.CollectionMinValue)]
-        public ObservacaoFiscoCollection ObservacoesFisco => _observacoesFisco;
+        public ObservacaoFiscoCollection ObservacoesFisco { get; } = new ObservacaoFiscoCollection();
 
-        /// <summary>
+	    /// <summary>
         /// [procRef] Retorna os Processos Referenciados. Opcional.
         /// </summary>
         [NFeField(ID = "Z10", FieldName = "procRef", Opcional = true)]
         [CampoValidavel(5, ChaveErroValidacao.CollectionMinValue)]
-        public ProcessoCollection Processos => _processos;
+        public ProcessoCollection Processos { get; } = new ProcessoCollection();
 
-        /// <summary>
+	    /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
         public bool Modificado => !string.IsNullOrEmpty(InformacoesComplementaresContribuinte) ||

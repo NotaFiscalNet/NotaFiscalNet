@@ -20,11 +20,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Campo
         {
-            get { return _campo; }
-            set
-            {
-                _campo = ValidationUtil.TruncateString(value, 20);
-            }
+            get => _campo;
+	        set => _campo = ValidationUtil.TruncateString(value, 20);
         }
 
         /// <summary>
@@ -34,11 +31,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Texto
         {
-            get { return _texto; }
-            set
-            {
-                _texto = ValidationUtil.TruncateString(value, 60);
-            }
+            get => _texto;
+	        set => _texto = ValidationUtil.TruncateString(value, 60);
         }
 
         /// <summary>

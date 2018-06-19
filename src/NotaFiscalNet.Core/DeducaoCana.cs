@@ -14,16 +14,16 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Descricao
         {
-            get { return _descricao; }
-            set { _descricao = ValidationUtil.TruncateString(value, 60); }
+            get => _descricao;
+	        set => _descricao = ValidationUtil.TruncateString(value, 60);
         }
 
         [NFeField(ID = "ZC12", FieldName = "vDed", DataType = "TDec_1302")]
         [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal Valor
         {
-            get { return _valor; }
-            set { _valor = ValidationUtil.ValidateTDec_1302(value, "Valor"); }
+            get => _valor;
+	        set => _valor = ValidationUtil.ValidateTDec_1302(value, "Valor");
         }
 
         public bool Modificado => !string.IsNullOrEmpty(Descricao) ||

@@ -23,7 +23,7 @@ namespace NotaFiscalNet.Core.Validacao
         public override string ToString()
         {
             if (Valido)
-                return "Nenhum erro de validação foi encontrado.";
+                return "Nenhum erro de validaÃ§Ã£o foi encontrado.";
 
             var sb = new StringBuilder();
             foreach (var erro in Erros)

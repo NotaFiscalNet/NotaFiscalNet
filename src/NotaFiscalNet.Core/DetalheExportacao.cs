@@ -18,8 +18,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "I51", FieldName = "nDraw", DataType = "xs:string", Pattern = "[0-9]{0,11}")]
         public string NumeroDrawback
         {
-            get { return _numeroDrawback; }
-            set
+            get => _numeroDrawback;
+	        set
             {
                 if (!ValidationUtil.ValidateRegex(value, "^[0-9]{0,11}$"))
                     throw new ArgumentException("O número do Ato Concessório de Drawback informado não é válido.");

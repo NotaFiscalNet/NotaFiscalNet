@@ -17,7 +17,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("notequal_error", erro.ErrorCode);
+            Assert.Equal("NotEqualValidator", erro.ErrorCode);
         }
 
         [Fact]
@@ -36,7 +36,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("inclusivebetween_error", erro.ErrorCode);
+            Assert.Equal("InclusiveBetweenValidator", erro.ErrorCode);
             Assert.Equal(10000000, erro.FormattedMessagePlaceholderValues["From"]);
             Assert.Equal(99999999, erro.FormattedMessagePlaceholderValues["To"]);
         }
@@ -56,7 +56,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("notempty_error", erro.ErrorCode);
+            Assert.Equal("NotEmptyValidator", erro.ErrorCode);
         }
 
         [Fact]
@@ -66,7 +66,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("length_error", erro.ErrorCode);
+            Assert.Equal("LengthValidator", erro.ErrorCode);
             Assert.Equal(1, erro.FormattedMessagePlaceholderValues["MinLength"]);
             Assert.Equal(60, erro.FormattedMessagePlaceholderValues["MaxLength"]);
         }
@@ -86,7 +86,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("inclusivebetween_error", erro.ErrorCode);
+            Assert.Equal("InclusiveBetweenValidator", erro.ErrorCode);
             Assert.Equal(0, erro.FormattedMessagePlaceholderValues["From"]);
             Assert.Equal(999, erro.FormattedMessagePlaceholderValues["To"]);
         }
@@ -108,7 +108,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("inclusivebetween_error", erro.ErrorCode);
+            Assert.Equal("InclusiveBetweenValidator", erro.ErrorCode);
             Assert.Equal(1, erro.FormattedMessagePlaceholderValues["From"]);
             Assert.Equal(999999999, erro.FormattedMessagePlaceholderValues["To"]);
         }
@@ -128,7 +128,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("notempty_error", erro.ErrorCode);
+            Assert.Equal("NotEmptyValidator", erro.ErrorCode);
         }
 
         [Fact]
@@ -138,7 +138,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("notequal_error", erro.ErrorCode);
+            Assert.Equal("NotEqualValidator", erro.ErrorCode);
         }
 
         [Fact]
@@ -157,7 +157,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                     .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("inclusivebetween_error", erro.ErrorCode);
+            Assert.Equal("InclusiveBetweenValidator", erro.ErrorCode);
             Assert.Equal(1000000, erro.FormattedMessagePlaceholderValues["From"]);
             Assert.Equal(9999999, erro.FormattedMessagePlaceholderValues["To"]);
         }
@@ -178,7 +178,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("notempty_error", erro.ErrorCode);
+            Assert.Equal("NotEmptyValidator", erro.ErrorCode);
         }
 
         [Fact]
@@ -188,7 +188,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("length_error", erro.ErrorCode);
+            Assert.Equal("LengthValidator", erro.ErrorCode);
             Assert.Equal(1, erro.FormattedMessagePlaceholderValues["MinLength"]);
             Assert.Equal(20, erro.FormattedMessagePlaceholderValues["MaxLength"]);
         }
@@ -220,7 +220,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault(t => t.PropertyName == nameof(IdentificacaoDocumentoFiscal.DataHoraEntradaContingencia));
 
             Assert.NotNull(erro);
-            Assert.Equal("notempty_error", erro.ErrorCode);
+            Assert.Equal("NotEmptyValidator", erro.ErrorCode);
         }
 
         [Theory]
@@ -244,7 +244,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault(t => t.PropertyName == nameof(IdentificacaoDocumentoFiscal.DataHoraEntradaContingencia));
 
             Assert.NotNull(erro);
-            Assert.Equal("notequal_error", erro.ErrorCode);
+            Assert.Equal("NotEqualValidator", erro.ErrorCode);
         }
 
         [Theory]
@@ -298,7 +298,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault(t => t.PropertyName == nameof(IdentificacaoDocumentoFiscal.DataHoraEntradaContingencia));
 
             Assert.NotNull(erro);
-            Assert.Equal("null_error", erro.ErrorCode);
+            Assert.Equal("NullValidator", erro.ErrorCode);
         }
 
         [Fact]
@@ -314,7 +314,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault(t => t.PropertyName == nameof(IdentificacaoDocumentoFiscal.DataHoraEntradaContingencia));
 
             Assert.NotNull(erro);
-            Assert.Equal("null_error", erro.ErrorCode);
+            Assert.Equal("NullValidator", erro.ErrorCode);
         }
 
 
@@ -340,7 +340,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                     t => t.PropertyName == nameof(IdentificacaoDocumentoFiscal.JustificativaEntradaContingencia));
 
             Assert.NotNull(erro);
-            Assert.Equal("notempty_error", erro.ErrorCode);
+            Assert.Equal("NotEmptyValidator", erro.ErrorCode);
         }
 
         [Theory]
@@ -366,7 +366,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                     t => t.PropertyName == nameof(IdentificacaoDocumentoFiscal.JustificativaEntradaContingencia));
 
             Assert.NotNull(erro);
-            Assert.Equal("length_error", erro.ErrorCode);
+            Assert.Equal("LengthValidator", erro.ErrorCode);
             Assert.Equal(15, erro.FormattedMessagePlaceholderValues["MinLength"]);
             Assert.Equal(256, erro.FormattedMessagePlaceholderValues["MaxLength"]);
         }
@@ -394,7 +394,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                     t => t.PropertyName == nameof(IdentificacaoDocumentoFiscal.JustificativaEntradaContingencia));
 
             Assert.NotNull(erro);
-            Assert.Equal("length_error", erro.ErrorCode);
+            Assert.Equal("LengthValidator", erro.ErrorCode);
             Assert.Equal(15, erro.FormattedMessagePlaceholderValues["MinLength"]);
             Assert.Equal(256, erro.FormattedMessagePlaceholderValues["MaxLength"]);
         }
@@ -429,7 +429,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                     t => t.PropertyName == nameof(IdentificacaoDocumentoFiscal.JustificativaEntradaContingencia));
 
             Assert.NotNull(erro);
-            Assert.Equal("null_error", erro.ErrorCode);
+            Assert.Equal("NullValidator", erro.ErrorCode);
         }
 
         [Fact]
@@ -479,7 +479,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault(t => t.PropertyName == nameof(IdentificacaoDocumentoFiscal.ReferenciasDocumentoFiscais));
 
             Assert.NotNull(erro);
-            Assert.Equal("collectionlength_error", erro.ErrorCode);
+            Assert.Equal("CollectionLengthValidator", erro.ErrorCode);
             Assert.Equal(0, erro.FormattedMessagePlaceholderValues["MinLength"]);
             Assert.Equal(500, erro.FormattedMessagePlaceholderValues["MaxLength"]);
         }

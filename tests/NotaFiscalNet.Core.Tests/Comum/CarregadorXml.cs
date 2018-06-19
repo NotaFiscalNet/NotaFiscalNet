@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
 
 namespace NotaFiscalNet.Core.Tests.Comum
@@ -34,9 +30,9 @@ namespace NotaFiscalNet.Core.Tests.Comum
 
         private string ObtemPathArquivosXml()
         {
-            return Path.GetDirectoryName(
-                Uri.UnescapeDataString(
-                    new UriBuilder(Assembly.GetExecutingAssembly().CodeBase).Path)) + @"\Xmls";
+	        return Path.GetDirectoryName(
+		               Uri.UnescapeDataString(
+			               new UriBuilder(Assembly.GetExecutingAssembly().CodeBase).Path)) + $"{Path.DirectorySeparatorChar}Xmls";
         }
     }
 }

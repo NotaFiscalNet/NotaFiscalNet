@@ -22,8 +22,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "W24", FieldName = "vRetPIS", DataType = "TDec_1302Opc", Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional = true)]
         public decimal ValorRetidoPIS
         {
-            get { return _valorRetidoPIS; }
-            set
+            get => _valorRetidoPIS;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorRetidoPIS");
                 _valorRetidoPIS = value;
@@ -36,8 +36,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "W25", FieldName = "vRetCOFINS", DataType = "TDec_1302Opc", Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional = true)]
         public decimal ValorRetidoCOFINS
         {
-            get { return _valorRetidoCOFINS; }
-            set
+            get => _valorRetidoCOFINS;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorRetidoCOFINS");
                 _valorRetidoCOFINS = value;
@@ -50,8 +50,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "W26", FieldName = "vRetCSLL", DataType = "TDec_1302Opc", Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional = true)]
         public decimal ValorRetidoCSLL
         {
-            get { return _valorRetidoCSLL; }
-            set
+            get => _valorRetidoCSLL;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorRetidoCSLL");
                 _valorRetidoCSLL = value;
@@ -64,8 +64,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "W27", FieldName = "vBCIRRF", DataType = "TDec_1302Opc", Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional = true)]
         public decimal BaseCalculo
         {
-            get { return _baseCalculo; }
-            set
+            get => _baseCalculo;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "BaseCalculo");
                 _baseCalculo = value;
@@ -78,8 +78,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "W28", FieldName = "vIRRF", DataType = "TDec_1302Opc", Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional = true)]
         public decimal ValorRetidoIRRF
         {
-            get { return _valorRetidoIRRF; }
-            set
+            get => _valorRetidoIRRF;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorRetidoIRRF");
                 _valorRetidoIRRF = value;
@@ -92,8 +92,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "W29", FieldName = "vBCRetPrev", DataType = "TDec_1302Opc", Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional = true)]
         public decimal BaseCalculoRetencaoPrevidenciaSocial
         {
-            get { return _baseCalculoRetencaoPrevidenciaSocial; }
-            set
+            get => _baseCalculoRetencaoPrevidenciaSocial;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "BaseCalculoRetencaoPrevidenciaSocial");
                 _baseCalculoRetencaoPrevidenciaSocial = value;
@@ -106,8 +106,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "W30", FieldName = "vRetPrev", DataType = "TDec_1302Opc", Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional = true)]
         public decimal ValorRetencaoPrevidenciaSocial
         {
-            get { return _valorRetencaoPrevidenciaSocial; }
-            set
+            get => _valorRetencaoPrevidenciaSocial;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorRetencaoPrevidenciaSocial");
                 _valorRetencaoPrevidenciaSocial = value;

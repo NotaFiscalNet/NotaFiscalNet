@@ -15,17 +15,16 @@ namespace NotaFiscalNet.Core
         private string _numeracao = string.Empty;
         private decimal _pesoLiquido;
         private decimal _pesoBruto;
-        private StringCollection _lacres = new StringCollection();
 
-        /// <summary>
+	    /// <summary>
         /// [qVol] Retorna ou define a Quantidade de Volumes transportados (valor máximo
         /// 999999999999999). Opcional.
         /// </summary>
         [NFeField(FieldName = "qVol", DataType = "token", ID = "X27", Pattern = @"[0-9]{1,15}")]
         public long QuantidadeVolumes
         {
-            get { return _quantidadeVolumesTransportados; }
-            set
+            get => _quantidadeVolumesTransportados;
+	        set
             {
                 ValidationUtil.ValidateLong15(value, "QuantidadeVolumes");
                 _quantidadeVolumesTransportados = value;
@@ -38,11 +37,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "esp", DataType = "token", ID = "X28", MinLength = 1, MaxLength = 60)]
         public string Especie
         {
-            get { return _especie; }
-            set
-            {
-                _especie = ValidationUtil.TruncateString(value, 60);
-            }
+            get => _especie;
+	        set => _especie = ValidationUtil.TruncateString(value, 60);
         }
 
         /// <summary>
@@ -51,11 +47,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "marca", DataType = "token", ID = "X29", MinLength = 1, MaxLength = 60)]
         public string Marca
         {
-            get { return _marca; }
-            set
-            {
-                _marca = ValidationUtil.TruncateString(value, 60);
-            }
+            get => _marca;
+	        set => _marca = ValidationUtil.TruncateString(value, 60);
         }
 
         /// <summary>
@@ -64,11 +57,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "nVol", DataType = "token", ID = "X30", MinLength = 1, MaxLength = 60)]
         public string Numeracao
         {
-            get { return _numeracao; }
-            set
-            {
-                _numeracao = ValidationUtil.TruncateString(value, 60);
-            }
+            get => _numeracao;
+	        set => _numeracao = ValidationUtil.TruncateString(value, 60);
         }
 
         /// <summary>
@@ -77,8 +67,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "pesoL", DataType = "TDec_1203", ID = "X31", Pattern = @"0|0\.[0-9]{3}|[1-9]{1}[0-9]{0,11}(\.[0-9]{3})?")]
         public decimal PesoLiquido
         {
-            get { return _pesoLiquido; }
-            set
+            get => _pesoLiquido;
+	        set
             {
                 ValidationUtil.ValidateTDec_1203(value, "PesoLiquido");
 
@@ -92,8 +82,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "pesoB", DataType = "TDec_1203", ID = "X32", Pattern = @"0|0\.[0-9]{3}|[1-9]{1}[0-9]{0,11}(\.[0-9]{3})?")]
         public decimal PesoBruto
         {
-            get { return _pesoBruto; }
-            set
+            get => _pesoBruto;
+	        set
             {
                 ValidationUtil.ValidateTDec_1203(value, "PesoBruto");
                 _pesoBruto = value;
@@ -104,9 +94,9 @@ namespace NotaFiscalNet.Core
         /// [lacres] Retorna uma Coleção de Lacres
         /// </summary>
         [NFeField(FieldName = "lacres", ID = "X33", MinLength = 1, MaxLength = 60)]
-        public StringCollection Lacres => _lacres;
+        public StringCollection Lacres { get; } = new StringCollection();
 
-        /// <summary>
+	    /// <summary>
         /// Retorna se a Classe foi modificada
         /// </summary>
         public bool Modificado => QuantidadeVolumes != 0L ||

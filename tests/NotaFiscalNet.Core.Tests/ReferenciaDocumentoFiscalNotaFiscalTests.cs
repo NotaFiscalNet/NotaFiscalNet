@@ -1,8 +1,5 @@
 ﻿using NotaFiscalNet.Core.Tests.Comum;
-using System;
-using System.Collections.Generic;
 using NotaFiscalNet.Core.Tests.Dados;
-using NotaFiscalNet.Core.Validacao;
 using Xunit;
 
 namespace NotaFiscalNet.Core.Tests

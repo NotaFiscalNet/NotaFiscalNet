@@ -26,8 +26,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "vBCSTRet", DataType = "TDec_1302")]
         public decimal ValorBaseCalculoSTRetido
         {
-            get { return _valorBaseCalculoSTRetido; }
-            set { _valorBaseCalculoSTRetido = ValidationUtil.ValidateTDec_1302(value, "ValorBaseCalculoSTRetido"); }
+            get => _valorBaseCalculoSTRetido;
+	        set => _valorBaseCalculoSTRetido = ValidationUtil.ValidateTDec_1302(value, "ValorBaseCalculoSTRetido");
         }
 
         /// <summary>
@@ -36,8 +36,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "vICMSSTRet", DataType = "TDec_1302")]
         public decimal ValorSTRetido
         {
-            get { return _valorSTRetido; }
-            set { _valorSTRetido = ValidationUtil.ValidateTDec_1302(value, "ValorSTRetido"); }
+            get => _valorSTRetido;
+	        set => _valorSTRetido = ValidationUtil.ValidateTDec_1302(value, "ValorSTRetido");
         }
 
         /// <summary>
@@ -46,11 +46,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "vBCSTDest", DataType = "TDec_1302")]
         public decimal ValorBaseCalculoSTUFDestino
         {
-            get { return _valorBaseCalculoSTUFDestino; }
-            set
-            {
-                _valorBaseCalculoSTUFDestino = ValidationUtil.ValidateTDec_1302(value, "ValorBaseCalculoSTUFDestino");
-            }
+            get => _valorBaseCalculoSTUFDestino;
+	        set => _valorBaseCalculoSTUFDestino = ValidationUtil.ValidateTDec_1302(value, "ValorBaseCalculoSTUFDestino");
         }
 
         /// <summary>
@@ -59,8 +56,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "vICMSSTDet", DataType = "TDec_1302")]
         public decimal ValorSTUFDestino
         {
-            get { return _valorSTUFDestino; }
-            set { _valorSTUFDestino = ValidationUtil.ValidateTDec_1302(value, "ValorSTUFDestino"); }
+            get => _valorSTUFDestino;
+	        set => _valorSTUFDestino = ValidationUtil.ValidateTDec_1302(value, "ValorSTUFDestino");
         }
 
         protected override void SerializeInternal(XmlWriter writer, INFe nfe)

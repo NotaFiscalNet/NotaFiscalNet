@@ -33,8 +33,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal BaseCalculo
         {
-            get { return _baseCalculo; }
-            set
+            get => _baseCalculo;
+	        set
             {
                 ValidationUtil.ValidateTDec_1204(value, "BaseCalculo");
                 _baseCalculo = value;
@@ -49,8 +49,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal Aliquota
         {
-            get { return _aliquota; }
-            set
+            get => _aliquota;
+	        set
             {
                 ValidationUtil.ValidateTDec_1104(value, "Aliquota");
                 _aliquota = value;
@@ -65,8 +65,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal Valor
         {
-            get { return _valor; }
-            set
+            get => _valor;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "Valor");
                 _valor = value;

@@ -34,8 +34,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, Opcional = true)]
         public decimal BaseCalculo
         {
-            get { return _baseCalculo; }
-            set
+            get => _baseCalculo;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "BaseCalculo");
                 _baseCalculo = value;
@@ -49,8 +49,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(2, Opcional = true)]
         public decimal ValorTotalICMS
         {
-            get { return _valorTotalICMS; }
-            set
+            get => _valorTotalICMS;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalICMS");
                 _valorTotalICMS = value;
@@ -64,8 +64,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(2, Opcional = true)]
         public decimal ValorTotalICMSDesonerado
         {
-            get { return _valorTotalICMSDesonerado; }
-            set
+            get => _valorTotalICMSDesonerado;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalICMSDesonerado");
                 _valorTotalICMSDesonerado = value;
@@ -79,8 +79,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(3, Opcional = true)]
         public decimal BaseCalculoST
         {
-            get { return _baseCalculoST; }
-            set
+            get => _baseCalculoST;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "BaseCalculoST");
                 _baseCalculoST = value;
@@ -94,8 +94,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(4, Opcional = true)]
         public decimal ValorTotalICMSST
         {
-            get { return _valorTotalICMSST; }
-            set
+            get => _valorTotalICMSST;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalICMSST");
                 _valorTotalICMSST = value;
@@ -109,8 +109,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(5, Opcional = true)]
         public decimal ValorTotalProdutos
         {
-            get { return _valorTotalProdutos; }
-            set
+            get => _valorTotalProdutos;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalProdutos");
                 _valorTotalProdutos = value;
@@ -124,8 +124,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(6, Opcional = true)]
         public decimal ValorTotalFrete
         {
-            get { return _valorTotalFrete; }
-            set
+            get => _valorTotalFrete;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalFrete");
                 _valorTotalFrete = value;
@@ -139,8 +139,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(7, Opcional = true)]
         public decimal ValorTotalSeguro
         {
-            get { return _valorTotalSeguro; }
-            set
+            get => _valorTotalSeguro;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalSeguro");
                 _valorTotalSeguro = value;
@@ -154,8 +154,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(8, Opcional = true)]
         public decimal ValorTotalDesconto
         {
-            get { return _valorTotalDesconto; }
-            set
+            get => _valorTotalDesconto;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalDesconto");
                 _valorTotalDesconto = value;
@@ -169,8 +169,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(9, Opcional = true)]
         public decimal ValorTotalII
         {
-            get { return _valorTotalII; }
-            set
+            get => _valorTotalII;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalII");
                 _valorTotalII = value;
@@ -184,8 +184,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(10, Opcional = true)]
         public decimal ValorTotalIPI
         {
-            get { return _valorTotalIPI; }
-            set
+            get => _valorTotalIPI;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalIPI");
                 _valorTotalIPI = value;
@@ -199,8 +199,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(11, Opcional = true)]
         public decimal ValorTotalPIS
         {
-            get { return _valorTotalPIS; }
-            set
+            get => _valorTotalPIS;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalPIS");
                 _valorTotalPIS = value;
@@ -214,8 +214,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(12, Opcional = true)]
         public decimal ValorTotalCOFINS
         {
-            get { return _valorTotalCOFINS; }
-            set
+            get => _valorTotalCOFINS;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalCOFINS");
                 _valorTotalCOFINS = value;
@@ -229,8 +229,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(13, Opcional = true)]
         public decimal ValorOutrasDespesas
         {
-            get { return _valorOutrasDespesas; }
-            set
+            get => _valorOutrasDespesas;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorOutrasDespesas");
                 _valorOutrasDespesas = value;
@@ -244,8 +244,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(14, Opcional = true)]
         public decimal ValorTotalNFe
         {
-            get { return _valorTotalNFe; }
-            set
+            get => _valorTotalNFe;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorTotalNFe");
                 _valorTotalNFe = value;
@@ -259,13 +259,10 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(15, Opcional = true)]
         public decimal? ValorTotalTributos
         {
-            get { return _valorTotalTributos; }
-            set
-            {
-                _valorTotalTributos = value.HasValue
-                    ? ValidationUtil.ValidateTDec_1302(value.Value, "ValorTotalTributos")
-                    : (decimal?)null;
-            }
+            get => _valorTotalTributos;
+	        set => _valorTotalTributos = value.HasValue
+		        ? ValidationUtil.ValidateTDec_1302(value.Value, "ValorTotalTributos")
+		        : (decimal?)null;
         }
 
         void ISerializavel.Serializar(System.Xml.XmlWriter writer, INFe nfe)

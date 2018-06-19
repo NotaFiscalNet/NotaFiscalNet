@@ -16,8 +16,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public OrigemMercadoria Origem
         {
-            get { return _origem; }
-            set
+            get => _origem;
+	        set
             {
                 ValidationUtil.ValidateEnum(value, "Origem");
                 _origem = value;

@@ -1,5 +1,3 @@
-using FluentValidation.Resources;
-
 namespace NotaFiscalNet.Core.Validacao.FluentCustom
 {
     public class CollectionExactLengthValidator : CollectionLengthValidator

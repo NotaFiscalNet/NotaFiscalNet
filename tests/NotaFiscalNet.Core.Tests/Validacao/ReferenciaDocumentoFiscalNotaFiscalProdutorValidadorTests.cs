@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using FluentValidation.TestHelper;
 using NotaFiscalNet.Core.Validacao.Validadores;
 using Xunit;
@@ -20,7 +17,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("notequal_error", erro.ErrorCode);
+            Assert.Equal("NotEqualValidator", erro.ErrorCode);
         }
 
         [Fact]
@@ -36,7 +33,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("notempty_error", erro.ErrorCode);
+            Assert.Equal("NotEmptyValidator", erro.ErrorCode);
         }
 
         [Fact]
@@ -52,7 +49,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
         //        .FirstOrDefault();
 
         //    Assert.NotNull(erro);
-        //    Assert.Equal("notempty_error", erro.ErrorCode);
+        //    Assert.Equal("NotEmptyValidator", erro.ErrorCode);
         //}
 
         //[Fact]
@@ -106,7 +103,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("notempty_error", erro.ErrorCode);
+            Assert.Equal("NotEmptyValidator", erro.ErrorCode);
         }
 
         [Theory]
@@ -118,7 +115,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("regex_error", erro.ErrorCode);
+            Assert.Equal("RegularExpressionValidator", erro.ErrorCode);
         }
 
         [Fact]
@@ -160,7 +157,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("inclusivebetween_error", erro.ErrorCode);
+            Assert.Equal("InclusiveBetweenValidator", erro.ErrorCode);
             Assert.Equal(0, erro.FormattedMessagePlaceholderValues["From"]);
             Assert.Equal(999, erro.FormattedMessagePlaceholderValues["To"]);
         }
@@ -182,7 +179,7 @@ namespace NotaFiscalNet.Core.Tests.Validacao
                 .FirstOrDefault();
 
             Assert.NotNull(erro);
-            Assert.Equal("inclusivebetween_error", erro.ErrorCode);
+            Assert.Equal("InclusiveBetweenValidator", erro.ErrorCode);
             Assert.Equal(0, erro.FormattedMessagePlaceholderValues["From"]);
             Assert.Equal(999999999, erro.FormattedMessagePlaceholderValues["To"]);
         }

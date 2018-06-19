@@ -39,8 +39,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "Y03", FieldName = "nFat", DataType = "token", MinLength = 1, MaxLength = 60, Opcional = true)]
         public string Numero
         {
-            get { return _numero; }
-            set { _numero = ValidationUtil.TruncateString(value, 60); }
+            get => _numero;
+	        set => _numero = ValidationUtil.TruncateString(value, 60);
         }
 
         /// <summary>
@@ -50,8 +50,8 @@ namespace NotaFiscalNet.Core
             Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional = true)]
         public decimal ValorOriginal
         {
-            get { return _valorOriginal; }
-            set
+            get => _valorOriginal;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorOriginal");
                 _valorOriginal = value;
@@ -65,8 +65,8 @@ namespace NotaFiscalNet.Core
             Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional = true)]
         public decimal ValorDesconto
         {
-            get { return _valorDesconto; }
-            set
+            get => _valorDesconto;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302Opc(value, "ValorDesconto");
                 _valorDesconto = value;
@@ -80,8 +80,8 @@ namespace NotaFiscalNet.Core
             Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional = true)]
         public decimal ValorLiquido
         {
-            get { return _valorLiquido; }
-            set
+            get => _valorLiquido;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorLiquido");
                 _valorLiquido = value;

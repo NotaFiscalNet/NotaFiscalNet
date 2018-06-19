@@ -3,22 +3,22 @@ namespace NotaFiscalNet.Core
     public enum IndicadorExigibilidadeIss
     {
         /// <summary>
-        /// 1 - ExigÌvel.
+        /// 1 - Exig√≠vel.
         /// </summary>
         Exigivel = 1,
 
         /// <summary>
-        /// 2 - N„o Incidente.
+        /// 2 - N√£o Incidente.
         /// </summary>
         NaoIncidente = 2,
 
         /// <summary>
-        /// 3 - IsenÁ„o.
+        /// 3 - Isen√ß√£oo.
         /// </summary>
         Isencao = 3,
 
         /// <summary>
-        /// 4 - ExportaÁ„o;
+        /// 4 - Exporta√ß√£o;
         /// </summary>
         Exportacao = 4,
 
@@ -28,7 +28,7 @@ namespace NotaFiscalNet.Core
         Imunidade = 5,
 
         /// <summary>
-        /// 6 - Exigibilidade Suspensa por Decis„o Judicial.
+        /// 6 - Exigibilidade Suspensa por Decis√£o Judicial.
         /// </summary>
         SuspensaoJudicial = 6,
 

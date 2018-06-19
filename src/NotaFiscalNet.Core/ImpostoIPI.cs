@@ -25,19 +25,17 @@ namespace NotaFiscalNet.Core
         private decimal _valorUnidade;
         private decimal _valor;
 
-        private readonly ImpostoProduto _imposto;
-
-        internal ImpostoIPI(ImpostoProduto imposto)
+	    internal ImpostoIPI(ImpostoProduto imposto)
         {
-            _imposto = imposto;
+            Imposto = imposto;
         }
 
         /// <summary>
         /// Retorna a referência para o objeto ImpostoProduto no qual o Imposto se refere.
         /// </summary>
-        internal ImpostoProduto Imposto => _imposto;
+        internal ImpostoProduto Imposto { get; }
 
-        private void ValidarConflitoISSQN()
+	    private void ValidarConflitoISSQN()
         {
             if (Imposto.ISSQN.Modificado)
                 throw new ErroValidacaoNFeException(ChaveErroValidacao.ConflitoIPIISSQN);
@@ -75,8 +73,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = SituacaoTributariaIPI.NaoEspecificado)]
         public SituacaoTributariaIPI SituacaoTributaria
         {
-            get { return _situacaoTributaria; }
-            set
+            get => _situacaoTributaria;
+	        set
             {
                 ValidarConflitoISSQN();
                 ValidationUtil.ValidateEnum(value, "SituacaoTributaria");
@@ -124,8 +122,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(2, Opcional = true)]
         public string ClasseIPICigarroBebida
         {
-            get { return _classeEnquadramentoIpiCigarrosBebidas; }
-            set
+            get => _classeEnquadramentoIpiCigarrosBebidas;
+	        set
             {
                 ValidarConflitoISSQN();
                 _classeEnquadramentoIpiCigarrosBebidas = ValidationUtil.TruncateString(value, 5);
@@ -140,8 +138,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(3, Opcional = true)]
         public string CNPJProdutor
         {
-            get { return _cnpjProdutor; }
-            set
+            get => _cnpjProdutor;
+	        set
             {
                 ValidarConflitoISSQN();
                 ValidationUtil.ValidateCNPJ(value, "CNPJProdutor", true);
@@ -161,8 +159,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(4, Opcional = true)]
         public string CodigoSeloControle
         {
-            get { return _codigoSeloControle; }
-            set
+            get => _codigoSeloControle;
+	        set
             {
                 ValidarConflitoISSQN();
                 _codigoSeloControle = ValidationUtil.TruncateString(value, 60);
@@ -176,8 +174,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(5, Opcional = true)]
         public int QuantidadeSeloControle
         {
-            get { return _quantidadeSeloControleIPI; }
-            set
+            get => _quantidadeSeloControleIPI;
+	        set
             {
                 ValidarConflitoISSQN();
                 ValidationUtil.ValidateRange(value, 0, 999999999999, "QuantidadeSeloControle");
@@ -192,8 +190,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(6, ChaveErroValidacao.CampoNaoPreenchido)]
         public string CodigoEnquadramentoLegal
         {
-            get { return _codigoEnquadramentoLegalIPI; }
-            set
+            get => _codigoEnquadramentoLegalIPI;
+	        set
             {
                 ValidarConflitoISSQN();
                 _codigoEnquadramentoLegalIPI = ValidationUtil.TruncateString(value, 3);
@@ -218,8 +216,8 @@ namespace NotaFiscalNet.Core
         /// </remarks>
         public TipoCalculoIPI TipoCalculo
         {
-            get { return _tipoCalculo; }
-            set
+            get => _tipoCalculo;
+	        set
             {
                 ValidarConflitoISSQN();
                 switch (SituacaoTributaria)
@@ -228,7 +226,7 @@ namespace NotaFiscalNet.Core
                     case SituacaoTributariaIPI.OutrasEntradas:
                     case SituacaoTributariaIPI.SaidaTributada:
                     case SituacaoTributariaIPI.OutrasSaidas:
-                        ValidationUtil.ValidateEnum<TipoCalculoIPI>(value, "TipoCalculo");
+                        ValidationUtil.ValidateEnum(value, "TipoCalculo");
                         break;
 
                     case SituacaoTributariaIPI.EntradaTributadaAliqZero:
@@ -267,8 +265,8 @@ namespace NotaFiscalNet.Core
         //[ValidateField(7)]
         public decimal BaseCalculo
         {
-            get { return _baseCalculo; }
-            set
+            get => _baseCalculo;
+	        set
             {
                 ValidarConflitoISSQN();
                 switch (TipoCalculo)
@@ -291,8 +289,8 @@ namespace NotaFiscalNet.Core
         //[ValidateField(8)]
         public decimal Aliquota
         {
-            get { return _aliquota; }
-            set
+            get => _aliquota;
+	        set
             {
                 ValidarConflitoISSQN();
                 switch (TipoCalculo)
@@ -316,8 +314,8 @@ namespace NotaFiscalNet.Core
         //[ValidateField(9)]
         public decimal Quantidade
         {
-            get { return _quantidade; }
-            set
+            get => _quantidade;
+	        set
             {
                 ValidarConflitoISSQN();
                 switch (TipoCalculo)
@@ -339,8 +337,8 @@ namespace NotaFiscalNet.Core
         //[ValidateField(10)]
         public decimal ValorUnidade
         {
-            get { return _valorUnidade; }
-            set
+            get => _valorUnidade;
+	        set
             {
                 ValidarConflitoISSQN();
                 switch (TipoCalculo)
@@ -363,8 +361,8 @@ namespace NotaFiscalNet.Core
         //[ValidateField(11)]
         public decimal Valor
         {
-            get { return _valor; }
-            set
+            get => _valor;
+	        set
             {
                 ValidarConflitoISSQN();
                 ValidationUtil.ValidateTDec_1302(value, "Valor");
@@ -434,7 +432,7 @@ namespace NotaFiscalNet.Core
         private void SerializeIPITrib(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("IPITrib"); // Elemento 'IPITrib'
-            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaIPI>(SituacaoTributaria))));
+            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
             switch (TipoCalculo)
             {
                 case TipoCalculoIPI.Percentual:
@@ -457,7 +455,7 @@ namespace NotaFiscalNet.Core
         private void SerializeIPINT(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("IPINT"); // Elemento 'IPINT'
-            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaIPI>(SituacaoTributaria))));
+            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
             writer.WriteEndElement(); // Elemento 'IPINT'
         }
     }

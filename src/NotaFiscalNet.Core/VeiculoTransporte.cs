@@ -22,8 +22,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Placa
         {
-            get { return _placa; }
-            set
+            get => _placa;
+	        set
             {
                 ValidationUtil.ValidatePlaca(value, "Placa");
                 _placa = ValidationUtil.TruncateString(value, 8);
@@ -38,10 +38,10 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = SiglaUF.NaoEspecificado)]
         public SiglaUF UF
         {
-            get { return _UF; }
-            set
+            get => _UF;
+	        set
             {
-                ValidationUtil.ValidateEnum<SiglaUF>(value, "UF");
+                ValidationUtil.ValidateEnum(value, "UF");
 
                 _UF = value;
             }
@@ -55,11 +55,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(3, Opcional = true)]
         public string RNTC
         {
-            get { return _RNTC; }
-            set
-            {
-                _RNTC = ValidationUtil.TruncateString(value, 20);
-            }
+            get => _RNTC;
+	        set => _RNTC = ValidationUtil.TruncateString(value, 20);
         }
 
         /// <summary>

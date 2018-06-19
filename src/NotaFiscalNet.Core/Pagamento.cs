@@ -20,13 +20,10 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public TipoPagamento TipoPagamento
         {
-            get
+            get => _tipoPagamento;
+	        set
             {
-                return _tipoPagamento;
-            }
-            set
-            {
-                ValidationUtil.ValidateEnum<TipoPagamento>(value, "TipoPagamento");
+                ValidationUtil.ValidateEnum(value, "TipoPagamento");
                 _tipoPagamento = value;
             }
         }
@@ -38,11 +35,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal ValorPagamento
         {
-            get
-            {
-                return _valorPagamento;
-            }
-            set
+            get => _valorPagamento;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "ValorPagamento");
                 _valorPagamento = value;

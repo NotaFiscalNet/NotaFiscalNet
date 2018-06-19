@@ -11,6 +11,9 @@ using System.Text;
 using System.Xml;
 using System.Xml.Linq;
 
+using System.Runtime.CompilerServices;
+[assembly: InternalsVisibleTo("NotaFiscalNet.Core.Tests")]
+
 namespace NotaFiscalNet.Core
 {
     /// <summary>
@@ -19,23 +22,7 @@ namespace NotaFiscalNet.Core
 
     public sealed class NFe : ISerializavel, INFe
     {
-        private readonly IdentificacaoDocumentoFiscal _ide = new IdentificacaoDocumentoFiscal();
-        private readonly EmitenteNFe _emit = new EmitenteNFe();
-        private readonly Avulsa _avulsa = new Avulsa();
-        private readonly EnderecoEmpresa _retirada = new EnderecoEmpresa();
-        private readonly EnderecoEmpresa _entrega = new EnderecoEmpresa();
-        private readonly ProdutoCollection _itens = new ProdutoCollection();
-        private readonly TotalNFe _totais = new TotalNFe();
-        private readonly TransporteNFe _transporte = new TransporteNFe();
-        private readonly CobrancaNFe _cobranca = new CobrancaNFe();
-        private readonly PagamentoCollection _pagamentos = new PagamentoCollection();
-        private readonly InformacoesAdicionaisNFe _informacoesAdicionais = new InformacoesAdicionaisNFe();
-        private readonly InformacoesExportacao _informacoesExportacao = new InformacoesExportacao();
-        private readonly Compra _compras = new Compra();
-        private readonly AquisicaoCana _cana = new AquisicaoCana();
-        private readonly AutorizacaoDownloadXmlCollection _autXml = new AutorizacaoDownloadXmlCollection();
-
-        /// <summary>
+	    /// <summary>
         /// [versao] Retorna ou define a Versão do Leiaute NF-e. Ex. 2.0.4, 2.0.3, etc.
         /// </summary>
         [NFeField(FieldName = "versao", DataType = "TVerNFe", ID = "A02")]
@@ -104,24 +91,24 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(FieldName = "ide", ID = "B01")]
         [CampoValidavel(4)]
-        public IdentificacaoDocumentoFiscal Identificacao => _ide;
+        public IdentificacaoDocumentoFiscal Identificacao { get; } = new IdentificacaoDocumentoFiscal();
 
-        /// <summary>
+	    /// <summary>
         /// Retorna as informações do Emitente da Nota Fiscal Eletrônica.
         /// </summary>
         [NFeField(FieldName = "emit", ID = "C01")]
         [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
-        public EmitenteNFe Emitente => _emit;
+        public EmitenteNFe Emitente { get; } = new EmitenteNFe();
 
-        /// <summary>
+	    /// <summary>
         /// Retorna as informações do Fisco emitente da Nota Fiscal Eletrônica Avulsa. <br/> Informar
         /// apenas no caso de emissão de Nota Fiscal Eletrônica Avulsa, pelo Fisco Emitente.
         /// </summary>
         [NFeField(FieldName = "avulsa", ID = "D01", Opcional = true)]
         [CampoValidavel(6, Opcional = true)]
-        public Avulsa Avulsa => _avulsa;
+        public Avulsa Avulsa { get; } = new Avulsa();
 
-        /// <summary>
+	    /// <summary>
         /// Retorna as informações do Destinatário da Nota Fiscal Eletrônica.
         /// </summary>
         [NFeField(FieldName = "dest", ID = "E01"), CampoValidavel(7, ChaveErroValidacao.CampoNaoPreenchido)]
@@ -133,79 +120,79 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(FieldName = "retirada", ID = "F01", Opcional = true)]
         [CampoValidavel(8, Opcional = true)]
-        public EnderecoEmpresa EnderecoRetirada => _retirada;
+        public EnderecoEmpresa EnderecoRetirada { get; } = new EnderecoEmpresa();
 
-        /// <summary>
+	    /// <summary>
         /// Retorna o Endereço de Entrega (endereço de entrega dos produtos) da Nota Fiscal
         /// Eletrônica. Informar apenas quando for diferente do Endereço do Destinatário. Opcional.
         /// </summary>
         [NFeField(FieldName = "entrega", ID = "G01", Opcional = true)]
         [CampoValidavel(9, Opcional = true)]
-        public EnderecoEmpresa EnderecoEntrega => _entrega;
+        public EnderecoEmpresa EnderecoEntrega { get; } = new EnderecoEmpresa();
 
-        /// <summary>
+	    /// <summary>
         /// [autXML] Retorna a lista de Autorizações de Download do XML.
         /// </summary>
         [NFeField(FieldName = "autXML", ID = "G50", Opcional = true)]
         [CampoValidavel(10, Opcional = true)]
-        public AutorizacaoDownloadXmlCollection AutorizacoesDownloadXml => _autXml;
+        public AutorizacaoDownloadXmlCollection AutorizacoesDownloadXml { get; } = new AutorizacaoDownloadXmlCollection();
 
-        /// <summary>
+	    /// <summary>
         /// Retorna a lista de Itens (Produtos ou Serviços) da Nota Fiscal Eletrônica.
         /// </summary>
         /// <remarks>A lista pode conter até no máximo 990 itens.</remarks>
         [NFeField(FieldName = "det", ID = "H01", MinLength = 1, MaxLength = 990)]
         [CampoValidavel(11, ChaveErroValidacao.CampoNaoPreenchido)]
-        public ProdutoCollection Itens => _itens;
+        public ProdutoCollection Itens { get; } = new ProdutoCollection();
 
-        /// <summary>
+	    /// <summary>
         /// Retorna as Informações de Totalização da Nota Fiscal Eletrônica.
         /// </summary>
         [NFeField(FieldName = "total", ID = "W01")]
         [CampoValidavel(12, ChaveErroValidacao.CampoNaoPreenchido)]
-        public TotalNFe Totais => _totais;
+        public TotalNFe Totais { get; } = new TotalNFe();
 
-        /// <summary>
+	    /// <summary>
         /// Retorna as Informações de Transporte da Nota Fiscal Eletrônica.
         /// </summary>
         [NFeField(FieldName = "transp", ID = "X01")]
         [CampoValidavel(13, ChaveErroValidacao.CampoNaoPreenchido)]
-        public TransporteNFe Transporte => _transporte;
+        public TransporteNFe Transporte { get; } = new TransporteNFe();
 
-        /// <summary>
+	    /// <summary>
         /// Retorna as Informações de Cobrança da Nota Fiscal Eletrônica. Opcional.
         /// </summary>
         [NFeField(FieldName = "cobr", ID = "Y01", Opcional = true)]
         [CampoValidavel(14, Opcional = true)]
-        public CobrancaNFe Cobranca => _cobranca;
+        public CobrancaNFe Cobranca { get; } = new CobrancaNFe();
 
-        [NFeField(FieldName = "pag", ID = "YA01", Opcional = true)]
+	    [NFeField(FieldName = "pag", ID = "YA01", Opcional = true)]
         [CampoValidavel(15, Opcional = true)]
-        public PagamentoCollection Pagamentos => _pagamentos;
+        public PagamentoCollection Pagamentos { get; } = new PagamentoCollection();
 
-        /// <summary>
+	    /// <summary>
         /// Retorna as Informações Adicionais da Nota Fiscal Eletrônica. Opcional.
         /// </summary>
         [NFeField(FieldName = "infAdic", ID = "Z01", Opcional = true)]
         [CampoValidavel(16, Opcional = true)]
-        public InformacoesAdicionaisNFe InformacoesAdicionais => _informacoesAdicionais;
+        public InformacoesAdicionaisNFe InformacoesAdicionais { get; } = new InformacoesAdicionaisNFe();
 
-        /// <summary>
+	    /// <summary>
         /// Retorna as Informações de Exportação da Nota Fiscal Eletrônica. Opcional.
         /// </summary>
         [NFeField(FieldName = "exporta", ID = "ZA01", Opcional = true)]
         [CampoValidavel(17, Opcional = true)]
-        public InformacoesExportacao Exportacao => _informacoesExportacao;
+        public InformacoesExportacao Exportacao { get; } = new InformacoesExportacao();
 
-        /// <summary>
+	    /// <summary>
         /// Retorna as Informações de Compras (Notas de Empenho, Pedido e Contrato) da Nota Fiscal
         /// Eletrônica. Opcional.
         /// </summary>
         [NFeField(FieldName = "compra", ID = "ZA01", Opcional = true)]
         [CampoValidavel(18, Opcional = true)]
-        public Compra Compras => _compras;
+        public Compra Compras { get; } = new Compra();
 
-        /// <summary>
+	    /// <summary>
         /// Retorna ou define o Hash da NFe.
         /// </summary>
         public string DigestValue { get; set; }
@@ -213,9 +200,9 @@ namespace NotaFiscalNet.Core
         /// <summary>
         /// Retorna o valor referente ao registro de aquisições de cana.
         /// </summary>
-        public AquisicaoCana AquisicoesCana => _cana;
+        public AquisicaoCana AquisicoesCana { get; } = new AquisicaoCana();
 
-        public void Serializar(XmlWriter writer, INFe nfe)
+	    public void Serializar(XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("NFe", Constants.NamespacePortalFiscalNFe);
 
@@ -1887,7 +1874,7 @@ namespace NotaFiscalNet.Core
             using (var sw = new StringWriter())
             using (var writer = XmlWriter.Create(sw, settings))
             {
-                ((ISerializavel)this).Serializar(writer, this);
+                this.Serializar(writer, this);
                 writer.Flush();
                 xml = sw.ToString();
             }
@@ -1912,7 +1899,7 @@ namespace NotaFiscalNet.Core
             using (var sw = new StringWriter())
             using (var writer = XmlWriter.Create(sw, settings))
             {
-                ((ISerializavel)this).Serializar(writer, this);
+                this.Serializar(writer, this);
                 writer.Flush();
                 xml = sw.ToString();
             }

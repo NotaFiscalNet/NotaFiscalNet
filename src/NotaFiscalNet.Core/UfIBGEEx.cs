@@ -41,7 +41,7 @@ namespace NotaFiscalNet.Core
                 case "SP": return UfIBGE.SP;
                 case "TO": return UfIBGE.TO;
                 default:
-                    throw new ApplicationException("A sigla '" + uf + "' n„o È uma UF v·lida.");
+                    throw new ApplicationException("A sigla '" + uf + "' n√£o √© uma UF v√°lida.");
             }
         }
 

@@ -24,11 +24,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public string NumeroLote
         {
-            get { return _numeroLote; }
-            set
-            {
-                _numeroLote = ValidationUtil.TruncateString(value, 20);
-            }
+            get => _numeroLote;
+	        set => _numeroLote = ValidationUtil.TruncateString(value, 20);
         }
 
         /// <summary>
@@ -38,8 +35,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal QuantidadeProdutoLote
         {
-            get { return _quantidadeProdLote; }
-            set
+            get => _quantidadeProdLote;
+	        set
             {
                 ValidationUtil.ValidateTDec_0803(value, "QuantidadeProdutoLote");
                 _quantidadeProdLote = value;
@@ -53,8 +50,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)]
         public DateTime DataFabricacao
         {
-            get { return _dataFabricacao; }
-            set
+            get => _dataFabricacao;
+	        set
             {
                 ValidationUtil.ValidateTData(value, "DataFabricacao");
                 _dataFabricacao = value;
@@ -68,8 +65,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido)]
         public DateTime DataValidade
         {
-            get { return _dataValidade; }
-            set
+            get => _dataValidade;
+	        set
             {
                 ValidationUtil.ValidateTData(value, "DataValidade");
                 _dataValidade = value;
@@ -83,8 +80,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal PrecoMaximoConsumidor
         {
-            get { return _precoMaximoConsumidor; }
-            set
+            get => _precoMaximoConsumidor;
+	        set
             {
                 ValidationUtil.ValidateTDec_1302(value, "PrecoMaximoConsumidor");
                 _precoMaximoConsumidor = value;

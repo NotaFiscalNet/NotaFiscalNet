@@ -1,4 +1,3 @@
-using FluentValidation.Resources;
 using FluentValidation.Validators;
 using System;
 using System.Collections;

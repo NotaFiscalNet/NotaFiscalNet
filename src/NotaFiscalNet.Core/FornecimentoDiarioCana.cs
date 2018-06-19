@@ -21,8 +21,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido)]
         public int Dia
         {
-            get { return _dia; }
-            set
+            get => _dia;
+	        set
             {
                 ValidationUtil.ValidateRange(value, 1, 31, "Dia");
                 _dia = value;
@@ -34,8 +34,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public decimal Quantidade
         {
-            get { return _quantidade; }
-            set
+            get => _quantidade;
+	        set
             {
                 ValidationUtil.ValidateTDec_1110(value, "Quantidade");
                 _quantidade = value;

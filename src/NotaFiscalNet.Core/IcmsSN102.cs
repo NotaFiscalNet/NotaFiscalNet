@@ -24,8 +24,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "CSOSN")]
         public override CSOSN CSOSN
         {
-            get { return _csosn; }
-            protected set
+            get => _csosn;
+	        protected set
             {
                 switch (value)
                 {

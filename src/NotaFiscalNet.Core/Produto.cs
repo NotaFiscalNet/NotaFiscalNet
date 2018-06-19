@@ -13,8 +13,7 @@ namespace NotaFiscalNet.Core
     public sealed class Produto : ISerializavel, IModificavel
     {
         private string _informacoesAdicionais = string.Empty;
-        private readonly ImpostoProduto _imposto;
-        private string _codigo = string.Empty;
+	    private string _codigo = string.Empty;
         private string _codigoGTIN = string.Empty;
         private string _descricao = string.Empty;
         private string _codigoNCM;
@@ -33,14 +32,8 @@ namespace NotaFiscalNet.Core
         private decimal _valorTotalSeguro;
         private decimal _valorDesconto;
         private decimal _valorOutrasDespesasAcessorias;
-        private readonly DeclaracaoImportacaoCollection _declaracaoImportacao;
-        private readonly DetalheExportacaoCollection _detalhamentoExportacao;
-        private TipoProdutoEspecifico _tipoProdutoEspecifico;
-        private readonly VeiculoNovo _detalhamentoVeiculo;
-        private readonly MedicamentoCollection _detalhamentoMedicamentos;
-        private readonly ArmamentoCollection _detalhamentoArmamentos;
-        private readonly Combustivel _detalhamentoCombustivel;
-        private string _pedidoCompra;
+	    private TipoProdutoEspecifico _tipoProdutoEspecifico;
+	    private string _pedidoCompra;
         private int _itemPedidoCompra;
 
         private string _numeroRecopi;
@@ -66,11 +59,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Codigo
         {
-            get { return _codigo; }
-            set
-            {
-                _codigo = ValidationUtil.TruncateString(value, 60) ?? string.Empty;
-            }
+            get => _codigo;
+	        set => _codigo = ValidationUtil.TruncateString(value, 60) ?? string.Empty;
         }
 
         /// <summary>
@@ -82,8 +72,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(3, Opcional = true)]
         public string CodigoGTIN
         {
-            get { return _codigoGTIN; }
-            set
+            get => _codigoGTIN;
+	        set
             {
                 ValidationUtil.ValidateGTIN(value, "CodigoGTIN");
                 _codigoGTIN = value ?? string.Empty;
@@ -97,11 +87,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(4, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Descricao
         {
-            get { return _descricao; }
-            set
-            {
-                _descricao = ValidationUtil.TruncateString(value, 120) ?? string.Empty;
-            }
+            get => _descricao;
+	        set => _descricao = ValidationUtil.TruncateString(value, 120) ?? string.Empty;
         }
 
         /// <summary>
@@ -116,8 +103,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
         public string CodigoNCM
         {
-            get { return _codigoNCM; }
-            set
+            get => _codigoNCM;
+	        set
             {
                 ValidationUtil.ValidateNCM(value, "CodigoNCM");
                 _codigoNCM = value;
@@ -131,11 +118,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(5, ChaveErroValidacao.CampoNaoPreenchido)]
         public string CodigoNVE
         {
-            get { return _codigoNVE; }
-            set
-            {
-                _codigoNVE = ValidationUtil.ValidateNVE(value, "CodigoNVE");
-            }
+            get => _codigoNVE;
+	        set => _codigoNVE = ValidationUtil.ValidateNVE(value, "CodigoNVE");
         }
 
         /// <summary>
@@ -147,11 +131,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(6, Opcional = true)]
         public string CodigoExTIPI
         {
-            get { return _CodigoEXTIPI; }
-            set
-            {
-                _CodigoEXTIPI = ValidationUtil.ValidateExTIPI(value, "CodigoExTIPI") ?? string.Empty;
-            }
+            get => _CodigoEXTIPI;
+	        set => _CodigoEXTIPI = ValidationUtil.ValidateExTIPI(value, "CodigoExTIPI") ?? string.Empty;
         }
 
         /// <summary>
@@ -161,11 +142,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(8, ChaveErroValidacao.CampoNaoPreenchido)]
         public int CFOP
         {
-            get { return _cfop; }
-            set
-            {
-                _cfop = ValidationUtil.ValidateTCfop(value, "CFOP");
-            }
+            get => _cfop;
+	        set => _cfop = ValidationUtil.ValidateTCfop(value, "CFOP");
         }
 
         /// <summary>
@@ -175,11 +153,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(9, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Unidade
         {
-            get { return _unidadeComercial; }
-            set
-            {
-                _unidadeComercial = ValidationUtil.TruncateString(value, 6) ?? string.Empty;
-            }
+            get => _unidadeComercial;
+	        set => _unidadeComercial = ValidationUtil.TruncateString(value, 6) ?? string.Empty;
         }
 
         /// <summary>
@@ -190,11 +165,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(10, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal Quantidade
         {
-            get { return _quantidade; }
-            set
-            {
-                _quantidade = ValidationUtil.ValidateTDec_1104v(value, "Quantidade");
-            }
+            get => _quantidade;
+	        set => _quantidade = ValidationUtil.ValidateTDec_1104v(value, "Quantidade");
         }
 
         /// <summary>
@@ -205,11 +177,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(11, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal ValorUnitario
         {
-            get { return _valorUnitario; }
-            set
-            {
-                _valorUnitario = ValidationUtil.ValidateTDec_1110(value, "ValorUnitario");
-            }
+            get => _valorUnitario;
+	        set => _valorUnitario = ValidationUtil.ValidateTDec_1110(value, "ValorUnitario");
         }
 
         /// <summary>
@@ -219,11 +188,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(12, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal ValorTotalBruto
         {
-            get { return _valorTotalBruto; }
-            set
-            {
-                _valorTotalBruto = ValidationUtil.ValidateTDec_1302(value, "ValorTotalBruto");
-            }
+            get => _valorTotalBruto;
+	        set => _valorTotalBruto = ValidationUtil.ValidateTDec_1302(value, "ValorTotalBruto");
         }
 
         /// <summary>
@@ -236,11 +202,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(13, Opcional = true)]
         public string CodigoGTINTributario
         {
-            get { return _codigoGTINTributario; }
-            set
-            {
-                _codigoGTINTributario = ValidationUtil.ValidateGTIN(value, "CodigoGTINTributario") ?? string.Empty;
-            }
+            get => _codigoGTINTributario;
+	        set => _codigoGTINTributario = ValidationUtil.ValidateGTIN(value, "CodigoGTINTributario") ?? string.Empty;
         }
 
         /// <summary>
@@ -250,11 +213,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(14, ChaveErroValidacao.CampoNaoPreenchido)]
         public string UnidadeTributavel
         {
-            get { return _unidadeTributavel; }
-            set
-            {
-                _unidadeTributavel = ValidationUtil.TruncateString(value, 6) ?? string.Empty;
-            }
+            get => _unidadeTributavel;
+	        set => _unidadeTributavel = ValidationUtil.TruncateString(value, 6) ?? string.Empty;
         }
 
         /// <summary>
@@ -264,11 +224,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(15, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal QuantidadeTributavel
         {
-            get { return _quantidadeTributavel; }
-            set
-            {
-                _quantidadeTributavel = ValidationUtil.ValidateTDec_1104v(value, "QuantidadeTributavel");
-            }
+            get => _quantidadeTributavel;
+	        set => _quantidadeTributavel = ValidationUtil.ValidateTDec_1104v(value, "QuantidadeTributavel");
         }
 
         /// <summary>
@@ -278,11 +235,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(16, ChaveErroValidacao.CampoNaoPreenchido)]
         public decimal ValorUnitarioTributavel
         {
-            get { return _valorUnitarioTributavel; }
-            set
-            {
-                _valorUnitarioTributavel = ValidationUtil.ValidateTDec_1110(value, "ValorUnitarioTributavel");
-            }
+            get => _valorUnitarioTributavel;
+	        set => _valorUnitarioTributavel = ValidationUtil.ValidateTDec_1110(value, "ValorUnitarioTributavel");
         }
 
         /// <summary>
@@ -292,11 +246,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(17, Opcional = true)]
         public decimal ValorTotalFrete
         {
-            get { return _valorTotalFrete; }
-            set
-            {
-                _valorTotalFrete = ValidationUtil.ValidateTDec_1302Opc(value, "ValorTotalFrete");
-            }
+            get => _valorTotalFrete;
+	        set => _valorTotalFrete = ValidationUtil.ValidateTDec_1302Opc(value, "ValorTotalFrete");
         }
 
         /// <summary>
@@ -306,11 +257,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(18, Opcional = true)]
         public decimal ValorTotalSeguro
         {
-            get { return _valorTotalSeguro; }
-            set
-            {
-                _valorTotalSeguro = ValidationUtil.ValidateTDec_1302Opc(value, "ValorTotalSeguro");
-            }
+            get => _valorTotalSeguro;
+	        set => _valorTotalSeguro = ValidationUtil.ValidateTDec_1302Opc(value, "ValorTotalSeguro");
         }
 
         /// <summary>
@@ -320,11 +268,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(19, Opcional = true)]
         public decimal ValorDesconto
         {
-            get { return _valorDesconto; }
-            set
-            {
-                _valorDesconto = ValidationUtil.ValidateTDec_1302Opc(value, "ValorDesconto");
-            }
+            get => _valorDesconto;
+	        set => _valorDesconto = ValidationUtil.ValidateTDec_1302Opc(value, "ValorDesconto");
         }
 
         /// <summary>
@@ -334,11 +279,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(20, Opcional = true)]
         public decimal ValorOutrasDespesasAcessorias
         {
-            get { return _valorOutrasDespesasAcessorias; }
-            set
-            {
-                _valorOutrasDespesasAcessorias = ValidationUtil.ValidateTDec_1302Opc(value, "ValorOutrasDespesasAcessorias");
-            }
+            get => _valorOutrasDespesasAcessorias;
+	        set => _valorOutrasDespesasAcessorias = ValidationUtil.ValidateTDec_1302Opc(value, "ValorOutrasDespesasAcessorias");
         }
 
         /// <summary>
@@ -354,15 +296,15 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(FieldName = "DI", ID = "I18", Opcional = true)]
         [CampoValidavel(20, Opcional = true)]
-        public DeclaracaoImportacaoCollection DeclaracoesImportacao => _declaracaoImportacao;
+        public DeclaracaoImportacaoCollection DeclaracoesImportacao { get; }
 
-        /// <summary>
+	    /// <summary>
         /// [detExport] Retorna a lista com o detalhamento da Exportação.
         /// </summary>
         [NFeField(FieldName = "detExport", ID = "I50", Opcional = true)]
-        public DetalheExportacaoCollection DetalhamentoExportacao => _detalhamentoExportacao;
+        public DetalheExportacaoCollection DetalhamentoExportacao { get; }
 
-        /// <summary>
+	    /// <summary>
         /// [xPed] Retorna ou define o Pedido de Compra, informação de interesse do emissor para
         /// controle do B2B
         /// </summary>
@@ -370,11 +312,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(21, Opcional = true)]
         public string PedidoCompra
         {
-            get { return _pedidoCompra; }
-            set
-            {
-                _pedidoCompra = ValidationUtil.TruncateString(value, 15);
-            }
+            get => _pedidoCompra;
+	        set => _pedidoCompra = ValidationUtil.TruncateString(value, 15);
         }
 
         /// <summary>
@@ -384,8 +323,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(5, Opcional = true)]
         public int ItemPedidoCompra
         {
-            get { return _itemPedidoCompra; }
-            set
+            get => _itemPedidoCompra;
+	        set
             {
                 ValidationUtil.ValidateRange(value, 0, 999999, "ItemPedidoCompra");
                 _itemPedidoCompra = value;
@@ -398,8 +337,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "nFCI", Pattern = @"TGuid", Opcional = true)]
         public Guid? NumeroFCI
         {
-            get { return _numeroFci; }
-            set
+            get => _numeroFci;
+	        set
             {
                 if (value == Guid.Empty)
                     _numeroFci = null;
@@ -413,11 +352,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public TipoProdutoEspecifico TipoProdutoEspecifico
         {
-            get { return _tipoProdutoEspecifico; }
-            set
-            {
-                _tipoProdutoEspecifico = ValidationUtil.ValidateEnum<TipoProdutoEspecifico>(value, "TipoProdutoEspecifico");
-            }
+            get => _tipoProdutoEspecifico;
+	        set => _tipoProdutoEspecifico = ValidationUtil.ValidateEnum(value, "TipoProdutoEspecifico");
         }
 
         /// <summary>
@@ -426,42 +362,42 @@ namespace NotaFiscalNet.Core
         /// <remarks>Informar apenas se o campo TipoProdutoEspecifico for igual a 'VeiculoNovo'.</remarks>
         [NFeField(FieldName = "veicProd", ID = "J01", Opcional = true)]
         [CampoValidavel(21)]
-        public VeiculoNovo DetalhamentoVeiculo => _detalhamentoVeiculo;
+        public VeiculoNovo DetalhamentoVeiculo { get; }
 
-        /// <summary>
+	    /// <summary>
         /// [med] Retorna ou define a lista de detalhamentos de Medicamentos.
         /// </summary>
         /// <remarks>Informar apenas se o campo TipoProdutoEspecifico for igual a 'Medicamento'.</remarks>
         [NFeField(FieldName = "med", ID = "K01")]
         [CampoValidavel(22)]
         //[ValidateField(22, Opcional = true)]
-        public MedicamentoCollection DetalhamentoMedicamento => _detalhamentoMedicamentos;
+        public MedicamentoCollection DetalhamentoMedicamento { get; }
 
-        /// <summary>
+	    /// <summary>
         /// [arma] Retorna ou define a lista de detalhamentos de Armamentos. Informar apenas se o
         /// campo TipoProdutoEspecifico for igual a 'Armamento'.
         /// </summary>
         [NFeField(FieldName = "arma", ID = "L01")]
         [CampoValidavel(23)]
-        public ArmamentoCollection DetalhamentoArmamento => _detalhamentoArmamentos;
+        public ArmamentoCollection DetalhamentoArmamento { get; }
 
-        /// <summary>
+	    /// <summary>
         /// [comb] Retorna o detalhamento das informações de Combustível.
         /// </summary>
         /// <remarks>Informar apenas se o campo TipoProdutoEspecifico for igual a 'Combustivel'.</remarks>
         [NFeField(FieldName = "comb", ID = "L101")]
         [CampoValidavel(24)]
-        public Combustivel DetalhamentoCombustivel => _detalhamentoCombustivel;
+        public Combustivel DetalhamentoCombustivel { get; }
 
-        /// <summary>
+	    /// <summary>
         /// [nRECOPI] Retorna ou define o Número do RECOPI (Registro e Controle das Operações com o
         /// Papel Imune Nacional).
         /// </summary>
         [NFeField(FieldName = "nRECOPI", Pattern = @"[0-9]{20}", Opcional = true)]
         public string NumeroRECOPI
         {
-            get { return _numeroRecopi; }
-            set
+            get => _numeroRecopi;
+	        set
             {
                 if (!ValidationUtil.ValidateRegex(value, "^[0-9]{20}$"))
                     throw new ArgumentException("O valor informado para o Número do RECOPI é inválido.");
@@ -477,11 +413,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(25, Opcional = true)]
         public string InformacoesAdicionais
         {
-            get { return _informacoesAdicionais; }
-            set
-            {
-                _informacoesAdicionais = ValidationUtil.TruncateString(value, 500);
-            }
+            get => _informacoesAdicionais;
+	        set => _informacoesAdicionais = ValidationUtil.TruncateString(value, 500);
         }
 
         /// <summary>
@@ -489,9 +422,9 @@ namespace NotaFiscalNet.Core
         /// </summary>
         [NFeField(ID = "M01", FieldName = "imposto")]
         [CampoValidavel(26, ChaveErroValidacao.CampoNaoPreenchido)]
-        public ImpostoProduto Imposto => _imposto;
+        public ImpostoProduto Imposto { get; }
 
-        /// <summary>
+	    /// <summary>
         /// [impostoDevol] Retorna ou define as informações do Imposto Devolvido.
         /// </summary>
         [NFeField(ID = "U50", FieldName = "impostoDevol"), CampoValidavel(26, ChaveErroValidacao.CampoNaoPreenchido)]
@@ -538,7 +471,7 @@ namespace NotaFiscalNet.Core
         public Produto()
         {
             _informacoesAdicionais = string.Empty;
-            _imposto = new ImpostoProduto(this);
+            Imposto = new ImpostoProduto(this);
             _codigo = string.Empty;
             _codigoGTIN = string.Empty;
             _codigoNCM = string.Empty;
@@ -549,13 +482,13 @@ namespace NotaFiscalNet.Core
             _unidadeComercial = string.Empty;
             _codigoGTINTributario = string.Empty;
             _unidadeTributavel = string.Empty;
-            _declaracaoImportacao = new DeclaracaoImportacaoCollection(this);
-            _detalhamentoExportacao = new DetalheExportacaoCollection();
+            DeclaracoesImportacao = new DeclaracaoImportacaoCollection(this);
+            DetalhamentoExportacao = new DetalheExportacaoCollection();
             _tipoProdutoEspecifico = TipoProdutoEspecifico.ProdutoNaoEspecifico;
-            _detalhamentoVeiculo = new VeiculoNovo(this);
-            _detalhamentoMedicamentos = new MedicamentoCollection(this);
-            _detalhamentoArmamentos = new ArmamentoCollection(this);
-            _detalhamentoCombustivel = new Combustivel(this);
+            DetalhamentoVeiculo = new VeiculoNovo(this);
+            DetalhamentoMedicamento = new MedicamentoCollection(this);
+            DetalhamentoArmamento = new ArmamentoCollection(this);
+            DetalhamentoCombustivel = new Combustivel(this);
         }
 
         public void Serializar(XmlWriter writer, INFe nfe)
@@ -602,10 +535,10 @@ namespace NotaFiscalNet.Core
             writer.WriteElementString("indTot", ItemCompoeValorTotalNFe ? "1" : "0");
 
             // Escreve o elemento 'DI' caso tenha sido preenchido.
-            ((ISerializavel)DeclaracoesImportacao).Serializar(writer, nfe);
+            DeclaracoesImportacao.Serializar(writer, nfe);
 
             // Escreve o elemento 'detExport', caso haja um na coleção
-            ((ISerializavel)DetalhamentoExportacao).Serializar(writer, nfe);
+            DetalhamentoExportacao.Serializar(writer, nfe);
 
             if (IsStrValid(PedidoCompra))
                 writer.WriteElementString("xPed", PedidoCompra.ToToken(15));

@@ -68,8 +68,8 @@ namespace NotaFiscalNet.Core.Evento
         /// </summary>
         public string CpfCnpjAutor
         {
-            get { return _cpfCnpj; }
-            set
+            get => _cpfCnpj;
+	        set
             {
                 if (!Regex.IsMatch(value, "^([0-9]{11}|[0-9]{14})$"))
                     throw new ApplicationException("O Cpf ou Cnpj do Autor não é inválido.");
@@ -83,8 +83,8 @@ namespace NotaFiscalNet.Core.Evento
         /// </summary>
         public string ChaveAcessoNFe
         {
-            get { return _chaveAcessoNFe; }
-            set
+            get => _chaveAcessoNFe;
+	        set
             {
                 if (!Regex.IsMatch(value, "^[0-9]{44}$"))
                     throw new ApplicationException("A valor informado para a Chave de Acesso da NF-e não é válido.");
@@ -110,8 +110,8 @@ namespace NotaFiscalNet.Core.Evento
         /// </summary>
         public int NumeroSequencial
         {
-            get { return _numeroSequencial; }
-            set
+            get => _numeroSequencial;
+	        set
             {
                 if (value < 1 || value > 20)
                     throw new ArgumentOutOfRangeException("NumeroSequencial", value, "O número sequencial deve estar compreendido entre 1 e 20.");

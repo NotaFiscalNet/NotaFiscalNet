@@ -17,8 +17,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1, ChaveErroValidacao.CNPJInvalido)]
         public string CNPJ
         {
-            get { return _cnpj; }
-            set
+            get => _cnpj;
+	        set
             {
                 ValidationUtil.ValidateCNPJ(value, "Cnpj");
                 _cnpj = value;
@@ -32,8 +32,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(2, ChaveErroValidacao.CampoNaoPreenchido)]
         public TipoBandeiraCartao TipoBandeira
         {
-            get { return _tipoBandeiraCartao; }
-            set
+            get => _tipoBandeiraCartao;
+	        set
             {
                 ValidationUtil.ValidateEnum(value, "TipoBandeira");
                 _tipoBandeiraCartao = value;
@@ -47,8 +47,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)]
         public string CodigoAutorizacao
         {
-            get { return _codigoAutorizacao; }
-            set
+            get => _codigoAutorizacao;
+	        set
             {
                 ValidationUtil.ValidateRange(value, 1, 20, "CodigoAutorizacao");
                 _codigoAutorizacao = value;

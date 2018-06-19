@@ -1,9 +1,6 @@
 ﻿using NotaFiscalNet.Core.Interfaces;
 using NotaFiscalNet.Core.Utils;
-using NotaFiscalNet.Core.Validacao;
-
 using System;
-using System.Linq;
 
 namespace NotaFiscalNet.Core
 {
@@ -60,7 +57,7 @@ namespace NotaFiscalNet.Core
         public void Serializar(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("refNFP");
-            writer.WriteElementString("cUF", SerializationUtil.GetEnumValue<UfIBGE>(UnidadeFederativa));
+            writer.WriteElementString("cUF", SerializationUtil.GetEnumValue(UnidadeFederativa));
             writer.WriteElementString("AAMM", MesAnoEmissao.ToString("yyMM"));
 
             if (!string.IsNullOrEmpty(CNPJ))

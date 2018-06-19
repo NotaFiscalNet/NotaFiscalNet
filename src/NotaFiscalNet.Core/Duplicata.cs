@@ -32,8 +32,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "Y08", FieldName = "nDup", DataType = "token", MinLength = 0, MaxLength = 60, Opcional = true)]
         public string Numero
         {
-            get { return _numero; }
-            set { _numero = ValidationUtil.TruncateString(value, 60); }
+            get => _numero;
+	        set => _numero = ValidationUtil.TruncateString(value, 60);
         }
 
         /// <summary>
@@ -43,8 +43,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "Y09", FieldName = "dVenc", DataType = "TData", Pattern = @"\d{4}-\d{2}-\d{2}")]
         public DateTime DataVencimento
         {
-            get { return _dataVencimento; }
-            set
+            get => _dataVencimento;
+	        set
             {
                 ValidationUtil.ValidateTData(value, "DataVencimento");
 
@@ -59,12 +59,8 @@ namespace NotaFiscalNet.Core
             Pattern = @"0\.[0-9]{1}[1-9]{1}|0\.[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?", Opcional = true)]
         public decimal Valor
         {
-            get { return _valor; }
-            set
-            {
-                _valor = ValidationUtil.ValidateTDec_1302(value, "Valor");
-                ;
-            }
+            get => _valor;
+	        set => _valor = ValidationUtil.ValidateTDec_1302(value, "Valor");
         }
 
         /// <summary>

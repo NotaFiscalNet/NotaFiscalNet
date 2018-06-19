@@ -14,8 +14,7 @@ namespace NotaFiscalNet.Core.Transmissao
         private UfIBGE _ufIBGE = UfIBGE.NaoEspecificado;
         private int _ano = 0;
         private string _cnpj = string.Empty;
-        private string _mod = "55";
-        private int _serie = 0;
+	    private int _serie = 0;
         private int _numeracaoInicialNFe = 0;
         private int _numeracaoFinalNFe = 0;
         private string _justificativa = string.Empty;
@@ -38,11 +37,7 @@ namespace NotaFiscalNet.Core.Transmissao
                 ValidateFields();
                 return MountId();
             }
-            private set
-            {
-                // o valor é difine apenas quando é carregado de um arquivo xml.
-                _id = value;
-            }
+            private set => _id = value;
         }
 
         /// <summary>
@@ -50,8 +45,8 @@ namespace NotaFiscalNet.Core.Transmissao
         /// </summary>
         public TipoAmbiente Ambiente
         {
-            get { return _ambiente; }
-            set
+            get => _ambiente;
+	        set
             {
                 CheckReadOnly("Ambiente");
                 _ambiente = value;
@@ -68,8 +63,8 @@ namespace NotaFiscalNet.Core.Transmissao
         /// </summary>
         public UfIBGE UFIBGE
         {
-            get { return _ufIBGE; }
-            set
+            get => _ufIBGE;
+	        set
             {
                 CheckReadOnly("UFIBGE");
 
@@ -88,8 +83,8 @@ namespace NotaFiscalNet.Core.Transmissao
         /// </summary>
         public int Ano
         {
-            get { return _ano; }
-            set
+            get => _ano;
+	        set
             {
                 CheckReadOnly("Ano");
                 if (value < 0 || value > 99)
@@ -103,8 +98,8 @@ namespace NotaFiscalNet.Core.Transmissao
         /// </summary>
         public string CNPJ
         {
-            get { return _cnpj; }
-            set
+            get => _cnpj;
+	        set
             {
                 CheckReadOnly("Cnpj");
                 if (!Regex.IsMatch(value, "^[0-9]{14}$"))
@@ -116,15 +111,15 @@ namespace NotaFiscalNet.Core.Transmissao
         /// <summary>
         /// Retorna o Modelo do Documento Fiscal que será inutilizado. Retorna sempre 55 (NF-e).
         /// </summary>
-        public string ModeloDocumentoFiscal { get { return _mod; } private set { _mod = value; } }
+        public string ModeloDocumentoFiscal { get; private set; } = "55";
 
-        /// <summary>
+	    /// <summary>
         /// Retorna ou define a Série da NF-e.
         /// </summary>
         public int Serie
         {
-            get { return _serie; }
-            set
+            get => _serie;
+	        set
             {
                 CheckReadOnly("Serie");
                 if (value < 0 || value > 999)
@@ -138,8 +133,8 @@ namespace NotaFiscalNet.Core.Transmissao
         /// </summary>
         public int NumeracaoInicialNF
         {
-            get { return _numeracaoInicialNFe; }
-            set
+            get => _numeracaoInicialNFe;
+	        set
             {
                 CheckReadOnly("NumeracaoInicialNF");
                 if (value < 1 || value > 999999999)
@@ -153,8 +148,8 @@ namespace NotaFiscalNet.Core.Transmissao
         /// </summary>
         public int NumeracaoFinalNF
         {
-            get { return _numeracaoFinalNFe; }
-            set
+            get => _numeracaoFinalNFe;
+	        set
             {
                 CheckReadOnly("NumeracaoFinalNF");
                 if (value < 1 || value > 999999999)
@@ -169,8 +164,8 @@ namespace NotaFiscalNet.Core.Transmissao
         /// </summary>
         public string Justificativa
         {
-            get { return _justificativa; }
-            set
+            get => _justificativa;
+	        set
             {
                 CheckReadOnly("Justificativa");
 

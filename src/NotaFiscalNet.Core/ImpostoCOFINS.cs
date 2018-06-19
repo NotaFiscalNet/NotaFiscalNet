@@ -18,27 +18,25 @@ namespace NotaFiscalNet.Core
         private decimal _valor;
         private bool _canChangeTipo = true;
 
-        private readonly ImpostoProduto _imposto;
-
-        internal ImpostoCOFINS(ImpostoProduto imposto)
+	    internal ImpostoCOFINS(ImpostoProduto imposto)
         {
-            _imposto = imposto;
+            Imposto = imposto;
         }
 
         /// <summary>
         /// Retorna a referência para o objeto ImpostoProduto no qual o Imposto se refere.
         /// </summary>
-        internal ImpostoProduto Imposto => _imposto;
+        internal ImpostoProduto Imposto { get; }
 
-        /// <summary>
+	    /// <summary>
         /// [CST] Retorna ou define a Situação Tributária.
         /// </summary>
         [NFeField(ID = "S06", FieldName = "CST", DataType = "token")]
         [CampoValidavel(1, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = SituacaoTributariaCOFINS.NaoEspecificado)]
         public SituacaoTributariaCOFINS SituacaoTributaria
         {
-            get { return _situacaoTributaria; }
-            set
+            get => _situacaoTributaria;
+	        set
             {
                 ValidationUtil.ValidateEnum(value, "SituacaoTributaria");
 
@@ -102,8 +100,8 @@ namespace NotaFiscalNet.Core
         /// </summary>
         public TipoCalculoCOFINS TipoCalculo
         {
-            get { return _tipo; }
-            set
+            get => _tipo;
+	        set
             {
                 if (!_canChangeTipo)
                     throw new ErroValidacaoNFeException(ErroValidacao.Create(ChaveErroValidacao.NotCanChangeTipoCalculo, SituacaoTributaria));
@@ -120,8 +118,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(2)]
         public decimal BaseCalculo
         {
-            get { return _baseCalculo; }
-            set
+            get => _baseCalculo;
+	        set
             {
                 switch (SituacaoTributaria)
                 {
@@ -188,8 +186,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(3)]
         public decimal Aliquota
         {
-            get { return _aliquota; }
-            set
+            get => _aliquota;
+	        set
             {
                 switch (SituacaoTributaria)
                 {
@@ -255,8 +253,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(4)]
         public decimal Valor
         {
-            get { return _valor; }
-            set
+            get => _valor;
+	        set
             {
                 switch (SituacaoTributaria)
                 {
@@ -346,7 +344,7 @@ namespace NotaFiscalNet.Core
         private void SerializeCOFINSAliq(System.Xml.XmlWriter writer, INFe nfe)
         {
             writer.WriteStartElement("COFINSAliq"); // Elemento 'COFINSAliq'
-            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue<SituacaoTributariaCOFINS>(SituacaoTributaria))));
+            writer.WriteElementString("CST", SerializationUtil.ToString2(Convert.ToInt32(SerializationUtil.GetEnumValue(SituacaoTributaria))));
             writer.WriteElementString("vBC", BaseCalculo.ToTDec_1302());
             writer.WriteElementString("pCOFINS", Aliquota.ToTDec_1302());
             writer.WriteElementString("vCOFINS", Valor.ToTDec_1302());

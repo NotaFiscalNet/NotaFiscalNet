@@ -35,8 +35,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "N13", FieldName = "modBC")]
         public ModalidadeBaseCalculoIcms ModalidadeBaseCalculo
         {
-            get { return _modalidadeBaseCalculo; }
-            set { _modalidadeBaseCalculo = ValidationUtil.ValidateEnum(value, "ModalidadeBaseCalculo"); }
+            get => _modalidadeBaseCalculo;
+	        set => _modalidadeBaseCalculo = ValidationUtil.ValidateEnum(value, "ModalidadeBaseCalculo");
         }
 
         /// <summary>
@@ -45,8 +45,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "vRedBC", DataType = "TDec_0302")]
         public decimal? PercentualReducaoBaseCalculo
         {
-            get { return _percentualReducaoBaseCalculo; }
-            set
+            get => _percentualReducaoBaseCalculo;
+	        set
             {
                 if (value.HasValue)
                     _percentualReducaoBaseCalculo = ValidationUtil.ValidateTDec_0302(value.Value,
@@ -62,8 +62,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "N15", FieldName = "vBC", DataType = "TDec_1302")]
         public decimal ValorBaseCalculo
         {
-            get { return _valorBaseCalculo; }
-            set { _valorBaseCalculo = ValidationUtil.ValidateTDec_1302(value, "ValorBaseCalculo"); }
+            get => _valorBaseCalculo;
+	        set => _valorBaseCalculo = ValidationUtil.ValidateTDec_1302(value, "ValorBaseCalculo");
         }
 
         /// <summary>
@@ -72,8 +72,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "N16", FieldName = "pICMS", DataType = "TDec_0302")]
         public decimal Aliquota
         {
-            get { return _aliquota; }
-            set { _aliquota = ValidationUtil.ValidateTDec_0302(value, "Aliquota"); }
+            get => _aliquota;
+	        set => _aliquota = ValidationUtil.ValidateTDec_0302(value, "Aliquota");
         }
 
         /// <summary>
@@ -82,8 +82,8 @@ namespace NotaFiscalNet.Core
         [NFeField(ID = "N17", FieldName = "vICMS", DataType = "TDec_0302")]
         public decimal Valor
         {
-            get { return _valor; }
-            set { _valor = ValidationUtil.ValidateTDec_0302(value, "Valor"); }
+            get => _valor;
+	        set => _valor = ValidationUtil.ValidateTDec_0302(value, "Valor");
         }
 
         /// <summary>
@@ -92,12 +92,9 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "modBCST")]
         public ModalidadeBaseCalculoIcmsST ModalidadeBaseCalculoST
         {
-            get { return _modalidadeBaseCalculoST; }
-            set
-            {
-                _modalidadeBaseCalculoST = ValidationUtil.ValidateEnum(value,
-                    "ModalidadeBaseCalculoST");
-            }
+            get => _modalidadeBaseCalculoST;
+	        set => _modalidadeBaseCalculoST = ValidationUtil.ValidateEnum(value,
+		        "ModalidadeBaseCalculoST");
         }
 
         /// <summary>
@@ -106,8 +103,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "pMVAST", DataType = "TDec_0302Opc")]
         public decimal? PercentualMargemValorAdicionadoST
         {
-            get { return _percentualMargemValorAdicionadoST; }
-            set
+            get => _percentualMargemValorAdicionadoST;
+	        set
             {
                 if (value.HasValue)
                     _percentualMargemValorAdicionadoST = ValidationUtil.ValidateTDec_0302(value.Value,
@@ -123,8 +120,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "pRedBCST", DataType = "TDec_0302Opc")]
         public decimal? PercentualReducaoBaseCalculoST
         {
-            get { return _percentualReducaoBaseCalculoST; }
-            set
+            get => _percentualReducaoBaseCalculoST;
+	        set
             {
                 if (value.HasValue)
                     _percentualReducaoBaseCalculoST = ValidationUtil.ValidateTDec_0302(value.Value,
@@ -140,8 +137,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "vBCST", DataType = "TDec_1302")]
         public decimal ValorBaseCalculoST
         {
-            get { return _valorBaseCalculoST; }
-            set { _valorBaseCalculoST = ValidationUtil.ValidateTDec_1302(value, "ValorBaseCalculoST"); }
+            get => _valorBaseCalculoST;
+	        set => _valorBaseCalculoST = ValidationUtil.ValidateTDec_1302(value, "ValorBaseCalculoST");
         }
 
         /// <summary>
@@ -150,8 +147,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "pICMSST", DataType = "TDec_0302")]
         public decimal AliquotaST
         {
-            get { return _aliquotaST; }
-            set { _aliquotaST = ValidationUtil.ValidateTDec_0302(value, "AliquotaST"); }
+            get => _aliquotaST;
+	        set => _aliquotaST = ValidationUtil.ValidateTDec_0302(value, "AliquotaST");
         }
 
         /// <summary>
@@ -160,8 +157,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "vICMSST", DataType = "TDec_1302")]
         public decimal ValorST
         {
-            get { return _valorST; }
-            set { _valorST = ValidationUtil.ValidateTDec_1302(value, "ValorST"); }
+            get => _valorST;
+	        set => _valorST = ValidationUtil.ValidateTDec_1302(value, "ValorST");
         }
 
         /// <summary>
@@ -177,8 +174,8 @@ namespace NotaFiscalNet.Core
         [NFeField(FieldName = "motDesICMS", DataType = "xs:string")]
         public MotivoDesoneracaoCondicionalICMS? MotivoDesoneracaoIcms
         {
-            get { return _motivoDesoneracaoIcms; }
-            set
+            get => _motivoDesoneracaoIcms;
+	        set
             {
                 if (!value.HasValue)
                 {

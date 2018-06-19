@@ -30,8 +30,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(1)]
         public string CNPJ
         {
-            get { return _CNPJ; }
-            set
+            get => _CNPJ;
+	        set
             {
                 _CNPJ = ValidationUtil.ValidateCNPJ(value, "Cnpj", true);
                 _CPF = string.Empty;
@@ -46,8 +46,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(2, Opcional = true)]
         public string CPF
         {
-            get { return _CPF; }
-            set
+            get => _CPF;
+	        set
             {
                 _CPF = ValidationUtil.ValidateCPF(value, "Cpf", true);
                 _CNPJ = string.Empty;
@@ -62,8 +62,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(3, ChaveErroValidacao.CampoNaoPreenchido)]
         public string Nome
         {
-            get { return _nome; }
-            set { _nome = ValidationUtil.TruncateString(value, 60); }
+            get => _nome;
+	        set => _nome = ValidationUtil.TruncateString(value, 60);
         }
 
         /// <summary>
@@ -74,8 +74,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(4, Opcional = true)]
         public string NomeFantasia
         {
-            get { return _nomeFantasia; }
-            set { _nomeFantasia = ValidationUtil.TruncateString(value, 60); }
+            get => _nomeFantasia;
+	        set => _nomeFantasia = ValidationUtil.TruncateString(value, 60);
         }
 
         /// <summary>
@@ -92,8 +92,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(6, ChaveErroValidacao.CampoNaoPreenchido)]
         public string InscricaoEstadual
         {
-            get { return _inscricaoEstadual; }
-            set
+            get => _inscricaoEstadual;
+	        set
             {
                 ValidationUtil.ValidateIncricaoEstadual(value, "InscricaoEstadual");
                 _inscricaoEstadual = ValidationUtil.TruncateString(value, 14);
@@ -108,8 +108,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(7, Opcional = true)]
         public string InscricaoEstadualSubstitutoTributario
         {
-            get { return _inscricaoEstadualSubstitutoTributario; }
-            set
+            get => _inscricaoEstadualSubstitutoTributario;
+	        set
             {
                 ValidationUtil.ValidateIncricaoEstadual(value, "InscricaoEstadualSubstitutoTributario");
                 _inscricaoEstadualSubstitutoTributario = ValidationUtil.TruncateString(value, 14);
@@ -125,8 +125,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(8)]
         public string InscricaoMunicipal
         {
-            get { return _inscricaoMunicipal; }
-            set { _inscricaoMunicipal = ValidationUtil.TruncateString(value, 15); }
+            get => _inscricaoMunicipal;
+	        set => _inscricaoMunicipal = ValidationUtil.TruncateString(value, 15);
         }
 
         /// <summary>
@@ -137,8 +137,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(9)]
         public string CNAEFiscal
         {
-            get { return _CNAEFiscal; }
-            set
+            get => _CNAEFiscal;
+	        set
             {
                 ValidationUtil.ValidateCNAE(value, "CNAEFiscal", true);
                 _CNAEFiscal = value;
@@ -154,8 +154,8 @@ namespace NotaFiscalNet.Core
         [CampoValidavel(10, ChaveErroValidacao.CampoNaoPreenchido, ValorNaoPreenchido = CodigoRegimeTributario.NaoInformado)]
         public CodigoRegimeTributario CodigoRegimeTributario
         {
-            get { return _codigoRegimeTributario; }
-            set { _codigoRegimeTributario = ValidationUtil.ValidateEnum(value, "CodigoRegimeTributario"); }
+            get => _codigoRegimeTributario;
+	        set => _codigoRegimeTributario = ValidationUtil.ValidateEnum(value, "CodigoRegimeTributario");
         }
 
         public void Serializar(XmlWriter writer, INFe nfe)
@@ -190,7 +190,7 @@ namespace NotaFiscalNet.Core
         {
             writer.WriteStartElement("enderEmit"); // Elemento 'enderEmit'
 
-            ((ISerializavel)Endereco).Serializar(writer, nfe);
+            Endereco.Serializar(writer, nfe);
 
             writer.WriteEndElement(); // Elemento 'enderEmit'
         }

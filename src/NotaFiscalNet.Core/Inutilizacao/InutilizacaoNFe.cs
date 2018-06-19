@@ -46,8 +46,8 @@ namespace NotaFiscalNet.Core.Inutilizacao
         [NFeField(FieldName = "ano", DataType = "Tano")]
         public int Ano
         {
-            get { return _ano; }
-            set
+            get => _ano;
+	        set
             {
                 if (value < 0)
                     throw new ArgumentOutOfRangeException("Ano", value, "Ano deve ser maior ou igual a 00.");

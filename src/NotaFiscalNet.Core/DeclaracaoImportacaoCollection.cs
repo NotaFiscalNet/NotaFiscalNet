@@ -29,7 +29,7 @@ namespace NotaFiscalNet.Core
             foreach (var declaracao in this)
             {
                 if (declaracao.Modificado)
-                    ((ISerializavel)declaracao).Serializar(writer, nfe);
+                    declaracao.Serializar(writer, nfe);
             }
         }
 

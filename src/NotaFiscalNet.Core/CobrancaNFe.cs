@@ -13,10 +13,10 @@ namespace NotaFiscalNet.Core
             writer.WriteStartElement("cobr"); // Elemento 'cobr'
 
             if (Fatura.Modificado)
-                ((ISerializavel)Fatura).Serializar(writer, nfe);
+                Fatura.Serializar(writer, nfe);
 
             if (Duplicatas.Modificado)
-                ((ISerializavel)Duplicatas).Serializar(writer, nfe);
+                Duplicatas.Serializar(writer, nfe);
 
             writer.WriteEndElement(); // Elemento 'cobr'
         }

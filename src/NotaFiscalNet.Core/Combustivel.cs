@@ -32,7 +32,7 @@ namespace NotaFiscalNet.Core
             writer.WriteElementString("UFCons", UFConsumo.ToString());
 
             if (CIDE != null)
-                ((ISerializavel)CIDE).Serializar(writer, nfe);
+                CIDE.Serializar(writer, nfe);
 
             writer.WriteEndElement(); // fim do elemento 'comb'
         }

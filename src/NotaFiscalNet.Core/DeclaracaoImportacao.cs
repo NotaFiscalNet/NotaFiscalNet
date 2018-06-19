@@ -53,7 +53,7 @@ namespace NotaFiscalNet.Core
             writer.WriteStartElement("cExportador", SerializationUtil.ToToken(CodigoExportador, 60));
 
             /// renderiza os elementos 'adi'
-            ((ISerializavel)Adicoes).Serializar(writer, nfe);
+            Adicoes.Serializar(writer, nfe);
 
             writer.WriteEndElement(); // fim do elemento 'DI'
         }

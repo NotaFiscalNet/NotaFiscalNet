@@ -216,7 +216,7 @@ namespace NotaFiscalNet.Core
         {
             writer.WriteStartElement("enderDest"); // Elemento 'enderDest'
 
-            ((ISerializavel)Endereco).Serializar(writer, nfe);
+            Endereco.Serializar(writer, nfe);
 
             writer.WriteEndElement(); // Elemento 'enderDest'
         }

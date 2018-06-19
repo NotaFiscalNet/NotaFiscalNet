@@ -19,7 +19,7 @@ namespace NotaFiscalNet.Core
             foreach (var duplicata in this)
             {
                 if (duplicata.Modificado)
-                    ((ISerializavel)duplicata).Serializar(writer, nfe);
+                    duplicata.Serializar(writer, nfe);
             }
         }
     }

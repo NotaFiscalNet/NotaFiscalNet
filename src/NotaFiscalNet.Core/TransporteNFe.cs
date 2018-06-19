@@ -138,7 +138,7 @@ namespace NotaFiscalNet.Core
             }
 
             if (VolumesCarga.Modificado)
-                ((ISerializavel)VolumesCarga).Serializar(writer, nfe);
+                VolumesCarga.Serializar(writer, nfe);
 
             writer.WriteEndElement(); // fim do elemento 'transp'
         }

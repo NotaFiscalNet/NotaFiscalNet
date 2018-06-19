@@ -48,7 +48,7 @@ namespace NotaFiscalNet.Core
             foreach (ObservacaoContribuinte observacao in this)
             {
                 if (observacao.Modificado)
-                    ((ISerializavel)observacao).Serializar(writer, nfe);
+                    observacao.Serializar(writer, nfe);
             }
         }
     }

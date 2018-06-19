@@ -190,7 +190,7 @@ namespace NotaFiscalNet.Core
         {
             writer.WriteStartElement("enderEmit"); // Elemento 'enderEmit'
 
-            ((ISerializavel)Endereco).Serializar(writer, nfe);
+            Endereco.Serializar(writer, nfe);
 
             writer.WriteEndElement(); // Elemento 'enderEmit'
         }

@@ -78,7 +78,7 @@ namespace NotaFiscalNet.Core
             foreach (Produto produto in this)
             {
                 if (produto.Modificado)
-                    ((ISerializavel)produto).Serializar(writer, nfe);
+                    produto.Serializar(writer, nfe);
             }
         }
     }

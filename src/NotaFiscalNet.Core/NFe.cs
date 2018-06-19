@@ -1890,7 +1890,7 @@ namespace NotaFiscalNet.Core
             using (var sw = new StringWriter())
             using (var writer = XmlWriter.Create(sw, settings))
             {
-                ((ISerializavel)this).Serializar(writer, this);
+                this.Serializar(writer, this);
                 writer.Flush();
                 xml = sw.ToString();
             }
@@ -1915,7 +1915,7 @@ namespace NotaFiscalNet.Core
             using (var sw = new StringWriter())
             using (var writer = XmlWriter.Create(sw, settings))
             {
-                ((ISerializavel)this).Serializar(writer, this);
+                this.Serializar(writer, this);
                 writer.Flush();
                 xml = sw.ToString();
             }

@@ -542,10 +542,10 @@ namespace NotaFiscalNet.Core
             writer.WriteElementString("indTot", ItemCompoeValorTotalNFe ? "1" : "0");
 
             // Escreve o elemento 'DI' caso tenha sido preenchido.
-            ((ISerializavel)DeclaracoesImportacao).Serializar(writer, nfe);
+            DeclaracoesImportacao.Serializar(writer, nfe);
 
             // Escreve o elemento 'detExport', caso haja um na coleção
-            ((ISerializavel)DetalhamentoExportacao).Serializar(writer, nfe);
+            DetalhamentoExportacao.Serializar(writer, nfe);
 
             if (IsStrValid(PedidoCompra))
                 writer.WriteElementString("xPed", PedidoCompra.ToToken(15));

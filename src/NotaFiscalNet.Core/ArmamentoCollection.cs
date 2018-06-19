@@ -34,7 +34,7 @@ namespace NotaFiscalNet.Core
             foreach (var arma in this)
             {
                 if (arma.Modificado)
-                    ((ISerializavel)arma).Serializar(writer, nfe);
+                    arma.Serializar(writer, nfe);
             }
         }
 
